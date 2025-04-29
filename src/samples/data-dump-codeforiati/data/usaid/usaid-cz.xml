@@ -1,0 +1,602 @@
+<iati-activities xmlns:usg="https://explorer.usaid.gov" generated-datetime="2025-04-03T20:52:13.509Z" version="2.03">
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-ASHA-G-12-00006</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">FY 2012 ASHA Award - Center for Economic Research &amp; Graduate Education Foundation (CERGE-EI)</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">FY 2012 ASHA Award - Center for Economic Research &amp; Graduate Education Foundation (CERGE-EI)</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-623988693" role="4" type="22">
+      <narrative>CERGE-EI Foundation</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="4510157040EB">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">66045.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>CERGE-EI Foundation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="E8748688FD9E">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">32623.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>CERGE-EI Foundation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="BEABDAAB42E0">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">10879.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>CERGE-EI Foundation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="9EEBE2EA616E">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">142998.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>CERGE-EI Foundation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="6B26F4D978FB">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-06-30"/>
+      <value value-date="2014-06-30">2010.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>CERGE-EI Foundation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="6AA9EFAF26B0">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">75971.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>CERGE-EI Foundation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="2A9033D839BC">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-12-31"/>
+      <value value-date="2014-12-31">69474.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>CERGE-EI Foundation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>623988693</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Czechia</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-ASHA-G-16-00007</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">FY 2016 ASHA Award - Center for Economic Research &amp; Graduate Education Foundation (CERGE-EI)</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">FY 2016 ASHA Award - Center for Economic Research &amp; Graduate Education Foundation (CERGE-EI)</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-623988693" role="4" type="22">
+      <narrative>Center for Economic Research and Graduate Education - Economics Institute</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2017-03-01" type="1"/>
+    <activity-date iso-date="2017-03-01" type="2"/>
+    <activity-date iso-date="2021-03-31" type="3"/>
+    <activity-date iso-date="2021-03-31" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="71BB0B30E8D8">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2017-03-31"/>
+      <value value-date="2017-03-31">450000.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>Center for Economic Research and Graduate Education - Economics Institute</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2017"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="072F214939D1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-12-31"/>
+      <value value-date="2017-12-31">17877.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>Center for Economic Research and Graduate Education - Economics Institute</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2017"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="40BE2409D276">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-03-31"/>
+      <value value-date="2018-03-31">26931.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>Center for Economic Research and Graduate Education - Economics Institute</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2017"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="052647084264">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-06-30"/>
+      <value value-date="2018-06-30">4562.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>Center for Economic Research and Graduate Education - Economics Institute</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2017"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="0F4AB7F942E4">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-09-30"/>
+      <value value-date="2018-09-30">4360.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>Center for Economic Research and Graduate Education - Economics Institute</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2017"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="6A1D1D13205B">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-12-31"/>
+      <value value-date="2018-12-31">320.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>Center for Economic Research and Graduate Education - Economics Institute</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2017"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="C4D7822A6AD1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-03-31"/>
+      <value value-date="2019-03-31">156649.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>Center for Economic Research and Graduate Education - Economics Institute</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2017"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="C2C184CC2097">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-06-30"/>
+      <value value-date="2019-06-30">24797.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>Center for Economic Research and Graduate Education - Economics Institute</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2017"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="DE70D0E3B832">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-09-30"/>
+      <value value-date="2019-09-30">137533.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>Center for Economic Research and Graduate Education - Economics Institute</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2017"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="FFE46C6BA41E">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-12-31"/>
+      <value value-date="2019-12-31">20866.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>Center for Economic Research and Graduate Education - Economics Institute</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2017"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="B7E83AADC029">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-03-31"/>
+      <value value-date="2020-03-31">34276.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>Center for Economic Research and Graduate Education - Economics Institute</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2017"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="579355E1BC41">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-06-30"/>
+      <value value-date="2021-06-30">21828.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-623988693" type="22">
+        <narrative>Center for Economic Research and Graduate Education - Economics Institute</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2017"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2017-03-01"/>
+    <usg:duns-number>
+      <narrative>623988693</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>450000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Czechia</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-EUR0014I25105600</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">CZK SO 1.0 ECONOMIC RESTRUCTURING</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Economic Restructuring</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="GB-COH-05543952" role="4" type="70">
+      <narrative>Cardno Limited</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="03AACA080358">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">-2906.00</value>
+      <receiver-org receiver-activity-id="GB-COH-05543952" type="70">
+        <narrative>Cardno Limited</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15110" vocabulary="1">
+        <narrative>Public sector policy and administrative management</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="CZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="1993" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>877698936</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Czechia</narrative>
+    </usg:state-location>
+  </iati-activity>
+</iati-activities>

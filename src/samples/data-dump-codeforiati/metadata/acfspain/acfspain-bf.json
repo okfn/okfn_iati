@@ -1,0 +1,93 @@
+{
+    "author": null,
+    "author_email": "amartin@accioncontraelhambre.org",
+    "creator_user_id": "70568c71-c462-447c-9133-3f050a9fbdae",
+    "id": "c399a739-2d1f-46d3-9749-d21edf6adae2",
+    "isopen": true,
+    "license_id": "other-pd",
+    "license_title": "Other (Public Domain)",
+    "maintainer": null,
+    "maintainer_email": null,
+    "metadata_created": "2022-08-10T12:16:58.987136",
+    "metadata_modified": "2024-11-14T23:02:23.302650",
+    "name": "acfspain-bf",
+    "notes": null,
+    "num_resources": 1,
+    "num_tags": 0,
+    "organization": {
+        "id": "d72d86e2-f83b-4048-bc03-6857485d5c7a",
+        "name": "acfspain",
+        "title": "ACTION AGAINST HUNGER SPAIN",
+        "type": "organization",
+        "description": "",
+        "image_url": "",
+        "created": "2018-02-05T16:17:52.114097",
+        "is_organization": true,
+        "approval_status": "approved",
+        "state": "active"
+    },
+    "owner_org": "d72d86e2-f83b-4048-bc03-6857485d5c7a",
+    "private": false,
+    "state": "active",
+    "title": "ACTION AGAINST HUNGER SPAIN Activity File-BF",
+    "type": "dataset",
+    "url": null,
+    "version": null,
+    "extras": [
+        {
+            "key": "activity_count",
+            "value": "1"
+        },
+        {
+            "key": "country",
+            "value": "bf"
+        },
+        {
+            "key": "data_updated",
+            "value": "2024-11-14 16:02:30"
+        },
+        {
+            "key": "filetype",
+            "value": "activity"
+        },
+        {
+            "key": "iati_version",
+            "value": "2.03"
+        },
+        {
+            "key": "language",
+            "value": "en"
+        },
+        {
+            "key": "validation_status",
+            "value": "Not Found"
+        }
+    ],
+    "resources": [
+        {
+            "cache_last_updated": null,
+            "cache_url": null,
+            "created": "2024-11-14T16:02:34.283985",
+            "description": null,
+            "format": "IATI-XML",
+            "hash": "eb306d5bf38babcc81bfaa946be69ae3599b6007",
+            "id": "94d98f87-61c9-4e81-8bf1-48809c4b6951",
+            "last_modified": null,
+            "metadata_modified": "2024-11-14T23:02:23.310553",
+            "mimetype": "",
+            "mimetype_inner": null,
+            "name": null,
+            "package_id": "c399a739-2d1f-46d3-9749-d21edf6adae2",
+            "position": 0,
+            "resource_type": null,
+            "size": 5224,
+            "state": "active",
+            "url": "https://aidstream.s3.us-west-2.amazonaws.com/xml/acfspain-bf.xml",
+            "url_type": null
+        }
+    ],
+    "tags": [],
+    "groups": [],
+    "relationships_as_subject": [],
+    "relationships_as_object": []
+}

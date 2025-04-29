@@ -1,0 +1,1541 @@
+<iati-activities xmlns:usg="https://explorer.usaid.gov" generated-datetime="2025-04-03T20:52:13.509Z" version="2.03">
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720BHA21IO00128</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Protection, Assistance and Solutions</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The provision of effective protection, assistance, and durable solutions for refugees, internally displaced persons (IDPs), and other victims of conflict and disasters.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-41140" role="4" type="40">
+      <narrative>World Food Program</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2021-10-01" type="1"/>
+    <activity-date iso-date="2021-10-01" type="2"/>
+    <activity-date iso-date="2022-09-30" type="3"/>
+    <activity-date iso-date="2022-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/humanitarian-assistance</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="96114C37F97A">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2021-09-30"/>
+      <value value-date="2021-09-30">1000000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2021" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="2CBBBAA61FC3">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-12-31"/>
+      <value value-date="2021-12-31">378776.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2021" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="25BEA217E7FD">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-03-31"/>
+      <value value-date="2022-03-31">554434.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2021" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="51BE01CB0F85">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-06-30"/>
+      <value value-date="2022-06-30">55640.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2021" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="8463A3A5A8AE">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-09-30"/>
+      <value value-date="2022-09-30">11149.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2021" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative>1000000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Algeria</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720BHA22IO00098</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Emergency Humanitarian Assistance</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Funding to provide children aged 6 to 59 months and pregnant and lactating women and girls with assistance for the treatment and prevention of moderate acute malnutrition.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-41140" role="4" type="40">
+      <narrative>World Food Program</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2022-04-28" type="1"/>
+    <activity-date iso-date="2022-04-28" type="2"/>
+    <activity-date iso-date="2023-04-27" type="3"/>
+    <activity-date iso-date="2023-04-27" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/humanitarian-assistance</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="D48D8BD0D05A">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2022-06-30"/>
+      <value value-date="2022-06-30">1000000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="3F3825F02AB6">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-09-30"/>
+      <value value-date="2022-09-30">109139.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="616B7DB151BA" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-10-31"/>
+      <value value-date="2022-10-31">264051.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="0BBDA5441559" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-01-31"/>
+      <value value-date="2023-01-31">176499.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="48713500094B" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-05-31"/>
+      <value value-date="2023-05-31">371778.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="A3D21DEE9F5C" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-07-31"/>
+      <value value-date="2023-07-31">78530.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2022-04-28"/>
+    <usg:tec1>
+      <narrative>1000000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Algeria</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720BHA23IO00077</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Emergency Food Assistance</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Support vulnerable refugees with food and nutrition assistance</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-41140" role="4" type="40">
+      <narrative>World Food Program</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2023-03-13" type="1"/>
+    <activity-date iso-date="2023-03-13" type="2"/>
+    <activity-date iso-date="2024-03-12" type="3"/>
+    <activity-date iso-date="2024-03-12" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/humanitarian-assistance</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="77A812707AA8" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2023-03-31"/>
+      <value value-date="2023-03-31">1500000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="997373218BF3" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-05-31"/>
+      <value value-date="2023-05-31">91549.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="484EBF552FAD" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-07-31"/>
+      <value value-date="2023-07-31">736599.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="06188115A869" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-10-31"/>
+      <value value-date="2023-10-31">254634.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="C9F70E1A3196" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-01-31"/>
+      <value value-date="2024-01-31">145214.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="A1F2E4FB1196" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-04-30"/>
+      <value value-date="2024-04-30">272002.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2023-03-13"/>
+    <usg:tec1>
+      <narrative>1500000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Algeria</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720BHA24IO00187</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Protection, Assistance and Solutions</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The provision of effective protection, assistance, and durable solutions for refugees, internally displaced persons (IDPs), and other victims of conflict and disasters.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-41140" role="4" type="40">
+      <narrative>World Food Program</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2024-10-01" type="1"/>
+    <activity-date iso-date="2024-10-01" type="2"/>
+    <activity-date iso-date="2025-09-30" type="3"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/humanitarian-assistance</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="383E497ED119" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2024-07-31"/>
+      <value value-date="2024-07-31">750000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2024" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="570053BDEC8B" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-10-31"/>
+      <value value-date="2024-10-31">240607.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2024" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="F27207F365E4" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2024-12-31"/>
+      <value value-date="2024-12-31">750000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2025" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Algeria</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-72DFFP19IO00066</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Food Assistance Activity</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Food Assistance Activity</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-41140" role="4" type="40">
+      <narrative>World Food Program</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2019-06-21" type="1"/>
+    <activity-date iso-date="2019-06-21" type="2"/>
+    <activity-date iso-date="2021-03-31" type="3"/>
+    <activity-date iso-date="2021-03-31" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website/>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="34524EEDDA49" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2019-06-30"/>
+      <value value-date="2019-06-30">2000000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <sector code="6" vocabulary="10"/>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="6C3A9A93A8C5" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-08-31"/>
+      <value value-date="2019-08-31">122065.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <sector code="6" vocabulary="10"/>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="6F04AB3CB999" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-10-31"/>
+      <value value-date="2019-10-31">28740.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <sector code="6" vocabulary="10"/>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="67C6C9693741" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-01-31"/>
+      <value value-date="2020-01-31">287041.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <sector code="6" vocabulary="10"/>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="2164E4E03B2B" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-05-31"/>
+      <value value-date="2020-05-31">61009.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <sector code="6" vocabulary="10"/>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="09CB1AA13CAE" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-08-31"/>
+      <value value-date="2020-08-31">266943.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <sector code="6" vocabulary="10"/>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="E74614A13A7B" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-11-30"/>
+      <value value-date="2020-11-30">415864.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <sector code="6" vocabulary="10"/>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="AECCDE91314E" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-02-28"/>
+      <value value-date="2021-02-28">698495.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <sector code="6" vocabulary="10"/>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="7CD9FBFC14DE" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-05-31"/>
+      <value value-date="2021-05-31">119841.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <sector code="6" vocabulary="10"/>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2019-06-21"/>
+    <usg:duns-number>
+      <narrative>71550813</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>2000000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Algeria</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-895-XXX-638-2012</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Title II Emergency Program through World Food Program.</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">USAID Title II Emergency Program through World Food Program.</narrative>
+    </description>
+    <participating-org ref="" role="1" type="10">
+      <narrative>U.S. Department of Agriculture</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-41140" role="4" type="40">
+      <narrative>World Food Program</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-food</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="47507572A02A" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">6597600.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="12.0"/>
+        <usg:main-account code="2278.0">Public Law 480 Title II Grants</usg:main-account>
+        <usg:fiscal-funding-year begin="2024" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="47507572A02A" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">6597600.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="12.0"/>
+        <usg:main-account code="2278.0">Public Law 480 Title II Grants</usg:main-account>
+        <usg:fiscal-funding-year begin="2024" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Algeria</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-895-XXX638-2013</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Title II Emergency Program through World Food Program.</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">USAID Title II Emergency Program through World Food Program.</narrative>
+    </description>
+    <participating-org ref="" role="1" type="10">
+      <narrative>U.S. Department of Agriculture</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-41140" role="4" type="40">
+      <narrative>World Food Program</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2014-09-30" type="3"/>
+    <activity-date iso-date="2014-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-food</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="142E9AB21302" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">4504900.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="12.0"/>
+        <usg:main-account code="2278.0">Public Law 480 Title II Grants</usg:main-account>
+        <usg:fiscal-funding-year begin="2024" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="142E9AB21302" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">4504900.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="12.0"/>
+        <usg:main-account code="2278.0">Public Law 480 Title II Grants</usg:main-account>
+        <usg:fiscal-funding-year begin="2024" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Algeria</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-FFP-IO-15-00005</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">World Food Programme Algeria Emergency Food and Shelter Program (EFSP)</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">World Food Programme Algeria Emergency Food and Shelter Program (EFSP)</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-41140" role="4" type="40">
+      <narrative>World Food Program</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-12-05" type="1"/>
+    <activity-date iso-date="2014-12-05" type="2"/>
+    <activity-date iso-date="2015-11-30" type="3"/>
+    <activity-date iso-date="2015-11-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-food</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="57312E95AE73" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-03-31"/>
+      <value value-date="2015-03-31">3500000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="C55D7EA9B80C" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">1624663.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="8989D21B1096" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">1735572.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="99D7C417E358" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">139764.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2014-12-05"/>
+    <usg:duns-number>
+      <narrative>71550813</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>3500000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Algeria</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-FFP-IO-16-00026</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">World Food Programme award for Algeria</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">World Food Programme award for Algeria</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-41140" role="4" type="40">
+      <narrative>World Food Program</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2016-09-02" type="1"/>
+    <activity-date iso-date="2016-09-02" type="2"/>
+    <activity-date iso-date="2018-07-31" type="3"/>
+    <activity-date iso-date="2018-07-31" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-food</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="46777B909CF9" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">2000000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="7A962927225D" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-12-31"/>
+      <value value-date="2016-12-31">130841.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="41F943D833D6" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-03-31"/>
+      <value value-date="2017-03-31">1580747.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="A1572577F210" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-06-30"/>
+      <value value-date="2017-06-30">64574.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="3C7630DDAFB6" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-09-30"/>
+      <value value-date="2017-09-30">223837.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="28B3CA539C30" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2017-06-30"/>
+      <value value-date="2017-06-30">1000000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <sector code="6" vocabulary="10"/>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="852812163D1E" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-12-31"/>
+      <value value-date="2017-12-31">65420.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <sector code="6" vocabulary="10"/>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="756A24D318EA" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-03-31"/>
+      <value value-date="2018-03-31">764915.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <sector code="6" vocabulary="10"/>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="414D016AC971" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-06-30"/>
+      <value value-date="2018-06-30">169663.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41140" type="40">
+        <narrative>World Food Program</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72040" vocabulary="1">
+        <narrative>Emergency food assistance</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <sector code="6" vocabulary="10"/>
+      <recipient-country code="DZ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2016-09-02"/>
+    <usg:duns-number>
+      <narrative>71550813</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>3000000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Algeria</narrative>
+    </usg:state-location>
+  </iati-activity>
+</iati-activities>

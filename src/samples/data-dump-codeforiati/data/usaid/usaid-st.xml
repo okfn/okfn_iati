@@ -1,0 +1,3650 @@
+<iati-activities xmlns:usg="https://explorer.usaid.gov" generated-datetime="2025-04-03T20:52:13.509Z" version="2.03">
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-DHR-13-01</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Civic Participation</narrative>
+      <narrative xml:lang="pt">Participação Cívica</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Strengthen the legal, regulatory, institutional, and information environment which protects and enables the growth in associational life and the development of independent and sustainable civil society organizations (CSOs).  Build the capacity of civil society organizations to act as agents for reform and support their participation in democratic decision-making through articulating and representing their members interests, engaging in service delivery, and advocating for issues which become part of the public agenda and are reflected in public policies. Encourage the strengthening of a civic culture which supports democratic institutions and processes, active participation in political and civic life, and the civic virtues of tolerance, pluralism, compromise, trust, and respect for individual rights, including gender equality.</narrative>
+      <narrative xml:lang="pt">Fortalecer o ambiente legal, regulatório, institucional e de informação que protege e permite o crescimento da vida associativa e o desenvolvimento de organizações da sociedade civil (OSC) independentes e sustentáveis.  Desenvolver a capacidade das organizações da sociedade civil para actuarem como agentes de reforma e apoiarem a sua participação na tomada de decisões democráticas através da articulação e representação dos interesses dos seus membros, do envolvimento na prestação de serviços e da defesa de questões que se tornem parte da agenda pública e sejam reflectidas nas políticas públicas. Incentivar o fortalecimento de uma cultura cívica que apoie instituições e processos democráticos, a participação ativa na vida política e cívica e as virtudes cívicas da tolerância, do pluralismo, do compromisso, da confiança e do respeito pelos direitos individuais, incluindo a igualdade de género.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="23">
+      <narrative>National Electoral Commission of Sao Tome and Principe</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2017-09-30" type="3"/>
+    <activity-date iso-date="2017-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="DBC0755262F2">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">20000.00</value>
+      <receiver-org type="23">
+        <narrative>National Electoral Commission of Sao Tome and Principe</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="C23D9B61CB6B">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">9461.00</value>
+      <receiver-org type="23">
+        <narrative>National Electoral Commission of Sao Tome and Principe</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="9732841F88A7">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-06-30"/>
+      <value value-date="2016-06-30">1450.00</value>
+      <receiver-org type="23">
+        <narrative>National Electoral Commission of Sao Tome and Principe</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="F6BC7E0B2737">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-12-31"/>
+      <value value-date="2016-12-31">-9087.00</value>
+      <receiver-org type="23">
+        <narrative>National Electoral Commission of Sao Tome and Principe</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-DHR-13-02</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Civic Participation</narrative>
+      <narrative xml:lang="pt">Participação Cívica</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Strengthen the legal, regulatory, institutional, and information environment which protects and enables the growth in associational life and the development of independent and sustainable civil society organizations (CSOs).  Build the capacity of civil society organizations to act as agents for reform and support their participation in democratic decision-making through articulating and representing their members interests, engaging in service delivery, and advocating for issues which become part of the public agenda and are reflected in public policies. Encourage the strengthening of a civic culture which supports democratic institutions and processes, active participation in political and civic life, and the civic virtues of tolerance, pluralism, compromise, trust, and respect for individual rights, including gender equality.</narrative>
+      <narrative xml:lang="pt">Fortalecer o ambiente legal, regulatório, institucional e de informação que protege e permite o crescimento da vida associativa e o desenvolvimento de organizações da sociedade civil (OSC) independentes e sustentáveis.  Desenvolver a capacidade das organizações da sociedade civil para actuarem como agentes de reforma e apoiarem a sua participação na tomada de decisões democráticas através da articulação e representação dos interesses dos seus membros, do envolvimento na prestação de serviços e da defesa de questões que se tornem parte da agenda pública e sejam reflectidas nas políticas públicas. Incentivar o fortalecimento de uma cultura cívica que apoie instituições e processos democráticos, a participação ativa na vida política e cívica e as virtudes cívicas da tolerância, do pluralismo, do compromisso, da confiança e do respeito pelos direitos individuais, incluindo a igualdade de género.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="23">
+      <narrative>National Women's Forum of Sao Tome and Principe</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2017-09-30" type="3"/>
+    <activity-date iso-date="2017-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="8F0B44ED7DB2">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">15000.00</value>
+      <receiver-org type="23">
+        <narrative>National Women's Forum of Sao Tome and Principe</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="5F2EE7246253">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">7982.00</value>
+      <receiver-org type="23">
+        <narrative>National Women's Forum of Sao Tome and Principe</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="C7A7E154BA54">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-12-31"/>
+      <value value-date="2016-12-31">-7017.00</value>
+      <receiver-org type="23">
+        <narrative>National Women's Forum of Sao Tome and Principe</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-07-658-02</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="23">
+      <narrative>Sermina Optica NGO for the Blind and Myopic</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="402BE304382C">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-06-30"/>
+      <value value-date="2016-06-30">730.00</value>
+      <receiver-org type="23">
+        <narrative>Sermina Optica NGO for the Blind and Myopic</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2007" end="2008"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-09-01</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="8B7406BA2CAE">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-14.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="091E3E2BAC54">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">4000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-09-02</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-23000" role="4" type="24">
+      <narrative>NGO - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="6FA971E19DB6">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">322.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-23000" type="24">
+        <narrative>NGO - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="F337F026F243">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">0.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-23000" type="24">
+        <narrative>NGO - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-09-03</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="67E056288A3D">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-502.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-09-04</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="1CBDF78386CA">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-780.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-09-05</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="AA3EE28C7225">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-2190.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-10-01</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="23">
+      <narrative>COMMUNITY ASSOCIATION OF BOA ENTRADA</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="5DF2C57F6999">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">1600.00</value>
+      <receiver-org type="23">
+        <narrative>COMMUNITY ASSOCIATION OF BOA ENTRADA</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="2260F5950419">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-495.00</value>
+      <receiver-org type="23">
+        <narrative>COMMUNITY ASSOCIATION OF BOA ENTRADA</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-10-02</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Church and Faith Based - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="1A16EEAFA2DB">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">1416.00</value>
+      <receiver-org>
+        <narrative>Church and Faith Based - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="C78661C7C222">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-4583.00</value>
+      <receiver-org>
+        <narrative>Church and Faith Based - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-10-03</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-23000" role="4" type="24">
+      <narrative>NGO - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="EDFB824ABD4D">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">3561.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-23000" type="24">
+        <narrative>NGO - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="C78B83F0A302">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-371.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-23000" type="24">
+        <narrative>NGO - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-10-04</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="9D37CA3E90BF">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">2740.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="C3564368441B">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-216.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-10-05</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="6379A0B3B377">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">1290.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-10-06</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-23000" role="4" type="24">
+      <narrative>NGO - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="6D811D28D357">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">33.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-23000" type="24">
+        <narrative>NGO - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="ECC4D182848D">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">-1365.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-23000" type="24">
+        <narrative>NGO - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-11-01</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="8E92A56DB054">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">3199.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="4BA22116CD06">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-06-30"/>
+      <value value-date="2016-06-30">1580.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-11-02</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="ECBFE6C008CE">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">1411.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="659801BAB579">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">1415.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="4CBA40886984">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-06-30"/>
+      <value value-date="2016-06-30">3356.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="B98052D2FC20">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">-7.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-11-03</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="B24933534086">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">1993.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="8D04429879CF">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">2000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="F42A62CCF83F">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-06-30"/>
+      <value value-date="2016-06-30">2780.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-11-04</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="FE83205F7AA8">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">4138.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="4814DC0DD46D">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">944.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="A281EEEB9D48">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">-197.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-11-05</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="2F4A780E18A5">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">2660.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="233848F0BB12">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-06-30"/>
+      <value value-date="2016-06-30">839.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-11-06</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2017-09-30" type="3"/>
+    <activity-date iso-date="2017-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="8CE99AF9CA86">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">1034.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="C261ECAB9A30">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">191.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="9FA05D4CC0A4">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-12-31"/>
+      <value value-date="2016-12-31">-873.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-11-07</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="EEEB8A907400">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">1587.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-11-08</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="78D24CB0D110">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">3473.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="A45A6DD5FEF4">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-06-30"/>
+      <value value-date="2016-06-30">1499.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="1A366523442F">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">-26.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-12-01</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="4" type="10">
+      <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2017-09-30" type="3"/>
+    <activity-date iso-date="2017-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="87C9E0BFCC51">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">6000.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="85A49E4E66F5">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-12-31"/>
+      <value value-date="2014-12-31">4103.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="AE467E61534F">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">5559.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="B9C7A1CF2B8F">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-12-31"/>
+      <value value-date="2016-12-31">-440.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-12-02</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="4" type="10">
+      <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="CD107760880A">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">4500.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="05F6512E91E3">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-12-31"/>
+      <value value-date="2014-12-31">3375.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="9F4B69826BC0">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">1125.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-12-03</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="4" type="10">
+      <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="608A9D279C43">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">3000.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="D68921A4ED54">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-12-31"/>
+      <value value-date="2014-12-31">1109.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="4A66DC362A7A">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">1890.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-12-04</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="4" type="10">
+      <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="74C16C04810E">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">4000.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="5F381EFFD45C">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-12-31"/>
+      <value value-date="2014-12-31">2879.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="8DC4CE31D636">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">1120.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-12-05</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="4" type="10">
+      <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="E5FBF53EC449">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">5500.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="9BECF7CC746B">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-12-31"/>
+      <value value-date="2014-12-31">2503.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="DE5D8FF0B1EE">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-06-30"/>
+      <value value-date="2016-06-30">2996.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-12-06</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="4" type="10">
+      <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2017-09-30" type="3"/>
+    <activity-date iso-date="2017-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="ACC0442AD9A8">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">4500.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="05A53BAFE31C">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-12-31"/>
+      <value value-date="2014-12-31">2160.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="52D28B9996ED">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-06-30"/>
+      <value value-date="2016-06-30">2122.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="2B06430FF9FE">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-12-31"/>
+      <value value-date="2016-12-31">-216.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-12-07</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="4" type="10">
+      <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="AD5334E5A2C1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">4500.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="CC9F301C8FE1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-12-31"/>
+      <value value-date="2014-12-31">3740.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="62B408E2A073">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">759.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-12-08</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="4" type="10">
+      <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="12A38047AFB6">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">3000.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="529AE983DC82">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-12-31"/>
+      <value value-date="2014-12-31">2100.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="3583F3E9824C">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">900.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-12-09</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="4" type="10">
+      <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="E725A644D66E">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">5000.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="771936436168">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">2206.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="89E5074D538C">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">2697.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="5035B7230BAC">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">-96.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-658-SSH-12-10</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="pt">Assistência Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="pt">Transferências em dinheiro ou em espécie para os pobres ou para aqueles que sofrem choques temporários. Os serviços de saúde prestados em espécie devem ser incluídos no(s) respectivo(s) elemento(s) de saúde.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="4" type="10">
+      <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Craig Lamberton</narrative>
+      </person-name>
+      <telephone>+1 202-712-4314</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/west-africa-regional</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="B588644796BB">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">5000.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="FDC5B18E07AC">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-12-31"/>
+      <value value-date="2014-12-31">4543.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="191ADD546BDD">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">456.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-SSH-06-658-001</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Development Assistance - Development Assistance</narrative>
+      <narrative xml:lang="pt">Assistência ao Desenvolvimento - Assistência ao Desenvolvimento</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Development Assistance - Development Assistance</narrative>
+      <narrative xml:lang="pt">Assistência ao Desenvolvimento - Assistência ao Desenvolvimento</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="KE-NGC-663" role="4" type="21">
+      <narrative>Adventist Development and Relief Agency International</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="8301809E4939">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">6074.00</value>
+      <receiver-org receiver-activity-id="KE-NGC-663" type="21">
+        <narrative>Adventist Development and Relief Agency International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="43010" vocabulary="1">
+        <narrative>Multisector aid</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="ST"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Sao Tome and Principe</narrative>
+    </usg:state-location>
+  </iati-activity>
+</iati-activities>

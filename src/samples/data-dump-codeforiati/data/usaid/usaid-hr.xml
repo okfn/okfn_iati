@@ -1,0 +1,1019 @@
+<iati-activities xmlns:usg="https://explorer.usaid.gov" generated-datetime="2025-04-03T20:52:13.509Z" version="2.03">
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-160-160-A-00-03-00103-5</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">CRO SO 3.4 SOCIAL TRANSITIONS</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Mitigation of Adverse Social Conditions and Trends</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="22">
+      <narrative>Solidarity Center</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="899ACF6A47F6">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">-651.00</value>
+      <receiver-org type="22">
+        <narrative>Solidarity Center</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4003" vocabulary="99">
+        <narrative>Policies, Regulations, and Systems</narrative>
+      </sector>
+      <recipient-country code="HR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2004" end="2005"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Croatia</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-160-160-G-00-05-00100</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">CRO SO 1.3 PRIVATE ENTERPRISE GROWTH</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Growth of a Dynamic and Competitive Private Sector</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="BA7A5B2F3F62">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">-1505.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="HR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2005" end="2006"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Croatia</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-160-A-00-01-00109-11</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Civic Participation</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Strengthen the legal, regulatory, institutional, and information environment which protects and enables the growth in associational life and the development of independent and sustainable civil society organizations (CSOs).  Build the capacity of civil society organizations to act as agents for reform and support their participation in democratic decision-making through articulating and representing their members interests, engaging in service delivery, and advocating for issues which become part of the public agenda and are reflected in public policies. Encourage the strengthening of a civic culture which supports democratic institutions and processes, active participation in political and civic life, and the civic virtues of tolerance, pluralism, compromise, trust, and respect for individual rights, including gender equality.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-71031280" role="4" type="22">
+      <narrative>Academy for Educational Development</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="1B77536D1652">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">-30.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-71031280" type="22">
+        <narrative>Academy for Educational Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="HR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>71031280</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Croatia</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-160-C-00-03-00104-5</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Local Government and Decentralization</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Provide technical assistance and training to strengthen sub-national government functions, including development of budgets, local revenue raising, provision of local public services, community planning, participation, and implementation of laws, regulations, policies, and programs. Develop and/or strengthen associations of local governments and/or local government officials.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="22">
+      <narrative>Urban Institute</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="09137CAFC629">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-197140.00</value>
+      <receiver-org type="22">
+        <narrative>Urban Institute</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="HR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Croatia</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-160-C-00-03-00105</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Agricultural Sector Productivity</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Sustain the productivity of the agricultural sector through investments that foster increasing returns to land, labor, and capital. Targeted interventions to male and female producers provide improvements in technology and management practices, expanded access to markets and credit, increased organizational and market efficiency, and restoration and protection of resiliency in production and livelihood systems.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="70">
+      <narrative>Development Alternatives, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="04D6220AA41B">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">-748.00</value>
+      <receiver-org type="70">
+        <narrative>Development Alternatives, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="31120" vocabulary="1">
+        <narrative>Agricultural development</narrative>
+      </sector>
+      <sector code="5005" vocabulary="99">
+        <narrative>Agriculture</narrative>
+      </sector>
+      <recipient-country code="HR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="04D6220AA41B">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">56193.00</value>
+      <receiver-org type="70">
+        <narrative>Development Alternatives, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="31120" vocabulary="1">
+        <narrative>Agricultural development</narrative>
+      </sector>
+      <sector code="5005" vocabulary="99">
+        <narrative>Agriculture</narrative>
+      </sector>
+      <recipient-country code="HR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Croatia</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-160-C-00-04-00101</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Enhancing Small and Medium Enterprise Performance in Croatia (ESP)</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The project was designed to improve the performance of small and medium-sized enterprises in Croatia, increasing employment in the process, and in this it was highly successful.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="70">
+      <narrative>DAI/Nathan Group LLC</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2004-08-15" type="1"/>
+    <activity-date iso-date="2004-08-15" type="2"/>
+    <activity-date iso-date="2017-09-30" type="3"/>
+    <activity-date iso-date="2017-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="0221CA79694A">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">114822.00</value>
+      <receiver-org type="70">
+        <narrative>DAI/Nathan Group LLC</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="HR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2003" end="2008"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="E84545028587">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">-114822.00</value>
+      <receiver-org type="70">
+        <narrative>DAI/Nathan Group LLC</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="HR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="6B4F597E5154">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2017-03-31"/>
+      <value value-date="2017-03-31">-54031.00</value>
+      <receiver-org type="70">
+        <narrative>DAI/Nathan Group LLC</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="HR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="6B4F597E5154">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-03-31"/>
+      <value value-date="2017-03-31">60790.00</value>
+      <receiver-org type="70">
+        <narrative>DAI/Nathan Group LLC</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="HR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="1D63EC4E060D">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">-114822.00</value>
+      <receiver-org type="70">
+        <narrative>DAI/Nathan Group LLC</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="HR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="3602B0329AF6">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">114822.00</value>
+      <receiver-org type="70">
+        <narrative>DAI/Nathan Group LLC</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="HR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2004-08-15"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Croatia</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-160-PCE-I-805-98-00014-15</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">CRO SO 3.4 SOCIAL TRANSITIONS</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Mitigation of Adverse Social Conditions and Trends</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-148655053" role="4" type="70">
+      <narrative>CARANA Corporation</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2014-09-30" type="3"/>
+    <activity-date iso-date="2014-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="C082FFF1C4DF">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">16628.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-148655053" type="70">
+        <narrative>CARANA Corporation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4003" vocabulary="99">
+        <narrative>Policies, Regulations, and Systems</narrative>
+      </sector>
+      <recipient-country code="HR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2004" end="2005"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>148655053</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Croatia</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-160-PCE-I-807-98-00012-1</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">CRO SO 1.3 PRIVATE ENTERPRISE GROWTH</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Growth of a Dynamic and Competitive Private Sector</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="70">
+      <narrative>BearingPoint, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="CFA4ECE130A4">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-1003.00</value>
+      <receiver-org type="70">
+        <narrative>BearingPoint, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="HR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2000" end="2001"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Croatia</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-160-PCE-I-808-98-00013-5</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">CRO SO 1.3 PRIVATE ENTERPRISE GROWTH</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Growth of a Dynamic and Competitive Private Sector</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-006928857" role="4" type="70">
+      <narrative>Booz Allen Hamilton, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="D46FC161AE4B">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">-309.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-006928857" type="70">
+        <narrative>Booz Allen Hamilton, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="HR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2001" end="2002"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>6928857</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>5340390.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Croatia</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-160-PCE-I-819-99-00002-7</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">CRO SO 1.3 PRIVATE ENTERPRISE GROWTH</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Growth of a Dynamic and Competitive Private Sector</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="70">
+      <narrative>Development Alternatives, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="AAC7BB58FA65">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">-945.00</value>
+      <receiver-org type="70">
+        <narrative>Development Alternatives, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="HR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2005" end="2006"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="AAC7BB58FA65">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">39947.00</value>
+      <receiver-org type="70">
+        <narrative>Development Alternatives, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="HR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2005" end="2006"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Croatia</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-LAG-I-00-99-00036-04</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Commercial Law Reform</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Commercial Law Reform</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-74803701" role="4" type="22">
+      <narrative>Urban Institute</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="CC3780B3D766">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">-3407.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-74803701" type="22">
+        <narrative>Urban Institute</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15130" vocabulary="1">
+        <narrative>Legal and judicial development</narrative>
+      </sector>
+      <sector code="2001" vocabulary="99">
+        <narrative>Rule of Law and Human Rights</narrative>
+      </sector>
+      <recipient-country code="HR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2003" end="2004"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>74803701</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Croatia</narrative>
+    </usg:state-location>
+  </iati-activity>
+</iati-activities>

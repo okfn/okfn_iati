@@ -1,0 +1,3911 @@
+<iati-activities xmlns:usg="https://explorer.usaid.gov" generated-datetime="2025-04-03T20:52:13.509Z" version="2.03">
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-525-DFD-I-03-03-00139-00</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Ruling Justly: More Responsive, Transparent Governance</narrative>
+      <narrative xml:lang="es">Gobernar con justicia: una gobernanza más receptiva y transparente</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Ruling Justly: More Responsive, Transparent Governance</narrative>
+      <narrative xml:lang="es">Gobernar con justicia: una gobernanza más receptiva y transparente</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-616968269" role="4" type="70">
+      <narrative>Casals and Associates, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/latin-american-and-caribbean/panama</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="9319E9ED3B26">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">-4250.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-616968269" type="70">
+        <narrative>Casals and Associates, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15110" vocabulary="1">
+        <narrative>Public sector policy and administrative management</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>616968269</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-525-EPP-I-00-04-00024</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Panama Improved Management and Conservation through Critical Watersheds</narrative>
+      <narrative xml:lang="es">Panamá mejoró el manejo y la conservación a través de cuencas críticas</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The IRG team was awarded the Improved Management and Conservation through Critical Watersheds task order in Panama. The successful implementation of USAID's Panama Canal Watershed (PCW) Program FY2007-2009 will foster the sustainable management of water resources and increase biodiversity conservation within four key sub-watersheds and tow protected areas while providing ways to enhance the economic well-being of local residents.</narrative>
+      <narrative xml:lang="es">El equipo del IRG recibió la orden de trabajo para Mejoramiento de la Gestión y Conservación a través de Cuencas Críticas en Panamá. La implementación exitosa del Programa de la Cuenca del Canal de Panamá (PCW) de USAID para el año fiscal 2007-2009 fomentará la gestión sostenible de los recursos hídricos y aumentará la conservación de la biodiversidad dentro de cuatro subcuencas clave y dos áreas protegidas, al tiempo que proporcionará formas de mejorar el bienestar económico de los residentes locales.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-119259364" role="4" type="70">
+      <narrative>International Resources Group Ltd.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2004-09-30" type="1"/>
+    <activity-date iso-date="2004-09-30" type="2"/>
+    <activity-date iso-date="2016-03-31" type="3"/>
+    <activity-date iso-date="2016-03-31" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/latin-american-and-caribbean/panama</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="8CFC7EF7C082">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-09-30"/>
+      <value value-date="2019-09-30">19409.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-119259364" type="70">
+        <narrative>International Resources Group Ltd.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2004-09-30"/>
+    <usg:duns-number>
+      <narrative>119259364</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-525-GA520-G-00-03-00196-2</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">MOMENTUM TOWARDS FAIRER, FASTER JUSTICE SYSTEM ESTABLISHED</narrative>
+      <narrative xml:lang="es">SE ESTABLECE IMPULSO HACIA UN SISTEMA DE JUSTICIA MÁS JUSTO Y RÁPIDO</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Momentum Towards Fairer and Faster Justice System Established</narrative>
+      <narrative xml:lang="es">Se establece el impulso hacia un sistema de justicia más justo y más rápido</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-61000" role="4" type="70">
+      <narrative>Enterprise - United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/latin-american-and-caribbean/panama</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="F7D3214DF98F">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">1404.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-61000" type="70">
+        <narrative>Enterprise - United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15130" vocabulary="1">
+        <narrative>Legal and judicial development</narrative>
+      </sector>
+      <sector code="2001" vocabulary="99">
+        <narrative>Rule of Law and Human Rights</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2003" end="2004"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-525-MCT-EOT</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Natural Resources and Biodiversity</narrative>
+      <narrative xml:lang="es">Recursos Naturales y Biodiversidad</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Conserve biodiversity and manage natural resources in ways that maintain their long-term viability and preserve their potential to meet the needs of present and future generations. Activities include combating illegal and corrupt exploitation of natural resources and the control of invasive species. Programs in this element should be integrated with the Agriculture Area under Economic Growth and Conflict Mitigation and Reconciliation Area under the Peace and Security Objective, when applicable and appropriate.</narrative>
+      <narrative xml:lang="es">Conservar la biodiversidad y gestionar los recursos naturales de manera que mantengan su viabilidad a largo plazo y preserven su potencial para satisfacer las necesidades de las generaciones presentes y futuras. Las actividades incluyen la lucha contra la explotación ilegal y corrupta de los recursos naturales y el control de especies invasoras. Los programas en este elemento deben integrarse con el Área de Agricultura dentro del Área de Crecimiento Económico y Mitigación de Conflictos y Reconciliación dentro del Objetivo de Paz y Seguridad, cuando sea aplicable y apropiado.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Unspecified Vendors - Panama</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-latin-america-and-caribbean</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="A96E4F3148E4">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">-106.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="41030" vocabulary="1">
+        <narrative>Bio-diversity</narrative>
+      </sector>
+      <sector code="6002" vocabulary="99">
+        <narrative>Natural Resources and Biodiversity</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-525-TA-PAN-525-06-0012</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">PHN Policies and Programs Developed and Advanced</narrative>
+      <narrative xml:lang="es">Políticas y Programas de PHN Desarrollados y Avanzados</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Population, Health and Nutrition Policies and Programs Developed and Advanced in LAC</narrative>
+      <narrative xml:lang="es">Políticas y programas de población, salud y nutrición desarrollados y avanzados en ALC</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-790238851" role="4" type="70">
+      <narrative>Personal Services Contractors - USAID</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-latin-america-and-caribbean</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="ACBAE11109CF">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">-1136.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-790238851" type="70">
+        <narrative>Personal Services Contractors - USAID</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1095.0">Child Survival and Health Programs Fund, United States</usg:main-account>
+        <usg:fiscal-funding-year begin="2005" end="2006"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>790238851</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201350750</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Communications, Utilities, and Rental Payments</narrative>
+      <narrative xml:lang="es">Comunicaciones, servicios públicos y pagos de alquiler de USAID</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Communications, Utilities, and Rental Payments.</narrative>
+      <narrative xml:lang="es">Costos administrativos y gastos operativos de USAID que contribuyen a Comunicaciones, Servicios Públicos y Pagos de Alquiler.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Unspecified Vendors - Panama</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/latin-american-and-caribbean/panama</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="G01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="7C678F4F6BE2">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">4373.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="18CE2D429BFA">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">4.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="FA82B8644F13">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">36.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="B5E3617C3E0A">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">-2377.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201351153</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Miscellaneous Goods, Services, and Operations Maintanence</narrative>
+      <narrative xml:lang="es">Mantenimiento de operaciones, servicios y bienes diversos de USAID</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Miscellaneous Goods, Services, and Operations Maintanence.</narrative>
+      <narrative xml:lang="es">Costos administrativos y gastos operativos de USAID que contribuyen al mantenimiento de bienes, servicios y operaciones varios.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Unspecified Vendors - Panama</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/latin-american-and-caribbean/panama</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="G01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="02EF21908CBA">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">558.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="2C5227C9A5AA">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">992.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="2C8C22980D93">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">288.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="DC6EB77140BE">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">165.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="EE6CCD637914">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">231.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="9F0A07DDD338">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">331.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="20BABADF7F7E">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">-134.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201351467</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Pay and Benefits</narrative>
+      <narrative xml:lang="es">Pagos y beneficios de USAID</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Payrolls and Benefits.</narrative>
+      <narrative xml:lang="es">Costos administrativos y gastos operativos de USAID que contribuyen a Nóminas y Beneficios.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Unspecified Vendors - Panama</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/latin-american-and-caribbean/panama</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="G01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="C3D5710EBA0E">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">1857.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201351636</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Travel and Transportation</narrative>
+      <narrative xml:lang="es">Viajes y transporte de USAID</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Travel and Transportation.</narrative>
+      <narrative xml:lang="es">Costos administrativos y gastos operativos de USAID que contribuyen a Viajes y Transporte.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Unspecified Vendors - Panama</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/latin-american-and-caribbean/panama</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="G01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="91CD5F481D5A">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">0.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="61A17208D4DC">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">1199.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="753435D0016A">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">736.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201451153</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Miscellaneous Goods, Services, and Operations Maintanence</narrative>
+      <narrative xml:lang="es">Mantenimiento de operaciones, servicios y bienes diversos de USAID</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Miscellaneous Goods, Services, and Operations Maintanence.</narrative>
+      <narrative xml:lang="es">Costos administrativos y gastos operativos de USAID que contribuyen al mantenimiento de bienes, servicios y operaciones varios.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Unspecified Vendors - Panama</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2014-09-30" type="3"/>
+    <activity-date iso-date="2014-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/latin-american-and-caribbean/panama</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="G01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="8C7152C80190">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">218.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="948C899417DF">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">-82.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201451467</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Pay and Benefits</narrative>
+      <narrative xml:lang="es">Pagos y beneficios de USAID</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Payrolls and Benefits.</narrative>
+      <narrative xml:lang="es">Costos administrativos y gastos operativos de USAID que contribuyen a Nóminas y Beneficios.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Unspecified Vendors - Panama</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2014-09-30" type="3"/>
+    <activity-date iso-date="2014-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/latin-american-and-caribbean/panama</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="G01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="40960C02C956">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">500.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="4D7411122485">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">500.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="CEA807620822">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">600.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201550750</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Communications, Utilities, and Rental Payments</narrative>
+      <narrative xml:lang="es">Comunicaciones, servicios públicos y pagos de alquiler de USAID</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Communications, Utilities, and Rental Payments.</narrative>
+      <narrative xml:lang="es">Costos administrativos y gastos operativos de USAID que contribuyen a Comunicaciones, Servicios Públicos y Pagos de Alquiler.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Unspecified Vendors - Panama</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/latin-american-and-caribbean/panama</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="G01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="0EEF512B4079">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-12-31"/>
+      <value value-date="2014-12-31">-6928.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201551153</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Miscellaneous Goods, Services, and Operations Maintanence</narrative>
+      <narrative xml:lang="es">Mantenimiento de operaciones, servicios y bienes diversos de USAID</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Miscellaneous Goods, Services, and Operations Maintanence.</narrative>
+      <narrative xml:lang="es">Costos administrativos y gastos operativos de USAID que contribuyen al mantenimiento de bienes, servicios y operaciones varios.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Unspecified Vendors - Panama</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/latin-american-and-caribbean/panama</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="G01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="E612478BDC60">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-12-31"/>
+      <value value-date="2014-12-31">-2044.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="14D5BFEE907D">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-12-31"/>
+      <value value-date="2014-12-31">-3150.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="F9D97CA21CB0">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-12-31"/>
+      <value value-date="2014-12-31">-100.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201551467</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Pay and Benefits</narrative>
+      <narrative xml:lang="es">Pagos y beneficios de USAID</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Payrolls and Benefits.</narrative>
+      <narrative xml:lang="es">Costos administrativos y gastos operativos de USAID que contribuyen a Nóminas y Beneficios.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Unspecified Vendors - Panama</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/latin-american-and-caribbean/panama</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="G01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="2BF400EB0116">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-12-31"/>
+      <value value-date="2014-12-31">-9159.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201551636</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Travel and Transportation</narrative>
+      <narrative xml:lang="es">Viajes y transporte de USAID</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Travel and Transportation.</narrative>
+      <narrative xml:lang="es">Costos administrativos y gastos operativos de USAID que contribuyen a Viajes y Transporte.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Unspecified Vendors - Panama</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/latin-american-and-caribbean/panama</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="G01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="14F4DC7ADDE0">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-12-31"/>
+      <value value-date="2014-12-31">-223.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201555004</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Miscellaneous Goods, Services, and Operations Maintanence</narrative>
+      <narrative xml:lang="es">Mantenimiento de operaciones, servicios y bienes diversos de USAID</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Miscellaneous Goods, Services, and Operations Maintanence.</narrative>
+      <narrative xml:lang="es">Costos administrativos y gastos operativos de USAID que contribuyen al mantenimiento de bienes, servicios y operaciones varios.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="40">
+      <narrative>American Red Cross</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="416F839E3C02" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">50000.00</value>
+      <receiver-org type="40">
+        <narrative>American Red Cross</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="0246ED110D02" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">50000.00</value>
+      <receiver-org type="40">
+        <narrative>American Red Cross</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201555056</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Pay and Benefits</narrative>
+      <narrative xml:lang="es">Pagos y beneficios de USAID</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Payrolls and Benefits.</narrative>
+      <narrative xml:lang="es">Costos administrativos y gastos operativos de USAID que contribuyen a Nóminas y Beneficios.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Unspecified Vendors - Panama</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="16A4B359E7AB" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-991.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201555084</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Travel and Transportation</narrative>
+      <narrative xml:lang="es">Viajes y transporte de USAID</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Travel and Transportation.</narrative>
+      <narrative xml:lang="es">Costos administrativos y gastos operativos de USAID que contribuyen a Viajes y Transporte.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Unspecified Vendors - Panama</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="52CE57C870F7" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-40.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201651153</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Miscellaneous Goods, Services, and Operations Maintanence</narrative>
+      <narrative xml:lang="es">Mantenimiento de operaciones, servicios y bienes diversos de USAID</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Miscellaneous Goods, Services, and Operations Maintanence.</narrative>
+      <narrative xml:lang="es">Costos administrativos y gastos operativos de USAID que contribuyen al mantenimiento de bienes, servicios y operaciones varios.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Unspecified Vendors - Panama</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/latin-american-and-caribbean/panama</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="G01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="986E0BB7174A">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">-11719.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201651636</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Travel and Transportation</narrative>
+      <narrative xml:lang="es">Viajes y transporte de USAID</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Travel and Transportation.</narrative>
+      <narrative xml:lang="es">Costos administrativos y gastos operativos de USAID que contribuyen a Viajes y Transporte.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Unspecified Vendors - Panama</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/latin-american-and-caribbean/panama</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="G01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="49438C9F45B1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">-2263.00</value>
+      <receiver-org>
+        <narrative>Unspecified Vendors - Panama</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720FDA19GR00003</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Disaster Readiness</narrative>
+      <narrative xml:lang="es">Preparación para desastres</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The provision of effective protection, assistance, and durable solutions for refugees, internally displaced persons (IDPs), and other victims of conflict and disasters.</narrative>
+      <narrative xml:lang="es">La provisión de protección, asistencia y soluciones duraderas efectivas para los refugiados, los desplazados internos (PDI) y otras víctimas de conflictos y desastres.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-481357460" role="4" type="22">
+      <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2020-10-01" type="1"/>
+    <activity-date iso-date="2020-10-01" type="2"/>
+    <activity-date iso-date="2021-09-30" type="3"/>
+    <activity-date iso-date="2021-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website/>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="F64D36C1A70A" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2019-04-30"/>
+      <value value-date="2019-04-30">150000.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-481357460" type="22">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="666B283CFB8D" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-08-31"/>
+      <value value-date="2019-08-31">5895.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-481357460" type="22">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="4DA5B8EFFEC2" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-01-31"/>
+      <value value-date="2020-01-31">16619.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-481357460" type="22">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="FFC398D0BF17" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-03-31"/>
+      <value value-date="2020-03-31">16619.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-481357460" type="22">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="51B71FA793D7" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-05-31"/>
+      <value value-date="2020-05-31">70314.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-481357460" type="22">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="634DCC2B4DAA" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-08-31"/>
+      <value value-date="2020-08-31">40371.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-481357460" type="22">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="B02005903969" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-10-31"/>
+      <value value-date="2020-10-31">182.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-481357460" type="22">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>481357460</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>150000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-525-A-11-00001</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Anti-Corruption Reforms</narrative>
+      <narrative xml:lang="es">Reformas anticorrupción</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Promote governance institutions, processes, and policies that are transparent and accountable across all development sectors. Support non-governmental as well as governmental institutions (including enforcement and investigation entities, independent audit agencies, anti-corruption commissions, procurement agencies, legislatures, line ministries, independent agencies, political parties, judicial actors, as well as civil society organizations, academia, press and the private sector). Support civic education and advocacy for reform of laws and practices or directly improving accountability and transparency of governance processes covering various development sectors.</narrative>
+      <narrative xml:lang="es">Promover instituciones, procesos y políticas de gobernanza que sean transparentes y responsables en todos los sectores de desarrollo. Apoyar a las instituciones gubernamentales y no gubernamentales (incluidas entidades de aplicación e investigación, agencias de auditoría independientes, comisiones anticorrupción, agencias de adquisiciones, legislaturas, ministerios competentes, agencias independientes, partidos políticos, actores judiciales, así como organizaciones de la sociedad civil, el mundo académico, la prensa y el sector privado). Apoyar la educación cívica y la promoción de la reforma de leyes y prácticas o mejorar directamente la rendición de cuentas y la transparencia de los procesos de gobernanza que abarcan diversos sectores de desarrollo.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-806207841" role="4" type="22">
+      <narrative>American Bar Association</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/latin-american-and-caribbean/panama</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="B5E3EC3ED667">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">95274.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-806207841" type="22">
+        <narrative>American Bar Association</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15113" vocabulary="1">
+        <narrative>Anti-corruption organisations and institutions</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>806207841</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-525-C-10-00001</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Local Government and Decentralization</narrative>
+      <narrative xml:lang="es">Gobierno Local y Descentralización</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Provide technical assistance and training to strengthen sub-national government functions, including development of budgets, local revenue raising, provision of local public services, community planning, participation, and implementation of laws, regulations, policies, and programs. Develop and/or strengthen associations of local governments and/or local government officials.</narrative>
+      <narrative xml:lang="es">Proporcionar asistencia técnica y capacitación para fortalecer las funciones de los gobiernos subnacionales, incluido el desarrollo de presupuestos, la recaudación de ingresos locales, la prestación de servicios públicos locales, la planificación comunitaria, la participación y la implementación de leyes, regulaciones, políticas y programas. Desarrollar y/o fortalecer asociaciones de gobiernos locales y/o funcionarios de gobiernos locales.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="70">
+      <narrative>Creative Associates International</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2021-10-01" type="1"/>
+    <activity-date iso-date="2021-10-01" type="2"/>
+    <activity-date iso-date="2022-09-30" type="3"/>
+    <activity-date iso-date="2022-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/latin-american-and-caribbean</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="A122FF1390FA">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">50.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="F109A0736F1F">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">749117.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="F13C17D5DCDD">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">66647.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="DAA1955453AB">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">24704.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="32130" vocabulary="1">
+        <narrative>Small and medium-sized enterprises (SME) development</narrative>
+      </sector>
+      <sector code="5007" vocabulary="99">
+        <narrative>Economic Opportunity</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="FF6676B5FA59">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">99687.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="32130" vocabulary="1">
+        <narrative>Small and medium-sized enterprises (SME) development</narrative>
+      </sector>
+      <sector code="5007" vocabulary="99">
+        <narrative>Economic Opportunity</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="78A33C3B493B">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">13742.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2008" end="2009"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="A7F87C1FF588">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">39744.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15130" vocabulary="1">
+        <narrative>Legal and judicial development</narrative>
+      </sector>
+      <sector code="2001" vocabulary="99">
+        <narrative>Rule of Law and Human Rights</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="8A9E0412B117">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">234766.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="146FA9F06ADA">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">542905.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="A49EFF1430AB">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">812177.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="80A89E60131A">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">233602.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="D36C47A3877F">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">157914.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="1738CB0D6CB7">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">68365.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="0F09D7DE0D63">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-12-31"/>
+      <value value-date="2016-12-31">-52025.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="11324685ADE9">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">8200.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="7390507CE56C">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">8948.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="75AB329F7860">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">146501.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="EF51B43E2257">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">66460.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="D91E87A3FB20">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">69740.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="CAF8516F6D79">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">200149.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="C9C2D3ABEDBF">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2020-09-30"/>
+      <value value-date="2020-09-30">-482.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="C9C2D3ABEDBF">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-09-30"/>
+      <value value-date="2020-09-30">16636.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="11FDDDE2AAF9">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-09-30"/>
+      <value value-date="2020-09-30">-929.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="E74BF6B99FC8">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2022-09-30"/>
+      <value value-date="2022-09-30">-929.00</value>
+      <receiver-org type="70">
+        <narrative>Creative Associates International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative>8471117.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-525-S-11-00001</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Administration and Oversight</narrative>
+      <narrative xml:lang="es">Administración y Supervisión</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Supports the following illustrative program-funded costs: salaries of US, FSN, and TCN and other staff such as PSCs, RSSAs, PASAs, CASUs working for the US Government managing, administering, and supporting programs and their program-funded benefits such as housing, travel, transportation, education allowances etc; institutional contractors that provide such staff, rent, IT services, the program-funded share of utilities, staff training costs and the cost of developing and administering training programs, equipment and supplies, ICASS, vehicle fuel and maintenance, maintenance contracts, janitorial services, operational unit web page development and maintenance, outreach such as publications and the cost of their preparation (including staff costs), and technical assistance to ensure USG compliance with regulations.</narrative>
+      <narrative xml:lang="es">Respalda los siguientes costos ilustrativos financiados por programas: salarios de EE. UU., FSN y TCN y otro personal como PSC, RSSA, PASA, CASU que trabajan para el gobierno de EE. UU. que gestionan, administran y apoyan programas y sus beneficios financiados por programas, como vivienda, viajes, transporte, asignaciones educativas, etc.; contratistas institucionales que proporcionan dicho personal, alquiler, servicios de TI, la parte financiada por el programa de los servicios públicos, costos de capacitación del personal y el costo de desarrollar y administrar programas, equipos y suministros de capacitación, ICASS, combustible y mantenimiento de vehículos, contratos de mantenimiento, servicios de limpieza, desarrollo y mantenimiento de la página web de la unidad operativa, divulgación como publicaciones y el costo de su preparación (incluidos los costos de personal) y asistencia técnica para garantizar el cumplimiento de las regulaciones del Gobierno de los Estados Unidos.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-968098975" role="4" type="70">
+      <narrative>Personal Services Contractors - USAID</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/latin-american-and-caribbean/panama</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="G01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="F64276692638">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-11046.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-968098975" type="70">
+        <narrative>Personal Services Contractors - USAID</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>968098975</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-OAA-BC-12-00011</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Crisis Assistance and Recovery</narrative>
+      <narrative xml:lang="es">Asistencia en crisis y recuperación</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Provide goods, personnel, services and assistance to meet basic human needs in order to foster transition from relief according to principles of universality, impartiality and human dignity. This element should be done, when possible, as part of an integrated, coordinated and/or multi-sectoral approach.</narrative>
+      <narrative xml:lang="es">Proporcionar bienes, personal, servicios y asistencia para satisfacer las necesidades humanas básicas a fin de fomentar la transición del socorro de acuerdo con los principios de universalidad, imparcialidad y dignidad humana. Este elemento debería realizarse, cuando sea posible, como parte de un enfoque integrado, coordinado y/o multisectorial.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-928869098" role="4" type="70">
+      <narrative>Clearon Corp</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="A686EDF2AC51" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">42000.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-928869098" type="70">
+        <narrative>Clearon Corp</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>928869098</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-OFDA-G-14-00145</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">OFDA-2014-RET</narrative>
+      <narrative xml:lang="es">OFDA-2014-RET</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Adolescents and Youth Living with Disabilities Access to Inclusive and Safe Education in Panama</narrative>
+      <narrative xml:lang="es">Adolescentes y jóvenes con discapacidad acceden a una educación inclusiva y segura en Panamá</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-481357460" role="4" type="22">
+      <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-09-30" type="1"/>
+    <activity-date iso-date="2014-09-30" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <budget status="1">
+      <period-start iso-date="2014-09-30"/>
+      <period-end iso-date="2015-09-30"/>
+      <value currency="USD" value-date="2014-09-30">150000.00</value>
+    </budget>
+    <transaction ref="17BC097725F4" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">150000.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-481357460" type="22">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="2ECD35DD59C7" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-03-31"/>
+      <value value-date="2015-03-31">6621.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-481357460" type="22">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="5137AD5D7397" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">23055.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-481357460" type="22">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="2A45F12928CA" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">45679.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-481357460" type="22">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="2105CE8131BF" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">74645.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-481357460" type="22">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2014-10-01"/>
+    <usg:duns-number>
+      <narrative>481357460</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>150000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-OFDA-G-15-00135</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Capacity Building, Preparedness, and Planning</narrative>
+      <narrative xml:lang="es">Desarrollo de capacidades, preparación y planificación</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Improve the ability of the USG, host countries and other partners to prepare for and mitigate the effects of disasters, including both natural disasters and complex emergencies, taking into account the differences in men and womens freedom of movement and access to information. Activities under this component include any efforts to enhance the capacities of the USG (in Washington and in the field), humanitarian assistance providers, national host-country authorities, and local communities to engage in disaster reduction and response activities. Activities consist of standardized and coordinated assessments, monitoring, information sharing, data and situational analysis, joint planning; enhancement of coping mechanisms, including the capacity to address adaptation to constantly changing situations on the ground including climate variability and climate change.</narrative>
+      <narrative xml:lang="es">Mejorar la capacidad del Gobierno de los Estados Unidos, los países anfitriones y otros socios para prepararse y mitigar los efectos de los desastres, incluidos tanto los desastres naturales como las emergencias complejas, teniendo en cuenta las diferencias en la libertad de movimiento y el acceso a la información de hombres y mujeres. Las actividades bajo este componente incluyen cualquier esfuerzo para mejorar las capacidades del Gobierno de los Estados Unidos (en Washington y en el campo), los proveedores de asistencia humanitaria, las autoridades nacionales del país anfitrión y las comunidades locales para participar en actividades de respuesta y reducción de desastres. Las actividades consisten en evaluaciones estandarizadas y coordinadas, monitoreo, intercambio de información, análisis de datos y situación, planificación conjunta; mejora de los mecanismos de respuesta, incluida la capacidad de abordar la adaptación a situaciones en constante cambio sobre el terreno, incluida la variabilidad climática y el cambio climático.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="22">
+      <narrative>USAID redacted this field in accordance with the Principled Exceptions outlined in the Office of Management and Budget Bulletin 12-01.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2018-09-30" type="3"/>
+    <activity-date iso-date="2018-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="FA18C35F5392" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">150000.00</value>
+      <receiver-org type="22">
+        <narrative>USAID redacted this field in accordance with the Principled Exceptions outlined in the Office of Management and Budget Bulletin 12-01.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="5B5F72F86CE1" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">61537.00</value>
+      <receiver-org type="22">
+        <narrative>USAID redacted this field in accordance with the Principled Exceptions outlined in the Office of Management and Budget Bulletin 12-01.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="A2AF70676865" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">-387.00</value>
+      <receiver-org type="22">
+        <narrative>USAID redacted this field in accordance with the Principled Exceptions outlined in the Office of Management and Budget Bulletin 12-01.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="914973C8B00E" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">2935.00</value>
+      <receiver-org type="22">
+        <narrative>USAID redacted this field in accordance with the Principled Exceptions outlined in the Office of Management and Budget Bulletin 12-01.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="CB6D3B8E8341" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-06-30"/>
+      <value value-date="2016-06-30">25319.00</value>
+      <receiver-org type="22">
+        <narrative>USAID redacted this field in accordance with the Principled Exceptions outlined in the Office of Management and Budget Bulletin 12-01.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="FD0089FDB79A" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">55490.00</value>
+      <receiver-org type="22">
+        <narrative>USAID redacted this field in accordance with the Principled Exceptions outlined in the Office of Management and Budget Bulletin 12-01.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="0F82031766FB" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2018-06-30"/>
+      <value value-date="2018-06-30">-2476.00</value>
+      <receiver-org type="22">
+        <narrative>USAID redacted this field in accordance with the Principled Exceptions outlined in the Office of Management and Budget Bulletin 12-01.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="0F82031766FB" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-06-30"/>
+      <value value-date="2018-06-30">2630.00</value>
+      <receiver-org type="22">
+        <narrative>USAID redacted this field in accordance with the Principled Exceptions outlined in the Office of Management and Budget Bulletin 12-01.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative>147524.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-OFDA-G-16-00102</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID/OFDA Grant for Central America/Regional</narrative>
+      <narrative xml:lang="es">Subvención USAID/OFDA para Centroamérica/regional</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">New Award for Protection Through Education in Panama working with children and youth with disabilities.</narrative>
+      <narrative xml:lang="es">Nuevo Premio de Protección a través de la Educación en Panamá trabajando con niños y jóvenes con discapacidad.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2016-08-15" type="1"/>
+    <activity-date iso-date="2016-08-15" type="2"/>
+    <activity-date iso-date="2022-09-30" type="3"/>
+    <activity-date iso-date="2022-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website/>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="565557FDE2D8" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">150000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="D4EAFB925B5D" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-12-31"/>
+      <value value-date="2016-12-31">862.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="56151D6DE07C" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-03-31"/>
+      <value value-date="2017-03-31">9986.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="ADA0388A515D" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-06-30"/>
+      <value value-date="2017-06-30">25940.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="C82D53D57F76" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-09-30"/>
+      <value value-date="2017-09-30">40559.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="82B6453B2A0B" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-06-30"/>
+      <value value-date="2018-06-30">72650.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="56544C24E211" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-12-31"/>
+      <value value-date="2020-12-31">-9586.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="B69521344B48" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2022-06-30"/>
+      <value value-date="2022-06-30">-9586.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>RET the Foundation for the Refugee Education Trust</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2016-08-15"/>
+    <usg:duns-number>
+      <narrative>481357460</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>140414.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-OFDA-G-16-00110</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID/OFDA Grant for Central America/Regional</narrative>
+      <narrative xml:lang="es">Subvención USAID/OFDA para Centroamérica/regional</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">ARC Panama - 12 mo - Risk Management Policy and Practice (RMPP) and WASH</narrative>
+      <narrative xml:lang="es">ARC Panamá - 12 meses - Política y Práctica de Gestión de Riesgos (RMPP) y WASH</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-003255213" role="4" type="40">
+      <narrative>American Red Cross</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2016-08-04" type="1"/>
+    <activity-date iso-date="2016-08-04" type="2"/>
+    <activity-date iso-date="2022-09-30" type="3"/>
+    <activity-date iso-date="2022-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website/>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="C6102E897AC5" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">149845.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-003255213" type="40">
+        <narrative>American Red Cross</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="06D93C08DC9C" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-12-31"/>
+      <value value-date="2016-12-31">345.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-003255213" type="40">
+        <narrative>American Red Cross</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="34EA87166280" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-03-31"/>
+      <value value-date="2017-03-31">2003.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-003255213" type="40">
+        <narrative>American Red Cross</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="5B73A623D335" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-06-30"/>
+      <value value-date="2017-06-30">53379.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-003255213" type="40">
+        <narrative>American Red Cross</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="D1C98E18324D" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-09-30"/>
+      <value value-date="2017-09-30">33571.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-003255213" type="40">
+        <narrative>American Red Cross</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="E42DCD4542A1" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-12-31"/>
+      <value value-date="2017-12-31">51857.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-003255213" type="40">
+        <narrative>American Red Cross</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="5323B3EC8FB9" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-03-31"/>
+      <value value-date="2018-03-31">3500.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-003255213" type="40">
+        <narrative>American Red Cross</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="48D9CE1F816E" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-12-31"/>
+      <value value-date="2021-12-31">-5410.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-003255213" type="40">
+        <narrative>American Red Cross</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="9DDACE34A015" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2022-02-28"/>
+      <value value-date="2022-02-28">-10596.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-003255213" type="40">
+        <narrative>American Red Cross</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="PA"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2016-08-04"/>
+    <usg:duns-number>
+      <narrative>3255213</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>139248.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Panama</narrative>
+    </usg:state-location>
+  </iati-activity>
+</iati-activities>

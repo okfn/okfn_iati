@@ -1,0 +1,1629 @@
+<iati-activities xmlns:usg="https://explorer.usaid.gov" generated-datetime="2025-04-03T20:52:13.509Z" version="2.03">
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-233-EPP-I-00-03-00005</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Peace and Reconciliation Processes</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Support and strengthen the negotiation process and implement peace and reconciliation processes, accords and ceasefire agreements at track levels 1, 2 and 3, including support to indigenous peacebuilding efforts. For a peace/negotiations process to have a chance of success, it must entail building trust in the process, between parties, and among their constituents, with a special focus on including women. Illustrative activities include negotiation training; platform development; public opinion polling; facilitation activities; elder statesmen engagement; provision of international expert advice and knowledge; financial support to parties; multi-stakeholder dialogues; assistance with the design of peacebuilding training programs; support and maintenance of agreed verification mechanisms; support to complaint tracking mechanisms; and work with local and national government representatives to bring them closer to their constituencies.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-126497122" role="4" type="70">
+      <narrative>CORE International, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Weber Wang</narrative>
+      </person-name>
+      <telephone>+1 202-567-4233</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/europe-and-eurasia/cyprus</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="1266EDE967B5">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">-1264.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-126497122" type="70">
+        <narrative>CORE International, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="1266EDE967B5">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">52826.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-126497122" type="70">
+        <narrative>CORE International, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>126497122</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>3394928.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Cyprus</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201350673</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Communications, Utilities, and Rental Payments</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Communications, Utilities, and Rental Payments.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Government of Cyprus</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Weber Wang</narrative>
+      </person-name>
+      <telephone>+1 202-567-4233</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/europe-and-eurasia/cyprus</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="G01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="9FF5D0EB483F">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">7.00</value>
+      <receiver-org>
+        <narrative>Government of Cyprus</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="91010" vocabulary="1">
+        <narrative>Operating Expenses</narrative>
+      </sector>
+      <sector code="8001" vocabulary="99">
+        <narrative>Direct Administrative Costs</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1000.0">Operating Expenses of USAID</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Cyprus</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-233-A-00-05-00106</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">UNDP Action for Cooperation Trust Programme (ACT)</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">UNDPs role in helping to address Cyprus conflict is unique in the organisations global experience. The Action for Cooperation Trust Programme (ACT) started in 2005 and succeeded the Bi-Communal Development Programme (BDP) which supported peace building efforts from 1998. Different phases of the ACT programme targeted the capacity of civil society to feed into the process of inter-communal reconciliation, and this UNDP support has responded to the growth of civic engagement priorities on the island. In the period 2005-2008 ACT created new spaces for citizen peace building in Cyprus, and was characterised by many small projects aimed at showing that inter-communal cooperation was possible. Starting in 2009 UNDP-ACT supported projects focussed on helping to prepare civil society to engage in the peace process and set the foundations for a durable process of reconciliation.</narrative>
+    </description>
+    <participating-org ref="US-GOV-11" role="1" type="10">
+      <narrative>Department of State</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-41114" role="4" type="40">
+      <narrative>United Nations Development Programme</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2005-09-30" type="1"/>
+    <activity-date iso-date="2005-09-30" type="2"/>
+    <activity-date iso-date="2019-09-30" type="3"/>
+    <activity-date iso-date="2019-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/center</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="760B7A721B2A">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-06-30"/>
+      <value value-date="2014-06-30">600000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15110" vocabulary="1">
+        <narrative>Public sector policy and administrative management</narrative>
+      </sector>
+      <sector code="2003" vocabulary="99">
+        <narrative>Political Competition and Consensus-Building</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="19.0"/>
+        <usg:main-account code="1121.0">Democracy Fund, Department of State</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="214338BCAC34">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-06-30"/>
+      <value value-date="2016-06-30">209565.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15110" vocabulary="1">
+        <narrative>Public sector policy and administrative management</narrative>
+      </sector>
+      <sector code="2003" vocabulary="99">
+        <narrative>Political Competition and Consensus-Building</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="19.0"/>
+        <usg:main-account code="1121.0">Democracy Fund, Department of State</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="9D91BB9E17C3">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">-390434.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15110" vocabulary="1">
+        <narrative>Public sector policy and administrative management</narrative>
+      </sector>
+      <sector code="2003" vocabulary="99">
+        <narrative>Political Competition and Consensus-Building</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="19.0"/>
+        <usg:main-account code="1121.0">Democracy Fund, Department of State</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="22AFCD86D357">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">-375695.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2008" end="2009"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="34D047F4FFA4">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">375695.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2008" end="2009"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="E683FACF03CB">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">1007905.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="2DFC386AD0A3">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">1818924.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="113E9EFE4768">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">32763.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="35C8DDE287B6">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">13816.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="548A9361126E">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">330668.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="D5CBD354EB33">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">635977.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="60E53166F639">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">725643.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="CDFB480A1944">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-06-30"/>
+      <value value-date="2014-06-30">57987.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="72B772E8F131">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">819842.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="E6E989565BA4">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-12-31"/>
+      <value value-date="2014-12-31">380767.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="D72B9DB6926B">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-03-31"/>
+      <value value-date="2015-03-31">654351.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="379B498495F5">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">332805.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="9AFB2714C753">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">482144.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="A68A616C69C5">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">957000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="30BC20DEFD15">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-06-30"/>
+      <value value-date="2016-06-30">330999.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="7D1B803F4D62">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">520000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="7D1B803F4D62">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">520000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="0689FBB7371D">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">1950000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="0689FBB7371D">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">375695.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="161813F765E9">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">1574304.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="755886BAE5C9">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-03-31"/>
+      <value value-date="2019-03-31">-414.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="EE48A76A346E">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2019-06-30"/>
+      <value value-date="2019-06-30">-414.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2005-09-30"/>
+    <usg:duns-number>
+      <narrative>645521498</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>61591984.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Cyprus</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-233-A-13-00001</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Sharing History, Art, Research and Education (SHARE) Global Development Alliance</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The agreement will support the implementation of the pioneering Sharing History, Art, Research and Education (SHARE) initiative. SHARE is a partnership program between the Costas and Rita Severis Foundation, USAID, the Turkish Cypriot University Womens Association, and the NGO Support Center. The goal of SHARE is to provide a common platform for the exploration of the islands cultural heritage through various activities and through these to increase the potential for peaceful coexistence in Cyprus. The partners hope that SHARE will serve as a model for promoting and expanding bicommunal activity via local people and communities, local private sector business, non-governmental organizations and leading local and international academic institutions.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-565553787" role="4" type="23">
+      <narrative>Costas and Rita Severis Foundation</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2019-09-30" type="3"/>
+    <activity-date iso-date="2019-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Weber Wang</narrative>
+      </person-name>
+      <telephone>+1 202-567-4233</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/europe-and-eurasia/cyprus</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="8A97BCF27402">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">1750000.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-565553787" type="23">
+        <narrative>Costas and Rita Severis Foundation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="4A1409A0E921">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">91277.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-565553787" type="23">
+        <narrative>Costas and Rita Severis Foundation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="047CFC537556">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">261527.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-565553787" type="23">
+        <narrative>Costas and Rita Severis Foundation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="88A30E68637E">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">417701.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-565553787" type="23">
+        <narrative>Costas and Rita Severis Foundation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="91FBEC2A52BE">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-06-30"/>
+      <value value-date="2014-06-30">341158.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-565553787" type="23">
+        <narrative>Costas and Rita Severis Foundation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="4463B092EEAB">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">91541.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-565553787" type="23">
+        <narrative>Costas and Rita Severis Foundation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="00798D10C125">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">167162.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-565553787" type="23">
+        <narrative>Costas and Rita Severis Foundation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="84177BAB4A68">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">145332.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-565553787" type="23">
+        <narrative>Costas and Rita Severis Foundation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="D15AF7534413">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">-231302.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-565553787" type="23">
+        <narrative>Costas and Rita Severis Foundation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="488360C81D7A">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-03-31"/>
+      <value value-date="2019-03-31">2203.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-565553787" type="23">
+        <narrative>Costas and Rita Severis Foundation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="17D605FF401B">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2019-06-30"/>
+      <value value-date="2019-06-30">-797.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-565553787" type="23">
+        <narrative>Costas and Rita Severis Foundation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2013-02-22"/>
+    <usg:duns-number>
+      <narrative>565553787</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>1518698.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Cyprus</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-233-G-11-00001</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Crisis Assistance and Recovery</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Provide goods, personnel, services and assistance to meet basic human needs in order to foster transition from relief according to principles of universality, impartiality and human dignity. This element should be done, when possible, as part of an integrated, coordinated and/or multi-sectoral approach.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-565475073" role="4" type="40">
+      <narrative>Red Cross Society</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="665B25BCF798" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">-5000.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-565475073" type="40">
+        <narrative>Red Cross Society</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>565475073</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Cyprus</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-EEM-I-01-07-00005</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Promoting Private Sector Development Program (PPSD)</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Promoting Private Sector Development Program (PPSD)</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-019121586" role="4" type="70">
+      <narrative>Deloitte Touche Tohmatsu Limited</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2007-03-01" type="1"/>
+    <activity-date iso-date="2007-03-01" type="2"/>
+    <activity-date iso-date="2021-09-30" type="3"/>
+    <activity-date iso-date="2021-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/europe-and-eurasia/cyprus</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="1F8C94069BFB">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">280294.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-019121586" type="70">
+        <narrative>Deloitte Touche Tohmatsu Limited</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="0D36A084B390">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">214503.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-019121586" type="70">
+        <narrative>Deloitte Touche Tohmatsu Limited</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="77F01B21F1CE">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">137729.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-019121586" type="70">
+        <narrative>Deloitte Touche Tohmatsu Limited</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="1071237CFEA9">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">100554.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-019121586" type="70">
+        <narrative>Deloitte Touche Tohmatsu Limited</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="05CDB942D16C">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2021-06-30"/>
+      <value value-date="2021-06-30">-8414.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-019121586" type="70">
+        <narrative>Deloitte Touche Tohmatsu Limited</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2007-03-01"/>
+    <usg:duns-number>
+      <narrative>19121586</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Cyprus</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-EPP-I-06-03-00013</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Supporting Activities that Value the Environment (SAVE) Project</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The purpose is to bolster activities in environmental and water management by providing resources to facilitate the introduction and implementation of land and land-use planning concepts, and tools.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-119259364" role="4" type="70">
+      <narrative>International Resources Group Ltd.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2003-09-30" type="1"/>
+    <activity-date iso-date="2003-09-30" type="2"/>
+    <activity-date iso-date="2019-09-30" type="3"/>
+    <activity-date iso-date="2019-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Weber Wang</narrative>
+      </person-name>
+      <telephone>+1 202-567-4233</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/europe-and-eurasia/cyprus</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="287D8437348C">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2019-09-30"/>
+      <value value-date="2019-09-30">-834.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-119259364" type="70">
+        <narrative>International Resources Group Ltd.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="287D8437348C">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-09-30"/>
+      <value value-date="2019-09-30">49268.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-119259364" type="70">
+        <narrative>International Resources Group Ltd.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2003-09-30"/>
+    <usg:duns-number>
+      <narrative>119259364</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Cyprus</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-RAN-I-06-05-00026</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">FORECAST Cyprus - Capacity Development Program (CDP)</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The Capacity Development Program (CDP) is designed to foster conditions for a durable settlement by providing economic development and other support to the Turkish Cypriot Community (TCC). The project complements USAID and other donor programs by addressing critical performance gaps that limit the capacity of the TCC to fully participate in future reconciliation and adoption of the acquis communautaire. The USAID/Cyprus Strategic Objective (SO) of strengthening the conditions that will foster a durable settlement is supported by two mutually reinforcing Intermediate Results (IRs). The first IR focuses on a strengthened culture of mutual understanding. The second IR addresses increased parity of economic opportunity. As a cross-cutting program, CDP complements and supports all other U.S. Government-funded programs by providing [to groups or individuals at targeted local institutions] capacity development opportunities in critical areas.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="22">
+      <narrative>World Learning, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2008-08-28" type="1"/>
+    <activity-date iso-date="2008-08-28" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Weber Wang</narrative>
+      </person-name>
+      <telephone>+1 202-567-4233</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/europe-and-eurasia/cyprus</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="5D6EB60FA5AE">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-06-30"/>
+      <value value-date="2014-06-30">17457.00</value>
+      <receiver-org type="22">
+        <narrative>World Learning, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2008" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="7459FF6B56B7">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-03-31"/>
+      <value value-date="2015-03-31">-27452.00</value>
+      <receiver-org type="22">
+        <narrative>World Learning, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15220" vocabulary="1">
+        <narrative>Civilian peace-building, conflict prevention and resolution</narrative>
+      </sector>
+      <sector code="1006" vocabulary="99">
+        <narrative>Conflict Mitigation and Reconciliation</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2008" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2008-08-28"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Cyprus</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-REE-A-00-05-00007-01</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">CYP SO 4.1 SPECIAL INITIATIVES</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Conditions to foster a durable settlement are strengthened</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-136478992" role="4" type="22">
+      <narrative>Volunteers for Economic Growth Alliance</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2014-09-30" type="3"/>
+    <activity-date iso-date="2014-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative>Weber Wang</narrative>
+      </person-name>
+      <telephone>+1 202-567-4233</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/where-we-work/europe-and-eurasia/cyprus</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="F28F3F3491AD">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">-417.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-136478992" type="22">
+        <narrative>Volunteers for Economic Growth Alliance</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="CY"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1037.0">Economic Support Fund</usg:main-account>
+        <usg:fiscal-funding-year begin="2004" end="2005"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>136478992</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Cyprus</narrative>
+    </usg:state-location>
+  </iati-activity>
+</iati-activities>
