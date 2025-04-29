@@ -1,0 +1,3016 @@
+<iati-activities xmlns:usg="https://explorer.usaid.gov" generated-datetime="2025-04-03T20:52:13.509Z" version="2.03">
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201656528</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Advisory and Assistance Services</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Advisory and Assistance Services.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="80">
+      <narrative>Trustees of Anatolia College</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="A381F21EEB16">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">-38.00</value>
+      <receiver-org type="80">
+        <narrative>Trustees of Anatolia College</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201856528</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Advisory and Assistance Services</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Advisory and Assistance Services.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="80">
+      <narrative>Trustees of Anatolia College</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2017-10-01" type="1"/>
+    <activity-date iso-date="2017-10-01" type="2"/>
+    <activity-date iso-date="2018-09-30" type="3"/>
+    <activity-date iso-date="2018-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="982E1248436D">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2018-09-30"/>
+      <value value-date="2018-09-30">462000.00</value>
+      <receiver-org type="80">
+        <narrative>Trustees of Anatolia College</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201860694</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Advisory and Assistance Services</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Advisory and Assistance Services.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="80">
+      <narrative>American College of Greece</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2017-10-01" type="1"/>
+    <activity-date iso-date="2017-10-01" type="2"/>
+    <activity-date iso-date="2018-09-30" type="3"/>
+    <activity-date iso-date="2018-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="586BED549679">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2018-09-30"/>
+      <value value-date="2018-09-30">750000.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201960856</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Advisory and Assistance Services</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Advisory and Assistance Services.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="80">
+      <narrative>American College of Greece</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2018-10-01" type="1"/>
+    <activity-date iso-date="2018-10-01" type="2"/>
+    <activity-date iso-date="2019-09-30" type="3"/>
+    <activity-date iso-date="2019-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="95DA0C04EA90">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-03-31"/>
+      <value value-date="2019-03-31">31039.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="D8B7750183F6">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-06-30"/>
+      <value value-date="2019-06-30">31076.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="580991A8E49E">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-09-30"/>
+      <value value-date="2019-09-30">55135.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="02D029E39938">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2019-09-30"/>
+      <value value-date="2019-09-30">819181.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2019"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720202057053</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Advisory and Assistance Services</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Advisory and Assistance Services.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="80">
+      <narrative>Trustees of Anatolia College</narrative>
+    </participating-org>
+    <activity-status code="2"/>
+    <activity-date iso-date="2019-10-01" type="1"/>
+    <activity-date iso-date="2019-10-01" type="2"/>
+    <activity-date iso-date="2020-09-30" type="3"/>
+    <activity-date iso-date="2020-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="36A37860EC19">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-12-31"/>
+      <value value-date="2019-12-31">96344.00</value>
+      <receiver-org type="80">
+        <narrative>Trustees of Anatolia College</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="5BE7B73D9EEC">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-06-30"/>
+      <value value-date="2020-06-30">166182.00</value>
+      <receiver-org type="80">
+        <narrative>Trustees of Anatolia College</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720202061483</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Advisory and Assistance Services</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Advisory and Assistance Services.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="80">
+      <narrative>American College of Greece</narrative>
+    </participating-org>
+    <activity-status code="2"/>
+    <activity-date iso-date="2019-10-01" type="1"/>
+    <activity-date iso-date="2019-10-01" type="2"/>
+    <activity-date iso-date="2020-09-30" type="3"/>
+    <activity-date iso-date="2020-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="654B7F495EB4">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-12-31"/>
+      <value value-date="2019-12-31">429247.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="9586D1FD5BBA">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-03-31"/>
+      <value value-date="2020-03-31">40903.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="6F40831FC4C7">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-06-30"/>
+      <value value-date="2020-06-30">43949.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="D3290B5054C4">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-09-30"/>
+      <value value-date="2020-09-30">8093.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="D114D4EE0472">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-06-30"/>
+      <value value-date="2020-06-30">4115.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2019"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="69D860F9CEB5">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-09-30"/>
+      <value value-date="2020-09-30">9434.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2019"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="A224B9A74FB9">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2020-09-30"/>
+      <value value-date="2020-09-30">1100000.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2020"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720202157491</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Advisory and Assistance Services</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Advisory and Assistance Services.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="80">
+      <narrative>Trustees of Anatolia College</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2020-10-01" type="1"/>
+    <activity-date iso-date="2020-10-01" type="2"/>
+    <activity-date iso-date="2021-09-30" type="3"/>
+    <activity-date iso-date="2021-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="A351E459A74C">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-12-31"/>
+      <value value-date="2020-12-31">199474.00</value>
+      <receiver-org type="80">
+        <narrative>Trustees of Anatolia College</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720202162009</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Advisory and Assistance Services</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Advisory and Assistance Services.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="80">
+      <narrative>American College of Greece</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2020-10-01" type="1"/>
+    <activity-date iso-date="2020-10-01" type="2"/>
+    <activity-date iso-date="2021-09-30" type="3"/>
+    <activity-date iso-date="2021-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="206BDDAB5430">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-03-31"/>
+      <value value-date="2021-03-31">6182.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="3834EDEF2245">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-06-30"/>
+      <value value-date="2021-06-30">18258.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="06785C74E8F9">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-09-30"/>
+      <value value-date="2021-09-30">10727.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="058ABC117EA1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-12-31"/>
+      <value value-date="2020-12-31">9370.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2019"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="337C145EB718">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-03-31"/>
+      <value value-date="2021-03-31">22023.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2019"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="6792423D3A0A">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-09-30"/>
+      <value value-date="2021-09-30">359871.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2019"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720202250525</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID redacted this field in accordance with the exceptions outlined in the Foreign Aid Transparency and Accountability Act of 2016.</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">USAID redacted this field in accordance with the exceptions outlined in the Foreign Aid Transparency and Accountability Act of 2016.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="4" type="10">
+      <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2021-10-01" type="1"/>
+    <activity-date iso-date="2021-10-01" type="2"/>
+    <activity-date iso-date="2022-09-30" type="3"/>
+    <activity-date iso-date="2022-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="69F8D1D22377">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-12-31"/>
+      <value value-date="2021-12-31">38510.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="A8909172EF87">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-03-31"/>
+      <value value-date="2022-03-31">1070.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="B0EE375768E5">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-06-30"/>
+      <value value-date="2022-06-30">11943.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="EB646C382AC0">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-09-30"/>
+      <value value-date="2022-09-30">23621.00</value>
+      <receiver-org receiver-activity-id="US-GOV-1" type="10">
+        <narrative>U.S. Government - U.S. Agency for International Development</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720202362004</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID redacted this field in accordance with the exceptions outlined in the Foreign Aid Transparency and Accountability Act of 2016.</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">USAID redacted this field in accordance with the exceptions outlined in the Foreign Aid Transparency and Accountability Act of 2016.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="80">
+      <narrative>American College of Greece</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2022-10-01" type="1"/>
+    <activity-date iso-date="2022-10-01" type="2"/>
+    <activity-date iso-date="2023-09-30" type="3"/>
+    <activity-date iso-date="2023-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="64B6D7BB5A6E">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-12-31"/>
+      <value value-date="2022-12-31">241.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2018"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="75ECE2B30DB4">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-12-31"/>
+      <value value-date="2022-12-31">4301.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2019"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="B66D8F468038">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-06-30"/>
+      <value value-date="2023-06-30">61888.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2019"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="85C1131F9D61">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-09-30"/>
+      <value value-date="2023-09-30">50460.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2019"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="851843376632">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-06-30"/>
+      <value value-date="2023-06-30">96727.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2020"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="2492CF9DFD7F">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-09-30"/>
+      <value value-date="2023-09-30">108029.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2020"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720202363865</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID redacted this field in accordance with the exceptions outlined in the Foreign Aid Transparency and Accountability Act of 2016.</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">USAID redacted this field in accordance with the exceptions outlined in the Foreign Aid Transparency and Accountability Act of 2016.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="80">
+      <narrative>American Farm School</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2022-10-01" type="1"/>
+    <activity-date iso-date="2022-10-01" type="2"/>
+    <activity-date iso-date="2023-09-30" type="3"/>
+    <activity-date iso-date="2023-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="EE32ABD4B041">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-03-31"/>
+      <value value-date="2023-03-31">111636.00</value>
+      <receiver-org type="80">
+        <narrative>American Farm School</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2019"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="7E17A68C7A05">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-09-30"/>
+      <value value-date="2023-09-30">31631.00</value>
+      <receiver-org type="80">
+        <narrative>American Farm School</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2019"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-72ASHA18CA00015</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">The American College of Greece The American College of Greece</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The American College of Greece The American College of Greece</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="80">
+      <narrative>American College of Greece</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2019-10-01" type="1"/>
+    <activity-date iso-date="2019-10-01" type="2"/>
+    <activity-date iso-date="2023-09-30" type="3"/>
+    <activity-date iso-date="2023-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="C236B9F2DDE9">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-12-31"/>
+      <value value-date="2023-12-31">3631.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2019"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2019-10-01"/>
+    <usg:tec1>
+      <narrative>819181.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-72ASHA18CA00016</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">American Farm School American Farm School</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">American Farm School American Farm School</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="80">
+      <narrative>American Farm School</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2019-10-01" type="1"/>
+    <activity-date iso-date="2019-10-01" type="2"/>
+    <activity-date iso-date="2025-09-30" type="3"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="1920C4C5F3F9">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-12-31"/>
+      <value value-date="2023-12-31">146733.00</value>
+      <receiver-org type="80">
+        <narrative>American Farm School</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2019"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="E9AB9CB2FBDA">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-03-31"/>
+      <value value-date="2024-03-31">194057.00</value>
+      <receiver-org type="80">
+        <narrative>American Farm School</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2019"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="CF4C683AABEC">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-09-30"/>
+      <value value-date="2024-09-30">63657.00</value>
+      <receiver-org type="80">
+        <narrative>American Farm School</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2019"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="A2B2655FE09D">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2024-12-31"/>
+      <value value-date="2024-12-31">-7094.00</value>
+      <receiver-org type="80">
+        <narrative>American Farm School</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2019"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2019-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-72ASHA19CA00011</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">The American College of Greece The American College of Greece</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The American College of Greece The American College of Greece</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="80">
+      <narrative>American College of Greece</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2020-10-01" type="1"/>
+    <activity-date iso-date="2020-10-01" type="2"/>
+    <activity-date iso-date="2024-09-30" type="3"/>
+    <activity-date iso-date="2024-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="B065278E0A0D">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-12-31"/>
+      <value value-date="2023-12-31">744255.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2020"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="B5EB0E112D6E">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-03-31"/>
+      <value value-date="2024-03-31">55084.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2020"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="9467D4089764">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-06-30"/>
+      <value value-date="2024-06-30">759.00</value>
+      <receiver-org type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2020"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2020-10-01"/>
+    <usg:tec1>
+      <narrative>1100000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-ASHA-A-12-00006</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">FY 2012 ASHA Award - Trustees of the American Farm School</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">FY 2012 ASHA Award - Trustees of the American Farm School</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-78885555" role="4" type="22">
+      <narrative>American Farm School</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="B32D35889613">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">74200.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-78885555" type="22">
+        <narrative>American Farm School</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="65D22ED1C941">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">15670.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-78885555" type="22">
+        <narrative>American Farm School</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="0A3B57A4156A">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">19547.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-78885555" type="22">
+        <narrative>American Farm School</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="34765075BD39">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">10581.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-78885555" type="22">
+        <narrative>American Farm School</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>78885555</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-ASHA-A-16-00008</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">FY 2016 ASHA Award - American College of Greece</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">FY 2016 ASHA Award - American College of Greece</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-062393950" role="4" type="80">
+      <narrative>American College of Greece</narrative>
+    </participating-org>
+    <activity-status code="2"/>
+    <activity-date iso-date="2017-03-01" type="1"/>
+    <activity-date iso-date="2017-03-01" type="2"/>
+    <activity-date iso-date="2021-03-31" type="3"/>
+    <activity-date iso-date="2021-03-31" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="6129BF498AB6">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2017-03-31"/>
+      <value value-date="2017-03-31">300000.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-062393950" type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2017"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="0E50D9340973">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-12-31"/>
+      <value value-date="2017-12-31">127778.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-062393950" type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2017"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="698F84FC4583">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-03-31"/>
+      <value value-date="2018-03-31">172221.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-062393950" type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2017"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2017-03-20"/>
+    <usg:duns-number>
+      <narrative>62393950</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>300000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-ASHA-G-11-00028</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">FY 2011 ASHA Award - Trustees of Anatolia College</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">FY 2011 ASHA Award - Trustees of Anatolia College</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-121625735" role="4" type="80">
+      <narrative>Trustees of Anatolia College</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2014-09-30" type="3"/>
+    <activity-date iso-date="2014-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="129E4540FDBA">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">55000.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-121625735" type="80">
+        <narrative>Trustees of Anatolia College</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="986B80043458">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">54845.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-121625735" type="80">
+        <narrative>Trustees of Anatolia College</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="0ED7A40A807F">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">118544.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-121625735" type="80">
+        <narrative>Trustees of Anatolia College</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="8A7DD22BD1D0">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">21611.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-121625735" type="80">
+        <narrative>Trustees of Anatolia College</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>121625735</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-ASHA-G-11-00033</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">FY 2011 ASHA Award - The American College of Greece</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">FY 2011 ASHA Award - The American College of Greece</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-942895251" role="4" type="80">
+      <narrative>American College of Greece</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2014-09-30" type="3"/>
+    <activity-date iso-date="2014-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="5212E2E8B43C">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">97528.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-942895251" type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="F3C17D10BF59">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">22724.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-942895251" type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="D18705258421">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">28559.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-942895251" type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="4DE674AA3565">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-06-30"/>
+      <value value-date="2014-06-30">0.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-942895251" type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="4DE674AA3565">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-06-30"/>
+      <value value-date="2014-06-30">1186.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-942895251" type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>942895251</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-ASHA-G-12-00010</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">FY 2012 ASHA Award - American College of Greece</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">FY 2012 ASHA Award - American College of Greece</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-62393950" role="4" type="80">
+      <narrative>American College of Greece</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2014-09-30" type="3"/>
+    <activity-date iso-date="2014-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="217E6460E1DA">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">29058.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-62393950" type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="AB485AC9A4F4">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-06-30"/>
+      <value value-date="2014-06-30">59290.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-62393950" type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="6B9421E5A0AA">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">1941.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-62393950" type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="D74D3C26FE11">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-12-31"/>
+      <value value-date="2014-12-31">74709.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-62393950" type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2012-10-01"/>
+    <usg:duns-number>
+      <narrative>62393950</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-ASHA-G-13-00005</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">FY 2013 ASHA Award - American College of Greece</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">FY 2013 ASHA Award - American College of Greece</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-062393950" role="4" type="80">
+      <narrative>American College of Greece</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2016-03-31" type="3"/>
+    <activity-date iso-date="2016-03-31" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="ABABF9F03173">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">120000.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-062393950" type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="081D3960C779">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">98676.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-062393950" type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="3645528C8F83">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-06-30"/>
+      <value value-date="2016-06-30">21323.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-062393950" type="80">
+        <narrative>American College of Greece</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2014-02-28"/>
+    <usg:duns-number>
+      <narrative>62393950</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>120000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-ASHA-G-13-00012</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">FY 2013 ASHA Award - Trustees of the American Farm School</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">FY 2013 ASHA Award - Trustees of the American Farm School</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-078885555" role="4" type="22">
+      <narrative>American Farm School</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2016-03-31" type="3"/>
+    <activity-date iso-date="2016-03-31" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="43F07CF6FD15">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">150000.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-078885555" type="22">
+        <narrative>American Farm School</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="2FDE54E96D1B">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">129334.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-078885555" type="22">
+        <narrative>American Farm School</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="C6FB38EC3526">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">9007.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-078885555" type="22">
+        <narrative>American Farm School</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="1472979C6BA9">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-09-30"/>
+      <value value-date="2017-09-30">11658.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-078885555" type="22">
+        <narrative>American Farm School</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2014"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2014-03-18"/>
+    <usg:duns-number>
+      <narrative>78885555</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>150000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-ASHA-G-15-00002</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">FY 2015 ASHA Award - Trustees of the American Farm School</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">FY 2015 ASHA Award - Trustees of the American Farm School</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-078885555" role="4" type="22">
+      <narrative>American Farm School</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2017-12-31" type="3"/>
+    <activity-date iso-date="2017-12-31" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="A0B09ED9B293">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">200000.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-078885555" type="22">
+        <narrative>American Farm School</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2016"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="7CD207D98BC2">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">60000.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-078885555" type="22">
+        <narrative>American Farm School</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2016"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="13AA6033DBB9">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-06-30"/>
+      <value value-date="2017-06-30">140000.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-078885555" type="22">
+        <narrative>American Farm School</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2016"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2015-10-01"/>
+    <usg:duns-number>
+      <narrative>78885555</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>200000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-ASHA-G-15-00004</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">FY 2015 ASHA Award - Trustees of Anatolia College</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">FY 2015 ASHA Award - Trustees of Anatolia College</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-121625735" role="4" type="80">
+      <narrative>Trustees of Anatolia College</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-08" type="1"/>
+    <activity-date iso-date="2015-10-08" type="2"/>
+    <activity-date iso-date="2017-12-31" type="3"/>
+    <activity-date iso-date="2017-12-31" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="5315F215BD78">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">242000.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-121625735" type="80">
+        <narrative>Trustees of Anatolia College</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2016"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="F73DFFB9EA2F">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-03-31"/>
+      <value value-date="2017-03-31">165284.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-121625735" type="80">
+        <narrative>Trustees of Anatolia College</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2016"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="3F019BF8F0E2">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-12-31"/>
+      <value value-date="2017-12-31">76716.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-121625735" type="80">
+        <narrative>Trustees of Anatolia College</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2016"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2015-10-09"/>
+    <usg:duns-number>
+      <narrative>121625735</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>242000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-HSH-G-00-08-00010-00</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Higher Education</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Strengthen institutional capacities of public and private higher education institutions (including research institutes, teacher-training colleges and institutes, universities, community colleges, and the relevant officials, departments, and ministries responsible for higher education) to teach, train, conduct research, and provide community service; to contribute to development; and to promote professional development opportunities, institutional linkages, and exchange programs.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-78885555" role="4" type="23">
+      <narrative>OFFICE OF THE TRUSTEES AND GREEK SUMMER</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="27F75C168652">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">300000.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-78885555" type="23">
+        <narrative>OFFICE OF THE TRUSTEES AND GREEK SUMMER</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="GR"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2008" end="2009"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>78885555</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Greece</narrative>
+    </usg:state-location>
+  </iati-activity>
+</iati-activities>

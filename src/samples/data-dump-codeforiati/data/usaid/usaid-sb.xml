@@ -1,0 +1,3921 @@
+<iati-activities xmlns:usg="https://explorer.usaid.gov" generated-datetime="2025-04-03T20:52:13.509Z" version="2.03">
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-00013MO000454</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Crisis Assistance and Recovery</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Provide goods, personnel, services and assistance to meet basic human needs in order to foster transition from relief according to principles of universality, impartiality and human dignity. This element should be done, when possible, as part of an integrated, coordinated and/or multi-sectoral approach.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-11" role="4" type="10">
+      <narrative>U.S. Government - Department of State</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="ADDB047012EF" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">50000.00</value>
+      <receiver-org receiver-activity-id="US-GOV-11" type="10">
+        <narrative>U.S. Government - Department of State</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="ADDB047012EF" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">50000.00</value>
+      <receiver-org receiver-activity-id="US-GOV-11" type="10">
+        <narrative>U.S. Government - Department of State</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Solomon Islands</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-00013MO000671</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Crisis Assistance and Recovery</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Provide goods, personnel, services and assistance to meet basic human needs in order to foster transition from relief according to principles of universality, impartiality and human dignity. This element should be done, when possible, as part of an integrated, coordinated and/or multi-sectoral approach.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-11" role="4" type="10">
+      <narrative>U.S. Government - Department of State</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="FABDC9810EAE" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">50000.00</value>
+      <receiver-org receiver-activity-id="US-GOV-11" type="10">
+        <narrative>U.S. Government - Department of State</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="FABDC9810EAE" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">50000.00</value>
+      <receiver-org receiver-activity-id="US-GOV-11" type="10">
+        <narrative>U.S. Government - Department of State</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Solomon Islands</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720BHA21IO00113</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Protection, Assistance and Solutions</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The provision of effective protection, assistance, and durable solutions for refugees, internally displaced persons (IDPs), and other victims of conflict and disasters.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-21018" role="4" type="40">
+      <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2023-10-01" type="1"/>
+    <activity-date iso-date="2023-10-01" type="2"/>
+    <activity-date iso-date="2024-09-30" type="3"/>
+    <activity-date iso-date="2024-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/humanitarian-assistance</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="19653B144E71">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2021-06-30"/>
+      <value value-date="2021-06-30">500000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="40">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2021" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="2483A319AD68">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-12-31"/>
+      <value value-date="2021-12-31">1077.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="40">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2021" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="D57603391D7E">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-03-31"/>
+      <value value-date="2022-03-31">232.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="40">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2021" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="BE7416C5076C">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-06-30"/>
+      <value value-date="2022-06-30">5331.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="40">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2021" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="EB28AD9701B9" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-11-30"/>
+      <value value-date="2022-11-30">56011.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="40">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2021" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="AF84C948FFE9" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-03-31"/>
+      <value value-date="2023-03-31">4130.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="40">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2021" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="68579DD20DAC" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-06-30"/>
+      <value value-date="2023-06-30">125642.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="40">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2021" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="E4EE63036070" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-09-30"/>
+      <value value-date="2023-09-30">19190.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="40">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2021" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="60208FC98095" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-03-31"/>
+      <value value-date="2024-03-31">142329.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="40">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2021" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative>500000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Solomon Islands</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720BHA22GR00118</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Disaster Risk Mitigation</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Support preparedness and disaster risk mitigation to reduce the effects of hazards and climate change.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-IRS-95-3202116" role="4" type="22">
+      <narrative>World Vision</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2022-07-01" type="1"/>
+    <activity-date iso-date="2022-07-01" type="2"/>
+    <activity-date iso-date="2025-06-30" type="3"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/humanitarian-assistance</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="4E8E92DE3C8B">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2022-06-30"/>
+      <value value-date="2022-06-30">600000.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="5040E40ACF9E">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-09-30"/>
+      <value value-date="2022-09-30">115488.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="069B61813E5B" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-10-31"/>
+      <value value-date="2022-10-31">38781.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="9A3F4E1ACF78" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-11-30"/>
+      <value value-date="2022-11-30">81900.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="90E671E98B2E" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-12-31"/>
+      <value value-date="2022-12-31">81900.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="F07EFCC365BC" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-02-28"/>
+      <value value-date="2023-02-28">55512.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="35010F667A1F" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-03-31"/>
+      <value value-date="2023-03-31">58500.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="FE9377EF14DB" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-04-30"/>
+      <value value-date="2023-04-30">58500.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="96B3154193DD" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-05-31"/>
+      <value value-date="2023-05-31">-19959.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="D48F68766145" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-06-30"/>
+      <value value-date="2023-06-30">58500.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="7E3F73E2C0C2" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-07-31"/>
+      <value value-date="2023-07-31">58500.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="B2C27C204A62" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-08-31"/>
+      <value value-date="2023-08-31">-57527.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="02BED992BC84" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-09-30"/>
+      <value value-date="2023-09-30">46800.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="341092BD6500" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2023-04-30"/>
+      <value value-date="2023-04-30">1200000.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="50193236AE6A" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-10-31"/>
+      <value value-date="2023-10-31">23105.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="51EE3AD50923" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-02-28"/>
+      <value value-date="2024-02-28">-8507.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="3167A880931C" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-03-31"/>
+      <value value-date="2024-03-31">8507.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="C7F511C59ADA" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-04-30"/>
+      <value value-date="2024-04-30">-27082.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="878778E18CF5" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-05-31"/>
+      <value value-date="2024-05-31">27082.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="EB0BB1FA6D5D" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-09-30"/>
+      <value value-date="2024-09-30">-1521.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="723A66CF34FC" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-10-31"/>
+      <value value-date="2023-10-31">58372.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="BEE631B03C95" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-11-30"/>
+      <value value-date="2023-11-30">58500.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="BEAB72D6E7EF" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-12-31"/>
+      <value value-date="2023-12-31">46800.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="EA756BD6641A" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-01-31"/>
+      <value value-date="2024-01-31">46980.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="4A4007B50296" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-03-31"/>
+      <value value-date="2024-03-31">48993.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="0E1CFCEAB5B2" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-04-30"/>
+      <value value-date="2024-04-30">57500.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="92BC765F3F6B" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-05-31"/>
+      <value value-date="2024-05-31">30418.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="94FD44F873AE" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-06-30"/>
+      <value value-date="2024-06-30">57500.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="62CF53FD6FC4" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-07-31"/>
+      <value value-date="2024-07-31">57500.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="1206A3BDDDD7" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-08-31"/>
+      <value value-date="2024-08-31">111952.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="2F18CAAA5E2C" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-09-30"/>
+      <value value-date="2024-09-30">57500.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="E58A7B36DF72" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2024-04-30"/>
+      <value value-date="2024-04-30">800000.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2024" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="1B29C5BE056E" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-10-31"/>
+      <value value-date="2024-10-31">1521.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="03325427FAE0" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-10-31"/>
+      <value value-date="2024-10-31">170979.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="2BE59487FCEF" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-11-30"/>
+      <value value-date="2024-11-30">172500.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="CA2995D59CA8" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-12-31"/>
+      <value value-date="2024-12-31">172500.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2023" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="B67EEF16910D" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2025-01-31"/>
+      <value value-date="2025-01-31">-2377.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="B67EEF16910D" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2025-01-31"/>
+      <value value-date="2025-01-31">-2377.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2022" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2022-07-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Solomon Islands</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720FDA18IO00061</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Disaster Readiness</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The provision of effective protection, assistance, and durable solutions for refugees, internally displaced persons (IDPs), and other victims of conflict and disasters.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-21018" role="4" type="21">
+      <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2021-10-01" type="1"/>
+    <activity-date iso-date="2021-10-01" type="2"/>
+    <activity-date iso-date="2022-09-30" type="3"/>
+    <activity-date iso-date="2022-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website/>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="C6470BF90B76" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2018-09-30"/>
+      <value value-date="2018-09-30">500000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="D6D2707630E0" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-09-30"/>
+      <value value-date="2019-09-30">118792.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="EACFF56BB73D" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-03-31"/>
+      <value value-date="2020-03-31">96462.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="F55C0D737E76" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-10-31"/>
+      <value value-date="2020-10-31">162074.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="E17ED9951BF9" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-03-31"/>
+      <value value-date="2021-03-31">118766.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="6A675696EE85" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-10-31"/>
+      <value value-date="2021-10-31">3906.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2018" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>480001662</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>500000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Solomon Islands</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720FDA19IO00014</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Disaster Readiness</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The provision of effective protection, assistance, and durable solutions for refugees, internally displaced persons (IDPs), and other victims of conflict and disasters.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-21018" role="4" type="21">
+      <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2021-10-01" type="1"/>
+    <activity-date iso-date="2021-10-01" type="2"/>
+    <activity-date iso-date="2022-09-30" type="3"/>
+    <activity-date iso-date="2022-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website/>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="987E52C22591" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2019-03-31"/>
+      <value value-date="2019-03-31">500000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="4E2DCBA3AA1C" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-03-31"/>
+      <value value-date="2020-03-31">98318.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="3BCFEEE29A02" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-02-28"/>
+      <value value-date="2021-02-28">78843.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="38CFE6E26202" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-03-31"/>
+      <value value-date="2021-03-31">-78843.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="B442B16E0456" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-12-31"/>
+      <value value-date="2021-12-31">78843.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="AC56BE188137" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-05-31"/>
+      <value value-date="2022-05-31">226858.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="9E79B9F76A64" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-09-30"/>
+      <value value-date="2022-09-30">94581.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative>500000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Solomon Islands</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720FDA20GR00149</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Disaster Readiness</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The provision of effective protection, assistance, and durable solutions for refugees, internally displaced persons (IDPs), and other victims of conflict and disasters.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-IRS-95-3202116" role="4" type="22">
+      <narrative>World Vision</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2023-10-01" type="1"/>
+    <activity-date iso-date="2023-10-01" type="2"/>
+    <activity-date iso-date="2024-09-30" type="3"/>
+    <activity-date iso-date="2024-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website/>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="D3749677186C" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2020-09-30"/>
+      <value value-date="2020-09-30">1000000.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="739E1050DD93" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-10-31"/>
+      <value value-date="2020-10-31">29833.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="ABF93891A21B" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-11-30"/>
+      <value value-date="2020-11-30">23866.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="455648751FB2" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-12-31"/>
+      <value value-date="2020-12-31">23866.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="BA97F857FE7F" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-01-31"/>
+      <value value-date="2021-01-31">35799.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="D7ACDBCBAF59" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-03-31"/>
+      <value value-date="2021-03-31">-322.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="9EA91492D742" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-04-30"/>
+      <value value-date="2021-04-30">50654.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="A9D3CAA3A028" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-05-31"/>
+      <value value-date="2021-05-31">32816.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="AC997668DFB9" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-06-30"/>
+      <value value-date="2021-06-30">32816.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="EB7D882CC0DC" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-07-31"/>
+      <value value-date="2021-07-31">76284.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="6F0C37E920F3" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-08-31"/>
+      <value value-date="2021-08-31">35799.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="017541270E48" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-09-30"/>
+      <value value-date="2021-09-30">35799.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="13946709D430" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-10-31"/>
+      <value value-date="2021-10-31">648.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="F31C6105DCF0" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-11-30"/>
+      <value value-date="2021-11-30">29832.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="110ACB61D4AA" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-12-31"/>
+      <value value-date="2021-12-31">23866.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="3A86ED6EAE77" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-01-31"/>
+      <value value-date="2022-01-31">143427.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="E0D06E42505B" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-02-28"/>
+      <value value-date="2022-02-28">71598.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="3DA76089EF48" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-03-31"/>
+      <value value-date="2022-03-31">71598.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="E00C447D4C65" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-04-30"/>
+      <value value-date="2022-04-30">59439.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="7007A7CFA3C7" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-05-31"/>
+      <value value-date="2022-05-31">-18865.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="43A956C3736B" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-06-30"/>
+      <value value-date="2022-06-30">40950.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="DCB1783E3AB6" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-07-31"/>
+      <value value-date="2022-07-31">40950.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="DABCADB9FFE5" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-08-31"/>
+      <value value-date="2022-08-31">159347.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="2D455D6491F3" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-09-30"/>
+      <value value-date="2022-09-30">-4674.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="ADC73D13D225" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-10-31"/>
+      <value value-date="2022-10-31">4673.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="B6CB5A491151" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-02-28"/>
+      <value value-date="2023-02-28">1.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="0F6F93CE13F0" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-01-31"/>
+      <value value-date="2024-01-31">-13696.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="22">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative>1000000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Solomon Islands</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-492-G-15-00004</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID/OFDA GRANT FOR SOLOMON ISLANDS CYCLONE</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">USAID/OFDA GRANT FOR SOLOMON ISLANDS CYCLONE</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-IRS-95-3202116" role="4" type="21">
+      <narrative>World Vision</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-03-20" type="1"/>
+    <activity-date iso-date="2015-03-20" type="2"/>
+    <activity-date iso-date="2015-06-15" type="3"/>
+    <activity-date iso-date="2015-06-15" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <budget status="1">
+      <period-start iso-date="2015-03-20"/>
+      <period-end iso-date="2015-06-15"/>
+      <value currency="USD" value-date="2015-03-20">50000.00</value>
+    </budget>
+    <transaction ref="B00433E9D255" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-03-31"/>
+      <value value-date="2015-03-31">50000.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="21">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="CFBCBDE7678A" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">20000.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="21">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="EFE9A6CBFAAC" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">30000.00</value>
+      <receiver-org receiver-activity-id="US-IRS-95-3202116" type="21">
+        <narrative>World Vision</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2015-03-20"/>
+    <usg:duns-number>
+      <narrative>71903322</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Solomon Islands</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-OFDA-F-12-00002</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Capacity Building, Preparedness, and Planning</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Improve the ability of the USG, host countries and other partners to prepare for and mitigate the effects of disasters, including both natural disasters and complex emergencies, taking into account the differences in men and womens freedom of movement and access to information. Activities under this component include any efforts to enhance the capacities of the USG (in Washington and in the field), humanitarian assistance providers, national host-country authorities, and local communities to engage in disaster reduction and response activities. Activities consist of standardized and coordinated assessments, monitoring, information sharing, data and situational analysis, joint planning; enhancement of coping mechanisms, including the capacity to address adaptation to constantly changing situations on the ground including climate variability and climate change.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-21018" role="4" type="21">
+      <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="25D0A2FC6B1B" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">29058.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="96183289C313" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">85747.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="6EA002FB2F2A" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">314347.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="1303E66C13B4" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-06-30"/>
+      <value value-date="2014-06-30">-63026.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="15EFC2B465E7" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">63026.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="897D523EFE1E" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">70740.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>295208321</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Solomon Islands</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-OFDA-F-13-00006</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Capacity Building, Preparedness, and Planning</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Improve the ability of the USG, host countries and other partners to prepare for and mitigate the effects of disasters, including both natural disasters and complex emergencies, taking into account the differences in men and womens freedom of movement and access to information. Activities under this component include any efforts to enhance the capacities of the USG (in Washington and in the field), humanitarian assistance providers, national host-country authorities, and local communities to engage in disaster reduction and response activities. Activities consist of standardized and coordinated assessments, monitoring, information sharing, data and situational analysis, joint planning; enhancement of coping mechanisms, including the capacity to address adaptation to constantly changing situations on the ground including climate variability and climate change.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-21018" role="4" type="21">
+      <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="EE44C912BE28" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">500000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="F889573C147B" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">83481.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="A0CD87429F27" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">253125.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="AE9126711AFB" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-03-31"/>
+      <value value-date="2015-03-31">121881.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="4D2586D0FD1A" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">41513.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>295208321</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Solomon Islands</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-OFDA-F-14-00006</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Capacity Building, Preparedness, and Planning</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Improve the ability of the USG, host countries and other partners to prepare for and mitigate the effects of disasters, including both natural disasters and complex emergencies, taking into account the differences in men and womens freedom of movement and access to information. Activities under this component include any efforts to enhance the capacities of the USG (in Washington and in the field), humanitarian assistance providers, national host-country authorities, and local communities to engage in disaster reduction and response activities. Activities consist of standardized and coordinated assessments, monitoring, information sharing, data and situational analysis, joint planning; enhancement of coping mechanisms, including the capacity to address adaptation to constantly changing situations on the ground including climate variability and climate change.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-21018" role="4" type="21">
+      <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="618374291BAE" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">500000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="50428D0FC50E" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-03-31"/>
+      <value value-date="2015-03-31">139000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="80B025276E26" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">239000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="1EF91214E870" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">122000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>295208321</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>500000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Solomon Islands</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-OFDA-G-11-00223</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Capacity Building, Preparedness, and Planning</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Improve the ability of the USG, host countries and other partners to prepare for and mitigate the effects of disasters, including both natural disasters and complex emergencies, taking into account the differences in men and womens freedom of movement and access to information. Activities under this component include any efforts to enhance the capacities of the USG (in Washington and in the field), humanitarian assistance providers, national host-country authorities, and local communities to engage in disaster reduction and response activities. Activities consist of standardized and coordinated assessments, monitoring, information sharing, data and situational analysis, joint planning; enhancement of coping mechanisms, including the capacity to address adaptation to constantly changing situations on the ground including climate variability and climate change.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-854903051" role="4" type="40">
+      <narrative>Solomon Islands Red Cross Society</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="D9445ACD51DD" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">62450.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-854903051" type="40">
+        <narrative>Solomon Islands Red Cross Society</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="F9FC61F6EB2F" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">50077.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-854903051" type="40">
+        <narrative>Solomon Islands Red Cross Society</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="3678019CC337" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">7383.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-854903051" type="40">
+        <narrative>Solomon Islands Red Cross Society</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>854903051</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>150050.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Solomon Islands</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-OFDA-G-14-00052</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">OFDA-2014-Solomon Islands/Floods-Grant-SCF US</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Response to flash flooding in Guadalcanal Island - Logistics Support and Relief Commodities,Water, Sanitation and Hygiene Activities</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="GB-CHC-1076822" role="4" type="21">
+      <narrative>Save the Children Federation, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-04-10" type="1"/>
+    <activity-date iso-date="2014-04-10" type="2"/>
+    <activity-date iso-date="2017-09-30" type="3"/>
+    <activity-date iso-date="2017-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <budget status="1">
+      <period-start iso-date="2014-04-10"/>
+      <period-end iso-date="2017-09-30"/>
+      <value currency="USD" value-date="2014-04-10">150000.00</value>
+    </budget>
+    <transaction ref="2B751C8E9474" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-06-30"/>
+      <value value-date="2014-06-30">250000.00</value>
+      <receiver-org receiver-activity-id="GB-CHC-1076822" type="21">
+        <narrative>Save the Children Federation, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="196AE54C4E9A" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">217861.00</value>
+      <receiver-org receiver-activity-id="GB-CHC-1076822" type="21">
+        <narrative>Save the Children Federation, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="6B9E51F06FE8" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-03-31"/>
+      <value value-date="2015-03-31">24008.00</value>
+      <receiver-org receiver-activity-id="GB-CHC-1076822" type="21">
+        <narrative>Save the Children Federation, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="CA0388C90C50" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">1419.00</value>
+      <receiver-org receiver-activity-id="GB-CHC-1076822" type="21">
+        <narrative>Save the Children Federation, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="B2C13BCB7C9A" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2017-06-30"/>
+      <value value-date="2017-06-30">-6709.00</value>
+      <receiver-org receiver-activity-id="GB-CHC-1076822" type="21">
+        <narrative>Save the Children Federation, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2014-04-10"/>
+    <usg:duns-number>
+      <narrative>72129919</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>243290.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Solomon Islands</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-OFDA-G-15-00089</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Disaster Risk Reduction in Solomon Islands</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Disaster Risk Reduction in Solomon Islands</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-21018" role="4" type="21">
+      <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-05-01" type="1"/>
+    <activity-date iso-date="2015-05-01" type="2"/>
+    <activity-date iso-date="2018-10-31" type="3"/>
+    <activity-date iso-date="2018-10-31" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="4A68DC58B295" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">500000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="31E4CF2051B5" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">66412.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="E18B9F97CF12" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">57451.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="50C6A6462EDC" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-06-30"/>
+      <value value-date="2016-06-30">194923.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="D42B1712FC40" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-12-31"/>
+      <value value-date="2016-12-31">181214.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="706B161B8C1B" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">1000000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="642266E99F57" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-12-31"/>
+      <value value-date="2016-12-31">93482.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="1640B2F9AD77" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-03-31"/>
+      <value value-date="2017-03-31">98946.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="24913CEFC171" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-06-30"/>
+      <value value-date="2017-06-30">79628.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="9B3139F8F077" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-09-30"/>
+      <value value-date="2017-09-30">135257.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="F92AF89EA147" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-03-31"/>
+      <value value-date="2018-03-31">261633.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="4AD136808D20" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-06-30"/>
+      <value value-date="2018-06-30">59387.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="1AC23693DB00" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-09-30"/>
+      <value value-date="2018-09-30">62910.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="CCAC4368F2B5" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-12-31"/>
+      <value value-date="2018-12-31">55213.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="8276A5ADBE45" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-03-31"/>
+      <value value-date="2019-03-31">153543.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2016" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2015-05-01"/>
+    <usg:duns-number>
+      <narrative>295208321</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>1500000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Solomon Islands</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-OFDA-G-17-00052</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Disaster Readiness</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The provision of effective protection, assistance, and durable solutions for refugees, internally displaced persons (IDPs), and other victims of conflict and disasters.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-21018" role="4" type="21">
+      <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2016-10-01" type="1"/>
+    <activity-date iso-date="2016-10-01" type="2"/>
+    <activity-date iso-date="2019-09-30" type="3"/>
+    <activity-date iso-date="2019-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="2998077EE3C9" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2017-06-30"/>
+      <value value-date="2017-06-30">544278.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="608AED50FD1B" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-03-31"/>
+      <value value-date="2018-03-31">145017.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="992B70988340" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-06-30"/>
+      <value value-date="2018-06-30">80390.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="C242C1E05B9F" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-09-30"/>
+      <value value-date="2018-09-30">129892.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="57DCB22AE517" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-12-31"/>
+      <value value-date="2018-12-31">107400.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="A7F62EDD73BF" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-03-31"/>
+      <value value-date="2019-03-31">81579.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="SB"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>295208321</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>544278.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Solomon Islands</narrative>
+    </usg:state-location>
+  </iati-activity>
+</iati-activities>

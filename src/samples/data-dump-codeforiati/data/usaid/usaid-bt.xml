@@ -1,0 +1,825 @@
+<iati-activities xmlns:usg="https://explorer.usaid.gov" generated-datetime="2025-04-03T20:52:13.509Z" version="2.03">
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-OFDA-IO-12-00049</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Capacity Building, Preparedness, and Planning</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Improve the ability of the USG, host countries and other partners to prepare for and mitigate the effects of disasters, including both natural disasters and complex emergencies, taking into account the differences in men and womens freedom of movement and access to information. Activities under this component include any efforts to enhance the capacities of the USG (in Washington and in the field), humanitarian assistance providers, national host-country authorities, and local communities to engage in disaster reduction and response activities. Activities consist of standardized and coordinated assessments, monitoring, information sharing, data and situational analysis, joint planning; enhancement of coping mechanisms, including the capacity to address adaptation to constantly changing situations on the ground including climate variability and climate change.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-41114" role="4" type="40">
+      <narrative>United Nations Development Programme</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="98C5ADBF5265" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">10810.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="02DF0B408D81" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">11967.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="C71C2E6377A6" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">47990.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="4CEB8985DBF2" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-06-30"/>
+      <value value-date="2014-06-30">9244.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="1A83E994E9AA" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">58016.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="7D4E715C8277" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">-11773.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>645521498</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Bhutan</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-OFDA-IO-14-00050</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">OFDA-2014-UNDP</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">UNDP Disaster resilient construction training</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-41114" role="4" type="40">
+      <narrative>United Nations Development Programme</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2017-06-30" type="3"/>
+    <activity-date iso-date="2017-06-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <budget status="1">
+      <period-start iso-date="2013-10-01"/>
+      <period-end iso-date="2017-06-30"/>
+      <value currency="USD" value-date="2013-10-01">250000.00</value>
+    </budget>
+    <transaction ref="70569E439183" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">250000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="43A1C5EB8F24" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">20088.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="F2BDC09469D2" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">34302.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="234BBC6F87AF" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-06-30"/>
+      <value value-date="2016-06-30">61775.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="AF693D08F885" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">55786.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="F9DA49A2549E" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-12-31"/>
+      <value value-date="2016-12-31">6125.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="638CAC955A88" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-03-31"/>
+      <value value-date="2017-03-31">30126.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="528583D9CD18" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-06-30"/>
+      <value value-date="2017-06-30">2755.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="1E8AF377227C" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-09-30"/>
+      <value value-date="2017-09-30">161.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="BC626D820E2A" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-03-31"/>
+      <value value-date="2018-03-31">38880.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2014" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="8DED19F753FF" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">48080.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="E7CEC38A1755" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-03-31"/>
+      <value value-date="2018-03-31">48080.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2014-08-28"/>
+    <usg:duns-number>
+      <narrative>645521498</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>298080.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Bhutan</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-OFDA-IO-17-00068</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Disaster Readiness</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The provision of effective protection, assistance, and durable solutions for refugees, internally displaced persons (IDPs), and other victims of conflict and disasters.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-41114" role="4" type="40">
+      <narrative>United Nations Development Programme</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2020-10-01" type="1"/>
+    <activity-date iso-date="2020-10-01" type="2"/>
+    <activity-date iso-date="2021-09-30" type="3"/>
+    <activity-date iso-date="2021-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website/>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="C234809DE8FE" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2017-09-30"/>
+      <value value-date="2017-09-30">250000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="5A4874086383" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-09-30"/>
+      <value value-date="2018-09-30">45607.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="CEFC59C8C39A" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-12-31"/>
+      <value value-date="2018-12-31">12542.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="4156A0C9423C" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-03-31"/>
+      <value value-date="2019-03-31">11439.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="83BC9B898111" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-07-31"/>
+      <value value-date="2019-07-31">43169.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="74A1E0628356" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-01-31"/>
+      <value value-date="2020-01-31">107250.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="14E3B9C64973" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-03-31"/>
+      <value value-date="2020-03-31">3994.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="52199898A484" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-07-31"/>
+      <value value-date="2020-07-31">1242.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="36C51A40B0EC" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-10-31"/>
+      <value value-date="2020-10-31">2226.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="47208B015D9B" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-01-31"/>
+      <value value-date="2021-01-31">19230.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="4FF16284D6EB" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-04-30"/>
+      <value value-date="2021-04-30">3296.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="BT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2017" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>645521498</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>250000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Bhutan</narrative>
+    </usg:state-location>
+  </iati-activity>
+</iati-activities>

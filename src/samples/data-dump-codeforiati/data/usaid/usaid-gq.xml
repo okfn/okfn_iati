@@ -1,0 +1,2384 @@
+<iati-activities xmlns:usg="https://explorer.usaid.gov" generated-datetime="2025-04-03T20:52:13.509Z" version="2.03">
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-DHR-07-03</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Civic Participation</narrative>
+      <narrative xml:lang="es">Participación Cívica</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Strengthen the legal, regulatory, institutional, and information environment which protects and enables the growth in associational life and the development of independent and sustainable civil society organizations (CSOs).  Build the capacity of civil society organizations to act as agents for reform and support their participation in democratic decision-making through articulating and representing their members interests, engaging in service delivery, and advocating for issues which become part of the public agenda and are reflected in public policies. Encourage the strengthening of a civic culture which supports democratic institutions and processes, active participation in political and civic life, and the civic virtues of tolerance, pluralism, compromise, trust, and respect for individual rights, including gender equality.</narrative>
+      <narrative xml:lang="es">Fortalecer el entorno legal, regulatorio, institucional y de información que proteja y posibilite el crecimiento de la vida asociativa y el desarrollo de organizaciones de la sociedad civil (OSC) independientes y sostenibles.  Desarrollar la capacidad de las organizaciones de la sociedad civil para actuar como agentes de reforma y apoyar su participación en la toma de decisiones democráticas mediante la articulación y representación de los intereses de sus miembros, la participación en la prestación de servicios y la promoción de cuestiones que pasan a formar parte de la agenda pública y se reflejan en las políticas públicas. Fomentar el fortalecimiento de una cultura cívica que apoye las instituciones y los procesos democráticos, la participación activa en la vida política y cívica y las virtudes cívicas de la tolerancia, el pluralismo, el compromiso, la confianza y el respeto por los derechos individuales, incluida la igualdad de género.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-23000" role="4" type="24">
+      <narrative>NGO - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="0504DD0F4B6A">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">5000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-23000" type="24">
+        <narrative>NGO - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2007" end="2008"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-DHR-10-01</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Civic Participation</narrative>
+      <narrative xml:lang="es">Participación Cívica</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Strengthen the legal, regulatory, institutional, and information environment which protects and enables the growth in associational life and the development of independent and sustainable civil society organizations (CSOs).  Build the capacity of civil society organizations to act as agents for reform and support their participation in democratic decision-making through articulating and representing their members interests, engaging in service delivery, and advocating for issues which become part of the public agenda and are reflected in public policies. Encourage the strengthening of a civic culture which supports democratic institutions and processes, active participation in political and civic life, and the civic virtues of tolerance, pluralism, compromise, trust, and respect for individual rights, including gender equality.</narrative>
+      <narrative xml:lang="es">Fortalecer el entorno legal, regulatorio, institucional y de información que proteja y posibilite el crecimiento de la vida asociativa y el desarrollo de organizaciones de la sociedad civil (OSC) independientes y sostenibles.  Desarrollar la capacidad de las organizaciones de la sociedad civil para actuar como agentes de reforma y apoyar su participación en la toma de decisiones democráticas mediante la articulación y representación de los intereses de sus miembros, la participación en la prestación de servicios y la promoción de cuestiones que pasan a formar parte de la agenda pública y se reflejan en las políticas públicas. Fomentar el fortalecimiento de una cultura cívica que apoye las instituciones y los procesos democráticos, la participación activa en la vida política y cívica y las virtudes cívicas de la tolerancia, el pluralismo, el compromiso, la confianza y el respeto por los derechos individuales, incluida la igualdad de género.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="23">
+      <narrative>INITIATIVE FOR STRENGTHENING THE CIVIL SOCIETY (CEID)</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="8304BEA2E7C7">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">6600.00</value>
+      <receiver-org type="23">
+        <narrative>INITIATIVE FOR STRENGTHENING THE CIVIL SOCIETY (CEID)</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-DHR-10-02</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Civic Participation</narrative>
+      <narrative xml:lang="es">Participación Cívica</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Strengthen the legal, regulatory, institutional, and information environment which protects and enables the growth in associational life and the development of independent and sustainable civil society organizations (CSOs).  Build the capacity of civil society organizations to act as agents for reform and support their participation in democratic decision-making through articulating and representing their members interests, engaging in service delivery, and advocating for issues which become part of the public agenda and are reflected in public policies. Encourage the strengthening of a civic culture which supports democratic institutions and processes, active participation in political and civic life, and the civic virtues of tolerance, pluralism, compromise, trust, and respect for individual rights, including gender equality.</narrative>
+      <narrative xml:lang="es">Fortalecer el entorno legal, regulatorio, institucional y de información que proteja y posibilite el crecimiento de la vida asociativa y el desarrollo de organizaciones de la sociedad civil (OSC) independientes y sostenibles.  Desarrollar la capacidad de las organizaciones de la sociedad civil para actuar como agentes de reforma y apoyar su participación en la toma de decisiones democráticas mediante la articulación y representación de los intereses de sus miembros, la participación en la prestación de servicios y la promoción de cuestiones que pasan a formar parte de la agenda pública y se reflejan en las políticas públicas. Fomentar el fortalecimiento de una cultura cívica que apoye las instituciones y los procesos democráticos, la participación activa en la vida política y cívica y las virtudes cívicas de la tolerancia, el pluralismo, el compromiso, la confianza y el respeto por los derechos individuales, incluida la igualdad de género.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="23">
+      <narrative>CONVERGENCIA PARA LA DEMOCRACIA SOCIAL (CPDS)</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="67F10CDC3D12">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">23000.00</value>
+      <receiver-org type="23">
+        <narrative>CONVERGENCIA PARA LA DEMOCRACIA SOCIAL (CPDS)</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-DHR-11-01</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Civic Participation</narrative>
+      <narrative xml:lang="es">Participación Cívica</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Strengthen the legal, regulatory, institutional, and information environment which protects and enables the growth in associational life and the development of independent and sustainable civil society organizations (CSOs).  Build the capacity of civil society organizations to act as agents for reform and support their participation in democratic decision-making through articulating and representing their members interests, engaging in service delivery, and advocating for issues which become part of the public agenda and are reflected in public policies. Encourage the strengthening of a civic culture which supports democratic institutions and processes, active participation in political and civic life, and the civic virtues of tolerance, pluralism, compromise, trust, and respect for individual rights, including gender equality.</narrative>
+      <narrative xml:lang="es">Fortalecer el entorno legal, regulatorio, institucional y de información que proteja y posibilite el crecimiento de la vida asociativa y el desarrollo de organizaciones de la sociedad civil (OSC) independientes y sostenibles.  Desarrollar la capacidad de las organizaciones de la sociedad civil para actuar como agentes de reforma y apoyar su participación en la toma de decisiones democráticas mediante la articulación y representación de los intereses de sus miembros, la participación en la prestación de servicios y la promoción de cuestiones que pasan a formar parte de la agenda pública y se reflejan en las políticas públicas. Fomentar el fortalecimiento de una cultura cívica que apoye las instituciones y los procesos democráticos, la participación activa en la vida política y cívica y las virtudes cívicas de la tolerancia, el pluralismo, el compromiso, la confianza y el respeto por los derechos individuales, incluida la igualdad de género.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="23">
+      <narrative>ASAMA</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="6C65F7E1E99A">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">14000.00</value>
+      <receiver-org type="23">
+        <narrative>ASAMA</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="33F6A84714AE">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">6000.00</value>
+      <receiver-org type="23">
+        <narrative>ASAMA</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-DHR-11-02</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Civic Participation</narrative>
+      <narrative xml:lang="es">Participación Cívica</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Strengthen the legal, regulatory, institutional, and information environment which protects and enables the growth in associational life and the development of independent and sustainable civil society organizations (CSOs).  Build the capacity of civil society organizations to act as agents for reform and support their participation in democratic decision-making through articulating and representing their members interests, engaging in service delivery, and advocating for issues which become part of the public agenda and are reflected in public policies. Encourage the strengthening of a civic culture which supports democratic institutions and processes, active participation in political and civic life, and the civic virtues of tolerance, pluralism, compromise, trust, and respect for individual rights, including gender equality.</narrative>
+      <narrative xml:lang="es">Fortalecer el entorno legal, regulatorio, institucional y de información que proteja y posibilite el crecimiento de la vida asociativa y el desarrollo de organizaciones de la sociedad civil (OSC) independientes y sostenibles.  Desarrollar la capacidad de las organizaciones de la sociedad civil para actuar como agentes de reforma y apoyar su participación en la toma de decisiones democráticas mediante la articulación y representación de los intereses de sus miembros, la participación en la prestación de servicios y la promoción de cuestiones que pasan a formar parte de la agenda pública y se reflejan en las políticas públicas. Fomentar el fortalecimiento de una cultura cívica que apoye las instituciones y los procesos democráticos, la participación activa en la vida política y cívica y las virtudes cívicas de la tolerancia, el pluralismo, el compromiso, la confianza y el respeto por los derechos individuales, incluida la igualdad de género.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="23">
+      <narrative>Mundo Solidario</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="75BCFAA7CE34">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">14000.00</value>
+      <receiver-org type="23">
+        <narrative>Mundo Solidario</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="E470A389C148">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-06-30"/>
+      <value value-date="2016-06-30">6000.00</value>
+      <receiver-org type="23">
+        <narrative>Mundo Solidario</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-DHR-12-01</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Civic Participation</narrative>
+      <narrative xml:lang="es">Participación Cívica</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Strengthen the legal, regulatory, institutional, and information environment which protects and enables the growth in associational life and the development of independent and sustainable civil society organizations (CSOs).  Build the capacity of civil society organizations to act as agents for reform and support their participation in democratic decision-making through articulating and representing their members interests, engaging in service delivery, and advocating for issues which become part of the public agenda and are reflected in public policies. Encourage the strengthening of a civic culture which supports democratic institutions and processes, active participation in political and civic life, and the civic virtues of tolerance, pluralism, compromise, trust, and respect for individual rights, including gender equality.</narrative>
+      <narrative xml:lang="es">Fortalecer el entorno legal, regulatorio, institucional y de información que proteja y posibilite el crecimiento de la vida asociativa y el desarrollo de organizaciones de la sociedad civil (OSC) independientes y sostenibles.  Desarrollar la capacidad de las organizaciones de la sociedad civil para actuar como agentes de reforma y apoyar su participación en la toma de decisiones democráticas mediante la articulación y representación de los intereses de sus miembros, la participación en la prestación de servicios y la promoción de cuestiones que pasan a formar parte de la agenda pública y se reflejan en las políticas públicas. Fomentar el fortalecimiento de una cultura cívica que apoye las instituciones y los procesos democráticos, la participación activa en la vida política y cívica y las virtudes cívicas de la tolerancia, el pluralismo, el compromiso, la confianza y el respeto por los derechos individuales, incluida la igualdad de género.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="23">
+      <narrative>INITIATIVE FOR STRENGTHENING THE CIVIL SOCIETY (CEID)</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2017-09-30" type="3"/>
+    <activity-date iso-date="2017-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="C4B25B87DF17">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">40000.00</value>
+      <receiver-org type="23">
+        <narrative>INITIATIVE FOR STRENGTHENING THE CIVIL SOCIETY (CEID)</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="CC540617B3CF">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">21337.00</value>
+      <receiver-org type="23">
+        <narrative>INITIATIVE FOR STRENGTHENING THE CIVIL SOCIETY (CEID)</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="6D9380C08E6B">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-03-31"/>
+      <value value-date="2015-03-31">12988.00</value>
+      <receiver-org type="23">
+        <narrative>INITIATIVE FOR STRENGTHENING THE CIVIL SOCIETY (CEID)</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="8226AAD61E20">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">-6325.00</value>
+      <receiver-org type="23">
+        <narrative>INITIATIVE FOR STRENGTHENING THE CIVIL SOCIETY (CEID)</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="CD532B8A64C8">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-12-31"/>
+      <value value-date="2016-12-31">-12000.00</value>
+      <receiver-org type="23">
+        <narrative>INITIATIVE FOR STRENGTHENING THE CIVIL SOCIETY (CEID)</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-SSH-08-01</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="es">Asistencia Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="es">Transferencias en efectivo o en especie a los pobres o a quienes sufren crisis temporales. Los servicios de salud prestados en especie deberían incluirse en los elementos de salud respectivos.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="23">
+      <narrative>ASAMA</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="9CEF5AA6C3A1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-31.00</value>
+      <receiver-org type="23">
+        <narrative>ASAMA</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2008" end="2009"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-SSH-08-02</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="es">Asistencia Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="es">Transferencias en efectivo o en especie a los pobres o a quienes sufren crisis temporales. Los servicios de salud prestados en especie deberían incluirse en los elementos de salud respectivos.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="90F25146B730">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">149.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2008" end="2009"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-SSH-08-04</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="es">Asistencia Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="es">Transferencias en efectivo o en especie a los pobres o a quienes sufren crisis temporales. Los servicios de salud prestados en especie deberían incluirse en los elementos de salud respectivos.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="23">
+      <narrative>GUARDERIA LA ADORACION</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="CE621AE3E0C9">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">9000.00</value>
+      <receiver-org type="23">
+        <narrative>GUARDERIA LA ADORACION</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2008" end="2009"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="372155D8798C">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">-5240.00</value>
+      <receiver-org type="23">
+        <narrative>GUARDERIA LA ADORACION</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2008" end="2009"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-SSH-08-06</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="es">Asistencia Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="es">Transferencias en efectivo o en especie a los pobres o a quienes sufren crisis temporales. Los servicios de salud prestados en especie deberían incluirse en los elementos de salud respectivos.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-23000" role="4" type="24">
+      <narrative>NGO - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="8BCE9731B0C8">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">900.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-23000" type="24">
+        <narrative>NGO - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2008" end="2009"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="DED8B6B519FE">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">-316.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-23000" type="24">
+        <narrative>NGO - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2008" end="2009"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-SSH-09-03</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="es">Asistencia Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="es">Transferencias en efectivo o en especie a los pobres o a quienes sufren crisis temporales. Los servicios de salud prestados en especie deberían incluirse en los elementos de salud respectivos.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="23">
+      <narrative>ASAMA</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="91A02EB5530A">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">2016.00</value>
+      <receiver-org type="23">
+        <narrative>ASAMA</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="C9D7954CDEE7">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">-2029.00</value>
+      <receiver-org type="23">
+        <narrative>ASAMA</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-SSH-09-06</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="es">Asistencia Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="es">Transferencias en efectivo o en especie a los pobres o a quienes sufren crisis temporales. Los servicios de salud prestados en especie deberían incluirse en los elementos de salud respectivos.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-23000" role="4" type="24">
+      <narrative>NGO - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="4C22984F02E8">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">2046.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-23000" type="24">
+        <narrative>NGO - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2009" end="2010"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-SSH-10-02</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="es">Asistencia Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="es">Transferencias en efectivo o en especie a los pobres o a quienes sufren crisis temporales. Los servicios de salud prestados en especie deberían incluirse en los elementos de salud respectivos.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="22">
+      <narrative>Ayuda al Desarrollp Comunitario Y Rural (ADECOR)</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="F2E3A46EDBC4">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">-5000.00</value>
+      <receiver-org type="22">
+        <narrative>Ayuda al Desarrollp Comunitario Y Rural (ADECOR)</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-SSH-10-03</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="es">Asistencia Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="es">Transferencias en efectivo o en especie a los pobres o a quienes sufren crisis temporales. Los servicios de salud prestados en especie deberían incluirse en los elementos de salud respectivos.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="23">
+      <narrative>Cooperativa Sembradores de Futuro</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="778585EF02E3">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">3000.00</value>
+      <receiver-org type="23">
+        <narrative>Cooperativa Sembradores de Futuro</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-SSH-10-04</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="es">Asistencia Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="es">Transferencias en efectivo o en especie a los pobres o a quienes sufren crisis temporales. Los servicios de salud prestados en especie deberían incluirse en los elementos de salud respectivos.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="23">
+      <narrative>Diocesano de Bata</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="A7EF7B875F20">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">9999.00</value>
+      <receiver-org type="23">
+        <narrative>Diocesano de Bata</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="71E5E3CFAE1F">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">0.00</value>
+      <receiver-org type="23">
+        <narrative>Diocesano de Bata</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2011"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-SSH-11-01</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="es">Asistencia Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="es">Transferencias en efectivo o en especie a los pobres o a quienes sufren crisis temporales. Los servicios de salud prestados en especie deberían incluirse en los elementos de salud respectivos.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="23">
+      <narrative>ONG Biriaelat</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="C33D606A49AB">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">5914.00</value>
+      <receiver-org type="23">
+        <narrative>ONG Biriaelat</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-SSH-11-02</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="es">Asistencia Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="es">Transferencias en efectivo o en especie a los pobres o a quienes sufren crisis temporales. Los servicios de salud prestados en especie deberían incluirse en los elementos de salud respectivos.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="F79E9355B611">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">3123.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-SSH-11-03</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="es">Asistencia Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="es">Transferencias en efectivo o en especie a los pobres o a quienes sufren crisis temporales. Los servicios de salud prestados en especie deberían incluirse en los elementos de salud respectivos.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Modisteria Sita Ines</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-10-01" type="1"/>
+    <activity-date iso-date="2015-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="0844585776A1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">3236.00</value>
+      <receiver-org>
+        <narrative>Modisteria Sita Ines</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2011" end="2012"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-SSH-12-01</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="es">Asistencia Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="es">Transferencias en efectivo o en especie a los pobres o a quienes sufren crisis temporales. Los servicios de salud prestados en especie deberían incluirse en los elementos de salud respectivos.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="23">
+      <narrative>Asociacion Molato De Ekuku</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="C9D9167A6713">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">10000.00</value>
+      <receiver-org type="23">
+        <narrative>Asociacion Molato De Ekuku</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="394146CE0D86">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">6999.00</value>
+      <receiver-org type="23">
+        <narrative>Asociacion Molato De Ekuku</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="31434ABCCAAD">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">2999.00</value>
+      <receiver-org type="23">
+        <narrative>Asociacion Molato De Ekuku</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="0008C64A5C0E">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">10000.00</value>
+      <receiver-org type="23">
+        <narrative>Asociacion Molato De Ekuku</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-SSH-12-02</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="es">Asistencia Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="es">Transferencias en efectivo o en especie a los pobres o a quienes sufren crisis temporales. Los servicios de salud prestados en especie deberían incluirse en los elementos de salud respectivos.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="80">
+      <narrative>Colegio El Buen Pastor</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2014-09-30" type="3"/>
+    <activity-date iso-date="2014-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="48A1298EB679">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">10000.00</value>
+      <receiver-org type="80">
+        <narrative>Colegio El Buen Pastor</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="E13213203C7A">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">6987.00</value>
+      <receiver-org type="80">
+        <narrative>Colegio El Buen Pastor</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="EF0BA871279D">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">3012.00</value>
+      <receiver-org type="80">
+        <narrative>Colegio El Buen Pastor</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-SSH-12-03</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="es">Asistencia Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="es">Transferencias en efectivo o en especie a los pobres o a quienes sufren crisis temporales. Los servicios de salud prestados en especie deberían incluirse en los elementos de salud respectivos.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="90365633F951">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">5000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="FF91F5DC03A0">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">3089.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="006C6FA32218">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">1287.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="883EB21678C8">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2016-03-31"/>
+      <value value-date="2016-03-31">623.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-653-SSH-12-04</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Assistance</narrative>
+      <narrative xml:lang="es">Asistencia Social</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Cash or in-kind transfers to the poor or to those suffering from temporary shocks. Health services provided in-kind should be captured under the respective health element(s).</narrative>
+      <narrative xml:lang="es">Transferencias en efectivo o en especie a los pobres o a quienes sufren crisis temporales. Los servicios de salud prestados en especie deberían incluirse en los elementos de salud respectivos.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2014-09-30" type="3"/>
+    <activity-date iso-date="2014-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="76E52326EF08">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">10000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="72D7347C6AC2">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-09-30"/>
+      <value value-date="2013-09-30">6922.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="38ED60BBF677">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-12-31"/>
+      <value value-date="2013-12-31">3077.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2012" end="2013"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-72062421GR00001</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Protection, Assistance and Solutions</narrative>
+      <narrative xml:lang="es">Protección, Asistencia y Soluciones</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The provision of effective protection, assistance, and durable solutions for refugees, internally displaced persons (IDPs), and other victims of conflict and disasters.</narrative>
+      <narrative xml:lang="es">La provisión de protección, asistencia y soluciones duraderas efectivas para los refugiados, los desplazados internos (PDI) y otras víctimas de conflictos y desastres.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-41122" role="4" type="40">
+      <narrative>United Nations Children's Fund</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2021-10-01" type="1"/>
+    <activity-date iso-date="2021-10-01" type="2"/>
+    <activity-date iso-date="2022-09-30" type="3"/>
+    <activity-date iso-date="2022-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/humanitarian-assistance</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="B50E52E0DB06">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2021-03-31"/>
+      <value value-date="2021-03-31">150000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41122" type="40">
+        <narrative>United Nations Children's Fund</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2021" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="C90FC873014A">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-06-30"/>
+      <value value-date="2022-06-30">149939.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41122" type="40">
+        <narrative>United Nations Children's Fund</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72050" vocabulary="1">
+        <narrative>Relief co-ordination; protection and support services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2021" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative>150000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-SSH-06-653-001</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Development Assistance - Development Assistance</narrative>
+      <narrative xml:lang="es">Asistencia al desarrollo - Asistencia al desarrollo</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Development Assistance - Development Assistance</narrative>
+      <narrative xml:lang="es">Asistencia al desarrollo - Asistencia al desarrollo</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-63000" role="4" type="70">
+      <narrative>Enterprise - Non United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-africa</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="DF81C4972FE0">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">-134.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="43010" vocabulary="1">
+        <narrative>Multisector aid</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="2091D201E3B3">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">30.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-63000" type="70">
+        <narrative>Enterprise - Non United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="43010" vocabulary="1">
+        <narrative>Multisector aid</narrative>
+      </sector>
+      <sector code="4005" vocabulary="99">
+        <narrative>Social Assistance</narrative>
+      </sector>
+      <recipient-country code="GQ"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Equatorial Guinea</narrative>
+    </usg:state-location>
+  </iati-activity>
+</iati-activities>

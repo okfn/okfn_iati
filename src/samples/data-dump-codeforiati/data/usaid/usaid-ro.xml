@@ -1,0 +1,2228 @@
+<iati-activities xmlns:usg="https://explorer.usaid.gov" generated-datetime="2025-04-03T20:52:13.509Z" version="2.03">
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-00024MO000264</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Disaster Readiness</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The provision of effective protection, assistance, and durable solutions for refugees, internally displaced persons (IDPs), and other victims of conflict and disasters.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-11" role="4" type="10">
+      <narrative>U.S. Government - Department of State</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2024-10-01" type="1"/>
+    <activity-date iso-date="2024-10-01" type="2"/>
+    <activity-date iso-date="2025-09-30" type="3"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/humanitarian-assistance</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="CA5868CDA422" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2024-01-31"/>
+      <value value-date="2024-01-31">10000.00</value>
+      <receiver-org receiver-activity-id="US-GOV-11" type="10">
+        <narrative>U.S. Government - Department of State</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2024" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="BFADCB7EA797" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-03-31"/>
+      <value value-date="2024-03-31">3422.00</value>
+      <receiver-org receiver-activity-id="US-GOV-11" type="10">
+        <narrative>U.S. Government - Department of State</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2024" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="F91067310A00" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-04-30"/>
+      <value value-date="2024-04-30">2881.00</value>
+      <receiver-org receiver-activity-id="US-GOV-11" type="10">
+        <narrative>U.S. Government - Department of State</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2024" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="ABAC6619D90F" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2024-10-31"/>
+      <value value-date="2024-10-31">-878.00</value>
+      <receiver-org receiver-activity-id="US-GOV-11" type="10">
+        <narrative>U.S. Government - Department of State</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2024" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>139611466</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-186-186-A-00-02-00107-01</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">ROM SO 2.1 CITIZEN PARTICIPATION</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Increased, Better Informed Citizens' Participation in Political and Economic Decision Making</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-066781956" role="4" type="70">
+      <narrative>Development Alternatives, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2018-10-01" type="1"/>
+    <activity-date iso-date="2018-10-01" type="2"/>
+    <activity-date iso-date="2019-09-30" type="3"/>
+    <activity-date iso-date="2019-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="4CB98997686E">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2018-12-31"/>
+      <value value-date="2018-12-31">73577.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-066781956" type="70">
+        <narrative>Development Alternatives, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="4CB98997686E">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-12-31"/>
+      <value value-date="2018-12-31">73577.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-066781956" type="70">
+        <narrative>Development Alternatives, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>66781956</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-186-186-A-00-02-00107-1</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">ROM SO 2.1 CITIZEN PARTICIPATION</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Increased, Better Informed Citizens' Participation in Political and Economic Decision Making</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="70">
+      <narrative>Development Alternatives, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2017-09-30" type="3"/>
+    <activity-date iso-date="2017-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="09B8AA553F60">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2017-09-30"/>
+      <value value-date="2017-09-30">61951.00</value>
+      <receiver-org type="70">
+        <narrative>Development Alternatives, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2000" end="2001"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="09B8AA553F60">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-09-30"/>
+      <value value-date="2017-09-30">61951.00</value>
+      <receiver-org type="70">
+        <narrative>Development Alternatives, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2000" end="2001"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="3BDAF81457AC">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">-163577.00</value>
+      <receiver-org type="70">
+        <narrative>Development Alternatives, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2001" end="2002"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="EEBB637B656B">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">-163577.00</value>
+      <receiver-org type="70">
+        <narrative>Development Alternatives, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2001" end="2002"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-186-186-A-00-02-00107-17</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Improved Democratic Governance at Local Level</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Improved Democratic Governance at Local Level</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="70">
+      <narrative>Development Alternatives, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2014-09-30" type="3"/>
+    <activity-date iso-date="2014-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="916FD882D6B4">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">163577.00</value>
+      <receiver-org type="70">
+        <narrative>Development Alternatives, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2004" end="2005"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-186-A-00-01-00102-11</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Social Services</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Assist special populations which may be vulnerable or at-risk on a temporary or chronic basis whose needs are not addressed under emergency humanitarian assistance or other programs. These include groups such as the disabled; orphans, children and at-risk youth; victims of trafficking; victims of gender-based violence; refugees, returnees, ethnic minorities, internally displaced or other socially excluded groups; the elderly; and female heads of household. Depending on circumstances, services may intend to protect groups; mitigate adverse conditions they face, or to remove barriers to help integrate them into society. Components may include measures to increase the capacity of local service and advocacy NGOs and/or professional social workers; to establish public/private service delivery partnerships as well as family and community focused service models; to establish effective referral networks; to develop appropriate service protocols and methods for screening prospective recipients; or to improve public understanding and sensitivity to the needs of the vulnerable. While services provided should not exclude victims of trafficking in persons, programs designed specifically for this group fall under the Peace and Security Objective under the Transnational Crime Area and the Trafficking in Persons and Migrant Smuggling Element.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-73961419" role="4" type="22">
+      <narrative>World Learning, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="300DB21BF108">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">-16072.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-73961419" type="22">
+        <narrative>World Learning, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4004" vocabulary="99">
+        <narrative>Social Services</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2004" end="2009"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>73961419</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-186-A-00-03-00103-04</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Policies, Regulations, and Systems</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Address society-wide norms, policies, laws, and capacities to develop or reform safety nets except as covered in other more specific elements (e.g. health elements above). Build the frameworks for identifying populations in need or at-risk; devise criteria for eligibility; direct resources to public and private organizations for program administration; set standards for the delivery of effective assistance and services; and track the impact on target populations.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="22">
+      <narrative>American Bar Association</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2018-09-30" type="3"/>
+    <activity-date iso-date="2018-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="517E5C2FACD4">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-06-30"/>
+      <value value-date="2014-06-30">-2609.00</value>
+      <receiver-org type="22">
+        <narrative>American Bar Association</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4003" vocabulary="99">
+        <narrative>Policies, Regulations, and Systems</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2007" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="F24C722BB1B7">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">-2609.00</value>
+      <receiver-org type="22">
+        <narrative>American Bar Association</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4003" vocabulary="99">
+        <narrative>Policies, Regulations, and Systems</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2007" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="5880C1542825">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-03-31"/>
+      <value value-date="2018-03-31">-4.00</value>
+      <receiver-org type="22">
+        <narrative>American Bar Association</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="16010" vocabulary="1">
+        <narrative>Social Protection</narrative>
+      </sector>
+      <sector code="4003" vocabulary="99">
+        <narrative>Policies, Regulations, and Systems</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2007" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-186-AID-G-186-01-01-1</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">ROM SO 2.1 CITIZEN PARTICIPATION</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Increased, Better Informed Citizens' Participation in Political and Economic Decision Making</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-41114" role="4" type="40">
+      <narrative>United Nations Development Programme</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="7F0A7F3102AF">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">-1914.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-41114" type="40">
+        <narrative>United Nations Development Programme</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15150" vocabulary="1">
+        <narrative>Democratic participation and civil society</narrative>
+      </sector>
+      <sector code="2004" vocabulary="99">
+        <narrative>Civil Society</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2001" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>960398662</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-186-HRN-I-805-98-00032-1</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Improve the Welfare of Children and Women in Romania</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Improve the Welfare of Children and Women in Romania</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-91500090" role="4" type="70">
+      <narrative>John Snow International</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="878E0075F1BA">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">-44796.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-91500090" type="70">
+        <narrative>John Snow International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2001" end="2002"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>91500090</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-186-LAG-I-800-98-00004-1</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">ROM SO 1.5 ENERGY</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">A More Economically Sustainable and Environmentally Sound Energy Sector</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="70">
+      <narrative>Advanced Engineering Associates International, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="921BBC1A0BC5">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">-2588.00</value>
+      <receiver-org type="70">
+        <narrative>Advanced Engineering Associates International, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="23110" vocabulary="1">
+        <narrative>Energy policy and administrative management</narrative>
+      </sector>
+      <sector code="5004" vocabulary="99">
+        <narrative>Infrastructure</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2001" end="2002"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-186-LAG-I-808-99-00019-7</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Accelerated Priv. Sec. Growth by Supp. a Market Driven Envir</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Accelerated Private Sector Growth by Supporting a Market-Driven Environment</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-61000" role="4" type="70">
+      <narrative>Enterprise - United States Other</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2014-09-30" type="3"/>
+    <activity-date iso-date="2014-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="520B33CAECF7">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-06-30"/>
+      <value value-date="2014-06-30">-42018.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-61000" type="70">
+        <narrative>Enterprise - United States Other</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2004" end="2005"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-186-NIS-I-801-99-00001-3</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">ROM SO 1.4 FINANCIAL SECTOR</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Financial Sector</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="70">
+      <narrative>BearingPoint, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="44066820A0B0">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-34962.00</value>
+      <receiver-org type="70">
+        <narrative>BearingPoint, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="24010" vocabulary="1">
+        <narrative>Financial policy and administrative management</narrative>
+      </sector>
+      <sector code="5003" vocabulary="99">
+        <narrative>Financial Sector</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="1999" end="2000"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-186-NIS-I-801-99-00001-5</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">ROM SO 1.4 FINANCIAL SECTOR</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Financial Sector</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="70">
+      <narrative>BearingPoint, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="2F2A76334BEB">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-39248.00</value>
+      <receiver-org type="70">
+        <narrative>BearingPoint, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="24010" vocabulary="1">
+        <narrative>Financial policy and administrative management</narrative>
+      </sector>
+      <sector code="5003" vocabulary="99">
+        <narrative>Financial Sector</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2000" end="2001"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-186-P-00-02-00106-06-VENDORCOD</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Accelerated Priv. Sec. Growth by Supp. a Market Driven Envir</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Accelerated Private Sector Growth by Supporting a Market-Driven Environment</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-2" role="4" type="10">
+      <narrative>U.S. Government - Department of Agriculture</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="C4A73E86204D">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">-212692.00</value>
+      <receiver-org receiver-activity-id="US-GOV-2" type="10">
+        <narrative>U.S. Government - Department of Agriculture</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="C4A73E86204D">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">-102521.00</value>
+      <receiver-org receiver-activity-id="US-GOV-2" type="10">
+        <narrative>U.S. Government - Department of Agriculture</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="E0ED3EA20FA1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">-150000.00</value>
+      <receiver-org receiver-activity-id="US-GOV-2" type="10">
+        <narrative>U.S. Government - Department of Agriculture</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12250" vocabulary="1">
+        <narrative>Infectious disease control</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1095.0">Child Survival and Health Programs Fund, United States</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-186-PCE-I-812-99-00008-9</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Accelerated Priv. Sec. Growth by Supp. a Market Driven Envir</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Accelerated Private Sector Growth by Supporting a Market-Driven Environment</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Deloitte Touche Tohmatsu Limited</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="7EC14CA60CDA">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">-9252.00</value>
+      <receiver-org>
+        <narrative>Deloitte Touche Tohmatsu Limited</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2005" end="2006"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-186-PCE-I-822-98-00015-5</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Accelerated Priv. Sec. Growth by Supp. a Market Driven Envir</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Accelerated Private Sector Growth by Supporting a Market-Driven Environment</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-EIN-52-2145827" role="4" type="70">
+      <narrative>Chemonics International, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2014-09-30" type="3"/>
+    <activity-date iso-date="2014-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="138DC3D6B47D">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">2911.00</value>
+      <receiver-org receiver-activity-id="US-EIN-52-2145827" type="70">
+        <narrative>Chemonics International, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2004" end="2005"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-186-PCE-I-822-98-00015-7</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Accelerated Priv. Sec. Growth by Supp. a Market Driven Envir</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Accelerated Private Sector Growth by Supporting a Market-Driven Environment</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-EIN-52-2145827" role="4" type="70">
+      <narrative>Chemonics International, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="64AA7014AE40">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-09-30"/>
+      <value value-date="2014-09-30">-2911.00</value>
+      <receiver-org receiver-activity-id="US-EIN-52-2145827" type="70">
+        <narrative>Chemonics International, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2005" end="2006"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="682DF45C2523">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">2911.00</value>
+      <receiver-org receiver-activity-id="US-EIN-52-2145827" type="70">
+        <narrative>Chemonics International, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2005" end="2006"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201350393</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Advisory and Assistance Services</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Advisory and Assistance Services.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="22">
+      <narrative>World Learning, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="B68AE90780FB">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">20409.00</value>
+      <receiver-org type="22">
+        <narrative>World Learning, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201350419</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Advisory and Assistance Services</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Advisory and Assistance Services.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="22">
+      <narrative>International Republican Institute</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="21340FB58B6E">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">-6648.00</value>
+      <receiver-org type="22">
+        <narrative>International Republican Institute</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="15112" vocabulary="1">
+        <narrative>Decentralisation and support to subnational government</narrative>
+      </sector>
+      <sector code="2002" vocabulary="99">
+        <narrative>Good Governance</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201350473</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Advisory and Assistance Services</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Advisory and Assistance Services.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>MWH Global, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="F3B0A45C119F">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-06-30"/>
+      <value value-date="2013-06-30">-22955.00</value>
+      <receiver-org>
+        <narrative>MWH Global, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="23110" vocabulary="1">
+        <narrative>Energy policy and administrative management</narrative>
+      </sector>
+      <sector code="5004" vocabulary="99">
+        <narrative>Infrastructure</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2000" end="2001"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201453314</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Advisory and Assistance Services</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Advisory and Assistance Services.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="22">
+      <narrative>John Snow International</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2014-09-30" type="3"/>
+    <activity-date iso-date="2014-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="F032330C68AB">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-06-30"/>
+      <value value-date="2014-06-30">-5363.00</value>
+      <receiver-org type="22">
+        <narrative>John Snow International</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="13040" vocabulary="1">
+        <narrative>STD control including HIV/AIDS</narrative>
+      </sector>
+      <sector code="3001" vocabulary="99">
+        <narrative>HIV/AIDS</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2005" end="2006"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201453337</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Advisory and Assistance Services</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Advisory and Assistance Services.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="22">
+      <narrative>University Research Co., LLC</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2014-09-30" type="3"/>
+    <activity-date iso-date="2014-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="B7EA8FD0D4EC">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2014-03-31"/>
+      <value value-date="2014-03-31">7.00</value>
+      <receiver-org type="22">
+        <narrative>University Research Co., LLC</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="12220" vocabulary="1">
+        <narrative>Basic health care</narrative>
+      </sector>
+      <sector code="3005" vocabulary="99">
+        <narrative>Other Public Health Threats</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201758557</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Miscellaneous Goods, Services, and Operations Maintanence</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Miscellaneous Goods, Services, and Operations Maintanence.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="70">
+      <narrative>TCG International, LLC</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2016-10-01" type="1"/>
+    <activity-date iso-date="2016-10-01" type="2"/>
+    <activity-date iso-date="2017-09-30" type="3"/>
+    <activity-date iso-date="2017-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="5AC1636F1A0F">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2017-06-30"/>
+      <value value-date="2017-06-30">-7597.00</value>
+      <receiver-org type="70">
+        <narrative>TCG International, LLC</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="41010" vocabulary="1">
+        <narrative>Environmental policy and administrative management</narrative>
+      </sector>
+      <sector code="6003" vocabulary="99">
+        <narrative>Clean Productive Environment</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2004" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-EPP-I-03-03-00006</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Romania Energy Program Phase II</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Romania Energy Program Phase II</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-119259364" role="4" type="70">
+      <narrative>International Resources Group Ltd.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2003-09-29" type="1"/>
+    <activity-date iso-date="2003-09-29" type="2"/>
+    <activity-date iso-date="2016-09-30" type="3"/>
+    <activity-date iso-date="2016-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="BDBF2F9E1795">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2016-09-30"/>
+      <value value-date="2016-09-30">-57975.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-119259364" type="70">
+        <narrative>International Resources Group Ltd.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="2006" end="2007"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2003-09-29"/>
+    <usg:duns-number>
+      <narrative>119259364</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>1241854.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-EPE-I-02-95-00052</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">ROM SO 1.4 FINANCIAL SECTOR</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Financial Sector</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="70">
+      <narrative>International Business Machines Corp.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="CC32B491ACDA">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-51219.00</value>
+      <receiver-org type="70">
+        <narrative>International Business Machines Corp.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="24010" vocabulary="1">
+        <narrative>Financial policy and administrative management</narrative>
+      </sector>
+      <sector code="5003" vocabulary="99">
+        <narrative>Financial Sector</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="1995" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-PCE-I-24-96-00002</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">ROM SO 1.6 ENVIRONMENTAL MANAGEMENT</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Environmental Management</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-119259364" role="4" type="70">
+      <narrative>International Resources Group Ltd.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="648264826D3D">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-46723.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-119259364" type="70">
+        <narrative>International Resources Group Ltd.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="41010" vocabulary="1">
+        <narrative>Environmental policy and administrative management</narrative>
+      </sector>
+      <sector code="6003" vocabulary="99">
+        <narrative>Clean Productive Environment</narrative>
+      </sector>
+      <recipient-country code="RO"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="1998" end="1999"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>119259364</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Romania</narrative>
+    </usg:state-location>
+  </iati-activity>
+</iati-activities>

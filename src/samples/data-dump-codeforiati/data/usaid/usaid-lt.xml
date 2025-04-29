@@ -1,0 +1,257 @@
+<iati-activities xmlns:usg="https://explorer.usaid.gov" generated-datetime="2025-04-03T20:52:13.509Z" version="2.03">
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201450478</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Advisory and Assistance Services</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Advisory and Assistance Services.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Bechtel Corporation</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2013-10-01" type="1"/>
+    <activity-date iso-date="2013-10-01" type="2"/>
+    <activity-date iso-date="2014-09-30" type="3"/>
+    <activity-date iso-date="2014-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="0D0C5E7D0BAF">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-06-30"/>
+      <value value-date="2014-06-30">-35905.00</value>
+      <receiver-org>
+        <narrative>Bechtel Corporation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="23110" vocabulary="1">
+        <narrative>Energy policy and administrative management</narrative>
+      </sector>
+      <sector code="5004" vocabulary="99">
+        <narrative>Infrastructure</narrative>
+      </sector>
+      <recipient-country code="LT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="1998" end="1999"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="D45FB0E05C00">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2014-06-30"/>
+      <value value-date="2014-06-30">-7682.00</value>
+      <receiver-org>
+        <narrative>Bechtel Corporation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="23110" vocabulary="1">
+        <narrative>Energy policy and administrative management</narrative>
+      </sector>
+      <sector code="5004" vocabulary="99">
+        <narrative>Infrastructure</narrative>
+      </sector>
+      <recipient-country code="LT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="1999" end="2000"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Lithuania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720201550478</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">USAID Advisory and Assistance Services</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Administrative costs and operating expenses of USAID contributing to Advisory and Assistance Services.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>Bechtel Corporation</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="4"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="DEA7744BBFD6">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-09-30"/>
+      <value value-date="2015-09-30">-10.00</value>
+      <receiver-org>
+        <narrative>Bechtel Corporation</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="23110" vocabulary="1">
+        <narrative>Energy policy and administrative management</narrative>
+      </sector>
+      <sector code="5004" vocabulary="99">
+        <narrative>Infrastructure</narrative>
+      </sector>
+      <recipient-country code="LT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="1999" end="2000"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Lithuania</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-ENI-P-00-98-00010</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">LTH SO 1.5 ENERGY</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Energy</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4">
+      <narrative>U.S. Government - Nuclear Regulatory Commission</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="AE8062D37E34">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">-40580.00</value>
+      <receiver-org>
+        <narrative>U.S. Government - Nuclear Regulatory Commission</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="23110" vocabulary="1">
+        <narrative>Energy policy and administrative management</narrative>
+      </sector>
+      <sector code="5004" vocabulary="99">
+        <narrative>Infrastructure</narrative>
+      </sector>
+      <recipient-country code="LT"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="1999" end="2000"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Lithuania</narrative>
+    </usg:state-location>
+  </iati-activity>
+</iati-activities>

@@ -1,0 +1,718 @@
+<iati-activities xmlns:usg="https://explorer.usaid.gov" generated-datetime="2025-04-03T20:52:13.509Z" version="2.03">
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-00013MO000233</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Crisis Assistance and Recovery</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Provide goods, personnel, services and assistance to meet basic human needs in order to foster transition from relief according to principles of universality, impartiality and human dignity. This element should be done, when possible, as part of an integrated, coordinated and/or multi-sectoral approach.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-11" role="4" type="10">
+      <narrative>U.S. Government - Department of State</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="36CB2A00083C" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">150000.00</value>
+      <receiver-org receiver-activity-id="US-GOV-11" type="10">
+        <narrative>U.S. Government - Department of State</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="479BF6CA1367" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2013-03-31"/>
+      <value value-date="2013-03-31">150000.00</value>
+      <receiver-org receiver-activity-id="US-GOV-11" type="10">
+        <narrative>U.S. Government - Department of State</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2013" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Samoa</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720FDA19IO00015</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Disaster Readiness</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The provision of effective protection, assistance, and durable solutions for refugees, internally displaced persons (IDPs), and other victims of conflict and disasters.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-21018" role="4" type="21">
+      <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2022-10-01" type="1"/>
+    <activity-date iso-date="2022-10-01" type="2"/>
+    <activity-date iso-date="2023-09-30" type="3"/>
+    <activity-date iso-date="2023-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website/>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="B677043E686B" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2019-04-30"/>
+      <value value-date="2019-04-30">160000.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="5AE84024685E" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2019-09-30"/>
+      <value value-date="2019-09-30">13689.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="66EAC649FDC9" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-02-29"/>
+      <value value-date="2020-02-29">33229.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="2A8CA4FB616B" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2020-08-31"/>
+      <value value-date="2020-08-31">80509.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="A6C284696489" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-05-31"/>
+      <value value-date="2021-05-31">25177.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="9DB8D58D4C69" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-07-31"/>
+      <value value-date="2021-07-31">7110.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="692F87040CAA" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2023-02-28"/>
+      <value value-date="2023-02-28">-286.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2019" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative>159714.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Samoa</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-720FDA20GR00092</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Disaster Readiness</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">The provision of effective protection, assistance, and durable solutions for refugees, internally displaced persons (IDPs), and other victims of conflict and disasters.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-EIN-13-5563422" role="4" type="90">
+      <narrative>Catholic Relief Services</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2022-10-01" type="1"/>
+    <activity-date iso-date="2022-10-01" type="2"/>
+    <activity-date iso-date="2023-09-30" type="3"/>
+    <activity-date iso-date="2023-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website/>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="ECECF46BF361" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2020-09-30"/>
+      <value value-date="2020-09-30">500000.00</value>
+      <receiver-org receiver-activity-id="US-EIN-13-5563422" type="90">
+        <narrative>Catholic Relief Services</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <sector code="8" vocabulary="10"/>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="B35174358925" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-03-31"/>
+      <value value-date="2021-03-31">9100.00</value>
+      <receiver-org receiver-activity-id="US-EIN-13-5563422" type="90">
+        <narrative>Catholic Relief Services</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="82153F7EC558" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-04-30"/>
+      <value value-date="2021-04-30">2100.00</value>
+      <receiver-org receiver-activity-id="US-EIN-13-5563422" type="90">
+        <narrative>Catholic Relief Services</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="06540D8CEEA1" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-10-31"/>
+      <value value-date="2021-10-31">30500.00</value>
+      <receiver-org receiver-activity-id="US-EIN-13-5563422" type="90">
+        <narrative>Catholic Relief Services</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="12111773EF37" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-11-30"/>
+      <value value-date="2021-11-30">3400.00</value>
+      <receiver-org receiver-activity-id="US-EIN-13-5563422" type="90">
+        <narrative>Catholic Relief Services</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="645A4B2AE857" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2021-12-31"/>
+      <value value-date="2021-12-31">102100.00</value>
+      <receiver-org receiver-activity-id="US-EIN-13-5563422" type="90">
+        <narrative>Catholic Relief Services</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="39AFE61D4BCF" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-06-30"/>
+      <value value-date="2022-06-30">113400.00</value>
+      <receiver-org receiver-activity-id="US-EIN-13-5563422" type="90">
+        <narrative>Catholic Relief Services</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="6B2C969584AA" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-07-31"/>
+      <value value-date="2022-07-31">21400.00</value>
+      <receiver-org receiver-activity-id="US-EIN-13-5563422" type="90">
+        <narrative>Catholic Relief Services</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="6CDC3253791C" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-09-30"/>
+      <value value-date="2022-09-30">67200.00</value>
+      <receiver-org receiver-activity-id="US-EIN-13-5563422" type="90">
+        <narrative>Catholic Relief Services</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="2015B1E6E8E6" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-11-30"/>
+      <value value-date="2022-11-30">40800.00</value>
+      <receiver-org receiver-activity-id="US-EIN-13-5563422" type="90">
+        <narrative>Catholic Relief Services</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="10B36FD11596" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2022-12-31"/>
+      <value value-date="2022-12-31">6100.00</value>
+      <receiver-org receiver-activity-id="US-EIN-13-5563422" type="90">
+        <narrative>Catholic Relief Services</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <transaction ref="A0C92A9AD283" humanitarian="1">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2023-04-30"/>
+      <value value-date="2023-04-30">19200.00</value>
+      <receiver-org receiver-activity-id="US-EIN-13-5563422" type="90">
+        <narrative>Catholic Relief Services</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="74020" vocabulary="1">
+        <narrative>Multi-hazard response preparedness</narrative>
+      </sector>
+      <sector code="7002" vocabulary="99">
+        <narrative>Disaster Readiness</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2020" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative>500000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Samoa</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-DFD-G-00-10-00018-00</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Crisis Assistance and Recovery</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Provide goods, personnel, services and assistance to meet basic human needs in order to foster transition from relief according to principles of universality, impartiality and human dignity. This element should be done, when possible, as part of an integrated, coordinated and/or multi-sectoral approach.</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XM-DAC-21018" role="4" type="21">
+      <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2012-10-01" type="1"/>
+    <activity-date iso-date="2012-10-01" type="2"/>
+    <activity-date iso-date="2013-09-30" type="3"/>
+    <activity-date iso-date="2013-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/office-us</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="A6F63806F50F" humanitarian="1">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2012-12-31"/>
+      <value value-date="2012-12-31">-21081.00</value>
+      <receiver-org receiver-activity-id="XM-DAC-21018" type="21">
+        <narrative>International Federation of Red Cross and Red Crescent Societies</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="72010" vocabulary="1">
+        <narrative>Material relief assistance and services</narrative>
+      </sector>
+      <sector code="7001" vocabulary="99">
+        <narrative>Protection, Assistance and Solutions</narrative>
+      </sector>
+      <recipient-country code="WS"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1035.0">International Disaster and Famine Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2010" end="2025"/>
+      </usg:treasury-account>
+      <usg:humanitarian-scope type="1" vocabulary="99"/>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>482292948</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Samoa</narrative>
+    </usg:state-location>
+  </iati-activity>
+</iati-activities>

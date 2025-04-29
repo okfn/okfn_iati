@@ -1,0 +1,326 @@
+<iati-activities xmlns:usg="https://explorer.usaid.gov" generated-datetime="2025-04-03T20:52:13.509Z" version="2.03">
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-AID-ASHA-A-15-00009</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">FY 2015 ASHA Award - City University of Seatle</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">FY 2015 ASHA Award - City University of Seatle</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="XI-DUNS-078212263" role="4" type="80">
+      <narrative>CITY UNIVERSITY OF SEATTLE</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2015-11-17" type="1"/>
+    <activity-date iso-date="2015-11-17" type="2"/>
+    <activity-date iso-date="2019-12-31" type="3"/>
+    <activity-date iso-date="2019-12-31" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-democracy-conflict-and-humanitarian-assistance/asha</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="5"/>
+    <transaction ref="8BBEDF08EB94">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-12-31"/>
+      <value value-date="2015-12-31">500000.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-078212263" type="80">
+        <narrative>CITY UNIVERSITY OF SEATTLE</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="SK"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2016"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="A4436DD48E8E">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2017-12-31"/>
+      <value value-date="2017-12-31">170000.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-078212263" type="80">
+        <narrative>CITY UNIVERSITY OF SEATTLE</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="SK"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2016"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="4C66BB4B65A3">
+      <transaction-type code="3"/>
+      <transaction-date iso-date="2018-06-30"/>
+      <value value-date="2018-06-30">330000.00</value>
+      <receiver-org receiver-activity-id="XI-DUNS-078212263" type="80">
+        <narrative>CITY UNIVERSITY OF SEATTLE</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="11420" vocabulary="1">
+        <narrative>Higher education</narrative>
+      </sector>
+      <sector code="4002" vocabulary="99">
+        <narrative>Higher Education</narrative>
+      </sector>
+      <recipient-country code="SK"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1021.0">Development Assistance</usg:main-account>
+        <usg:fiscal-funding-year begin="2015" end="2016"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2015-11-17"/>
+    <usg:duns-number>
+      <narrative>78212263</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative>500000.00</narrative>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Slovakia</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-DHR-C-00-95-00034</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">Improved Public Sector Environmental Services</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Improved Public Sector Environmental Services</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-EIN-52-2145827" role="4" type="70">
+      <narrative>Chemonics International, Inc.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="7DAC1A2195F0">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-2509.00</value>
+      <receiver-org receiver-activity-id="US-EIN-52-2145827" type="70">
+        <narrative>Chemonics International, Inc.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="41010" vocabulary="1">
+        <narrative>Environmental policy and administrative management</narrative>
+      </sector>
+      <sector code="6003" vocabulary="99">
+        <narrative>Clean Productive Environment</narrative>
+      </sector>
+      <recipient-country code="SK"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="1995" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:duns-number>
+      <narrative>867714768</narrative>
+    </usg:duns-number>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Slovakia</narrative>
+    </usg:state-location>
+  </iati-activity>
+  <iati-activity default-currency="USD" hierarchy="1" last-updated-datetime="2025-04-03T20:52:13.509Z" xml:lang="en">
+    <iati-identifier>US-GOV-1-EPE-I-01-95-00052</iati-identifier>
+    <reporting-org ref="US-GOV-1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </reporting-org>
+    <title>
+      <narrative xml:lang="en">SLK SO 1.3 PRIVATE ENTERPRISE GROWTH</narrative>
+    </title>
+    <description>
+      <narrative xml:lang="en">Private Enterprise Growth</narrative>
+    </description>
+    <participating-org ref="US-GOV-1" role="1" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="2" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="US-GOV-1" role="3" type="10">
+      <narrative>U.S. Agency for International Development</narrative>
+    </participating-org>
+    <participating-org ref="" role="4" type="70">
+      <narrative>International Business Machines Corp.</narrative>
+    </participating-org>
+    <activity-status code="3"/>
+    <activity-date iso-date="2014-10-01" type="1"/>
+    <activity-date iso-date="2014-10-01" type="2"/>
+    <activity-date iso-date="2015-09-30" type="3"/>
+    <activity-date iso-date="2015-09-30" type="4"/>
+    <contact-info type="1">
+      <organisation>
+        <narrative>U.S. Agency for International Development</narrative>
+      </organisation>
+      <person-name>
+        <narrative/>
+      </person-name>
+      <telephone>+1 (202) 712 4810</telephone>
+      <email>aidtransparency@usaid.gov</email>
+      <website>https://www.usaid.gov/who-we-are/organization/bureaus/bureau-europe-and-eurasia</website>
+      <mailing-address>
+        <narrative>1300 Pennsylvania Ave NW, Washington DC 20004</narrative>
+      </mailing-address>
+    </contact-info>
+    <activity-scope code="5"/>
+    <collaboration-type code="1"/>
+    <default-flow-type code="10"/>
+    <default-finance-type code="110"/>
+    <default-aid-type code="C01"/>
+    <default-tied-status code="4"/>
+    <transaction ref="233C8AC0ECD9">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-2187.00</value>
+      <receiver-org type="70">
+        <narrative>International Business Machines Corp.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="SK"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="1995" end="2025"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="2D6F5971C662">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-865.00</value>
+      <receiver-org type="70">
+        <narrative>International Business Machines Corp.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="SK"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="1996" end="1997"/>
+      </usg:treasury-account>
+    </transaction>
+    <transaction ref="E4A24343C82E">
+      <transaction-type code="2"/>
+      <transaction-date iso-date="2015-06-30"/>
+      <value value-date="2015-06-30">-52539.00</value>
+      <receiver-org type="70">
+        <narrative>International Business Machines Corp.</narrative>
+      </receiver-org>
+      <disbursement-channel code="2"/>
+      <sector code="25010" vocabulary="1">
+        <narrative>Business Policy and Administation</narrative>
+      </sector>
+      <sector code="5006" vocabulary="99">
+        <narrative>Private Sector Competitiveness</narrative>
+      </sector>
+      <recipient-country code="SK"/>
+      <usg:treasury-account>
+        <usg:regular-account code="72.0"/>
+        <usg:main-account code="1010.0">Assistance for Eastern Europe and the Baltic States</usg:main-account>
+        <usg:fiscal-funding-year begin="1997" end="1998"/>
+      </usg:treasury-account>
+    </transaction>
+    <conditions attached="0"/>
+    <usg:mechanism-signing-date iso-date="2024-10-01"/>
+    <usg:tec1>
+      <narrative/>
+    </usg:tec1>
+    <usg:state-location>
+      <narrative>Slovakia</narrative>
+    </usg:state-location>
+  </iati-activity>
+</iati-activities>
