@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iati-organisations version="2.02" generated-datetime="2018-04-27T17:57:09+00:00">
+  <iati-organisation last-updated-datetime="2018-04-27T17:57:09+00:00" xml:lang="en" default-currency="USD" xmlns:aidstream="http://example.org/aidstream/ns#">
+    <organisation-identifier>US-EIN-521257057</organisation-identifier>
+    <name>
+      <narrative>World Resources Institute</narrative>
+    </name>
+    <reporting-org type="21" ref="US-EIN-521257057">
+      <narrative>World Resources Institute</narrative>
+    </reporting-org>
+    <total-budget status="1">
+      <period-start iso-date="2017-10-01"/>
+      <period-end iso-date="2018-09-30"/>
+      <value currency="USD" value-date="2017-10-01">96945000</value>
+    </total-budget>
+    <document-link format="application/pdf" url="http://www.wri.org/sites/default/files/uploads/wri-2017-annual-report.pdf">
+      <title>
+        <narrative>WRI's FY17 Annual Report</narrative>
+      </title>
+      <category code="B01"/>
+      <document-date iso-date="2017-10-01"/>
+    </document-link>
+  </iati-organisation>
+</iati-organisations>
