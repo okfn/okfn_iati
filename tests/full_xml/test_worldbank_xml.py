@@ -20,10 +20,10 @@ class TestWorldBankXmlGeneration(unittest.TestCase):
         self.output_file = "test_worldbank_generated.xml"
         self.maxDiff = None
 
-    # def tearDown(self):
-    #     # Clean up any generated test files
-    #     if os.path.exists(self.output_file):
-    #         os.remove(self.output_file)
+    def tearDown(self):
+        # Clean up any generated test files
+        if os.path.exists(self.output_file):
+            os.remove(self.output_file)
 
     def test_generate_worldbank_xml(self):
         """Test generating a complex World Bank IATI XML file that matches the structure of worldbank-679.xml."""
