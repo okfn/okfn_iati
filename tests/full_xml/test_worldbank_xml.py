@@ -14,7 +14,7 @@ class TestWorldBankXmlGeneration(unittest.TestCase):
 
     def setUp(self):
         self.sample_file = os.path.join(
-            Path(__file__).parent.parent,
+            Path(__file__).parent.parent.parent,
             'data-samples', 'xml', 'worldbank-679.xml'
         )
         self.output_file = "test_worldbank_generated.xml"

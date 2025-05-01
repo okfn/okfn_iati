@@ -1,7 +1,15 @@
 from dataclasses import dataclass, field
 from datetime import datetime
 from typing import List, Optional, Dict, Any, Union
-from okfn_iati.enums import ActivityStatus
+
+from okfn_iati.enums import (
+    ActivityStatus, ActivityScope, BudgetStatus, BudgetType,
+    ContactType, DocumentCategory, ActivityDateType,
+    FinanceType, FlowType, GeographicalPrecision,
+    LocationReach, LocationType, OrganisationRole, OrganisationType,
+    RelatedActivityType,
+    ResultType, TiedStatus, TransactionType,
+)
 
 
 @dataclass
@@ -27,15 +35,22 @@ class OrganizationRef:
 
     Args:
         ref: Organization identifier reference code
-        type: Organization type code (see OrganisationType enum)
+        type: Optional organization type code (see OrganisationType enum)
         narratives: List of narrative elements with organization names
 
     References:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/reporting-org/
     """
     ref: str
-    type: str  # See OrganisationType enum for valid values
+    type: Optional[str] = None  # See OrganisationType enum for valid values
     narratives: List[Narrative] = field(default_factory=list)
+
+    def __post_init__(self):
+        # Validate type is a valid OrganisationType if it's provided and numeric
+        if self.type is not None:
+            org_types = [e.value for e in OrganisationType]
+            if self.type not in org_types:
+                raise ValueError(f"Invalid organization type: {self.type}. Valid values are: {org_types}")
 
 
 @dataclass
@@ -61,6 +76,22 @@ class ParticipatingOrg:
     crs_channel_code: Optional[str] = None
     narratives: List[Narrative] = field(default_factory=list)
 
+    def __post_init__(self):
+        errors = []
+        valid_org_roles = [e.value for e in OrganisationRole]
+
+        # Fix: Handle both string and enum instances for role
+        if isinstance(self.role, str) and self.role not in valid_org_roles:
+            errors.append(f"Invalid organization role: {self.role}. Valid values are: {valid_org_roles}")
+        elif hasattr(self.role, 'value') and self.role.value not in valid_org_roles:
+            errors.append(f"Invalid organization role: {self.role}. Valid values are: {valid_org_roles}")
+
+        valid_org_types = [e.value for e in OrganisationType]
+        if self.type and self.type not in valid_org_types:
+            errors.append(f"Invalid organization type: {self.type}. Valid values are: {valid_org_types}")
+        if errors:
+            raise ValueError(" ".join(errors))
+
 
 @dataclass
 class ActivityDate:
@@ -75,9 +106,28 @@ class ActivityDate:
     References:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/activity-date/
     """
-    type: str  # 1=Planned start, 2=Actual start, 3=Planned end, 4=Actual end
+    type: Union[ActivityDateType, str]
     iso_date: str  # ISO 8601 format (YYYY-MM-DD)
     narratives: List[Narrative] = field(default_factory=list)
+
+    def __post_init__(self):
+        errors = []
+        # Convert string to enum if needed
+        if isinstance(self.type, str):
+            try:
+                self.type = next(e for e in ActivityDateType if e.value == self.type)
+            except (StopIteration, ValueError):
+                valid_types = [e.value for e in ActivityDateType]
+                errors.append(f"Invalid date type: {self.type}. Valid values are: {valid_types}")
+
+        # Validate ISO date format
+        try:
+            datetime.strptime(self.iso_date, "%Y-%m-%d")
+        except ValueError:
+            errors.append(f"Invalid ISO date format: {self.iso_date}. Expected YYYY-MM-DD")
+
+        if errors:
+            raise ValueError(" ".join(errors))
 
 
 @dataclass
@@ -109,6 +159,15 @@ class ContactInfo:
     website: Optional[str] = None
     mailing_address: Optional[List[Narrative]] = None
 
+    def __post_init__(self):
+        valid_types = [e.value for e in ContactType]
+
+        # Fix: Handle both string and enum instances for type
+        if isinstance(self.type, str) and self.type and self.type not in valid_types:
+            raise ValueError(f"Invalid contact type: {self.type}. Valid values are: {valid_types}")
+        elif hasattr(self.type, 'value') and self.type.value not in valid_types:
+            raise ValueError(f"Invalid contact type: {self.type}. Valid values are: {valid_types}")
+
 
 @dataclass
 class Location:
@@ -137,9 +196,31 @@ class Location:
     activity_description: Optional[List[Narrative]] = None
     administrative: Optional[List[Dict[str, str]]] = None
     point: Optional[Dict[str, str]] = None
-    exactness: Optional[str] = None  # See GeographicalPrecision enum
-    location_class: Optional[str] = None  # See LocationType enum
+    exactness: Optional[Union[GeographicalPrecision, str]] = None
+    location_class: Optional[Union[LocationType, str]] = None
     feature_designation: Optional[str] = None
+
+    def __post_init__(self):
+        # Convert string to enum if needed for location_reach
+        if isinstance(self.location_reach, str):
+            try:
+                self.location_reach = next(e for e in LocationReach if e.value == self.location_reach)
+            except (StopIteration, ValueError, TypeError):
+                pass
+
+        # Convert string to enum if needed for exactness
+        if isinstance(self.exactness, str):
+            try:
+                self.exactness = next(e for e in GeographicalPrecision if e.value == self.exactness)
+            except (StopIteration, ValueError, TypeError):
+                pass
+
+        # Convert string to enum if needed for location_class
+        if isinstance(self.location_class, str):
+            try:
+                self.location_class = next(e for e in LocationType if e.value == self.location_class)
+            except (StopIteration, ValueError, TypeError):
+                pass
 
 
 @dataclass
@@ -161,9 +242,25 @@ class DocumentLink:
     url: str
     format: str  # MIME type format
     title: List[Narrative] = field(default_factory=list)
-    categories: List[str] = field(default_factory=list)  # See DocumentCategory enum
-    languages: List[str] = field(default_factory=list)  # ISO 639-1
-    document_date: Optional[str] = None  # ISO 8601 format
+    categories: List[Union[DocumentCategory, str]] = field(default_factory=list)
+    languages: List[str] = field(default_factory=list)
+    document_date: Optional[str] = None
+
+    def __post_init__(self):
+        # Convert string values in categories to enums if possible
+        for i, category in enumerate(self.categories):
+            if isinstance(category, str):
+                try:
+                    self.categories[i] = next(e for e in DocumentCategory if e.value == category)
+                except (StopIteration, ValueError):
+                    pass  # Keep as string if not found
+
+        # Validate document date if provided
+        if self.document_date:
+            try:
+                datetime.strptime(self.document_date, "%Y-%m-%d")
+            except ValueError:
+                raise ValueError(f"Invalid document date format: {self.document_date}. Expected YYYY-MM-DD")
 
 
 @dataclass
@@ -183,13 +280,44 @@ class Budget:
     References:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/budget/
     """
-    type: str  # See BudgetType enum
-    status: str  # See BudgetStatus enum
+    type: Union[BudgetType, str]
+    status: Union[BudgetStatus, str]
     period_start: str  # ISO 8601 format
     period_end: str  # ISO 8601 format
     value: float
     currency: Optional[str] = None  # ISO 4217
     value_date: Optional[str] = None  # ISO 8601 format
+
+    def __post_init__(self):
+        # Convert strings to enums if needed
+        if isinstance(self.type, str):
+            try:
+                self.type = next(e for e in BudgetType if e.value == self.type)
+            except (StopIteration, ValueError):
+                pass
+
+        if isinstance(self.status, str):
+            try:
+                self.status = next(e for e in BudgetStatus if e.value == self.status)
+            except (StopIteration, ValueError):
+                pass
+
+        # Validate ISO date formats
+        try:
+            datetime.strptime(self.period_start, "%Y-%m-%d")
+        except ValueError:
+            raise ValueError(f"Invalid period_start format: {self.period_start}. Expected YYYY-MM-DD")
+
+        try:
+            datetime.strptime(self.period_end, "%Y-%m-%d")
+        except ValueError:
+            raise ValueError(f"Invalid period_end format: {self.period_end}. Expected YYYY-MM-DD")
+
+        if self.value_date:
+            try:
+                datetime.strptime(self.value_date, "%Y-%m-%d")
+            except ValueError:
+                raise ValueError(f"Invalid value_date format: {self.value_date}. Expected YYYY-MM-DD")
 
 
 @dataclass
@@ -218,7 +346,7 @@ class Transaction:
     References:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/
     """
-    type: str  # See TransactionType enum
+    type: Union[TransactionType, str]
     date: str  # ISO 8601 format
     value: float
     description: Optional[List[Narrative]] = None
@@ -228,12 +356,50 @@ class Transaction:
     sector: Optional[Dict[str, Any]] = None  # See SectorCategory enum
     recipient_country: Optional[Dict[str, Any]] = None
     recipient_region: Optional[Dict[str, Any]] = None
-    flow_type: Optional[str] = None  # See FlowType enum
-    finance_type: Optional[str] = None  # See FinanceType enum
-    aid_type: Optional[Dict[str, str]] = None  # See AidType enum
-    tied_status: Optional[str] = None  # See TiedStatus enum
+    flow_type: Optional[Union[FlowType, str]] = None
+    finance_type: Optional[Union[FinanceType, str]] = None
+    aid_type: Optional[Dict[str, str]] = None
+    tied_status: Optional[Union[TiedStatus, str]] = None
     currency: Optional[str] = None  # ISO 4217
     value_date: Optional[str] = None  # ISO 8601 format
+
+    def __post_init__(self):  # noqa: C901
+        # Convert strings to enums if needed
+        if isinstance(self.type, str):
+            try:
+                self.type = next(e for e in TransactionType if e.value == self.type)
+            except (StopIteration, ValueError):
+                pass
+
+        if isinstance(self.flow_type, str) and self.flow_type is not None:
+            try:
+                self.flow_type = next(e for e in FlowType if e.value == self.flow_type)
+            except (StopIteration, ValueError):
+                pass
+
+        if isinstance(self.finance_type, str) and self.finance_type is not None:
+            try:
+                self.finance_type = next(e for e in FinanceType if e.value == self.finance_type)
+            except (StopIteration, ValueError):
+                pass
+
+        if isinstance(self.tied_status, str) and self.tied_status is not None:
+            try:
+                self.tied_status = next(e for e in TiedStatus if e.value == self.tied_status)
+            except (StopIteration, ValueError):
+                pass
+
+        # Validate ISO date format
+        try:
+            datetime.strptime(self.date, "%Y-%m-%d")
+        except ValueError:
+            raise ValueError(f"Invalid transaction date format: {self.date}. Expected YYYY-MM-DD")
+
+        if self.value_date:
+            try:
+                datetime.strptime(self.value_date, "%Y-%m-%d")
+            except ValueError:
+                raise ValueError(f"Invalid value_date format: {self.value_date}. Expected YYYY-MM-DD")
 
 
 @dataclass
@@ -250,11 +416,19 @@ class Result:
     References:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/
     """
-    type: str  # See ResultType enum
+    type: Union[ResultType, str]
     aggregation_status: Optional[bool] = None
     title: Optional[List[Narrative]] = None
     description: Optional[List[Narrative]] = None
     # indicators would be here in a more complete implementation
+
+    def __post_init__(self):
+        # Convert string to enum if needed
+        if isinstance(self.type, str):
+            try:
+                self.type = next(e for e in ResultType if e.value == self.type)
+            except (StopIteration, ValueError):
+                pass
 
 
 @dataclass
@@ -270,7 +444,7 @@ class Activity:
     title: List[Narrative] = field(default_factory=list)
     description: List[Dict[str, List[Narrative]]] = field(default_factory=list)
     participating_orgs: List[ParticipatingOrg] = field(default_factory=list)
-    activity_status: Optional[ActivityStatus] = None  # See ActivityStatus enum
+    activity_status: Optional[ActivityStatus] = None
     activity_dates: List[ActivityDate] = field(default_factory=list)
     contact_info: Optional[ContactInfo] = None
     recipient_countries: List[Dict[str, Union[str, int, List[Narrative]]]] = field(default_factory=list)
@@ -289,7 +463,39 @@ class Activity:
     last_updated_datetime: Optional[str] = None  # ISO 8601 datetime
     xml_lang: Optional[str] = "en"  # ISO 639-1 language code
     humanitarian: Optional[bool] = None  # True if humanitarian activity, False otherwise
-    activity_scope: Optional[str] = None  # See ActivityScope enum
+    activity_scope: Optional[Union[ActivityScope, str]] = None
+
+    def __post_init__(self):  # noqa: C901
+        # Validate related activities
+        for related in self.related_activities:
+            if "type" in related:
+                type_value = related["type"]
+                if isinstance(type_value, str):
+                    # Ensure it's a valid RelatedActivityType
+                    valid_types = [e.value for e in RelatedActivityType]
+                    if type_value not in valid_types:
+                        raise ValueError(f"Invalid related activity type: {type_value}")
+
+        # Validate sectors
+        for sector in self.sectors:
+            if "code" in sector and isinstance(sector["code"], str):
+                # Optionally validate against SectorCategory if code format matches
+                pass  # Implementation depends on code format standards
+
+        # Convert activity_scope to enum if it's a string
+        if isinstance(self.activity_scope, str) and self.activity_scope is not None:
+            try:
+                self.activity_scope = next(e for e in ActivityScope if e.value == self.activity_scope)
+            except (StopIteration, ValueError):
+                pass
+
+        # Validate datetime format if provided
+        if self.last_updated_datetime:
+            try:
+                # Check if it's a valid ISO datetime
+                datetime.fromisoformat(self.last_updated_datetime.replace('Z', '+00:00'))
+            except ValueError:
+                raise ValueError(f"Invalid datetime format: {self.last_updated_datetime}")
 
 
 @dataclass
@@ -301,5 +507,11 @@ class IatiActivities:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/
     """
     version: str = "2.03"  # IATI standard version
-    generated_datetime: str = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")  # ISO 8601 datetime
+    generated_datetime: str = field(default_factory=lambda: datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"))
     activities: List[Activity] = field(default_factory=list)
+
+    def __post_init__(self):
+        # Validate version
+        valid_versions = ["2.03"]
+        if self.version not in valid_versions:
+            raise ValueError(f"Invalid IATI version: {self.version}. Valid values are: {valid_versions}")
