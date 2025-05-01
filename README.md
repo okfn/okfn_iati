@@ -1,6 +1,6 @@
 # IATI XML Handler
 
-![Python Tests](https://github.com/okfn/okfn-iati/actions/workflows/python-tests.yml/badge.svg)
+[![Python Tests](https://github.com/okfn/okfn-iati/workflows/Python%20IATI%20Tests/badge.svg)](https://github.com/okfn/okfn-iati/actions)
 
 Python Library to generate and publish IATI XML files.  
 
