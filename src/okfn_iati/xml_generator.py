@@ -118,8 +118,8 @@ class IatiXmlGenerator:
 
         if location.location_id:
             id_el = ET.SubElement(loc_el, "location-id")
-            for key, value in location.location_id.items():
-                id_el.set(key, value)
+            self._set_attribute(id_el, "vocabulary", self._get_enum_value(location.location_id.vocabulary))
+            self._set_attribute(id_el, "code", location.location_id.code)
 
         if location.name:
             name_el = ET.SubElement(loc_el, "name")

@@ -8,7 +8,7 @@ from okfn_iati.enums import (
     FinanceType, FlowType, GeographicalPrecision,
     LocationReach, LocationType, OrganisationRole, OrganisationType,
     RelatedActivityType,
-    ResultType, TiedStatus, TransactionType,
+    ResultType, TiedStatus, TransactionType, LocationID
 )
 from okfn_iati.validators import crs_channel_code_validator
 
@@ -70,7 +70,8 @@ class ParticipatingOrg:
         ref: Optional organization identifier
         type: Optional organization type (see OrganisationType enum)
         activity_id: Optional activity identifier the organization is associated with
-        crs_channel_code: Optional CRS channel code
+        crs_channel_code: Optional CRS channel code.
+            See codes https://iatistandard.org/en/iati-standard/203/codelists/crsaddotherflags/
         narratives: List of narrative elements with organization names
 
     References:
@@ -135,6 +136,9 @@ class ActivityDate:
             except (StopIteration, ValueError):
                 valid_types = [e.value for e in ActivityDateType]
                 errors.append(f"Invalid date type: {self.type}. Valid values are: {valid_types}")
+        elif hasattr(self.type, 'value') and self.type.value not in [e.value for e in ActivityDateType]:
+            valid_types = [e.value for e in ActivityDateType]
+            errors.append(f"Invalid date type: {self.type}. Valid values are: {valid_types}")
 
         # Validate ISO date format
         try:
@@ -165,7 +169,7 @@ class ContactInfo:
     References:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/contact-info/
     """
-    type: Optional[str] = None  # See ContactType enum
+    type: Optional[Union[ContactType, str]] = None
     organisation: Optional[List[Narrative]] = None
     department: Optional[List[Narrative]] = None
     person_name: Optional[List[Narrative]] = None
@@ -186,13 +190,37 @@ class ContactInfo:
 
 
 @dataclass
+class LocationIdentifier:
+    """
+    Location identifier with vocabulary and code.
+
+    Args:
+        vocabulary: Location identification vocabulary (see LocationID enum)
+        code: Location identifier code
+
+    References:
+        https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/location-id/
+    """
+    vocabulary: Union[LocationID, str]
+    code: str
+
+    def __post_init__(self):
+        # Validate vocabulary against LocationID enum
+        valid_vocabs = [e.value for e in LocationID]
+        if isinstance(self.vocabulary, str) and self.vocabulary not in valid_vocabs:
+            raise ValueError(f"Invalid location vocabulary: {self.vocabulary}. Valid values are: {valid_vocabs}")
+        elif hasattr(self.vocabulary, 'value') and self.vocabulary.value not in valid_vocabs:
+            raise ValueError(f"Invalid location vocabulary: {self.vocabulary}. Valid values are: {valid_vocabs}")
+
+
+@dataclass
 class Location:
     """
     Geographical location information.
 
     Args:
         location_reach: Optional location reach (see LocationReach enum)
-        location_id: Optional location identifier dictionary
+        location_id: Optional location identifier (vocabulary and code)
         name: Optional list of narratives with location name
         description: Optional list of narratives with location description
         activity_description: Optional list of narratives with activity description at location
@@ -205,8 +233,8 @@ class Location:
     References:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/
     """
-    location_reach: Optional[str] = None  # See LocationReach enum
-    location_id: Optional[Dict[str, str]] = None
+    location_reach: Optional[Union[LocationReach, str]] = None
+    location_id: Optional[LocationIdentifier] = None  # Updated to use LocationIdentifier
     name: Optional[List[Narrative]] = None
     description: Optional[List[Narrative]] = None
     activity_description: Optional[List[Narrative]] = None
