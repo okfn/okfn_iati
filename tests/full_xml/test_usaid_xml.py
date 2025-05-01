@@ -31,6 +31,12 @@ class TestUSAIDXML(unittest.TestCase):
         self.usaid_xml_path = os.path.join(self.data_dir, 'usaid-798.xml')
         self.output_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'test_usaid_generated.xml')
 
+    def tearDown(self):
+        """Clean up after tests by removing output files."""
+        if os.path.exists(self.output_path):
+            os.remove(self.output_path)
+            print(f"Cleaned up test output file: {self.output_path}")
+
     def test_parse_and_generate_usaid_xml(self):
         """Test parsing USAID XML and regenerating it with our library."""
         # Parse the original USAID XML
@@ -439,28 +445,75 @@ class TestUSAIDXML(unittest.TestCase):
 
     def _validate_generated_xml(self):
         """Validate the generated XML against IATI schema."""
-        # This is a simplified validation that just checks if the XML is well-formed
-        # For full IATI schema validation, we would need to use the official schemas
-        try:
-            tree = etree.parse(self.output_path)
-            self.assertTrue(True, "XML is well-formed")
 
-            # Count elements to make simple validations
-            root = tree.getroot()
-            activity_count = len(root.findall('.//{*}iati-activity'))
-            print(f"Generated XML contains {activity_count} activities")
+        # Parse the XML using lxml for detailed validation
+        tree = etree.parse(self.output_path)
+        root = tree.getroot()
 
-            # More detailed validation could be added here
+        # Basic well-formed XML check
+        self.assertTrue(True, "XML is well-formed")
 
-            return True
-        except Exception as e:
-            self.fail(f"XML validation failed: {e}")
-            return False
+        # Validate essential IATI structure
+        self.assertEqual(root.tag, "iati-activities", "Root element must be iati-activities")
+        self.assertTrue(root.get('version'), "Version attribute must be present")
+        self.assertTrue(root.get('generated-datetime'), "Generated datetime must be present")
+
+        # Count and validate activities
+        activities = root.findall('.//iati-activity')
+        activity_count = len(activities)
+        print(f"Generated XML contains {activity_count} activities")
+        self.assertGreater(activity_count, 0, "XML must contain at least one activity")
+
+        # Validate each activity has mandatory elements
+        valid_activity_count = 0
+        for activity in activities:
+            # Check mandatory elements per IATI standard
+            has_identifier = activity.find('./iati-identifier') is not None
+            has_title = activity.find('./title') is not None
+            has_reporting_org = activity.find('./reporting-org') is not None
+
+            if has_identifier and has_title and has_reporting_org:
+                valid_activity_count += 1
+
+            # Check if the organization references are valid
+            reporting_orgs = activity.findall('./reporting-org')
+            for org in reporting_orgs:
+                ref = org.get('ref')
+                self.assertIsNotNone(ref, "Reporting org must have a ref attribute")
+
+            # Validate transactions if present
+            transactions = activity.findall('./transaction')
+            for trans in transactions:
+                # Check essential transaction elements
+                trans_type = trans.find('./transaction-type')
+                self.assertIsNotNone(trans_type, "Transaction must have a transaction-type")
+                self.assertIsNotNone(trans_type.get('code'), "Transaction type must have a code")
+
+                # Check transaction value
+                value = trans.find('./value')
+                self.assertIsNotNone(value, "Transaction must have a value")
+
+                # Check transaction date
+                date = trans.find('./transaction-date')
+                self.assertIsNotNone(date, "Transaction should have a date")
+
+        # Ensure all activities had the mandatory elements
+        self.assertEqual(
+            valid_activity_count, activity_count,
+            f"All {activity_count} activities should have mandatory elements"
+        )
+
+        # Validate document links if present
+        for doc_link in root.findall('.//document-link'):
+            self.assertTrue(doc_link.get('url'), "Document link must have URL")
+            self.assertTrue(doc_link.get('format'), "Document link must have format")
+
+            # Check for title in document links
+            title = doc_link.find('./title')
+            self.assertIsNotNone(title, "Document link should have a title")
+
+        print(f"XML validation successful: Found {valid_activity_count} valid IATI activities")
 
 
 if __name__ == "__main__":
-    # When run as script, only run the test without unittest framework output
-    test = TestUSAIDXML()
-    test.setUp()
-    test.test_parse_and_generate_usaid_xml()
-    print(f"Generated XML saved to {test.output_path}")
+    unittest.main()

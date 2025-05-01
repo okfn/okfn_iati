@@ -27,7 +27,7 @@ jobs:
         
     - name: Run tests
       run: |
-        pytest --cov=src/okfn_iati
+        pytest -v --cov=src/okfn_iati
         
     - name: Upload coverage reports
       uses: codecov/codecov-action@v3
