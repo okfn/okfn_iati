@@ -332,19 +332,23 @@ class Budget:
     currency: Optional[str] = None  # ISO 4217
     value_date: Optional[str] = None  # ISO 8601 format
 
-    def __post_init__(self):
+    def __post_init__(self):  # noqa: C901
         # Convert strings to enums if needed
         if isinstance(self.type, str):
             try:
                 self.type = next(e for e in BudgetType if e.value == self.type)
             except (StopIteration, ValueError):
                 pass
+        elif hasattr(self.type, 'value') and self.type.value not in [e.value for e in BudgetType]:
+            raise ValueError(f"Invalid budget type: {self.type}. Valid values are: {[e.value for e in BudgetType]}")
 
         if isinstance(self.status, str):
             try:
                 self.status = next(e for e in BudgetStatus if e.value == self.status)
             except (StopIteration, ValueError):
                 pass
+        elif hasattr(self.status, 'value') and self.status.value not in [e.value for e in BudgetStatus]:
+            raise ValueError(f"Invalid budget status: {self.status}. Valid values are: {[e.value for e in BudgetStatus]}")
 
         # Validate ISO date formats
         try:
