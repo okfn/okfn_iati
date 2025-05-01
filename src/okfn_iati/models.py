@@ -10,6 +10,7 @@ from okfn_iati.enums import (
     RelatedActivityType,
     ResultType, TiedStatus, TransactionType,
 )
+from okfn_iati.validators import crs_channel_code_validator
 
 
 @dataclass
@@ -22,7 +23,11 @@ class Narrative:
         lang: Optional language code (ISO 639-1)
 
     References:
-        https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/narrative/
+        https://iatistandard.org/en/iati-standard/201/activity-standard/iati-activities/iati-activity/reporting-org/narrative/
+        https://iatistandard.org/en/iati-standard/201/activity-standard/iati-activities/iati-activity/title/narrative/
+
+        and much more. It could be used in many places in the IATI standard.
+        https://iatistandard.org/en/iati-standard/upgrades/upgrade-changelogs/integer-upgrade-to-2-01/2-01-changes/#narrative-new-elements
     """
     text: str
     lang: Optional[str] = None
@@ -35,11 +40,13 @@ class OrganizationRef:
 
     Args:
         ref: Organization identifier reference code
-        type: Optional organization type code (see OrganisationType enum)
+        type: Organization type code (see OrganisationType enum)
         narratives: List of narrative elements with organization names
 
     References:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/reporting-org/
+        https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/provider-org/
+        https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/receiver-org/
     """
     ref: str
     type: Optional[str] = None  # See OrganisationType enum for valid values
@@ -69,9 +76,9 @@ class ParticipatingOrg:
     References:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/participating-org/
     """
-    role: str  # 1=Funding, 2=Accountable, 3=Extending, 4=Implementing
+    role: Union[OrganisationRole, str]
     ref: Optional[str] = None
-    type: Optional[str] = None
+    type: Optional[Union[OrganisationType, str]] = None
     activity_id: Optional[str] = None
     crs_channel_code: Optional[str] = None
     narratives: List[Narrative] = field(default_factory=list)
@@ -80,15 +87,24 @@ class ParticipatingOrg:
         errors = []
         valid_org_roles = [e.value for e in OrganisationRole]
 
-        # Fix: Handle both string and enum instances for role
+        # Validate role
         if isinstance(self.role, str) and self.role not in valid_org_roles:
             errors.append(f"Invalid organization role: {self.role}. Valid values are: {valid_org_roles}")
         elif hasattr(self.role, 'value') and self.role.value not in valid_org_roles:
             errors.append(f"Invalid organization role: {self.role}. Valid values are: {valid_org_roles}")
 
-        valid_org_types = [e.value for e in OrganisationType]
-        if self.type and self.type not in valid_org_types:
-            errors.append(f"Invalid organization type: {self.type}. Valid values are: {valid_org_types}")
+        # Validate type
+        if self.type is not None:
+            org_types = [e.value for e in OrganisationType]
+            if isinstance(self.type, str) and self.type not in org_types:
+                errors.append(f"Invalid organization type: {self.type}. Valid values are: {org_types}")
+            elif hasattr(self.type, 'value') and self.type.value not in org_types:
+                errors.append(f"Invalid organization type: {self.type}. Valid values are: {org_types}")
+
+        # Validate CRS channel code
+        if self.crs_channel_code is not None and not crs_channel_code_validator.is_valid_code(self.crs_channel_code):
+            errors.append(f"Invalid CRS channel code: {self.crs_channel_code}")
+
         if errors:
             raise ValueError(" ".join(errors))
 
