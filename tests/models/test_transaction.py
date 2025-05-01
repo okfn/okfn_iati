@@ -1,5 +1,5 @@
 import unittest
-from okfn_iati import Transaction, Narrative, OrganizationRef
+from okfn_iati import Transaction, Narrative
 from okfn_iati.enums import TransactionType, FlowType, FinanceType, TiedStatus
 
 
@@ -12,7 +12,7 @@ class TestTransaction(unittest.TestCase):
             value=50000.00,
             description=[Narrative(text="Project commitment")]
         )
-        self.assertEqual(transaction.type, TransactionType.COMMITMENT)  # Should convert to enum
+        self.assertEqual(transaction.type, TransactionType.OUT_COMMITMENT)  # Should convert to enum
         self.assertEqual(transaction.date, "2023-01-15")
         self.assertEqual(transaction.value, 50000.00)
 

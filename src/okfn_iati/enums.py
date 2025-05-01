@@ -265,16 +265,61 @@ class FinanceType(Enum):
     Finance type - grant, loan, etc.
     Reference: https://iatistandard.org/en/iati-standard/203/codelists/financetype/
     """
+    GNI = "1"  # Gross National Income
     STANDARD_GRANT = "110"
+    GUARANTEES_INSURANCE = "1100"
+    # withdrawn "111" Subsidies to national private investors
+    ODA_GNI = "2"  # ODA % GNI
     INTEREST_SUBSIDY = "210"
-    CAPITAL_SUBSCRIPTION = "310"
-    LOAN = "410"
-    EXPORT_CREDIT = "510"
-    DEBT_RELIEF = "610"
-    INVESTMENT = "710"
-    BONDS = "810"
-    NON_BANKS_FLOWS = "910"
-    OTHER_FLOWS = "1010"
+    # withdrawn 211 Interest subsidy to national private exporters
+    FLOWS_GNI = "3"  # Flows % GNI
+    CAPITAL_SUBSCRIPTION_DEPO = "310"
+    CAPITAL_SUBSCRIPTION_ENCA = "311"
+    POPULATION = "4"
+    # withdrawn 410, 411, 412, 413, 414
+    STANDARD_LOAN = "421"
+    REIMBURSABLE_GRANT = "422"
+    BONDS = "423"
+    ASSET_SECURITIES = "424"
+    OTHER_DEBT_SECURITIES = "425"
+    SUBORDINATED_LOAN = "431"
+    PREFERRED_EQUITY = "432"
+    OTHER_HYBRID = "433"
+    # withdrawn 451, 452
+    COMMON_EQUITY = "510"
+    # withdrawn 511, 512
+    SHARES_COLLECTIVE = "520"
+    REINVESTED_EARNINGS = "530"
+    DEBT_FOR_ODA_P = "610"
+    DEBT_FOR_ODA_I = "611"
+    DEBT_FOR_OOF_P = "612"
+    DEBT_FOR_OOF_I = "613"
+    DEBT_FOR_PRIV_P = "614"
+    DEBT_FOR_PRIV_I = "615"
+    DEBT_FOR_OOF_DSR = "616"
+    DEBT_FOR_PRIV_DSR = "617"
+    DEBT_FOR_OTHER = "618"
+    DEBT_RESCH_ODA_P = "620"
+    DEBT_RESCH_ODA_I = "621"
+    DEBT_RESCH_OOF_P = "622"
+    DEBT_RESCH_OOF_I = "623"
+    DEBT_RESCH_PRIV_P = "624"
+    DEBT_RESCH_PRIV_I = "625"
+    DEBT_RESCH_OOF_DSR = "626"
+    DEBT_RESCH_PRIV_DSR = "627"
+    DEBT_RESCH_OOF_DSR_ORIG_LOAN_P = "630"
+    DEBT_RESCH_OOF_DSR_ORIG_LOAN_I = "631"
+    DEBT_RESCH_PRIV_DSR_ORIG_LOAN_P = "632"
+    DEBT_FORGIVE_EXPORT_CREDIT_P = "633"
+    DEBT_FORGIVE_EXPORT_CREDIT_I = "634"
+    DEBT_FORGIVE_EXPORT_CREDIT_DSR = "635"
+    DEBT_RESCH_EXPORT_CREDIT_P = "636"
+    DEBT_RESCH_EXPORT_CREDIT_I = "637"
+    DEBT_RESCH_EXPORT_CREDIT_DSR = "638"
+    DEBT_RESCH_EXPORT_CREDIT_DSR_ORIG_LOAN_P = "639"
+    # Whitdrawn 710, 711, 712
+    # withdrawn 810, 811
+    # withdrawn 910, 911, 912, 913
 
 
 class FlowType(Enum):
@@ -283,11 +328,15 @@ class FlowType(Enum):
     Reference: https://iatistandard.org/en/iati-standard/203/codelists/flowtype/
     """
     ODA = "10"
-    OTHER_OFFICIAL_FLOWS = "20"
+    # withdrawn OTHER_OFFICIAL_FLOWS = "20"
+    NON_EXPORT_CREDIT_OOF = "21"
+    OFFICIAL_CREDIT_OOF = "22"
     PRIVATE_DEVELOPMENT_FINANCE = "30"
-    PRIVATE_FOREIGN_DIRECT_INVESTMENT = "35"
-    PRIVATE_MARKET = "40"
-    NON_FLOW = "50"
+    # withdrawn PRIVATE_MARKET = "35"
+    PRIVATE_FOREIGN_DIRECT_INVESTMENT = "36"
+    OTHER_PRIVATE_FLOWS = "37"
+    NON_FLOWS = "40"
+    OTHER_FLOW = "50"
 
 
 class GeographicalPrecision(Enum):
@@ -462,10 +511,9 @@ class TiedStatus(Enum):
     Tied status - untied, partially tied, etc.
     Reference: https://iatistandard.org/en/iati-standard/203/codelists/tiedstatus/
     """
+    PARTIALLY_TIED = "3"
+    TIED = "4"
     UNTIED = "5"
-    PARTIALLY_TIED = "4"
-    TIED = "3"
-    NOT_SPECIFIED = "6"
 
 
 class TransactionType(Enum):
@@ -474,7 +522,7 @@ class TransactionType(Enum):
     Reference: https://iatistandard.org/en/iati-standard/203/codelists/transactiontype/
     """
     INCOMING_FUNDS = "1"
-    COMMITMENT = "2"
+    OUT_COMMITMENT = "2"
     DISBURSEMENT = "3"
     EXPENDITURE = "4"
     INTEREST_PAYMENT = "5"
@@ -485,7 +533,7 @@ class TransactionType(Enum):
     CREDIT_GUARANTEE = "10"
     INCOMING_COMMITMENT = "11"
     OUTGOING_PLEDGE = "12"
-    OUTGOING_COMMITMENT = "13"
+    INCOMING_PLEDGE = "13"
 
 
 class VocabularyType(Enum):

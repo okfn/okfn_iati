@@ -418,24 +418,32 @@ class Transaction:
                 self.type = next(e for e in TransactionType if e.value == self.type)
             except (StopIteration, ValueError):
                 pass
+        elif hasattr(self.type, 'value') and self.type.value not in [e.value for e in TransactionType]:
+            raise ValueError(f"Invalid transaction type: {self.type}. Valid values are: {[e.value for e in TransactionType]}")
 
         if isinstance(self.flow_type, str) and self.flow_type is not None:
             try:
                 self.flow_type = next(e for e in FlowType if e.value == self.flow_type)
             except (StopIteration, ValueError):
                 pass
+        elif hasattr(self.flow_type, 'value') and self.flow_type.value not in [e.value for e in FlowType]:
+            raise ValueError(f"Invalid flow type: {self.flow_type}. Valid values are: {[e.value for e in FlowType]}")
 
         if isinstance(self.finance_type, str) and self.finance_type is not None:
             try:
                 self.finance_type = next(e for e in FinanceType if e.value == self.finance_type)
             except (StopIteration, ValueError):
                 pass
+        elif hasattr(self.finance_type, 'value') and self.finance_type.value not in [e.value for e in FinanceType]:
+            raise ValueError(f"Invalid finance type: {self.finance_type}. Valid values are: {[e.value for e in FinanceType]}")
 
         if isinstance(self.tied_status, str) and self.tied_status is not None:
             try:
                 self.tied_status = next(e for e in TiedStatus if e.value == self.tied_status)
             except (StopIteration, ValueError):
                 pass
+        elif hasattr(self.tied_status, 'value') and self.tied_status.value not in [e.value for e in TiedStatus]:
+            raise ValueError(f"Invalid tied status: {self.tied_status}. Valid values are: {[e.value for e in TiedStatus]}")
 
         # Validate ISO date format
         try:
@@ -477,6 +485,8 @@ class Result:
                 self.type = next(e for e in ResultType if e.value == self.type)
             except (StopIteration, ValueError):
                 pass
+        elif hasattr(self.type, 'value') and self.type.value not in [e.value for e in ResultType]:
+            raise ValueError(f"Invalid result type: {self.type}. Valid values are: {[e.value for e in ResultType]}")
 
 
 @dataclass
