@@ -1,6 +1,6 @@
 from .models import (
     Activity, Narrative, OrganizationRef, ParticipatingOrg, ActivityDate,
-    ContactInfo, Location, DocumentLink, Budget, Transaction,
+    ContactInfo, Location, LocationIdentifier, DocumentLink, Budget, Transaction,
     Result, IatiActivities
 )
 from .enums import (
@@ -18,7 +18,7 @@ from .enums import (
     DocumentCategory, ContactType, ConditionType, VocabularyType,
 
     # Location-related enums
-    LocationReach, LocationType, GeographicalPrecision,
+    LocationReach, LocationType, LocationID, GeographicalPrecision,
 
     # Result and policy-related enums
     ResultType, IndicatorMeasure, PolicyMarker, PolicySignificance,
@@ -37,7 +37,7 @@ from .xml_generator import IatiXmlGenerator
 __all__ = [
     # Models
     'Activity', 'Narrative', 'OrganizationRef', 'ParticipatingOrg', 'ActivityDate',
-    'ContactInfo', 'Location', 'DocumentLink', 'Budget', 'Transaction',
+    'ContactInfo', 'Location', 'LocationIdentifier', 'DocumentLink', 'Budget', 'Transaction',
     'Result', 'IatiActivities',
 
     # Activity-related enums
@@ -54,7 +54,7 @@ __all__ = [
     'DocumentCategory', 'ContactType', 'ConditionType', 'VocabularyType',
 
     # Location-related enums
-    'LocationReach', 'LocationType', 'GeographicalPrecision',
+    'LocationReach', 'LocationType', 'LocationID', 'GeographicalPrecision',
 
     # Result and policy-related enums
     'ResultType', 'IndicatorMeasure', 'PolicyMarker', 'PolicySignificance',

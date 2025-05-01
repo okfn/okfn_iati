@@ -220,7 +220,7 @@ class ContactType(Enum):
     GENERAL = "1"
     PROJECT_MANAGEMENT = "2"
     FINANCIAL = "3"
-    ADMINISTRATIVE = "4"
+    COMMUNICATIONS = "4"
 
 
 class DocumentCategory(Enum):
@@ -313,10 +313,30 @@ class IndicatorMeasure(Enum):
 class LocationReach(Enum):
     """
     Location reach - activity, beneficiary, etc.
-    Reference: https://iatistandard.org/en/iati-standard/203/codelists/locationreach/
+    Reference:
+        https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/location-reach/
     """
     ACTIVITY = "1"
     BENEFICIARY = "2"
+
+
+class LocationID(Enum):
+    """
+    Location ID - unique identifier for a location.
+    Reference: https://iatistandard.org/en/iati-standard/203/codelists/geographicvocabulary/
+    """
+    GAUL = "A1"  # Global Administrative Unit Layers
+    # http://www.fao.org/geonetwork/srv/en/metadata.show?id=12691
+    UN_SECONDARY = "A2"  # UN Second Administrative Level
+    # http://www.unsalb.org/
+    GAA = "A3"  # Global Administrative Areas
+    # http://www.gadm.org/
+    ISO_3166_1 = "A4"  # ISO 3166-1 alpha-2 country codes
+    # https://iatistandard.org/en/iati-standard/203/codelists/Country/
+    GEONAMES = "G1"  # http://www.geonames.org/
+    OSM = "G2"  # OpenStreetMap http://www.openstreetmap.org/
+    # Note: the code should be formed by prefixing the relevant OpenStreetMap ID with node/ way/ or
+    # relation/ as appropriate, e.g. node/1234567
 
 
 class LocationType(Enum):
