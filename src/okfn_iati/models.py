@@ -513,5 +513,7 @@ class IatiActivities:
     def __post_init__(self):
         # Validate version
         valid_versions = ["2.03"]
+        if not self.version:
+            raise ValueError("Version cannot be empty")
         if self.version not in valid_versions:
             raise ValueError(f"Invalid IATI version: {self.version}. Valid values are: {valid_versions}")
