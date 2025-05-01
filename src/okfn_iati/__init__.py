@@ -28,6 +28,10 @@ from .enums import (
 
     TransactionType
 )
+from .validators import (
+    CodelistValidator, CRSChannelCodeValidator, 
+    crs_channel_code_validator
+)
 from .xml_generator import IatiXmlGenerator
 
 __all__ = [
@@ -60,6 +64,9 @@ __all__ = [
 
     # Transaction-related enums
     'TransactionType',
+
+    # Validators
+    'CodelistValidator', 'CRSChannelCodeValidator', 'crs_channel_code_validator',
 
     # Generator
     'IatiXmlGenerator'
