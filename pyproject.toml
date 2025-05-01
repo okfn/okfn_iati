@@ -3,11 +3,11 @@ requires = ["setuptools>=42", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "iati-xml-handler"
+name = "okfn-iati"
 version = "0.1.0"
 description = "IATI XML handler library for working with IATI 2.03 standard"
 authors = [
-    {name = "Your Name", email = "your.email@example.com"},
+    {name = "OKFN", email = "andres.vazquez@okfn.org"},
 ]
 requires-python = ">=3.10"
 classifiers = [
@@ -18,5 +18,17 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
 ]
 
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+]
+
 [tool.setuptools]
-packages = ["find:"]
+packages = {find = {where = ["src"]}}
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
