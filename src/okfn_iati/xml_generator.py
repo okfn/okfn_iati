@@ -1,7 +1,8 @@
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 from datetime import datetime
-from typing import List
+from typing import List, Union, Optional, Any
+from enum import Enum
 
 from .models import (
     IatiActivities, Activity, Narrative, OrganizationRef, ParticipatingOrg,
@@ -17,6 +18,19 @@ class IatiXmlGenerator:
             "xsi": "http://www.w3.org/2001/XMLSchema-instance"
         }
 
+    def _get_enum_value(self, value: Union[Enum, str, None]) -> Optional[str]:
+        """Helper to extract string value from enum or return string directly"""
+        if value is None:
+            return None
+        if isinstance(value, Enum):
+            return value.value
+        return value
+
+    def _set_attribute(self, element: ET.Element, name: str, value: Any) -> None:
+        """Helper to safely set XML attributes, handling None values"""
+        if value is not None:
+            element.set(name, str(value))
+
     def _create_narrative_elements(self, parent_element: ET.Element, narratives: List[Narrative]) -> None:
         for narrative in narratives:
             narrative_el = ET.SubElement(parent_element, "narrative")
@@ -26,9 +40,9 @@ class IatiXmlGenerator:
 
     def _add_organization_ref(self, parent_element: ET.Element, org: OrganizationRef) -> ET.Element:
         if org.ref:
-            parent_element.set("ref", org.ref)
+            self._set_attribute(parent_element, "ref", org.ref)
         if org.type:
-            parent_element.set("type", org.type)
+            self._set_attribute(parent_element, "type", org.type)
 
         if org.narratives:
             self._create_narrative_elements(parent_element, org.narratives)
@@ -37,23 +51,23 @@ class IatiXmlGenerator:
 
     def _add_participating_org(self, activity_el: ET.Element, org: ParticipatingOrg) -> None:
         org_el = ET.SubElement(activity_el, "participating-org")
-        org_el.set("role", org.role)
+        self._set_attribute(org_el, "role", self._get_enum_value(org.role))
 
         if org.ref:
-            org_el.set("ref", org.ref)
+            self._set_attribute(org_el, "ref", org.ref)
         if org.type:
-            org_el.set("type", org.type)
+            self._set_attribute(org_el, "type", org.type)
         if org.activity_id:
-            org_el.set("activity-id", org.activity_id)
+            self._set_attribute(org_el, "activity-id", org.activity_id)
         if org.crs_channel_code:
-            org_el.set("crs-channel-code", org.crs_channel_code)
+            self._set_attribute(org_el, "crs-channel-code", org.crs_channel_code)
 
         self._create_narrative_elements(org_el, org.narratives)
 
     def _add_activity_date(self, activity_el: ET.Element, date: ActivityDate) -> None:
         date_el = ET.SubElement(activity_el, "activity-date")
-        date_el.set("type", date.type)
-        date_el.set("iso-date", date.iso_date)
+        self._set_attribute(date_el, "type", self._get_enum_value(date.type))
+        self._set_attribute(date_el, "iso-date", date.iso_date)
 
         self._create_narrative_elements(date_el, date.narratives)
 
@@ -61,7 +75,7 @@ class IatiXmlGenerator:
         contact_el = ET.SubElement(activity_el, "contact-info")
 
         if contact.type:
-            contact_el.set("type", contact.type)
+            self._set_attribute(contact_el, "type", self._get_enum_value(contact.type))
 
         if contact.organisation:
             org_el = ET.SubElement(contact_el, "organisation")
@@ -100,7 +114,7 @@ class IatiXmlGenerator:
 
         if location.location_reach:
             reach_el = ET.SubElement(loc_el, "location-reach")
-            reach_el.set("code", location.location_reach)
+            self._set_attribute(reach_el, "code", self._get_enum_value(location.location_reach))
 
         if location.location_id:
             id_el = ET.SubElement(loc_el, "location-id")
@@ -136,76 +150,76 @@ class IatiXmlGenerator:
 
         if location.exactness:
             exact_el = ET.SubElement(loc_el, "exactness")
-            exact_el.set("code", location.exactness)
+            self._set_attribute(exact_el, "code", self._get_enum_value(location.exactness))
 
         if location.location_class:
             class_el = ET.SubElement(loc_el, "location-class")
-            class_el.set("code", location.location_class)
+            self._set_attribute(class_el, "code", self._get_enum_value(location.location_class))
 
         if location.feature_designation:
             feat_el = ET.SubElement(loc_el, "feature-designation")
-            feat_el.set("code", location.feature_designation)
+            self._set_attribute(feat_el, "code", location.feature_designation)
 
     def _add_document_link(self, activity_el: ET.Element, doc: DocumentLink) -> None:
         doc_el = ET.SubElement(activity_el, "document-link")
-        doc_el.set("url", doc.url)
-        doc_el.set("format", doc.format)
+        self._set_attribute(doc_el, "url", doc.url)
+        self._set_attribute(doc_el, "format", doc.format)
 
         title_el = ET.SubElement(doc_el, "title")
         self._create_narrative_elements(title_el, doc.title)
 
         for category in doc.categories:
             cat_el = ET.SubElement(doc_el, "category")
-            cat_el.set("code", category)
+            self._set_attribute(cat_el, "code", self._get_enum_value(category))
 
         for language in doc.languages:
             lang_el = ET.SubElement(doc_el, "language")
-            lang_el.set("code", language)
+            self._set_attribute(lang_el, "code", language)
 
         if doc.document_date:
             date_el = ET.SubElement(doc_el, "document-date")
-            date_el.set("iso-date", doc.document_date)
+            self._set_attribute(date_el, "iso-date", doc.document_date)
 
     def _add_budget(self, activity_el: ET.Element, budget: Budget) -> None:
         budget_el = ET.SubElement(activity_el, "budget")
-        budget_el.set("type", budget.type)
-        budget_el.set("status", budget.status)
+        self._set_attribute(budget_el, "type", self._get_enum_value(budget.type))
+        self._set_attribute(budget_el, "status", self._get_enum_value(budget.status))
 
         start_el = ET.SubElement(budget_el, "period-start")
-        start_el.set("iso-date", budget.period_start)
+        self._set_attribute(start_el, "iso-date", budget.period_start)
 
         end_el = ET.SubElement(budget_el, "period-end")
-        end_el.set("iso-date", budget.period_end)
+        self._set_attribute(end_el, "iso-date", budget.period_end)
 
         value_el = ET.SubElement(budget_el, "value")
         value_el.text = str(budget.value)
 
         if budget.currency:
-            value_el.set("currency", budget.currency)
+            self._set_attribute(value_el, "currency", budget.currency)
 
         if budget.value_date:
-            value_el.set("value-date", budget.value_date)
+            self._set_attribute(value_el, "value-date", budget.value_date)
 
     def _add_transaction(self, activity_el: ET.Element, transaction: Transaction) -> None:
         trans_el = ET.SubElement(activity_el, "transaction")
 
         if transaction.transaction_ref:
-            trans_el.set("ref", transaction.transaction_ref)
+            self._set_attribute(trans_el, "ref", transaction.transaction_ref)
 
         type_el = ET.SubElement(trans_el, "transaction-type")
-        type_el.set("code", transaction.type)
+        self._set_attribute(type_el, "code", self._get_enum_value(transaction.type))
 
         date_el = ET.SubElement(trans_el, "transaction-date")
-        date_el.set("iso-date", transaction.date)
+        self._set_attribute(date_el, "iso-date", transaction.date)
 
         value_el = ET.SubElement(trans_el, "value")
         value_el.text = str(transaction.value)
 
         if transaction.currency:
-            value_el.set("currency", transaction.currency)
+            self._set_attribute(value_el, "currency", transaction.currency)
 
         if transaction.value_date:
-            value_el.set("value-date", transaction.value_date)
+            self._set_attribute(value_el, "value-date", transaction.value_date)
 
         if transaction.description:
             desc_el = ET.SubElement(trans_el, "description")
@@ -219,14 +233,24 @@ class IatiXmlGenerator:
             receiver_el = ET.SubElement(trans_el, "receiver-org")
             self._add_organization_ref(receiver_el, transaction.receiver_org)
 
-        # Additional transaction elements would go here (sector, recipient-country, etc.)
+        if transaction.flow_type:
+            flow_el = ET.SubElement(trans_el, "flow-type")
+            self._set_attribute(flow_el, "code", self._get_enum_value(transaction.flow_type))
+
+        if transaction.finance_type:
+            finance_el = ET.SubElement(trans_el, "finance-type")
+            self._set_attribute(finance_el, "code", self._get_enum_value(transaction.finance_type))
+
+        if transaction.tied_status:
+            tied_el = ET.SubElement(trans_el, "tied-status")
+            self._set_attribute(tied_el, "code", self._get_enum_value(transaction.tied_status))
 
     def _add_result(self, activity_el: ET.Element, result: Result) -> None:
         result_el = ET.SubElement(activity_el, "result")
-        result_el.set("type", result.type)
+        self._set_attribute(result_el, "type", self._get_enum_value(result.type))
 
         if result.aggregation_status is not None:
-            result_el.set("aggregation-status", str(1 if result.aggregation_status else 0))
+            self._set_attribute(result_el, "aggregation-status", str(1 if result.aggregation_status else 0))
 
         if result.title:
             title_el = ET.SubElement(result_el, "title")
@@ -243,21 +267,21 @@ class IatiXmlGenerator:
 
         # Set activity attributes
         if activity.default_currency:
-            activity_el.set("default-currency", activity.default_currency)
+            self._set_attribute(activity_el, "default-currency", activity.default_currency)
 
         if activity.hierarchy:
-            activity_el.set("hierarchy", activity.hierarchy)
+            self._set_attribute(activity_el, "hierarchy", activity.hierarchy)
 
         if activity.last_updated_datetime:
-            activity_el.set("last-updated-datetime", activity.last_updated_datetime)
+            self._set_attribute(activity_el, "last-updated-datetime", activity.last_updated_datetime)
         else:
-            activity_el.set("last-updated-datetime", datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"))
+            self._set_attribute(activity_el, "last-updated-datetime", datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"))
 
         if activity.xml_lang:
-            activity_el.set("xml:lang", activity.xml_lang)
+            self._set_attribute(activity_el, "xml:lang", activity.xml_lang)
 
         if activity.humanitarian is not None:
-            activity_el.set("humanitarian", "1" if activity.humanitarian else "0")
+            self._set_attribute(activity_el, "humanitarian", "1" if activity.humanitarian else "0")
 
         # Add identifier
         id_el = ET.SubElement(activity_el, "iati-identifier")
@@ -275,7 +299,7 @@ class IatiXmlGenerator:
         for desc in activity.description:
             desc_el = ET.SubElement(activity_el, "description")
             if "type" in desc:
-                desc_el.set("type", desc["type"])
+                self._set_attribute(desc_el, "type", desc["type"])
             self._create_narrative_elements(desc_el, desc["narratives"])
 
         # Add participating orgs
@@ -285,7 +309,7 @@ class IatiXmlGenerator:
         # Add activity status
         if activity.activity_status:
             status_el = ET.SubElement(activity_el, "activity-status")
-            status_el.set("code", str(activity.activity_status.value))
+            self._set_attribute(status_el, "code", str(activity.activity_status.value))
 
         # Add activity dates
         for date in activity.activity_dates:
@@ -298,10 +322,10 @@ class IatiXmlGenerator:
         # Add recipient countries
         for country in activity.recipient_countries:
             country_el = ET.SubElement(activity_el, "recipient-country")
-            country_el.set("code", country["code"])
+            self._set_attribute(country_el, "code", country["code"])
 
             if "percentage" in country:
-                country_el.set("percentage", str(country["percentage"]))
+                self._set_attribute(country_el, "percentage", str(country["percentage"]))
 
             if "narratives" in country:
                 self._create_narrative_elements(country_el, country["narratives"])
@@ -309,13 +333,13 @@ class IatiXmlGenerator:
         # Add recipient regions
         for region in activity.recipient_regions:
             region_el = ET.SubElement(activity_el, "recipient-region")
-            region_el.set("code", region["code"])
+            self._set_attribute(region_el, "code", region["code"])
 
             if "vocabulary" in region:
-                region_el.set("vocabulary", region["vocabulary"])
+                self._set_attribute(region_el, "vocabulary", region["vocabulary"])
 
             if "percentage" in region:
-                region_el.set("percentage", str(region["percentage"]))
+                self._set_attribute(region_el, "percentage", str(region["percentage"]))
 
             if "narratives" in region:
                 self._create_narrative_elements(region_el, region["narratives"])
@@ -327,13 +351,13 @@ class IatiXmlGenerator:
         # Add sectors
         for sector in activity.sectors:
             sector_el = ET.SubElement(activity_el, "sector")
-            sector_el.set("code", sector["code"])
+            self._set_attribute(sector_el, "code", sector["code"])
 
             if "vocabulary" in sector:
-                sector_el.set("vocabulary", sector["vocabulary"])
+                self._set_attribute(sector_el, "vocabulary", sector["vocabulary"])
 
             if "percentage" in sector:
-                sector_el.set("percentage", str(sector["percentage"]))
+                self._set_attribute(sector_el, "percentage", str(sector["percentage"]))
 
             if "narratives" in sector:
                 self._create_narrative_elements(sector_el, sector["narratives"])
@@ -353,8 +377,9 @@ class IatiXmlGenerator:
         # Add related activities
         for related in activity.related_activities:
             related_el = ET.SubElement(activity_el, "related-activity")
-            related_el.set("ref", related["ref"])
-            related_el.set("type", related["type"])
+            self._set_attribute(related_el, "ref", related["ref"])
+            if "type" in related:
+                self._set_attribute(related_el, "type", self._get_enum_value(related.get("type")))
 
         # Add results
         for result in activity.results:
@@ -364,12 +389,12 @@ class IatiXmlGenerator:
 
     def generate_iati_activities_xml(self, iati_activities: IatiActivities) -> str:
         root = ET.Element("iati-activities")
-        root.set("version", iati_activities.version)
-        root.set("generated-datetime", iati_activities.generated_datetime)
+        self._set_attribute(root, "version", iati_activities.version)
+        self._set_attribute(root, "generated-datetime", iati_activities.generated_datetime)
 
         # Add XML namespace references to match IATI standard
-        root.set("xmlns:xsd", "http://www.w3.org/2001/XMLSchema")
-        root.set("xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance")
+        self._set_attribute(root, "xmlns:xsd", "http://www.w3.org/2001/XMLSchema")
+        self._set_attribute(root, "xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance")
 
         for activity in iati_activities.activities:
             activity_el = self.generate_activity_xml(activity)
@@ -382,7 +407,7 @@ class IatiXmlGenerator:
 
         # Add generator comment after the XML declaration
         repo_url = "https://github.com/okfn/okfn-iati"
-        comment = f"<!-- Generated by OKFN-IATI: {repo_url} -->\n"
+        comment = f"<!-- Generated by OKFN-IATI: {repo_url} -->"
         xml_declaration_end = xml_string.find("?>") + 2
         xml_string = xml_string[:xml_declaration_end] + "\n" + comment + xml_string[xml_declaration_end:]
 

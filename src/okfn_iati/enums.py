@@ -522,3 +522,14 @@ class RelatedActivityType(Enum):
     SIBLING = "3"
     CO_FUNDED = "4"
     THIRD_PARTY = "5"
+
+
+class ActivityDateType(Enum):
+    """
+    Type of activity date being reported.
+    Reference: https://iatistandard.org/en/iati-standard/203/codelists/activitydatetype/
+    """
+    PLANNED_START = "1"
+    ACTUAL_START = "2"
+    PLANNED_END = "3"
+    ACTUAL_END = "4"

@@ -1,16 +1,66 @@
 from .models import (
-    Activity, ActivityStatus,
-    Narrative, OrganizationRef, ParticipatingOrg, ActivityDate,
+    Activity, Narrative, OrganizationRef, ParticipatingOrg, ActivityDate,
     ContactInfo, Location, DocumentLink, Budget, Transaction,
     Result, IatiActivities
 )
-from okfn_iati.enums import DocumentCategory, TransactionType
+from .enums import (
+    # Activity-related enums
+    ActivityStatus, ActivityScope, ActivityDateType,
+
+    # Aid and finance-related enums
+    AidType, AidTypeFlag, BudgetIdentifier, BudgetStatus, BudgetType,
+    FinanceType, FlowType, TiedStatus,
+
+    # Collaboration and relation enums
+    CollaborationType, OrganisationRole, OrganisationType, RelatedActivityType,
+
+    # Document and information enums
+    DocumentCategory, ContactType, ConditionType, VocabularyType,
+
+    # Location-related enums
+    LocationReach, LocationType, GeographicalPrecision,
+
+    # Result and policy-related enums
+    ResultType, IndicatorMeasure, PolicyMarker, PolicySignificance,
+
+    # Sector enums
+    SectorCategory,
+
+    TransactionType
+)
 from .xml_generator import IatiXmlGenerator
 
-
 __all__ = [
-    'Activity', 'ActivityStatus', 'DocumentCategory', 'TransactionType',
-    'Narrative', 'OrganizationRef', 'ParticipatingOrg', 'ActivityDate',
+    # Models
+    'Activity', 'Narrative', 'OrganizationRef', 'ParticipatingOrg', 'ActivityDate',
     'ContactInfo', 'Location', 'DocumentLink', 'Budget', 'Transaction',
-    'Result', 'IatiActivities', 'IatiXmlGenerator'
+    'Result', 'IatiActivities',
+
+    # Activity-related enums
+    'ActivityStatus', 'ActivityScope', 'ActivityDateType',
+
+    # Aid and finance-related enums
+    'AidType', 'AidTypeFlag', 'BudgetIdentifier', 'BudgetStatus', 'BudgetType',
+    'FinanceType', 'FlowType', 'TiedStatus',
+
+    # Collaboration and relation enums
+    'CollaborationType', 'OrganisationRole', 'OrganisationType', 'RelatedActivityType',
+
+    # Document and information enums
+    'DocumentCategory', 'ContactType', 'ConditionType', 'VocabularyType',
+
+    # Location-related enums
+    'LocationReach', 'LocationType', 'GeographicalPrecision',
+
+    # Result and policy-related enums
+    'ResultType', 'IndicatorMeasure', 'PolicyMarker', 'PolicySignificance',
+
+    # Sector enums
+    'SectorCategory',
+
+    # Transaction-related enums
+    'TransactionType',
+
+    # Generator
+    'IatiXmlGenerator'
 ]
