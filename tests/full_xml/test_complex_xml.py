@@ -7,7 +7,7 @@ from okfn_iati import (
     Activity, Narrative, OrganizationRef, IatiActivities,
     ActivityDate, ActivityStatus, ContactInfo, DocumentLink,
     ParticipatingOrg, Location, Budget, Result,
-    IatiXmlGenerator
+    IatiXmlGenerator,  # IatiValidator
 )
 
 
@@ -19,13 +19,13 @@ class TestComplexXmlGeneration(unittest.TestCase):
             Path(__file__).parent.parent.parent,
             'data-samples', 'xml', 'who-arg.xml'
         )
-        self.output_file = "test_who_arg_generated.xml"
+        self.output_file = os.path.join(os.path.dirname(__file__), 'test_who_arg_generated.xml')
         self.maxDiff = None
 
-    def tearDown(self):
-        # Clean up any generated test files
-        if os.path.exists(self.output_file):
-            os.remove(self.output_file)
+    # def tearDown(self):
+    #     # Clean up any generated test files
+    #     if os.path.exists(self.output_file):
+    #         os.remove(self.output_file)
 
     def test_generate_complex_who_xml(self):
         """Test generating a complex WHO IATI XML file that matches the structure of who-arg.xml."""
@@ -41,6 +41,24 @@ class TestComplexXmlGeneration(unittest.TestCase):
 
         # Compare with original sample file
         self._compare_xml_files(self.sample_file, self.output_file)
+
+        # TODO Validate with our validator
+        # validator = IatiValidator()
+        # xml_string = generator.generate_iati_activities_xml(iati_activities)
+        # is_valid, errors = validator.validate(xml_string)
+        # self.assertTrue(is_valid, f"Generated XML is not valid. Errors: {errors}")
+        """ Current errors
+        AssertionError: False is not true :
+        Generated XML is not valid.
+        Errors: {
+          'schema_errors': [
+            "<string>:61:0:ERROR:SCHEMASV:SCHEMAV_CVC_COMPLEX_TYPE_4:
+              Element 'value': The attribute 'value-date' is required but missing.",
+            "<string>:71:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT:
+              Element 'result': Missing child element(s). Expected is one of ( document-link, reference, indicator )."
+          ],
+          'ruleset_errors': ['Missing required value-date attribute in budget/value element']}
+        """
 
     def _build_who_arg_structure(self):
         """Build a complex IATI activities structure that matches who-arg.xml."""

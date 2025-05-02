@@ -1,6 +1,7 @@
 import os
 import csv
 from functools import lru_cache
+from pathlib import Path
 from typing import Dict, List, Set, Optional
 
 
@@ -32,8 +33,11 @@ class CodelistValidator:
 
     def _load_codes(self) -> List[Dict[str, str]]:
         """Load codes from CSV file."""
-        data_dir = os.path.join(os.path.dirname(__file__), "data")
+        # data_dir = os.path.join(os.path.dirname(__file__), "data")
+        data_dir = Path(__file__).parent / "data"
         filepath = os.path.join(data_dir, self.csv_filename)
+        if not os.path.exists(filepath):
+            raise Exception(f"File {filepath} not found.")
 
         try:
             with open(filepath, 'r', encoding='utf-8') as f:

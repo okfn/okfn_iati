@@ -23,7 +23,9 @@ classifiers = [
 ]
 keywords = ["iati", "xml", "development", "aid", "transparency"]
 
-dependencies = []
+dependencies = [
+    "lxml>=4.9.0",
+]
 
 [project.urls]
 "Homepage" = "https://github.com/okfn/okfn_iati"

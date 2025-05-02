@@ -33,6 +33,7 @@ from .validators import (
     crs_channel_code_validator
 )
 from .xml_generator import IatiXmlGenerator
+from .iati_schema_validator import IatiValidator
 
 __all__ = [
     # Models
@@ -69,5 +70,8 @@ __all__ = [
     'CodelistValidator', 'CRSChannelCodeValidator', 'crs_channel_code_validator',
 
     # Generator
-    'IatiXmlGenerator'
+    'IatiXmlGenerator',
+
+    # Validator
+    'IatiValidator'
 ]
