@@ -51,7 +51,7 @@ include-package-data = true
 [tool.setuptools.package-data]
 "okfn_iati" = [
     "data/*.csv",
-    "data/schemas/*.xsd",
+    "data/schemas/2.03/*.xsd",
 ]
 
 [tool.pytest.ini_options]
