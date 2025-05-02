@@ -56,7 +56,7 @@ class IatiXmlGenerator:
         if org.ref:
             self._set_attribute(org_el, "ref", org.ref)
         if org.type:
-            self._set_attribute(org_el, "type", org.type)
+            self._set_attribute(org_el, "type", self._get_enum_value(org.type))
         if org.activity_id:
             self._set_attribute(org_el, "activity-id", org.activity_id)
         if org.crs_channel_code:
