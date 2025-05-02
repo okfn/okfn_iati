@@ -6,6 +6,23 @@ Este documento describe los datos necesarios de su organización para generar ar
 
 Los datos que proporcione se transformarán en formato XML IATI y se publicarán en el Registro IATI, haciendo que sus actividades de desarrollo sean transparentes y accesibles para la comunidad internacional.
 
+## ¿Qué datos podemos publicar?
+
+IATI está diseñado para rastrear el flujo de recursos de desarrollo y ayuda humanitaria. Como banco de desarrollo, puede publicar información sobre una amplia gama de instrumentos financieros y actividades, incluyendo:
+
+- **Operaciones de préstamos**: Tanto préstamos concesionales como no concesionales a gobiernos, empresas estatales y entidades del sector privado
+- **Programas de donaciones**: Donaciones de asistencia técnica, subvenciones para investigación y otros financiamientos no reembolsables
+- **Inversiones de capital**: Inversiones directas en empresas y fondos que apoyan objetivos de desarrollo
+- **Esquemas de garantías**: Garantías financieras que ayudan a movilizar recursos adicionales
+- **Acuerdos de cofinanciamiento**: Proyectos financiados conjuntamente con otras instituciones de desarrollo
+- **Cooperación técnica**: Servicios de asesoría y programas de desarrollo de capacidades
+- **Fondos fiduciarios**: Gestión de recursos en nombre de donantes para propósitos específicos
+- **Financiamiento basado en políticas**: Apoyo para reformas políticas e institucionales
+- **Financiamiento de respuesta a emergencias**: Financiamiento rápido para recuperación de desastres y resiliencia
+- **Iniciativas de integración regional**: Proyectos transfronterizos que promueven el desarrollo regional
+
+IATI permite rastrear todas las etapas de estas operaciones, desde la aprobación inicial hasta la implementación y resultados, proporcionando una visión integral de su cartera de desarrollo y sus impactos. Esta transparencia ayuda a demostrar el valor del trabajo de su institución al tiempo que facilita la coordinación con otros socios de desarrollo.
+
 ## Formato de Datos
 
 Por favor, proporcione sus datos en formato **CSV** o **Excel**, con una fila por actividad. Las secciones a continuación explican qué información necesitamos para cada actividad.
