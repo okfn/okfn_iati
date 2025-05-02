@@ -6,6 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "okfn-iati"
 version = "0.1.0"
 description = "IATI XML handler library for working with IATI 2.03 standard"
+readme = "README.md"
 authors = [
     {name = "OKFN", email = "andres.vazquez@okfn.org"},
 ]
@@ -20,14 +21,23 @@ classifiers = [
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
 ]
+keywords = ["iati", "xml", "development", "aid", "transparency"]
 
 dependencies = []
+
+[project.urls]
+"Homepage" = "https://github.com/okfn/okfn_iati"
+"Bug Tracker" = "https://github.com/okfn/okfn_iati/issues"
+"Documentation" = "https://github.com/okfn/okfn_iati"
+"Source Code" = "https://github.com/okfn/okfn_iati"
 
 [project.optional-dependencies]
 dev = [
     "pytest>=7.0.0",
     "pytest-cov>=4.0.0",
     "lxml>=4.9.0",  # Only needed for tests
+    "build>=0.8.0",  # For building package
+    "twine>=4.0.0",  # For uploading to PyPI
 ]
 
 [tool.setuptools]
