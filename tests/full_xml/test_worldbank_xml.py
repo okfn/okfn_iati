@@ -18,7 +18,7 @@ class TestWorldBankXmlGeneration(unittest.TestCase):
             'data-samples', 'xml', 'worldbank-679.xml'
         )
         self.output_file = os.path.join(os.path.dirname(__file__), 'test_worldbank_generated.xml')
-        
+
         self.maxDiff = None
 
     # def tearDown(self):
