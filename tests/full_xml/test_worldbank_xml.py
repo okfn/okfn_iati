@@ -5,7 +5,7 @@ from pathlib import Path
 from lxml import etree
 from okfn_iati import (
     Activity, Narrative, OrganizationRef, IatiActivities,
-    ActivityStatus, Result, IatiXmlGenerator
+    ActivityStatus, Result, IatiXmlGenerator,  # IatiValidator
 )
 
 
@@ -17,13 +17,14 @@ class TestWorldBankXmlGeneration(unittest.TestCase):
             Path(__file__).parent.parent.parent,
             'data-samples', 'xml', 'worldbank-679.xml'
         )
-        self.output_file = "test_worldbank_generated.xml"
+        self.output_file = os.path.join(os.path.dirname(__file__), 'test_worldbank_generated.xml')
+        
         self.maxDiff = None
 
-    def tearDown(self):
-        # Clean up any generated test files
-        if os.path.exists(self.output_file):
-            os.remove(self.output_file)
+    # def tearDown(self):
+    #     # Clean up any generated test files
+    #     if os.path.exists(self.output_file):
+    #         os.remove(self.output_file)
 
     def test_generate_worldbank_xml(self):
         """Test generating a complex World Bank IATI XML file that matches the structure of worldbank-679.xml."""
@@ -39,6 +40,32 @@ class TestWorldBankXmlGeneration(unittest.TestCase):
 
         # Compare with original sample file
         self._compare_xml_files(self.sample_file, self.output_file)
+
+        # TODO Validate with our validator
+        # validator = IatiValidator()
+        # xml_string = generator.generate_iati_activities_xml(iati_activities)
+        # is_valid, errors = validator.validate(xml_string)
+        # self.assertTrue(is_valid, f"Generated XML is not valid. Errors: {errors}")
+        """
+        AssertionError: False is not true :
+        Generated XML is not valid. Errors: {
+          'schema_errors': [
+            "<string>:15:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT:
+              Element 'activity-status': This element is not expected. Expected is one of ( description, participating-org ).",
+            "<string>:189:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT:
+              Element 'iati-activity': Missing child element(s). Expected is ( description ).",
+            "<string>:198:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT:
+              Element 'iati-activity': Missing child element(s). Expected is ( description ).",
+            "<string>:215:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT:
+              Element 'result': This element is not expected. Expected is ( description )."
+          ],
+          'ruleset_errors': [
+            'Each activity must have either a sector element or all transactions must have sector elements',
+            'Activity must specify either recipient-country or recipient-region at activity or transaction level',
+            "Activity identifier 'WB-P679-004' should start with reporting org identifier '44000'"
+          ]
+        }
+        """
 
     def _build_worldbank_structure(self):
         """Build a complex IATI activities structure that matches worldbank-679.xml."""

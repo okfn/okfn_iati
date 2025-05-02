@@ -16,7 +16,10 @@ from okfn_iati import (
     OrganisationRole, TransactionType,
 
     # Generator
-    IatiXmlGenerator
+    IatiXmlGenerator,
+
+    # Validator
+    # IatiValidator,
 )
 
 
@@ -29,13 +32,13 @@ class TestUSAIDXML(unittest.TestCase):
             'data-samples', 'xml'
         )
         self.usaid_xml_path = os.path.join(self.data_dir, 'usaid-798.xml')
-        self.output_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'test_usaid_generated.xml')
+        self.output_path = os.path.join(os.path.dirname(__file__), 'test_usaid_generated.xml')
 
-    def tearDown(self):
-        """Clean up after tests by removing output files."""
-        if os.path.exists(self.output_path):
-            os.remove(self.output_path)
-            print(f"Cleaned up test output file: {self.output_path}")
+    # def tearDown(self):
+    #     """Clean up after tests by removing output files."""
+    #     if os.path.exists(self.output_path):
+    #         os.remove(self.output_path)
+    #         print(f"Cleaned up test output file: {self.output_path}")
 
     def test_parse_and_generate_usaid_xml(self):
         """Test parsing USAID XML and regenerating it with our library."""
@@ -77,6 +80,23 @@ class TestUSAIDXML(unittest.TestCase):
 
         # Print stats about parsed activities
         print(f"Parsed {len(iati_activities.activities)} activities from USAID XML")
+
+        # TODO Validate with our validator
+        # validator = IatiValidator()
+        # xml_string = generator.generate_iati_activities_xml(iati_activities)
+        # is_valid, errors = validator.validate(xml_string)
+        # self.assertTrue(is_valid, f"Generated XML is not valid. Errors: {errors}")
+        """
+        AssertionError: False is not true :
+        Generated XML is not valid. Errors: {
+          'schema_errors': [],
+          'ruleset_errors': [
+            'Each activity must have either a sector element or all transactions must have sector elements',
+            'Each activity must have either a sector element or all transactions must have sector elements',
+            ...
+          ]
+        }
+        """
 
     def _parse_activity(self, activity_elem):  # noqa: C901
         """Parse an activity element from the XML."""
