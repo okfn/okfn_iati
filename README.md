@@ -183,3 +183,8 @@ with open("example_activity.xml", "r") as f:
         for ruleset_error in errors['ruleset_errors']:
             print(f"  Ruleset error: {ruleset_error}")
 ```
+
+## Start your IATI project
+
+You can start by creating a CSV file and this library will process it to generate valid IATI XML files.  
+Read the docs in [englsh](/docs/data_requirements.md) or [spanish](/docs/data_requirements.es.md) to learn how to do it.  
