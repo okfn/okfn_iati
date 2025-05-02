@@ -1,4 +1,3 @@
-
 .vscode/
 
 # Byte-compiled / optimized / DLL files
@@ -175,3 +174,33 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Tests
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
