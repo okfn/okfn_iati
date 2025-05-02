@@ -283,43 +283,44 @@ class IatiXmlGenerator:
         if activity.humanitarian is not None:
             self._set_attribute(activity_el, "humanitarian", "1" if activity.humanitarian else "0")
 
-        # Add identifier
+        # IMPORTANT: Follow IATI Schema element order
+        # 1. Add identifier
         id_el = ET.SubElement(activity_el, "iati-identifier")
         id_el.text = activity.iati_identifier
 
-        # Add reporting org
+        # 2. Add reporting org
         reporting_org_el = ET.SubElement(activity_el, "reporting-org")
         self._add_organization_ref(reporting_org_el, activity.reporting_org)
 
-        # Add title
+        # 3. Add title
         title_el = ET.SubElement(activity_el, "title")
         self._create_narrative_elements(title_el, activity.title)
 
-        # Add descriptions
+        # 4. Add descriptions
         for desc in activity.description:
             desc_el = ET.SubElement(activity_el, "description")
             if "type" in desc:
                 self._set_attribute(desc_el, "type", desc["type"])
             self._create_narrative_elements(desc_el, desc["narratives"])
 
-        # Add participating orgs
+        # 5. Add participating orgs
         for org in activity.participating_orgs:
             self._add_participating_org(activity_el, org)
 
-        # Add activity status
+        # 6. Add activity status
         if activity.activity_status:
             status_el = ET.SubElement(activity_el, "activity-status")
             self._set_attribute(status_el, "code", str(activity.activity_status.value))
 
-        # Add activity dates
+        # 7. Add activity dates
         for date in activity.activity_dates:
             self._add_activity_date(activity_el, date)
 
-        # Add contact info
+        # 8. Add contact info
         if activity.contact_info:
             self._add_contact_info(activity_el, activity.contact_info)
 
-        # Add recipient countries
+        # 9. Add recipient countries
         for country in activity.recipient_countries:
             country_el = ET.SubElement(activity_el, "recipient-country")
             self._set_attribute(country_el, "code", country["code"])
@@ -330,7 +331,7 @@ class IatiXmlGenerator:
             if "narratives" in country:
                 self._create_narrative_elements(country_el, country["narratives"])
 
-        # Add recipient regions
+        # 10. Add recipient regions
         for region in activity.recipient_regions:
             region_el = ET.SubElement(activity_el, "recipient-region")
             self._set_attribute(region_el, "code", region["code"])
@@ -344,11 +345,11 @@ class IatiXmlGenerator:
             if "narratives" in region:
                 self._create_narrative_elements(region_el, region["narratives"])
 
-        # Add locations
+        # 11. Add locations
         for location in activity.locations:
             self._add_location(activity_el, location)
 
-        # Add sectors
+        # 12. Add sectors (REQUIRED by IATI rules)
         for sector in activity.sectors:
             sector_el = ET.SubElement(activity_el, "sector")
             self._set_attribute(sector_el, "code", sector["code"])
@@ -362,26 +363,26 @@ class IatiXmlGenerator:
             if "narratives" in sector:
                 self._create_narrative_elements(sector_el, sector["narratives"])
 
-        # Add document links
-        for doc in activity.document_links:
-            self._add_document_link(activity_el, doc)
-
-        # Add budgets
+        # 13. Add budgets
         for budget in activity.budgets:
             self._add_budget(activity_el, budget)
 
-        # Add transactions
+        # 14. Add transactions (Must come before document-link per IATI schema)
         for transaction in activity.transactions:
             self._add_transaction(activity_el, transaction)
 
-        # Add related activities
+        # 15. Add document links 
+        for doc in activity.document_links:
+            self._add_document_link(activity_el, doc)
+
+        # 16. Add related activities
         for related in activity.related_activities:
             related_el = ET.SubElement(activity_el, "related-activity")
             self._set_attribute(related_el, "ref", related["ref"])
             if "type" in related:
                 self._set_attribute(related_el, "type", self._get_enum_value(related.get("type")))
 
-        # Add results
+        # 17. Add results
         for result in activity.results:
             self._add_result(activity_el, result)
 
