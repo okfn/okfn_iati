@@ -21,7 +21,7 @@ For each development activity (project, program, or intervention), we need:
 | Activity Identifier | A unique code for this activity | Text (must start with your org ID) | Yes | `XM-DAC-12345-PROJECT001` |
 | Activity Title | The name of the activity | Text | Yes | "Small Business Support Program" |
 | Activity Description | A detailed description of what the activity involves | Text | Yes | "This program supports small businesses in rural areas through microfinance and training" |
-| Activity Status | Current status of the activity | Choose one: Planning, Implementation, Completion, Post-completion, Cancelled, Suspended | Yes | Implementation |
+| Activity Status | Current status of the activity | [IATI ActivityStatus code](https://iatistandard.org/en/iati-standard/203/codelists/activitystatus/) (1=Planning, 2=Implementation, etc.) | Yes | 2 (Implementation) |
 
 ### 2. Dates
 
@@ -40,7 +40,7 @@ For each development activity (project, program, or intervention), we need:
 |-------|-------------|--------|----------|---------|
 | Organization ID | Your organization's IATI identifier | Text | Yes | `XM-DAC-12345` |
 | Organization Name | Your organization's name | Text | Yes | "Central American Bank for Economic Integration" |
-| Organization Type | Type of organization | Choose one: Government, NGO, Multilateral, Foundation, Private Sector | Yes | Multilateral |
+| Organization Type | Type of organization | [IATI OrganisationType code](https://iatistandard.org/en/iati-standard/203/codelists/organisationtype/) (10=Government, 40=Multilateral, etc.) | Yes | 40 (Multilateral) |
 
 #### 3.2. Participating Organizations
 
@@ -50,8 +50,8 @@ For each organization participating in the activity, please provide:
 |-------|-------------|--------|----------|---------|
 | Organization Name | Name of the participating organization | Text | Yes | "Ministry of Finance, Honduras" |
 | Organization ID | IATI identifier of the organization (if known) | Text | If available | `XM-DAC-HN-MOF` |
-| Organization Role | Role in the activity | Choose one: Funding, Implementing, Accountable, Extending | Yes | Implementing |
-| Organization Type | Type of organization | Choose one: Government, NGO, Multilateral, Foundation, Private Sector | Yes | Government |
+| Organization Role | Role in the activity | [IATI OrganisationRole code](https://iatistandard.org/en/iati-standard/203/codelists/organisationrole/) (1=Funding, 4=Implementing, etc.) | Yes | 4 (Implementing) |
+| Organization Type | Type of organization | [IATI OrganisationType code](https://iatistandard.org/en/iati-standard/203/codelists/organisationtype/) | Yes | 10 (Government) |
 
 ### 4. Geographic Location
 
@@ -59,14 +59,14 @@ For each organization participating in the activity, please provide:
 
 | Field | Description | Format | Required | Example |
 |-------|-------------|--------|----------|---------|
-| Recipient Country | Country where the activity takes place | ISO 2-letter country code | Yes (if no region) | HN (for Honduras) |
+| Recipient Country | Country where the activity takes place | [ISO 3166-1 alpha-2 code](https://iatistandard.org/en/iati-standard/203/codelists/country/) | Yes (if no region) | HN (for Honduras) |
 | Percentage | Percentage of activity in this country | Number (0-100) | If multiple countries | 100 |
 
 OR
 
 | Field | Description | Format | Required | Example |
 |-------|-------------|--------|----------|---------|
-| Recipient Region | Region where activity takes place | OECD DAC region code | Yes (if no country) | 298 (for Central America) |
+| Recipient Region | Region where activity takes place | [IATI Region code](https://iatistandard.org/en/iati-standard/203/codelists/region/) | Yes (if no country) | 298 (Central America) |
 | Percentage | Percentage of activity in this region | Number (0-100) | If multiple regions | 100 |
 
 #### 4.2. Specific Locations (if applicable)
@@ -78,6 +78,7 @@ For each specific location within the country:
 | Location Name | Name of the specific location | Text | Yes | "Tegucigalpa" |
 | Location Description | Brief description of this location | Text | No | "Capital city area" |
 | Coordinates | Geographic coordinates | Latitude,Longitude | If available | "14.0723,-87.1921" |
+| Location Type | Type of location | [IATI LocationType code](https://iatistandard.org/en/iati-standard/203/codelists/locationtype/) | If available | 2 (Populated Place) |
 
 ### 5. Sectors
 
@@ -85,7 +86,7 @@ For each sector the activity addresses:
 
 | Field | Description | Format | Required | Example |
 |-------|-------------|--------|----------|---------|
-| Sector Code | Code representing the sector | DAC 5-digit code | Yes | 11110 (Education Policy) |
+| Sector Code | Code representing the sector | [OECD DAC 5-digit purpose code](https://iatistandard.org/en/iati-standard/203/codelists/sector/) | Yes | 11110 (Education Policy) |
 | Sector Name | Name of the sector | Text | Yes | "Education Policy & Administrative Management" |
 | Percentage | Percentage of activity focused on this sector | Number (0-100) | If multiple sectors | 60 |
 
@@ -97,12 +98,12 @@ For each budget period:
 
 | Field | Description | Format | Required | Example |
 |-------|-------------|--------|----------|---------|
-| Budget Type | Type of budget | Choose one: Original, Revised | Yes | Original |
-| Status | Budget status | Choose one: Indicative, Committed | Yes | Committed |
+| Budget Type | Type of budget | [IATI BudgetType code](https://iatistandard.org/en/iati-standard/203/codelists/budgettype/) (1=Original, 2=Revised) | Yes | 1 (Original) |
+| Status | Budget status | [IATI BudgetStatus code](https://iatistandard.org/en/iati-standard/203/codelists/budgetstatus/) (1=Indicative, 2=Committed) | Yes | 2 (Committed) |
 | Period Start | Start of budget period | YYYY-MM-DD | Yes | 2023-01-01 |
 | Period End | End of budget period | YYYY-MM-DD | Yes | 2023-12-31 |
 | Amount | Value of budget | Number | Yes | 1500000 |
-| Currency | Currency of budget | 3-letter code | Yes | USD |
+| Currency | Currency of budget | [ISO 4217 3-letter code](https://iatistandard.org/en/iati-standard/203/codelists/currency/) | Yes | USD |
 | Value Date | Exchange rate date | YYYY-MM-DD | Yes | 2023-01-01 |
 
 #### 6.2. Transactions
@@ -111,13 +112,15 @@ For each financial transaction:
 
 | Field | Description | Format | Required | Example |
 |-------|-------------|--------|----------|---------|
-| Transaction Type | Type of transaction | Choose one: Commitment, Disbursement, Expenditure, Incoming Funds | Yes | Disbursement |
+| Transaction Type | Type of transaction | [IATI TransactionType code](https://iatistandard.org/en/iati-standard/203/codelists/transactiontype/) | Yes | 3 (Disbursement) |
 | Transaction Date | Date of transaction | YYYY-MM-DD | Yes | 2023-03-15 |
 | Amount | Transaction amount | Number | Yes | 500000 |
-| Currency | Currency of transaction | 3-letter code | Yes | USD |
+| Currency | Currency of transaction | [ISO 4217 3-letter code](https://iatistandard.org/en/iati-standard/203/codelists/currency/) | Yes | USD |
 | Value Date | Exchange rate date | YYYY-MM-DD | Yes | 2023-03-15 |
 | Provider Organization | Organization providing the funds | Text | For incoming funds | "World Bank" |
 | Receiver Organization | Organization receiving the funds | Text | For outgoing funds | "Ministry of Education, Honduras" |
+| Finance Type | Type of finance | [IATI FinanceType code](https://iatistandard.org/en/iati-standard/203/codelists/financetype/) | If available | 110 (Standard Grant) |
+| Flow Type | Type of flow | [IATI FlowType code](https://iatistandard.org/en/iati-standard/203/codelists/flowtype/) | If available | 10 (ODA) |
 
 ### 7. Results (if available)
 
@@ -125,11 +128,12 @@ For each result being tracked:
 
 | Field | Description | Format | Required | Example |
 |-------|-------------|--------|----------|---------|
-| Result Type | Type of result | Choose one: Output, Outcome, Impact | Yes | Outcome |
+| Result Type | Type of result | [IATI ResultType code](https://iatistandard.org/en/iati-standard/203/codelists/resulttype/) (1=Output, 2=Outcome, etc.) | Yes | 2 (Outcome) |
 | Result Title | Title of the result | Text | Yes | "Increased access to education" |
 | Result Description | Description of the result | Text | Yes | "Measure of increased school enrollment in target areas" |
 | Indicator Title | Title of the indicator | Text | Yes | "School enrollment rate" |
 | Indicator Description | Description of the indicator | Text | Yes | "Percentage of school-age children enrolled" |
+| Indicator Measure | Type of measurement | [IATI IndicatorMeasure code](https://iatistandard.org/en/iati-standard/203/codelists/indicatormeasure/) | Yes | 2 (Percentage) |
 | Baseline Year | Year of baseline data | YYYY | If available | 2022 |
 | Baseline Value | Baseline value | Number or Text | If available | "45%" |
 | Target Year | Year of target | YYYY | If available | 2024 |
@@ -146,7 +150,16 @@ For each document related to the activity:
 | Document Title | Title of document | Text | Yes | "Project Proposal" |
 | Document URL | Web address of document | URL | Yes | "https://example.org/docs/proposal.pdf" |
 | Document Format | Format of document | MIME type | Yes | "application/pdf" |
-| Document Category | Type of document | Category code | Yes | A02 (Objectives) |
+| Document Category | Type of document | [IATI DocumentCategory code](https://iatistandard.org/en/iati-standard/203/codelists/documentcategory/) | Yes | A02 (Objectives) |
+
+## Policy Markers (if applicable)
+
+For each policy marker that applies to the activity:
+
+| Field | Description | Format | Required | Example |
+|-------|-------------|--------|----------|---------|
+| Policy Marker | Type of policy | [IATI PolicyMarker code](https://iatistandard.org/en/iati-standard/203/codelists/policymarker/) | Yes | 1 (Gender Equality) |
+| Significance | Degree of focus | [IATI PolicySignificance code](https://iatistandard.org/en/iati-standard/203/codelists/policysignificance/) | Yes | 1 (Significant Objective) |
 
 ## Data Validation Notes
 
@@ -156,15 +169,17 @@ For each document related to the activity:
 4. **Currency**: Use standard 3-letter ISO currency codes (USD, EUR, GBP, etc.).
 5. **Country Codes**: Use standard ISO 2-letter country codes (HN, SV, GT, NI, CR, PA, etc.).
 6. **Sector Codes**: Use the OECD DAC 5-digit purpose codes.
+7. **Codelist Values**: All fields with specific codelists must use the exact code values from the linked IATI standard codelists.
 
 ## Additional Information Needed
 
 If you have any of the following information, please include it:
 
-1. **Policy Markers**: If the activity targets specific policy areas (gender equality, environment, etc.)
-2. **Default Currency**: The main currency used for the activity
-3. **Humanitarian Flag**: Whether the activity is humanitarian in nature (Yes/No)
-4. **Related Activities**: If this activity is related to other activities you report
+1. **Default Currency**: The main currency used for the activity (use [ISO 4217 code](https://iatistandard.org/en/iati-standard/203/codelists/currency/))
+2. **Humanitarian Flag**: Whether the activity is humanitarian in nature (Yes/No)
+3. **Related Activities**: If this activity is related to other activities you report (specify [RelatedActivityType code](https://iatistandard.org/en/iati-standard/203/codelists/relatedactivitytype/))
+4. **Collaboration Type**: Type of collaboration (use [CollaborationType code](https://iatistandard.org/en/iati-standard/203/codelists/collaborationtype/))
+5. **Aid Type**: Type of aid (use [AidType code](https://iatistandard.org/en/iati-standard/203/codelists/aidtype/))
 
 ## Questions?
 
