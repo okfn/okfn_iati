@@ -6,6 +6,23 @@ This document outlines the data needed from your organization to generate compli
 
 The data you provide will be transformed into IATI XML format and published on the IATI Registry, making your development activities transparent and accessible to the international community.
 
+## What data can we publish?
+
+IATI is designed to track the flow of development and humanitarian resources. As a development bank, you can publish information about a wide range of financial instruments and activities, including:
+
+- **Loan operations**: Both concessional and non-concessional lending to governments, state-owned enterprises, and private sector entities
+- **Grant programs**: Technical assistance grants, research grants, and other non-reimbursable funding
+- **Equity investments**: Direct investments in companies and funds that support development objectives
+- **Guarantee schemes**: Financial guarantees that help mobilize additional resources
+- **Co-financing arrangements**: Projects jointly funded with other development institutions
+- **Technical cooperation**: Advisory services and capacity building programs
+- **Trust funds**: Management of resources on behalf of donors for specific purposes
+- **Policy-based financing**: Support for policy and institutional reforms
+- **Emergency response funding**: Rapid financing for disaster recovery and resilience
+- **Regional integration initiatives**: Cross-border projects that promote regional development
+
+IATI allows tracking of all stages of these operations from initial approval through implementation to results, providing a comprehensive view of your development portfolio and its impacts. This transparency helps demonstrate the value of your institution's work while facilitating coordination with other development partners.
+
 ## Data Format
 
 Please provide your data in **CSV** or **Excel** format, with one row per activity. The sections below explain what information we need for each activity.
