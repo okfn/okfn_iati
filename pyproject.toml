@@ -36,6 +36,7 @@ Issues = "https://github.com/okfn/okfn_iati/issues"
 [project.optional-dependencies]
 dev = [
     "lxml>=4.9.0",  # Only needed for tests
+    "coverage>=7.0", # For generating the coverage report
     "build>=0.8.0",  # For building package
     "twine>=4.0.0",  # For uploading to PyPI
 ]
