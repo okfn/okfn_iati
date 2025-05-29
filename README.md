@@ -187,4 +187,5 @@ with open("example_activity.xml", "r") as f:
 ## Start your IATI project
 
 You can start by creating a CSV file and this library will process it to generate valid IATI XML files.  
-Read the docs in [englsh](/docs/data_requirements.md) or [spanish](/docs/data_requirements.es.md) to learn how to do it.  
+Read the docs in [english](https://github.com/okfn/okfn_iati/blob/main/docs/data_requirements.md) or
+[spanish](https://github.com/okfn/okfn_iati/blob/main/docs/data_requirements.es.md) to learn how to do it.  
