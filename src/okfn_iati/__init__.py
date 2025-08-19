@@ -29,10 +29,12 @@ from .enums import (
     TransactionType
 )
 from .validators import (
-    CodelistValidator, CRSChannelCodeValidator, 
+    CodelistValidator, CRSChannelCodeValidator,
     crs_channel_code_validator
 )
 from .xml_generator import IatiXmlGenerator
+from .csv_converter import IatiCsvConverter
+from .multi_csv_converter import IatiMultiCsvConverter
 from .iati_schema_validator import IatiValidator
 
 __all__ = [
@@ -71,6 +73,10 @@ __all__ = [
 
     # Generator
     'IatiXmlGenerator',
+
+    # CSV Converters
+    'IatiCsvConverter',
+    'IatiMultiCsvConverter',
 
     # Validator
     'IatiValidator'
