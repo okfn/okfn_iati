@@ -867,15 +867,22 @@ class IatiCsvConverter:
     def _add_budgets_from_row(self, activity: Activity, row: Dict[str, str]) -> None:
         """Add budget information from CSV row."""
         if row.get('budget_value'):
-            activity.budgets.append(Budget(
-                type=BudgetType(row.get('budget_type', '1')),
-                status=BudgetStatus(row.get('budget_status', '1')),
-                period_start=row['budget_period_start'],
-                period_end=row['budget_period_end'],
-                value=float(row['budget_value']),
-                currency=row.get('budget_currency', row.get('default_currency', 'USD')),
-                value_date=row.get('budget_value_date', row.get('budget_period_start'))
-            ))
+            # Aceptar ambas variantes de nombre de columna
+            period_start = row.get('budget_period_start') or row.get('budget_start') or ''
+            period_end = row.get('budget_period_end') or row.get('budget_end') or ''
+            value = float(row['budget_value']) if row.get('budget_value') else None
+
+            if period_start and period_end and value:
+                activity.budgets.append(Budget(
+                    type=BudgetType(row.get('budget_type', '1')),
+                    status=BudgetStatus(row.get('budget_status', '1')),
+                    period_start=period_start,
+                    period_end=period_end,
+                    value=value,
+                    currency=row.get('budget_currency', row.get('default_currency', 'USD')),
+                    # Reglaset pide value-date; si no viene, usamos period_start
+                    value_date=row.get('budget_value_date') or period_start
+                ))
 
     def _add_transactions_from_row(self, activity: Activity, row: Dict[str, str]) -> None:
         """Add transaction information from CSV row."""
