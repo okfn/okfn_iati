@@ -371,7 +371,7 @@ class IatiXmlGenerator:
         for transaction in activity.transactions:
             self._add_transaction(activity_el, transaction)
 
-        # 15. Add document links 
+        # 15. Add document links
         for doc in activity.document_links:
             self._add_document_link(activity_el, doc)
 
