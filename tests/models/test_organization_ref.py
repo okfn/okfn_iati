@@ -1,6 +1,5 @@
 import unittest
 from okfn_iati import OrganizationRef, Narrative
-from okfn_iati.enums import OrganisationType
 
 
 class TestOrganizationRef(unittest.TestCase):
