@@ -21,8 +21,10 @@ HERE = Path(__file__).parent.resolve()
 SAMPLE_XML = HERE / "sample.xml"
 SAMPLE_CSV = HERE / "sample_activities.csv"
 
+
 def assert_file_exists(p: Path):
     assert p.exists(), f"Expected file not found: {p}"
+
 
 def read_csv_first_row(p: Path):
     with p.open("r", encoding="utf-8") as f:
@@ -30,6 +32,7 @@ def read_csv_first_row(p: Path):
         for row in reader:
             return row
     return {}
+
 
 def compare_selected_fields(original: dict, recovered: dict, fields: list):
     diffs = []
@@ -40,6 +43,7 @@ def compare_selected_fields(original: dict, recovered: dict, fields: list):
             diffs.append((k, o, r))
     return diffs
 
+
 def pretty_diff(text_a: str, text_b: str, fromfile="original", tofile="generated"):
     return "".join(difflib.unified_diff(
         text_a.splitlines(keepends=True),
@@ -47,6 +51,7 @@ def pretty_diff(text_a: str, text_b: str, fromfile="original", tofile="generated
         fromfile=fromfile,
         tofile=tofile
     ))
+
 
 def test_roundtrip_end_to_end():
     '''
@@ -137,6 +142,7 @@ def test_roundtrip_end_to_end():
         for p in sorted(tmp.rglob("*")):
             if p.is_file():
                 print(" -", p.relative_to(tmp))
+
 
 if __name__ == '__main__':
     # Allow running as a simple script without pytest
