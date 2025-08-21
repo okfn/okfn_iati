@@ -1,5 +1,7 @@
 [![Python Tests](https://github.com/okfn/okfn_iati/workflows/Python%20IATI%20Tests/badge.svg)](https://github.com/okfn/okfn_iati/actions)
 
+**Note**: This library is under development and in Beta status.   
+
 # OKFN IATI XML Handler
 
 A Python library for working with IATI XML data according to the IATI 2.03 standard.
