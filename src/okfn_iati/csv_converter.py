@@ -7,6 +7,7 @@ making it easier for users to work with IATI data using familiar tools like Exce
 
 import csv
 import json
+import re
 import xml.etree.ElementTree as ET
 from typing import List, Dict, Any, Union
 from pathlib import Path
@@ -194,7 +195,7 @@ class IatiCsvConverter:
             True if conversion was successful, False otherwise
         """
         try:
-            # Read CSV data
+            # Read CSV data (auto-detect delimiter + robust parsing)
             activities = self._read_csv_and_create_activities(csv_input)
 
             # Create IATI activities container
@@ -690,21 +691,129 @@ class IatiCsvConverter:
         """Read CSV file and convert to Activity objects."""
         activities = []
 
-        with open(csv_input, 'r', encoding='utf-8') as f:
-            reader = csv.DictReader(f)
-            for row in reader:
-                try:
-                    activity = self._create_activity_from_row(row)
-                    activities.append(activity)
-                except Exception as e:
-                    print(f"Error processing row {reader.line_num}: {e}")
-                    continue
+        rows = self._read_csv_rows(csv_input)
+        if not rows:
+            return activities
+
+        # Validación temprana de columnas mínimas (ayuda a detectar delimitador incorrecto)
+        required = {"activity_identifier", "title"}
+        missing = required - set(rows[0].keys())
+        if missing:
+            raise ValueError(f"Missing expected CSV columns: {sorted(missing)}")
+
+        for idx, row in enumerate(rows, start=2):  # línea 1 = header
+            try:
+                activity = self._create_activity_from_row(row)
+                activities.append(activity)
+            except Exception as e:
+                print(f"Error processing row {idx}: {e}")
+                continue
 
         return activities
 
+    def _read_csv_rows(self, csv_input: Union[str, Path]) -> List[Dict[str, str]]:
+        """Open CSV and return list of dict rows with robust delimiter detection and a single retry if misaligned."""
+        def read_with(delim: str) -> List[Dict[str, str]]:
+            with open(csv_input, 'r', encoding='utf-8', newline='') as f:
+                return list(csv.DictReader(f, delimiter=delim))
+
+        # 1) Heurística primaria por conteo en header
+        with open(csv_input, 'r', encoding='utf-8', newline='') as f:
+            pos0 = f.tell()
+            header = ""
+            for line in f:
+                if line.strip():
+                    header = line
+                    break
+            f.seek(pos0)
+            candidates = [',', ';', '\t', '|']
+            counts = {c: header.count(c) for c in candidates}
+            delim = max(counts, key=counts.get)
+
+            # 2) Si header no ayuda, probar Sniffer
+            if all(v == 0 for v in counts.values()):
+                sample = f.read(4096)
+                try:
+                    dialect = csv.Sniffer().sniff(sample, delimiters=candidates)
+                    delim = dialect.delimiter
+                except csv.Error:
+                    delim = ','  # default excel
+            # f se cerrará al salir del with
+
+        rows = read_with(delim)
+        # 3) Heurística de sanidad: ¿números lucen como fechas? (indica separador incorrecto)
+
+        def looks_like_date(s: str) -> bool:
+            s = (s or "").strip()
+            return len(s) == 10 and s[4] == '-' and s[7] == '-' and s[:4].isdigit() and s[5:7].isdigit() and s[8:10].isdigit()
+
+        def misaligned(sample_rows: List[Dict[str, str]]) -> bool:
+            if not sample_rows:
+                return False
+            probe = sample_rows[: min(8, len(sample_rows))]
+            numish_cols = ["budget_value", "transaction_value", "sector_percentage"]
+            hits = 0
+            checks = 0
+            for r in probe:
+                for c in numish_cols:
+                    if c in r:
+                        checks += 1
+                        if looks_like_date(r.get(c, "")):
+                            hits += 1
+            # si la mayoría de los chequeos "numéricos" parecen fechas, está mal
+            return checks > 0 and hits * 2 >= checks  # >= 50%
+
+        if misaligned(rows):
+            alt = ';' if delim != ';' else ','
+            rows_alt = read_with(alt)
+            # solo cambiamos si el alternativo “se ve” mejor
+            if not misaligned(rows_alt):
+                rows = rows_alt
+
+        return rows
+
+    @staticmethod
+    def _to_float(value: Any) -> Union[float, None]:
+        if value is None:
+            return None
+        s = str(value).strip()
+        if s == "":
+            return None
+
+        # Quitar espacios
+        s = s.replace(" ", "")
+
+        # Heurísticas comunes:
+        # 1) 1,234,567.89  -> quitar comas (miles), queda 1234567.89
+        # 2) 1.234.567,89  -> quitar puntos (miles) y cambiar coma por punto -> 1234567.89
+        if re.match(r"^\d{1,3}(,\d{3})+(\.\d+)?$", s):
+            s = s.replace(",", "")  # miles en coma
+        elif re.match(r"^\d{1,3}(\.\d{3})+(,\d+)?$", s):
+            s = s.replace(".", "")  # miles en punto
+            s = s.replace(",", ".")  # decimal en coma
+
+        # Si no coincide con patrones de miles, mantener tu fallback
+        else:
+            s = s.replace(",", ".")
+
+        try:
+            return float(s)
+        except ValueError:
+            return None
+
+    @staticmethod
+    def _to_int(value: Any) -> Union[int, None]:
+        f = IatiCsvConverter._to_float(value)
+        return int(f) if f is not None else None
+
     def _create_activity_from_row(self, row: Dict[str, str]) -> Activity:
-        """Convert a CSV row into an Activity object."""
-        # Basic activity information
+        """Convert a CSV row into an Activity object (fault-tolerant by section)."""
+        # --- Campos básicos, con parse seguro del status:
+        try:
+            status = ActivityStatus(int(row['activity_status'])) if row.get('activity_status') else ActivityStatus.IMPLEMENTATION
+        except Exception:
+            status = ActivityStatus.IMPLEMENTATION
+
         activity = Activity(
             iati_identifier=row['activity_identifier'],
             reporting_org=OrganizationRef(
@@ -715,44 +824,41 @@ class IatiCsvConverter:
             title=[Narrative(text=row['title'])],
             description=[{
                 "type": "1",
-                "narratives": [Narrative(text=row['description'])]
+                "narratives": [Narrative(text=row.get('description', ''))]
             }],
-            activity_status=ActivityStatus(
-                int(row['activity_status'])
-            ) if row.get('activity_status') else ActivityStatus.IMPLEMENTATION,
+            activity_status=status,
             default_currency=row.get('default_currency', 'USD'),
             humanitarian=row.get('humanitarian', '0') == '1'
         )
 
-        # Add dates
-        self._add_dates_from_row(activity, row)
-
-        # Add geographic information
-        self._add_geography_from_row(activity, row)
-
-        # Add sectors
-        self._add_sectors_from_row(activity, row)
-
-        # Add participating organizations
-        self._add_participating_orgs_from_row(activity, row)
-
-        # Add budgets
-        self._add_budgets_from_row(activity, row)
-
-        # Add transactions
-        self._add_transactions_from_row(activity, row)
-
-        # Add contact info
-        self._add_contact_info_from_row(activity, row)
-
-        # Add locations
-        self._add_locations_from_row(activity, row)
-
-        # Add documents
-        self._add_documents_from_row(activity, row)
-
-        # Add results
-        self._add_results_from_row(activity, row)
+        # --- Secciones “best-effort”: nunca reventar la actividad entera
+        for adder in (
+            # Add dates
+            self._add_dates_from_row,
+            # Add geography information
+            self._add_geography_from_row,
+            # Add sectors
+            self._add_sectors_from_row,
+            # Add participating organizations
+            self._add_participating_orgs_from_row,
+            # Add budgets
+            self._add_budgets_from_row,
+            # Add transactions
+            self._add_transactions_from_row,
+            # Add contact information
+            self._add_contact_info_from_row,
+            # Add locations
+            self._add_locations_from_row,
+            # Add document
+            self._add_documents_from_row,
+            # Add results
+            self._add_results_from_row,
+        ):
+            try:
+                adder(activity, row)
+            except Exception as e:
+                # Log suave y seguimos
+                print(f"Warning: skipping {adder.__name__} for {activity.iati_identifier}: {e}")
 
         return activity
 
@@ -802,7 +908,7 @@ class IatiCsvConverter:
             sector_data = {
                 "code": row['sector_code'],
                 "vocabulary": row.get('sector_vocabulary', '1'),
-                "percentage": int(row.get('sector_percentage', 100))
+                "percentage": self._to_int(row.get('sector_percentage')) or 100
             }
             if row.get('sector_name'):
                 sector_data["narratives"] = [Narrative(text=row['sector_name'])]
@@ -816,13 +922,18 @@ class IatiCsvConverter:
                     sector = {
                         "code": sector_data.get('code', ''),
                         "vocabulary": sector_data.get('vocabulary', '1'),
-                        "percentage": int(sector_data.get('percentage', 100))
+                        "percentage": IatiCsvConverter._to_int(sector_data.get('percentage')) or 100
                     }
                     if sector_data.get('name'):
                         sector["narratives"] = [Narrative(text=sector_data['name'])]
                     activity.sectors.append(sector)
             except (json.JSONDecodeError, ValueError):
                 pass
+
+    @staticmethod
+    def _looks_like_date(s: Any) -> bool:
+        s = str(s or "").strip()
+        return len(s) == 10 and s[4] == '-' and s[7] == '-' and s[:4].isdigit() and s[5:7].isdigit() and s[8:10].isdigit()
 
     def _add_participating_orgs_from_row(self, activity: Activity, row: Dict[str, str]) -> None:
         """Add participating organizations from CSV row."""
@@ -865,14 +976,11 @@ class IatiCsvConverter:
                 pass
 
     def _add_budgets_from_row(self, activity: Activity, row: Dict[str, str]) -> None:
-        """Add budget information from CSV row."""
-        if row.get('budget_value'):
-            # Aceptar ambas variantes de nombre de columna
+        if row.get('budget_value') and not self._looks_like_date(row.get('budget_value')):
             period_start = row.get('budget_period_start') or row.get('budget_start') or ''
             period_end = row.get('budget_period_end') or row.get('budget_end') or ''
-            value = float(row['budget_value']) if row.get('budget_value') else None
-
-            if period_start and period_end and value:
+            value = self._to_float(row.get('budget_value'))
+            if period_start and period_end and value is not None:
                 activity.budgets.append(Budget(
                     type=BudgetType(row.get('budget_type', '1')),
                     status=BudgetStatus(row.get('budget_status', '1')),
@@ -880,24 +988,20 @@ class IatiCsvConverter:
                     period_end=period_end,
                     value=value,
                     currency=row.get('budget_currency', row.get('default_currency', 'USD')),
-                    # Reglaset pide value-date; si no viene, usamos period_start
                     value_date=row.get('budget_value_date') or period_start
                 ))
 
     def _add_transactions_from_row(self, activity: Activity, row: Dict[str, str]) -> None:
-        """Add transaction information from CSV row."""
-        if row.get('transaction_value'):
+        if row.get('transaction_value') and not self._looks_like_date(row.get('transaction_value')):
             transaction_args = {
                 'type': TransactionType(row.get('transaction_type', '2')),
-                'date': row['transaction_date'],
-                'value': float(row['transaction_value']),
+                'date': row.get('transaction_date', ''),
+                'value': self._to_float(row.get('transaction_value')) or 0.0,
                 'currency': row.get('transaction_currency', row.get('default_currency', 'USD')),
                 'value_date': row.get('transaction_value_date', row.get('transaction_date'))
             }
-
             if row.get('transaction_description'):
                 transaction_args['description'] = [Narrative(text=row['transaction_description'])]
-
             activity.transactions.append(Transaction(**transaction_args))
 
     def _add_contact_info_from_row(self, activity: Activity, row: Dict[str, str]) -> None:
