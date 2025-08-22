@@ -9,6 +9,8 @@ This library provides two approaches for working with IATI data in CSV format:
 
 The multi-CSV approach splits IATI data into separate CSV files for different data types, making it easier to work with in Excel and other tools.
 
+For a detailed explanation of how IATI XML data maps to the CSV structure and the relationships between files, see the [CSV Data Hierarchy Guide](csv_data_hierarchy.md).
+
 ### Files Generated
 
 - `activities.csv` - Main activity information
