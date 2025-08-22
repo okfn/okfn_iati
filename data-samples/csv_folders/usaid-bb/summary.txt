@@ -1,0 +1,18 @@
+IATI CSV Conversion Summary
+==============================
+
+Conversion completed: 2025-08-20 14:55:43
+
+Files created:
+  activities.csv: 1 records
+  participating_orgs.csv: 4 records
+  sectors.csv: 0 records
+  budgets.csv: 0 records
+  transactions.csv: 2 records
+  locations.csv: 0 records
+  documents.csv: 0 records
+  results.csv: 0 records
+  indicators.csv: 0 records
+  contact_info.csv: 1 records
+
+Total activities: 1
