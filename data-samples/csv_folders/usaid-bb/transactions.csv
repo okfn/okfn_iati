@@ -1,0 +1,3 @@
+activity_identifier,transaction_ref,transaction_type,transaction_date,value,currency,value_date,description,provider_org_ref,provider_org_name,provider_org_type,receiver_org_ref,receiver_org_name,receiver_org_type,disbursement_channel,flow_type,finance_type,aid_type,tied_status,humanitarian
+US-GOV-1-7200AA18C00086,752A36F0F87F,2,2018-09-30,14950.00,,2018-09-30,,,,,,Priority Worldwide Services,70,,,,,,1
+US-GOV-1-7200AA18C00086,371C692E3476,3,2018-12-31,14950.00,,2018-12-31,,,,,,Priority Worldwide Services,70,,,,,,1
