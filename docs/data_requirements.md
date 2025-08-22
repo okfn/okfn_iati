@@ -23,9 +23,23 @@ IATI is designed to track the flow of development and humanitarian resources. As
 
 IATI allows tracking of all stages of these operations from initial approval through implementation to results, providing a comprehensive view of your development portfolio and its impacts. This transparency helps demonstrate the value of your institution's work while facilitating coordination with other development partners.
 
-## Data Format
+## Data Format Options
 
-Please provide your data in **CSV** or **Excel** format, with one row per activity. The sections below explain what information we need for each activity.
+We offer two approaches for providing your data:
+
+### Option 1: Single Spreadsheet Approach
+Provide your data in **one CSV or Excel file** with one row per activity. Include all information as columns following the structure described below. This is suitable for smaller datasets or when you prefer to work with a single file.
+
+### Option 2: Multi-File Approach (Recommended for Large Datasets)
+Provide your data as **multiple related CSV files** that follow our multi-CSV structure. This approach:
+- Separates different types of information (activities, organizations, transactions, etc.)
+- Makes it easier to manage large datasets
+- Allows you to work with specific data types independently
+- Follows standard database normalization principles
+
+For details on the multi-CSV structure and data relationships, see our [CSV Data Hierarchy Guide](csv_data_hierarchy.md).
+
+The sections below explain what information we need, regardless of which format approach you choose.
 
 ## Essential Activity Information
 
@@ -204,8 +218,35 @@ If you're unsure about any data field or need clarification on format requiremen
 
 ## Next Steps
 
+### For Single File Approach:
 1. Compile your data in a CSV or Excel file following the structure above
 2. Include one row per activity with columns matching the fields described
 3. Send your completed file to us by [deadline]
+
+### For Multi-File Approach:
+1. Use our CSV template generator to create the file structure:
+   ```bash
+   python scripts/csv_tools.py multi-template ./my_data_templates
+   ```
+2. Fill in the generated CSV files with your data
+3. Ensure `activity_identifier` values are consistent across all files
+4. Send your completed folder of CSV files to us by [deadline]
+
+### Final Steps:
 4. Our team will validate the data and convert it to IATI XML format
 5. We'll share the generated IATI file with you for review before publication
+
+### Data Validation and Conversion Tools
+We also provide tools to help you validate and test your data:
+
+```bash
+# Test converting your data to XML
+python scripts/csv_tools.py csv-to-xml your_data.csv test_output.xml
+
+# Or for multi-file approach:
+python scripts/csv_tools.py csv-folder-to-xml ./your_csv_folder test_output.xml
+
+# Generate example templates to see the expected format
+python scripts/csv_tools.py template example_template.csv --format full
+python scripts/csv_tools.py multi-template ./example_templates
+```

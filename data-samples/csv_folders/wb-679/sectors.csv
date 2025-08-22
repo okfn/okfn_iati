@@ -1,0 +1,63 @@
+activity_identifier,sector_code,sector_name,vocabulary,vocabulary_uri,percentage
+44000-P145054,23630,,1,,100
+44000-P145054,LT,FY17 - Energy Transmission and Distribution,99,http://pubdocs.worldbank.org/en/538321490128452070/Sector-Taxonomy-and-definitions.pdf,100.000000
+44000-P145054,000025,Regional Integration,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,50
+44000-P145054,000072,Rural Development,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,10
+44000-P145054,000221,Job Creation,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,10
+44000-P145054,000711,Urban Infrastructure and Service Delivery,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,10
+44000-P145054,000723,Rural Infrastructure and service delivery,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,10
+44000-P145054,000022,Jobs,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,10
+44000-P145054,000081,Climate change,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,20
+44000-P145054,000071,Urban Development,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,10
+44000-P145054,000811,Mitigation,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,20
+44000-P126193,41010,,1,,50
+44000-P126193,41030,,1,,50
+44000-P126193,AZ,"FY17 - Other Agriculture, Fishing and Forestry",99,http://pubdocs.worldbank.org/en/538321490128452070/Sector-Taxonomy-and-definitions.pdf,94.0000000
+44000-P126193,AK,"FY17 - Public Administration - Agriculture, Fishing & Forestry",99,http://pubdocs.worldbank.org/en/538321490128452070/Sector-Taxonomy-and-definitions.pdf,6.00000000
+44000-P126193,000022,Jobs,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,100
+44000-P126193,000083,Renewable Natural Resources Asset Management,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,96
+44000-P126193,000084,Environmental policies and institutions,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,4
+44000-P126193,000834,Biodiversity,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,96
+44000-P121210,41010,,1,,50
+44000-P121210,41030,,1,,50
+44000-P121210,AK,"FY17 - Public Administration - Agriculture, Fishing & Forestry",99,http://pubdocs.worldbank.org/en/538321490128452070/Sector-Taxonomy-and-definitions.pdf,24.0000000
+44000-P121210,AZ,"FY17 - Other Agriculture, Fishing and Forestry",99,http://pubdocs.worldbank.org/en/538321490128452070/Sector-Taxonomy-and-definitions.pdf,76.0000000
+44000-P121210,000834,Biodiversity,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,85
+44000-P121210,000022,Jobs,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,100
+44000-P121210,000084,Environmental policies and institutions,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,15
+44000-P121210,000083,Renewable Natural Resources Asset Management,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,85
+44000-P171269,41020,,1,,55
+44000-P171269,14050,,1,,45
+44000-P171269,BC,FY17 - Central Government (Central Agencies),99,http://pubdocs.worldbank.org/en/538321490128452070/Sector-Taxonomy-and-definitions.pdf,9.00000000
+44000-P171269,WB,FY17 - Waste Management,99,http://pubdocs.worldbank.org/en/538321490128452070/Sector-Taxonomy-and-definitions.pdf,60.0000000
+44000-P171269,CS,FY17 - ICT Services,99,http://pubdocs.worldbank.org/en/538321490128452070/Sector-Taxonomy-and-definitions.pdf,3.00000000
+44000-P171269,BZ,FY17 - Other Public Administration,99,http://pubdocs.worldbank.org/en/538321490128452070/Sector-Taxonomy-and-definitions.pdf,28.0000000
+44000-P171269,000023,Public Private Partnerships,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,5
+44000-P171269,000811,Mitigation,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,94
+44000-P171269,000441,"Data production, accessibility and use",98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,22
+44000-P171269,000061,Gender,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,18
+44000-P171269,000044,Data Development and Capacity Building,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,22
+44000-P171269,000833,Oceans,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,18
+44000-P171269,000083,Renewable Natural Resources Asset Management,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,34
+44000-P171269,000084,Environmental policies and institutions,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,13
+44000-P171269,000834,Biodiversity,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,16
+44000-P171269,000261,ICT Solutions,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,9
+44000-P171269,000081,Climate change,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,94
+44000-P171269,000026,ICT,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,9
+44000-P171054,74020,,1,,66
+44000-P171054,22040,,1,,17
+44000-P171054,15185,,1,,17
+44000-P171054,BZ,FY17 - Other Public Administration,99,http://pubdocs.worldbank.org/en/538321490128452070/Sector-Taxonomy-and-definitions.pdf,70.0000000
+44000-P171054,BH,FY17 - Sub-National Government,99,http://pubdocs.worldbank.org/en/538321490128452070/Sector-Taxonomy-and-definitions.pdf,30.0000000
+44000-P171054,000812,Adaptation,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,100
+44000-P171054,000331,Disaster Risk Finance,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,75
+44000-P171054,000044,Data Development and Capacity Building,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,39
+44000-P171054,000061,Gender,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,75
+44000-P171054,000441,"Data production, accessibility and use",98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,39
+44000-P171054,000033,Finance for Development,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,75
+44000-P171054,000084,Environmental policies and institutions,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,75
+44000-P171054,000085,Water Resource Management,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,75
+44000-P171054,000261,ICT Solutions,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,39
+44000-P171054,000081,Climate change,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,100
+44000-P171054,000026,ICT,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,39
+44000-P171054,000075,Disaster Risk Management,98,http://pubdocs.worldbank.org/en/275841490966525495/Theme-Taxonomy-and-definitions.pdf,75
