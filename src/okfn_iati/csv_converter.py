@@ -711,66 +711,65 @@ class IatiCsvConverter:
 
         return activities
 
+    def looks_like_date(self, s: str) -> bool:
+        s = (s or "").strip()
+        return (
+            len(s) == 10 and s[4] == '-' and s[7] == '-' and
+            s[:4].isdigit() and s[5:7].isdigit() and s[8:10].isdigit()
+        )
+
     def _read_csv_rows(self, csv_input: Union[str, Path]) -> List[Dict[str, str]]:
-        """Open CSV and return list of dict rows with robust delimiter detection and a single retry if misaligned."""
-        def read_with(delim: str) -> List[Dict[str, str]]:
-            with open(csv_input, 'r', encoding='utf-8', newline='') as f:
-                return list(csv.DictReader(f, delimiter=delim))
+        """Lee el CSV probando varios delimitadores y elige la mejor opción por puntuación."""
+        candidates = [',', ';', '\t', '|']
+        ordered = self._ordered_delimiters(csv_input, candidates)
+        best_rows, best_score = [], -10**9
 
-        # 1) Heurística primaria por conteo en header
-        with open(csv_input, 'r', encoding='utf-8', newline='') as f:
-            pos0 = f.tell()
-            header = ""
-            for line in f:
-                if line.strip():
-                    header = line
-                    break
-            f.seek(pos0)
-            candidates = [',', ';', '\t', '|']
-            counts = {c: header.count(c) for c in candidates}
-            delim = max(counts, key=counts.get)
+        for delim in ordered:
+            try:
+                with open(csv_input, 'r', encoding='utf-8-sig', newline='') as f:
+                    rows = list(csv.DictReader(f, delimiter=delim))
+            except Exception:
+                continue
 
-            # 2) Si header no ayuda, probar Sniffer
-            if all(v == 0 for v in counts.values()):
+            s = self._score_rows(rows, expected_cols=set(self.CSV_COLUMNS))
+            if s > best_score:
+                best_rows, best_score = rows, s
+
+        return best_rows
+
+    def _ordered_delimiters(self, csv_input: Union[str, Path], candidates: List[str]) -> List[str]:
+        """Devuelve la lista de delimitadores priorizando el detectado por Sniffer si aplica."""
+        ordered = list(candidates)
+        try:
+            with open(csv_input, 'r', encoding='utf-8-sig', newline='') as f:
                 sample = f.read(4096)
-                try:
-                    dialect = csv.Sniffer().sniff(sample, delimiters=candidates)
-                    delim = dialect.delimiter
-                except csv.Error:
-                    delim = ','  # default excel
-            # f se cerrará al salir del with
+            dialect = csv.Sniffer().sniff(sample, delimiters=candidates)
+            if dialect.delimiter in ordered:
+                ordered.remove(dialect.delimiter)
+            ordered.insert(0, dialect.delimiter)
+        except csv.Error:
+            pass
+        return ordered
 
-        rows = read_with(delim)
-        # 3) Heurística de sanidad: ¿números lucen como fechas? (indica separador incorrecto)
+    @staticmethod
+    def _score_rows(rows: List[Dict[str, str]], expected_cols: set) -> int:
+        """Puntúa un parse para elegir el mejor delimitador."""
+        if not rows:
+            return -100  # muy malo: sin filas
 
-        def looks_like_date(s: str) -> bool:
-            s = (s or "").strip()
-            return len(s) == 10 and s[4] == '-' and s[7] == '-' and s[:4].isdigit() and s[5:7].isdigit() and s[8:10].isdigit()
+        header_cols = set(rows[0].keys())
+        hits = len(header_cols & expected_cols)
 
-        def misaligned(sample_rows: List[Dict[str, str]]) -> bool:
-            if not sample_rows:
-                return False
-            probe = sample_rows[: min(8, len(sample_rows))]
-            numish_cols = ["budget_value", "transaction_value", "sector_percentage"]
-            hits = 0
-            checks = 0
-            for r in probe:
-                for c in numish_cols:
-                    if c in r:
-                        checks += 1
-                        if looks_like_date(r.get(c, "")):
-                            hits += 1
-            # si la mayoría de los chequeos "numéricos" parecen fechas, está mal
-            return checks > 0 and hits * 2 >= checks  # >= 50%
-
-        if misaligned(rows):
-            alt = ';' if delim != ';' else ','
-            rows_alt = read_with(alt)
-            # solo cambiamos si el alternativo “se ve” mejor
-            if not misaligned(rows_alt):
-                rows = rows_alt
-
-        return rows
+        # penaliza si los campos numéricos parecen fechas
+        numish = ("budget_value", "transaction_value", "sector_percentage")
+        sample_rows = rows[:min(8, len(rows))]
+        penalties = sum(
+            2
+            for r in sample_rows
+            for c in numish
+            if c in r and IatiCsvConverter._looks_like_date(r.get(c, ""))
+        )
+        return hits - penalties
 
     @staticmethod
     def _to_float(value: Any) -> Union[float, None]:
@@ -779,23 +778,16 @@ class IatiCsvConverter:
         s = str(value).strip()
         if s == "":
             return None
-
-        # Quitar espacios
+        # si parece fecha, no intentes convertir
+        if IatiCsvConverter._looks_like_date(s):
+            return None
         s = s.replace(" ", "")
-
-        # Heurísticas comunes:
-        # 1) 1,234,567.89  -> quitar comas (miles), queda 1234567.89
-        # 2) 1.234.567,89  -> quitar puntos (miles) y cambiar coma por punto -> 1234567.89
         if re.match(r"^\d{1,3}(,\d{3})+(\.\d+)?$", s):
-            s = s.replace(",", "")  # miles en coma
+            s = s.replace(",", "")
         elif re.match(r"^\d{1,3}(\.\d{3})+(,\d+)?$", s):
-            s = s.replace(".", "")  # miles en punto
-            s = s.replace(",", ".")  # decimal en coma
-
-        # Si no coincide con patrones de miles, mantener tu fallback
+            s = s.replace(".", "").replace(",", ".")
         else:
             s = s.replace(",", ".")
-
         try:
             return float(s)
         except ValueError:
@@ -806,8 +798,36 @@ class IatiCsvConverter:
         f = IatiCsvConverter._to_float(value)
         return int(f) if f is not None else None
 
+    def _normalize_row_keys(self, row: Dict[str, str]) -> Dict[str, str]:
+        r = dict(row)
+
+        # Participating orgs: legacy -> columnas estándar *_name/_type/_ref
+        if 'participating_org_funding' in r and not r.get('participating_org_funding_name'):
+            r['participating_org_funding_name'] = r['participating_org_funding']
+        if 'participating_org_implementing' in r and not r.get('participating_org_implementing_name'):
+            r['participating_org_implementing_name'] = r['participating_org_implementing']
+
+        # Presupuesto: legacy -> estándar
+        if r.get('budget_start') and not r.get('budget_period_start'):
+            r['budget_period_start'] = r['budget_start']
+        if r.get('budget_end') and not r.get('budget_period_end'):
+            r['budget_period_end'] = r['budget_end']
+
+        # Moneda por defecto: si no viene, intenta inferir de budget/transaction
+        if not r.get('default_currency'):
+            # heurística suave (no imprescindible, pero ayuda)
+            if r.get('budget_currency'):
+                r['default_currency'] = r['budget_currency']
+            elif r.get('transaction_currency'):
+                r['default_currency'] = r['transaction_currency']
+
+        return r
+
     def _create_activity_from_row(self, row: Dict[str, str]) -> Activity:
         """Convert a CSV row into an Activity object (fault-tolerant by section)."""
+        # Normaliza cabeceras/alias legacy -> columnas estándar
+        row = self._normalize_row_keys(row)
+
         # --- Campos básicos, con parse seguro del status:
         try:
             status = ActivityStatus(int(row['activity_status'])) if row.get('activity_status') else ActivityStatus.IMPLEMENTATION
@@ -976,33 +996,42 @@ class IatiCsvConverter:
                 pass
 
     def _add_budgets_from_row(self, activity: Activity, row: Dict[str, str]) -> None:
-        if row.get('budget_value') and not self._looks_like_date(row.get('budget_value')):
-            period_start = row.get('budget_period_start') or row.get('budget_start') or ''
-            period_end = row.get('budget_period_end') or row.get('budget_end') or ''
-            value = self._to_float(row.get('budget_value'))
-            if period_start and period_end and value is not None:
-                activity.budgets.append(Budget(
-                    type=BudgetType(row.get('budget_type', '1')),
-                    status=BudgetStatus(row.get('budget_status', '1')),
-                    period_start=period_start,
-                    period_end=period_end,
-                    value=value,
-                    currency=row.get('budget_currency', row.get('default_currency', 'USD')),
-                    value_date=row.get('budget_value_date') or period_start
-                ))
+        try:
+            if row.get('budget_value') and not self._looks_like_date(row.get('budget_value')):
+                period_start = row.get('budget_period_start') or row.get('budget_start') or ''
+                period_end = row.get('budget_period_end') or row.get('budget_end') or ''
+                value = self._to_float(row.get('budget_value'))
+                if period_start and period_end and value is not None:
+                    activity.budgets.append(Budget(
+                        type=BudgetType(row.get('budget_type', '1')),
+                        status=BudgetStatus(row.get('budget_status', '1')),
+                        period_start=period_start,
+                        period_end=period_end,
+                        value=value,
+                        currency=row.get('budget_currency', row.get('default_currency', 'USD')),
+                        value_date=row.get('budget_value_date') or period_start
+                    ))
+        except Exception as e:
+            print(f"Warning: skipping _add_budgets_from_row for {activity.iati_identifier}: {e}")
 
-    def _add_transactions_from_row(self, activity: Activity, row: Dict[str, str]) -> None:
-        if row.get('transaction_value') and not self._looks_like_date(row.get('transaction_value')):
-            transaction_args = {
-                'type': TransactionType(row.get('transaction_type', '2')),
-                'date': row.get('transaction_date', ''),
-                'value': self._to_float(row.get('transaction_value')) or 0.0,
-                'currency': row.get('transaction_currency', row.get('default_currency', 'USD')),
-                'value_date': row.get('transaction_value_date', row.get('transaction_date'))
-            }
-            if row.get('transaction_description'):
-                transaction_args['description'] = [Narrative(text=row['transaction_description'])]
-            activity.transactions.append(Transaction(**transaction_args))
+    def _add_transactions_from_row(self, activity, row):
+        try:
+            if row.get('transaction_value') and not self._looks_like_date(row.get('transaction_value')):
+                value = self._to_float(row.get('transaction_value'))
+                if value is None:
+                    return
+                transaction_args = {
+                    'type': TransactionType(row.get('transaction_type', '2')),
+                    'date': row.get('transaction_date', ''),
+                    'value': value,
+                    'currency': row.get('transaction_currency', row.get('default_currency', 'USD')),
+                    'value_date': row.get('transaction_value_date', row.get('transaction_date'))
+                }
+                if row.get('transaction_description'):
+                    transaction_args['description'] = [Narrative(text=row['transaction_description'])]
+                activity.transactions.append(Transaction(**transaction_args))
+        except Exception as e:
+            print(f"Warning: skipping _add_transactions_from_row for {activity.iati_identifier}: {e}")
 
     def _add_contact_info_from_row(self, activity: Activity, row: Dict[str, str]) -> None:
         """Add contact information from CSV row."""
