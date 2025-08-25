@@ -711,13 +711,6 @@ class IatiCsvConverter:
 
         return activities
 
-    def looks_like_date(self, s: str) -> bool:
-        s = (s or "").strip()
-        return (
-            len(s) == 10 and s[4] == '-' and s[7] == '-' and
-            s[:4].isdigit() and s[5:7].isdigit() and s[8:10].isdigit()
-        )
-
     def _read_csv_rows(self, csv_input: Union[str, Path]) -> List[Dict[str, str]]:
         """Lee el CSV probando varios delimitadores y elige la mejor opción por puntuación."""
         candidates = [',', ';', '\t', '|']
