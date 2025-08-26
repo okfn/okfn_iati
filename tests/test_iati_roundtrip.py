@@ -9,7 +9,7 @@ from okfn_iati import IatiCsvConverter, IatiMultiCsvConverter
 from okfn_iati.iati_schema_validator import IatiValidator
 
 HERE = Path(__file__).parent.resolve()
-SAMPLE_XML = HERE / "sample.xml"
+SAMPLE_XML = HERE / "test_activities_generated.xml"
 SAMPLE_CSV = HERE / "sample_activities.csv"
 
 
