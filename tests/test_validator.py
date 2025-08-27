@@ -4,7 +4,7 @@ from okfn_iati import (
     ActivityDateType, ActivityDate, IatiActivities,
     OrganisationType, OrganisationRole, BudgetType, BudgetStatus,
     ParticipatingOrg, TransactionType, Transaction, Budget,
-    SectorCategory, IatiXmlGenerator
+    IatiXmlGenerator
 )
 from okfn_iati.iati_schema_validator import IatiValidator
 
@@ -53,7 +53,7 @@ class TestValidator(unittest.TestCase):
             ],
             sectors=[
                 {
-                    "code": SectorCategory.EDUCATION_GENERAL.value,
+                    "code": "11120",
                     "vocabulary": "1",
                     "percentage": 100
                 }

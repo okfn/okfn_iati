@@ -105,7 +105,7 @@ activity = Activity(
     # Required: sector information
     sectors=[
         {
-            "code": SectorCategory.EDUCATION_GENERAL.value,  # "11110"
+            "code": "11110",  # Education policy and administrative management
             "vocabulary": "1",  # DAC vocabulary
             "percentage": 100
         }
