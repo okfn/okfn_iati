@@ -539,8 +539,8 @@ class Activity:
             if "code" in sector and isinstance(sector["code"], str):
                 # Optionally validate against SectorCategory if code format matches
                 try:
-                    sector = SectorCategory[sector["code"]]
-                except KeyError:
+                    sector = getattr(SectorCategory, sector["code"])
+                except AttributeError:
                     raise ValueError(f"Invalid sector code: {sector['code']}")
 
         # Convert activity_scope to enum if it's a string
