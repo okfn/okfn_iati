@@ -23,13 +23,13 @@ class EnumFromCSV:
             reader = csv.DictReader(f)
             for row in reader:
                 code = row[self.code_field]
-                self.categories[code] = {
+                self.data[code] = {
                     "name": row[self.name_field],
                 }
                 # A code and a name is required but we can have more data
                 for key, value in row.items():
                     if key not in [self.code_field, self.name_field]:
-                        self.categories[code][key] = value
+                        self.data[code][key] = value
 
         self._loaded = True
         return self.data
@@ -56,4 +56,4 @@ class EnumFromCSV:
 
 class SectorCategoryData(EnumFromCSV):
     def __init__(self):
-        super().__init__(csv_filename="sector_category.csv")
+        super().__init__(csv_filename='sector-category-codes.csv', code_field='Code', name_field='Name')
