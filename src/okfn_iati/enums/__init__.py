@@ -6,6 +6,8 @@ References:
 """
 from enum import Enum, IntEnum
 
+from okfn_iati.enums.sector_category import SectorCategoryData
+
 
 class ActivityStatus(IntEnum):
     """
@@ -483,27 +485,8 @@ class ResultType(Enum):
     OTHER = "9"
 
 
-class SectorCategory(Enum):
-    """
-    Sector category - education, health, etc. (DAC 5-digit purpose codes)
-    Reference: https://iatistandard.org/en/iati-standard/203/codelists/sector/
-    """
-    # This is a subset of common sectors - the full list has over 200 codes
-    EDUCATION_GENERAL = "11110"
-    PRIMARY_EDUCATION = "11220"
-    HEALTH_GENERAL = "12110"
-    BASIC_HEALTH = "12220"
-    WATER_SANITATION = "14010"
-    GOVERNMENT_CIVIL_SOCIETY = "15110"
-    AGRICULTURE = "31110"
-    TRANSPORT = "21010"
-    ENERGY = "23010"
-    BANKING_FINANCIAL = "24010"
-    BUSINESS = "25010"
-    ENVIRONMENT = "41010"
-    EMERGENCY_RESPONSE = "72010"
-    RECONSTRUCTION_RELIEF = "73010"
-    DISASTER_PREVENTION = "74010"
+# This is a huge list so we load it from a CSV file
+SectorCategory = SectorCategoryData.to_enum(enum_name="SectorCategory")
 
 
 class TiedStatus(Enum):
