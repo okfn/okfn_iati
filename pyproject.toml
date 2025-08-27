@@ -41,7 +41,7 @@ dev = [
 ]
 
 [tool.setuptools]
-packages = ["okfn_iati"]
+packages = {find = {where = ["src"]}}
 package-dir = {"" = "src"}
 include-package-data = true
 

@@ -8,7 +8,7 @@ from okfn_iati.enums import (
     FinanceType, FlowType, GeographicalPrecision,
     LocationReach, LocationType, OrganisationRole, OrganisationType,
     RelatedActivityType,
-    ResultType, TiedStatus, TransactionType, LocationID
+    ResultType, SectorCategory, TiedStatus, TransactionType, LocationID
 )
 from okfn_iati.validators import crs_channel_code_validator
 
@@ -538,7 +538,10 @@ class Activity:
         for sector in self.sectors:
             if "code" in sector and isinstance(sector["code"], str):
                 # Optionally validate against SectorCategory if code format matches
-                pass  # Implementation depends on code format standards
+                try:
+                    sector = getattr(SectorCategory, sector["code"])
+                except AttributeError:
+                    raise ValueError(f"Invalid sector code: {sector['code']}")
 
         # Convert activity_scope to enum if it's a string
         if isinstance(self.activity_scope, str) and self.activity_scope is not None:
