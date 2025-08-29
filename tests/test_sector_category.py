@@ -1,6 +1,6 @@
 import unittest
 from okfn_iati.enums import SectorCategory
-from okfn_iati.enums.sector_category import SectorCategoryData
+from okfn_iati.enums.csv import SectorCategoryData
 from okfn_iati import (
     Activity, ActivityDate, ActivityDateType,
     Narrative, OrganizationRef, ActivityStatus,
@@ -16,8 +16,7 @@ class TestSectorCategory(unittest.TestCase):
     def test_sector_category_enum_creation(self):
         """Test that SectorCategory enum is created properly from CSV data."""
         # Test that the enum exists and has members
-        self.assertTrue(hasattr(SectorCategory, '__members__'))
-        self.assertGreater(len(SectorCategory.__members__), 0)
+        self.assertTrue(len(SectorCategory) > 0)
 
     def test_valid_sector_codes(self):
         """Test accessing valid sector category codes."""
