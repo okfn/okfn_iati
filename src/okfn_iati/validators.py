@@ -82,7 +82,7 @@ class CRSChannelCodeValidator(CodelistValidator):
     """Validator for CRS Channel Codes."""
 
     def __init__(self):
-        super().__init__(csv_filename="CRSChannelCode.csv")
+        super().__init__(csv_filename="crs-channel-codes.csv")
 
     def get_name(self, code: str) -> Optional[str]:
         """Get the name for a specific channel code."""
