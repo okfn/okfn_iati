@@ -7,6 +7,7 @@ making it easier for users to work with IATI data using familiar tools like Exce
 
 import csv
 import json
+import logging
 import re
 import xml.etree.ElementTree as ET
 from typing import List, Dict, Any, Union
@@ -28,6 +29,11 @@ from .enums import (
     OrganisationRole, ContactType, DocumentCategory
 )
 from .xml_generator import IatiXmlGenerator
+
+logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
+
+
+logger = logging.getLogger(__name__)
 
 
 class IatiCsvConverter:
@@ -197,6 +203,12 @@ class IatiCsvConverter:
         try:
             # Read CSV data (auto-detect delimiter + robust parsing)
             activities = self._read_csv_and_create_activities(csv_input)
+
+            # Validar que cada actividad contiene los datos esenciales
+            for activity in activities:
+                if not activity.iati_identifier or not activity.title:
+                    logger.error(f"Activity {activity.iati_identifier} is missing essential data.")
+                    return False
 
             # Create IATI activities container
             iati_activities = IatiActivities(
@@ -460,19 +472,23 @@ class IatiCsvConverter:
         include_additional_fields: bool
     ) -> None:
         """Extract budget information."""
+        logger.debug(f"Extracting budget data for activity: {data['activity_identifier']}")
         budgets = activity_elem.findall('budget')
 
         if budgets and flatten_complex_data:
             # Use first budget for main columns
             first_budget = budgets[0]
+            logger.debug(f"Extracting first budget: {first_budget}")
             data['budget_type'] = first_budget.get('type', '')
             data['budget_status'] = first_budget.get('status', '')
 
             period_start = first_budget.find('period-start')
             data['budget_period_start'] = period_start.get('iso-date') if period_start is not None else ''
+            logger.debug(f"Budget period start: {data['budget_period_start']}")
 
             period_end = first_budget.find('period-end')
             data['budget_period_end'] = period_end.get('iso-date') if period_end is not None else ''
+            logger.debug(f"Budget period end: {data['budget_period_end']}")
 
             value_elem = first_budget.find('value')
             if value_elem is not None:
@@ -480,10 +496,18 @@ class IatiCsvConverter:
                 data['budget_currency'] = value_elem.get('currency', '')
                 data['budget_value_date'] = value_elem.get('value-date', '')
 
+                if self._looks_like_date(data['budget_value']):
+                    data['budget_value'] = None  # If it's a date, leave it as None
+                    logger.debug("Budget value looks like a date, set to None.")
+                else:
+                    data['budget_value'] = self._to_float(data['budget_value'])
+                    logger.debug(f"Extracted budget value: {data['budget_value']}")
+
         if include_additional_fields and len(budgets) > 1:
             # Store additional budgets as JSON
             additional_budgets = []
             for budget in budgets[1:]:
+                logger.debug(f"Extracting additional budget: {budget}")
                 budget_data = {
                     'type': budget.get('type', ''),
                     'status': budget.get('status', ''),
@@ -508,9 +532,17 @@ class IatiCsvConverter:
                     budget_data['currency'] = value_elem.get('currency', '')
                     budget_data['value_date'] = value_elem.get('value-date', '')
 
+                    if self._looks_like_date(budget_data['value']):
+                        budget_data['value'] = None
+                        logger.debug("Additional budget value looks like a date, set to None.")
+                    else:
+                        budget_data['value'] = self._to_float(budget_data['value'])
+                        logger.debug(f"Extracted additional budget value: {budget_data['value']}")
+
                 additional_budgets.append(budget_data)
 
             data['additional_budgets'] = json.dumps(additional_budgets) if additional_budgets else ''
+            logger.debug(f"Extracted {len(additional_budgets)} additional budgets.")
 
     def _extract_transactions(
         self,
@@ -538,14 +570,20 @@ class IatiCsvConverter:
                 data['transaction_currency'] = value_elem.get('currency', '')
                 data['transaction_value_date'] = value_elem.get('value-date', '')
 
-            desc_elem = latest_transaction.find('description/narrative')
-            data['transaction_description'] = desc_elem.text if desc_elem is not None else ''
+                # Aquí verificamos si el valor es una fecha antes de intentar convertirlo a número
+                if self._looks_like_date(data['transaction_value']):
+                    data['transaction_value'] = None  # Si es una fecha, lo dejamos como None
+                else:
+                    data['transaction_value'] = self._to_float(data['transaction_value'])
 
-            provider_org = latest_transaction.find('provider-org/narrative')
-            data['transaction_provider_org'] = provider_org.text if provider_org is not None else ''
+                desc_elem = latest_transaction.find('description/narrative')
+                data['transaction_description'] = desc_elem.text if desc_elem is not None else ''
 
-            receiver_org = latest_transaction.find('receiver-org/narrative')
-            data['transaction_receiver_org'] = receiver_org.text if receiver_org is not None else ''
+                provider_org = latest_transaction.find('provider-org/narrative')
+                data['transaction_provider_org'] = provider_org.text if provider_org is not None else ''
+
+                receiver_org = latest_transaction.find('receiver-org/narrative')
+                data['transaction_receiver_org'] = receiver_org.text if receiver_org is not None else ''
 
         if include_additional_fields and len(transactions) > 1:
             # Store additional transactions as JSON
@@ -575,6 +613,14 @@ class IatiCsvConverter:
                     trans_data['value'] = value_elem.text or ''
                     trans_data['currency'] = value_elem.get('currency', '')
                     trans_data['value_date'] = value_elem.get('value-date', '')
+
+                # Verificamos si el valor es una fecha antes de convertirlo a número
+                if self._looks_like_date(trans_data['value']):
+                    print("Warning: Transaction value looks like a date, setting to None")
+                    trans_data['value'] = None
+                else:
+                    print("Converting transaction value to float")
+                    trans_data['value'] = self._to_float(trans_data['value'])
 
                 desc_elem = transaction.find('description/narrative')
                 if desc_elem is not None:
@@ -766,15 +812,20 @@ class IatiCsvConverter:
 
     @staticmethod
     def _to_float(value: Any) -> Union[float, None]:
+        logger.debug(f"Converting value to float: {value}")
         if value is None:
+            logger.debug("Value is None, returning None.")
             return None
         s = str(value).strip()
         if s == "":
+            logger.debug("Value is an empty string, returning None.")
             return None
-        # si parece fecha, no intentes convertir
+        # Si parece fecha, no intentes convertir
         if IatiCsvConverter._looks_like_date(s):
+            logger.debug(f"Value '{value}' looks like a date, returning None.")
             return None
         s = s.replace(" ", "")
+        # Intentamos la conversión a flotante solo si es estrictamente un número
         if re.match(r"^\d{1,3}(,\d{3})+(\.\d+)?$", s):
             s = s.replace(",", "")
         elif re.match(r"^\d{1,3}(\.\d{3})+(,\d+)?$", s):
@@ -782,8 +833,11 @@ class IatiCsvConverter:
         else:
             s = s.replace(",", ".")
         try:
-            return float(s)
+            result = float(s)
+            logger.debug(f"Converted value to float: {result}")
+            return result
         except ValueError:
+            logger.error(f"Error converting '{value}' to float.")
             return None
 
     @staticmethod
