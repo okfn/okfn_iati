@@ -1,6 +1,4 @@
 import csv
-from enum import Enum
-
 from okfn_iati.data import get_data_folder
 
 
@@ -41,7 +39,30 @@ class CodeNameFieldFromCSV:
         if code not in self.data:
             class_name = self.__class__.__name__
             raise KeyError(f"Code not found: '{code}' for {class_name}")
+        return self.data[code]
+
+    def get(self, code):
+        if not self._loaded:
+            self.load_data()
         return self.data.get(code)
+
+    def values(self):
+        if not self._loaded:
+            self.load_data()
+        return self.data.values()
+
+    def items(self):
+        if not self._loaded:
+            self.load_data()
+        return self.data.items()
+
+    def __repr__(self):
+        if not self._loaded:
+            self.load_data()
+        return f"{self.__class__.__name__}({dict(self.data)})"
+
+    def __str__(self):
+        return self.__repr__()
 
     def __contains__(self, code):
         if not self._loaded:
@@ -52,6 +73,16 @@ class CodeNameFieldFromCSV:
         if not self._loaded:
             self.load_data()
         return len(self.data)
+
+    def __iter__(self):
+        if not self._loaded:
+            self.load_data()
+        return iter(self.data.values())
+
+    def keys(self):
+        if not self._loaded:
+            self.load_data()
+        return self.data.keys()
 
 
 class SectorCategoryData(CodeNameFieldFromCSV):
