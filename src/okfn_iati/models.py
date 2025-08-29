@@ -104,7 +104,7 @@ class ParticipatingOrg:
                 errors.append(f"Invalid organization type: {self.type}. Valid values are: {org_types}")
 
         # Validate CRS channel code
-        if self.crs_channel_code not in CRSChannelCodes:
+        if self.crs_channel_code and self.crs_channel_code not in CRSChannelCodes:
             errors.append(f"Invalid CRS channel code: {self.crs_channel_code}")
 
         if errors:
