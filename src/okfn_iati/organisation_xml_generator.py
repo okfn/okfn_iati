@@ -826,15 +826,16 @@ if __name__ == "__main__":
     main()
 
 
-""""
-# Ayuda general
-python src/okfn_iati/organisation_xml_generator.py --help
+"""
+Examples
+--------
 
-# Generar plantilla CSV
-python src/okfn_iati/organisation_xml_generator.py template test_template.csv
+General help:
+    python src/okfn_iati/organisation_xml_generator.py --help
 
-# Convertir CSV a XML
-python src/okfn_iati/organisation_xml_generator.py convert test_template.csv test_output.xml
+Generate a CSV template:
+    python src/okfn_iati/organisation_xml_generator.py template test_template.csv
 
-
+Convert CSV to XML:
+    python src/okfn_iati/organisation_xml_generator.py convert test_template.csv test_output.xml
 """
