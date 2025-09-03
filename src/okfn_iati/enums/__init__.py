@@ -505,7 +505,7 @@ class FinanceType(Enum):
     SUBORDINATED_LOAN = "431"
     PREFERRED_EQUITY = "432"
     OTHER_HYBRID = "433"
-    # withdrawn 451, 452
+    # withdrawn 451, 452, 453
     COMMON_EQUITY = "510"
     # withdrawn 511, 512
     SHARES_COLLECTIVE = "520"
