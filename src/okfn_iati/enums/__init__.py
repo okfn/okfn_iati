@@ -735,30 +735,35 @@ class TransactionType(Enum):
     INCOMING_PLEDGE = "13"
 
 
-class VocabularyType(Enum):
+class PolicyMarkerVocabulary(Enum):
     """
     Vocabulary type - OECD DAC, UN, etc.
-    Reference: https://iatistandard.org/en/iati-standard/203/codelists/vocabulary/
+    Previous reference (outdated): https://iatistandard.org/en/iati-standard/203/codelists/vocabulary/
+    Reference: https://iatistandard.org/en/iati-standard/203/codelists/policymarkervocabulary/
+    """
+    OECD_DAC_CRS = "1"
+    REPORTING_ORGANISATION = "99"
+
+class Sector_Vocabulary(Enum):
+    """
+    Vocabulary type - OECD DAC, UN, etc.
+    Previous reference (outdated): https://iatistandard.org/en/iati-standard/203/codelists/vocabulary/
+    Reference: https://iatistandard.org/en/iati-standard/203/codelists/sectorvocabulary/
     """
     OECD_DAC_CRS_PURPOSE = "1"
-    OECD_DAC_CRS_CHANNEL = "2"
-    CLASSIFICATION_COUNTRY_SPECIFIC = "3"
-    REPORTING_ORG = "4"
-    TRACEABILITY = "5"
-    UN_SDGS = "6"
-    UN_HUMANITARIAN_GLOBAL_THEMES = "7"
-    UN_HUMANITARIAN_CLUSTERS = "8"
-    UN_HUMANITARIAN_GLOBAL_CLUSTERS = "9"
-    UN_HUMANITARIAN_HUMANITARIAN_RESPONSE_PLAN = "10"
-    UN_HUMANITARIAN_ACTIVITY_CATEGORIES = "11"
-    UN_HUMANITARIAN_INTER_AGENCY = "12"
-    UN_HUMANITARIAN_FINANCIAL_TRACKING = "13"
-    UN_HUMANITARIAN_APPEAL = "14"
-    UN_HUMANITARIAN_CASH_VOUCHER = "15"
-    UN_OCHA_COVID19 = "16"
-    UN_DISASTER_RISK_REDUCTION = "17"
-    UN_DISASTER_RISK_REDUCTION_SENDAI = "18"
-    INTERNAL_VOCABULARY = "99"
+    OECD_DAC_CRS_SECTOR_CATEGORY  = "2"
+    UN_COFOG = "3"
+    EU_NACE_REV2 = "4"
+    US_NTEE = "5"
+    AIDDATA = "6"
+    UNSDG_GOAL = "7"
+    UNSDG_TARGET = "8"
+    UNSDG_INDICATOR = "9"
+    IASC_HUMANITARIAN_CLUSTERS = "10"
+    US_NAICS = "11"
+    UN_DATA_STANDARDS = "12"
+    REPORTING_ORG_2 = "98"
+    REPORTING_ORG = "99"
 
 
 class ActivityScope(Enum):
