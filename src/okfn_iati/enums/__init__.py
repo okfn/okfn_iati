@@ -781,15 +781,16 @@ class ActivityScope(Enum):
     SUB_NATIONAL_SINGLE_SECOND_ADM = "8"
 
 
-class AidTypeFlag(Enum):
-    """
-    Flag indicating type of aid.
-    Reference: https://iatistandard.org/en/iati-standard/203/codelists/aidtypeflag/
-    """
-    FREE_STANDING_TECHNICAL_COOPERATION = "1"
-    PROGRAM_BASED_APPROACH = "2"
-    INVESTMENT_PROJECT = "3"
-    ASSOCIATED_FINANCING = "4"
+# NO aparece en la version 2.03
+# class AidTypeFlag(Enum):
+#     """
+#     Flag indicating type of aid.
+#     Reference: https://iatistandard.org/en/iati-standard/203/codelists/aidtypeflag/
+#     """
+#     FREE_STANDING_TECHNICAL_COOPERATION = "1"
+#     PROGRAM_BASED_APPROACH = "2"
+#     INVESTMENT_PROJECT = "3"
+#     ASSOCIATED_FINANCING = "4"
 
 
 class RelatedActivityType(Enum):
