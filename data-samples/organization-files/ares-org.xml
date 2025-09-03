@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iati-organisations version="2.02" generated-datetime="2018-10-11T14:17:41+00:00">
+  <iati-organisation last-updated-datetime="2018-10-11T14:17:41+00:00" xml:lang="fr" default-currency="EUR" xmlns:aidstream="http://example.org/aidstream/ns#">
+    <organisation-identifier>BE-BCE_KBO-0546740696</organisation-identifier>
+    <name>
+      <narrative>ARES</narrative>
+    </name>
+    <reporting-org type="80" ref="BE-BCE_KBO-0546740696">
+      <narrative xml:lang="fr">Académie de recherche et d'enseignement supérieur - ARES</narrative>
+    </reporting-org>
+    <total-budget status="2">
+      <period-start iso-date="2017-01-01"/>
+      <period-end iso-date="2017-12-31"/>
+      <value currency="EUR" value-date="2017-01-01">25354900</value>
+    </total-budget>
+    <total-budget status="2">
+      <period-start iso-date="2018-01-01"/>
+      <period-end iso-date="2018-12-31"/>
+      <value currency="EUR" value-date="2017-01-01">30253717</value>
+    </total-budget>
+    <total-budget status="1">
+      <period-start iso-date="2019-01-01"/>
+      <period-end iso-date="2019-12-31"/>
+      <value currency="EUR" value-date="2017-01-01">30898289</value>
+    </total-budget>
+    <total-budget status="1">
+      <period-start iso-date="2020-01-01"/>
+      <period-end iso-date="2020-12-31"/>
+      <value currency="EUR" value-date="2017-01-01">28994463</value>
+    </total-budget>
+    <total-budget status="1">
+      <period-start iso-date="2021-01-01"/>
+      <period-end iso-date="2021-12-31"/>
+      <value currency="EUR" value-date="2017-01-01">27886382</value>
+    </total-budget>
+  </iati-organisation>
+</iati-organisations>

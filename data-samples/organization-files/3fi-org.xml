@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iati-organisations version="2.03" generated-datetime="2025-07-31T09:34:32+00:00">
+  <iati-organisation last-updated-datetime="2025-07-31T09:34:32+00:00" xml:lang="en" default-currency="DKK" xmlns:aidstream="http://example.org/aidstream/ns#">
+    <organisation-identifier>DK-CVR-31378028</organisation-identifier>
+    <name>
+      <narrative>3F </narrative>
+    </name>
+    <reporting-org type="22" ref="DK-CVR-31378028">
+      <narrative>3F </narrative>
+    </reporting-org>
+    <total-budget status="2">
+      <period-start iso-date="2020-01-01"/>
+      <period-end iso-date="2020-12-31"/>
+      <value currency="DKK" value-date="2020-01-01">23993333</value>
+    </total-budget>
+  </iati-organisation>
+</iati-organisations>
