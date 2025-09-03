@@ -31,10 +31,24 @@ class AidType(Enum):
     BUDGET_SUPPORT_GENERAL = "A01"
     # Sector Budget Support
     BUDGET_SUPPORT_SECTOR = "A02"
+    # Basket Funds / Pooled Funding
+    BASKET_FUNDS_POOLED_FUNDING = "B04"
     # Core Support to NGOs
     CORE_SUPPORT_NGOS = "B01"
     # Core Support to International Organizations
     CORE_SUPPORT_MULTILATERAL = "B02"
+    # Core Contributions to Multilateral Institutions
+    CORE_CONTRIBUTIONS_TO_MULTILATERAL_INSTITUTIONS = "B021"
+    # Core Contributions to Global Funds
+    CORE_CONTRIBUTIONS_TO_GLOBAL_FUNDS = "B022"
+    # Contributions to Specific Purpose Programmes and Funds
+    CONTRIBUTIONS_TO_SPECIFIC_PURPOSE_PROGRAMMES_AND_FUNDS = "B03"
+    # Contributions to Multi-donor, Multi-entity Funds
+    CONTRIBUTIONS_TO_MULTI_DONOR_MULTI_ENTITY = "B031"
+    # Contributions to Multi-donor, Single-entity Funds
+    CONTRIBUTIONS_TO_MULTI_DONOR_SINGLE_ENTITY = "B032"
+    # Contributions to Single Donor or Earmarked Funds
+    CONTRIBUTIONS_TO_SINGLE_DONOR_OR_EARMARKED = "B033"
     # Project-type Interventions
     PROJECT_TYPE = "C01"
     # Donor Country Personnel
@@ -42,7 +56,11 @@ class AidType(Enum):
     # Other Technical Assistance
     OTHER_TECHNICAL_ASSISTANCE = "D02"
     # Debt Relief
-    DEBT_RELIEF = "E01"
+    DEBT_RELIEF = "F01"
+    # Scholarships/training in donor country
+    SCHOLARSHIPS_TRAINING_IN_DONOR_COUNTRY = "E01"
+    # Imputed student costs
+    IMPUTED_STUDENT_COSTS = "E02"
     # Administrative Costs
     ADMINISTRATIVE_COSTS = "G01"
     # Development Awareness
@@ -58,7 +76,7 @@ class AidType(Enum):
     # In-kind Transfers
     IN_KIND_TRANSFERS = "H06"
     # In-kind Vouchers
-    IN_KIND_VOUCHERS = "H07"
+    # IN_KIND_VOUCHERS = "H07"
 
 
 class BudgetIdentifier(Enum):
