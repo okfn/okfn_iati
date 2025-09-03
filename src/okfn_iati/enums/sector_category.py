@@ -57,3 +57,8 @@ class EnumFromCSV:
 class SectorCategoryData(EnumFromCSV):
     def __init__(self):
         super().__init__(csv_filename='sector-category-codes.csv', code_field='Code', name_field='Name')
+
+
+class LocationTypeData(EnumFromCSV):
+    def __init__(self):
+        super().__init__(csv_filename='location-type-codes.csv', code_field='Code', name_field='Name')

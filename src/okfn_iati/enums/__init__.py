@@ -6,7 +6,7 @@ References:
 """
 from enum import Enum, IntEnum
 
-from okfn_iati.enums.sector_category import SectorCategoryData
+from okfn_iati.enums.sector_category import SectorCategoryData, LocationTypeData
 
 
 class ActivityStatus(IntEnum):
@@ -616,15 +616,13 @@ class LocationID(Enum):
     # relation/ as appropriate, e.g. node/1234567
 
 
-class LocationType(Enum):
-    """
-    Location type - administrative region, populated place, etc.
-    Reference: https://iatistandard.org/en/iati-standard/203/codelists/locationtype/
-    """
-    ADMIN_REGION = "1"
-    POPULATED_PLACE = "2"
-    STRUCTURE = "3"
-    OTHER = "4"
+# This is a huge list so we load it from a CSV file
+"""
+Location type - administrative region, populated place, etc.
+Reference: https://iatistandard.org/en/iati-standard/203/codelists/locationtype/
+"""
+
+LocationType = LocationTypeData.to_enum(enum_name="LocationType")
 
 
 class OrganisationRole(Enum):
