@@ -617,10 +617,8 @@ class LocationID(Enum):
 
 
 # This is a huge list so we load it from a CSV file
-"""
-Location type - administrative region, populated place, etc.
-Reference: https://iatistandard.org/en/iati-standard/203/codelists/locationtype/
-"""
+# Location type - administrative region, populated place, etc.
+# Reference: https://iatistandard.org/en/iati-standard/203/codelists/locationtype/
 
 LocationType = LocationTypeData.to_enum(enum_name="LocationType")
 
