@@ -8,14 +8,14 @@ from .enums import (
     ActivityStatus, ActivityScope, ActivityDateType,
 
     # Aid and finance-related enums
-    AidType, AidTypeFlag, BudgetIdentifier, BudgetStatus, BudgetType,
+    AidType, BudgetIdentifier, BudgetStatus, BudgetType,
     FinanceType, FlowType, TiedStatus,
 
     # Collaboration and relation enums
     CollaborationType, OrganisationRole, OrganisationType, RelatedActivityType,
 
     # Document and information enums
-    DocumentCategory, ContactType, ConditionType, VocabularyType,
+    DocumentCategory, ContactType, ConditionType, PolicyMarkerVocabulary, Sector_Vocabulary,
 
     # Location-related enums
     LocationReach, LocationType, LocationID, GeographicalPrecision,
@@ -48,14 +48,14 @@ __all__ = [
     'ActivityStatus', 'ActivityScope', 'ActivityDateType',
 
     # Aid and finance-related enums
-    'AidType', 'AidTypeFlag', 'BudgetIdentifier', 'BudgetStatus', 'BudgetType',
+    'AidType', 'BudgetIdentifier', 'BudgetStatus', 'BudgetType',
     'FinanceType', 'FlowType', 'TiedStatus',
 
     # Collaboration and relation enums
     'CollaborationType', 'OrganisationRole', 'OrganisationType', 'RelatedActivityType',
 
     # Document and information enums
-    'DocumentCategory', 'ContactType', 'ConditionType', 'VocabularyType',
+    'DocumentCategory', 'ContactType', 'ConditionType', 'PolicyMarkerVocabulary', 'Sector_Vocabulary',
 
     # Location-related enums
     'LocationReach', 'LocationType', 'LocationID', 'GeographicalPrecision',
