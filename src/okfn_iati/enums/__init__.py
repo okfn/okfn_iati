@@ -751,7 +751,7 @@ class Sector_Vocabulary(Enum):
     Reference: https://iatistandard.org/en/iati-standard/203/codelists/sectorvocabulary/
     """
     OECD_DAC_CRS_PURPOSE = "1"
-    OECD_DAC_CRS_SECTOR_CATEGORY  = "2"
+    OECD_DAC_CRS_SECTOR_CATEGORY = "2"
     UN_COFOG = "3"
     EU_NACE_REV2 = "4"
     US_NTEE = "5"
