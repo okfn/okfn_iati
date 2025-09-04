@@ -30,7 +30,7 @@ class TestLocation(unittest.TestCase):
         location = Location(
             location_reach="1",
             exactness="1",
-            location_class="2"
+            location_class="PPL"
         )
         self.assertEqual(location.location_reach, LocationReach.ACTIVITY)
         self.assertEqual(location.exactness, GeographicalPrecision.EXACT_LOCATION)
