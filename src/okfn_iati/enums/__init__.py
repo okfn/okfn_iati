@@ -744,6 +744,7 @@ class PolicyMarkerVocabulary(Enum):
     OECD_DAC_CRS = "1"
     REPORTING_ORGANISATION = "99"
 
+
 class Sector_Vocabulary(Enum):
     """
     Vocabulary type - OECD DAC, UN, etc.
