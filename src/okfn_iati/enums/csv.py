@@ -1,10 +1,9 @@
 import csv
-from enum import Enum
-
 from okfn_iati.data import get_data_folder
 
 
-class EnumFromCSV:
+class CodeNameFieldFromCSV:
+    """ A large field from CSV. We expect at least a unique code and a Name """
     def __init__(self, csv_filename, code_field='code', name_field='name'):
         self.csv_file = csv_filename
         self.csv_path = get_data_folder() / self.csv_file
@@ -40,20 +39,57 @@ class EnumFromCSV:
         if code not in self.data:
             class_name = self.__class__.__name__
             raise KeyError(f"Code not found: '{code}' for {class_name}")
+        return self.data[code]
+
+    def get(self, code):
+        if not self._loaded:
+            self.load_data()
         return self.data.get(code)
 
-    @classmethod
-    def to_enum(cls, enum_name):
-        data = cls().load_data()
-        # Remove duplicates, keep first name for each category code
-        enum_dict = {}
-        for code, data in data.items():
-            if code not in enum_dict:
-                enum_dict[code] = data["name"]
+    def values(self):
+        if not self._loaded:
+            self.load_data()
+        return self.data.values()
 
-        return Enum(enum_name, enum_dict)
+    def items(self):
+        if not self._loaded:
+            self.load_data()
+        return self.data.items()
+
+    def __repr__(self):
+        if not self._loaded:
+            self.load_data()
+        return f"{self.__class__.__name__}({dict(self.data)})"
+
+    def __str__(self):
+        return self.__repr__()
+
+    def __contains__(self, code):
+        if not self._loaded:
+            self.load_data()
+        return code in self.data
+
+    def __len__(self):
+        if not self._loaded:
+            self.load_data()
+        return len(self.data)
+
+    def __iter__(self):
+        if not self._loaded:
+            self.load_data()
+        return iter(self.data.values())
+
+    def keys(self):
+        if not self._loaded:
+            self.load_data()
+        return self.data.keys()
 
 
-class SectorCategoryData(EnumFromCSV):
+class SectorCategoryData(CodeNameFieldFromCSV):
     def __init__(self):
         super().__init__(csv_filename='sector-category-codes.csv', code_field='Code', name_field='Name')
+
+
+class CRSChannelCodesData(CodeNameFieldFromCSV):
+    def __init__(self):
+        super().__init__(csv_filename='crs-channel-codes.csv')

@@ -1,6 +1,6 @@
 import unittest
 from okfn_iati.enums import SectorCategory
-from okfn_iati.enums.sector_category import SectorCategoryData
+from okfn_iati.enums.csv import SectorCategoryData
 from okfn_iati import (
     Activity, ActivityDate, ActivityDateType,
     Narrative, OrganizationRef, ActivityStatus,
@@ -16,8 +16,7 @@ class TestSectorCategory(unittest.TestCase):
     def test_sector_category_enum_creation(self):
         """Test that SectorCategory enum is created properly from CSV data."""
         # Test that the enum exists and has members
-        self.assertTrue(hasattr(SectorCategory, '__members__'))
-        self.assertGreater(len(SectorCategory.__members__), 0)
+        self.assertTrue(len(SectorCategory) > 0)
 
     def test_valid_sector_codes(self):
         """Test accessing valid sector category codes."""
@@ -28,14 +27,9 @@ class TestSectorCategory(unittest.TestCase):
         available_codes = list(data.keys())[:3]  # Get first 3 codes
 
         for code in available_codes:
-            # Test accessing via enum
-            sector = getattr(SectorCategory, code, None)
+            sector = SectorCategory.get(code)
             self.assertIsNotNone(sector, f"Sector code {code} should exist in enum")
-
-            # Test accessing via data class
-            sector_info = self.sector_data[code]
-            self.assertIsNotNone(sector_info, f"Sector code {code} should exist in data")
-            self.assertIn('name', sector_info)
+            self.assertIn('name', sector)
 
     def test_invalid_sector_code(self):
         """Test handling of invalid sector category codes."""
@@ -164,13 +158,13 @@ class TestSectorCategory(unittest.TestCase):
         self.assertIsInstance(first_item['name'], str, "Sector name should be a string")
 
     def test_enum_comparison_with_sector_data(self):
-        """Test that enum members match the data loaded from CSV."""
+        """Test that members match the data loaded from CSV."""
         data = self.sector_data.load_data()
-        enum_members = {member.name for member in SectorCategory}
+        names = {member['name'] for member in SectorCategory}
         data_codes = set(data.keys())
 
-        # All enum members should have corresponding data entries
-        for member_name in enum_members:
+        # All members should have corresponding data entries
+        for member_name in names:
             self.assertIn(
                 member_name, data_codes,
                 f"Enum member {member_name} should exist in sector data"
