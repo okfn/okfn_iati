@@ -1,4 +1,5 @@
 import csv
+import re
 from enum import Enum
 
 from okfn_iati.data import get_data_folder
@@ -43,15 +44,44 @@ class EnumFromCSV:
         return self.data.get(code)
 
     @classmethod
-    def to_enum(cls, enum_name):
-        data = cls().load_data()
-        # Remove duplicates, keep first name for each category code
-        enum_dict = {}
-        for code, data in data.items():
-            if code not in enum_dict:
-                enum_dict[code] = data["name"]
+    def to_enum(cls, enum_name, member_field=None, value_field=None):
+        """
+        Build a Python Enum from the CSV data.
 
-        return Enum(enum_name, enum_dict)
+        member_field: column to use for the enum member name (defaults to code_field)
+        value_field:  column to use for the enum member value (defaults to code_field)
+        """
+        inst = cls()
+        rows = inst.load_data()
+
+        member_field = member_field or inst.code_field
+        value_field = value_field or inst.code_field
+
+        members = {}
+        for code, row in rows.items():
+            # Member (name of the enum item)
+            member = row.get(member_field)
+
+            # Fallback: if asking for 'EnumName' but it doesn't exist, derive from Name
+            if not member and member_field == "EnumName" and "Name" in row:
+                member = re.sub(r'[^A-Z0-9]+', '_', row["Name"].upper()).strip('_')
+
+            # As last resort, allow using the code as member
+            if not member and member_field == inst.code_field:
+                member = code
+
+            # Value of the enum item
+            value = row.get(value_field)
+            if value is None:
+                if value_field == inst.code_field:
+                    value = code
+                elif value_field == inst.name_field:
+                    value = row.get(inst.name_field)
+
+            if member and value and member not in members:
+                members[member] = value
+
+        return Enum(enum_name, members)
 
 
 class SectorCategoryData(EnumFromCSV):
