@@ -38,6 +38,7 @@ dev = [
     "lxml>=4.9.0",  # Only needed for tests
     "build>=0.8.0",  # For building package
     "twine>=4.0.0",  # For uploading to PyPI
+    "flake8>=6.0.0",  # Code linting
 ]
 
 [tool.setuptools]
