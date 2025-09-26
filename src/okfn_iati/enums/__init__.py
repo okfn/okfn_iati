@@ -620,11 +620,7 @@ class LocationID(Enum):
 # Location type - administrative region, populated place, etc.
 # Reference: https://iatistandard.org/en/iati-standard/203/codelists/locationtype/
 
-LocationType = LocationTypeData.to_enum(
-    enum_name="LocationType",
-    member_field="EnumName",
-    value_field="Code",
-)
+LocationType = LocationTypeData.to_enum("LocationType")
 
 
 class OrganisationRole(Enum):
