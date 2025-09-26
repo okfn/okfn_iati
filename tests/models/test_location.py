@@ -19,11 +19,11 @@ class TestLocation(unittest.TestCase):
         location = Location(
             location_reach=LocationReach.BENEFICIARY,
             exactness=GeographicalPrecision.EXACT_LOCATION,
-            location_class=LocationType.POPULATED_PLACE
+            location_class=LocationType.PPL
         )
         self.assertEqual(location.location_reach, LocationReach.BENEFICIARY)
         self.assertEqual(location.exactness, GeographicalPrecision.EXACT_LOCATION)
-        self.assertEqual(location.location_class, LocationType.POPULATED_PLACE)
+        self.assertEqual(location.location_class, LocationType.PPL)
 
     def test_location_conversion(self):
         """Test that string values are converted to enums when possible."""
@@ -34,7 +34,7 @@ class TestLocation(unittest.TestCase):
         )
         self.assertEqual(location.location_reach, LocationReach.ACTIVITY)
         self.assertEqual(location.exactness, GeographicalPrecision.EXACT_LOCATION)
-        self.assertEqual(location.location_class, LocationType.POPULATED_PLACE)
+        self.assertEqual(location.location_class, "PPL")
 
 
 if __name__ == '__main__':
