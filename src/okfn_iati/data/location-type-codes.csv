@@ -1,0 +1,683 @@
+Code,Name,Description,Category,url,status,EnumName
+AIRQ,abandoned airfield,abandoned airfield,S,,active,ABANDONED_AIRFIELD
+CMPQ,abandoned camp,abandoned camp,S,,active,ABANDONED_CAMP
+CNLQ,abandoned canal,abandoned canal,H,,active,ABANDONED_CANAL
+MFGQ,abandoned factory,abandoned factory,S,,active,ABANDONED_FACTORY
+FRMQ,abandoned farm,abandoned farm,S,,active,ABANDONED_FARM
+MNQ,abandoned mine,abandoned mine,S,,active,ABANDONED_MINE
+MSSNQ,abandoned mission,abandoned mission,S,,active,ABANDONED_MISSION
+OILQ,abandoned oil well,abandoned oil well,S,,active,ABANDONED_OIL_WELL
+PPQ,abandoned police post,abandoned police post,S,,active,ABANDONED_POLICE_POST
+PPLQ,abandoned populated place,abandoned populated place,P,,active,ABANDONED_POPULATED_PLACE
+PRNQ,abandoned prison,abandoned prison,S,,active,ABANDONED_PRISON
+RRQ,abandoned railroad,abandoned railroad,R,,active,ABANDONED_RAILROAD
+RSTNQ,abandoned railroad station,abandoned railroad station,S,,active,ABANDONED_RAILROAD_STATION
+RSTPQ,abandoned railroad stop,abandoned railroad stop,S,,active,ABANDONED_RAILROAD_STOP
+STMQ,abandoned watercourse,"a former stream or distributary no longer carrying flowing water, but still evident due to lakes, wetland, topographic or vegetation patterns",H,,active,ABANDONED_WATERCOURSE
+WLLQ,abandoned well,abandoned well,H,,active,ABANDONED_WELL
+ADMD,administrative division,"an administrative division of a political entity, undifferentiated as to administrative level",A,,active,ADMINISTRATIVE_DIVISION
+ADMF,administrative facility,a government building,S,,active,ADMINISTRATIVE_FACILITY
+AGRC,agricultural colony,a tract of land set aside for agricultural settlement,L,,active,AGRICULTURAL_COLONY
+AGRF,agricultural facility,a building and/or tract of land used for improving agriculture,S,,active,AGRICULTURAL_FACILITY
+RESA,agricultural reserve,a tract of land reserved for agricultural reclamation and/or development,L,,active,AGRICULTURAL_RESERVE
+SCHA,agricultural school,a school with a curriculum focused on agriculture,S,,active,AGRICULTURAL_SCHOOL
+AIRB,airbase,"an area used to store supplies, provide barracks for air force personnel, hangars and runways for aircraft, and from which operations are initiated",S,,active,AIRBASE
+AIRF,airfield,a place on land where aircraft land and take off; no facilities provided for the commercial handling of passengers and cargo,S,,active,AIRFIELD
+AIRP,airport,"a place where aircraft regularly land and take off, with runways, navigational aids, and major facilities for the commercial handling of passengers and cargo",S,,active,AIRPORT
+AMTH,amphitheater,an oval or circular structure with rising tiers of seats about a stage or open space,S,,active,AMPHITHEATER
+STMA,anabranch,a diverging branch flowing out of a main stream and rejoining it downstream,H,,active,ANABRANCH
+ANCH,anchorage,an area where vessels may anchor,H,,active,ANCHORAGE
+RDA,ancient road,the remains of a road used by ancient cultures,R,,active,ANCIENT_ROAD
+ANS,ancient site,"a place where archeological remains, old structures, or cultural artifacts are located",S,,active,ANCIENT_SITE
+WALLA,ancient wall,the remains of a linear defensive stone structure,S,,active,ANCIENT_WALL
+BLDA,apartment building,a building containing several individual apartments,S,,active,APARTMENT_BUILDING
+AQC,aquaculture facility,"facility or area for the cultivation of aquatic animals and plants, especially fish, shellfish, and seaweed, in natural or controlled marine or freshwater environments; underwater agriculture",S,,active,AQUACULTURE_FACILITY
+CNLA,aqueduct,a conduit used to carry water,H,,active,AQUEDUCT
+ARCH,arch,a natural or man-made structure in the form of an arch,S,,active,ARCH
+LAND,Arctic land,a tract of land in the Arctic,L,,active,ARCTIC_LAND
+AREA,area,a tract of land without homogeneous character or boundaries,L,,active,AREA
+ISLF,artificial island,"an island created by landfill or diking and filling in a wetland, bay, or lagoon",T,,active,ARTIFICIAL_ISLAND
+RNGA,artillery range,a tract of land used for artillery firing practice,L,,active,ARTILLERY_RANGE
+ASPH,asphalt lake,a small basin containing naturally occurring asphalt,T,,active,ASPHALT_LAKE
+ASTR,astronomical station,a point on the earth whose position has been determined by observations of celestial bodies,S,,active,ASTRONOMICAL_STATION
+ASYL,asylum,a facility where the insane are cared for and protected,S,,active,ASYLUM
+ATHF,athletic field,"a tract of land used for playing team sports, and athletic track and field events",S,,active,ATHLETIC_FIELD
+ATOL,atoll(s),a ring-shaped coral reef which has closely spaced islands on it encircling a lagoon,T,,active,ATOLL_S
+CTRA,atomic center,a facility where atomic research is carried out,S,,active,ATOMIC_CENTER
+BDLD,badlands,"an area characterized by a maze of very closely spaced, deep, narrow, steep-sided ravines, and sharp crests and pinnacles",T,,active,BADLANDS
+BSTN,baling station,a facility for baling agricultural products,S,,active,BALING_STATION
+ESTB,banana plantation,an estate that specializes in the growing of bananas,S,,active,BANANA_PLANTATION
+BAN,bank,"an establishment for the custody, loan, exchange or issue of money, for the extension of credit, and for facilitating the transmission of funds",S,,active,BANK
+BNK,bank(s),"an elevation, typically located on a shelf, over which the depth of water is relatively shallow but sufficient for most surface navigation",H,,active,BANK_S
+BAR,bar,"a shallow ridge or mound of coarse unconsolidated material in a stream channel, at the mouth of a stream, estuary, or lagoon and in the wave-break zone along coasts",T,,active,BAR
+BRKS,barracks,a building for lodging military personnel,S,,active,BARRACKS
+BTL,battlefield,a site of a land battle of historical importance,L,,active,BATTLEFIELD
+BAY,bay,"a coastal indentation between two capes or headlands, larger than a cove but smaller than a gulf",H,,active,BAY
+BAYS,bays,"coastal indentations between two capes or headlands, larger than a cove but smaller than a gulf",H,,active,BAYS
+BCH,beach,a shore zone of coarse unconsolidated sediment that extends from the low-water line to the highest reach of storm waves,T,,active,BEACH
+RDGB,beach ridge,"a ridge of sand just inland and parallel to the beach, usually in series",T,,active,BEACH_RIDGE
+BCHS,beaches,a shore zone of coarse unconsolidated sediment that extends from the low-water line to the highest reach of storm waves,T,,active,BEACHES
+BCN,beacon,a fixed artificial navigation mark,S,,active,BEACON
+BNCH,bench,"a long, narrow bedrock platform bounded by steeper slopes above and below, usually overlooking a waterbody",T,,active,BENCH
+BGHT,bight(s),an open body of water forming a slight recession in a coastline,H,,active,BIGHT_S
+BLHL,blowhole(s),a hole in coastal rock through which sea water is forced by a rising tide or waves and spurted through an outlet into the air,T,,active,BLOWHOLE_S
+BLOW,blowout(s),"a small depression in sandy terrain, caused by wind erosion",T,,active,BLOWOUT_S
+BTYD,boatyard,"a waterside facility for servicing, repairing, and building small vessels",S,,active,BOATYARD
+BOG,bog(s),"a wetland characterized by peat forming sphagnum moss, sedge, and other acid-water plants",H,,active,BOG_S
+PSTB,border post,a post or station at an international boundary for the regulation of movement of people and goods,S,,active,BORDER_POST
+BLDR,boulder field,"a high altitude or high latitude bare, flat area covered with large angular rocks",T,,active,BOULDER_FIELD
+BP,boundary marker,a fixture marking a point along a boundary,S,,active,BOUNDARY_MARKER
+BRKW,breakwater,a structure erected to break the force of waves at the entrance to a harbor or port,S,,active,BREAKWATER
+MFGB,brewery,one or more buildings where beer is brewed,S,,active,BREWERY
+BDG,bridge,"a structure erected across an obstacle such as a stream, road, etc., in order to carry roads, railroads, and pedestrians across",S,,active,BRIDGE
+ZNB,buffer zone,a zone recognized as a buffer between two nations in which military presence is minimal or absent,A,,active,BUFFER_ZONE
+BLDG,building(s),"a structure built for permanent use, as a house, factory, etc.",S,,active,BUILDING_S
+BUR,burial cave(s),a cave used for human burials,S,,active,BURIAL_CAVE_S
+BUSH,bush(es),a small clump of conspicuous bushes in an otherwise bare area,V,,active,BUSH_ES
+CTRB,business center,a place where a number of businesses are located,L,,active,BUSINESS_CENTER
+BUTE,butte(s),"a small, isolated, usually flat-topped hill with steep sides",T,,active,BUTTE_S
+CARN,cairn,a heap of stones erected as a landmark or for other purposes,S,,active,CAIRN
+CLDA,caldera,a depression measuring kilometers across formed by the collapse of a volcanic mountain,T,,active,CALDERA
+CMP,camp(s),"a site occupied by tents, huts, or other shelters for temporary use",S,,active,CAMP_S
+CNL,canal,an artificial watercourse,H,,active,CANAL
+CNLB,canal bend,a conspicuously curved or bent section of a canal,H,,active,CANAL_BEND
+TNLC,canal tunnel,a tunnel through which a canal passes,H,,active,CANAL_TUNNEL
+STMC,canalized stream,"a stream that has been substantially ditched, diked, or straightened",H,,active,CANALIZED_STREAM
+MFGC,cannery,a building where food items are canned,S,,active,CANNERY
+CNYN,canyon,"a deep, narrow valley with steep sides cutting into a plateau or mountainous area",T,,active,CANYON
+CAPE,cape,"a land area, more prominent than a point, projecting into the sea and marking a notable change in coastal direction",T,,active,CAPE
+PPLC,capital of a political entity,capital of a political entity,P,,active,CAPITAL_OF_A_POLITICAL_ENTITY
+RTE,caravan route,the route taken by caravans,R,,active,CARAVAN_ROUTE
+CSNO,casino,"a building used for entertainment, especially gambling",S,,active,CASINO
+CSTL,castle,a large fortified building or set of buildings,S,,active,CASTLE
+TNKD,cattle dipping tank,a small artificial pond used for immersing cattle in chemically treated water for disease control,S,,active,CATTLE_DIPPING_TANK
+CSWY,causeway,a raised roadway across wet ground or shallow water,R,,active,CAUSEWAY
+CAVE,cave(s),"an underground passageway or chamber, or cavity on the side of a cliff",S,,active,CAVE_S
+CMTY,cemetery,a burial place or ground,S,,active,CEMETERY
+CHN,channel,"the deepest part of a stream, bay, lagoon, or strait, through which the main current flows",H,,active,CHANNEL
+MNCR,chrome mine(s),a mine where chrome ore is extracted,S,,active,CHROME_MINE_S
+CH,church,a building for public Christian worship,S,,active,CHURCH
+CRQ,cirque,a bowl-like hollow partially surrounded by cliffs or steep slopes at the head of a glaciated valley,T,,active,CIRQUE
+CRQS,cirques,bowl-like hollows partially surrounded by cliffs or steep slopes at the head of a glaciated valley,T,,active,CIRQUES
+CLG,clearing,an area in a forest with trees removed,L,,active,CLEARING
+CFT,cleft(s),"a deep narrow slot, notch, or groove in a coastal cliff",T,,active,CLEFT_S
+CLF,cliff(s),"a high, steep to perpendicular slope overlooking a waterbody or lower area",T,,active,CLIFF_S
+HSPC,clinic,a medical facility associated with a hospital for outpatients,S,,active,CLINIC
+MNC,coal mine(s),a mine where coal is extracted,S,,active,COAL_MINE_S
+COLF,coalfield,a region in which coal deposits of possible economic value occur,L,,active,COALFIELD
+CST,coast,a zone of variable width straddling the shoreline,L,,active,COAST
+STNC,coast guard station,a facility from which the coast is guarded by armed vessels,S,,active,COAST_GUARD_STATION
+GRVC,coconut grove,a planting of coconut trees,V,,active,COCONUT_GROVE
+SCHC,college,the grounds and buildings of an institution of higher learning,S,,active,COLLEGE
+CMN,common,a park or pasture for community use,L,,active,COMMON
+COMC,communication center,"a facility, including buildings, antennae, towers and electronic equipment for receiving and transmitting information",S,,active,COMMUNICATION_CENTER
+CTRCM,community center,a facility for community recreation and other activities,S,,active,COMMUNITY_CENTER
+CNS,concession area,"a lease of land by a government for economic development, e.g., mining, forestry",L,,active,CONCESSION_AREA
+CONE,cone(s),a conical landform composed of mud or volcanic material,T,,active,CONE_S
+CNFL,confluence,a place where two or more streams or intermittent streams flow together,H,,active,CONFLUENCE
+CRSU,continental rise,a gentle slope rising from oceanic depths towards the foot of a continental slope,U,,active,CONTINENTAL_RISE
+CVNT,convent,a building where a community of nuns lives in seclusion,S,,active,CONVENT
+MNCU,copper mine(s),a mine where copper ore is extracted,S,,active,COPPER_MINE_S
+MFGCU,copper works,a facility for processing copper ore,S,,active,COPPER_WORKS
+RFC,coral reef(s),a surface-navigation hazard composed of coral,H,,active,CORAL_REEF_S
+CRRL,corral(s),a pen or enclosure for confining or capturing animals,S,,active,CORRAL_S
+CRDR,corridor,a strip or area of land having significance as an access way,T,,active,CORRIDOR
+ESTC,cotton plantation,an estate specializing in the cultivation of cotton,S,,active,COTTON_PLANTATION
+HSEC,country house,"a large house, mansion, or chateau, on a large estate",S,,active,COUNTRY_HOUSE
+CTHSE,courthouse,a building in which courts of law are held,S,,active,COURTHOUSE
+COVE,cove(s),"a small coastal indentation, smaller than a bay",H,,active,COVE_S
+LKC,crater lake,a lake in a crater or caldera,H,,active,CRATER_LAKE
+LKSC,crater lakes,lakes in a crater or caldera,H,,active,CRATER_LAKES
+CRTR,crater(s),a generally circular saucer or bowl-shaped depression caused by volcanic or meteorite explosive action,T,,active,CRATER_S
+CUET,cuesta(s),an asymmetric ridge formed on tilted strata,T,,active,CUESTA_S
+CULT,cultivated area,an area under cultivation,V,,active,CULTIVATED_AREA
+CRNT,current,a horizontal flow of water in a given direction with uniform velocity,H,,active,CURRENT
+CSTM,customs house,"a building in a port where customs and duties are paid, and where vessels are entered and cleared",S,,active,CUSTOMS_HOUSE
+PSTC,customs post,a building at an international boundary where customs and duties are paid on goods,S,,active,CUSTOMS_POST
+CUTF,cutoff,a channel formed as a result of a stream cutting through a meander neck,H,,active,CUTOFF
+DARY,dairy,"a facility for the processing, sale and distribution of milk or milk products",S,,active,DAIRY
+DAM,dam,a barrier constructed across a stream to impound water,S,,active,DAM
+DEPU,deep,"a localized deep area within the confines of a larger feature, such as a trough, basin or trench",U,,active,DEEP
+DLTA,delta,a flat plain formed by alluvial deposits at the mouth of a stream,T,,active,DELTA
+PCLD,dependent political entity,dependent political entity,A,,active,DEPENDENT_POLITICAL_ENTITY
+DPR,depression(s),a low area surrounded by higher land and usually characterized by interior drainage,T,,active,DEPRESSION_S
+DSRT,desert,a large area with little or no vegetation due to extreme environmental conditions,T,,active,DESERT
+PPLW,destroyed populated place,"a village, town or city destroyed by a natural disaster, or by war",P,,active,DESTROYED_POPULATED_PLACE
+MNDT,diatomite mine(s),a place where diatomaceous earth is extracted,S,,active,DIATOMITE_MINE_S
+DIKE,dike,an earth or stone embankment usually constructed for flood or stream control,S,,active,DIKE
+DIP,diplomatic facility,"office, residence, or facility of a foreign government, which may include an embassy, consulate, chancery, office of charge d’affaires, or other diplomatic, economic, military, or cultural mission",S,,active,DIPLOMATIC_FACILITY
+HSPD,dispensary,a building where medical or dental aid is dispensed,S,,active,DISPENSARY
+STMD,distributary(-ies),"a branch which flows away from the main stream, as in a delta or irrigation canal",H,,active,DISTRIBUTARY_IES
+DTCH,ditch,a small artificial watercourse dug for draining or irrigating the land,H,,active,DITCH
+DTCHM,ditch mouth(s),"an area where a drainage ditch enters a lagoon, lake or bay",H,,active,DITCH_MOUTH_S
+DVD,divide,a line separating adjacent drainage basins,T,,active,DIVIDE
+DCK,dock(s),"a waterway between two piers, or cut into the land for the berthing of ships",H,,active,DOCK_S
+DCKB,docking basin,a part of a harbor where ships dock,H,,active,DOCKING_BASIN
+DCKY,dockyard,"a facility for servicing, building, or repairing ships",S,,active,DOCKYARD
+BSND,drainage basin,an area drained by a stream,L,,active,DRAINAGE_BASIN
+CNLD,drainage canal,an artificial waterway carrying water away from a wetland or from drainage ditches,H,,active,DRAINAGE_CANAL
+DTCHD,drainage ditch,a ditch which serves to drain the land,H,,active,DRAINAGE_DITCH
+DCKD,dry dock,"a dock providing support for a vessel, and means for removing the water so that the bottom of the vessel can be exposed",S,,active,DRY_DOCK
+SBED,dry stream bed,a channel formerly containing the water of a stream,T,,active,DRY_STREAM_BED
+DUNE,dune(s),"a wave form, ridge or star shape feature composed of sand",T,,active,DUNE_S
+RGNE,economic region,a region of a country established for economic development or for statistical purposes,L,,active,ECONOMIC_REGION
+SCRP,escarpment,a long line of cliffs or steep slopes separating level surfaces above and below,T,,active,ESCARPMENT
+EST,estate(s),a large commercialized agricultural landholding with associated buildings and other facilities,S,,active,ESTATE_S
+ESTY,estuary,a funnel-shaped stream mouth or embayment where fresh water mixes with sea water under tidal influences,H,,active,ESTUARY
+STNE,experiment station,a facility for carrying out experiments,S,,active,EXPERIMENT_STATION
+FCL,facility,"a building or buildings housing a center, institute, foundation, hospital, prison, mission, courthouse, etc.",S,,active,FACILITY
+CTRF,facility center,a place where more than one facility is situated,S,,active,FACILITY_CENTER
+MFG,factory,"one or more buildings where goods are manufactured, processed or fabricated",S,,active,FACTORY
+FAN,fan(s),a fan-shaped wedge of coarse alluvium with apex merging with a mountain stream bed and the fan spreading out at a low angle slope onto an adjacent plain,T,,active,FAN_S
+FRM,farm,a tract of land with associated buildings devoted to agriculture,S,,active,FARM
+PPLF,farm village,a populated place where the population is largely engaged in agricultural activities,P,,active,FARM_VILLAGE
+FRMS,farms,tracts of land with associated buildings devoted to agriculture,S,,active,FARMS
+FRMT,farmstead,the buildings and adjacent service areas of a farm,S,,active,FARMSTEAD
+FY,ferry,a boat or other floating conveyance and terminal facilities regularly used to transport people and vehicles across a waterbody,S,,active,FERRY
+FYT,ferry terminal,"a place where ferries pick-up and discharge passengers, vehicles and or cargo",S,,active,FERRY_TERMINAL
+FLD,field(s),an open as opposed to wooded area,L,,active,FIELD_S
+FIRE,fire station,building housing firefighters and/or fire fighting equipment,S,,active,FIRE_STATION
+ADM1,first-order administrative division,"a primary administrative division of a country, such as a state in the United States",A,,active,FIRST_ORDER_ADMINISTRATIVE_DIVISION
+FISH,fishing area,"a fishing ground, bank or area where fishermen go to catch fish",H,,active,FISHING_AREA
+PNDSF,fishponds,ponds or enclosures in which fish are kept or raised,H,,active,FISHPONDS
+FSR,fissure,a crack associated with volcanism,T,,active,FISSURE
+FJD,fjord,"a long, narrow, steep-walled, deep-water arm of the sea at high latitudes, usually along mountainous coasts",H,,active,FJORD
+FJDS,fjords,"long, narrow, steep-walled, deep-water arms of the sea at high latitudes, usually along mountainous coasts",H,,active,FJORDS
+FORD,ford,a shallow part of a stream which can be crossed on foot or by land vehicle,T,,active,FORD
+RESF,forest reserve,a forested area set aside for preservation or controlled use,L,,active,FOREST_RESERVE
+STNF,forest station,a collection of buildings and facilities for carrying out forest management,S,,active,FOREST_STATION
+FRST,forest(s),an area dominated by tree vegetation,V,,active,FOREST_S
+INLTQ,former inlet,"an inlet which has been filled in, or blocked by deposits",H,,active,FORMER_INLET
+MLSGQ,former sugar mill,a sugar mill no longer used as a sugar mill,S,,active,FORMER_SUGAR_MILL
+FT,fort,a defensive structure or earthworks,S,,active,FORT
+FRSTF,fossilized forest,a forest fossilized by geologic processes and now exposed at the earth's surface,V,,active,FOSSILIZED_FOREST
+FNDY,foundry,a building or works where metal casting is carried out,S,,active,FOUNDRY
+ADM4,fourth-order administrative division,a subdivision of a third-order administrative division,A,,active,FOURTH_ORDER_ADMINISTRATIVE_DIVISION
+ZNF,free trade zone,"an area, usually a section of a port, where goods may be received and shipped free of customs duty and of most customs regulations",S,,active,FREE_TRADE_ZONE
+PCLF,freely associated state,freely associated state,A,,active,FREELY_ASSOCIATED_STATE
+DPOF,fuel depot,an area where fuel is stored,S,,active,FUEL_DEPOT
+GAP,gap,"a low place in a ridge, not used for transportation",T,,active,GAP
+GDN,garden(s),an enclosure for displaying selected plant or animal life,S,,active,GARDEN_S
+GOSP,gas-oil separator plant,a facility for separating gas from oil,S,,active,GAS_OIL_SEPARATOR_PLANT
+GASF,gasfield,an area containing a subterranean store of natural gas of economic value,L,,active,GASFIELD
+GATE,gate,a controlled access entrance or exit,S,,active,GATE
+GYSR,geyser,a type of hot spring with intermittent eruptions of jets of hot water and steam,H,,active,GEYSER
+GHAT,ghāt,"a set of steps leading to a river, which are of religious significance, and at their base is usually a platform for bathing",S,,active,GH_T
+GLCR,glacier(s),"a mass of ice, usually at high latitudes or high elevations, with sufficient thickness to flow away from the source area in lobes, tongues, or masses",H,,active,GLACIER_S
+MNAU,gold mine(s),"a mine where gold ore, or alluvial gold is extracted",S,,active,GOLD_MINE_S
+RECG,golf course,a recreation field where golf is played,S,,active,GOLF_COURSE
+GRGE,gorge(s),"a short, narrow, steep-sided section of a stream valley",T,,active,GORGE_S
+GRSLD,grassland,an area dominated by grass vegetation,V,,active,GRASSLAND
+GRVE,grave,a burial site,S,,active,GRAVE
+GVL,gravel area,an area covered with gravel,L,,active,GRAVEL_AREA
+GRAZ,grazing area,an area of grasses and shrubs used for grazing,L,,active,GRAZING_AREA
+GHSE,guest house,a house used to provide lodging for paying guests,S,,active,GUEST_HOUSE
+GULF,gulf,"a large recess in the coastline, larger than a bay",H,,active,GULF
+HLT,halting place,a place where caravans stop for rest,S,,active,HALTING_PLACE
+HMCK,hammock(s),"a patch of ground, distinct from and slightly above the surrounding plain or wetland. Often occurs in groups",T,,active,HAMMOCK_S
+AIRG,hangar,a covered and usually enclosed area for housing and repairing aircraft,S,,active,HANGAR
+VALG,hanging valley,a valley the floor of which is notably higher than the valley or shore to which it leads; most common in areas that have been glaciated,T,,active,HANGING_VALLEY
+HBR,harbor(s),a haven or space of deep water so sheltered by the adjacent land as to afford a safe anchorage for ships,H,,active,HARBOR_S
+HDLD,headland,a high projection of land extending into a large body of water beyond the line of the coast,T,,active,HEADLAND
+STMH,headwaters,"the source and upper part of a stream, including the upper drainage basin",H,,active,HEADWATERS
+HTH,heath,an upland moor or sandy area dominated by low shrubby vegetation including heather,V,,active,HEATH
+AIRH,heliport,a place where helicopters land and take off,S,,active,HELIPORT
+HERM,hermitage,"a secluded residence, usually for religious sects",S,,active,HERMITAGE
+HLL,hill,a rounded elevation of limited extent rising above the surrounding land with local relief of less than 300m,T,,active,HILL
+HLLS,hills,rounded elevations of limited extent rising above the surrounding land with local relief of less than 300m,T,,active,HILLS
+ADMDH,historical administrative division,"a former administrative division of a political entity, undifferentiated as to administrative level",A,,active,HISTORICAL_ADMINISTRATIVE_DIVISION
+ADM1H,historical first-order administrative division,a former first-order administrative division,A,,active,HISTORICAL_FIRST_ORDER_ADMINISTRATIVE_DIVISION
+ADM4H,historical fourth-order administrative division,a former fourth-order administrative division,A,,active,HISTORICAL_FOURTH_ORDER_ADMINISTRATIVE_DIVISION
+PCLH,historical political entity,a former political entity,A,,active,HISTORICAL_POLITICAL_ENTITY
+PPLH,historical populated place,a populated place that no longer exists,P,,active,HISTORICAL_POPULATED_PLACE
+RRH,historical railroad,a former permanent twin steel-rail track on which freight and passenger cars move long distances,R,,active,HISTORICAL_RAILROAD
+RSTNH,historical railroad station,"a former facility comprising ticket office, platforms, etc. for loading and unloading train passengers and freight",S,,active,HISTORICAL_RAILROAD_STATION
+RGNH,historical region,a former area distinguished by one or more observable physical or cultural characteristics,L,,active,HISTORICAL_REGION
+ADM2H,historical second-order administrative division,a former second-order administrative division,A,,active,HISTORICAL_SECOND_ORDER_ADMINISTRATIVE_DIVISION
+HSTS,historical site,a place of historical importance,S,,active,HISTORICAL_SITE
+ADM3H,historical third-order administrative division,a former third-order administrative division,A,,active,HISTORICAL_THIRD_ORDER_ADMINISTRATIVE_DIVISION
+UFHU,historical undersea feature,an undersea feature whose existence has been subsequently disproved,U,,active,HISTORICAL_UNDERSEA_FEATURE
+HMSD,homestead,"a residence, owner's or manager's, on a sheep or cattle station, woolshed, outcamp, or Aboriginal outstation, specific to Australia and New Zealand",S,,active,HOMESTEAD
+HSP,hospital,"a building in which sick or injured, especially those confined to bed, are medically treated",S,,active,HOSPITAL
+SPNT,hot spring(s),a place where hot ground water flows naturally out of the ground,H,,active,HOT_SPRING_S
+HTL,hotel,a building providing lodging and/or meals for the public,S,,active,HOTEL
+HSE,house(s),a building used as a human habitation,S,,active,HOUSE_S
+DEVH,housing development,a tract of land on which many houses of similar design are built according to a development plan,L,,active,HOUSING_DEVELOPMENT
+RESH,hunting reserve,a tract of land used primarily for hunting,L,,active,HUNTING_RESERVE
+HUT,hut,a small primitive house,S,,active,HUT
+HUTS,huts,small primitive houses,S,,active,HUTS
+PSH,hydroelectric power station,a building where electricity is generated from water power,S,,active,HYDROELECTRIC_POWER_STATION
+CAPG,icecap,a dome-shaped mass of glacial ice covering an area of mountain summits or other high lands; smaller than an ice sheet,H,,active,ICECAP
+DPRG,icecap depression,a comparatively depressed area on an icecap,H,,active,ICECAP_DEPRESSION
+DOMG,icecap dome,a comparatively elevated area on an icecap,H,,active,ICECAP_DOME
+RDGG,icecap ridge,a linear elevation on an icecap,H,,active,ICECAP_RIDGE
+PCLI,independent political entity,independent political entity,A,,active,INDEPENDENT_POLITICAL_ENTITY
+INDS,industrial area,an area characterized by industrial activity,L,,active,INDUSTRIAL_AREA
+INLT,inlet,"a narrow waterway extending into the land, or connecting a bay or lagoon with a larger body of water",H,,active,INLET
+STNI,inspection station,"a station at which vehicles, goods, and people are inspected",S,,active,INSPECTION_STATION
+TRGD,interdune trough(s),a long wind-swept trough between parallel longitudinal dunes,T,,active,INTERDUNE_TROUGH_S
+INTF,interfluve,a relatively undissected upland between adjacent stream valleys,T,,active,INTERFLUVE
+LKI,intermittent lake,intermittent lake,H,,active,INTERMITTENT_LAKE
+LKSI,intermittent lakes,intermittent lakes,H,,active,INTERMITTENT_LAKES
+LKOI,intermittent oxbow lake,intermittent oxbow lake,H,,active,INTERMITTENT_OXBOW_LAKE
+PNDI,intermittent pond,intermittent pond,H,,active,INTERMITTENT_POND
+PNDSI,intermittent ponds,intermittent ponds,H,,active,INTERMITTENT_PONDS
+POOLI,intermittent pool,intermittent pool,H,,active,INTERMITTENT_POOL
+RSVI,intermittent reservoir,intermittent reservoir,H,,active,INTERMITTENT_RESERVOIR
+LKNI,intermittent salt lake,intermittent salt lake,H,,active,INTERMITTENT_SALT_LAKE
+LKSNI,intermittent salt lakes,intermittent salt lakes,H,,active,INTERMITTENT_SALT_LAKES
+PNDNI,intermittent salt pond(s),intermittent salt pond(s),H,,active,INTERMITTENT_SALT_POND_S
+STMI,intermittent stream,intermittent stream,H,,active,INTERMITTENT_STREAM
+WTLDI,intermittent wetland,intermittent wetland,H,,active,INTERMITTENT_WETLAND
+RDIN,intersection,a junction of two or more highways by a system of separate levels that permit traffic to pass from one to another without the crossing of traffic streams,S,,active,INTERSECTION
+MNFE,iron mine(s),a mine where iron ore is extracted,S,,active,IRON_MINE_S
+FLDI,irrigated field(s),a tract of level or terraced land which is irrigated,L,,active,IRRIGATED_FIELD_S
+CNLI,irrigation canal,a canal which serves as a main conduit for irrigation water,H,,active,IRRIGATION_CANAL
+DTCHI,irrigation ditch,a ditch which serves to distribute irrigation water,H,,active,IRRIGATION_DITCH
+SYSI,irrigation system,"a network of ditches and one or more of the following elements: water supply, reservoir, canal, pump, well, drain, etc.",H,,active,IRRIGATION_SYSTEM
+ISL,island,"a tract of land, smaller than a continent, surrounded by water at high water",T,,active,ISLAND
+ISLS,islands,"tracts of land, smaller than a continent, surrounded by water at high water",T,,active,ISLANDS
+STLMT,Israeli settlement,Israeli settlement,P,,active,ISRAELI_SETTLEMENT
+ISTH,isthmus,a narrow strip of land connecting two larger land masses and bordered by water,T,,active,ISTHMUS
+JTY,jetty,a structure built out into the water at a river mouth or harbor entrance to regulate currents and silting,S,,active,JETTY
+KRST,karst area,"a distinctive landscape developed on soluble rock such as limestone characterized by sinkholes, caves, disappearing streams, and underground drainage",T,,active,KARST_AREA
+CMPLA,labor camp,a camp used by migrant or temporary laborers,S,,active,LABOR_CAMP
+LGN,lagoon,"a shallow coastal waterbody, completely or partly separated from a larger body of water by a barrier island, coral reef or other depositional feature",H,,active,LAGOON
+LGNS,lagoons,"shallow coastal waterbodies, completely or partly separated from a larger body of water by a barrier island, coral reef or other depositional feature",H,,active,LAGOONS
+LK,lake,a large inland body of standing water,H,,active,LAKE
+LBED,lake bed(s),a dried up or drained area of a former lake,H,,active,LAKE_BED_S
+CHNL,lake channel(s),"that part of a lake having water deep enough for navigation between islands, shoals, etc.",H,,active,LAKE_CHANNEL_S
+RGNL,lake region,a tract of land distinguished by numerous lakes,L,,active,LAKE_REGION
+LKS,lakes,large inland bodies of standing water,H,,active,LAKES
+ISLT,land-tied island,"a coastal island connected to the mainland by barrier beaches, levees or dikes",T,,active,LAND_TIED_ISLAND
+LNDF,landfill,a place for trash and garbage disposal in which the waste is buried between layers of earth to build up low-lying land,S,,active,LANDFILL
+LDNG,landing,"a place where boats receive or discharge passengers and freight, but lacking most port facilities",S,,active,LANDING
+LAVA,lava area,an area of solidified lava,T,,active,LAVA_AREA
+MNPB,lead mine(s),a mine where lead ore is extracted,S,,active,LEAD_MINE_S
+LTER,leased area,a tract of land leased by the United Kingdom from the People's Republic of China to form part of Hong Kong,A,,active,LEASED_AREA
+LEPC,leper colony,a settled area inhabited by lepers in relative isolation,S,,active,LEPER_COLONY
+HSPL,leprosarium,an asylum or hospital for lepers,S,,active,LEPROSARIUM
+LEV,levee,a natural low embankment bordering a distributary or meandering stream; often built up artificially to control floods,T,,active,LEVEE
+LTHSE,lighthouse,a distinctive structure exhibiting a major navigation light,S,,active,LIGHTHOUSE
+MFGLM,limekiln,a furnace in which limestone is reduced to lime,S,,active,LIMEKILN
+GOVL,local government office,"a facility housing local governmental offices, usually a city, town, or village hall",S,,active,LOCAL_GOVERNMENT_OFFICE
+LCTY,locality,a minor area or place of unspecified or mixed character and indefinite boundaries,L,,active,LOCALITY
+LOCK,lock(s),a basin in a waterway with gates at each end by means of which vessels are passed from one water level to another,S,,active,LOCK_S
+CMPL,logging camp,a camp used by loggers,S,,active,LOGGING_CAMP
+STMSB,lost river,"a surface stream that disappears into an underground channel, or dries up in an arid area",H,,active,LOST_RIVER
+MVA,maneuver area,a tract of land where military field exercises are carried out,L,,active,MANEUVER_AREA
+ISLM,mangrove island,a mangrove swamp surrounded by a waterbody,T,,active,MANGROVE_ISLAND
+MGV,mangrove swamp,a tropical tidal mud flat characterized by mangrove vegetation,H,,active,MANGROVE_SWAMP
+MAR,marina,"a harbor facility for small boats, yachts, etc.",S,,active,MARINA
+CHNM,marine channel,that part of a body of water deep enough for navigation through an area otherwise not suitable,H,,active,MARINE_CHANNEL
+SCHN,maritime school,a school at which maritime sciences form the core of the curriculum,S,,active,MARITIME_SCHOOL
+MKT,market,a place where goods are bought and sold at regular intervals,S,,active,MARKET
+MRSH,marsh(es),a wetland dominated by grass-like vegetation,H,,active,MARSH_ES
+MDW,meadow,"a small, poorly drained area dominated by grassy vegetation",V,,active,MEADOW
+NKM,meander neck,a narrow strip of land between the two limbs of a meander loop at its narrowest point,T,,active,MEANDER_NECK
+CTRM,medical center,"a complex of health care buildings including two or more of the following: hospital, medical school, clinic, pharmacy, doctor's offices, etc.",S,,active,MEDICAL_CENTER
+MESA,mesa(s),"a flat-topped, isolated elevation with steep slopes on all sides, less extensive than a plateau",T,,active,MESA_S
+STNM,meteorological station,a station at which weather elements are recorded,S,,active,METEOROLOGICAL_STATION
+MILB,military base,"a place used by an army or other armed service for storing arms and supplies, and for accommodating and training troops, a base from which operations can be initiated",L,,active,MILITARY_BASE
+INSM,military installation,a facility for use of and control by armed forces,S,,active,MILITARY_INSTALLATION
+SCHM,military school,a school at which military science forms the core of the curriculum,S,,active,MILITARY_SCHOOL
+ML,mill(s),"a building housing machines for transforming, shaping, finishing, grinding, or extracting products",S,,active,MILL_S
+MN,mine(s),a site where mineral ores are extracted from the ground by excavating surface pits and subterranean passages,S,,active,MINE_S
+MNA,mining area,an area of mine sites where minerals and ores are extracted,L,,active,MINING_AREA
+CMPMN,mining camp,a camp used by miners,S,,active,MINING_CAMP
+MSSN,mission,"a place characterized by dwellings, school, church, hospital and other facilities operated by a religious group for the purpose of providing charitable services and to propagate religion",S,,active,MISSION
+MOLE,mole,a massive structure of masonry or large stones serving as a pier or breakwater,S,,active,MOLE
+MSTY,monastery,a building and grounds where a community of monks lives in seclusion,S,,active,MONASTERY
+MNMT,monument,a commemorative structure or statue,S,,active,MONUMENT
+MOOR,moor(s),an area of open ground overlaid with wet peaty soils,H,,active,MOOR_S
+MRN,moraine,"a mound, ridge, or other accumulation of glacial till",T,,active,MORAINE
+MSQE,mosque,a building for public Islamic worship,S,,active,MOSQUE
+MND,mound(s),"a low, isolated, rounded hill",T,,active,MOUND_S
+MT,mountain,"an elevation standing high above the surrounding area with small summit area, steep slopes and local relief of 300m or more",T,,active,MOUNTAIN
+MTS,mountains,a mountain range or a group of mountains or high ridges,T,,active,MOUNTAINS
+FLTM,mud flat(s),"a relatively level area of mud either between high and low tide lines, or subject to flooding",H,,active,MUD_FLAT_S
+MFGM,munitions plant,a factory where ammunition is made,S,,active,MUNITIONS_PLANT
+MUS,museum,a building where objects of permanent interest in one or more of the arts and sciences are preserved and exhibited,S,,active,MUSEUM
+NRWS,narrows,"a navigable narrow part of a bay, strait, river, etc.",H,,active,NARROWS
+TNLN,natural tunnel,a cave that is open at both ends,R,,active,NATURAL_TUNNEL
+RESN,nature reserve,an area reserved for the maintenance of a natural habitat,L,,active,NATURE_RESERVE
+NVB,naval base,"an area used to store supplies, provide barracks for troops and naval personnel, a port for naval vessels, and from which operations are initiated",L,,active,NAVAL_BASE
+CNLN,navigation canal(s),a watercourse constructed for navigation of vessels,H,,active,NAVIGATION_CANAL_S
+CHNN,navigation channel,a buoyed channel of sufficient depth for the safe navigation of vessels,H,,active,NAVIGATION_CHANNEL
+MNNI,nickel mine(s),a mine where nickel ore is extracted,S,,active,NICKEL_MINE_S
+NOV,novitiate,a religious house or school where novices are trained,S,,active,NOVITIATE
+PSN,nuclear power station,nuclear power station,S,,active,NUCLEAR_POWER_STATION
+NTK,nunatak,a rock or mountain peak protruding through glacial ice,T,,active,NUNATAK
+NTKS,nunataks,rocks or mountain peaks protruding through glacial ice,T,,active,NUNATAKS
+NSY,nursery(-ies),a place where plants are propagated for transplanting or grafting,S,,active,NURSERY_IES
+OAS,oasis(-es),an area in a desert made productive by the availability of water,L,,active,OASIS_ES
+OBPT,observation point,a wildlife or scenic observation point,S,,active,OBSERVATION_POINT
+OBS,observatory,a facility equipped for observation of atmospheric or space phenomena,S,,active,OBSERVATORY
+OCN,ocean,one of the major divisions of the vast expanse of salt water covering part of the earth,H,,active,OCEAN
+BLDO,office building,commercial building where business and/or services are conducted,S,,active,OFFICE_BUILDING
+CMPO,oil camp,a camp used by oilfield workers,S,,active,OIL_CAMP
+ESTO,oil palm plantation,an estate specializing in the cultivation of oil palm trees,S,,active,OIL_PALM_PLANTATION
+OILP,oil pipeline,a pipeline used for transporting oil,R,,active,OIL_PIPELINE
+OILJ,oil pipeline junction,a section of an oil pipeline where two or more pipes join together,S,,active,OIL_PIPELINE_JUNCTION
+TRMO,oil pipeline terminal,a tank farm or loading facility at the end of an oil pipeline,S,,active,OIL_PIPELINE_TERMINAL
+PMPO,oil pumping station,a facility for pumping oil through a pipeline,S,,active,OIL_PUMPING_STATION
+OILR,oil refinery,a facility for converting crude oil into refined petroleum products,S,,active,OIL_REFINERY
+OILW,oil well,a well from which oil may be pumped,S,,active,OIL_WELL
+OILF,oilfield,an area containing a subterranean store of petroleum of economic value,L,,active,OILFIELD
+GRVO,olive grove,a planting of olive trees,V,,active,OLIVE_GROVE
+MLO,olive oil mill,a mill where oil is extracted from olives,S,,active,OLIVE_OIL_MILL
+OCH,orchard(s),a planting of fruit or nut trees,V,,active,ORCHARD_S
+MLM,ore treatment plant,a facility for improving the metal content of ore by concentration,S,,active,ORE_TREATMENT_PLANT
+OVF,overfalls,an area of breaking waves caused by the meeting of currents or by waves moving against the current,H,,active,OVERFALLS
+LKO,oxbow lake,a crescent-shaped lake commonly found adjacent to meandering streams,H,,active,OXBOW_LAKE
+PGDA,pagoda,"a tower-like storied structure, usually a Buddhist shrine",S,,active,PAGODA
+PAL,palace,"a large stately house, often a royal or presidential residence",S,,active,PALACE
+GRVP,palm grove,a planting of palm trees,V,,active,PALM_GROVE
+RESP,palm tree reserve,an area of palm trees where use is controlled,L,,active,PALM_TREE_RESERVE
+PAN,pan,"a near-level shallow, natural depression or basin, usually containing an intermittent lake, pond, or pool",T,,active,PAN
+PANS,pans,"a near-level shallow, natural depression or basin, usually containing an intermittent lake, pond, or pool",T,,active,PANS
+PRSH,parish,an ecclesiastical district,A,,active,PARISH
+PRK,park,"an area, often of forested land, maintained as a place of beauty, or for recreation",L,,active,PARK
+PRKGT,park gate,a controlled access to a park,S,,active,PARK_GATE
+PRKHQ,park headquarters,a park administrative facility,S,,active,PARK_HEADQUARTERS
+GARG,parking garage,a building or underground facility used exclusively for parking vehicles,S,,active,PARKING_GARAGE
+PKLT,parking lot,an area used for parking vehicles,S,,active,PARKING_LOT
+PASS,pass,"a break in a mountain range or other high obstruction, used for transportation from one side to the other [See also gap]",T,,active,PASS
+PSTP,patrol post,a post from which patrols are sent out,S,,active,PATROL_POST
+PK,peak,"a pointed elevation atop a mountain, ridge, or other hypsographic feature",T,,active,PEAK
+PKS,peaks,"pointed elevations atop a mountain, ridge, or other hypsographic features",T,,active,PEAKS
+PEAT,peat cutting area,an area where peat is harvested,L,,active,PEAT_CUTTING_AREA
+PEN,peninsula,an elongate area of land projecting into a body of water and nearly surrounded by water,T,,active,PENINSULA
+BSNP,petroleum basin,an area underlain by an oil-rich structural basin,L,,active,PETROLEUM_BASIN
+MFGPH,phosphate works,a facility for producing fertilizer,S,,active,PHOSPHATE_WORKS
+PIER,pier,a structure built out into navigable water on piles providing berthing for ships and recreation,S,,active,PIER
+GRVPN,pine grove,a planting of pine trees,V,,active,PINE_GROVE
+MNPL,placer mine(s),a place where heavy metals are concentrated and running water is used to extract them from unconsolidated sediments,S,,active,PLACER_MINE_S
+PLN,plain(s),"an extensive area of comparatively level to gently undulating land, lacking surface irregularities, and usually adjacent to a higher area",T,,active,PLAIN_S
+PLAT,plateau,"an elevated plain with steep slopes on one or more sides, and often with incised streams",T,,active,PLATEAU
+PT,point,"a tapering piece of land projecting into a body of water, less prominent than a cape",T,,active,POINT
+PTS,points,"tapering pieces of land projecting into a body of water, less prominent than a cape",T,,active,POINTS
+PLDR,polder,an area reclaimed from the sea by diking and draining,T,,active,POLDER
+PP,police post,a building in which police are stationed,S,,active,POLICE_POST
+PCL,political entity,political entity,A,,active,POLITICAL_ENTITY
+PND,pond,a small standing waterbody,H,,active,POND
+PNDS,ponds,small standing waterbodies,H,,active,PONDS
+POOL,pool(s),"a small and comparatively still, deep part of a larger body of water such as a stream or harbor; or a small body of standing water",H,,active,POOL_S
+PPLL,populated locality,an area similar to a locality but with a small group of dwellings or other buildings,P,,active,POPULATED_LOCALITY
+PPL,populated place,"a city, town, village, or other agglomeration of buildings where people live and work",P,,active,POPULATED_PLACE
+PPLS,populated places,"cities, towns, villages, or other agglomerations of buildings where people live and work",P,,active,POPULATED_PLACES
+PRT,port,"a place provided with terminal and transfer facilities for loading and discharging waterborne cargo or passengers, usually located in a harbor",L,,active,PORT
+PTGE,portage,"a place where boats, goods, etc., are carried overland between navigable waters",R,,active,PORTAGE
+PO,post office,"a public building in which mail is received, sorted and distributed",S,,active,POST_OFFICE
+PS,power station,a facility for generating electric power,S,,active,POWER_STATION
+PRN,prison,a facility for confining prisoners,S,,active,PRISON
+PRMN,promenade,"a place for public walking, usually along a beach front",R,,active,PROMENADE
+PROM,promontory(-ies),a bluff or prominent hill overlooking or projecting into a lowland,T,,active,PROMONTORY_IES
+PYR,pyramid,an ancient massive structure of square ground plan with four triangular faces meeting at a point and used for enclosing tombs,S,,active,PYRAMID
+PYRS,pyramids,ancient massive structures of square ground plan with four triangular faces meeting at a point and used for enclosing tombs,S,,active,PYRAMIDS
+MNQR,quarry(-ies),"a surface mine where building stone or gravel and sand, etc. are extracted",S,,active,QUARRY_IES
+QUAY,quay,a structure of solid construction along a shore or bank which provides berthing for ships and which generally provides cargo handling facilities,S,,active,QUAY
+QCKS,quicksand,"an area where loose sand with water moving through it may become unstable when heavy objects are placed at the surface, causing them to sink",L,,active,QUICKSAND
+RECR,racetrack,a track where races are held,S,,active,RACETRACK
+OBSR,radio observatory,a facility equipped with an array of antennae for receiving radio waves from space,S,,active,RADIO_OBSERVATORY
+STNR,radio station,a facility for producing and transmitting information by radio waves,S,,active,RADIO_STATION
+RR,railroad,a permanent twin steel-rail track on which freight and passenger cars move long distances,R,,active,RAILROAD
+RJCT,railroad junction,a place where two or more railroad tracks join,R,,active,RAILROAD_JUNCTION
+RSD,railroad siding,a short track parallel to and joining the main track,S,,active,RAILROAD_SIDING
+RSGNL,railroad signal,a signal at the entrance of a particular section of track governing the movement of trains,S,,active,RAILROAD_SIGNAL
+RSTN,railroad station,"a facility comprising ticket office, platforms, etc. for loading and unloading train passengers and freight",S,,active,RAILROAD_STATION
+RSTP,railroad stop,a place lacking station facilities where trains stop to pick up and unload passengers and freight,S,,active,RAILROAD_STOP
+TNLRR,railroad tunnel,a tunnel through which a railroad passes,R,,active,RAILROAD_TUNNEL
+RYD,railroad yard,"a system of tracks used for the making up of trains, and switching and storing freight cars",R,,active,RAILROAD_YARD
+RNCH,ranch(es),a large farm specializing in extensive grazing of livestock,S,,active,RANCH_ES
+RPDS,rapids,"a turbulent section of a stream associated with a steep, irregular stream bed",H,,active,RAPIDS
+RVN,ravine(s),"a small, narrow, deep, steep-sided stream channel, smaller than a gorge",H,,active,RAVINE_S
+RCH,reach,a straight section of a navigable stream or channel between two bends,H,,active,REACH
+RF,reef(s),a surface-navigation hazard composed of consolidated material,H,,active,REEF_S
+PRNJ,reformatory,"a facility for confining, training, and reforming young law offenders",S,,active,REFORMATORY
+CMPRF,refugee camp,a camp used by refugees,S,,active,REFUGEE_CAMP
+RGN,region,an area distinguished by one or more observable physical or cultural characteristics,L,,active,REGION
+CTRR,religious center,"a facility where more than one religious activity is carried out, e.g., retreat, school, monastery, worship",S,,active,RELIGIOUS_CENTER
+PPLR,religious populated place,a populated place whose population is largely engaged in religious occupations,P,,active,RELIGIOUS_POPULATED_PLACE
+RLG,religious site,an ancient site of significant religious importance,S,,active,RELIGIOUS_SITE
+ITTR,research institute,a facility where research is carried out,S,,active,RESEARCH_INSTITUTE
+RESV,reservation,"a tract of land set aside for aboriginal, tribal, or native populations",L,,active,RESERVATION
+RES,reserve,a tract of public land reserved for future use or restricted as to use,L,,active,RESERVE
+RSV,reservoir(s),an artificial pond or lake,H,,active,RESERVOIR_S
+RSRT,resort,"a specialized facility for vacation, health, or participation sports activities",S,,active,RESORT
+RHSE,resthouse,a structure maintained for the rest and shelter of travelers,S,,active,RESTHOUSE
+RLGR,retreat,"a place of temporary seclusion, especially for religious groups",S,,active,RETREAT
+RDGE,ridge(s),"a long narrow elevation with steep sides, and a more or less continuous crest",T,,active,RIDGE_S
+RD,road,"an open way with improved surface for transportation of animals, people and vehicles",R,,active,ROAD
+RDB,road bend,a conspicuously curved or bent section of a road,R,,active,ROAD_BEND
+RDCUT,road cut,an excavation cut through a hill or ridge for a road,R,,active,ROAD_CUT
+RDJCT,road junction,a place where two or more roads join,R,,active,ROAD_JUNCTION
+TNLRD,road tunnel,a tunnel through which a road passes,R,,active,ROAD_TUNNEL
+RDST,roadstead,an open anchorage affording less protection than a harbor,H,,active,ROADSTEAD
+RK,rock,"a conspicuous, isolated rocky mass",T,,active,ROCK
+HMDA,rock desert,"a relatively sand-free, high bedrock plateau in a hot desert, with or without a gravel veneer",T,,active,ROCK_DESERT
+RKFL,rockfall,an irregular mass of fallen rock at the base of a cliff or steep slope,T,,active,ROCKFALL
+RKS,rocks,"conspicuous, isolated rocky masses",T,,active,ROCKS
+RKRY,rookery,a breeding place of a colony of birds or seals,S,,active,ROOKERY
+ESTR,rubber plantation,an estate which specializes in growing and tapping rubber trees,S,,active,RUBBER_PLANTATION
+RUIN,ruin(s),a destroyed or decayed structure which is no longer functional,S,,active,RUIN_S
+BDGQ,ruined bridge,a destroyed or decayed bridge which is no longer functional,S,,active,RUINED_BRIDGE
+DAMQ,ruined dam,a destroyed or decayed dam which is no longer functional,S,,active,RUINED_DAM
+SBKH,sabkha(s),a salt flat or salt encrusted plain subject to periodic inundation from flooding or high tides,H,,active,SABKHA_S
+SDL,saddle,"a broad, open pass crossing a ridge or between hills or mountains",T,,active,SADDLE
+SALT,salt area,a shallow basin or flat where salt accumulates after periodic inundation,L,,active,SALT_AREA
+MFGN,salt evaporation ponds,diked salt ponds used in the production of solar evaporated salt,H,,active,SALT_EVAPORATION_PONDS
+LKN,salt lake,an inland body of salt water with no outlet,H,,active,SALT_LAKE
+LKSN,salt lakes,inland bodies of salt water with no outlet,H,,active,SALT_LAKES
+MRSHN,salt marsh,"a flat area, subject to periodic salt water inundation, dominated by grassy salt-tolerant plants",H,,active,SALT_MARSH
+MNN,salt mine(s),a mine from which salt is extracted,S,,active,SALT_MINE_S
+PNDN,salt pond,"a small standing body of salt water often in a marsh or swamp, usually along a seacoast",H,,active,SALT_POND
+PNDSN,salt ponds,"small standing bodies of salt water often in a marsh or swamp, usually along a seacoast",H,,active,SALT_PONDS
+SNTR,sanatorium,a facility where victims of physical or mental disorders are treated,S,,active,SANATORIUM
+SAND,sand area,a tract of land covered with sand,T,,active,SAND_AREA
+ERG,sandy desert,an extensive tract of shifting sand and sand dunes,T,,active,SANDY_DESERT
+STNS,satellite station,a facility for tracking and communicating with orbiting satellites,S,,active,SATELLITE_STATION
+MLSW,sawmill,a mill where logs or lumber are sawn to specified shapes and sizes,S,,active,SAWMILL
+SCH,school,building(s) where instruction in one or more branches of knowledge takes place,S,,active,SCHOOL
+ADMS,school district,school district,A,,active,SCHOOL_DISTRICT
+STNB,scientific research base,a scientific facility used as a base from which research is carried out or monitored,S,,active,SCIENTIFIC_RESEARCH_BASE
+SCRB,scrubland,"an area of low trees, bushes, and shrubs stunted by some environmental limitation",V,,active,SCRUBLAND
+SEA,sea,a large body of salt water more or less confined by continuous land or chains of islands forming a subdivision of an ocean,H,,active,SEA
+SCNU,seachannel,"a continuously sloping, elongated depression commonly found in fans or plains and customarily bordered by levees on one or two sides",U,,active,SEACHANNEL
+SCSU,seachannels,"continuously sloping, elongated depressions commonly found in fans or plains and customarily bordered by levees on one or two sides",U,,active,SEACHANNELS
+SMU,seamount,"an elevation rising generally more than 1,000 meters and of limited extent across the summit",U,,active,SEAMOUNT
+SMSU,seamounts,"elevations rising generally more than 1,000 meters and of limited extent across the summit",U,,active,SEAMOUNTS
+AIRS,seaplane landing area,a place on a waterbody where floatplanes land and take off,H,,active,SEAPLANE_LANDING_AREA
+PPLA,seat of a first-order administrative division,seat of a first-order administrative division (PPLC takes precedence over PPLA),P,,active,SEAT_OF_A_FIRST_ORDER_ADMINISTRATIVE_DIVISION
+PPLA4,seat of a fourth-order administrative division,seat of a fourth-order administrative division,P,,active,SEAT_OF_A_FOURTH_ORDER_ADMINISTRATIVE_DIVISION
+PPLA2,seat of a second-order administrative division,seat of a second-order administrative division,P,,active,SEAT_OF_A_SECOND_ORDER_ADMINISTRATIVE_DIVISION
+PPLA3,seat of a third-order administrative division,seat of a third-order administrative division,P,,active,SEAT_OF_A_THIRD_ORDER_ADMINISTRATIVE_DIVISION
+ADM2,second-order administrative division,a subdivision of a first-order administrative division,A,,active,SECOND_ORDER_ADMINISTRATIVE_DIVISION
+BNKX,section of bank,section of bank,H,,active,SECTION_OF_BANK
+CNLX,section of canal,section of canal,H,,active,SECTION_OF_CANAL
+ESTX,section of estate,section of estate,S,,active,SECTION_OF_ESTATE
+HBRX,section of harbor,section of harbor,H,,active,SECTION_OF_HARBOR
+PCLIX,section of independent political entity,section of independent political entity,A,,active,SECTION_OF_INDEPENDENT_POLITICAL_ENTITY
+STMIX,section of intermittent stream,section of intermittent stream,H,,active,SECTION_OF_INTERMITTENT_STREAM
+ISLX,section of island,section of island,T,,active,SECTION_OF_ISLAND
+LGNX,section of lagoon,section of lagoon,H,,active,SECTION_OF_LAGOON
+LKX,section of lake,section of lake,H,,active,SECTION_OF_LAKE
+PENX,section of peninsula,section of peninsula,T,,active,SECTION_OF_PENINSULA
+PLNX,section of plain,section of plain,T,,active,SECTION_OF_PLAIN
+PLATX,section of plateau,section of plateau,T,,active,SECTION_OF_PLATEAU
+PPLX,section of populated place,section of populated place,P,,active,SECTION_OF_POPULATED_PLACE
+RFX,section of reef,section of reef,H,,active,SECTION_OF_REEF
+STMX,section of stream,section of stream,H,,active,SECTION_OF_STREAM
+VALX,section of valley,section of valley,T,,active,SECTION_OF_VALLEY
+WADX,section of wadi,section of wadi,H,,active,SECTION_OF_WADI
+FLLSX,section of waterfall(s),section of waterfall(s),H,,active,SECTION_OF_WATERFALL_S
+PCLS,semi-independent political entity,semi-independent political entity,A,,active,SEMI_INDEPENDENT_POLITICAL_ENTITY
+SWT,sewage treatment plant,facility for the processing of sewage and/or wastewater,S,,active,SEWAGE_TREATMENT_PLANT
+SHPF,sheepfold,a fence or wall enclosure for sheep and other small herd animals,S,,active,SHEEPFOLD
+SHOL,shoal(s),a surface-navigation hazard composed of unconsolidated material,H,,active,SHOAL_S
+SHOPC,shopping center or mall,an urban shopping area featuring a variety of shops surrounding a usually open-air concourse reserved for pedestrian traffic; or a large suburban building or group of buildings containing various shops with associated passageways,S,,active,SHOPPING_CENTER_OR_MALL
+SHOR,shore,"a narrow zone bordering a waterbody which covers and uncovers at high and low water, respectively",T,,active,SHORE
+SHRN,shrine,a structure or place memorializing a person or religious concept,S,,active,SHRINE
+SILL,sill,the low part of a gap or saddle separating basins,H,,active,SILL
+SINK,sinkhole,a small crater-shape depression in a karst area,T,,active,SINKHOLE
+ESTSL,sisal plantation,an estate that specializes in growing sisal,S,,active,SISAL_PLANTATION
+SLID,slide,"a mound of earth material, at the base of a slope and the associated scoured area",T,,active,SLIDE
+SLP,slope(s),a surface with a relatively uniform slope angle,T,,active,SLOPE_S
+SLCE,sluice,"a conduit or passage for carrying off surplus water from a waterbody, usually regulated by means of a sluice gate",S,,active,SLUICE
+SNOW,snowfield,an area of permanent snow and ice forming the accumulation area of a glacier,L,,active,SNOWFIELD
+SD,sound,a long arm of the sea forming a channel between the mainland and an island or islands; or connecting two larger bodies of water,H,,active,SOUND
+SPA,spa,a resort area usually developed around a medicinal spring,S,,active,SPA
+CTRS,space center,"a facility for launching, tracking, or controlling satellites and space vehicles",S,,active,SPACE_CENTER
+SPLY,spillway,"a passage or outlet through which surplus water flows over, around or through a dam",S,,active,SPILLWAY
+SPIT,spit,"a narrow, straight or curved continuation of a beach into a waterbody",T,,active,SPIT
+SPNG,spring(s),a place where ground water flows naturally out of the ground,H,,active,SPRING_S
+SPUR,spur(s),"a subordinate ridge projecting outward from a hill, mountain or other elevation",T,,active,SPUR_S
+SQR,square,"a broad, open, public area near the center of a town or city",S,,active,SQUARE
+STBL,stable,"a building for the shelter and feeding of farm animals, especially horses",S,,active,STABLE
+STDM,stadium,a structure with an enclosure for athletic games with tiers of seats for spectators,S,,active,STADIUM
+STPS,steps,stones or slabs placed for ease in ascending or descending a steep slope,S,,active,STEPS
+STKR,stock route,a route taken by livestock herds,R,,active,STOCK_ROUTE
+REG,stony desert,a desert plain characterized by a surface veneer of gravel and stones,T,,active,STONY_DESERT
+RET,store,a building where goods and/or services are offered for sale,S,,active,STORE
+SHSE,storehouse,"a building for storing goods, especially provisions",S,,active,STOREHOUSE
+STRT,strait,"a relatively narrow waterway, usually narrower and less extensive than a sound, connecting two larger bodies of water",H,,active,STRAIT
+STM,stream,a body of running water moving to a lower level in a channel on land,H,,active,STREAM
+BNKR,stream bank,a sloping margin of a stream channel which normally confines the stream to its channel on land,H,,active,STREAM_BANK
+STMB,stream bend,a conspicuously curved or bent segment of a stream,H,,active,STREAM_BEND
+STMGS,stream gauging station,"named place where a measuring station for a watercourse, reservoir or other water body exists",S,,active,STREAM_GAUGING_STATION
+STMM,stream mouth(s),"a place where a stream discharges into a lagoon, lake, or the sea",H,,active,STREAM_MOUTH_S
+STMS,streams,bodies of running water moving to a lower level in a channel on land,H,,active,STREAMS
+ST,street,a paved urban thoroughfare,R,,active,STREET
+DAMSB,sub-surface dam,a dam put down to bedrock in a sand river,S,,active,SUB_SURFACE_DAM
+SUBW,subway,"a railroad used for mass public transportation primarily in urban areas, all or part of the system may be located below, above, or at ground level",S,,active,SUBWAY
+SUBS,subway station,"a facility comprising ticket office, platforms, etc. for loading and unloading subway passengers",S,,active,SUBWAY_STATION
+MLSG,sugar mill,a facility where sugar cane is processed into raw sugar,S,,active,SUGAR_MILL
+ESTSG,sugar plantation,an estate that specializes in growing sugar cane,S,,active,SUGAR_PLANTATION
+MFGSG,sugar refinery,a facility for converting raw sugar into refined sugar,S,,active,SUGAR_REFINERY
+SPNS,sulphur spring(s),a place where sulphur ground water flows naturally out of the ground,H,,active,SULPHUR_SPRING_S
+SWMP,swamp,a wetland dominated by tree vegetation,H,,active,SWAMP
+SYG,synagogue,a place for Jewish worship and religious instruction,S,,active,SYNAGOGUE
+TMTU,tablemount (or guyot),"a seamount having a comparatively smooth, flat top",U,,active,TABLEMOUNT_OR_GUYOT
+TMSU,tablemounts (or guyots),"seamounts having a comparatively smooth, flat top",U,,active,TABLEMOUNTS_OR_GUYOTS
+TAL,talus slope,a steep concave slope formed by an accumulation of loose rock fragments at the base of a cliff or steep slope,T,,active,TALUS_SLOPE
+OILT,tank farm,"a tract of land occupied by large, cylindrical, metal tanks in which oil or liquid petrochemicals are stored",S,,active,TANK_FARM
+ESTT,tea plantation,an estate which specializes in growing tea bushes,S,,active,TEA_PLANTATION
+SCHT,technical school,post-secondary school with a specifically technical or vocational curriculum,S,,active,TECHNICAL_SCHOOL
+TMPL,temple(s),an edifice dedicated to religious worship,S,,active,TEMPLE_S
+AIRT,terminal,airport facilities for the handling of freight and passengers,S,,active,TERMINAL
+TRR,terrace,"a long, narrow alluvial platform bounded by steeper slopes above and below, usually overlooking a waterbody",T,,active,TERRACE
+TERR,territory,territory,A,,active,TERRITORY
+ADM3,third-order administrative division,a subdivision of a second-order administrative division,A,,active,THIRD_ORDER_ADMINISTRATIVE_DIVISION
+CRKT,tidal creek(s),a meandering channel in a coastal wetland subject to bi-directional tidal currents,H,,active,TIDAL_CREEK_S
+FLTT,tidal flat(s),a large flat area of mud or sand attached to the shore and alternately covered and uncovered by the tide,H,,active,TIDAL_FLAT_S
+MNSN,tin mine(s),a mine where tin ore is extracted,S,,active,TIN_MINE_S
+TOLL,toll gate/barrier,highway toll collection station,S,,active,TOLL_GATE_BARRIER
+TMB,tomb(s),a structure for interring bodies,S,,active,TOMB_S
+TOWR,tower,"a high conspicuous structure, typically much higher than its diameter",S,,active,TOWER
+RDCR,traffic circle,a road junction formed around a central circle about which traffic moves in one direction only,S,,active,TRAFFIC_CIRCLE
+TRL,trail,"a path, track, or route used by pedestrians, animals, or off-road vehicles",R,,active,TRAIL
+TRANT,transit terminal,facilities for the handling of vehicular freight and passengers,S,,active,TRANSIT_TERMINAL
+TREE,tree(s),a conspicuous tree used as a landmark,V,,active,TREE_S
+TRIG,triangulation station,a point on the earth whose position has been determined by triangulation,S,,active,TRIANGULATION_STATION
+TRB,tribal area,a tract of land used by nomadic or other tribes,L,,active,TRIBAL_AREA
+TUND,tundra,"a marshy, treeless, high latitude plain, dominated by mosses, lichens, and low shrub vegetation under permafrost conditions",V,,active,TUNDRA
+TNL,tunnel,a subterranean passageway for transportation,R,,active,TUNNEL
+TNLS,tunnels,subterranean passageways for transportation,R,,active,TUNNELS
+CNLSB,underground irrigation canal(s),a gently inclined underground tunnel bringing water for irrigation from aquifers,H,,active,UNDERGROUND_IRRIGATION_CANAL_S
+LKSB,underground lake,a standing body of water in a cave,H,,active,UNDERGROUND_LAKE
+APNU,undersea apron,"a gentle slope, with a generally smooth surface, particularly found around groups of islands and seamounts",U,,active,UNDERSEA_APRON
+ARCU,undersea arch,a low bulge around the southeastern end of the island of Hawaii,U,,active,UNDERSEA_ARCH
+ARRU,undersea arrugado,an area of subdued corrugations off Baja California,U,,active,UNDERSEA_ARRUGADO
+BNKU,undersea bank,"an elevation, typically located on a shelf, over which the depth of water is relatively shallow but sufficient for safe surface navigation",U,,active,UNDERSEA_BANK
+BKSU,undersea banks,"elevations, typically located on a shelf, over which the depth of water is relatively shallow but sufficient for safe surface navigation",U,,active,UNDERSEA_BANKS
+BSNU,undersea basin,a depression more or less equidimensional in plan and of variable extent,U,,active,UNDERSEA_BASIN
+BNCU,undersea bench,a small terrace,U,,active,UNDERSEA_BENCH
+BDLU,undersea borderland,"a region adjacent to a continent, normally occupied by or bordering a shelf, that is highly irregular with depths well in excess of those typical of a shelf",U,,active,UNDERSEA_BORDERLAND
+CNYU,undersea canyon,"a relatively narrow, deep depression with steep sides, the bottom of which generally has a continuous slope",U,,active,UNDERSEA_CANYON
+CNSU,undersea canyons,"relatively narrow, deep depressions with steep sides, the bottom of which generally has a continuous slope",U,,active,UNDERSEA_CANYONS
+CDAU,undersea cordillera,"an entire mountain system including the subordinate ranges, interior plateaus, and basins",U,,active,UNDERSEA_CORDILLERA
+ESCU,undersea escarpment (or scarp),an elongated and comparatively steep slope separating flat or gently sloping areas,U,,active,UNDERSEA_ESCARPMENT_OR_SCARP
+FANU,undersea fan,a relatively smooth feature normally sloping away from the lower termination of a canyon or canyon system,U,,active,UNDERSEA_FAN
+FLTU,undersea flat,a small level or nearly level area,U,,active,UNDERSEA_FLAT
+FRKU,undersea fork,a branch of a canyon or valley,U,,active,UNDERSEA_FORK
+FRSU,undersea forks,a branch of a canyon or valley,U,,active,UNDERSEA_FORKS
+FRZU,undersea fracture zone,"an extensive linear zone of irregular topography of the sea floor, characterized by steep-sided or asymmetrical ridges, troughs, or escarpments",U,,active,UNDERSEA_FRACTURE_ZONE
+FURU,undersea furrow,"a closed, linear, narrow, shallow depression",U,,active,UNDERSEA_FURROW
+GAPU,undersea gap,a narrow break in a ridge or rise,U,,active,UNDERSEA_GAP
+GLYU,undersea gully,a small valley-like feature,U,,active,UNDERSEA_GULLY
+HLLU,undersea hill,an elevation rising generally less than 500 meters,U,,active,UNDERSEA_HILL
+HLSU,undersea hills,elevations rising generally less than 500 meters,U,,active,UNDERSEA_HILLS
+HOLU,undersea hole,a small depression of the sea floor,U,,active,UNDERSEA_HOLE
+KNLU,undersea knoll,"an elevation rising generally more than 500 meters and less than 1,000 meters and of limited extent across the summit",U,,active,UNDERSEA_KNOLL
+KNSU,undersea knolls,"elevations rising generally more than 500 meters and less than 1,000 meters and of limited extent across the summits",U,,active,UNDERSEA_KNOLLS
+LDGU,undersea ledge,"a rocky projection or outcrop, commonly linear and near shore",U,,active,UNDERSEA_LEDGE
+LEVU,undersea levee,"an embankment bordering a canyon, valley, or seachannel",U,,active,UNDERSEA_LEVEE
+MDVU,undersea median valley,the axial depression of the mid-oceanic ridge system,U,,active,UNDERSEA_MEDIAN_VALLEY
+MESU,undersea mesa,"an isolated, extensive, flat-topped elevation on the shelf, with relatively steep sides",U,,active,UNDERSEA_MESA
+MOTU,undersea moat,"an annular depression that may not be continuous, located at the base of many seamounts, islands, and other isolated elevations",U,,active,UNDERSEA_MOAT
+MNDU,undersea mound,"a low, isolated, rounded hill",U,,active,UNDERSEA_MOUND
+MTU,undersea mountain,a well-delineated subdivision of a large and complex positive feature,U,,active,UNDERSEA_MOUNTAIN
+MTSU,undersea mountains,well-delineated subdivisions of a large and complex positive feature,U,,active,UNDERSEA_MOUNTAINS
+PKU,undersea peak,"a prominent elevation, part of a larger feature, either pointed or of very limited extent across the summit",U,,active,UNDERSEA_PEAK
+PKSU,undersea peaks,"prominent elevations, part of a larger feature, either pointed or of very limited extent across the summit",U,,active,UNDERSEA_PEAKS
+PNLU,undersea pinnacle,"a high tower or spire-shaped pillar of rock or coral, alone or cresting a summit",U,,active,UNDERSEA_PINNACLE
+PLNU,undersea plain,"a flat, gently sloping or nearly level region",U,,active,UNDERSEA_PLAIN
+PLTU,undersea plateau,"a comparatively flat-topped feature of considerable extent, dropping off abruptly on one or more sides",U,,active,UNDERSEA_PLATEAU
+PLFU,undersea platform,a flat or gently sloping underwater surface extending seaward from the shore,U,,active,UNDERSEA_PLATFORM
+PRVU,undersea province,a region identifiable by a group of similar physiographic features whose characteristics are markedly in contrast with surrounding areas,U,,active,UNDERSEA_PROVINCE
+RMPU,undersea ramp,a gentle slope connecting areas of different elevations,U,,active,UNDERSEA_RAMP
+RNGU,undersea range,a series of associated ridges or seamounts,U,,active,UNDERSEA_RANGE
+RAVU,undersea ravine,a small canyon,U,,active,UNDERSEA_RAVINE
+RFU,undersea reef,a surface-navigation hazard composed of consolidated material,U,,active,UNDERSEA_REEF
+RFSU,undersea reefs,surface-navigation hazards composed of consolidated material,U,,active,UNDERSEA_REEFS
+RDGU,undersea ridge,a long narrow elevation with steep sides,U,,active,UNDERSEA_RIDGE
+RDSU,undersea ridges,long narrow elevations with steep sides,U,,active,UNDERSEA_RIDGES
+RISU,undersea rise,"a broad elevation that rises gently, and generally smoothly, from the sea floor",U,,active,UNDERSEA_RISE
+SDLU,undersea saddle,"a low part, resembling in shape a saddle, in a ridge or between contiguous seamounts",U,,active,UNDERSEA_SADDLE
+SHFU,undersea shelf,a zone adjacent to a continent (or around an island) that extends from the low water line to a depth at which there is usually a marked increase of slope towards oceanic depths,U,,active,UNDERSEA_SHELF
+EDGU,undersea shelf edge,a line along which there is a marked increase of slope at the outer margin of a continental shelf or island shelf,U,,active,UNDERSEA_SHELF_EDGE
+SHVU,undersea shelf valley,"a valley on the shelf, generally the shoreward extension of a canyon",U,,active,UNDERSEA_SHELF_VALLEY
+SHLU,undersea shoal,a surface-navigation hazard composed of unconsolidated material,U,,active,UNDERSEA_SHOAL
+SHSU,undersea shoals,hazards to surface navigation composed of unconsolidated material,U,,active,UNDERSEA_SHOALS
+SILU,undersea sill,"the low part of an underwater gap or saddle separating basins, including a similar feature at the mouth of a fjord",U,,active,UNDERSEA_SILL
+SLPU,undersea slope,the slope seaward from the shelf edge to the beginning of a continental rise or the point where there is a general reduction in slope,U,,active,UNDERSEA_SLOPE
+SPRU,undersea spur,"a subordinate elevation, ridge, or rise projecting outward from a larger feature",U,,active,UNDERSEA_SPUR
+TERU,undersea terrace,"a relatively flat horizontal or gently inclined surface, sometimes long and narrow, which is bounded by a steeper ascending slope on one side and by a steep descending slope on the opposite side",U,,active,UNDERSEA_TERRACE
+TNGU,undersea tongue,an elongate (tongue-like) extension of a flat sea floor into an adjacent higher feature,U,,active,UNDERSEA_TONGUE
+TRNU,undersea trench,"a long, narrow, characteristically very deep and asymmetrical depression of the sea floor, with relatively steep sides",U,,active,UNDERSEA_TRENCH
+TRGU,undersea trough,"a long depression of the sea floor characteristically flat bottomed and steep sided, and normally shallower than a trench",U,,active,UNDERSEA_TROUGH
+VALU,undersea valley,"a relatively shallow, wide depression, the bottom of which usually has a continuous gradient",U,,active,UNDERSEA_VALLEY
+VLSU,undersea valleys,"a relatively shallow, wide depression, the bottom of which usually has a continuous gradient",U,,active,UNDERSEA_VALLEYS
+USGE,United States Government Establishment,a facility operated by the United States Government in Panama,S,,active,UNITED_STATES_GOVERNMENT_ESTABLISHMENT
+UPLD,upland,an extensive interior region of high land with low to moderate surface relief,T,,active,UPLAND
+VAL,valley,an elongated depression usually traversed by a stream,T,,active,VALLEY
+VALS,valleys,elongated depressions usually traversed by a stream,T,,active,VALLEYS
+VETF,veterinary facility,a building or camp at which veterinary services are available,S,,active,VETERINARY_FACILITY
+VIN,vineyard,a planting of grapevines,V,,active,VINEYARD
+VINS,vineyards,plantings of grapevines,V,,active,VINEYARDS
+VLC,volcano,a conical elevation composed of volcanic materials with a crater at the top,T,,active,VOLCANO
+WAD,wadi,"a valley or ravine, bounded by relatively steep banks, which in the rainy season becomes a watercourse; found primarily in North Africa and the Middle East",H,,active,WADI
+WADB,wadi bend,a conspicuously curved or bent segment of a wadi,H,,active,WADI_BEND
+WADJ,wadi junction,a place where two or more wadies join,H,,active,WADI_JUNCTION
+WADM,wadi mouth,"the lower terminus of a wadi where it widens into an adjoining floodplain, depression, or waterbody",H,,active,WADI_MOUTH
+WADS,wadies,"valleys or ravines, bounded by relatively steep banks, which in the rainy season become watercourses; found primarily in North Africa and the Middle East",H,,active,WADIES
+WALL,wall,"a thick masonry structure, usually enclosing a field or building, or forming the side of a structure",S,,active,WALL
+MLWTR,water mill,a mill powered by running water,S,,active,WATER_MILL
+PMPW,water pumping station,a facility for pumping water from a major well or through a pipeline,S,,active,WATER_PUMPING_STATION
+RSVT,water tank,"a contained pool or tank of water at, below, or above ground level",H,,active,WATER_TANK
+WTRC,watercourse,"a natural, well-defined channel produced by flowing water, or an artificial channel designed to carry flowing water",H,,active,WATERCOURSE
+FLLS,waterfall(s),a perpendicular or very steep descent of the water of a stream,H,,active,WATERFALL_S
+WTRH,waterhole(s),"a natural hole, hollow, or small depression that contains water, used by man and animals, especially in arid areas",H,,active,WATERHOLE_S
+WTRW,waterworks,a facility for supplying potable water through a water source and a system of pumps and filtration beds,S,,active,WATERWORKS
+WEIR,weir(s),"a small dam in a stream, designed to raise the water level or to divert stream flow through a desired channel",S,,active,WEIR_S
+WLL,well,"a cylindrical hole, pit, or tunnel drilled or dug down to a depth from which water, oil, or gas can be pumped or brought to the surface",H,,active,WELL
+WLLS,wells,"cylindrical holes, pits, or tunnels drilled or dug down to a depth from which water, oil, or gas can be pumped or brought to the surface",H,,active,WELLS
+WTLD,wetland,"an area subject to inundation, usually characterized by bog, marsh, or swamp vegetation",H,,active,WETLAND
+STNW,whaling station,a facility for butchering whales and processing train oil,S,,active,WHALING_STATION
+WHRF,wharf(-ves),a structure of open rather than solid construction along a shore or a bank which provides berthing for ships and cargo-handling facilities,S,,active,WHARF_VES
+WHRL,whirlpool,"a turbulent, rotating movement of water in a stream",H,,active,WHIRLPOOL
+RESW,wildlife reserve,a tract of public land reserved for the preservation of wildlife,L,,active,WILDLIFE_RESERVE
+MLWND,windmill,a mill or water pump powered by wind,S,,active,WINDMILL
+WRCK,wreck,the site of the remains of a wrecked vessel,S,,active,WRECK
+ZN,zone,zone,A,,active,ZONE
+ZOO,zoo,a zoological garden or park where wild animals are kept for exhibition,S,,active,ZOO

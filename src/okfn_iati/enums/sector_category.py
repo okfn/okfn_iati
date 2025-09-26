@@ -50,10 +50,14 @@ class EnumFromCSV:
         for code, data in data.items():
             if code not in enum_dict:
                 enum_dict[code] = data["name"]
-
         return Enum(enum_name, enum_dict)
 
 
 class SectorCategoryData(EnumFromCSV):
     def __init__(self):
         super().__init__(csv_filename='sector-category-codes.csv', code_field='Code', name_field='Name')
+
+
+class LocationTypeData(EnumFromCSV):
+    def __init__(self):
+        super().__init__(csv_filename='location-type-codes.csv', code_field='Code', name_field='Name')
