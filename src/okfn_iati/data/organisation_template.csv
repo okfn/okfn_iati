@@ -1,0 +1,2 @@
+Organisation Identifier,Name,Reporting Org Ref,Reporting Org Type,Reporting Org Name,Budget Kind,Budget Status,Budget Period Start,Budget Period End,Budget Value,Currency,Value Date,Recipient Org Ref,Recipient Org Type,Recipient Org Name,Recipient Country Code,Recipient Region Code,Recipient Region Vocabulary,Document URL,Document Format,Document Title
+XM-DAC-46002,Sample Organisation,XM-DAC-46002,40,Sample Organisation,total-budget,2,2025-01-01,2025-12-31,1000000,USD,2025-01-01,,,,,,,https://example.org/annual-report,text/html,Annual Report
