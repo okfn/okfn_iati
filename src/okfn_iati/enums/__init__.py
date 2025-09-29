@@ -6,7 +6,7 @@ References:
 """
 from enum import Enum, IntEnum
 
-from okfn_iati.enums.sector_category import SectorCategoryData
+from okfn_iati.enums.csv import CRSChannelCodesData, SectorCategoryData
 
 
 class ActivityStatus(IntEnum):
@@ -443,6 +443,10 @@ class OrganisationType(Enum):
     OTHER = "90"
 
 
+# Long enums are handled from CSV files
+CRSChannelCodes = CRSChannelCodesData()
+
+
 class PolicyMarker(Enum):
     """
     Policy marker - gender equality, environment, etc.
@@ -486,7 +490,7 @@ class ResultType(Enum):
 
 
 # This is a huge list so we load it from a CSV file
-SectorCategory = SectorCategoryData.to_enum(enum_name="SectorCategory")
+SectorCategory = SectorCategoryData()
 
 
 class TiedStatus(Enum):

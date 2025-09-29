@@ -4,13 +4,12 @@ from typing import List, Optional, Dict, Any, Union
 
 from okfn_iati.enums import (
     ActivityStatus, ActivityScope, BudgetStatus, BudgetType,
-    ContactType, DocumentCategory, ActivityDateType,
+    ContactType, CRSChannelCodes, DocumentCategory, ActivityDateType,
     FinanceType, FlowType, GeographicalPrecision,
     LocationReach, LocationType, OrganisationRole, OrganisationType,
     RelatedActivityType,
     ResultType, SectorCategory, TiedStatus, TransactionType, LocationID
 )
-from okfn_iati.validators import crs_channel_code_validator
 
 
 @dataclass
@@ -64,6 +63,7 @@ class OrganizationRef:
 class ParticipatingOrg:
     """
     Organization participating in the activity.
+    See https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/participating-org/
 
     Args:
         role: Organization's role in the activity (see OrganisationRole enum)
@@ -71,7 +71,8 @@ class ParticipatingOrg:
         type: Optional organization type (see OrganisationType enum)
         activity_id: Optional activity identifier the organization is associated with
         crs_channel_code: Optional CRS channel code.
-            See codes https://iatistandard.org/en/iati-standard/203/codelists/crsaddotherflags/
+            See codes https://iatistandard.org/en/iati-standard/203/codelists/crschannelcode/
+            CRS stands for Creditor Reporting System
         narratives: List of narrative elements with organization names
 
     References:
@@ -103,7 +104,7 @@ class ParticipatingOrg:
                 errors.append(f"Invalid organization type: {self.type}. Valid values are: {org_types}")
 
         # Validate CRS channel code
-        if self.crs_channel_code is not None and not crs_channel_code_validator.is_valid_code(self.crs_channel_code):
+        if self.crs_channel_code and self.crs_channel_code not in CRSChannelCodes:
             errors.append(f"Invalid CRS channel code: {self.crs_channel_code}")
 
         if errors:
@@ -538,9 +539,7 @@ class Activity:
         for sector in self.sectors:
             if "code" in sector and isinstance(sector["code"], str):
                 # Optionally validate against SectorCategory if code format matches
-                try:
-                    sector = getattr(SectorCategory, sector["code"])
-                except AttributeError:
+                if sector["code"] not in SectorCategory:
                     raise ValueError(f"Invalid sector code: {sector['code']}")
 
         # Convert activity_scope to enum if it's a string
