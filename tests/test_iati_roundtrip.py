@@ -48,7 +48,7 @@ def pretty_diff(text_a: str, text_b: str, fromfile="original", tofile="generated
 class TestIatiRoundtripSplit(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        # Asegura que existen los fixtures base
+        # Ensure base fixtures exist
         if not SAMPLE_XML.exists():
             raise unittest.SkipTest(f"Missing sample XML at {SAMPLE_XML}")
         if not SAMPLE_CSV.exists():
