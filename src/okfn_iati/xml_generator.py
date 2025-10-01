@@ -32,11 +32,32 @@ class IatiXmlGenerator:
             element.set(name, str(value))
 
     def _create_narrative_elements(self, parent_element: ET.Element, narratives: List[Narrative]) -> None:
+        """
+        Create <narrative> elements under the given parent.
+        Accepts either Narrative dataclass instances or dicts with keys 'text' and optional 'lang'.
+        """
+        if not narratives:
+            return
+
         for narrative in narratives:
             narrative_el = ET.SubElement(parent_element, "narrative")
-            narrative_el.text = narrative.text
-            if narrative.lang:
-                narrative_el.set("xml:lang", narrative.lang)
+
+            # Handle Narrative dataclass
+            if hasattr(narrative, "text"):
+                narrative_el.text = narrative.text
+                if getattr(narrative, "lang", None):
+                    narrative_el.set("{http://www.w3.org/XML/1998/namespace}lang", narrative.lang)
+
+            # Handle dict
+            elif isinstance(narrative, dict):
+                narrative_el.text = narrative.get("text", "")
+                lang = narrative.get("lang")
+                if lang:
+                    narrative_el.set("{http://www.w3.org/XML/1998/namespace}lang", lang)
+
+            # Fallback
+            else:
+                narrative_el.text = str(narrative)
 
     def _add_organization_ref(self, parent_element: ET.Element, org: OrganizationRef) -> ET.Element:
         if org.ref:
