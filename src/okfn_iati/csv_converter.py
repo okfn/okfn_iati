@@ -30,8 +30,6 @@ from .enums import (
 )
 from .xml_generator import IatiXmlGenerator
 
-logging.basicConfig(level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
-
 
 logger = logging.getLogger(__name__)
 
@@ -616,10 +614,10 @@ class IatiCsvConverter:
 
                 # Verificamos si el valor es una fecha antes de convertirlo a número
                 if self._looks_like_date(trans_data['value']):
-                    print("Warning: Transaction value looks like a date, setting to None")
+                    logger.info("Warning: Transaction value looks like a date, setting to None")
                     trans_data['value'] = None
                 else:
-                    print("Converting transaction value to float")
+                    logger.info("Converting transaction value to float")
                     trans_data['value'] = self._to_float(trans_data['value'])
 
                 desc_elem = transaction.find('description/narrative')
