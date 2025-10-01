@@ -55,7 +55,7 @@ class TestIatiRoundtripSplit(unittest.TestCase):
             raise unittest.SkipTest(f"Missing sample CSV at {SAMPLE_CSV}")
 
     def setUp(self):
-        # temp dir por test para aislar artefactos
+        # temp dir per test to isolate artifacts
         self._tmp = tempfile.TemporaryDirectory()
         self.tmp = Path(self._tmp.name)
 
@@ -97,7 +97,7 @@ class TestIatiRoundtripSplit(unittest.TestCase):
 
     # ---------- 4) Multi-CSV folder -> XML (+ validation)
     def test_csv_folder_to_xml_and_validate(self):
-        # primero generamos la carpeta multi-CSV
+        # first generate the multi-CSV folder
         folder = self.tmp / "from_xml_multi"
         ok = IatiMultiCsvConverter().xml_to_csv_folder(str(SAMPLE_XML), str(folder))
         self.assertTrue(ok, "xml_to_csv_folder returned False")
@@ -119,7 +119,7 @@ class TestIatiRoundtripSplit(unittest.TestCase):
         IatiCsvConverter().xml_to_csv(str(mid_xml), str(roundtrip_csv))
         assert_file_exists(roundtrip_csv)
 
-        # Comparación de campos clave
+        # Key field comparison
         original_row = read_csv_first_row(SAMPLE_CSV)
         recovered_row = read_csv_first_row(roundtrip_csv)
         must_match = [
