@@ -470,6 +470,7 @@ class IatiOrganisationCSVConverter:
     This class provides methods to:
     1. Read organisation data from CSV/Excel files
     2. Generate IATI-compliant organisation XML files
+    3. Process multiple organisation files in batch
     """
 
     # Define field name mappings for CSV columns
@@ -716,6 +717,131 @@ class IatiOrganisationCSVConverter:
             logger.error(f"Failed to convert {input_file} to IATI XML: {str(e)}")
             raise ValueError(f"Conversion failed: {str(e)}")
 
+    def read_multiple_from_folder(self, folder_path: Union[str, Path]) -> List[OrganisationRecord]:
+        """
+        Read organisation data from multiple CSV/Excel files in a folder.
+
+        Args:
+            folder_path: Path to folder containing CSV or Excel files
+
+        Returns:
+            List[OrganisationRecord]: List of organisation records from all files
+
+        Raises:
+            ValueError: If folder doesn't exist or contains no valid files
+        """
+        folder_path = Path(folder_path)
+
+        if not folder_path.exists():
+            raise ValueError(f"Folder does not exist: {folder_path}")
+
+        if not folder_path.is_dir():
+            raise ValueError(f"Path is not a directory: {folder_path}")
+
+        # Find all CSV and Excel files
+        file_patterns = ["*.csv", "*.xlsx", "*.xls"]
+        files = []
+        for pattern in file_patterns:
+            files.extend(folder_path.glob(pattern))
+
+        if not files:
+            raise ValueError(f"No CSV or Excel files found in folder: {folder_path}")
+
+        organisations = []
+        processed_files = []
+        failed_files = []
+
+        for file_path in sorted(files):
+            try:
+                logger.info(f"Processing organisation file: {file_path.name}")
+                record = self.read_from_file(file_path)
+                organisations.append(record)
+                processed_files.append(file_path.name)
+            except Exception as e:
+                logger.warning(f"Failed to process {file_path.name}: {str(e)}")
+                failed_files.append((file_path.name, str(e)))
+                continue
+
+        if not organisations:
+            raise ValueError(
+                f"No valid organisation data found in folder {folder_path}. "
+                f"Failed files: {failed_files}"
+            )
+
+        logger.info(
+            f"Successfully processed {len(processed_files)} organisation files. "
+            f"Failed: {len(failed_files)}"
+        )
+
+        if failed_files:
+            logger.warning(f"Failed to process files: {failed_files}")
+
+        return organisations
+
+    def convert_folder_to_xml(
+            self,
+            input_folder: Union[str, Path],
+            output_file: Union[str, Path]
+    ) -> str:
+        """
+        Convert multiple organisation CSV/Excel files to a single IATI XML file.
+
+        Args:
+            input_folder: Path to folder containing CSV or Excel files
+            output_file: Path to output XML file
+
+        Returns:
+            str: Path to generated XML file
+
+        Raises:
+            ValueError: If conversion fails
+        """
+        try:
+            # Read all organisation records from folder
+            records = self.read_multiple_from_folder(input_folder)
+
+            # Generate XML with all organisations
+            root = self.xml_generator.build_root_element()
+
+            for record in records:
+                self.xml_generator.add_organisation(root, record)
+
+            # Save XML to file
+            output_path = Path(output_file)
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            self.xml_generator.save_to_file(root, output_path)
+
+            logger.info(
+                f"Successfully generated IATI organisation XML with {len(records)} organisations: {output_path}"
+            )
+            return str(output_path)
+
+        except Exception as e:
+            logger.error(f"Failed to convert folder {input_folder} to IATI XML: {str(e)}")
+            raise ValueError(f"Folder conversion failed: {str(e)}")
+
+    def validate_organisation_identifiers(self, records: List[OrganisationRecord]) -> List[str]:
+        """
+        Check for duplicate organisation identifiers in a list of records.
+
+        Args:
+            records: List of organisation records to validate
+
+        Returns:
+            List of duplicate organisation identifiers found
+        """
+        seen_identifiers = set()
+        duplicates = set()
+
+        for record in records:
+            identifier = record.org_identifier
+            if identifier in seen_identifiers:
+                duplicates.add(identifier)
+            else:
+                seen_identifiers.add(identifier)
+
+        return list(duplicates)
+
     def generate_template(self, output_file: Union[str, Path], with_examples: bool = True) -> None:
         """
         Generate a CSV template for IATI organisation data.
@@ -828,8 +954,12 @@ def main():
 
     # Convert command
     convert_parser = subparsers.add_parser("convert", help="Convert CSV/Excel to IATI XML")
-    convert_parser.add_argument("input", help="Input CSV or Excel file")
+    convert_parser.add_argument("input", help="Input CSV/Excel file or folder")
     convert_parser.add_argument("output", help="Output XML file")
+    convert_parser.add_argument(
+        "--folder", action="store_true",
+        help="Process all CSV/Excel files in input folder"
+    )
 
     # Template command
     template_parser = subparsers.add_parser("template", help="Generate a CSV template")
@@ -839,16 +969,45 @@ def main():
         help="Don't include example data"
     )
 
+    # Validate command
+    validate_parser = subparsers.add_parser("validate", help="Validate organisation data")
+    validate_parser.add_argument("input", help="Input CSV/Excel file or folder")
+    validate_parser.add_argument(
+        "--folder", action="store_true",
+        help="Process all CSV/Excel files in input folder"
+    )
+
     args = parser.parse_args()
     converter = IatiOrganisationCSVConverter()
 
     if args.command == "convert":
-        output = converter.convert_to_xml(args.input, args.output)
+        if args.folder:
+            output = converter.convert_folder_to_xml(args.input, args.output)
+        else:
+            output = converter.convert_to_xml(args.input, args.output)
         print(f"✅ Successfully converted to: {output}")
 
     elif args.command == "template":
         converter.generate_template(args.output, not args.no_examples)
         print(f"✅ Generated template: {args.output}")
+
+    elif args.command == "validate":
+        try:
+            if args.folder:
+                records = converter.read_multiple_from_folder(args.input)
+            else:
+                records = [converter.read_from_file(args.input)]
+
+            # Check for duplicates
+            duplicates = converter.validate_organisation_identifiers(records)
+
+            if duplicates:
+                print(f"❌ Found duplicate organisation identifiers: {duplicates}")
+            else:
+                print(f"✅ Validation passed for {len(records)} organisation(s)")
+
+        except Exception as e:
+            print(f"❌ Validation failed: {e}")
 
     else:
         parser.print_help()
@@ -868,6 +1027,12 @@ General help:
 Generate a CSV template:
     python src/okfn_iati/organisation_xml_generator.py template test_template.csv
 
-Convert CSV to XML:
+Convert single CSV to XML:
     python src/okfn_iati/organisation_xml_generator.py convert test_template.csv test_output.xml
+
+Convert folder of CSV files to XML:
+    python src/okfn_iati/organisation_xml_generator.py convert --folder /path/to/csv/folder output.xml
+
+Validate organisation data:
+    python src/okfn_iati/organisation_xml_generator.py validate --folder /path/to/csv/folder
 """
