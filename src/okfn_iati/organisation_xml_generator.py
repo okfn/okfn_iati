@@ -1122,7 +1122,8 @@ class IatiOrganisationMultiCsvConverter:
         # Generate organisations.csv template
         org_columns = [
             'organisation_identifier', 'name', 'reporting_org_ref',
-            'reporting_org_type', 'reporting_org_name', 'default_currency'
+            'reporting_org_type', 'reporting_org_name', 'reporting_org_lang',
+            'default_currency', 'xml_lang'
         ]
 
         with open(output_path / "organisations.csv", 'w', newline='', encoding='utf-8') as f:
@@ -1136,7 +1137,9 @@ class IatiOrganisationMultiCsvConverter:
                     'XM-DAC-46002',
                     '40',
                     'Central American Bank for Economic Integration',
-                    'USD'
+                    'en',  # reporting_org_lang
+                    'USD',
+                    'en'   # xml_lang
                 ])
 
         # Generate budgets.csv template
@@ -1212,9 +1215,14 @@ class IatiOrganisationMultiCsvConverter:
 
             rep_org_name = rep_org_elem.find('narrative')
             data['reporting_org_name'] = rep_org_name.text if rep_org_name is not None else ''
+            # Preserve language attribute from reporting org narrative
+            data['reporting_org_lang'] = rep_org_name.get('{http://www.w3.org/XML/1998/namespace}lang', '') if rep_org_name is not None else ''
 
         # Default currency
         data['default_currency'] = org_elem.get('default-currency', 'USD')
+
+        # Preserve xml:lang from the organisation element
+        data['xml_lang'] = org_elem.get('{http://www.w3.org/XML/1998/namespace}lang', 'en')
 
         return data
 
@@ -1420,7 +1428,8 @@ class IatiOrganisationMultiCsvConverter:
 
         columns = [
             'organisation_identifier', 'name', 'reporting_org_ref',
-            'reporting_org_type', 'reporting_org_name', 'default_currency'
+            'reporting_org_type', 'reporting_org_name', 'reporting_org_lang',
+            'default_currency', 'xml_lang'
         ]
 
         with open(output_path, 'w', newline='', encoding='utf-8') as f:
@@ -1545,7 +1554,11 @@ class IatiOrganisationMultiCsvConverter:
             name=basic_info['name'],
             reporting_org_ref=basic_info.get('reporting_org_ref', ''),
             reporting_org_type=basic_info.get('reporting_org_type', ''),
-            reporting_org_name=basic_info.get('reporting_org_name', '')
+            reporting_org_name=basic_info.get('reporting_org_name', ''),
+            # Store language attributes for later use in XML generation
+            reporting_org_lang=basic_info.get('reporting_org_lang', ''),
+            xml_lang=basic_info.get('xml_lang', 'en'),
+            default_currency=basic_info.get('default_currency', 'USD')
         )
 
         # Add budgets
@@ -1731,7 +1744,21 @@ Validate organisation data:
 Convert XML to multi-CSV folder:
     python src/okfn_iati/organisation_xml_generator.py xml-to-csv-folder input.xml output_folder
     Real life sample
-    python src/okfn_iati/organisation_xml_generator.py xml-to-csv-folder data-samples/organization-files/3fi-org.xml data-samples/csv_folders_org/3fi
+    python src/okfn_iati/organisation_xml_generator.py xml-to-csv-folder \
+        data-samples/organization-files/3fi-org.xml \
+        data-samples/csv_folders_org/3fi
     and back to xml
-    python src/okfn_iati/organisation_xml_generator.py csv-folder-to-xml data-samples/csv_folders_org/3fi data-samples/organization-files/3fi-org-back.xml
+    python src/okfn_iati/organisation_xml_generator.py csv-folder-to-xml \
+        data-samples/csv_folders_org/3fi \
+        data-samples/organization-files/3fi-org-back.xml
+
+    Also
+        python src/okfn_iati/organisation_xml_generator.py xml-to-csv-folder \
+            data-samples/organization-files/ares-org.xml \
+            data-samples/csv_folders_org/ares-org
+        and back with
+        python src/okfn_iati/organisation_xml_generator.py csv-folder-to-xml \
+            data-samples/csv_folders_org/ares-org/ \
+            data-samples/organization-files/ares-org-back.xml
+
 """
