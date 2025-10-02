@@ -92,7 +92,7 @@ __all__ = [
 
     # Organisation XML Generator
     'IatiOrganisationCSVConverter',
-    'IatiOrganisationXMLGenerator', 
+    'IatiOrganisationXMLGenerator',
     'IatiOrganisationMultiCsvConverter',  # Add this line
     'OrganisationRecord',
     'OrganisationBudget',
