@@ -280,7 +280,7 @@ class IatiOrganisationXMLGenerator:
         )
         # Use the preserved xml:lang from the record
         _set_attribute(org_el, "xml:lang", record.xml_lang or "en")
-        
+
         # Add default currency if available
         if record.default_currency:
             _set_attribute(org_el, "default-currency", record.default_currency)
