@@ -36,7 +36,15 @@ from .xml_generator import IatiXmlGenerator
 from .csv_converter import IatiCsvConverter
 from .multi_csv_converter import IatiMultiCsvConverter
 from .iati_schema_validator import IatiValidator
-from .organisation_xml_generator import IatiOrganisationCSVConverter, IatiOrganisationXMLGenerator
+from .organisation_xml_generator import (
+    IatiOrganisationCSVConverter,
+    IatiOrganisationXMLGenerator,
+    IatiOrganisationMultiCsvConverter,
+    OrganisationRecord,
+    OrganisationBudget,
+    OrganisationExpenditure,
+    OrganisationDocument
+)
 
 __all__ = [
     # Models
@@ -84,5 +92,10 @@ __all__ = [
 
     # Organisation XML Generator
     'IatiOrganisationCSVConverter',
-    'IatiOrganisationXMLGenerator'
+    'IatiOrganisationXMLGenerator', 
+    'IatiOrganisationMultiCsvConverter',  # Add this line
+    'OrganisationRecord',
+    'OrganisationBudget',
+    'OrganisationExpenditure',
+    'OrganisationDocument',
 ]
