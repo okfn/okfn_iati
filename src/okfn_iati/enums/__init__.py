@@ -6,7 +6,7 @@ References:
 """
 from enum import Enum, IntEnum
 
-from okfn_iati.enums.sector_category import SectorCategoryData
+from okfn_iati.enums.sector_category import SectorCategoryData, LocationTypeData
 
 
 class ActivityStatus(IntEnum):
@@ -31,10 +31,24 @@ class AidType(Enum):
     BUDGET_SUPPORT_GENERAL = "A01"
     # Sector Budget Support
     BUDGET_SUPPORT_SECTOR = "A02"
+    # Basket Funds / Pooled Funding
+    BASKET_FUNDS_POOLED_FUNDING = "B04"
     # Core Support to NGOs
     CORE_SUPPORT_NGOS = "B01"
     # Core Support to International Organizations
     CORE_SUPPORT_MULTILATERAL = "B02"
+    # Core Contributions to Multilateral Institutions
+    CORE_CONTRIBUTIONS_TO_MULTILATERAL_INSTITUTIONS = "B021"
+    # Core Contributions to Global Funds
+    CORE_CONTRIBUTIONS_TO_GLOBAL_FUNDS = "B022"
+    # Contributions to Specific Purpose Programmes and Funds
+    CONTRIBUTIONS_TO_SPECIFIC_PURPOSE_PROGRAMMES_AND_FUNDS = "B03"
+    # Contributions to Multi-donor, Multi-entity Funds
+    CONTRIBUTIONS_TO_MULTI_DONOR_MULTI_ENTITY = "B031"
+    # Contributions to Multi-donor, Single-entity Funds
+    CONTRIBUTIONS_TO_MULTI_DONOR_SINGLE_ENTITY = "B032"
+    # Contributions to Single Donor or Earmarked Funds
+    CONTRIBUTIONS_TO_SINGLE_DONOR_OR_EARMARKED = "B033"
     # Project-type Interventions
     PROJECT_TYPE = "C01"
     # Donor Country Personnel
@@ -42,7 +56,11 @@ class AidType(Enum):
     # Other Technical Assistance
     OTHER_TECHNICAL_ASSISTANCE = "D02"
     # Debt Relief
-    DEBT_RELIEF = "E01"
+    DEBT_RELIEF = "F01"
+    # Scholarships/training in donor country
+    SCHOLARSHIPS_TRAINING_IN_DONOR_COUNTRY = "E01"
+    # Imputed student costs
+    IMPUTED_STUDENT_COSTS = "E02"
     # Administrative Costs
     ADMINISTRATIVE_COSTS = "G01"
     # Development Awareness
@@ -58,7 +76,7 @@ class AidType(Enum):
     # In-kind Transfers
     IN_KIND_TRANSFERS = "H06"
     # In-kind Vouchers
-    IN_KIND_VOUCHERS = "H07"
+    # IN_KIND_VOUCHERS = "H07"
 
 
 class BudgetIdentifier(Enum):
@@ -66,110 +84,310 @@ class BudgetIdentifier(Enum):
     International budget identifier to track financial expenditures.
     Reference: https://iatistandard.org/en/iati-standard/203/codelists/budgetidentifier/
     """
-    # Administration services
-    ADMIN = "1.1"
-    # Executive services
-    EXECUTIVE = "1.2"
-    # Public financial management
-    PFM = "1.3"
-    # Legal and judicial development
-    LEGAL = "1.4"
-    # Government administration
-    GOVT_ADMIN = "1.5"
-    # General personnel services
-    PERSONNEL = "1.6"
-    # Overall planning and statistical services
-    PLANNING = "1.7"
-    # Foreign affairs
-    FOREIGN_AFFAIRS = "1.8"
-    # Not applicable
-    NOT_APPLICABLE = "1.9"
-    # Unassigned
-    UNASSIGNED = "1.A"
-    # External affairs
-    EXTERNAL_AFFAIRS = "1.B"
-    # Accountability
-    ACCOUNTABILITY = "1.C"
-    # Police
-    POLICE = "2.1"
-    # Fire protection services
-    FIRE = "2.2"
-    # Justice
-    JUSTICE = "2.A"
-    # Prisons
-    PRISONS = "2.B"
-    # Other law and order
-    OTHER_LAW_ORDER = "2.C"
-    # Primary education
-    EDUCATION_PRIMARY = "3.1"
-    # Secondary education
-    EDUCATION_SECONDARY = "3.2"
-    # Tertiary education
-    EDUCATION_TERTIARY = "3.3"
-    # Pre-school education
-    EDUCATION_PRESCHOOL = "3.4"
-    # Vocational training
-    EDUCATION_VOCATIONAL = "3.5"
-    # Education for disadvantaged children
-    EDUCATION_DISADVANTAGED = "3.A"
-    # Education not elsewhere classified
-    EDUCATION_NEC = "3.B"
-    # Health
-    HEALTH = "4.1"
-    # Education and training in health
-    HEALTH_EDUCATION = "4.2"
-    # Social security (excluding pensions)
-    SOCIAL_SECURITY = "5.1"
-    # Private pension schemes
-    PENSION_PRIVATE = "5.2"
-    # Social assistance to households
-    SOCIAL_ASSISTANCE = "5.3"
-    # Public pension schemes
-    PENSION_PUBLIC = "5.4"
-    # Social protection and welfare services policy
-    SOCIAL_WELFARE_POLICY = "5.A"
-    # Housing
-    HOUSING = "6.1"
-    # Community development
-    COMMUNITY_DEV = "6.2"
-    # Water supply and sanitation
-    WATER_SANITATION = "6.3"
-    # Housing policy
-    HOUSING_POLICY = "6.A"
-    # Recreational and sporting services
-    RECREATION_SPORTS = "7.1"
-    # Culture
-    CULTURE = "7.2"
-    # Broadcasting and publishing
-    BROADCASTING = "7.3"
-    # Recreation and culture
-    RECREATION_CULTURE = "7.A"
-    # Fuel and energy
-    FUEL_ENERGY = "8.1"
-    # Agriculture
-    AGRICULTURE = "8.2"
-    # Mining and mineral development
-    MINING = "8.3"
-    # Transport
-    TRANSPORT = "8.4"
-    # Communications
-    COMMUNICATIONS = "8.5"
-    # Industries
-    INDUSTRIES = "8.6"
-    # Tourism
-    TOURISM = "8.7"
-    # Environment protection
-    ENVIRONMENT = "8.8"
-    # Commerce and business
-    COMMERCE = "8.A"
-    # Research and development - economic affairs
-    RD_ECONOMIC = "8.B"
-    # Environment
-    ENVIRONMENT_GENERAL = "8.C"
-    # Not defined/unallocated budget identifier
-    NOT_DEFINED = "9.1"
-    # Not applicable
-    NA = "9.2"
+    # Executive - executive
+    EXECUTIVE_EXECUTIVE = "1.1.1"
+    # Legislative - legislative
+    LEGISLATIVE_LEGISLATIVE = "1.2.1"
+    # Accountability - macroeconomic policy
+    ACCOUNTABILITY_MACROECONOMIC_POLICY = "1.3.1"
+    # Accountability - budgeting
+    ACCOUNTABILITY_BUDGETING = "1.3.2"
+    # Accountability - planning
+    ACCOUNTABILITY_PLANNING = "1.3.3"
+    # Accountability - Treasury/Accounts
+    ACCOUNTABILITY_TREASURY_ACCOUNTS = "1.3.4"
+    # Accountability - debt and aid management
+    ACCOUNTABILITY_DEBT_AND_AID_MANAGEMENT = "1.3.5"
+    # Accountability - tax policy
+    ACCOUNTABILITY_TAX_POLICY = "1.3.6"
+    # Accountability - tax collection
+    ACCOUNTABILITY_TAX_COLLECTION = "1.3.7"
+    # Accountability - local government finance
+    ACCOUNTABILITY_LOCAL_GOVERNMENT_FINANCE = "1.3.8"
+    # Accountability - other central transfers to institutions
+    ACCOUNTABILITY_OTHER_CENTRAL_TRANSFERS_TO_INSTITUTIONS = "1.3.9"
+    # Accountability - national audit
+    ACCOUNTABILITY_NATIONAL_AUDIT = "1.3.10"
+    # Accountability - national monitoring and evaluation
+    ACCOUNTABILITY_NATIONAL_MONITORING_AND_EVALUATION = "1.3.11"
+    # Accountability - monetary institutions
+    ACCOUNTABILITY_MONETARY_INSTITUTIONS = "1.3.12"
+    # Accountability - financial sector policy and regulation
+    ACCOUNTABILITY_FINANCIAL_SECTOR_POLICY_AND_REGULATION = "1.3.13"
+    # External Affairs - foreign affairs
+    EXTERNAL_AFFAIRS_FOREIGN_AFFAIRS = "1.4.1"
+    # External Affairs - diplomatic missions
+    EXTERNAL_AFFAIRS_DIPLOMATIC_MISSIONS = "1.4.2"
+    # External Affairs - official development assistance
+    EXTERNAL_AFFAIRS_OFFICIAL_DEVELOPMENT_ASSISTANCE = "1.4.3"
+    # General Personnel Services - general personnel services
+    GENERAL_PERSONNEL_SERVICES_GENERAL_PERSONNEL_SERVICES = "1.5.1"
+    # Statistics - statistics
+    STATISTICS_STATISTICS = "1.6.1"
+    # Other General Services - support to civil society
+    OTHER_GENERAL_SERVICES_SUPPORT_TO_CIVIL_SOCIETY = "1.7.1"
+    # Other General Services - central procurement
+    OTHER_GENERAL_SERVICES_CENTRAL_PROCUREMENT = "1.7.2"
+    # Other General Services - Local Government Administration
+    OTHER_GENERAL_SERVICES_LOCAL_GOVERNMENT_ADMINISTRATION = "1.7.3"
+    # Other General Services - other general services
+    OTHER_GENERAL_SERVICES_OTHER_GENERAL_SERVICES = "1.7.4"
+    # Elections - elections
+    ELECTIONS_ELECTIONS = "1.8.1"
+    # Justice, Law and Order - policy, planning and administration
+    JUSTICE_LAW_AND_ORDER_POLICY_PLANNING_AND_ADMINISTRATION = "2.1.1"
+    # Justice, Law and Order - fire or police
+    JUSTICE_LAW_AND_ORDER_FIRE_OR_POLICE = "2.1.2"
+    # Justice, Law and Order - judicial affairs
+    JUSTICE_LAW_AND_ORDER_JUDICIAL_AFFAIRS = "2.1.3"
+    # Justice, Law and Order - Ombudsman
+    JUSTICE_LAW_AND_ORDER_OMBUDSMAN = "2.1.4"
+    # Justice, Law and Order - human rights affairs
+    JUSTICE_LAW_AND_ORDER_HUMAN_RIGHTS_AFFAIRS = "2.1.5"
+    # Justice, Law and Order - immigration
+    JUSTICE_LAW_AND_ORDER_IMMIGRATION = "2.1.6"
+    # Justice, Law and Order - anti corruption
+    JUSTICE_LAW_AND_ORDER_ANTI_CORRUPTION = "2.1.7"
+    # Justice, Law and Order - prisons
+    JUSTICE_LAW_AND_ORDER_PRISONS = "2.1.8"
+    # Justice, Law and Order - peace building
+    JUSTICE_LAW_AND_ORDER_PEACE_BUILDING = "2.1.9"
+    # Justice, Law and Order - demobilisation
+    JUSTICE_LAW_AND_ORDER_DEMOBILISATION = "2.1.10"
+    # Defence - policy, planning and administration
+    DEFENCE_POLICY_PLANNING_AND_ADMINISTRATION = "2.2.1"
+    # Defence - military
+    DEFENCE_MILITARY = "2.2.2"
+    # Defence - civil defence
+    DEFENCE_CIVIL_DEFENCE = "2.2.3"
+    # Defence - foreign military aid
+    DEFENCE_FOREIGN_MILITARY_AID = "2.2.4"
+    # General Economic, Commercial and Labour Affairs - policy, planning and administration
+    GENERAL_ECONOMIC_COMMERCIAL_AND_LABOUR_AFFAIRS_POLICY_PLANNING_AND_ADMINISTRATION = "3.1.1"
+    # General Economic, Commercial and Labour Affairs - general economic affairs
+    GENERAL_ECONOMIC_COMMERCIAL_AND_LABOUR_AFFAIRS_GENERAL_ECONOMIC_AFFAIRS = "3.1.2"
+    # General Economic, Commercial and Labour Affairs - investment promotion
+    GENERAL_ECONOMIC_COMMERCIAL_AND_LABOUR_AFFAIRS_INVESTMENT_PROMOTION = "3.1.3"
+    # General Economic, Commercial and Labour Affairs - privatisation
+    GENERAL_ECONOMIC_COMMERCIAL_AND_LABOUR_AFFAIRS_PRIVATISATION = "3.1.4"
+    # General Economic, Commercial and Labour Affairs - trade
+    GENERAL_ECONOMIC_COMMERCIAL_AND_LABOUR_AFFAIRS_TRADE = "3.1.5"
+    # General Economic, Commercial and Labour Affairs - labour
+    GENERAL_ECONOMIC_COMMERCIAL_AND_LABOUR_AFFAIRS_LABOUR = "3.1.6"
+    # General Economic, Commercial and Labour Affairs - national standards development
+    GENERAL_ECONOMIC_COMMERCIAL_AND_LABOUR_AFFAIRS_NATIONAL_STANDARDS_DEVELOPMENT = "3.1.7"
+    # Public Works - policy, planning and administration
+    PUBLIC_WORKS_POLICY_PLANNING_AND_ADMINISTRATION = "3.2.1"
+    # Public Works - construction regulation
+    PUBLIC_WORKS_CONSTRUCTION_REGULATION = "3.2.2"
+    # Public Works - mechanical services
+    PUBLIC_WORKS_MECHANICAL_SERVICES = "3.2.3"
+    # Agriculture - policy, planning and administration
+    AGRICULTURE_POLICY_PLANNING_AND_ADMINISTRATION = "3.3.1"
+    # Agriculture - irrigation
+    AGRICULTURE_IRRIGATION = "3.3.2"
+    # Agriculture - inputs
+    AGRICULTURE_INPUTS = "3.3.3"
+    # Agriculture - food crop
+    AGRICULTURE_FOOD_CROP = "3.3.4"
+    # Agriculture - industrial crop
+    AGRICULTURE_INDUSTRIAL_CROP = "3.3.5"
+    # Agriculture - livestock
+    AGRICULTURE_LIVESTOCK = "3.3.6"
+    # Agriculture - agricultural training and extension
+    AGRICULTURE_AGRICULTURAL_TRAINING_AND_EXTENSION = "3.3.7"
+    # Agriculture - research
+    AGRICULTURE_RESEARCH = "3.3.8"
+    # Agriculture - other services
+    AGRICULTURE_OTHER_SERVICES = "3.3.9"
+    # Forestry - policy, planning and administration
+    FORESTRY_POLICY_PLANNING_AND_ADMINISTRATION = "3.4.1"
+    # Forestry - development and services
+    FORESTRY_DEVELOPMENT_AND_SERVICES = "3.4.2"
+    # Forestry - education/training
+    FORESTRY_EDUCATION_TRAINING = "3.4.3"
+    # Forestry - research
+    FORESTRY_RESEARCH = "3.4.4"
+    # Fishing and Hunting - policy, planning and administration
+    FISHING_AND_HUNTING_POLICY_PLANNING_AND_ADMINISTRATION = "3.5.1"
+    # Fishing and Hunting - development and services
+    FISHING_AND_HUNTING_DEVELOPMENT_AND_SERVICES = "3.5.2"
+    # Fishing and Hunting - education and training
+    FISHING_AND_HUNTING_EDUCATION_AND_TRAINING = "3.5.3"
+    # Fishing and Hunting - research
+    FISHING_AND_HUNTING_RESEARCH = "3.5.4"
+    # Energy - policy, planning and administration
+    ENERGY_POLICY_PLANNING_AND_ADMINISTRATION = "3.6.1"
+    # Energy - education and training
+    ENERGY_EDUCATION_AND_TRAINING = "3.6.2"
+    # Energy - energy regulation
+    ENERGY_ENERGY_REGULATION = "3.6.3"
+    # Energy - electricity transmission
+    ENERGY_ELECTRICITY_TRANSMISSION = "3.6.4"
+    # Energy - nuclear
+    ENERGY_NUCLEAR = "3.6.5"
+    # Energy - power generation
+    ENERGY_POWER_GENERATION = "3.6.6"
+    # Energy - gas
+    ENERGY_GAS = "3.6.7"
+    # Mining and Mineral Development - policy, planning and administration
+    MINING_AND_MINERAL_DEVELOPMENT_POLICY_PLANNING_AND_ADMINISTRATION = "3.7.1"
+    # Mining and Mineral Development - prospection and exploration
+    MINING_AND_MINERAL_DEVELOPMENT_PROSPECTION_AND_EXPLORATION = "3.7.2"
+    # Mining and Mineral Development - coal and other solid mineral fuels
+    MINING_AND_MINERAL_DEVELOPMENT_COAL_AND_OTHER_SOLID_MINERAL_FUELS = "3.7.3"
+    # Mining and Mineral Development - petroleum and gas
+    MINING_AND_MINERAL_DEVELOPMENT_PETROLEUM_AND_GAS = "3.7.4"
+    # Mining and Mineral Development - other fuel
+    MINING_AND_MINERAL_DEVELOPMENT_OTHER_FUEL = "3.7.6"
+    # Mining and Mineral Development - non fuel minerals
+    MINING_AND_MINERAL_DEVELOPMENT_NON_FUEL_MINERALS = "3.7.7"
+    # Transport - policy, planning and administration
+    TRANSPORT_POLICY_PLANNING_AND_ADMINISTRATION = "3.8.1"
+    # Transport - transport regulation
+    TRANSPORT_TRANSPORT_REGULATION = "3.8.2"
+    # Transport - feeder road construction
+    TRANSPORT_FEEDER_ROAD_CONSTRUCTION = "3.8.3"
+    # Transport - feeder road maintenance
+    TRANSPORT_FEEDER_ROAD_MAINTENANCE = "3.8.4"
+    # Transport - national road construction
+    TRANSPORT_NATIONAL_ROAD_CONSTRUCTION = "3.8.5"
+    # Transport - national road maintenance
+    TRANSPORT_NATIONAL_ROAD_MAINTENANCE = "3.8.6"
+    # Transport - rail
+    TRANSPORT_RAIL = "3.8.7"
+    # Transport - water
+    TRANSPORT_WATER = "3.8.8"
+    # Transport - air
+    TRANSPORT_AIR = "3.8.9"
+    # Transport - pipeline
+    TRANSPORT_PIPELINE = "3.8.10"
+    # Transport - storage and distribution
+    TRANSPORT_STORAGE_AND_DISTRIBUTION = "3.8.11"
+    # Transport - public transport services
+    TRANSPORT_PUBLIC_TRANSPORT_SERVICES = "3.8.12"
+    # Transport - meteorological services
+    TRANSPORT_METEOROLOGICAL_SERVICES = "3.8.13"
+    # Transport - education and training
+    TRANSPORT_EDUCATION_AND_TRAINING = "3.8.14"
+    # Industry - policy, planning and administration
+    INDUSTRY_POLICY_PLANNING_AND_ADMINISTRATION = "3.9.1"
+    # Industry - development and services
+    INDUSTRY_DEVELOPMENT_AND_SERVICES = "3.9.2"
+    # Industry - industrial research
+    INDUSTRY_INDUSTRIAL_RESEARCH = "3.9.3"
+    # Industry - (investment in industry)
+    INDUSTRY_INVESTMENT_IN_INDUSTRY = "3.9.4"
+    # Communications - policy, planning and administration
+    COMMUNICATIONS_POLICY_PLANNING_AND_ADMINISTRATION = "3.10.1"
+    # Communications - ICT Infrastructure
+    COMMUNICATIONS_ICT_INFRASTRUCTURE = "3.10.2"
+    # Communications - telecoms and postal services
+    COMMUNICATIONS_TELECOMS_AND_POSTAL_SERVICES = "3.10.3"
+    # Communications - information services
+    COMMUNICATIONS_INFORMATION_SERVICES = "3.10.4"
+    # Tourism - policy, planning and administration
+    TOURISM_POLICY_PLANNING_AND_ADMINISTRATION = "3.11.1"
+    # Tourism - services
+    TOURISM_SERVICES = "3.11.2"
+    # Microfinance and financial services - Microfinance and financial services
+    MICROFINANCE_AND_FINANCIAL_SERVICES_MICROFINANCE_AND_FINANCIAL_SERVICES = "3.12.1"
+    # Water supply and Sanitation - policy, planning and administration
+    WATER_SUPPLY_AND_SANITATION_POLICY_PLANNING_AND_ADMINISTRATION = "4.1.1"
+    # Water supply and Sanitation - education/training
+    WATER_SUPPLY_AND_SANITATION_EDUCATION_TRAINING = "4.1.2"
+    # Water supply and Sanitation - rural water supply and sanitation
+    WATER_SUPPLY_AND_SANITATION_RURAL_WATER_SUPPLY_AND_SANITATION = "4.1.3"
+    # Water supply and Sanitation - urban water supply and sanitation
+    WATER_SUPPLY_AND_SANITATION_URBAN_WATER_SUPPLY_AND_SANITATION = "4.1.4"
+    # Water supply and Sanitation - rural water supply
+    WATER_SUPPLY_AND_SANITATION_RURAL_WATER_SUPPLY = "4.1.5"
+    # Water supply and Sanitation - urban water supply
+    WATER_SUPPLY_AND_SANITATION_URBAN_WATER_SUPPLY = "4.1.6"
+    # Water supply and Sanitation - rural sanitation
+    WATER_SUPPLY_AND_SANITATION_RURAL_SANITATION = "4.1.7"
+    # Water supply and Sanitation - urban sanitation
+    WATER_SUPPLY_AND_SANITATION_URBAN_SANITATION = "4.1.8"
+    # Water supply and Sanitation - sewage and waste management
+    WATER_SUPPLY_AND_SANITATION_SEWAGE_AND_WASTE_MANAGEMENT = "4.1.9"
+    # Environment - policy, planning and administration
+    ENVIRONMENT_POLICY_PLANNING_AND_ADMINISTRATION = "4.2.1"
+    # Environment - research/ education and training
+    ENVIRONMENT_RESEARCH_EDUCATION_AND_TRAINING = "4.2.2"
+    # Environment - natural resource management
+    ENVIRONMENT_NATURAL_RESOURCE_MANAGEMENT = "4.2.3"
+    # Environment - water resources management
+    ENVIRONMENT_WATER_RESOURCES_MANAGEMENT = "4.2.4"
+    # Environment - wildlife protection, parks and site preservation
+    ENVIRONMENT_WILDLIFE_PROTECTION_PARKS_AND_SITE_PRESERVATION = "4.2.5"
+    # Health - policy, planning and administration
+    HEALTH_POLICY_PLANNING_AND_ADMINISTRATION = "5.1.1"
+    # Recreation, Culture and Religion - recreation and sport
+    RECREATION_CULTURE_AND_RELIGION_RECREATION_AND_SPORT = "5.2.1"
+    # Recreation, Culture and Religion - culture
+    RECREATION_CULTURE_AND_RELIGION_CULTURE = "5.2.2"
+    # Recreation, Culture and Religion - broadcasting and publishing
+    RECREATION_CULTURE_AND_RELIGION_BROADCASTING_AND_PUBLISHING = "5.2.3"
+    # Recreation, Culture and Religion - religion
+    RECREATION_CULTURE_AND_RELIGION_RELIGION = "5.2.4"
+    # Education - administration, policy and planning
+    EDUCATION_ADMINISTRATION_POLICY_AND_PLANNING = "5.3.1"
+    # Education - research
+    EDUCATION_RESEARCH = "5.3.2"
+    # Education - pre-primary
+    EDUCATION_PRE_PRIMARY = "5.3.3"
+    # Education - primary
+    EDUCATION_PRIMARY = "5.3.4"
+    # Education - lower secondary
+    EDUCATION_LOWER_SECONDARY = "5.3.5"
+    # Education - upper secondary
+    EDUCATION_UPPER_SECONDARY = "5.3.6"
+    # Education - post secondary non tertiary
+    EDUCATION_POST_SECONDARY_NON_TERTIARY = "5.3.7"
+    # Education - tertiary
+    EDUCATION_TERTIARY = "5.3.8"
+    # Education - vocational training
+    EDUCATION_VOCATIONAL_TRAINING = "5.3.9"
+    # Education - advanced technical and managerial training
+    EDUCATION_ADVANCED_TECHNICAL_AND_MANAGERIAL_TRAINING = "5.3.10"
+    # Education - basic adult education
+    EDUCATION_BASIC_ADULT_EDUCATION = "5.3.11"
+    # Education - teacher training
+    EDUCATION_TEACHER_TRAINING = "5.3.12"
+    # Education - subsidiary services
+    EDUCATION_SUBSIDIARY_SERVICES = "5.3.13"
+    # Social Protection, Land Housing and Community Amenities - policy, planning and administration
+    SOCIAL_PROTECTION_LAND_HOUSING_AND_COMMUNITY_AMENITIES_POLICY_PLANNING_AND_ADMINISTRATION = "5.4.1"
+    # Social Protection, Land Housing and Community Amenities - social security (excl pensions)
+    SOCIAL_PROTECTION_LAND_HOUSING_AND_COMMUNITY_AMENITIES_SOCIAL_SECURITY_EXCL_PENSIONS = "5.4.2"
+    # Social Protection, Land Housing and Community Amenities - general pensions
+    SOCIAL_PROTECTION_LAND_HOUSING_AND_COMMUNITY_AMENITIES_GENERAL_PENSIONS = "5.4.3"
+    # Social Protection, Land Housing and Community Amenities - civil service and military pensions
+    SOCIAL_PROTECTION_LAND_HOUSING_AND_COMMUNITY_AMENITIES_CIVIL_SERVICE_AND_MILITARY_PENSIONS = "5.4.4"
+    # Social Protection, Land Housing and Community Amenities - social services (incl youth development and women+ children)
+    SOCIAL_PROTECTION_LAND_HOUSING_AND_COMMUNITY_AMENITIES_SOCIAL_SERVICES_INCL_YOUTH_DEVELOPMENT_AND_WOMEN_CHILDREN = "5.4.5"
+    # Social Protection, Land Housing and Community Amenities - land policy and management
+    SOCIAL_PROTECTION_LAND_HOUSING_AND_COMMUNITY_AMENITIES_LAND_POLICY_AND_MANAGEMENT = "5.4.6"
+    # Social Protection, Land Housing and Community Amenities - rural devt
+    SOCIAL_PROTECTION_LAND_HOUSING_AND_COMMUNITY_AMENITIES_RURAL_DEVT = "5.4.7"
+    # Social Protection, Land Housing and Community Amenities - urban devt
+    SOCIAL_PROTECTION_LAND_HOUSING_AND_COMMUNITY_AMENITIES_URBAN_DEVT = "5.4.8"
+    # Social Protection, Land Housing and Community Amenities - housing and community amenities
+    SOCIAL_PROTECTION_LAND_HOUSING_AND_COMMUNITY_AMENITIES_HOUSING_AND_COMMUNITY_AMENITIES = "5.4.9"
+    # Social Protection, Land Housing and Community Amenities - emergency relief
+    SOCIAL_PROTECTION_LAND_HOUSING_AND_COMMUNITY_AMENITIES_EMERGENCY_RELIEF = "5.4.10"
+    # Social Protection, Land Housing and Community Amenities - disaster prevention and preparedness
+    SOCIAL_PROTECTION_LAND_HOUSING_AND_COMMUNITY_AMENITIES_DISASTER_PREVENTION_AND_PREPAREDNESS = "5.4.11"
+    # Social Protection, Land Housing and Community Amenities - support to refugees and internally displaced persons
+    SOCIAL_PROTECTION_LAND_HOUSING_AND_COMMUNITY_AMENITIES_SUPPORT_TO_REFUGEES_AND_INTERNALLY_DISPLACED_PERSONS = "5.4.12"
+    # Development Partner affairs - policy planning and administration
+    DEVELOPMENT_PARTNER_AFFAIRS_POLICY_PLANNING_AND_ADMINISTRATION = "6.1.1"
+    # Development Partner affairs - Technical staff services
+    DEVELOPMENT_PARTNER_AFFAIRS_TECHNICAL_STAFF_SERVICES = "6.1.2"
+    # External to government sector - External to general government sector
+    EXTERNAL_TO_GOVERNMENT_SECTOR_EXTERNAL_TO_GENERAL_GOVERNMENT_SECTOR = "7.1.1"
+    # General Budget Support - General Budget Support
+    GENERAL_BUDGET_SUPPORT_GENERAL_BUDGET_SUPPORT = "7.2.1"
 
 
 class BudgetStatus(Enum):
@@ -287,7 +505,7 @@ class FinanceType(Enum):
     SUBORDINATED_LOAN = "431"
     PREFERRED_EQUITY = "432"
     OTHER_HYBRID = "433"
-    # withdrawn 451, 452
+    # withdrawn 451, 452, 453
     COMMON_EQUITY = "510"
     # withdrawn 511, 512
     SHARES_COLLECTIVE = "520"
@@ -398,15 +616,11 @@ class LocationID(Enum):
     # relation/ as appropriate, e.g. node/1234567
 
 
-class LocationType(Enum):
-    """
-    Location type - administrative region, populated place, etc.
-    Reference: https://iatistandard.org/en/iati-standard/203/codelists/locationtype/
-    """
-    ADMIN_REGION = "1"
-    POPULATED_PLACE = "2"
-    STRUCTURE = "3"
-    OTHER = "4"
+# This is a huge list so we load it from a CSV file
+# Location type - administrative region, populated place, etc.
+# Reference: https://iatistandard.org/en/iati-standard/203/codelists/locationtype/
+
+LocationType = LocationTypeData.to_enum("LocationType")
 
 
 class OrganisationRole(Enum):
@@ -519,30 +733,36 @@ class TransactionType(Enum):
     INCOMING_PLEDGE = "13"
 
 
-class VocabularyType(Enum):
+class PolicyMarkerVocabulary(Enum):
     """
     Vocabulary type - OECD DAC, UN, etc.
-    Reference: https://iatistandard.org/en/iati-standard/203/codelists/vocabulary/
+    Previous reference (outdated): https://iatistandard.org/en/iati-standard/203/codelists/vocabulary/
+    Reference: https://iatistandard.org/en/iati-standard/203/codelists/policymarkervocabulary/
+    """
+    OECD_DAC_CRS = "1"
+    REPORTING_ORGANISATION = "99"
+
+
+class Sector_Vocabulary(Enum):
+    """
+    Vocabulary type - OECD DAC, UN, etc.
+    Previous reference (outdated): https://iatistandard.org/en/iati-standard/203/codelists/vocabulary/
+    Reference: https://iatistandard.org/en/iati-standard/203/codelists/sectorvocabulary/
     """
     OECD_DAC_CRS_PURPOSE = "1"
-    OECD_DAC_CRS_CHANNEL = "2"
-    CLASSIFICATION_COUNTRY_SPECIFIC = "3"
-    REPORTING_ORG = "4"
-    TRACEABILITY = "5"
-    UN_SDGS = "6"
-    UN_HUMANITARIAN_GLOBAL_THEMES = "7"
-    UN_HUMANITARIAN_CLUSTERS = "8"
-    UN_HUMANITARIAN_GLOBAL_CLUSTERS = "9"
-    UN_HUMANITARIAN_HUMANITARIAN_RESPONSE_PLAN = "10"
-    UN_HUMANITARIAN_ACTIVITY_CATEGORIES = "11"
-    UN_HUMANITARIAN_INTER_AGENCY = "12"
-    UN_HUMANITARIAN_FINANCIAL_TRACKING = "13"
-    UN_HUMANITARIAN_APPEAL = "14"
-    UN_HUMANITARIAN_CASH_VOUCHER = "15"
-    UN_OCHA_COVID19 = "16"
-    UN_DISASTER_RISK_REDUCTION = "17"
-    UN_DISASTER_RISK_REDUCTION_SENDAI = "18"
-    INTERNAL_VOCABULARY = "99"
+    OECD_DAC_CRS_SECTOR_CATEGORY = "2"
+    UN_COFOG = "3"
+    EU_NACE_REV2 = "4"
+    US_NTEE = "5"
+    AIDDATA = "6"
+    UNSDG_GOAL = "7"
+    UNSDG_TARGET = "8"
+    UNSDG_INDICATOR = "9"
+    IASC_HUMANITARIAN_CLUSTERS = "10"
+    US_NAICS = "11"
+    UN_DATA_STANDARDS = "12"
+    REPORTING_ORG_2 = "98"
+    REPORTING_ORG = "99"
 
 
 class ActivityScope(Enum):
@@ -560,15 +780,16 @@ class ActivityScope(Enum):
     SUB_NATIONAL_SINGLE_SECOND_ADM = "8"
 
 
-class AidTypeFlag(Enum):
-    """
-    Flag indicating type of aid.
-    Reference: https://iatistandard.org/en/iati-standard/203/codelists/aidtypeflag/
-    """
-    FREE_STANDING_TECHNICAL_COOPERATION = "1"
-    PROGRAM_BASED_APPROACH = "2"
-    INVESTMENT_PROJECT = "3"
-    ASSOCIATED_FINANCING = "4"
+# NO aparece en la version 2.03
+# class AidTypeFlag(Enum):
+#     """
+#     Flag indicating type of aid.
+#     Reference: https://iatistandard.org/en/iati-standard/203/codelists/aidtypeflag/
+#     """
+#     FREE_STANDING_TECHNICAL_COOPERATION = "1"
+#     PROGRAM_BASED_APPROACH = "2"
+#     INVESTMENT_PROJECT = "3"
+#     ASSOCIATED_FINANCING = "4"
 
 
 class RelatedActivityType(Enum):
