@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iati-organisations version="2.02" generated-datetime="2022-06-30T11:07:47+00:00">
+    <iati-organisation last-updated-datetime="2022-05-30T12:14:31+00:00" xml:lang="en" default-currency="EUR"
+        xmlns:aidstream="http://example.org/aidstream/ns#">
+        <organisation-identifier>BE-BCE_KBO-0420656336</organisation-identifier>
+        <name>
+            <narrative>Rikolto Belgie VZW</narrative>
+            <narrative xml:lang="nl">Rikolto België VZW</narrative>
+        </name>
+        <reporting-org type="22" ref="BE-BCE_KBO-0420656336">
+            <narrative xml:lang="en">Rikolto België VZW</narrative>
+        </reporting-org>
+        <total-budget>
+            <period-start iso-date="2017-01-01" />
+            <period-end iso-date="2017-12-31" />
+            <value currency="EUR" value-date="2017-06-30">4572104.00</value>
+        </total-budget>
+        <total-budget>
+            <period-start iso-date="2018-01-01" />
+            <period-end iso-date="2018-12-31" />
+            <value currency="EUR" value-date="2019-02-21">3378296.00</value>
+        </total-budget>
+        <total-budget>
+            <period-start iso-date="2019-01-01" />
+            <period-end iso-date="2019-12-31" />
+            <value currency="EUR" value-date="2019-02-21">3422654.00</value>
+        </total-budget>
+        <total-budget>
+            <period-start iso-date="2021-01-01" />
+            <period-end iso-date="2021-12-31" />
+            <value currency="EUR" value-date="2021-04-28">2388292.60</value>
+        </total-budget>
+        <total-budget>
+            <period-start iso-date="2020-01-01" />
+            <period-end iso-date="2020-12-31" />
+            <value currency="EUR" value-date="2020-01-01">3001730.00</value>
+        </total-budget>
+        <total-expenditure>
+            <period-start iso-date="2019-01-01" />
+            <period-end iso-date="2019-12-31" />
+            <value currency="EUR" value-date="2019-01-01">3614619.27</value>
+        </total-expenditure>
+        <total-expenditure>
+            <period-start iso-date="2021-01-01" />
+            <period-end iso-date="2021-12-31" />
+            <value currency="EUR" value-date="2022-06-24">2991256.63</value>
+        </total-expenditure>
+        <total-expenditure>
+            <period-start iso-date="2020-01-01" />
+            <period-end iso-date="2020-12-31" />
+            <value currency="EUR" value-date="2020-04-28">3247407.82</value>
+        </total-expenditure>
+        <total-expenditure>
+            <period-start iso-date="2018-01-01" />
+            <period-end iso-date="2018-12-31" />
+            <value currency="EUR" value-date="2019-02-21">3282036.00</value>
+        </total-expenditure>
+        <total-expenditure>
+            <period-start iso-date="2017-01-01" />
+            <period-end iso-date="2017-12-31" />
+            <value currency="EUR" value-date="2017-03-01">4195574.92</value>
+        </total-expenditure>
+    </iati-organisation>
+</iati-organisations>

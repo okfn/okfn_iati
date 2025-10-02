@@ -8,6 +8,8 @@ expenditure, and documents - distinct from activity files which describe project
 References:
 - https://iatistandard.org/en/guidance/standard-overview/organisation-infromation/
 - https://iatistandard.org/en/iati-standard/203/organisation-standard/
+- https://iatistandard.org/en/iati-standard/203/organisation-standard/iati-organisations/
+
 """
 from dataclasses import dataclass, field
 from typing import Optional, List, Dict, Any, Union
