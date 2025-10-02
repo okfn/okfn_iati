@@ -183,16 +183,21 @@ class OrganisationRecord:
         reporting_org_ref: Reporting organisation reference
         reporting_org_type: Reporting organisation type
         reporting_org_name: Reporting organisation name
+        reporting_org_lang: Language of reporting org narrative
+        xml_lang: Default language for the organisation
+        default_currency: Default currency for the organisation
         budgets: List of organisation budgets
         expenditures: List of organisation expenditures
         documents: List of organisation document links
-        total_expenditure: Total expenditure information
     """
     org_identifier: str
     name: str
     reporting_org_ref: Optional[str] = None
     reporting_org_type: Optional[str] = None
     reporting_org_name: Optional[str] = None
+    reporting_org_lang: Optional[str] = None
+    xml_lang: Optional[str] = None
+    default_currency: Optional[str] = None
     budgets: List[OrganisationBudget] = field(default_factory=list)
     expenditures: List[OrganisationExpenditure] = field(default_factory=list)
     documents: List[OrganisationDocument] = field(default_factory=list)
@@ -211,6 +216,10 @@ class OrganisationRecord:
             self.reporting_org_name = self.name
         if not self.reporting_org_type:
             self.reporting_org_type = "40"  # Default to "International NGO"
+        if not self.xml_lang:
+            self.xml_lang = "en"
+        if not self.default_currency:
+            self.default_currency = "USD"
 
 
 class IatiOrganisationXMLGenerator:
@@ -269,7 +278,12 @@ class IatiOrganisationXMLGenerator:
             org_el, "last-updated-datetime",
             datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
         )
-        _set_attribute(org_el, "xml:lang", "en")
+        # Use the preserved xml:lang from the record
+        _set_attribute(org_el, "xml:lang", record.xml_lang or "en")
+        
+        # Add default currency if available
+        if record.default_currency:
+            _set_attribute(org_el, "default-currency", record.default_currency)
 
         # Add identifier
         oid = ET.SubElement(org_el, "organisation-identifier")
@@ -284,7 +298,8 @@ class IatiOrganisationXMLGenerator:
             rep_org = ET.SubElement(org_el, "reporting-org")
             _set_attribute(rep_org, "ref", record.reporting_org_ref)
             _set_attribute(rep_org, "type", record.reporting_org_type)
-            _add_narrative(rep_org, record.reporting_org_name)
+            # Use the preserved language for reporting org narrative
+            _add_narrative(rep_org, record.reporting_org_name, record.reporting_org_lang)
 
         # Add budgets
         for budget in record.budgets:
@@ -1216,7 +1231,9 @@ class IatiOrganisationMultiCsvConverter:
             rep_org_name = rep_org_elem.find('narrative')
             data['reporting_org_name'] = rep_org_name.text if rep_org_name is not None else ''
             # Preserve language attribute from reporting org narrative
-            data['reporting_org_lang'] = rep_org_name.get('{http://www.w3.org/XML/1998/namespace}lang', '') if rep_org_name is not None else ''
+            data['reporting_org_lang'] = rep_org_name.get(
+                '{http://www.w3.org/XML/1998/namespace}lang', ''
+            ) if rep_org_name is not None else ''
 
         # Default currency
         data['default_currency'] = org_elem.get('default-currency', 'USD')
@@ -1563,7 +1580,7 @@ class IatiOrganisationMultiCsvConverter:
 
         # Add budgets
         for budget_data in data['budgets']:
-            if budget_data['value']:
+            if budget_data.get('value'):
                 budget = OrganisationBudget(
                     kind=budget_data['budget_kind'],
                     status=budget_data.get('budget_status', '1'),
@@ -1583,7 +1600,7 @@ class IatiOrganisationMultiCsvConverter:
 
         # Add expenditures
         for exp_data in data['expenditures']:
-            if exp_data['value']:
+            if exp_data.get('value'):
                 expenditure = OrganisationExpenditure(
                     period_start=exp_data['period_start'],
                     period_end=exp_data['period_end'],
@@ -1595,7 +1612,7 @@ class IatiOrganisationMultiCsvConverter:
 
         # Add documents
         for doc_data in data['documents']:
-            if doc_data['url']:
+            if doc_data.get('url'):
                 document = OrganisationDocument(
                     url=doc_data['url'],
                     format=doc_data.get('format', 'text/html'),
