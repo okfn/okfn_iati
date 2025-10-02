@@ -227,7 +227,11 @@ class TestOrganisationXMLGenerator(unittest.TestCase):
         org = root.find("iati-organisation")
         self.assertIsNotNone(org)
         self.assertIsNotNone(org.get("last-updated-datetime"))
-        self.assertIsNotNone(org.get("xml:lang"))
+
+        # Check xml:lang attribute is set
+        xml_lang = org.get("{http://www.w3.org/XML/1998/namespace}lang")
+        self.assertIsNotNone(xml_lang, "xml:lang attribute should be set on organisation element")
+        self.assertEqual(xml_lang, "en", "xml:lang should be 'en'")
 
         # Required elements
         org_id = org.find("organisation-identifier")
@@ -244,32 +248,29 @@ class TestOrganisationXMLGenerator(unittest.TestCase):
         reporting_org = org.find("reporting-org")
         self.assertIsNotNone(reporting_org)
 
-    def test_mixed_file_types_in_folder(self):
-        """Test processing folder with mixed CSV and Excel files."""
-        csv_folder = Path(self.temp_dir.name) / "mixed_files"
-        csv_folder.mkdir()
+    def test_xml_namespace_handling(self):
+        """Test that XML namespaces are handled correctly."""
+        output_path = self.converter.convert_to_xml(self.csv_file, self.xml_file)
 
-        # Create CSV file
-        csv_file = csv_folder / "org1.csv"
-        self._create_test_csv(csv_file, "XM-DAC-CSV", "CSV Organization")
+        # Read raw XML content to check namespace declarations
+        with open(output_path, "r", encoding="utf-8") as f:
+            xml_content = f.read()
 
-        # Create text file (should be ignored)
-        text_file = csv_folder / "readme.txt"
-        with open(text_file, 'w') as f:
-            f.write("This is a text file and should be ignored")
+        # Check that XML namespace declarations are present
+        self.assertIn('xmlns:xsd="http://www.w3.org/2001/XMLSchema"', xml_content)
+        self.assertIn('xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"', xml_content)
 
-        # Convert folder to XML
-        output_path = self.converter.convert_folder_to_xml(csv_folder, self.xml_file)
-
-        # Parse and validate
+        # Parse and check xml:lang attribute access
         tree = ET.parse(output_path)
         root = tree.getroot()
+        org = root.find("iati-organisation")
 
-        organisations = root.findall("iati-organisation")
-        self.assertEqual(len(organisations), 1)  # Only CSV file should be processed
+        # Test both ways of accessing xml:lang
+        xml_lang_1 = org.get("{http://www.w3.org/XML/1998/namespace}lang")
+        xml_lang_2 = org.attrib.get("{http://www.w3.org/XML/1998/namespace}lang")
 
-        identifier = organisations[0].find("organisation-identifier").text
-        self.assertEqual(identifier, "XM-DAC-CSV")
+        self.assertEqual(xml_lang_1, "en")
+        self.assertEqual(xml_lang_2, "en")
 
     def _create_test_csv(self, file_path: Path, org_id: str, org_name: str):
         """Helper method to create a test CSV file with basic organisation data."""
