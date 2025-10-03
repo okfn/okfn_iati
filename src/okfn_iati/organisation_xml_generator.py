@@ -179,7 +179,8 @@ class OrganisationRecord:
 
     Args:
         org_identifier: Organisation identifier
-        name: Organisation name
+        name: Organisation name (primary/default)
+        names: Dictionary of names by language code (includes primary name)
         reporting_org_ref: Reporting organisation reference
         reporting_org_type: Reporting organisation type
         reporting_org_name: Reporting organisation name
@@ -192,6 +193,7 @@ class OrganisationRecord:
     """
     org_identifier: str
     name: str
+    names: Dict[str, str] = field(default_factory=dict)  # lang_code -> name
     reporting_org_ref: Optional[str] = None
     reporting_org_type: Optional[str] = None
     reporting_org_name: Optional[str] = None
@@ -208,18 +210,12 @@ class OrganisationRecord:
             raise ValueError("Organisation identifier is required")
         if not self.name:
             raise ValueError("Organisation name is required")
-
-        # Set defaults for reporting org if not provided
-        if not self.reporting_org_ref:
-            self.reporting_org_ref = self.org_identifier
-        if not self.reporting_org_name:
-            self.reporting_org_name = self.name
-        if not self.reporting_org_type:
-            self.reporting_org_type = "40"  # Default to "International NGO"
-        if not self.xml_lang:
-            self.xml_lang = "en"
-        if not self.default_currency:
-            self.default_currency = "USD"
+            
+        # Ensure primary name is in names dict
+        if not self.names:
+            self.names = {"": self.name}  # Empty string for default language
+        elif "" not in self.names and (not self.xml_lang or self.xml_lang not in self.names):
+            self.names[self.xml_lang or ""] = self.name
 
 
 class IatiOrganisationXMLGenerator:
@@ -289,9 +285,18 @@ class IatiOrganisationXMLGenerator:
         oid = ET.SubElement(org_el, "organisation-identifier")
         oid.text = record.org_identifier
 
-        # Add name
+        # Add name with multiple narratives
         name_el = ET.SubElement(org_el, "name")
-        _add_narrative(name_el, record.name)
+        if record.names:
+            for lang_code, name_text in record.names.items():
+                if name_text and name_text.strip():
+                    narr = ET.SubElement(name_el, "narrative")
+                    narr.text = name_text.strip()
+                    if lang_code and lang_code.strip():
+                        narr.set("xml:lang", lang_code.strip())
+        else:
+            # Fallback to single name
+            _add_narrative(name_el, record.name)
 
         # Add reporting-org
         if record.reporting_org_ref or record.reporting_org_type or record.reporting_org_name:
@@ -999,6 +1004,7 @@ class IatiOrganisationMultiCsvConverter:
 
             # Extract organisation data
             organisations_data = []
+            names_data = []
             budgets_data = []
             expenditures_data = []
             documents_data = []
@@ -1007,6 +1013,10 @@ class IatiOrganisationMultiCsvConverter:
                 # Extract basic organisation info
                 org_data = self._extract_organisation_basic_info(org_elem)
                 organisations_data.append(org_data)
+
+                # Extract names
+                org_names = self._extract_organisation_names(org_elem, org_data['organisation_identifier'])
+                names_data.extend(org_names)
 
                 # Extract budgets
                 org_budgets = self._extract_organisation_budgets(org_elem, org_data['organisation_identifier'])
@@ -1022,6 +1032,9 @@ class IatiOrganisationMultiCsvConverter:
 
             # Write CSV files
             self._write_organisations_csv(organisations_data, output_path / "organisations.csv")
+
+            if names_data:
+                self._write_names_csv(names_data, output_path / "names.csv")
 
             if budgets_data:
                 self._write_budgets_csv(budgets_data, output_path / "budgets.csv")
@@ -1061,6 +1074,7 @@ class IatiOrganisationMultiCsvConverter:
 
             # Read CSV files
             organisations = self._read_organisations_csv(folder_path / "organisations.csv")
+            names = self._read_names_csv(folder_path / "names.csv") if (folder_path / "names.csv").exists() else []
             budgets = self._read_budgets_csv(folder_path / "budgets.csv") if (folder_path / "budgets.csv").exists() else []
             expenditures = self._read_expenditures_csv(
                 folder_path / "expenditures.csv"
@@ -1075,12 +1089,18 @@ class IatiOrganisationMultiCsvConverter:
                 org_id = org['organisation_identifier']
                 org_data_map[org_id] = {
                     'basic_info': org,
+                    'names': [],
                     'budgets': [],
                     'expenditures': [],
                     'documents': []
                 }
 
-            # Associate budgets, expenditures, and documents with organisations
+            # Associate names, budgets, expenditures, and documents with organisations
+            for name in names:
+                org_id = name['organisation_identifier']
+                if org_id in org_data_map:
+                    org_data_map[org_id]['names'].append(name)
+
             for budget in budgets:
                 org_id = budget['organisation_identifier']
                 if org_id in org_data_map:
@@ -1134,30 +1154,102 @@ class IatiOrganisationMultiCsvConverter:
         output_path = Path(output_folder)
         output_path.mkdir(parents=True, exist_ok=True)
 
-        # Generate organisations.csv template
-        org_columns = [
-            'organisation_identifier', 'name', 'reporting_org_ref',
-            'reporting_org_type', 'reporting_org_name', 'reporting_org_lang',
-            'default_currency', 'xml_lang'
+        # Generate organisations.csv template (no changes needed)
+        columns = [
+            # Basic organisation info
+            "Organisation Identifier",
+            "Name",
+            "Reporting Org Ref",
+            "Reporting Org Type",
+            "Reporting Org Name",
+
+            # Budget info
+            "Budget Kind",
+            "Budget Status",
+            "Budget Period Start",
+            "Budget Period End",
+            "Budget Value",
+            "Currency",
+            "Value Date",
+
+            # Recipient info
+            "Recipient Org Ref",
+            "Recipient Org Type",
+            "Recipient Org Name",
+            "Recipient Country Code",
+            "Recipient Region Code",
+            "Recipient Region Vocabulary",
+
+            # Document info
+            "Document URL",
+            "Document Format",
+            "Document Title",
+            "Document Category",
+            "Document Language",
+            "Document Date",
+
+            # Expenditure info
+            "Expenditure Period Start",
+            "Expenditure Period End",
+            "Expenditure Value",
+            "Expenditure Currency"
         ]
 
-        with open(output_path / "organisations.csv", 'w', newline='', encoding='utf-8') as f:
+        with open(output_path / "organisations.csv", "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
-            writer.writerow(org_columns)
+            writer.writerow(columns)
+
+            # Add example row if requested
+            if include_examples:
+                writer.writerow([
+                    "XM-DAC-46002",  # Organisation Identifier
+                    "Sample Organisation",  # Name
+                    "XM-DAC-46002",  # Reporting Org Ref
+                    "40",  # Reporting Org Type
+                    "Sample Organisation",  # Reporting Org Name
+                    "total-budget",  # Budget Kind
+                    "2",  # Budget Status
+                    "2025-01-01",  # Budget Period Start
+                    "2025-12-31",  # Budget Period End
+                    "1000000",  # Budget Value
+                    "USD",  # Currency
+                    "2025-01-01",  # Value Date
+                    "",  # Recipient Org Ref
+                    "",  # Recipient Org Type
+                    "",  # Recipient Org Name
+                    "",  # Recipient Country Code
+                    "",  # Recipient Region Code
+                    "",  # Recipient Region Vocabulary
+                    "https://example.org/annual-report",  # Document URL
+                    "text/html",  # Document Format
+                    "Annual Report",  # Document Title
+                    "A01",  # Document Category
+                    "en",  # Document Language
+                    "2025-01-01",  # Document Date
+                    "2025-01-01",  # Expenditure Period Start
+                    "2025-12-31",  # Expenditure Period End
+                    "950000",  # Expenditure Value
+                    "USD"  # Expenditure Currency
+                ])
+
+        # Generate names.csv template
+        name_columns = [
+            'organisation_identifier', 'language', 'name'
+        ]
+
+        with open(output_path / "names.csv", 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow(name_columns)
 
             if include_examples:
                 writer.writerow([
-                    'XM-DAC-46002',
-                    'Central American Bank for Economic Integration',
-                    'XM-DAC-46002',
-                    '40',
-                    'Central American Bank for Economic Integration',
-                    'en',  # reporting_org_lang
-                    'USD',
-                    'en'   # xml_lang
+                    'XM-DAC-46002', '', 'Central American Bank for Economic Integration'
+                ])
+                writer.writerow([
+                    'XM-DAC-46002', 'es', 'Banco Centroamericano de Integración Económica'
                 ])
 
-        # Generate budgets.csv template
+        # Generate budgets.csv template (no changes needed)
         budget_columns = [
             'organisation_identifier', 'budget_kind', 'budget_status',
             'period_start', 'period_end', 'value', 'currency', 'value_date',
@@ -1176,7 +1268,7 @@ class IatiOrganisationMultiCsvConverter:
                     '', '', '', '', '', ''
                 ])
 
-        # Generate expenditures.csv template
+        # Generate expenditures.csv template (no changes needed)
         expenditure_columns = [
             'organisation_identifier', 'period_start', 'period_end',
             'value', 'currency', 'value_date'
@@ -1192,7 +1284,7 @@ class IatiOrganisationMultiCsvConverter:
                     '950000', 'USD', '2024-01-01'
                 ])
 
-        # Generate documents.csv template
+        # Generate documents.csv template (no changes needed)
         document_columns = [
             'organisation_identifier', 'url', 'format', 'title',
             'category_code', 'language', 'document_date'
@@ -1242,6 +1334,24 @@ class IatiOrganisationMultiCsvConverter:
         data['xml_lang'] = org_elem.get('{http://www.w3.org/XML/1998/namespace}lang', 'en')
 
         return data
+
+    def _extract_organisation_names(self, org_elem: ET.Element, org_identifier: str) -> List[Dict[str, str]]:
+        """Extract organisation names in multiple languages."""
+        names = []
+
+        name_elem = org_elem.find('name')
+        if name_elem is not None:
+            narratives = name_elem.findall('narrative')
+            for narr in narratives:
+                if narr.text:
+                    name_data = {
+                        'organisation_identifier': org_identifier,
+                        'language': narr.get('{http://www.w3.org/XML/1998/namespace}lang', ''),
+                        'name': narr.text
+                    }
+                    names.append(name_data)
+
+        return names
 
     def _extract_organisation_budgets(self, org_elem: ET.Element, org_identifier: str) -> List[Dict[str, str]]:  # noqa: C901
         """Extract budget information."""
@@ -1455,6 +1565,19 @@ class IatiOrganisationMultiCsvConverter:
             for row in data:
                 writer.writerow({col: row.get(col, '') for col in columns})
 
+    def _write_names_csv(self, data: List[Dict[str, str]], output_path: Path) -> None:
+        """Write names data to CSV."""
+        if not data:
+            return
+
+        columns = ['organisation_identifier', 'language', 'name']
+
+        with open(output_path, 'w', newline='', encoding='utf-8') as f:
+            writer = csv.DictWriter(f, fieldnames=columns)
+            writer.writeheader()
+            for row in data:
+                writer.writerow({col: row.get(col, '') for col in columns})
+
     def _write_budgets_csv(self, data: List[Dict[str, str]], output_path: Path) -> None:
         """Write budgets data to CSV."""
         if not data:
@@ -1519,6 +1642,20 @@ class IatiOrganisationMultiCsvConverter:
 
         return organisations
 
+    def _read_names_csv(self, csv_path: Path) -> List[Dict[str, str]]:
+        """Read names CSV file."""
+        names = []
+
+        if not csv_path.exists():
+            return names
+
+        with open(csv_path, 'r', encoding='utf-8') as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                names.append(dict(row))
+
+        return names
+
     def _read_budgets_csv(self, csv_path: Path) -> List[Dict[str, str]]:
         """Read budgets CSV file."""
         budgets = []
@@ -1565,10 +1702,19 @@ class IatiOrganisationMultiCsvConverter:
         """Create OrganisationRecord from CSV data."""
         basic_info = data['basic_info']
 
+        # Parse multilingual names from names CSV data
+        names_dict = {}
+        for name_data in data['names']:
+            lang = name_data.get('language', '')
+            name_text = name_data.get('name', '')
+            if name_text.strip():
+                names_dict[lang] = name_text.strip()
+
         # Create basic record
         record = OrganisationRecord(
             org_identifier=basic_info['organisation_identifier'],
             name=basic_info['name'],
+            names=names_dict,
             reporting_org_ref=basic_info.get('reporting_org_ref', ''),
             reporting_org_type=basic_info.get('reporting_org_type', ''),
             reporting_org_name=basic_info.get('reporting_org_name', ''),
@@ -1778,4 +1924,12 @@ Convert XML to multi-CSV folder:
             data-samples/csv_folders_org/ares-org/ \
             data-samples/organization-files/ares-org-back.xml
 
+    Also, for BE-BCE_KBO-0420656336
+        python src/okfn_iati/organisation_xml_generator.py xml-to-csv-folder \
+            data-samples/organization-files/BE-BCE_KBO-0420656336.xml \
+            data-samples/csv_folders_org/BE-BCE_KBO-0420656336
+        and back with
+        python src/okfn_iati/organisation_xml_generator.py csv-folder-to-xml \
+            data-samples/csv_folders_org/BE-BCE_KBO-0420656336/ \
+            data-samples/organization-files/BE-BCE_KBO-0420656336-back.xml
 """
