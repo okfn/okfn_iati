@@ -6,9 +6,10 @@
         <name>
             <narrative>Rikolto Belgie VZW</narrative>
             <narrative xml:lang="nl">Rikolto België VZW</narrative>
+            <narrative xml:lang="es">Ricolto Belgicano</narrative>
         </name>
         <reporting-org type="22" ref="BE-BCE_KBO-0420656336">
-            <narrative xml:lang="en">Rikolto België VZW</narrative>
+            <narrative xml:lang="en">Rikolto Belgie ENG</narrative>
         </reporting-org>
         <total-budget>
             <period-start iso-date="2017-01-01" />

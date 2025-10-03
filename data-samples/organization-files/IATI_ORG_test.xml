@@ -1,0 +1,155 @@
+<iati-organisations version="2.03" generated-datetime="2024-11-18T13:13:00">
+	<iati-organisation xml:lang="en" default-currency="USD" last-updated-datetime="2024-11-18T13:13:00">
+		<organisation-identifier>44002</organisation-identifier>
+		<name>
+			<narrative>International Development Association</narrative>
+		</name>
+		<reporting-org ref="44000" type="40">
+			<narrative>World Bank</narrative>
+		</reporting-org>
+		<total-budget status="1">
+			<period-start iso-date="2024-01-01"/>
+			<period-end iso-date="2024-12-31"/>
+			<value currency="USD" value-date="2024-01-01">28548972557</value>
+			<budget-line>
+				<value currency="USD" value-date="2024-01-01">28548972557</value>
+				<narrative>indicative total budget</narrative>
+			</budget-line>
+		</total-budget>
+		<total-budget status="1">
+			<period-start iso-date="2025-01-01"/>
+			<period-end iso-date="2025-12-31"/>
+			<value currency="USD" value-date="2025-01-01">29119952008</value>
+			<budget-line>
+				<value currency="USD" value-date="2025-01-01">29119952008</value>
+				<narrative>indicative total budget</narrative>
+			</budget-line>
+		</total-budget>
+
+		<recipient-region-budget status="1">
+			<recipient-region code="289" />
+			<period-start iso-date="2024-01-01"/>
+			<period-end iso-date="2024-12-31"/>
+			<value currency="USD" value-date="2024-01-01">184110372</value>
+			<budget-line>
+				<value currency="USD" value-date="2024-01-01">184110372</value>
+				<narrative>indicative region budget</narrative>
+			</budget-line>
+		</recipient-region-budget>
+		<recipient-region-budget status="1">
+			<recipient-region code="289" />
+			<period-start iso-date="2025-01-01"/>
+			<period-end iso-date="2025-12-31"/>
+			<value currency="USD" value-date="2025-01-01">187792580</value>
+			<budget-line>
+				<value currency="USD" value-date="2025-01-01">187792580</value>
+				<narrative>indicative region budget</narrative>
+			</budget-line>
+		</recipient-region-budget>
+		<recipient-region-budget status="1">
+			<recipient-region code="289" />
+			<period-start iso-date="2026-01-01"/>
+			<period-end iso-date="2026-12-31"/>
+			<value currency="USD" value-date="2026-01-01">191548432</value>
+			<budget-line>
+				<value currency="USD" value-date="2026-01-01">191548432</value>
+				<narrative>indicative region budget</narrative>
+			</budget-line>
+		</recipient-region-budget>
+
+		<recipient-country-budget status="1">
+			<recipient-country code="AF">
+				<narrative>AFGHANISTAN </narrative>
+			</recipient-country>
+			<period-start iso-date="2024-01-01"/>
+			<period-end iso-date="2024-12-31"/>
+			<value currency="USD" value-date="2024-01-01">21428129</value>
+			<budget-line>
+				<value currency="USD" value-date="2024-01-01">21428129</value>
+				<narrative>indicative country budget</narrative>
+			</budget-line>
+		</recipient-country-budget>
+		<recipient-country-budget status="1">
+			<recipient-country code="AF">
+				<narrative>AFGHANISTAN </narrative>
+			</recipient-country>
+			<period-start iso-date="2025-01-01"/>
+			<period-end iso-date="2025-12-31"/>
+			<value currency="USD" value-date="2025-01-01">21856692</value>
+			<budget-line>
+				<value currency="USD" value-date="2025-01-01">21856692</value>
+				<narrative>indicative country budget</narrative>
+			</budget-line>
+		</recipient-country-budget>
+		<recipient-country-budget status="1">
+			<recipient-country code="AF">
+				<narrative>AFGHANISTAN </narrative>
+			</recipient-country>
+			<period-start iso-date="2026-01-01"/>
+			<period-end iso-date="2026-12-31"/>
+			<value currency="USD" value-date="2026-01-01">22293826</value>
+			<budget-line>
+				<value currency="USD" value-date="2026-01-01">22293826</value>
+				<narrative>indicative country budget</narrative>
+			</budget-line>
+		</recipient-country-budget>
+
+		<total-expenditure>
+			<period-start iso-date="2019-07-01"/>
+			<period-end iso-date="2020-06-30"/>
+			<value currency="USD" value-date="2019-07-01">13321629636</value>
+		</total-expenditure>
+		<total-expenditure>
+			<period-start iso-date="2020-07-01"/>
+			<period-end iso-date="2021-06-30"/>
+			<value currency="USD" value-date="2021-07-01">22927000000</value>
+		</total-expenditure>
+		<total-expenditure>
+			<period-start iso-date="2020-07-01"/>
+			<period-end iso-date="2021-06-30"/>
+			<value currency="USD" value-date="2021-07-01">21255000000</value>
+		</total-expenditure>
+		<total-expenditure>
+			<period-start iso-date="2021-07-01"/>
+			<period-end iso-date="2022-06-30"/>
+			<value currency="USD" value-date="2022-06-30">27771000000</value>
+		</total-expenditure>
+
+		<document-link format="application/pdf" url="https://documents1.worldbank.org/curated/en/099101824180532047/pdf/BOSIB13bdde89d07f1b3711dd8e86adb477.pdf">
+			<title>
+				<narrative>The World Bank Annual Report 2024</narrative>
+			</title>
+			<category code="B01"/>
+			<recipient-country code="WB" />
+		</document-link>
+		<document-link format="application/pdf" url="http://documents1.worldbank.org/curated/en/459531582153485508/pdf/Additions-to-IDA-Resources-Nineteenth-Replenishment-Ten-Years-to-2030-Growth-People-Resilience.pdf">
+			<title>
+				<narrative>IDA19 Replenishment Agreement</narrative>
+			</title>
+			<category code="B02"/>
+			<recipient-country code="WB" />
+		</document-link>
+		<document-link format="application/pdf" url="https://documents1.worldbank.org/curated/en/163861645554924417/pdf/IDA20-Building-Back-Better-from-the-Crisis-Toward-a-Green-Resilient-and-Inclusive-Future.pdf">
+			<title>
+				<narrative>IDA20 Replenishment Agreement</narrative>
+			</title>
+			<category code="B02"/>
+			<recipient-country code="WB" />
+		</document-link>
+		<document-link format="text/html" url="https://ida.worldbank.org/en/replenishments/road-to-IDA21">
+			<title>
+				<narrative>IDA21 Replenishment Agreement</narrative>
+			</title>
+			<category code="B02"/>
+			<recipient-country code="WB" />
+		</document-link>
+		<document-link format="application/pdf" url="https://documents1.worldbank.org/curated/en/099091624151519669/pdf/BOSIB1d4ac5c7f00918f9217eab1347c249.pdf">
+			<title>
+				<narrative>Zambia</narrative>
+			</title>
+			<category code="B03"/>
+			<recipient-country code="ZM" />
+		</document-link>
+
+	</iati-organisation>
+</iati-organisations>

@@ -1,0 +1,2 @@
+organisation_identifier,budget_kind,budget_status,period_start,period_end,value,currency,value_date,recipient_org_ref,recipient_org_type,recipient_org_name,recipient_country_code,recipient_region_code,recipient_region_vocabulary
+DK-CVR-31378028,total-budget,2,2020-01-01,2020-12-31,23993333,DKK,2020-01-01,,,,,,
