@@ -1,0 +1,6 @@
+organisation_identifier,budget_kind,budget_status,period_start,period_end,value,currency,value_date,recipient_org_ref,recipient_org_type,recipient_org_name,recipient_country_code,recipient_region_code,recipient_region_vocabulary
+BE-BCE_KBO-0420656336,total-budget,1,2017-01-01,2017-12-31,4572104.00,EUR,2017-06-30,,,,,,
+BE-BCE_KBO-0420656336,total-budget,1,2018-01-01,2018-12-31,3378296.00,EUR,2019-02-21,,,,,,
+BE-BCE_KBO-0420656336,total-budget,1,2019-01-01,2019-12-31,3422654.00,EUR,2019-02-21,,,,,,
+BE-BCE_KBO-0420656336,total-budget,1,2021-01-01,2021-12-31,2388292.60,EUR,2021-04-28,,,,,,
+BE-BCE_KBO-0420656336,total-budget,1,2020-01-01,2020-12-31,3001730.00,EUR,2020-01-01,,,,,,
