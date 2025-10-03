@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "okfn-iati"
-version = "0.2.1"
+version = "0.3.0"
 description = "A Python library for working with IATI XML data according to the IATI 2.03 standard"
 readme = "README.md"
 authors = [
