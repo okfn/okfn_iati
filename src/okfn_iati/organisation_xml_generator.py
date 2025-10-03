@@ -167,6 +167,7 @@ class OrganisationDocument:
     url: str
     format: str = "text/html"
     title: Optional[str] = None
+    # https://iatistandard.org/en/iati-standard/203/codelists/documentcategory/
     category_code: Optional[str] = None
     language: Optional[str] = None
     document_date: Optional[str] = None
