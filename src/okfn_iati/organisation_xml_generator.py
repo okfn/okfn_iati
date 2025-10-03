@@ -211,7 +211,7 @@ class OrganisationRecord:
             raise ValueError("Organisation identifier is required")
         if not self.name:
             raise ValueError("Organisation name is required")
-            
+
         # Ensure primary name is in names dict
         if not self.names:
             self.names = {"": self.name}  # Empty string for default language
@@ -1053,7 +1053,7 @@ class IatiOrganisationMultiCsvConverter:
             logger.error(f"Failed to convert XML to CSV folder: {str(e)}")
             return False
 
-    def csv_folder_to_xml(
+    def csv_folder_to_xml(  # noqa: C901
         self,
         input_folder: Union[str, Path],
         xml_output: Union[str, Path]
