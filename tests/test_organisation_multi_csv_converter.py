@@ -231,27 +231,175 @@ class TestOrganisationMultiCsvConverter(unittest.TestCase):
         self.assertIn('4195574.92', expenditure_values)
         self.assertIn('3282036.00', expenditure_values)
 
-    def test_template_generation(self):
-        """Test CSV template generation."""
+    def test_organisations_csv_template_generation(self):
+        """Test organisations.csv template generation."""
         template_folder = Path(self.temp_dir.name) / "templates"
 
         # Generate templates
         self.converter.generate_csv_templates(template_folder, include_examples=True)
 
+        # Check organisations.csv specifically
+        file_path = template_folder / "organisations.csv"
+        self.assertTrue(file_path.exists(), "organisations.csv should be created")
+
+        # Check file has content
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+            self.assertTrue(len(content) > 0, "organisations.csv should not be empty")
+
+            # Check for organisation-specific columns (use actual column names from CSV)
+            expected_cols = ["organisation_identifier", "name", "reporting_org_ref"]
+            self.assertTrue(
+                all(col in content for col in expected_cols),
+                "organisations.csv should contain organisation columns"
+            )
+
+    def test_budgets_csv_template_generation(self):
+        """Test budgets.csv template generation."""
+        template_folder = Path(self.temp_dir.name) / "templates"
+
+        # Generate templates
+        self.converter.generate_csv_templates(template_folder, include_examples=True)
+
+        # Check budgets.csv specifically
+        file_path = template_folder / "budgets.csv"
+        self.assertTrue(file_path.exists(), "budgets.csv should be created")
+
+        # Check file has content
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+            self.assertTrue(len(content) > 0, "budgets.csv should not be empty")
+
+            # Check for budget-specific columns
+            expected_cols = ["organisation_identifier", "budget_kind", "value", "currency"]
+            self.assertTrue(
+                all(col in content for col in expected_cols),
+                "budgets.csv should contain all budget columns"
+            )
+
+    def test_expenditures_csv_template_generation(self):
+        """Test expenditures.csv template generation."""
+        template_folder = Path(self.temp_dir.name) / "templates"
+
+        # Generate templates
+        self.converter.generate_csv_templates(template_folder, include_examples=True)
+
+        # Check expenditures.csv specifically
+        file_path = template_folder / "expenditures.csv"
+        self.assertTrue(file_path.exists(), "expenditures.csv should be created")
+
+        # Check file has content
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+            self.assertTrue(len(content) > 0, "expenditures.csv should not be empty")
+
+            # Check for expenditure-specific columns
+            expected_cols = ["organisation_identifier", "value", "currency", "period_start"]
+            self.assertTrue(
+                all(col in content for col in expected_cols),
+                "expenditures.csv should contain all expenditure columns"
+            )
+
+    def test_documents_csv_template_generation(self):
+        """Test documents.csv template generation."""
+        template_folder = Path(self.temp_dir.name) / "templates"
+
+        # Generate templates
+        self.converter.generate_csv_templates(template_folder, include_examples=True)
+
+        # Check documents.csv specifically
+        file_path = template_folder / "documents.csv"
+        self.assertTrue(file_path.exists(), "documents.csv should be created")
+
+        # Check file has content
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+            self.assertTrue(len(content) > 0, "documents.csv should not be empty")
+
+            # Check for document-specific columns
+            expected_cols = ["organisation_identifier", "url", "format", "title"]
+            self.assertTrue(
+                all(col in content for col in expected_cols),
+                "documents.csv should contain all document columns"
+            )
+
+    def test_template_generation_without_examples(self):
+        """Test CSV template generation without examples."""
+        template_folder = Path(self.temp_dir.name) / "templates_no_examples"
+
+        # Generate templates without examples
+        self.converter.generate_csv_templates(template_folder, include_examples=False)
+
+        # Check if folder exists
+        self.assertTrue(template_folder.exists(), "Template folder should exist")
+
         # Check all template files are created
-        expected_files = ["organisations.csv", "budgets.csv", "expenditures.csv", "documents.csv"]
+        expected_files = ["organisations.csv", "budgets.csv", "expenditures.csv", "documents.csv", "names.csv"]
         for filename in expected_files:
+            print(f'Testing for file: {filename}')
             file_path = template_folder / filename
             self.assertTrue(file_path.exists(), f"{filename} should be created")
 
-            # Check file has content
+            # Check file has only header row (no examples)
             with open(file_path, 'r', encoding='utf-8') as f:
-                content = f.read()
-                self.assertTrue(len(content) > 0, f"{filename} should not be empty")
-                self.assertTrue(
-                    "organisation_identifier" in content,
-                    f"{filename} should contain organisation_identifier column"
-                )
+                lines = f.readlines()
+                self.assertEqual(len(lines), 1, f"{filename} should have only header row when no examples")
+
+    def test_template_generation_debug(self):
+        """Debug test to see what files are actually created."""
+        template_folder = Path(self.temp_dir.name) / "templates_debug"
+
+        # Generate templates
+        self.converter.generate_csv_templates(template_folder, include_examples=True)
+
+        # List all files created
+        created_files = list(template_folder.glob("*"))
+        print(f"Created files: {[f.name for f in created_files]}")
+
+        # Check if folder exists
+        self.assertTrue(template_folder.exists(), "Template folder should exist")
+
+        # Check each expected file
+        expected_files = ["organisations.csv", "budgets.csv", "expenditures.csv", "documents.csv", "names.csv"]
+        for filename in expected_files:
+            file_path = template_folder / filename
+            if file_path.exists():
+                print(f"✓ {filename} exists")
+                # Read content to see what's in it
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    content = f.read()
+                    print(f"  Content length: {len(content)} chars")
+                    print(f"  First line: {content.split()[0] if content.split() else 'EMPTY'}")
+            else:
+                print(f"✗ {filename} missing")
+
+    def test_names_csv_template_generation(self):
+        """Test names.csv template generation."""
+        template_folder = Path(self.temp_dir.name) / "templates"
+
+        # Generate templates
+        self.converter.generate_csv_templates(template_folder, include_examples=True)
+
+        # Debug: List all files
+        if template_folder.exists():
+            files = list(template_folder.glob("*"))
+            print(f"All files in template folder: {[f.name for f in files]}")
+
+        # Check names.csv specifically
+        file_path = template_folder / "names.csv"
+        self.assertTrue(file_path.exists(), "names.csv should be created")
+
+        # Check file has content
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+            self.assertTrue(len(content) > 0, "names.csv should not be empty")
+
+            # Check for name-specific columns
+            expected_cols = ["organisation_identifier", "language", "name"]
+            self.assertTrue(
+                all(col in content for col in expected_cols),
+                "names.csv should contain all name columns"
+            )
 
 
 if __name__ == "__main__":

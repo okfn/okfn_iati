@@ -1155,82 +1155,21 @@ class IatiOrganisationMultiCsvConverter:
         output_path = Path(output_folder)
         output_path.mkdir(parents=True, exist_ok=True)
 
-        # Generate organisations.csv template (no changes needed)
-        columns = [
-            # Basic organisation info
-            "Organisation Identifier",
-            "Name",
-            "Reporting Org Ref",
-            "Reporting Org Type",
-            "Reporting Org Name",
-
-            # Budget info
-            "Budget Kind",
-            "Budget Status",
-            "Budget Period Start",
-            "Budget Period End",
-            "Budget Value",
-            "Currency",
-            "Value Date",
-
-            # Recipient info
-            "Recipient Org Ref",
-            "Recipient Org Type",
-            "Recipient Org Name",
-            "Recipient Country Code",
-            "Recipient Region Code",
-            "Recipient Region Vocabulary",
-
-            # Document info
-            "Document URL",
-            "Document Format",
-            "Document Title",
-            "Document Category",
-            "Document Language",
-            "Document Date",
-
-            # Expenditure info
-            "Expenditure Period Start",
-            "Expenditure Period End",
-            "Expenditure Value",
-            "Expenditure Currency"
+        # Generate organisations.csv template
+        org_columns = [
+            "organisation_identifier", "name", "reporting_org_ref",
+            "reporting_org_type", "reporting_org_name", "reporting_org_lang",
+            "default_currency", "xml_lang"
         ]
 
         with open(output_path / "organisations.csv", "w", newline="", encoding="utf-8") as f:
             writer = csv.writer(f)
-            writer.writerow(columns)
+            writer.writerow(org_columns)
 
-            # Add example row if requested
             if include_examples:
                 writer.writerow([
-                    "XM-DAC-46002",  # Organisation Identifier
-                    "Sample Organisation",  # Name
-                    "XM-DAC-46002",  # Reporting Org Ref
-                    "40",  # Reporting Org Type
-                    "Sample Organisation",  # Reporting Org Name
-                    "total-budget",  # Budget Kind
-                    "2",  # Budget Status
-                    "2025-01-01",  # Budget Period Start
-                    "2025-12-31",  # Budget Period End
-                    "1000000",  # Budget Value
-                    "USD",  # Currency
-                    "2025-01-01",  # Value Date
-                    "",  # Recipient Org Ref
-                    "",  # Recipient Org Type
-                    "",  # Recipient Org Name
-                    "",  # Recipient Country Code
-                    "",  # Recipient Region Code
-                    "",  # Recipient Region Vocabulary
-                    "https://example.org/annual-report",  # Document URL
-                    "text/html",  # Document Format
-                    "Annual Report",  # Document Title
-                    "A01",  # Document Category
-                    "en",  # Document Language
-                    "2025-01-01",  # Document Date
-                    "2025-01-01",  # Expenditure Period Start
-                    "2025-12-31",  # Expenditure Period End
-                    "950000",  # Expenditure Value
-                    "USD"  # Expenditure Currency
+                    "XM-DAC-46002", "Sample Organisation", "XM-DAC-46002",
+                    "40", "Sample Organisation", "en", "USD", "en"
                 ])
 
         # Generate names.csv template
@@ -1250,7 +1189,7 @@ class IatiOrganisationMultiCsvConverter:
                     'XM-DAC-46002', 'es', 'Banco Centroamericano de Integración Económica'
                 ])
 
-        # Generate budgets.csv template (no changes needed)
+        # Generate budgets.csv template
         budget_columns = [
             'organisation_identifier', 'budget_kind', 'budget_status',
             'period_start', 'period_end', 'value', 'currency', 'value_date',
@@ -1269,7 +1208,7 @@ class IatiOrganisationMultiCsvConverter:
                     '', '', '', '', '', ''
                 ])
 
-        # Generate expenditures.csv template (no changes needed)
+        # Generate expenditures.csv template
         expenditure_columns = [
             'organisation_identifier', 'period_start', 'period_end',
             'value', 'currency', 'value_date'
@@ -1285,7 +1224,7 @@ class IatiOrganisationMultiCsvConverter:
                     '950000', 'USD', '2024-01-01'
                 ])
 
-        # Generate documents.csv template (no changes needed)
+        # Generate documents.csv template
         document_columns = [
             'organisation_identifier', 'url', 'format', 'title',
             'category_code', 'language', 'document_date'
