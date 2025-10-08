@@ -1,0 +1,9 @@
+organisation_identifier,url,format,title,category_code,language,document_date
+XM-DAC-46008,https://www.caf.com,application/http,"""Página Web Principal de CAF""",B16,,2024-01-01
+XM-DAC-46008,https://scioteca.caf.com/bitstream/handle/123456789/2235/Annual%20Report%202024_ENG%20.pdf,application/pdf,"""Informe Anual""",B01,,2024-04-29
+XM-DAC-46008,https://scioteca.caf.com/handle/123456789/2,application/http,"""Página con informes anuales""",B01,,2024-04-29
+XM-DAC-46008,https://www.caf.com/es/sobre-caf/estrategias-pais-caf/,application/http,"""Página de estrategias país""",B03,,2024-01-01
+XM-DAC-46008,https://www.caf.com/es/sobre-caf/estrategias-sectoriales-caf/,application/http,"""Página de estrategias sectoriales""",B1,,2024-01-01
+XM-DAC-46008,https://www.caf.com/media/4669983/2406-reporte-financiero-trimestral.pdf,application/pdf,"""Reporte Financiero Trimestral 2T 2024""",B06,,2024-06-30
+XM-DAC-46008,https://www.caf.com/es/inversionistas-2020/estados-financieros/,application/http,"""Página de informes financieros""",B06,,2024-06-30
+XM-DAC-46008,https://scioteca.caf.com/handle/123456789/2420,application/http,"""Reporte de Transparencia 2024""",B12,,2025-03-25
