@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iati-organisations generated-datetime="2024-11-25T18:15:45Z" version="2.03">
+ <iati-organisation default-currency="USD" last-updated-datetime= "2024-11-25T18:15:45Z" xml:lang="es">
+  <organisation-identifier>XM-DAC-46008</organisation-identifier>
+  <name>
+   <narrative xml:lang="es">"CAF Banco de Desarrollo de Am&#xE9;rica Latina y el Caribe"</narrative>
+  </name>
+<reporting-org ref="XM-DAC-46008" type="40" secondary-reporter="0">
+<narrative xml:lang="es">"CAF Banco de Desarrollo de Am&#xE9;rica Latina y el Caribe"</narrative>
+</reporting-org>
+<!--Links a Documentos (11)--> 
+ <document-link format="application/http" url="https://www.caf.com">
+<title>
+   <narrative>"P&#xE1;gina Web Principal de CAF"</narrative>
+ </title>
+ <description>
+   <narrative>"P&#xE1;gina de CAF que proporciona informaci&#xF3;n sobre proyectos de desarrollo, financiamiento y programas en la regi&#xF3;n, ofrece acceso a recursos, noticias y servicios relacionados con sus iniciativas"</narrative>
+ </description>
+   <category code="B16"/>
+   <document-date iso-date="2024-01-01"/>
+</document-link>
+ <document-link format="application/pdf" url="https://scioteca.caf.com/bitstream/handle/123456789/2235/Annual%20Report%202024_ENG%20.pdf">
+<title>
+   <narrative>"Informe Anual"</narrative>
+ </title>
+ <description>
+   <narrative>"Informe anual CAF 2023"</narrative>
+ </description>
+   <category code="B01"/>
+   <document-date iso-date="2024-04-29"/>
+</document-link>
+ <document-link format="application/http" url="https://scioteca.caf.com/handle/123456789/2">
+<title>
+   <narrative>"P&#xE1;gina con informes anuales"</narrative>
+ </title>
+ <description>
+   <narrative>"P&#xE1;gina web con la colecci&#xF3;n de informes anuales de CAF"</narrative>
+ </description>
+   <category code="B01"/>
+   <document-date iso-date="2024-04-29"/>
+</document-link>
+ <document-link format="application/http" url="https://www.caf.com/es/sobre-caf/estrategias-pais-caf/">
+<title>
+   <narrative>"P&#xE1;gina de estrategias pa&#xED;s"</narrative>
+ </title>
+ <description>
+   <narrative>"P&#xE1;rina que contiene la colecci&#xF3;n de estrategias por pa&#xED;s"</narrative>
+ </description>
+   <category code="B03"/>
+   <document-date iso-date="2024-01-01"/>
+</document-link>
+ <document-link format="application/http" url="https://www.caf.com/es/sobre-caf/estrategias-sectoriales-caf/">
+<title>
+   <narrative>"P&#xE1;gina de estrategias sectoriales"</narrative>
+ </title>
+ <description>
+   <narrative>"P&#xE1;gina que contiene la colecci&#xF3;n de estrategias sectoriales actuales"</narrative>
+ </description>
+   <category code="B1"/>
+   <document-date iso-date="2024-01-01"/>
+</document-link>
+ <document-link format="application/pdf" url="https://www.caf.com/media/4669983/2406-reporte-financiero-trimestral.pdf">
+<title>
+   <narrative>"Reporte Financiero Trimestral 2T 2024"</narrative>
+ </title>
+ <description>
+   <narrative>"Reporte financiero trimestral al 30 de Junio de 2024"</narrative>
+ </description>
+   <category code="B06"/>
+   <document-date iso-date="2024-06-30"/>
+</document-link>
+ <document-link format="application/http" url="https://www.caf.com/es/inversionistas-2020/estados-financieros/">
+<title>
+   <narrative>"P&#xE1;gina de informes financieros"</narrative>
+ </title>
+ <description>
+   <narrative>"P&#xE1;gina que contiene la colecci&#xF3;n de informes financieros de CAF"</narrative>
+ </description>
+   <category code="B06"/>
+   <document-date iso-date="2024-06-30"/>
+</document-link>
+ <document-link format="application/http" url="https://scioteca.caf.com/handle/123456789/2420">
+<title>
+   <narrative>"Reporte de Transparencia 2024"</narrative>
+ </title>
+ <description>
+   <narrative>"Reporte Orgalizacional de Transparencia 2024"</narrative>
+ </description>
+   <category code="B12"/>
+   <document-date iso-date="2025-03-25"/>
+</document-link>
+ </iati-organisation>
+</iati-organisations>
