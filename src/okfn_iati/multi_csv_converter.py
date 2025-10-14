@@ -1235,3 +1235,13 @@ different aspect of IATI activities:
 Example: `XM-DAC-46002-CR-2025`
 
 """)
+
+
+"""
+Real life sample usage:
+
+python scripts/csv_tools.py xml-to-csv-folder data-samples/xml/CAF-ActivityFile-2025-10-10.xml data-samples/csv_folders/CAF
+and roll back to test
+python scripts/csv_tools.py csv-folder-to-xml data-samples/csv_folders/CAF data-samples/xml/CAF-ActivityFile-2025-10-10-back.xml
+
+"""
