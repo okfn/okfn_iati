@@ -54,10 +54,10 @@ class OrganizationRef:
 
     def __post_init__(self):
         # Validate type is a valid OrganisationType if it's provided and numeric
-        if self.type is not None:
+        if self.type:
             org_types = [e.value for e in OrganisationType]
             if self.type not in org_types:
-                raise ValueError(f"Invalid organization type: {self.type}. Valid values are: {org_types}")
+                raise ValueError(f"Invalid organization type: '{self.type}'. Valid values are: {org_types}")
 
 
 @dataclass
@@ -95,12 +95,12 @@ class ParticipatingOrg:
             errors.append(f"Invalid organization role: {self.role}. Valid values are: {valid_org_roles}")
 
         # Validate type
-        if self.type is not None:
+        if self.type:
             org_types = [e.value for e in OrganisationType]
             if isinstance(self.type, str) and self.type not in org_types:
-                errors.append(f"Invalid organization type: {self.type}. Valid values are: {org_types}")
+                errors.append(f"Invalid organization type: '{self.type}'. Valid values are: {org_types}")
             elif hasattr(self.type, 'value') and self.type.value not in org_types:
-                errors.append(f"Invalid organization type: {self.type}. Valid values are: {org_types}")
+                errors.append(f"Invalid organization type: '{self.type}'. Valid values are: {org_types}")
 
         # Validate CRS channel code
         if self.crs_channel_code is not None and not crs_channel_code_validator.is_valid_code(self.crs_channel_code):
