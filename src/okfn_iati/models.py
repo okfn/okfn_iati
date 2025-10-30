@@ -71,7 +71,7 @@ class ParticipatingOrg:
         type: Optional organization type (see OrganisationType enum)
         activity_id: Optional activity identifier the organization is associated with
         crs_channel_code: Optional CRS channel code.
-            See codes https://iatistandard.org/en/iati-standard/203/codelists/crsaddotherflags/
+            See codes https://iatistandard.org/en/iati-standard/203/codelists/crschannelcode/
         narratives: List of narrative elements with organization names
 
     References:
@@ -103,8 +103,8 @@ class ParticipatingOrg:
                 errors.append(f"Invalid organization type: '{self.type}'. Valid values are: {org_types}")
 
         # Validate CRS channel code
-        if self.crs_channel_code is not None and not crs_channel_code_validator.is_valid_code(self.crs_channel_code):
-            errors.append(f"Invalid CRS channel code: {self.crs_channel_code}")
+        if self.crs_channel_code and not crs_channel_code_validator.is_valid_code(self.crs_channel_code):
+            errors.append(f"Invalid CRS channel code: '{self.crs_channel_code}'")
 
         if errors:
             raise ValueError(" ".join(errors))
@@ -459,6 +459,153 @@ class Transaction:
 
 
 @dataclass
+class IndicatorBaseline:
+    """
+    Baseline information for an indicator.
+
+    Args:
+        year: The year the baseline value was taken (yyyy)
+        iso_date: Optional ISO 8601 date when baseline was taken
+        value: Optional baseline value (omit for qualitative measures)
+        comment: Optional list of narratives with baseline comments
+        location: Optional list of location references
+        dimension: Optional list of dimension information for disaggregation
+
+    References:
+        https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/baseline/
+    """
+    year: int
+    iso_date: Optional[str] = None
+    value: Optional[str] = None
+    comment: Optional[List[Narrative]] = None
+    location: Optional[List[Dict[str, str]]] = None
+    dimension: Optional[List[Dict[str, str]]] = None
+
+    def __post_init__(self):
+        # Validate ISO date format if provided
+        if self.iso_date:
+            try:
+                datetime.strptime(self.iso_date, "%Y-%m-%d")
+            except ValueError:
+                raise ValueError(f"Invalid ISO date format: {self.iso_date}. Expected YYYY-MM-DD")
+
+
+@dataclass
+class IndicatorPeriodTarget:
+    """
+    Target information for an indicator period.
+
+    Args:
+        value: Optional target value (omit for qualitative measures)
+        comment: Optional list of narratives with target comments
+        location: Optional list of location references
+        dimension: Optional list of dimension information for disaggregation
+
+    References:
+        https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/target/
+    """
+    value: Optional[str] = None
+    comment: Optional[List[Narrative]] = None
+    location: Optional[List[Dict[str, str]]] = None
+    dimension: Optional[List[Dict[str, str]]] = None
+
+
+@dataclass
+class IndicatorPeriodActual:
+    """
+    Actual result information for an indicator period.
+
+    Args:
+        value: Optional actual value (omit for qualitative measures)
+        comment: Optional list of narratives with actual result comments
+        location: Optional list of location references
+        dimension: Optional list of dimension information for disaggregation
+
+    References:
+        https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/actual/
+    """
+    value: Optional[str] = None
+    comment: Optional[List[Narrative]] = None
+    location: Optional[List[Dict[str, str]]] = None
+    dimension: Optional[List[Dict[str, str]]] = None
+
+
+@dataclass
+class IndicatorPeriod:
+    """
+    Period information for an indicator.
+
+    Args:
+        period_start: Start date of the reporting period (ISO 8601)
+        period_end: End date of the reporting period (ISO 8601)
+        target: Optional list of target information
+        actual: Optional list of actual result information
+
+    References:
+        https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/period/
+    """
+    period_start: str
+    period_end: str
+    target: Optional[List[IndicatorPeriodTarget]] = None
+    actual: Optional[List[IndicatorPeriodActual]] = None
+
+    def __post_init__(self):
+        # Validate ISO date formats
+        try:
+            datetime.strptime(self.period_start, "%Y-%m-%d")
+        except ValueError:
+            raise ValueError(f"Invalid period_start format: {self.period_start}. Expected YYYY-MM-DD")
+
+        try:
+            datetime.strptime(self.period_end, "%Y-%m-%d")
+        except ValueError:
+            raise ValueError(f"Invalid period_end format: {self.period_end}. Expected YYYY-MM-DD")
+
+
+@dataclass
+class Indicator:
+    """
+    Indicator information for results.
+
+    Args:
+        measure: Unit of measure (see IndicatorMeasure enum)
+        title: List of narratives with indicator title
+        description: Optional list of narratives with indicator description
+        ascending: Optional boolean indicating if indicator improves from small to large
+        aggregation_status: Optional boolean indicating if data is suitable for aggregation
+        baseline: Optional list of baseline information
+        period: Optional list of period information
+        reference: Optional list of reference information for coded identification
+
+    References:
+        https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/
+    """
+    measure: Union['IndicatorMeasure', str]
+    title: List[Narrative] = field(default_factory=list)
+    description: Optional[List[Narrative]] = None
+    ascending: Optional[bool] = None
+    aggregation_status: Optional[bool] = None
+    baseline: Optional[List[IndicatorBaseline]] = None
+    period: Optional[List[IndicatorPeriod]] = None
+    reference: Optional[List[Dict[str, str]]] = None
+
+    def __post_init__(self):
+        # Import here to avoid circular imports
+        from okfn_iati.enums import IndicatorMeasure
+
+        # Convert string to enum if needed
+        if isinstance(self.measure, str):
+            try:
+                self.measure = next(e for e in IndicatorMeasure if e.value == self.measure)
+            except (StopIteration, ValueError):
+                valid_measures = [e.value for e in IndicatorMeasure]
+                raise ValueError(f"Invalid indicator measure: {self.measure}. Valid values are: {valid_measures}")
+        elif hasattr(self.measure, 'value') and self.measure.value not in [e.value for e in IndicatorMeasure]:
+            valid_measures = [e.value for e in IndicatorMeasure]
+            raise ValueError(f"Invalid indicator measure: {self.measure}. Valid values are: {valid_measures}")
+
+
+@dataclass
 class Result:
     """
     Results information for the activity.
@@ -468,6 +615,8 @@ class Result:
         aggregation_status: Optional boolean indicating if result can be aggregated
         title: Optional list of narratives with result title
         description: Optional list of narratives with result description
+        indicator: List of indicators for this result
+        reference: Optional list of reference information for results framework
 
     References:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/
@@ -476,7 +625,8 @@ class Result:
     aggregation_status: Optional[bool] = None
     title: Optional[List[Narrative]] = None
     description: Optional[List[Narrative]] = None
-    # indicators would be here in a more complete implementation
+    indicator: List[Indicator] = field(default_factory=list)
+    reference: Optional[List[Dict[str, str]]] = None
 
     def __post_init__(self):
         # Convert string to enum if needed
