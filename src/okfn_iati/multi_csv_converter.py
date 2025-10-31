@@ -19,9 +19,9 @@ from .models import (
     Indicator, IndicatorBaseline, IndicatorPeriod, IndicatorPeriodTarget, IndicatorPeriodActual
 )
 from .enums import (
-    ActivityStatus, ActivityDateType, TransactionType, BudgetType, BudgetStatus,
-    OrganisationRole, ContactType, DocumentCategory, IndicatorMeasure, ActivityScope,
-    CollaborationType, FlowType, FinanceType, AidType, TiedStatus, ResultType
+    ActivityStatus, ActivityDateType,
+    DocumentCategory, ActivityScope,
+    CollaborationType
 )
 from .xml_generator import IatiXmlGenerator
 
@@ -1028,7 +1028,9 @@ class IatiMultiCsvConverter:
             reporting_org=OrganizationRef(
                 ref=main_data.get('reporting_org_ref', ''),
                 type=main_data.get('reporting_org_type', ''),
-                narratives=[Narrative(text=main_data.get('reporting_org_name', ''))] if main_data.get('reporting_org_name') else []
+                narratives=[
+                    Narrative(text=main_data.get('reporting_org_name', ''))
+                ] if main_data.get('reporting_org_name') else []
             ),
             title=[Narrative(text=main_data.get('title', ''))] if main_data.get('title') else [],
             description=[{
@@ -1088,7 +1090,7 @@ class IatiMultiCsvConverter:
 
             # Get indicators for this result
             result_indicators = [
-                ind for ind in data['indicators'] 
+                ind for ind in data['indicators']
                 if ind.get('result_ref') == result_ref
             ]
 
@@ -1263,7 +1265,9 @@ class IatiMultiCsvConverter:
             transaction_args['provider_org'] = OrganizationRef(
                 ref=trans_data.get('provider_org_ref', ''),
                 type=trans_data.get('provider_org_type', ''),
-                narratives=[Narrative(text=trans_data.get('provider_org_name', ''))] if trans_data.get('provider_org_name') else []
+                narratives=[
+                    Narrative(text=trans_data.get('provider_org_name', ''))
+                ] if trans_data.get('provider_org_name') else []
             )
 
         # Add receiver org
@@ -1271,7 +1275,9 @@ class IatiMultiCsvConverter:
             transaction_args['receiver_org'] = OrganizationRef(
                 ref=trans_data.get('receiver_org_ref', ''),
                 type=trans_data.get('receiver_org_type', ''),
-                narratives=[Narrative(text=trans_data.get('receiver_org_name', ''))] if trans_data.get('receiver_org_name') else []
+                narratives=[
+                    Narrative(text=trans_data.get('receiver_org_name', ''))
+                ] if trans_data.get('receiver_org_name') else []
             )
 
         # Add optional fields

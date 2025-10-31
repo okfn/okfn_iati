@@ -6,6 +6,7 @@ from okfn_iati.enums import (
     ActivityStatus, ActivityScope, BudgetStatus, BudgetType,
     ContactType, DocumentCategory, ActivityDateType,
     FinanceType, FlowType, GeographicalPrecision,
+    IndicatorMeasure,
     LocationReach, LocationType, OrganisationRole, OrganisationType,
     RelatedActivityType,
     ResultType, SectorCategory, TiedStatus, TransactionType, LocationID
@@ -580,7 +581,7 @@ class Indicator:
     References:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/result/indicator/
     """
-    measure: Union['IndicatorMeasure', str]
+    measure: Union[IndicatorMeasure, str]
     title: List[Narrative] = field(default_factory=list)
     description: Optional[List[Narrative]] = None
     ascending: Optional[bool] = None
