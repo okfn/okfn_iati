@@ -577,25 +577,6 @@ class IatiMultiCsvConverter:
             data['reporting_org_type'] = ''
             data['reporting_org_name'] = ''
 
-        # Dates
-        data['planned_start_date'] = ''
-        data['actual_start_date'] = ''
-        data['planned_end_date'] = ''
-        data['actual_end_date'] = ''
-
-        for date_elem in activity_elem.findall('activity-date'):
-            date_type = date_elem.get('type')
-            iso_date = date_elem.get('iso-date', '')
-
-            if date_type == '1':
-                data['planned_start_date'] = iso_date
-            elif date_type == '2':
-                data['actual_start_date'] = iso_date
-            elif date_type == '3':
-                data['planned_end_date'] = iso_date
-            elif date_type == '4':
-                data['actual_end_date'] = iso_date
-
         # Recipient country (first one only for main table)
         country_elem = activity_elem.find('recipient-country')
         if country_elem is not None:
@@ -1028,7 +1009,7 @@ class IatiMultiCsvConverter:
                 'results': [],
                 'indicators': [],
                 'indicator_periods': [],
-                # activity_dates?
+                'activity_date': [],
                 'contact_info': []
             }
 
@@ -1036,8 +1017,7 @@ class IatiMultiCsvConverter:
         for csv_type in [
             'participating_orgs', 'sectors', 'budgets', 'transactions',
             'locations', 'documents', 'results', 'indicators', 'indicator_periods',
-            # activity_dates?# activity_dates?
-            'contact_info'
+            'activity_date', 'contact_info'
         ]:
             for row in data_collections.get(csv_type, []):
                 activity_id = row.get('activity_identifier')
@@ -1116,7 +1096,9 @@ class IatiMultiCsvConverter:
         for doc_data in data['documents']:
             activity.document_links.append(self._build_document(doc_data))
 
-        # activity_dates?
+        # Add activity_dates
+        for date_data in data['activity_date']:
+            activity.activity_dates.append(self._build_activity_date(date_data))
 
         # Add contact info
         for contact_data in data['contact_info']:
@@ -1149,6 +1131,21 @@ class IatiMultiCsvConverter:
             activity.results.append(result)
 
         return activity
+
+    def _build_activity_date(self, date_data: Dict[str, str]) -> ActivityDate:
+        """Build ActivityDate from data."""
+        narratives = []
+        if date_data.get('narrative'):
+            narratives.append(Narrative(
+                text=date_data['narrative'],
+                lang=date_data.get('narrative_lang', '')
+            ))
+
+        return ActivityDate(
+            type=ActivityDateType(date_data['type']),
+            iso_date=date_data.get('iso_date', ''),
+            narratives=narratives
+        )
 
     def _parse_activity_status(self, status_code: str) -> Optional[ActivityStatus]:
         """Parse activity status code to enum."""
