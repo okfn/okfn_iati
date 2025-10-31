@@ -1,0 +1,537 @@
+activity_identifier,result_ref,result_type,aggregation_status,title,description
+XI-IATI-IADB-AR-L1342,result_1,1,false,Fortalecimiento del Sector y Gestión Ambiental y Social,Fortalecimiento del Sector y Gestión Ambiental y Social
+XI-IATI-IADB-AR-L1342,result_2,1,false,Sistemas para Saneamiento Ambiental,Sistemas para Saneamiento Ambiental
+XI-IATI-IADB-AR-L1248,result_1,1,false,"Componente 1: Fortalecimiento de la administración tributaria y gestión y política de gasto público, junto a la gestión de la inversión pública.","Componente 1: Fortalecimiento de la administración tributaria y gestión y política de gasto público, junto a la gestión de la inversión pública."
+XI-IATI-IADB-AR-L1248,result_2,1,false,Componente 2: Inversiones para el Desarrollo,Componente 2: Inversiones para el Desarrollo
+XI-IATI-IADB-AR-L1344,result_1,1,false,Fortalecimiento Institucional,Fortalecimiento Institucional
+XI-IATI-IADB-AR-L1344,result_2,1,false,Sistema de Agua Potable,Sistema de Agua Potable
+XI-IATI-IADB-AR-L1017,result_1,1,false,Desarrollo de aplicaciones,Desarrollo de aplicaciones
+XI-IATI-IADB-AR-L1017,result_2,1,false,Segmento satelital y terrestre,Segmento satelital y terrestre
+XI-IATI-IADB-AR-L1274,result_1,1,false,Componente 1: Obras Civiles,Componente 1: Obras Civiles
+XI-IATI-IADB-AR-L1274,result_2,1,false,Componente 2: Fortalecimiento Institucional,Componente 2: Fortalecimiento Institucional
+XI-IATI-IADB-AR-L1141,result_1,1,false,Componente I.1: Apoyo a la Innovación Tecnológica Sectorial y Regional (FITS/R),Componente I.1: Apoyo a la Innovación Tecnológica Sectorial y Regional (FITS/R)
+XI-IATI-IADB-AR-L1141,result_2,1,false,Componente I.2: Fortalecimiento de Capacidades de Innovación y de Investigación,Componente I.2: Fortalecimiento de Capacidades de Innovación y de Investigación
+XI-IATI-IADB-AR-L1141,result_3,1,false,Componente I.3: Infraestructura y consolidación del SIN,Componente I.3: Infraestructura y consolidación del SIN
+XI-IATI-IADB-AR-L1141,result_4,1,false,Componente II.1: Formación de profesionales en áreas prioritarias de la ciencia y la tecnología.,Componente II.1: Formación de profesionales en áreas prioritarias de la ciencia y la tecnología.
+XI-IATI-IADB-AR-L1141,result_5,1,false,Componente II.2: Especialización y estancias cortas en gestión de la innovación,Componente II.2: Especialización y estancias cortas en gestión de la innovación
+XI-IATI-IADB-AR-L1084,result_1,1,false,Sistema Integral de Desagües Cloacales del Gran San Juan,Sistema Integral de Desagües Cloacales del Gran San Juan
+XI-IATI-IADB-AR-L1084,result_2,1,false,Sistema Integral de Saneamiento del Gran San Miguel de Tucumán,Sistema Integral de Saneamiento del Gran San Miguel de Tucumán
+XI-IATI-IADB-AR-L1084,result_3,2,false,Sistema cloacal de la ciudad de San Juan mejorado,Sistema cloacal de la ciudad de San Juan mejorado
+XI-IATI-IADB-AR-L1084,result_4,2,false,Sistema cloacal de la ciudad de San Miguel de Tucumán mejorado,Sistema cloacal de la ciudad de San Miguel de Tucumán mejorado
+XI-IATI-IADB-AR-L1084,result_5,1,false,Sistema de Agua Potable de la Ciudad de San Salvador de Jujuy,Sistema de Agua Potable de la Ciudad de San Salvador de Jujuy
+XI-IATI-IADB-AR-L1084,result_6,2,false,Sistema de Agua Potable de la ciudad de San Salvador de Jujuy mejorado,Sistema de Agua Potable de la ciudad de San Salvador de Jujuy mejorado
+XI-IATI-IADB-AR-L1302,result_1,1,false,Componente 1: Empleabilidad de beneficiarios de programas de protección social,Componente 1: Empleabilidad de beneficiarios de programas de protección social
+XI-IATI-IADB-AR-L1302,result_2,1,false,Componente 2: Continuidad educativa de jóvenes de familias vulnerables,Componente 2: Continuidad educativa de jóvenes de familias vulnerables
+XI-IATI-IADB-AR-L1302,result_3,1,false,Componente 3: Accesibilidad al transporte público,Componente 3: Accesibilidad al transporte público
+XI-IATI-IADB-AR-L1302,result_4,1,false,Componente 4: Apoyo a la Coordinación de Políticas Sociales,Componente 4: Apoyo a la Coordinación de Políticas Sociales
+XI-IATI-IADB-AR-L1302,result_5,2,false,Regularidad educativa entre jóvenes de 18 a 24 años mantenida,Regularidad educativa entre jóvenes de 18 a 24 años mantenida
+XI-IATI-IADB-AR-L1353,result_1,1,false,"Apoyo a micro, pequeñas y medianas empresas lideradas por jóvenes y mujeres","Apoyo a micro, pequeñas y medianas empresas lideradas por jóvenes y mujeres"
+XI-IATI-IADB-AR-L1353,result_2,1,false,Apoyo para la Comercialización de Pequeños y Medianos Establecimientos Vitivinícolas,Apoyo para la Comercialización de Pequeños y Medianos Establecimientos Vitivinícolas
+XI-IATI-IADB-AR-L1353,result_3,1,false,Innovación Tecnológica y Organizacional para la Producción Vitícola,Innovación Tecnológica y Organizacional para la Producción Vitícola
+XI-IATI-IADB-AR-L1243,result_1,1,false,Apoyo a la Gobernabilidad de Áreas Metropolitanas,Apoyo a la Gobernabilidad de Áreas Metropolitanas
+XI-IATI-IADB-AR-L1243,result_2,1,false,Gestión de Áreas Metropolitanas - Fortalecimiento Institucional de las AM,Gestión de Áreas Metropolitanas - Fortalecimiento Institucional de las AM
+XI-IATI-IADB-AR-L1243,result_3,1,false,Gestión de Áreas Metropolitanas - Inversiones en áreas metropolitanas,Gestión de Áreas Metropolitanas - Inversiones en áreas metropolitanas
+XI-IATI-IADB-AR-L1008,result_1,2,false,Comunicación del HSN con la ciudadanía mejorada,Comunicación del HSN con la ciudadanía mejorada
+XI-IATI-IADB-AR-L1008,result_2,1,false,Comunicación social y gestión del cambio,Comunicación social y gestión del cambio
+XI-IATI-IADB-AR-L1008,result_3,1,false,Gestión Parlamentaria y proceso de formación de la ley,Gestión Parlamentaria y proceso de formación de la ley
+XI-IATI-IADB-AR-L1008,result_4,1,false,Gestión administrativa y financiera del Senado,Gestión administrativa y financiera del Senado
+XI-IATI-IADB-AR-L1008,result_5,2,false,Honorable Senado de la Nación fortalecido con su función legislativa mejorada,Honorable Senado de la Nación fortalecido con su función legislativa mejorada
+XI-IATI-IADB-AR-L1004,result_1,1,false,Apoyo a la estructuración y promoción de los corredores,Apoyo a la estructuración y promoción de los corredores
+XI-IATI-IADB-AR-L1004,result_2,1,false,Fortalecimiento de la administración turística nacional,Fortalecimiento de la administración turística nacional
+XI-IATI-IADB-AR-L1004,result_3,2,false,Generación de divisas provenientes de la actividad turística en los Corredores de los Lagos e Iguazú-Misiones incrementada.,Generación de divisas provenientes de la actividad turística en los Corredores de los Lagos e Iguazú-Misiones incrementada.
+XI-IATI-IADB-AR-L1004,result_4,1,false,Valorización y gestión de atracciones turísticas públicas,Valorización y gestión de atracciones turísticas públicas
+XI-IATI-IADB-AR-L1013,result_1,1,false,Componente 1: Mejoramiento del apoyo institucional al sector privado del Norte Grande.,Componente 1: Mejoramiento del apoyo institucional al sector privado del Norte Grande.
+XI-IATI-IADB-AR-L1013,result_2,1,false,Componente 2: Mejoramiento de la Competitividad de Conglomnerados Productivos.,Componente 2: Mejoramiento de la Competitividad de Conglomnerados Productivos.
+XI-IATI-IADB-AR-L1013,result_3,1,false,"Componente 3: Seguimiento, Evaluación, Aprendizaje y Difusión.","Componente 3: Seguimiento, Evaluación, Aprendizaje y Difusión."
+XI-IATI-IADB-AR-L1063,result_1,1,false,Apoyo a la implementación de planes de negocio,Apoyo a la implementación de planes de negocio
+XI-IATI-IADB-AR-L1063,result_2,1,false,Fortalecimiento de la institucionalidad,Fortalecimiento de la institucionalidad
+XI-IATI-IADB-AR-L1063,result_3,2,false,Integración de Pequeños Productores Vitícolas a la Cadena Vitivinícola mejorada,Integración de Pequeños Productores Vitícolas a la Cadena Vitivinícola mejorada
+XI-IATI-IADB-AR-L1063,result_4,1,false,Promoción de Esquemas Asociativos,Promoción de Esquemas Asociativos
+XI-IATI-IADB-AR-L1354,result_1,1,false,Componente 1: Inversiones en Infraestructura sostenible.,Componente 1: Inversiones en Infraestructura sostenible.
+XI-IATI-IADB-AR-L1354,result_2,1,false,Componente 2: Fortalecimiento Institucional y estudios técnicos.,Componente 2: Fortalecimiento Institucional y estudios técnicos.
+XI-IATI-IADB-AR-L1020,result_1,1,false,Información Monitoreo y Evaluación,Información Monitoreo y Evaluación
+XI-IATI-IADB-AR-L1020,result_2,1,false,Planificación y Gestión de Insumos Estratégicos para los Servicios de Salud,Planificación y Gestión de Insumos Estratégicos para los Servicios de Salud
+XI-IATI-IADB-AR-L1020,result_3,1,false,Proyectos Provinciales de Fortalecimiento de Redes de Servicios de Salud,Proyectos Provinciales de Fortalecimiento de Redes de Servicios de Salud
+XI-IATI-IADB-AR-L1033,result_1,1,false,Componente 1: Asistencia Técnica a Empresas y Grupos Productivos,Componente 1: Asistencia Técnica a Empresas y Grupos Productivos
+XI-IATI-IADB-AR-L1033,result_2,1,false,Componente 2: Fortalecimiento Institucional,Componente 2: Fortalecimiento Institucional
+XI-IATI-IADB-AR-L1025,result_1,2,false,Sistemas de Gestión Integral de Residuos Sólidos Urbanos en municipios colindantes a Áreas Protegidas mejorados,Sistemas de Gestión Integral de Residuos Sólidos Urbanos en municipios colindantes a Áreas Protegidas mejorados
+XI-IATI-IADB-AR-L1025,result_2,2,false,Sistemas de Gestión Integral de Residuos Sólidos Urbanos en otros municipios turísticos mejorados,Sistemas de Gestión Integral de Residuos Sólidos Urbanos en otros municipios turísticos mejorados
+XI-IATI-IADB-AR-L1025,result_3,1,false,Subprograma 1: Gestión Integral de Residuos Sólidos Urbanos (GIRSU) en Áreas Protegidas y municipios colindantes,Subprograma 1: Gestión Integral de Residuos Sólidos Urbanos (GIRSU) en Áreas Protegidas y municipios colindantes
+XI-IATI-IADB-AR-L1025,result_4,1,false,Subprograma 2: Gestión Integral de Residuos Sólidos Urbanos (GIRSU) en otros municipios turísticos,Subprograma 2: Gestión Integral de Residuos Sólidos Urbanos (GIRSU) en otros municipios turísticos
+XI-IATI-IADB-AR-L1298,result_1,1,false,Componente 1. Estabilidad macroeconómica,Componente 1. Estabilidad macroeconómica
+XI-IATI-IADB-AR-L1298,result_2,1,false,Componente 2. Promoción de la autonomía física de las mujeres,Componente 2. Promoción de la autonomía física de las mujeres
+XI-IATI-IADB-AR-L1298,result_3,1,false,Componente 3. Promoción de la autonomía económica de las mujeres,Componente 3. Promoción de la autonomía económica de las mujeres
+XI-IATI-IADB-AR-L1298,result_4,1,false,Componente 4. Fortalecimiento de la capacidad de gestión de las políticas de género,Componente 4. Fortalecimiento de la capacidad de gestión de las políticas de género
+XI-IATI-IADB-AR-L1298,result_5,2,false,Fortalecimiento del marco normativo e institucional dirigido a promover la autonomía física y económica de las mujeres y la capacidad de gestión pública de las políticas de género,Fortalecimiento del marco normativo e institucional dirigido a promover la autonomía física y económica de las mujeres y la capacidad de gestión pública de las políticas de género
+XI-IATI-IADB-AR-L1303,result_1,1,false,Componente 2. Fortalecimiento del acceso a la información y del marco legal de la ética de los funcionarios públicos,Componente 2. Fortalecimiento del acceso a la información y del marco legal de la ética de los funcionarios públicos
+XI-IATI-IADB-AR-L1303,result_2,2,false,Resultado 1: Fortalecimiento del acceso a la información y del marco legal de la ética de los funcionarios públicos,Resultado 1: Fortalecimiento del acceso a la información y del marco legal de la ética de los funcionarios públicos
+XI-IATI-IADB-AR-L1303,result_3,2,false,Resultado 2: Fortalecimiento de la transparencia del uso de los recursos públicos,Resultado 2: Fortalecimiento de la transparencia del uso de los recursos públicos
+XI-IATI-IADB-AR-L1303,result_4,2,false,Resultado 3: Fortalecimiento de la transparencia financiera,Resultado 3: Fortalecimiento de la transparencia financiera
+XI-IATI-IADB-AR-L1355,result_1,1,false,COMPONENTE 1. Subcomponente 1.1. Fortalecimiento edilicio de EPI.,COMPONENTE 1. Subcomponente 1.1. Fortalecimiento edilicio de EPI.
+XI-IATI-IADB-AR-L1355,result_2,1,false,COMPONENTE 1. Subcomponente 1.2. Apoyo a la implementación de mejoras en la calidad de los procesos de atención y gestión de los EPI.,COMPONENTE 1. Subcomponente 1.2. Apoyo a la implementación de mejoras en la calidad de los procesos de atención y gestión de los EPI.
+XI-IATI-IADB-AR-L1355,result_3,1,false,COMPONENTE 2. Subcomponente 2.1. Expansión y fortalecimiento de la gestión de la infraestructura educativa.,COMPONENTE 2. Subcomponente 2.1. Expansión y fortalecimiento de la gestión de la infraestructura educativa.
+XI-IATI-IADB-AR-L1355,result_4,1,false,COMPONENTE 2. Subcomponente 2.2. Transformación de los Aprendizajes en la Educación Inicial en la postpandemia.,COMPONENTE 2. Subcomponente 2.2. Transformación de los Aprendizajes en la Educación Inicial en la postpandemia.
+XI-IATI-IADB-AR-L1355,result_5,1,false,COMPONENTE 2. Subcomponente 2.3. Evaluación y monitoreo.,COMPONENTE 2. Subcomponente 2.3. Evaluación y monitoreo.
+XI-IATI-IADB-AR-L1355,result_6,2,false,ampliar el acceso a EPI de calidad para niñas y niños de entre 0 y 4 años,ampliar el acceso a EPI de calidad para niñas y niños de entre 0 y 4 años
+XI-IATI-IADB-AR-L1355,result_7,2,false,"fortalecer la enseñanza y las experiencias de aprendizaje de niñas y niños de 3 a 5 años, centradas en el juego y en la alfabetización digital, con perspectiva de género","fortalecer la enseñanza y las experiencias de aprendizaje de niñas y niños de 3 a 5 años, centradas en el juego y en la alfabetización digital, con perspectiva de género"
+XI-IATI-IADB-AR-L1355,result_8,2,false,incrementar la cobertura de la Educación Inicial para niñas y niños de 3 a 5 años,incrementar la cobertura de la Educación Inicial para niñas y niños de 3 a 5 años
+XI-IATI-IADB-AR-L1355,result_9,2,false,mejorar la calidad de los procesos de atención desarrollados en los EPI,mejorar la calidad de los procesos de atención desarrollados en los EPI
+XI-IATI-IADB-AR-L1356,result_1,1,false,"Apoyo financiero a la reactivación económica de la producción (BID US$39,0 millones).","Apoyo financiero a la reactivación económica de la producción (BID US$39,0 millones)."
+XI-IATI-IADB-AR-L1356,result_2,1,false,"Apoyo no financiero a la reactivación de la producción (BID US$0,5 millones).","Apoyo no financiero a la reactivación de la producción (BID US$0,5 millones)."
+XI-IATI-IADB-AR-L1409,result_1,1,false,Mejoramiento de las políticas y programas de asistencia económica a los hogares con embarazadas y niños de hasta 48 meses,Mejoramiento de las políticas y programas de asistencia económica a los hogares con embarazadas y niños de hasta 48 meses
+XI-IATI-IADB-AR-L1409,result_2,1,false,Mejoramiento del acceso de la población vulnerable a servicios de primera infancia,Mejoramiento del acceso de la población vulnerable a servicios de primera infancia
+XI-IATI-IADB-AR-L1310,result_1,1,false,Componente 1. Mejora de la información satelital.,Componente 1. Mejora de la información satelital.
+XI-IATI-IADB-AR-L1310,result_2,1,false,Componente 2. Nuevas aplicaciones satelitales.,Componente 2. Nuevas aplicaciones satelitales.
+XI-IATI-IADB-AR-L1245,result_1,1,false,C1: Infraestructura vial,C1: Infraestructura vial
+XI-IATI-IADB-AR-L1245,result_2,1,false,C2: Infraestructura hídrica,C2: Infraestructura hídrica
+XI-IATI-IADB-AR-L1245,result_3,1,false,C3: Servicios básicos e Infraestructura Edilicia de uso público,C3: Servicios básicos e Infraestructura Edilicia de uso público
+XI-IATI-IADB-AR-L1245,result_4,1,false,C4: Estudios,C4: Estudios
+XI-IATI-IADB-AR-L1181,result_1,1,false,Componente I: Fortalecimiento de capacidades de innovación tecnológica.,Componente I: Fortalecimiento de capacidades de innovación tecnológica.
+XI-IATI-IADB-AR-L1181,result_2,1,false,Componente II: Fortalecimiento de capacidades de investigación científica y tecnológica.,Componente II: Fortalecimiento de capacidades de investigación científica y tecnológica.
+XI-IATI-IADB-AR-L1181,result_3,1,false,"Componente III: Seguimiento, evaluación, articulación y difusión de las políticas de CTI.","Componente III: Seguimiento, evaluación, articulación y difusión de las políticas de CTI."
+XI-IATI-IADB-AR-L1404,result_1,1,false,Component 2. Promote the efficiency of tax policy and administration,Component 2. Promote the efficiency of tax policy and administration
+XI-IATI-IADB-AR-L1404,result_2,1,false,Component 3. Promote the efficiency of public spending,Component 3. Promote the efficiency of public spending
+XI-IATI-IADB-AR-L1101,result_1,1,false,Apoyo a la Gobernabilidad de Areas Metropolitanas,Apoyo a la Gobernabilidad de Areas Metropolitanas
+XI-IATI-IADB-AR-L1101,result_2,1,false,Gestión de Areas Metropolitanas,Gestión de Areas Metropolitanas
+XI-IATI-IADB-AR-L1101,result_3,2,false,Los servicios se gestionan y operan de manera coordinada con participación de más de dos autoridades territoriales en las AMIs.,Los servicios se gestionan y operan de manera coordinada con participación de más de dos autoridades territoriales en las AMIs.
+XI-IATI-IADB-AR-L1101,result_4,2,false,Priorización de los problemas de gestión urbana por parte de las autoridades territoriales en las Areas Metropolitanas.,Priorización de los problemas de gestión urbana por parte de las autoridades territoriales en las Areas Metropolitanas.
+XI-IATI-IADB-AR-L1413,result_1,1,false,Fortalecimiento de la libre competencia,Fortalecimiento de la libre competencia
+XI-IATI-IADB-AR-L1413,result_2,1,false,Mejora de la calidad regulatoria,Mejora de la calidad regulatoria
+XI-IATI-IADB-AR-L1413,result_3,1,false,Otros indicadores de temas transversales,Otros indicadores de temas transversales
+XI-IATI-IADB-AR-L1413,result_4,1,false,Simplificación del comercio exterior,Simplificación del comercio exterior
+XI-IATI-IADB-AR-L1007,result_1,1,false,"Fortalecimiento de la gestión en la provision de servicios de educación, salud y desarrollo social","Fortalecimiento de la gestión en la provision de servicios de educación, salud y desarrollo social"
+XI-IATI-IADB-AR-L1007,result_2,1,false,"Infraestructura física y equipamientos en educación, salud y desarrollo social","Infraestructura física y equipamientos en educación, salud y desarrollo social"
+XI-IATI-IADB-AR-L1007,result_3,2,false,Niveles de cobertura y calidad de los servicios de educación de la Provincia de Buenos Aires mejorados,Niveles de cobertura y calidad de los servicios de educación de la Provincia de Buenos Aires mejorados
+XI-IATI-IADB-AR-L1021,result_1,1,false,Componente I - Obras Civiles y Electromecánicas para la Interconexión NEA-NOA,Componente I - Obras Civiles y Electromecánicas para la Interconexión NEA-NOA
+XI-IATI-IADB-AR-L1021,result_2,1,false,Componente II - Obras civiles y electromecánicas para las redes de Transmisión y Subtransmisión Provincial y Regional del Norte Grande,Componente II - Obras civiles y electromecánicas para las redes de Transmisión y Subtransmisión Provincial y Regional del Norte Grande
+XI-IATI-IADB-AR-L1021,result_3,2,false,"Demanda de energía eléctrica del sistema de la región del Norte Grande, satisfecha","Demanda de energía eléctrica del sistema de la región del Norte Grande, satisfecha"
+XI-IATI-IADB-AR-L1021,result_4,2,false,Reforzar la red nacional de transmisión eléctrica y facilitar la competición en el mercado mayorista de generación.,Reforzar la red nacional de transmisión eléctrica y facilitar la competición en el mercado mayorista de generación.
+XI-IATI-IADB-AR-L1080,result_1,2,false,Desempeño de AySA mejorado,Desempeño de AySA mejorado
+XI-IATI-IADB-AR-L1080,result_2,1,false,Fortalecimiento institucional,Fortalecimiento institucional
+XI-IATI-IADB-AR-L1080,result_3,1,false,Planta de Potabilización Gral. San Martín,Planta de Potabilización Gral. San Martín
+XI-IATI-IADB-AR-L1080,result_4,1,false,Redes de agua potable,Redes de agua potable
+XI-IATI-IADB-AR-L1080,result_5,2,false,Servicio de agua potable mejorado,Servicio de agua potable mejorado
+XI-IATI-IADB-AR-L1080,result_6,2,false,Servicio de saneamiento cloacal mejorado,Servicio de saneamiento cloacal mejorado
+XI-IATI-IADB-AR-L1080,result_7,1,false,Sistema cloacal,Sistema cloacal
+XI-IATI-IADB-AR-L1131,result_1,1,false,Componente 1: Ejecución de Proyectos de Ingeniería,Componente 1: Ejecución de Proyectos de Ingeniería
+XI-IATI-IADB-AR-L1131,result_2,1,false,Componente 2: Fortalecimiento Institucional,Componente 2: Fortalecimiento Institucional
+XI-IATI-IADB-AR-L1131,result_3,1,false,Componente 3: Mantenimiento Vial,Componente 3: Mantenimiento Vial
+XI-IATI-IADB-AR-L1131,result_4,1,false,Componente 4: Seguridad Vial,Componente 4: Seguridad Vial
+XI-IATI-IADB-AR-L1131,result_5,1,false,Componente 5: Administración y Pre-inversión,Componente 5: Administración y Pre-inversión
+XI-IATI-IADB-AR-L1014,result_1,1,false,"Componente A: Mejoramiento, Ampliación y Rehabilitación de la Red Vial Nacional (RVN)","Componente A: Mejoramiento, Ampliación y Rehabilitación de la Red Vial Nacional (RVN)"
+XI-IATI-IADB-AR-L1014,result_2,1,false,"Componente B: Mejoramiento, Ampliación y Rehabilitación de la Red Vial Provincial (RVP)","Componente B: Mejoramiento, Ampliación y Rehabilitación de la Red Vial Provincial (RVP)"
+XI-IATI-IADB-AR-L1014,result_3,1,false,Componente C: Fortalecimiento Institucional.,Componente C: Fortalecimiento Institucional.
+XI-IATI-IADB-AR-L1149,result_1,1,false,Desarrollo de capacidades para la gestión de proyectos,Desarrollo de capacidades para la gestión de proyectos
+XI-IATI-IADB-AR-L1149,result_2,1,false,Estudios de preinversión,Estudios de preinversión
+XI-IATI-IADB-AR-L1149,result_3,1,false,Evaluación y gestión de proyectos,Evaluación y gestión de proyectos
+XI-IATI-IADB-AR-L1151,result_1,1,false,Componente I - Mejorar la capacidad operativa y de gestión de entes operadores (Gestión Operativa),Componente I - Mejorar la capacidad operativa y de gestión de entes operadores (Gestión Operativa)
+XI-IATI-IADB-AR-L1151,result_2,1,false,Componente II - Incremento en los niveles de recuperación y reciclaje y mejora en los servicios de recolección y disposición final (Infraestructura y Equipamiento),Componente II - Incremento en los niveles de recuperación y reciclaje y mejora en los servicios de recolección y disposición final (Infraestructura y Equipamiento)
+XI-IATI-IADB-AR-L1151,result_3,1,false,Componente III - Formalización e inclusión de Recuperadores y aprovechamiento de RSU (Gestión Ambiental),Componente III - Formalización e inclusión de Recuperadores y aprovechamiento de RSU (Gestión Ambiental)
+XI-IATI-IADB-AR-L1071,result_1,1,false,Apoyo a productos turísticos,Apoyo a productos turísticos
+XI-IATI-IADB-AR-L1071,result_2,2,false,Cadenas de valor turística en los corredores del programa fortalecidas,Cadenas de valor turística en los corredores del programa fortalecidas
+XI-IATI-IADB-AR-L1071,result_3,1,false,Fortalecimiento institucional,Fortalecimiento institucional
+XI-IATI-IADB-AR-L1071,result_4,1,false,Gestión ambiental,Gestión ambiental
+XI-IATI-IADB-AR-L1071,result_5,2,false,Información ambiental y capacidades de gestión disponibles en corredores y Áreas Protegidas del programa.,Información ambiental y capacidades de gestión disponibles en corredores y Áreas Protegidas del programa.
+XI-IATI-IADB-AR-L1071,result_6,2,false,Oferta turística en productos relacionados con Áreas Protegidas diversificada,Oferta turística en productos relacionados con Áreas Protegidas diversificada
+XI-IATI-IADB-AR-L1030,result_1,1,false,Areas de Riego Rehabilitadas,Areas de Riego Rehabilitadas
+XI-IATI-IADB-AR-L1030,result_2,1,false,Caminos Rurales Rehabilitados,Caminos Rurales Rehabilitados
+XI-IATI-IADB-AR-L1030,result_3,1,false,Negocios Agroalimentarios,Negocios Agroalimentarios
+XI-IATI-IADB-AR-L1030,result_4,1,false,Preparación de Proyectos,Preparación de Proyectos
+XI-IATI-IADB-AR-L1030,result_5,1,false,Servicios Mejorados,Servicios Mejorados
+XI-IATI-IADB-AR-L1030,result_6,1,false,Zonas Rurales con Acceso a Sistemas de Energía,Zonas Rurales con Acceso a Sistemas de Energía
+XI-IATI-IADB-AR-L1343,result_1,1,false,Consolidación del talento humano en ciberseguridad,Consolidación del talento humano en ciberseguridad
+XI-IATI-IADB-AR-L1343,result_2,1,false,Fortalecimiento de las capacidades institucionales y tecnológicas de la SIT,Fortalecimiento de las capacidades institucionales y tecnológicas de la SIT
+XI-IATI-IADB-AR-L1343,result_3,1,false,Mejoramiento de la protección del ecosistema del GDE,Mejoramiento de la protección del ecosistema del GDE
+XI-IATI-IADB-AR-L1352,result_1,1,false,Componente I: Fortalecimiento de capacidades institucionales e infraestructura del SENASA para el manejo sostenible de los recursos zoo-fitosanitarios,Componente I: Fortalecimiento de capacidades institucionales e infraestructura del SENASA para el manejo sostenible de los recursos zoo-fitosanitarios
+XI-IATI-IADB-AR-L1352,result_2,2,false,"OE 1: Mejorar la efectividad de vigilancia, control y prevención de introducción de plagas y enfermedades que afectan al patrimonio zoo-fitosanitario del país","OE 1: Mejorar la efectividad de vigilancia, control y prevención de introducción de plagas y enfermedades que afectan al patrimonio zoo-fitosanitario del país"
+XI-IATI-IADB-AR-L1352,result_3,2,false,"OE 3: Mejorar la calidad de los servicios de certificación, pagos, y tramites ofertados por el SENASA","OE 3: Mejorar la calidad de los servicios de certificación, pagos, y tramites ofertados por el SENASA"
+XI-IATI-IADB-AR-L1331,result_1,1,false,1. Protección mediante el uso de programas de transferencias monetarias existentes,1. Protección mediante el uso de programas de transferencias monetarias existentes
+XI-IATI-IADB-AR-L1331,result_2,1,false,"Administración, auditoría, y evaluación del programa","Administración, auditoría, y evaluación del programa"
+XI-IATI-IADB-AR-L1331,result_3,2,false,Apoyar niveles mínimos de ingreso de personas afectadas por la pandemia,Apoyar niveles mínimos de ingreso de personas afectadas por la pandemia
+XI-IATI-IADB-AR-L1078,result_1,1,false,Fortalecimiento de la capacidad institucional del SCREI,Fortalecimiento de la capacidad institucional del SCREI
+XI-IATI-IADB-AR-L1078,result_2,1,false,Fortalecimiento de los sistemas de gestión operativa y de inversiones en infraestructura,Fortalecimiento de los sistemas de gestión operativa y de inversiones en infraestructura
+XI-IATI-IADB-AR-L1032,result_1,1,false,Fortalecimiento del Sistema de Fiscalización de Inocuidad Agroalimentaria,Fortalecimiento del Sistema de Fiscalización de Inocuidad Agroalimentaria
+XI-IATI-IADB-AR-L1032,result_2,1,false,Modernización de la Gestión Institucional,Modernización de la Gestión Institucional
+XI-IATI-IADB-AR-L1073,result_1,1,false,"Fondos de Innovación Tecnológica Sectorial, FITS","Fondos de Innovación Tecnológica Sectorial, FITS"
+XI-IATI-IADB-AR-L1073,result_2,1,false,Infraestructura científica y tecnológica y fortalecimiento institucional,Infraestructura científica y tecnológica y fortalecimiento institucional
+XI-IATI-IADB-AR-L1073,result_3,2,false,Infraestrucura científica y tecnológica mejorada.,Infraestrucura científica y tecnológica mejorada.
+XI-IATI-IADB-AR-L1073,result_4,2,false,Innovaciones logradas en sectores apoyados por Fondos de Innovación Tecnológia Sectorial (FITS).,Innovaciones logradas en sectores apoyados por Fondos de Innovación Tecnológia Sectorial (FITS).
+XI-IATI-IADB-AR-L1073,result_5,2,false,Inversión en innovación incrementada.,Inversión en innovación incrementada.
+XI-IATI-IADB-AR-L1073,result_6,1,false,Modernización Tecnológica y Fortalecimiento de Capacidades Científicas,Modernización Tecnológica y Fortalecimiento de Capacidades Científicas
+XI-IATI-IADB-AR-L1279,result_1,1,false,Desarrollo de capacidades y preinversión,Desarrollo de capacidades y preinversión
+XI-IATI-IADB-AR-L1279,result_2,1,false,Obras civiles,Obras civiles
+XI-IATI-IADB-AR-L1015,result_1,1,false,Agua Potable y Saneamiento.,Agua Potable y Saneamiento.
+XI-IATI-IADB-AR-L1015,result_2,1,false,Fortalecimiento Operacional e Institucional.,Fortalecimiento Operacional e Institucional.
+XI-IATI-IADB-AR-L1015,result_3,1,false,Infraestructura hidráulica productiva.,Infraestructura hidráulica productiva.
+XI-IATI-IADB-AR-L1015,result_4,2,false,Productividad de las actividades agropecuarias aumentada,Productividad de las actividades agropecuarias aumentada
+XI-IATI-IADB-AR-L1015,result_5,2,false,Servicio de agua potable y saneamiento mejorado,Servicio de agua potable y saneamiento mejorado
+XI-IATI-IADB-AR-L1015,result_6,2,false,Vulnerabilidad a inundaciones reducida,Vulnerabilidad a inundaciones reducida
+XI-IATI-IADB-AR-L1273,result_1,1,false,1. Medidas Estructurales: Obras de drenaje y control de inundaciones construidas,1. Medidas Estructurales: Obras de drenaje y control de inundaciones construidas
+XI-IATI-IADB-AR-L1273,result_2,1,false,Componente 2: Medidas No Estructurales,Componente 2: Medidas No Estructurales
+XI-IATI-IADB-AR-L1273,result_3,2,false,Resultado1: Disminución de los daños económicos causados por las inundaciones,Resultado1: Disminución de los daños económicos causados por las inundaciones
+XI-IATI-IADB-AR-L1273,result_4,2,false,Resultado2: Disminución del Riesgo hídrico por las Medidas Estructurales (obras de drenaje y control de inundaciones construidas) en la PBA,Resultado2: Disminución del Riesgo hídrico por las Medidas Estructurales (obras de drenaje y control de inundaciones construidas) en la PBA
+XI-IATI-IADB-AR-L1346,result_1,1,false,"Estudios y diseños, y fortalecimiento institucional","Estudios y diseños, y fortalecimiento institucional"
+XI-IATI-IADB-AR-L1346,result_2,1,false,Obras de infraestructura,Obras de infraestructura
+XI-IATI-IADB-AR-L1252,result_1,1,false,Componente I. Fortalecimiento de Capacidades de Innovación Tecnológica,Componente I. Fortalecimiento de Capacidades de Innovación Tecnológica
+XI-IATI-IADB-AR-L1252,result_2,1,false,Componente II. Fortalecimiento de las Capacidades de Investigación Científica y Tecnológica,Componente II. Fortalecimiento de las Capacidades de Investigación Científica y Tecnológica
+XI-IATI-IADB-AR-L1252,result_3,1,false,Componente III. Análisis de Políticas y Difusión de la CTI,Componente III. Análisis de Políticas y Difusión de la CTI
+XI-IATI-IADB-AR-L1036,result_1,1,false,"Componente 1,1 - Infraestructura Vial","Componente 1,1 - Infraestructura Vial"
+XI-IATI-IADB-AR-L1036,result_2,1,false,Componente 2 - Desarrollo del Sector Productivo,Componente 2 - Desarrollo del Sector Productivo
+XI-IATI-IADB-AR-L1157,result_1,1,false,Componente I: Apoyo al desarrollo logístico,Componente I: Apoyo al desarrollo logístico
+XI-IATI-IADB-AR-L1157,result_2,1,false,Componente II: Apoyo al desarrollo tecnológico,Componente II: Apoyo al desarrollo tecnológico
+XI-IATI-IADB-AR-L1157,result_3,1,false,Componente III: Apoyo a la internacionalización,Componente III: Apoyo a la internacionalización
+XI-IATI-IADB-AR-L1067,result_1,1,false,1.1 Información Forestal,1.1 Información Forestal
+XI-IATI-IADB-AR-L1067,result_2,1,false,1.2 Promoción de la Certificación,1.2 Promoción de la Certificación
+XI-IATI-IADB-AR-L1067,result_3,1,false,2.1 Investigación y Desarrollo Forestal,2.1 Investigación y Desarrollo Forestal
+XI-IATI-IADB-AR-L1067,result_4,1,false,2.2 Sanidad Forestal,2.2 Sanidad Forestal
+XI-IATI-IADB-AR-L1067,result_5,1,false,2.3 Apoyo a la instalación y puesta en marcha de viveros forestales,2.3 Apoyo a la instalación y puesta en marcha de viveros forestales
+XI-IATI-IADB-AR-L1067,result_6,1,false,2.4 Mejora primera transformación mecánica,2.4 Mejora primera transformación mecánica
+XI-IATI-IADB-AR-L1067,result_7,2,false,Incrementar el nivel de formalidad de las MiPyMEs forestales y forestoindustriales,Incrementar el nivel de formalidad de las MiPyMEs forestales y forestoindustriales
+XI-IATI-IADB-AR-L1067,result_8,2,false,Incrementar la sostenibilidad de la gestión forestal de las MiPyMEs y la cadena de custodia,Incrementar la sostenibilidad de la gestión forestal de las MiPyMEs y la cadena de custodia
+XI-IATI-IADB-AR-L1258,result_1,1,false,Componente 1: Obras de infraestructura,Componente 1: Obras de infraestructura
+XI-IATI-IADB-AR-L1258,result_2,1,false,Componente 2: Desarrollo institucional y estudios,Componente 2: Desarrollo institucional y estudios
+XI-IATI-IADB-AR-L1258,result_3,2,false,Resultado 1: Cobertura del servicio de agua potable ampliada,Resultado 1: Cobertura del servicio de agua potable ampliada
+XI-IATI-IADB-AR-L1258,result_4,2,false,Resultado 2: Cobertura del servicio de saneamiento ampliada,Resultado 2: Cobertura del servicio de saneamiento ampliada
+XI-IATI-IADB-AR-L1258,result_5,2,false,Resultado 3: Desempeño operativo y financiero de los prestadores de servicios mejorados,Resultado 3: Desempeño operativo y financiero de los prestadores de servicios mejorados
+XI-IATI-IADB-AR-L1196,result_1,1,false,Fortalecimiento de la línea de cuidados oncológicos,Fortalecimiento de la línea de cuidados oncológicos
+XI-IATI-IADB-AR-L1196,result_2,1,false,Fortalecimiento del Primer Nivel de Atención,Fortalecimiento del Primer Nivel de Atención
+XI-IATI-IADB-AR-L1196,result_3,2,false,Incrementar el acceso efectivo de la población con cobertura pública exclusiva a servicios de tamizaje para la detección oportuna de enfermedades crónicas o del riesgo de contraerlas,Incrementar el acceso efectivo de la población con cobertura pública exclusiva a servicios de tamizaje para la detección oportuna de enfermedades crónicas o del riesgo de contraerlas
+XI-IATI-IADB-AR-L1196,result_4,2,false,Incrementar las competencias de los efectores del Primer Nivel de Atención para la detección oportuna o el tratamiento de enfermedades crónicas,Incrementar las competencias de los efectores del Primer Nivel de Atención para la detección oportuna o el tratamiento de enfermedades crónicas
+XI-IATI-IADB-AR-L1130,result_1,1,false,COMPONENTE 1: APOYO FINANCIERO AL DESARROLLO DEL SECTOR PRIVADO PRODUCTIVO,COMPONENTE 1: APOYO FINANCIERO AL DESARROLLO DEL SECTOR PRIVADO PRODUCTIVO
+XI-IATI-IADB-AR-L1130,result_2,1,false,COMPONENTE 2: APOYO NO FINANCIERO AL DESARROLLO DEL SECTOR PRIVADO PRODUCTIVO,COMPONENTE 2: APOYO NO FINANCIERO AL DESARROLLO DEL SECTOR PRIVADO PRODUCTIVO
+XI-IATI-IADB-AR-L1288,result_1,1,false,Componente I. Planificación Integral y Fortalecimiento Institucional,Componente I. Planificación Integral y Fortalecimiento Institucional
+XI-IATI-IADB-AR-L1288,result_2,1,false,Componente II. Infraestructura Urbana y Hábitat,Componente II. Infraestructura Urbana y Hábitat
+XI-IATI-IADB-AR-L1288,result_3,1,false,Componente III. Gestión Social y Desarrollo Comunitario,Componente III. Gestión Social y Desarrollo Comunitario
+XI-IATI-IADB-AR-L1156,result_1,1,false,Mejoramiento del capital humano avanzado a través del otorgamiento de becas de maestrías en áreas prioritarias de ciencia y tecnología,Mejoramiento del capital humano avanzado a través del otorgamiento de becas de maestrías en áreas prioritarias de ciencia y tecnología
+XI-IATI-IADB-AR-L1156,result_2,1,false,Mejoramiento del capital humano avanzado a través del otorgamiento de becas para estancias cortas de formación en ciencia y tecnología,Mejoramiento del capital humano avanzado a través del otorgamiento de becas para estancias cortas de formación en ciencia y tecnología
+XI-IATI-IADB-AR-L1326,result_1,2,false,Capacidad de provisión de servicios mejorada,Capacidad de provisión de servicios mejorada
+XI-IATI-IADB-AR-L1326,result_2,1,false,Componente 1: Conducción de la respuesta a nivel del país,Componente 1: Conducción de la respuesta a nivel del país
+XI-IATI-IADB-AR-L1326,result_3,1,false,Componente 2: Detección y seguimiento de los casos,Componente 2: Detección y seguimiento de los casos
+XI-IATI-IADB-AR-L1326,result_4,1,false,Componente 3: Interrupción de la cadena de transmisión,Componente 3: Interrupción de la cadena de transmisión
+XI-IATI-IADB-AR-L1326,result_5,1,false,Componente 4: Mejoramiento a la capacidad de provisión de servicios,Componente 4: Mejoramiento a la capacidad de provisión de servicios
+XI-IATI-IADB-AR-L1326,result_6,2,false,Conducción de la respuesta a nivel del país fortalecida,Conducción de la respuesta a nivel del país fortalecida
+XI-IATI-IADB-AR-L1326,result_7,2,false,Detección y seguimiento de los casos mejorada,Detección y seguimiento de los casos mejorada
+XI-IATI-IADB-AR-L1326,result_8,2,false,Esfuerzos para la interrupción de la cadena de transmisión de la enfermedad apoyados,Esfuerzos para la interrupción de la cadena de transmisión de la enfermedad apoyados
+XI-IATI-IADB-AR-L1092,result_1,2,false,Acceso mejorado de las PYMES exportadoras a la información sobre Comercio Exterior y oportunidades comerciales,Acceso mejorado de las PYMES exportadoras a la información sobre Comercio Exterior y oportunidades comerciales
+XI-IATI-IADB-AR-L1092,result_2,1,false,"Componente 1, Fortalecimiento de la Capacidad Institucional de las Agencias Intermediarias para Promocionar el Programa (obtención de un porcentaje superior a 50 pts. en la matriz de evaluación institucional)","Componente 1, Fortalecimiento de la Capacidad Institucional de las Agencias Intermediarias para Promocionar el Programa (obtención de un porcentaje superior a 50 pts. en la matriz de evaluación institucional)"
+XI-IATI-IADB-AR-L1092,result_3,1,false,"Componente 2, Instrumentos de Apoyo para la Internacionalización de las PYMES (aumento del 4,5% en el valor de las exportaciones totales de las PYMES)","Componente 2, Instrumentos de Apoyo para la Internacionalización de las PYMES (aumento del 4,5% en el valor de las exportaciones totales de las PYMES)"
+XI-IATI-IADB-AR-L1092,result_4,1,false,"Componente 3, Plataforma Electrónica de Apoyo a las PYMES exportadoras","Componente 3, Plataforma Electrónica de Apoyo a las PYMES exportadoras"
+XI-IATI-IADB-AR-L1092,result_5,2,false,Estructura de Comercio y Capacidades de Promoción Comercial de las Provincias y sus Agencias mejoran y se ven fortalecidas,Estructura de Comercio y Capacidades de Promoción Comercial de las Provincias y sus Agencias mejoran y se ven fortalecidas
+XI-IATI-IADB-AR-L1304,result_1,1,false,COMPONENTE II: DESARROLLO DE LA AGENDA DIGITAL,COMPONENTE II: DESARROLLO DE LA AGENDA DIGITAL
+XI-IATI-IADB-AR-L1304,result_2,1,false,COMPONENTE III: REGULACIÓN ESTRATÉGICA PARA LA CONECTIVIDAD DIGITAL,COMPONENTE III: REGULACIÓN ESTRATÉGICA PARA LA CONECTIVIDAD DIGITAL
+XI-IATI-IADB-AR-L1304,result_3,1,false,COMPONENTE IV: DESARROLLO DEL GOBIERNO DIGITAL,COMPONENTE IV: DESARROLLO DEL GOBIERNO DIGITAL
+XI-IATI-IADB-AR-L1304,result_4,1,false,COMPONENTE V: TRANSFORMACIÓN PRODUCTIVA DIGITAL,COMPONENTE V: TRANSFORMACIÓN PRODUCTIVA DIGITAL
+XI-IATI-IADB-AR-L1068,result_1,1,false,Apoyo a la Implantación de Planes de Negocios,Apoyo a la Implantación de Planes de Negocios
+XI-IATI-IADB-AR-L1068,result_2,1,false,Apoyo a las Capacidades de Preparación de Planes de Negocios,Apoyo a las Capacidades de Preparación de Planes de Negocios
+XI-IATI-IADB-AR-L1345,result_1,1,false,Fortalecimiento de la gestión en la provisión del servicio de agua potable,Fortalecimiento de la gestión en la provisión del servicio de agua potable
+XI-IATI-IADB-AR-L1345,result_2,1,false,Obras de infraestructura e inspección,Obras de infraestructura e inspección
+XI-IATI-IADB-AR-L1334,result_1,1,false,Componente 1: Apoyo financiero a la reactivación económica de la producción (US$50 millones),Componente 1: Apoyo financiero a la reactivación económica de la producción (US$50 millones)
+XI-IATI-IADB-AR-L1334,result_2,1,false,Componente 2: Apoyo no financiero a la reactivación de la producción (US$15 millones),Componente 2: Apoyo no financiero a la reactivación de la producción (US$15 millones)
+XI-IATI-IADB-AR-L1108,result_1,1,false,Acciones de apoyo a la demanda,Acciones de apoyo a la demanda
+XI-IATI-IADB-AR-L1108,result_2,1,false,Acciones para la mejora de la oferta,Acciones para la mejora de la oferta
+XI-IATI-IADB-AR-L1108,result_3,1,false,Construcción y equipamiento de nuevos edificios escolares,Construcción y equipamiento de nuevos edificios escolares
+XI-IATI-IADB-AR-L1108,result_4,2,false,Estudiantes beneficiados por el Programa,Estudiantes beneficiados por el Programa
+XI-IATI-IADB-AR-L1357,result_1,1,false,1. Capital Humano para sectores de servicios y BIC,1. Capital Humano para sectores de servicios y BIC
+XI-IATI-IADB-AR-L1357,result_2,1,false,2. Promover el desarrollo y adopción de nuevas aplicaciones basadas en IA,2. Promover el desarrollo y adopción de nuevas aplicaciones basadas en IA
+XI-IATI-IADB-AR-L1357,result_3,1,false,3. Fomento a la internacionalización de las empresas de sectores de la EDC,3. Fomento a la internacionalización de las empresas de sectores de la EDC
+XI-IATI-IADB-AR-L1336,result_1,1,false,Aumentar la visibilidad de Argentina como destino turístico de naturaleza en el mercado turístico.,Aumentar la visibilidad de Argentina como destino turístico de naturaleza en el mercado turístico.
+XI-IATI-IADB-AR-L1336,result_2,1,false,Fortalecimiento de la gobernanza turística y socioambiental a lo largo de la Ruta Natural propuesta,Fortalecimiento de la gobernanza turística y socioambiental a lo largo de la Ruta Natural propuesta
+XI-IATI-IADB-AR-L1336,result_3,1,false,Incrementar la oferta turística en áreas naturales,Incrementar la oferta turística en áreas naturales
+XI-IATI-IADB-AR-L1136,result_1,1,false,Mejoramiento de la Gestión Operativa,Mejoramiento de la Gestión Operativa
+XI-IATI-IADB-AR-L1136,result_2,2,false,Objetivo especifico 2. Fortalecer las entidades del sector a nivel provincial y mejorar la eficiencia y gestión operativa y financiera de los prestadores de servicios,Objetivo especifico 2. Fortalecer las entidades del sector a nivel provincial y mejorar la eficiencia y gestión operativa y financiera de los prestadores de servicios
+XI-IATI-IADB-AR-L1136,result_3,2,false,Objetivo específico 1. Incrementar la cobertura y mejorar el servicio de agua potable y alcantarillado sanitario y pluvial en áreas sin servicio o con servicio deficiente,Objetivo específico 1. Incrementar la cobertura y mejorar el servicio de agua potable y alcantarillado sanitario y pluvial en áreas sin servicio o con servicio deficiente
+XI-IATI-IADB-AR-L1136,result_4,1,false,Sistemas de Agua Potable y Saneamiento Construidos,Sistemas de Agua Potable y Saneamiento Construidos
+XI-IATI-IADB-AR-L1293,result_1,1,false,Componente 1: Obras Civiles,Componente 1: Obras Civiles
+XI-IATI-IADB-AR-L1293,result_2,1,false,Componente 2: Turismo y desarrollo urbano,Componente 2: Turismo y desarrollo urbano
+XI-IATI-IADB-AR-L1162,result_1,2,false,Cobertura de los sistemas de agua potable extendida y/o mejorada,Cobertura de los sistemas de agua potable extendida y/o mejorada
+XI-IATI-IADB-AR-L1162,result_2,2,false,Cobertura de los sistemas de saneamiento extendida y/o mejorada,Cobertura de los sistemas de saneamiento extendida y/o mejorada
+XI-IATI-IADB-AR-L1162,result_3,1,false,Componente 1. Obras de Agua y Saneamiento,Componente 1. Obras de Agua y Saneamiento
+XI-IATI-IADB-AR-L1162,result_4,1,false,Componente 2. Fortalecimiento Institucional,Componente 2. Fortalecimiento Institucional
+XI-IATI-IADB-AR-L1162,result_5,2,false,Entes beneficiarios fortalecidos,Entes beneficiarios fortalecidos
+XI-IATI-IADB-AR-L1074,result_1,1,false,Desarrollo de la capacidad institucional del Ministerio de Seguridad,Desarrollo de la capacidad institucional del Ministerio de Seguridad
+XI-IATI-IADB-AR-L1074,result_2,1,false,Fortalecimiento de mecanismos de participación ciudadana,Fortalecimiento de mecanismos de participación ciudadana
+XI-IATI-IADB-AR-L1074,result_3,1,false,Mejoramiento de los servicios de atención a la violencia de género y de los programas de prevención de la violencia,Mejoramiento de los servicios de atención a la violencia de género y de los programas de prevención de la violencia
+XI-IATI-IADB-AR-L1016,result_1,1,false,Apoyo al Sector Municipal,Apoyo al Sector Municipal
+XI-IATI-IADB-AR-L1016,result_2,1,false,Mejora de la Gestión Municipal,Mejora de la Gestión Municipal
+XI-IATI-IADB-AR-L1251,result_1,1,false,Componente 1 - Diseño de la VUCEA y reingeniería de procesos,Componente 1 - Diseño de la VUCEA y reingeniería de procesos
+XI-IATI-IADB-AR-L1251,result_2,1,false,Componente 2 - Implementación de la VUCEA y armonización tecnológica,Componente 2 - Implementación de la VUCEA y armonización tecnológica
+XI-IATI-IADB-AR-L1251,result_3,1,false,Componente 3 - Gestión del cambio y coordinación interinstitucional,Componente 3 - Gestión del cambio y coordinación interinstitucional
+XI-IATI-IADB-AR-L1251,result_4,1,false,Componente 4 - Gestión de interoperabilidad,Componente 4 - Gestión de interoperabilidad
+XI-IATI-IADB-AR-L1402,result_1,2,false,Strengthening of public finances,Strengthening of public finances
+XI-IATI-IADB-AR-L1022,result_1,1,false,COMPONENTE 1: APOYO FINANCIERO,COMPONENTE 1: APOYO FINANCIERO
+XI-IATI-IADB-AR-L1022,result_2,1,false,COMPONENTE 2: APOYO NO-FINANCIERO A LA COMPETITIVIDAD DE LAS CPs.,COMPONENTE 2: APOYO NO-FINANCIERO A LA COMPETITIVIDAD DE LAS CPs.
+XI-IATI-IADB-AR-L1022,result_3,1,false,COMPONENTE 3: FORTALECIMIENTO INSTITUCIONAL,COMPONENTE 3: FORTALECIMIENTO INSTITUCIONAL
+XI-IATI-IADB-AR-L1118,result_1,1,false,Desarrollo Infantil Temprano,Desarrollo Infantil Temprano
+XI-IATI-IADB-AR-L1118,result_2,1,false,"Fortalecimiento del entorno familiar y comunitario de niñas, niños y adolescentes.","Fortalecimiento del entorno familiar y comunitario de niñas, niños y adolescentes."
+XI-IATI-IADB-AR-L1118,result_3,1,false,Medición de resultados del proyecto,Medición de resultados del proyecto
+XI-IATI-IADB-AR-L1118,result_4,1,false,"Sistemas de información sobre niñez, adolescencia y familia.","Sistemas de información sobre niñez, adolescencia y familia."
+XI-IATI-IADB-AR-L1340,result_1,2,false,1. Mejorar la accesibilidad y resolutividad de los servicios públicos de salud del primer nivel de atención,1. Mejorar la accesibilidad y resolutividad de los servicios públicos de salud del primer nivel de atención
+XI-IATI-IADB-AR-L1340,result_2,2,false,2. Mejorar la efectividad e integración de redes de servicios de salud,2. Mejorar la efectividad e integración de redes de servicios de salud
+XI-IATI-IADB-AR-L1340,result_3,2,false,"3. Ampliar la capacidad prestacional para la prevención, detección y atención de COVID-19","3. Ampliar la capacidad prestacional para la prevención, detección y atención de COVID-19"
+XI-IATI-IADB-AR-L1268,result_1,1,false,Componente II. Fortalecimiento del acceso a la información y del marco legal de la ética de los funcionarios públicos.,Componente II. Fortalecimiento del acceso a la información y del marco legal de la ética de los funcionarios públicos.
+XI-IATI-IADB-AR-L1268,result_2,1,false,Componente III. Fortalecimiento de la transparencia del uso de los recursos públicos,Componente III. Fortalecimiento de la transparencia del uso de los recursos públicos
+XI-IATI-IADB-AR-L1268,result_3,1,false,Componente IV. Fortalecimiento de la transparencia financiera.,Componente IV. Fortalecimiento de la transparencia financiera.
+XI-IATI-IADB-AR-L1268,result_4,2,false,Fortalecimiento de la transparencia de los recursos públicos,Fortalecimiento de la transparencia de los recursos públicos
+XI-IATI-IADB-AR-L1268,result_5,2,false,Fortalecimiento de la transparencia financiera,Fortalecimiento de la transparencia financiera
+XI-IATI-IADB-AR-L1268,result_6,2,false,Fortalecimiento del acceso a la información y del marco legal de la ética de los funcionarios públicos,Fortalecimiento del acceso a la información y del marco legal de la ética de los funcionarios públicos
+XI-IATI-IADB-AR-L1158,result_1,1,false,Ingeniería y Administración,Ingeniería y Administración
+XI-IATI-IADB-AR-L1158,result_2,1,false,"Obras, supervisión y apoyo técnico","Obras, supervisión y apoyo técnico"
+XI-IATI-IADB-AR-L1285,result_1,1,false,Componente I. Fortalecimiento de la administración tributaria y financiera. Subcomponente 1.1. Fortalecimiento de la administración tributaria y sistemas de catastro,Componente I. Fortalecimiento de la administración tributaria y financiera. Subcomponente 1.1. Fortalecimiento de la administración tributaria y sistemas de catastro
+XI-IATI-IADB-AR-L1285,result_2,1,false,"Componente I. Fortalecimiento de la administración tributaria y financiera. Subcomponente 1.2. Fortalecimiento de la gestión financiera, del gasto público y de la inversión provincial","Componente I. Fortalecimiento de la administración tributaria y financiera. Subcomponente 1.2. Fortalecimiento de la gestión financiera, del gasto público y de la inversión provincial"
+XI-IATI-IADB-AR-L1285,result_3,1,false,Componente I. Fortalecimiento de la administración tributaria y financiera. Subcomponente 1.3. Fortalecimiento del diseño del Federalismo Fiscal Argentino,Componente I. Fortalecimiento de la administración tributaria y financiera. Subcomponente 1.3. Fortalecimiento del diseño del Federalismo Fiscal Argentino
+XI-IATI-IADB-AR-L1285,result_4,1,false,Componente II. Inversiones para el desarrollo,Componente II. Inversiones para el desarrollo
+XI-IATI-IADB-AR-L1285,result_5,1,false,Componente III. Apoyo a la sustentabilidad fiscal provincial,Componente III. Apoyo a la sustentabilidad fiscal provincial
+XI-IATI-IADB-AR-L1152,result_1,2,false,"Aumento de la cobertura en los niveles de educación inicial, primaria y secundaria","Aumento de la cobertura en los niveles de educación inicial, primaria y secundaria"
+XI-IATI-IADB-AR-L1152,result_2,1,false,Expansión de la infraestructura escolar,Expansión de la infraestructura escolar
+XI-IATI-IADB-AR-L1332,result_1,1,false,Fortalecimiento de la coordinación estratégica del ciclo de IP desde la SAE,Fortalecimiento de la coordinación estratégica del ciclo de IP desde la SAE
+XI-IATI-IADB-AR-L1332,result_2,1,false,"Fortalecimiento de la gestión de la IP nacional, provincial y municipal desde el MOP","Fortalecimiento de la gestión de la IP nacional, provincial y municipal desde el MOP"
+XI-IATI-IADB-AR-L1332,result_3,1,false,Mejora de la preinversión para el Plan de Desarrollo Federal en el MI,Mejora de la preinversión para el Plan de Desarrollo Federal en el MI
+XI-IATI-IADB-AR-L1309,result_1,1,false,1.1 Apoyo al ingreso con contraprestación en formación de capital humano,1.1 Apoyo al ingreso con contraprestación en formación de capital humano
+XI-IATI-IADB-AR-L1309,result_2,1,false,1.2 Gestión de la información de programas de ingreso con contraprestación en inversión en capital humano,1.2 Gestión de la información de programas de ingreso con contraprestación en inversión en capital humano
+XI-IATI-IADB-AR-L1309,result_3,1,false,2 Continuidad educativa de jóvenes de familias vulnerables,2 Continuidad educativa de jóvenes de familias vulnerables
+XI-IATI-IADB-AR-L1309,result_4,1,false,3.1 Subsidio a la tarifa de transporte público focalizado en poblaciones vulnerables,3.1 Subsidio a la tarifa de transporte público focalizado en poblaciones vulnerables
+XI-IATI-IADB-AR-L1309,result_5,1,false,3.2 Gestión de la información del sistema de transporte público,3.2 Gestión de la información del sistema de transporte público
+XI-IATI-IADB-AR-L1309,result_6,2,false,Regularidad educativa entre jóvenes de 18 a 24 años mantenida,Regularidad educativa entre jóvenes de 18 a 24 años mantenida
+XI-IATI-IADB-AR-L1309,result_7,2,false,Sostenibilidad de programas de transferencias a población vulnerable,Sostenibilidad de programas de transferencias a población vulnerable
+XI-IATI-IADB-AR-L1199,result_1,1,false,Componente 1: Obras,Componente 1: Obras
+XI-IATI-IADB-AR-L1199,result_2,1,false,Componente 2: Seguridad Vial,Componente 2: Seguridad Vial
+XI-IATI-IADB-AR-L1199,result_3,1,false,Componente 3: Logistica,Componente 3: Logistica
+XI-IATI-IADB-AR-L1180,result_1,1,false,Acciones para fortalecer la oferta educativa,Acciones para fortalecer la oferta educativa
+XI-IATI-IADB-AR-L1180,result_2,1,false,Apoyo a la enseñananza de comprensión lectora y matemática,Apoyo a la enseñananza de comprensión lectora y matemática
+XI-IATI-IADB-AR-L1180,result_3,1,false,Construcción y equipamiento de edificios educativos,Construcción y equipamiento de edificios educativos
+XI-IATI-IADB-AR-L1180,result_4,1,false,Evaluación y monitoreo permanente,Evaluación y monitoreo permanente
+XI-IATI-IADB-AR-L1180,result_5,2,false,Expansión de la infraestructura educativa,Expansión de la infraestructura educativa
+XI-IATI-IADB-AR-L1180,result_6,2,false,Mejoramiento del desempeño del sistema educativo,Mejoramiento del desempeño del sistema educativo
+XI-IATI-IADB-AR-L1119,result_1,1,false,Fotalecimiento de la capacidad de gestión,Fotalecimiento de la capacidad de gestión
+XI-IATI-IADB-AR-L1119,result_2,1,false,Incremento de capital humano y social,Incremento de capital humano y social
+XI-IATI-IADB-AR-L1119,result_3,1,false,Legalización de la tenencia de la tierra,Legalización de la tenencia de la tierra
+XI-IATI-IADB-AR-L1119,result_4,1,false,"Provisión de infraestructura, equipamiento y saneamiento ambiental","Provisión de infraestructura, equipamiento y saneamiento ambiental"
+XI-IATI-IADB-AR-L1127,result_1,1,false,Fortalecimiento Institucional de la gestión pública sub-nacional,Fortalecimiento Institucional de la gestión pública sub-nacional
+XI-IATI-IADB-AR-L1127,result_2,1,false,Fortalecimiento de la gestión presupuestaria y financiera gubernamental,Fortalecimiento de la gestión presupuestaria y financiera gubernamental
+XI-IATI-IADB-AR-L1127,result_3,2,false,Gestión Pública orientada a resultados en las entidades públicas y/o mixtas sub-nacionales fortalecida,Gestión Pública orientada a resultados en las entidades públicas y/o mixtas sub-nacionales fortalecida
+XI-IATI-IADB-AR-L1127,result_4,2,false,Sistema público de gestión financiera y presupuestaria en las instituciones de la APN modernizado,Sistema público de gestión financiera y presupuestaria en las instituciones de la APN modernizado
+XI-IATI-IADB-AR-L1255,result_1,1,false,Aumentar la efectividad policial,Aumentar la efectividad policial
+XI-IATI-IADB-AR-L1255,result_2,2,false,"Contribuir a mejorar la efectividad del MINSEG, las fuerzas federales, policias provinciales y gobiernos municipales para reducir los robos en 6 departamentos del programa","Contribuir a mejorar la efectividad del MINSEG, las fuerzas federales, policias provinciales y gobiernos municipales para reducir los robos en 6 departamentos del programa"
+XI-IATI-IADB-AR-L1255,result_3,2,false,"Contribuir a mejorar la efectividad del MINSEG, las fuerzas federales, policías provinciales y gobiernos municipales para reducir homicidios dolosos en 6 de los 38 departamentos elegibles en las 5 jurisdicciones priorizadas","Contribuir a mejorar la efectividad del MINSEG, las fuerzas federales, policías provinciales y gobiernos municipales para reducir homicidios dolosos en 6 de los 38 departamentos elegibles en las 5 jurisdicciones priorizadas"
+XI-IATI-IADB-AR-L1255,result_4,1,false,Fortalecer la gestión local de la seguridad,Fortalecer la gestión local de la seguridad
+XI-IATI-IADB-AR-L1255,result_5,1,false,Mejorar la calidad de la información y el análisis delictual,Mejorar la calidad de la información y el análisis delictual
+XI-IATI-IADB-AR-L1366,result_1,2,false,Fortalecer la capacidad de la ANDIS como órgano rector en materia de discapacidad y responsable de la transversalización de la perspectiva de discapacidad en el ámbito público y privado,Fortalecer la capacidad de la ANDIS como órgano rector en materia de discapacidad y responsable de la transversalización de la perspectiva de discapacidad en el ámbito público y privado
+XI-IATI-IADB-AR-L1366,result_2,2,false,"Promover el acceso efectivo a derechos, servicios y prestaciones básicas para las PCD","Promover el acceso efectivo a derechos, servicios y prestaciones básicas para las PCD"
+XI-IATI-IADB-AR-L1333,result_1,1,false,Componente 1: Infraestructura de conectividad,Componente 1: Infraestructura de conectividad
+XI-IATI-IADB-AR-L1333,result_2,1,false,Componente 2: Capacidades e inclusión digital,Componente 2: Capacidades e inclusión digital
+XI-IATI-IADB-AR-L1333,result_3,2,false,mejorar la infraestructura para la conectividad digital en zonas alejadas y el aumento de la capacidad del centro nacional de datos,mejorar la infraestructura para la conectividad digital en zonas alejadas y el aumento de la capacidad del centro nacional de datos
+XI-IATI-IADB-AR-L1031,result_1,1,false,Agua Potable y saneamiento,Agua Potable y saneamiento
+XI-IATI-IADB-AR-L1031,result_2,2,false,Cobertura de agua potable con sistemas sostenibles incrementada,Cobertura de agua potable con sistemas sostenibles incrementada
+XI-IATI-IADB-AR-L1031,result_3,2,false,Cobertura de desagües cloacales con sistemas sostenibles incrementada,Cobertura de desagües cloacales con sistemas sostenibles incrementada
+XI-IATI-IADB-AR-L1031,result_4,2,false,Entes Beneficiarios sostenibles,Entes Beneficiarios sostenibles
+XI-IATI-IADB-AR-L1031,result_5,2,false,Entes Provinciales fortalecidos,Entes Provinciales fortalecidos
+XI-IATI-IADB-AR-L1031,result_6,1,false,Estudios y proyectos,Estudios y proyectos
+XI-IATI-IADB-AR-L1031,result_7,1,false,Fortalecimiento operacional e institucional,Fortalecimiento operacional e institucional
+XI-IATI-IADB-AR-L1283,result_1,1,false,Componente I. Estabilidad Macroeconómica,Componente I. Estabilidad Macroeconómica
+XI-IATI-IADB-AR-L1283,result_2,1,false,Componente II. Mejora del Clima de Inversión,Componente II. Mejora del Clima de Inversión
+XI-IATI-IADB-AR-L1283,result_3,1,false,Componente III. Mejora de la eficiencia de la inversión pública,Componente III. Mejora de la eficiencia de la inversión pública
+XI-IATI-IADB-AR-L1283,result_4,2,false,Objetivo específico #1: modernizar el marco impositivo-institucional para incrementar la inversión privada.,Objetivo específico #1: modernizar el marco impositivo-institucional para incrementar la inversión privada.
+XI-IATI-IADB-AR-L1283,result_5,2,false,Objetivo específico #2: modernizar el marco normativo-institucional para mejorar la eficiencia en la inversión pública.,Objetivo específico #2: modernizar el marco normativo-institucional para mejorar la eficiencia en la inversión pública.
+XI-IATI-IADB-AR-L1292,result_1,1,false,Componente 1: Integración y Modernización de los Sistemas de Información de Apoyo a la Gestión del Gasto Nacional.,Componente 1: Integración y Modernización de los Sistemas de Información de Apoyo a la Gestión del Gasto Nacional.
+XI-IATI-IADB-AR-L1292,result_2,1,false,Componente 2: Apoyo a la Gestión del Gasto Provincial y Municipal.,Componente 2: Apoyo a la Gestión del Gasto Provincial y Municipal.
+XI-IATI-IADB-AR-L1045,result_1,1,false,Componente 1. Ejecución de Proyectos de Ingeniería,Componente 1. Ejecución de Proyectos de Ingeniería
+XI-IATI-IADB-AR-L1045,result_2,1,false,Componente 2. Fortalecimiento Institucional,Componente 2. Fortalecimiento Institucional
+XI-IATI-IADB-AR-L1121,result_1,1,false,Agua Potable y Saneamiento,Agua Potable y Saneamiento
+XI-IATI-IADB-AR-L1121,result_2,2,false,"Aumentar la cobertura de agua, alcantarillado y tratamiento de aguas residuales","Aumentar la cobertura de agua, alcantarillado y tratamiento de aguas residuales"
+XI-IATI-IADB-AR-L1121,result_3,2,false,Fortalecer la gestión operativa del Comité de Cuenca del Río Reconquista mediante el desarrollo de instrumentos de gestión que incluyen principalmente el Plan de Gestión Integral de la Cuenca del Río Reconquista,Fortalecer la gestión operativa del Comité de Cuenca del Río Reconquista mediante el desarrollo de instrumentos de gestión que incluyen principalmente el Plan de Gestión Integral de la Cuenca del Río Reconquista
+XI-IATI-IADB-AR-L1121,result_4,1,false,Gestión Ambiental y Social,Gestión Ambiental y Social
+XI-IATI-IADB-AR-L1121,result_5,2,false,Mejorar la gestión integrada de residuos sólidos prinicpalmente mediante el cierre de basurales a cielo abierto,Mejorar la gestión integrada de residuos sólidos prinicpalmente mediante el cierre de basurales a cielo abierto
+XI-IATI-IADB-AR-L1121,result_6,1,false,Residuos Sólidos,Residuos Sólidos
+XI-IATI-IADB-AR-L1121,result_7,1,false,"Vialidad, Accesibilidad y Drenaje","Vialidad, Accesibilidad y Drenaje"
+XI-IATI-IADB-AR-L1144,result_1,1,false,Componente 1: Obras de Ingeniería.,Componente 1: Obras de Ingeniería.
+XI-IATI-IADB-AR-L1144,result_2,1,false,Componente 2: Fortalecimiento Institucional en Seguridad Vial,Componente 2: Fortalecimiento Institucional en Seguridad Vial
+XI-IATI-IADB-AR-L1144,result_3,1,false,"Componente 3: Administración del Programa, Estudios y Supervisión","Componente 3: Administración del Programa, Estudios y Supervisión"
+XI-IATI-IADB-AR-L1043,result_1,1,false,Ampliación de oferta escolar de jornada extendida,Ampliación de oferta escolar de jornada extendida
+XI-IATI-IADB-AR-L1043,result_2,1,false,Formación y capacitación,Formación y capacitación
+XI-IATI-IADB-AR-L1043,result_3,1,false,Fortalecimiento institucional,Fortalecimiento institucional
+XI-IATI-IADB-AR-L1043,result_4,2,false,Política social favorable a la equidad y productividad,Política social favorable a la equidad y productividad
+XI-IATI-IADB-AR-L1330,result_1,1,false,"Administración, evaluación y auditoría","Administración, evaluación y auditoría"
+XI-IATI-IADB-AR-L1330,result_2,1,false,Apoyo a la articulación entre actores del Sistema Nacional de Innovación,Apoyo a la articulación entre actores del Sistema Nacional de Innovación
+XI-IATI-IADB-AR-L1330,result_3,1,false,Apoyo a la oferta de Conocimiento Científico y Tecnológico,Apoyo a la oferta de Conocimiento Científico y Tecnológico
+XI-IATI-IADB-AR-L1330,result_4,1,false,Fomento a la Innovación Tecnológica,Fomento a la Innovación Tecnológica
+XI-IATI-IADB-AR-L1330,result_5,1,false,Fortalecimiento de las capacidades del Sistema Nacional de Innovación,Fortalecimiento de las capacidades del Sistema Nacional de Innovación
+XI-IATI-IADB-AR-L1360,result_1,1,false,Administración,Administración
+XI-IATI-IADB-AR-L1360,result_2,1,false,Indicadores Transversales,Indicadores Transversales
+XI-IATI-IADB-AR-L1360,result_3,1,false,Transformación Digital hacia Industria 4.0 en MiPyMEs,Transformación Digital hacia Industria 4.0 en MiPyMEs
+XI-IATI-IADB-AR-L1003,result_1,1,false,SUBPROGRAMA 1. DESARROLLO DE LA INFRAESTRUCTURA PÚBLICA DE APOYO A LA ACTIVIDAD PRODUCTIVA,SUBPROGRAMA 1. DESARROLLO DE LA INFRAESTRUCTURA PÚBLICA DE APOYO A LA ACTIVIDAD PRODUCTIVA
+XI-IATI-IADB-AR-L1003,result_2,1,false,SUBPROGRAMA 2. MEJORA EN LAS CONDICIONES DE ACCESO AL FINANCIAMIENTO,SUBPROGRAMA 2. MEJORA EN LAS CONDICIONES DE ACCESO AL FINANCIAMIENTO
+XI-IATI-IADB-AR-L1003,result_3,1,false,SUBPROGRAMA 3. FORMACION TÉCNICO-PROFESIONAL,SUBPROGRAMA 3. FORMACION TÉCNICO-PROFESIONAL
+XI-IATI-IADB-AR-L1003,result_4,1,false,SUBPROGRAMA 4. PROMOCION DE CLUSTERS,SUBPROGRAMA 4. PROMOCION DE CLUSTERS
+XI-IATI-IADB-AR-L1154,result_1,1,false,Actividades de coordinación institucional,Actividades de coordinación institucional
+XI-IATI-IADB-AR-L1154,result_2,1,false,Cadenas de valor más competitivas,Cadenas de valor más competitivas
+XI-IATI-IADB-AR-L1154,result_3,1,false,Logística para la competitividad,Logística para la competitividad
+XI-IATI-IADB-AR-L1159,result_1,1,false,Apoyo al desarrollo de la Acuicultura.,Apoyo al desarrollo de la Acuicultura.
+XI-IATI-IADB-AR-L1159,result_2,2,false,Capacidades de investigación aplicada y de transferencias mejoradas.,Capacidades de investigación aplicada y de transferencias mejoradas.
+XI-IATI-IADB-AR-L1159,result_3,1,false,Mejora en la capacidad de gestión de los recursos pesqueros marítimos con enfoque ecosistémico.,Mejora en la capacidad de gestión de los recursos pesqueros marítimos con enfoque ecosistémico.
+XI-IATI-IADB-AR-L1064,result_1,1,false,Apoyo a la Investigación para la Pequeña Agricultura Familiar (PAF),Apoyo a la Investigación para la Pequeña Agricultura Familiar (PAF)
+XI-IATI-IADB-AR-L1064,result_2,1,false,Apoyo a la Transferencia de Tecnología y Extensión,Apoyo a la Transferencia de Tecnología y Extensión
+XI-IATI-IADB-AR-L1064,result_3,2,false,"Capacidad del INTA en el análisis socio-económico de los temas vinculados al desarrollo y adopción de tecnología, ampliada.","Capacidad del INTA en el análisis socio-económico de los temas vinculados al desarrollo y adopción de tecnología, ampliada."
+XI-IATI-IADB-AR-L1064,result_4,2,false,Capacidad estratégica de Investigación y Desarrollo fortalecida.,Capacidad estratégica de Investigación y Desarrollo fortalecida.
+XI-IATI-IADB-AR-L1064,result_5,2,false,"Capacidades y gestión institucional en Planificación, Seguimiento y Evaluación (PSyE) fortalecidas para orientar la acción hacia resultados e impactos en el Sistema Nacional de Innovación (SNI).","Capacidades y gestión institucional en Planificación, Seguimiento y Evaluación (PSyE) fortalecidas para orientar la acción hacia resultados e impactos en el Sistema Nacional de Innovación (SNI)."
+XI-IATI-IADB-AR-L1064,result_6,2,false,Eficiencia económica y técnico-administrativa de la sede central del Organismo mejorada.,Eficiencia económica y técnico-administrativa de la sede central del Organismo mejorada.
+XI-IATI-IADB-AR-L1064,result_7,1,false,Fortalecimiento de la Capacidad Estratégica de Investigación y Desarrollo,Fortalecimiento de la Capacidad Estratégica de Investigación y Desarrollo
+XI-IATI-IADB-AR-L1064,result_8,2,false,INCUINTA creada,INCUINTA creada
+XI-IATI-IADB-AR-L1064,result_9,2,false,Investigación para la Pequeña Agricultura Familiar (PAF) incrementada.,Investigación para la Pequeña Agricultura Familiar (PAF) incrementada.
+XI-IATI-IADB-AR-L1064,result_10,1,false,Modernización y Fortalecimiento Institucional del INTA,Modernización y Fortalecimiento Institucional del INTA
+XI-IATI-IADB-AR-L1064,result_11,2,false,Papel del INTA como socio estratégico del sistema nacional de innovación agropecuario en Áreas prioritarias mejorado.,Papel del INTA como socio estratégico del sistema nacional de innovación agropecuario en Áreas prioritarias mejorado.
+XI-IATI-IADB-AR-L1064,result_12,2,false,Presencia y liderazgo de Argentina en problemas y oportunidades de investigación agropecuaria en el marco de FONTAGRO incrementada.,Presencia y liderazgo de Argentina en problemas y oportunidades de investigación agropecuaria en el marco de FONTAGRO incrementada.
+XI-IATI-IADB-AR-L1064,result_13,2,false,Presencia y liderazgo de Argentina en problemas y oportunidades internacionales de investigación agropecuaria incrementada.,Presencia y liderazgo de Argentina en problemas y oportunidades internacionales de investigación agropecuaria incrementada.
+XI-IATI-IADB-AR-L1064,result_14,2,false,Producción científico-tecnológica de la Red de laboratorios de biotecnología mejorada.,Producción científico-tecnológica de la Red de laboratorios de biotecnología mejorada.
+XI-IATI-IADB-AR-L1064,result_15,2,false,Producción científico-tecnológica del INTA mejorada.,Producción científico-tecnológica del INTA mejorada.
+XI-IATI-IADB-AR-L1064,result_16,2,false,Sistema de innovación agropecuario fortalecido.,Sistema de innovación agropecuario fortalecido.
+XI-IATI-IADB-AR-L1064,result_17,2,false,Sistemas integrados de información y comunicación interna y externa incorporadas a la gestión de las Áreas de dirección y de las unidades operativas del INTA.,Sistemas integrados de información y comunicación interna y externa incorporadas a la gestión de las Áreas de dirección y de las unidades operativas del INTA.
+XI-IATI-IADB-AR-L1064,result_18,2,false,Transferencia de Tecnología y Extensión incrementada.,Transferencia de Tecnología y Extensión incrementada.
+XI-IATI-IADB-AR-L1064,result_19,1,false,Vinculación Tecnológica y Cooperación Internacional,Vinculación Tecnológica y Cooperación Internacional
+XI-IATI-IADB-AR-L1064,result_20,2,false,Vinculación tecnológica y cooperación internacional mejorada,Vinculación tecnológica y cooperación internacional mejorada
+XI-IATI-IADB-AR-L1266,result_1,1,false,Actualización de la base estadística económica,Actualización de la base estadística económica
+XI-IATI-IADB-AR-L1266,result_2,1,false,Actualización de la base estadística sociodemográfica,Actualización de la base estadística sociodemográfica
+XI-IATI-IADB-AR-L1266,result_3,1,false,Fortalecimiento de la capacidad institucional del INDEC,Fortalecimiento de la capacidad institucional del INDEC
+XI-IATI-IADB-AR-L1254,result_1,1,false,COMPONENTE 1: Subcomponente 1.1. Fortalecimiento de espacios de primera infancia,COMPONENTE 1: Subcomponente 1.1. Fortalecimiento de espacios de primera infancia
+XI-IATI-IADB-AR-L1254,result_2,1,false,COMPONENTE 1: Subcomponente 1.2. Fortalecimiento de intervenciones domiciliarias,COMPONENTE 1: Subcomponente 1.2. Fortalecimiento de intervenciones domiciliarias
+XI-IATI-IADB-AR-L1254,result_3,1,false,COMPONENTE 2: Subcomponente 2.1. Expansión de la infraestructura educativa,COMPONENTE 2: Subcomponente 2.1. Expansión de la infraestructura educativa
+XI-IATI-IADB-AR-L1254,result_4,1,false,COMPONENTE 2: Subcomponente 2.2. Fortalecimiento de la gestión escolar y mejora de los procesos de enseñanza-aprendizaje,COMPONENTE 2: Subcomponente 2.2. Fortalecimiento de la gestión escolar y mejora de los procesos de enseñanza-aprendizaje
+XI-IATI-IADB-AR-L1254,result_5,1,false,COMPONENTE 2: Subcomponente 2.3. Evaluación y monitoreo,COMPONENTE 2: Subcomponente 2.3. Evaluación y monitoreo
+XI-IATI-IADB-AR-L1254,result_6,2,false,"Fortalecimiento de competencias de técnicos, docentes, directores y supervisores en Educación Inicial","Fortalecimiento de competencias de técnicos, docentes, directores y supervisores en Educación Inicial"
+XI-IATI-IADB-AR-L1254,result_7,2,false,Incremento en el acceso a servicios públicos de desarrollo infantil de calidad,Incremento en el acceso a servicios públicos de desarrollo infantil de calidad
+XI-IATI-IADB-AR-L1122,result_1,2,false,Desempeño operativo de AySA mejorado,Desempeño operativo de AySA mejorado
+XI-IATI-IADB-AR-L1122,result_2,1,false,Fortalecimiento institucional,Fortalecimiento institucional
+XI-IATI-IADB-AR-L1122,result_3,2,false,Servicio de agua potable mejorado,Servicio de agua potable mejorado
+XI-IATI-IADB-AR-L1122,result_4,2,false,Servicio de saneamiento cloacal mejorado,Servicio de saneamiento cloacal mejorado
+XI-IATI-IADB-AR-L1122,result_5,1,false,Sistema de agua potable,Sistema de agua potable
+XI-IATI-IADB-AR-L1122,result_6,1,false,Sistema de saneamiento,Sistema de saneamiento
+XI-IATI-IADB-AR-L1367,result_1,2,false,Mejorar el acceso a oportunidades educativas para NNAyJ en contextos de vulnerabilidad,Mejorar el acceso a oportunidades educativas para NNAyJ en contextos de vulnerabilidad
+XI-IATI-IADB-AR-L1367,result_2,2,false,Mejorar el acceso a una alimentación escolar saludable para estudiantes de la educación obligatoria de gestión estatal,Mejorar el acceso a una alimentación escolar saludable para estudiantes de la educación obligatoria de gestión estatal
+XI-IATI-IADB-AR-L1367,result_3,2,false,Mejorar la inclusión digital de estudiantes de nivel secundario en instituciones educativas de gestión estatal,Mejorar la inclusión digital de estudiantes de nivel secundario en instituciones educativas de gestión estatal
+XI-IATI-IADB-AR-L1338,result_1,1,false,Fortalecimiento institucional,Fortalecimiento institucional
+XI-IATI-IADB-AR-L1338,result_2,1,false,"Infraestructura vial sostenible, segura, inclusiva y con enfoque de género","Infraestructura vial sostenible, segura, inclusiva y con enfoque de género"
+XI-IATI-IADB-AR-L1339,result_1,1,false,Fortalecimiento institucional,Fortalecimiento institucional
+XI-IATI-IADB-AR-L1339,result_2,1,false,Obras,Obras
+XI-IATI-IADB-AR-L1134,result_1,1,false,Agua potable y alcantarillado,Agua potable y alcantarillado
+XI-IATI-IADB-AR-L1134,result_2,1,false,Edificios públicos y viviendas,Edificios públicos y viviendas
+XI-IATI-IADB-AR-L1134,result_3,1,false,Energía eléctrica,Energía eléctrica
+XI-IATI-IADB-AR-L1134,result_4,1,false,"Transporte, remoción de cenizas","Transporte, remoción de cenizas"
+XI-IATI-IADB-AR-L1140,result_1,1,false,Desarrollo de Productos Turísticos,Desarrollo de Productos Turísticos
+XI-IATI-IADB-AR-L1140,result_2,1,false,Fortalecimiento de la Gestión Turística,Fortalecimiento de la Gestión Turística
+XI-IATI-IADB-AR-L1140,result_3,1,false,Inclusión Social y Emprendimiento Local,Inclusión Social y Emprendimiento Local
+XI-IATI-IADB-AR-L1140,result_4,1,false,Sostenibilidad Ambiental,Sostenibilidad Ambiental
+XI-IATI-IADB-AR-L1145,result_1,1,false,Apoyo a Nuevas Empresas,Apoyo a Nuevas Empresas
+XI-IATI-IADB-AR-L1145,result_2,1,false,Articulación Productiva y Competitividad Territorial,Articulación Productiva y Competitividad Territorial
+XI-IATI-IADB-AR-L1145,result_3,1,false,Asistencia Técnica a MIPYMES,Asistencia Técnica a MIPYMES
+XI-IATI-IADB-AR-L1145,result_4,2,false,"Aumentar la inversión de las MIPYMES en Servicios de Desarrollo Empresarial (SDE), tanto en forma individual como colectiva, a través del apoyo a la compra de SDE y la mejora de la oferta de esos servicios","Aumentar la inversión de las MIPYMES en Servicios de Desarrollo Empresarial (SDE), tanto en forma individual como colectiva, a través del apoyo a la compra de SDE y la mejora de la oferta de esos servicios"
+XI-IATI-IADB-AR-L1327,result_1,1,false,1.1. Fortalecimiento de las funciones de Centro de Gobierno,1.1. Fortalecimiento de las funciones de Centro de Gobierno
+XI-IATI-IADB-AR-L1327,result_2,1,false,1.2. Fortalecimiento de la gestión de la información,1.2. Fortalecimiento de la gestión de la información
+XI-IATI-IADB-AR-L1327,result_3,1,false,2.1. Innovaciones en la gestión pública,2.1. Innovaciones en la gestión pública
+XI-IATI-IADB-AR-L1327,result_4,1,false,2.2. Innovaciones en el sector privado y sociedad civil,2.2. Innovaciones en el sector privado y sociedad civil
+XI-IATI-IADB-AR-L1260,result_1,2,false,"Componente 1 Integracion urbana de B31. Incremento en el acceso a servicios educativos de calidad, infraestructura urbana de calidad y resiliente al cambio climático. La disminución de problemas de salud relacionados a enfermedades infectocontagiosas entre los residentes de viviendas mejoradas.","Componente 1 Integracion urbana de B31. Incremento en el acceso a servicios educativos de calidad, infraestructura urbana de calidad y resiliente al cambio climático. La disminución de problemas de salud relacionados a enfermedades infectocontagiosas entre los residentes de viviendas mejoradas."
+XI-IATI-IADB-AR-L1260,result_2,1,false,Componente 1. Integración Urbana del Barrio 31,Componente 1. Integración Urbana del Barrio 31
+XI-IATI-IADB-AR-L1260,result_3,2,false,"Componente 2 Calidad y Equidad Educativa. mejora en el acceso a nuevos equipamientos tecnológicos, mobiliario y laboratorios de informática en las escuelas de la Ciudad de Buenos aires y en el acceso a nuevas plataformas digitales de aprendizaje y evaluación. Mejora en el acceso a sistemas informatizados de gestión de datos para la planificación educativa.","Componente 2 Calidad y Equidad Educativa. mejora en el acceso a nuevos equipamientos tecnológicos, mobiliario y laboratorios de informática en las escuelas de la Ciudad de Buenos aires y en el acceso a nuevas plataformas digitales de aprendizaje y evaluación. Mejora en el acceso a sistemas informatizados de gestión de datos para la planificación educativa."
+XI-IATI-IADB-AR-L1260,result_4,1,false,Componente 2: Calidad y Equidad Educativa,Componente 2: Calidad y Equidad Educativa
+XI-IATI-IADB-AR-L1328,result_1,1,false,Administración.,Administración.
+XI-IATI-IADB-AR-L1328,result_2,1,false,Apoyo al financiamiento de la MIPYME.,Apoyo al financiamiento de la MIPYME.
+XI-IATI-IADB-AR-L1195,result_1,2,false,1.Servicio de agua potable mejorado,1.Servicio de agua potable mejorado
+XI-IATI-IADB-AR-L1195,result_2,2,false,2.Servicio de saneamiento cloacal mejorado,2.Servicio de saneamiento cloacal mejorado
+XI-IATI-IADB-AR-L1195,result_3,2,false,3. Desempeño operativo de AySA mejorado,3. Desempeño operativo de AySA mejorado
+XI-IATI-IADB-AR-L1195,result_4,1,false,Fortalecimiento institucional,Fortalecimiento institucional
+XI-IATI-IADB-AR-L1195,result_5,1,false,Optimización del sistema potabilización y distribución de agua potable,Optimización del sistema potabilización y distribución de agua potable
+XI-IATI-IADB-AR-L1195,result_6,1,false,Sistema de saneamiento,Sistema de saneamiento
+XI-IATI-IADB-AR-L1257,result_1,1,false,Componente I: Sistemas de Agua Potable,Componente I: Sistemas de Agua Potable
+XI-IATI-IADB-AR-L1257,result_2,1,false,Componente II: Sistema de Saneamiento,Componente II: Sistema de Saneamiento
+XI-IATI-IADB-AR-L1257,result_3,1,false,Componente III: Fortalecimiento de la Gestión Empresarial,Componente III: Fortalecimiento de la Gestión Empresarial
+XI-IATI-IADB-AR-L1257,result_4,2,false,Resultado 1: Eficiencia del sistema de agua potable en áreas intervenidas mejorada,Resultado 1: Eficiencia del sistema de agua potable en áreas intervenidas mejorada
+XI-IATI-IADB-AR-L1257,result_5,2,false,Resultado 2: Servicio de saneamiento cloacal en los partidos de San Miguel y Moreno ampliado y mejorado,Resultado 2: Servicio de saneamiento cloacal en los partidos de San Miguel y Moreno ampliado y mejorado
+XI-IATI-IADB-AR-L1257,result_6,2,false,Resultado 3: Transporte y disposición adecuada de efluentes en emisario Berazategui,Resultado 3: Transporte y disposición adecuada de efluentes en emisario Berazategui
+XI-IATI-IADB-AR-L1179,result_1,1,false,Desarrollo Comunitario,Desarrollo Comunitario
+XI-IATI-IADB-AR-L1179,result_2,1,false,Fortalecimiento de la Capacidad de Gestión,Fortalecimiento de la Capacidad de Gestión
+XI-IATI-IADB-AR-L1179,result_3,1,false,Legalización de la Tenencia de la Tierra,Legalización de la Tenencia de la Tierra
+XI-IATI-IADB-AR-L1179,result_4,1,false,"Provisión de Infraestructura, Saneamiento Ambiental, y Equipamiento Comunitario","Provisión de Infraestructura, Saneamiento Ambiental, y Equipamiento Comunitario"
+XI-IATI-IADB-AR-L1111,result_1,1,false,Fondos de Innovación Tecnológica Sectorial (FITS),Fondos de Innovación Tecnológica Sectorial (FITS)
+XI-IATI-IADB-AR-L1111,result_2,1,false,Fortalecimiento de Capacidades Institucionales,Fortalecimiento de Capacidades Institucionales
+XI-IATI-IADB-AR-L1111,result_3,1,false,Fortalecimiento de la Capacidades de Innovación y de Investigación Científica y Tecnológica,Fortalecimiento de la Capacidades de Innovación y de Investigación Científica y Tecnológica
+XI-IATI-IADB-AR-L1120,result_1,2,false,Cobertura mejorada de servicios a agricultores,Cobertura mejorada de servicios a agricultores
+XI-IATI-IADB-AR-L1120,result_2,1,false,Desarrollo y Competitividad. Aportes No Reembolsables y Clusters.,Desarrollo y Competitividad. Aportes No Reembolsables y Clusters.
+XI-IATI-IADB-AR-L1120,result_3,1,false,Infraestructura Hídrica,Infraestructura Hídrica
+XI-IATI-IADB-AR-L1120,result_4,1,false,Infraestructura Transporte,Infraestructura Transporte
+XI-IATI-IADB-AR-L1120,result_5,1,false,Servicios Agropecuarios. Desarrollo Comercial.,Servicios Agropecuarios. Desarrollo Comercial.
+XI-IATI-IADB-AR-L1120,result_6,1,false,Servicios Agropecuarios. Manejo de Recursos Naturales.,Servicios Agropecuarios. Manejo de Recursos Naturales.
+XI-IATI-IADB-AR-L1120,result_7,1,false,Zonas Rurales con Acceso a Sistemas de Energía,Zonas Rurales con Acceso a Sistemas de Energía
+XI-IATI-IADB-AR-L1295,result_1,1,false,Estudios de Preinversión,Estudios de Preinversión
+XI-IATI-IADB-AR-L1295,result_2,1,false,Obras civiles,Obras civiles
+XI-IATI-IADB-AR-L1295,result_3,1,false,Sistema de control de gestión del corredor,Sistema de control de gestión del corredor
+XI-IATI-IADB-AR-L1267,result_1,1,false,"Componente 1. Obras electromecánicas, civiles y equipos","Componente 1. Obras electromecánicas, civiles y equipos"
+XI-IATI-IADB-AR-L1267,result_2,1,false,Componente 2. Fortalecimiento institucional,Componente 2. Fortalecimiento institucional
+XI-IATI-IADB-AR-L1106,result_1,1,false,Asistencia técnica estratégica; auditoria; seguimiento y monitoreo,Asistencia técnica estratégica; auditoria; seguimiento y monitoreo
+XI-IATI-IADB-AR-L1106,result_2,1,false,Infraestructura Productiva,Infraestructura Productiva
+XI-IATI-IADB-AR-L1106,result_3,1,false,Infraestructura hospitalaria,Infraestructura hospitalaria
+XI-IATI-IADB-AR-L1106,result_4,1,false,Infraestructura turístico-productiva,Infraestructura turístico-productiva
+XI-IATI-IADB-AR-L1106,result_5,1,false,Infraestructura urbana,Infraestructura urbana
+XI-IATI-IADB-AR-L1247,result_1,1,false,Componente 1: Gestión del conocimiento,Componente 1: Gestión del conocimiento
+XI-IATI-IADB-AR-L1247,result_2,1,false,Componente 2: Gestión de la información,Componente 2: Gestión de la información
+XI-IATI-IADB-AR-L1247,result_3,1,false,Componente 3: Gestión del pasivo contingente y expedientes,Componente 3: Gestión del pasivo contingente y expedientes
+XI-IATI-IADB-AR-L1247,result_4,1,false,Componente 4: Instrumentos de coordinación y alineamiento institucional,Componente 4: Instrumentos de coordinación y alineamiento institucional
+XI-IATI-IADB-AR-L1019,result_1,1,false,FORTALECIMIENTO DE LA CAPACIDAD DE GESTION,FORTALECIMIENTO DE LA CAPACIDAD DE GESTION
+XI-IATI-IADB-AR-L1019,result_2,2,false,"Hábitat de los hogares, residentes en villas y asentamientos mejorado de manera sustentable.","Hábitat de los hogares, residentes en villas y asentamientos mejorado de manera sustentable."
+XI-IATI-IADB-AR-L1019,result_3,1,false,INCREMENTO DE CAPITAL SOCIAL Y HUMANO,INCREMENTO DE CAPITAL SOCIAL Y HUMANO
+XI-IATI-IADB-AR-L1019,result_4,1,false,"INFRAESTRUCTURA, EQUIPAMIENTO Y SANEAMIENTO AMBIENTAL","INFRAESTRUCTURA, EQUIPAMIENTO Y SANEAMIENTO AMBIENTAL"
+XI-IATI-IADB-AR-L1019,result_5,1,false,LEGALIZACIÓN DE LA TENENCIA DE LA TIERRA,LEGALIZACIÓN DE LA TENENCIA DE LA TIERRA
+XI-IATI-IADB-AR-L1341,result_1,1,false,Aumento de la Seguridad en la tenencia de la tierra,Aumento de la Seguridad en la tenencia de la tierra
+XI-IATI-IADB-AR-L1341,result_2,1,false,Fortalecimiento de la Capacidad de Gestión,Fortalecimiento de la Capacidad de Gestión
+XI-IATI-IADB-AR-L1341,result_3,1,false,Fortalecimiento de las Organizaciones Comunitarias de Base y Desarrollo Comunitario,Fortalecimiento de las Organizaciones Comunitarias de Base y Desarrollo Comunitario
+XI-IATI-IADB-AR-L1341,result_4,1,false,"Provisión de Infraestructura, Saneamiento Ambiental, y Equipamiento Comunitario","Provisión de Infraestructura, Saneamiento Ambiental, y Equipamiento Comunitario"
+XI-IATI-IADB-AR-L1026,result_1,1,false,Apoyo a la gestión ambiental de áreas mineras degradadas,Apoyo a la gestión ambiental de áreas mineras degradadas
+XI-IATI-IADB-AR-L1026,result_2,1,false,Federalización de la Producción Limpia,Federalización de la Producción Limpia
+XI-IATI-IADB-AR-L1026,result_3,1,false,Fortalecimiento de la gestión ambiental minera descentralizada,Fortalecimiento de la gestión ambiental minera descentralizada
+XI-IATI-IADB-AR-L1026,result_4,2,false,Gestión Ambiental provincial en Producción Limpia fortalecida,Gestión Ambiental provincial en Producción Limpia fortalecida
+XI-IATI-IADB-AR-L1026,result_5,1,false,Implantación de Prácticas de Producción Limpia en PyMES,Implantación de Prácticas de Producción Limpia en PyMES
+XI-IATI-IADB-AR-L1026,result_6,1,false,Incorporación de prácticas ambientales en la actividad ladrillera nacional,Incorporación de prácticas ambientales en la actividad ladrillera nacional
+XI-IATI-IADB-AR-L1026,result_7,1,false,Información geoambiental de base,Información geoambiental de base
+XI-IATI-IADB-AR-L1026,result_8,2,false,Procesos de Producción Limpia adoptados por las PyMES participantes del programa,Procesos de Producción Limpia adoptados por las PyMES participantes del programa
+XI-IATI-IADB-AR-L1035,result_1,1,false,Apoyo a la gestión y evaluación de estudios,Apoyo a la gestión y evaluación de estudios
+XI-IATI-IADB-AR-L1035,result_2,1,false,Desarrollo de capacidades para la gestión del ciclo de los proyectos y difusión del Programa en el ámbito local,Desarrollo de capacidades para la gestión del ciclo de los proyectos y difusión del Programa en el ámbito local
+XI-IATI-IADB-AR-L1035,result_3,1,false,Elaboración de Estudios de Preinversión,Elaboración de Estudios de Preinversión
+XI-IATI-IADB-AR-L1035,result_4,2,false,Estructura funcional de la UNPRE consolidada,Estructura funcional de la UNPRE consolidada
+XI-IATI-IADB-AR-L1035,result_5,2,false,Participación de consultores locales en la elaboración de estudios de preinversion incrementada,Participación de consultores locales en la elaboración de estudios de preinversion incrementada
+XI-IATI-IADB-AR-L1035,result_6,2,false,"Rentabilidad de la inversión pública nacional, provincial y municipal mejorada","Rentabilidad de la inversión pública nacional, provincial y municipal mejorada"
+XI-IATI-IADB-AR-L1377,result_1,1,false,Mejora en la calidad de los aprendizajes,Mejora en la calidad de los aprendizajes
+XI-IATI-IADB-AR-L1249,result_1,1,false,Componente 1: Implementación de la Estrategia Nacional para la Inclusión Financiera,Componente 1: Implementación de la Estrategia Nacional para la Inclusión Financiera
+XI-IATI-IADB-AR-L1249,result_2,1,false,Componente 2. Acceso a crédito de las MyPE (costo total=US$6.5 millones),Componente 2. Acceso a crédito de las MyPE (costo total=US$6.5 millones)
+XI-IATI-IADB-AR-L1249,result_3,2,false,Fortalecer la capacidad institucional del gobierno para desarrollar políticas de inclusión financiera,Fortalecer la capacidad institucional del gobierno para desarrollar políticas de inclusión financiera
+XI-IATI-IADB-AR-L1306,result_1,1,false,Desarrollo Humano y Productivo,Desarrollo Humano y Productivo
+XI-IATI-IADB-AR-L1306,result_2,1,false,Fortalecimiento Institucional Gubernamental y Comunitario,Fortalecimiento Institucional Gubernamental y Comunitario
+XI-IATI-IADB-AR-L1306,result_3,1,false,Infraestructura Urbana,Infraestructura Urbana
+XI-IATI-IADB-AR-L1306,result_4,1,false,Ordenamiento territorial y Seguridad en la tenencia,Ordenamiento territorial y Seguridad en la tenencia
+XI-IATI-IADB-AR-L1306,result_5,1,false,Respuesta al COVID-19 en Barrios Populares,Respuesta al COVID-19 en Barrios Populares
+XI-IATI-IADB-AR-L1358,result_1,2,false,1. Incrementar el acceso efectivo a servicios de diagnóstico y atención por parte de la Población con Cobertura Pública Exclusiva (PCPE) en las líneas de cuidado priorizadas,1. Incrementar el acceso efectivo a servicios de diagnóstico y atención por parte de la Población con Cobertura Pública Exclusiva (PCPE) en las líneas de cuidado priorizadas
+XI-IATI-IADB-AR-L1280,result_1,1,false,Component 1: Access to medium and long-term finance,Component 1: Access to medium and long-term finance
+XI-IATI-IADB-AR-L1280,result_2,2,false,"i) increase SME (defined as per Argentine’s government classification) investments in RE and EE, by providing access to medium and long-term finance; and (ii) contribute to the reduction of GHG emissions.","i) increase SME (defined as per Argentine’s government classification) investments in RE and EE, by providing access to medium and long-term finance; and (ii) contribute to the reduction of GHG emissions."
+XI-IATI-IADB-AR-L1307,result_1,1,false,Componente 1: Obras civiles,Componente 1: Obras civiles
+XI-IATI-IADB-AR-L1307,result_2,1,false,Componente 2: Fortalecimiento institucional,Componente 2: Fortalecimiento institucional
+XI-IATI-IADB-AR-L1272,result_1,1,false,Fortalecimiento del sistema provincial de inversión pública,Fortalecimiento del sistema provincial de inversión pública
+XI-IATI-IADB-AR-L1272,result_2,1,false,Optimización de la ejecución de la inversión pública en el MIySP y la DGEC,Optimización de la ejecución de la inversión pública en el MIySP y la DGEC
+XI-IATI-IADB-AR-L1361,result_1,2,false,(i) fortalecer las capacidades de gestión del Organismo Ejecutor (OE) y de las Unidades Técnicas de Apoyo (UTA),(i) fortalecer las capacidades de gestión del Organismo Ejecutor (OE) y de las Unidades Técnicas de Apoyo (UTA)
+XI-IATI-IADB-AR-L1361,result_2,2,false,(ii) mejorar las condiciones habitacionales de los Hogares Vunerables (HV) en Barrios Populares (BP) y sus áreas formales adyacentes,(ii) mejorar las condiciones habitacionales de los Hogares Vunerables (HV) en Barrios Populares (BP) y sus áreas formales adyacentes
+XI-IATI-IADB-AR-L1361,result_3,2,false,(iii) mejorar el hábitat y aumentar la seguridad de la tenencia de la tierra de los residentes en BP,(iii) mejorar el hábitat y aumentar la seguridad de la tenencia de la tierra de los residentes en BP
+XI-IATI-IADB-AR-L1361,result_4,2,false,(iv) Promover el desarrollo socioeconómico y comunitario en BP con enfoque de género y diversidad,(iv) Promover el desarrollo socioeconómico y comunitario en BP con enfoque de género y diversidad
+XI-IATI-IADB-AR-L1142,result_1,1,false,Consolidación de sistemas de información de salud pública,Consolidación de sistemas de información de salud pública
+XI-IATI-IADB-AR-L1142,result_2,2,false,Consultantes a los que les prescribieron medicamentos que los reciben de REMEDIAR,Consultantes a los que les prescribieron medicamentos que los reciben de REMEDIAR
+XI-IATI-IADB-AR-L1142,result_3,2,false,Personas clasificadas por Riesgo Cardiovascular Global,Personas clasificadas por Riesgo Cardiovascular Global
+XI-IATI-IADB-AR-L1142,result_4,2,false,Personas con riesgo cardiovascular alto bien seguidas,Personas con riesgo cardiovascular alto bien seguidas
+XI-IATI-IADB-AR-L1142,result_5,1,false,Provisión de servicios estratégicos,Provisión de servicios estratégicos
+XI-IATI-IADB-AR-L1142,result_6,1,false,Proyectos Provinciales de Fortalecimiento de Servicios de Salud,Proyectos Provinciales de Fortalecimiento de Servicios de Salud
+XI-IATI-IADB-AR-L1198,result_1,1,false,Componente 1: Inversiones de apoyo a la competitividad,Componente 1: Inversiones de apoyo a la competitividad
+XI-IATI-IADB-AR-L1198,result_2,1,false,Componente 2: Servicios de apoyo a la competitividad,Componente 2: Servicios de apoyo a la competitividad
+XI-IATI-IADB-AR-L1198,result_3,1,false,Componente 3: Seguimiento y Evaluación,Componente 3: Seguimiento y Evaluación
+XI-IATI-IADB-AR-L1133,result_1,1,false,Componente 1: Obras de Ingenieria,Componente 1: Obras de Ingenieria
+XI-IATI-IADB-AR-L1133,result_2,1,false,Componente 2: Seguridad Vial,Componente 2: Seguridad Vial
+XI-IATI-IADB-AR-L1133,result_3,1,false,Componente 3: Fortalecimiento Institucional,Componente 3: Fortalecimiento Institucional
+XI-IATI-IADB-AR-L1133,result_4,1,false,"Componente 4: Administración, Estudios y Supervisión.","Componente 4: Administración, Estudios y Supervisión."
+XI-IATI-IADB-AR-L1289,result_1,1,false,Componente 1: Obras de Agua Potable y Saneamiento,Componente 1: Obras de Agua Potable y Saneamiento
+XI-IATI-IADB-AR-L1289,result_2,1,false,Componente 2: Fortalecimiento Institucional,Componente 2: Fortalecimiento Institucional
+XI-IATI-IADB-AR-L1289,result_3,2,false,"ODE 1: Incrementar los niveles de acceso y mejorar la calidad de servicios de agua potable y saneamiento en localidades de hasta 50 mil habitantes, con un enfoque de inclusión social, género y resiliencia al cambio climático.","ODE 1: Incrementar los niveles de acceso y mejorar la calidad de servicios de agua potable y saneamiento en localidades de hasta 50 mil habitantes, con un enfoque de inclusión social, género y resiliencia al cambio climático."
+XI-IATI-IADB-AR-L1148,result_1,1,false,Gestión del Programa,Gestión del Programa
+XI-IATI-IADB-AR-L1148,result_2,1,false,Obras,Obras
+XI-IATI-IADB-AR-L1079,result_1,1,false,Recuperar la capacidad de transmision de energia electrica a nivel provincial,Recuperar la capacidad de transmision de energia electrica a nivel provincial
