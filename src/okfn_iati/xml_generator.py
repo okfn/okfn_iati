@@ -260,7 +260,119 @@ class IatiXmlGenerator:
             desc_el = ET.SubElement(result_el, "description")
             self._create_narrative_elements(desc_el, result.description)
 
-        # Result indicators would be added here in a more complete implementation
+        if hasattr(result, 'indicator') and result.indicator:
+            for indicator in result.indicator:
+                self._add_indicator(result_el, indicator)
+
+    def _add_indicator(self, result_el: ET.Element, indicator) -> None:
+        """Add indicator element to result."""
+        indicator_el = ET.SubElement(result_el, "indicator")
+
+        # Add measure attribute
+        if hasattr(indicator, 'measure') and indicator.measure:
+            self._set_attribute(indicator_el, "measure", self._get_enum_value(indicator.measure))
+
+        # Add ascending attribute
+        if hasattr(indicator, 'ascending') and indicator.ascending is not None:
+            self._set_attribute(indicator_el, "ascending", "1" if indicator.ascending else "0")
+
+        # Add aggregation-status attribute
+        if hasattr(indicator, 'aggregation_status') and indicator.aggregation_status is not None:
+            self._set_attribute(indicator_el, "aggregation-status", "1" if indicator.aggregation_status else "0")
+
+        # Add title
+        if hasattr(indicator, 'title') and indicator.title:
+            title_el = ET.SubElement(indicator_el, "title")
+            self._create_narrative_elements(title_el, indicator.title)
+
+        # Add description
+        if hasattr(indicator, 'description') and indicator.description:
+            desc_el = ET.SubElement(indicator_el, "description")
+            self._create_narrative_elements(desc_el, indicator.description)
+
+        if hasattr(indicator, 'baseline') and indicator.baseline and len(indicator.baseline) > 0:
+            # Get the first baseline from the list
+            baseline = indicator.baseline[0]  # FIX: Access first element in list
+            baseline_el = ET.SubElement(indicator_el, "baseline")
+
+            if hasattr(baseline, 'year') and baseline.year:
+                self._set_attribute(baseline_el, "year", baseline.year)
+            if hasattr(baseline, 'iso_date') and baseline.iso_date:
+                self._set_attribute(baseline_el, "iso-date", baseline.iso_date)
+            if hasattr(baseline, 'value') and baseline.value is not None:
+                self._set_attribute(baseline_el, "value", baseline.value)
+
+            # Add baseline comment if present
+            if hasattr(baseline, 'comment') and baseline.comment:
+                comment_el = ET.SubElement(baseline_el, "comment")
+                if isinstance(baseline.comment, list):
+                    self._create_narrative_elements(comment_el, baseline.comment)
+                else:
+                    narrative_el = ET.SubElement(comment_el, "narrative")
+                    narrative_el.text = str(baseline.comment)
+
+        # Add periods
+        if hasattr(indicator, 'period') and indicator.period:
+            for period in indicator.period:
+                self._add_indicator_period(indicator_el, period)
+
+    def _add_indicator_period(self, indicator_el: ET.Element, period) -> None:
+        """Add period element to indicator."""
+        period_el = ET.SubElement(indicator_el, "period")
+
+        # Add period start
+        if hasattr(period, 'period_start') and period.period_start:
+            start_el = ET.SubElement(period_el, "period-start")
+            self._set_attribute(start_el, "iso-date", period.period_start)
+
+        # Add period end
+        if hasattr(period, 'period_end') and period.period_end:
+            end_el = ET.SubElement(period_el, "period-end")
+            self._set_attribute(end_el, "iso-date", period.period_end)
+
+        # Add target
+        if hasattr(period, 'target') and period.target:
+            target = period.target
+
+            # Check if target is a list (same issue as baseline)
+            if isinstance(target, list) and len(target) > 0:
+                target = target[0]  # Get first target from list
+
+            target_el = ET.SubElement(period_el, "target")
+
+            if hasattr(target, 'value') and target.value is not None:
+                self._set_attribute(target_el, "value", target.value)
+
+            # Add target comment if present
+            if hasattr(target, 'comment') and target.comment:
+                comment_el = ET.SubElement(target_el, "comment")
+                if isinstance(target.comment, list):
+                    self._create_narrative_elements(comment_el, target.comment)
+                else:
+                    narrative_el = ET.SubElement(comment_el, "narrative")
+                    narrative_el.text = str(target.comment)
+
+        # Add actual
+        if hasattr(period, 'actual') and period.actual:
+            actual = period.actual
+
+            # Check if actual is a list
+            if isinstance(actual, list) and len(actual) > 0:
+                actual = actual[0]  # Get first actual from list
+
+            actual_el = ET.SubElement(period_el, "actual")
+
+            if hasattr(actual, 'value') and actual.value is not None:
+                self._set_attribute(actual_el, "value", actual.value)
+
+            # Add actual comment if present
+            if hasattr(actual, 'comment') and actual.comment:
+                comment_el = ET.SubElement(actual_el, "comment")
+                if isinstance(actual.comment, list):
+                    self._create_narrative_elements(comment_el, actual.comment)
+                else:
+                    narrative_el = ET.SubElement(comment_el, "narrative")
+                    narrative_el.text = str(actual.comment)
 
     def generate_activity_xml(self, activity: Activity) -> ET.Element:  # noqa: C901
         activity_el = ET.Element("iati-activity")

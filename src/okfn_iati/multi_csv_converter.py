@@ -15,11 +15,13 @@ from datetime import datetime
 
 from .models import (
     Activity, Narrative, OrganizationRef, ParticipatingOrg, ActivityDate,
-    Location, DocumentLink, Budget, Transaction, Result, IatiActivities, ContactInfo
+    Location, DocumentLink, Budget, Transaction, Result, IatiActivities, ContactInfo,
+    Indicator, IndicatorBaseline, IndicatorPeriod, IndicatorPeriodTarget, IndicatorPeriodActual
 )
 from .enums import (
-    ActivityStatus, ActivityDateType, TransactionType, BudgetType, BudgetStatus,
-    OrganisationRole, ContactType, DocumentCategory
+    ActivityStatus, ActivityDateType,
+    DocumentCategory, ActivityScope,
+    CollaborationType
 )
 from .xml_generator import IatiXmlGenerator
 
@@ -195,8 +197,23 @@ class IatiMultiCsvConverter:
                     'title',
                     'description',
                     'baseline_year',
+                    'baseline_iso_date',
                     'baseline_value',
                     'baseline_comment'
+                ]
+            },
+            'indicator_periods': {
+                'filename': 'indicator_periods.csv',
+                'columns': [
+                    'activity_identifier',  # Foreign key to activities
+                    'result_ref',  # Foreign key to results
+                    'indicator_ref',  # Foreign key to indicators
+                    'period_start',
+                    'period_end',
+                    'target_value',
+                    'target_comment',
+                    'actual_value',
+                    'actual_comment'
                 ]
             },
             'contact_info': {
@@ -417,14 +434,38 @@ class IatiMultiCsvConverter:
             data_collections['documents'].append(doc_data)
 
         # Extract results and indicators
+        result_index = 0
         for result_elem in activity_elem.findall('result'):
-            result_data = self._extract_result_data(result_elem, activity_id)
+            result_index += 1
+            result_data = self._extract_result_data(
+                result_elem,
+                activity_id,
+                result_index
+            )
             data_collections['results'].append(result_data)
 
             # Extract indicators for this result
+            indicator_index = 0
             for indicator_elem in result_elem.findall('indicator'):
-                indicator_data = self._extract_indicator_data(indicator_elem, activity_id, result_data.get('result_ref', ''))
+                indicator_index += 1
+                indicator_data = self._extract_indicator_data(
+                    indicator_elem,
+                    activity_id,
+                    result_data['result_ref'],
+                    indicator_index
+                )
                 data_collections['indicators'].append(indicator_data)
+
+                # Extract periods for this indicator
+                indicator_ref = indicator_data.get('indicator_ref', '')
+                for period_elem in indicator_elem.findall('period'):
+                    period_data = self._extract_indicator_period_data(
+                        period_elem,
+                        activity_id,
+                        result_data.get('result_ref', ''),
+                        indicator_ref
+                    )
+                    data_collections['indicator_periods'].append(period_data)
 
         # Extract contact info
         contact_elem = activity_elem.find('contact-info')
@@ -437,12 +478,54 @@ class IatiMultiCsvConverter:
         id_elem = activity_elem.find('iati-identifier')
         return id_elem.text if id_elem is not None else ''
 
+    def _extract_indicator_period_data(
+        self,
+        period_elem: ET.Element,
+        activity_id: str,
+        result_ref: str,
+        indicator_ref: str
+    ) -> Dict[str, str]:
+        """Extract indicator period data."""
+        data = {
+            'activity_identifier': activity_id,
+            'result_ref': result_ref,
+            'indicator_ref': indicator_ref
+        }
+
+        # Period dates
+        period_start = period_elem.find('period-start')
+        data['period_start'] = period_start.get('iso-date') if period_start is not None else ''
+
+        period_end = period_elem.find('period-end')
+        data['period_end'] = period_end.get('iso-date') if period_end is not None else ''
+
+        # Target
+        target_elem = period_elem.find('target')
+        if target_elem is not None:
+            data['target_value'] = target_elem.get('value', '')
+            target_comment = target_elem.find('comment/narrative')
+            data['target_comment'] = target_comment.text if target_comment is not None else ''
+        else:
+            data['target_value'] = ''
+            data['target_comment'] = ''
+
+        # Actual
+        actual_elem = period_elem.find('actual')
+        if actual_elem is not None:
+            data['actual_value'] = actual_elem.get('value', '')
+            actual_comment = actual_elem.find('comment/narrative')
+            data['actual_comment'] = actual_comment.text if actual_comment is not None else ''
+        else:
+            data['actual_value'] = ''
+            data['actual_comment'] = ''
+
+        return data
+
     def _extract_main_activity_data(self, activity_elem: ET.Element, activity_id: str) -> Dict[str, str]:
         """Extract main activity information."""
         data = {'activity_identifier': activity_id}
 
         # Basic attributes
-        data['activity_status'] = ''
         data['default_currency'] = activity_elem.get('default-currency', '')
         data['humanitarian'] = activity_elem.get('humanitarian', '0')
         data['hierarchy'] = activity_elem.get('hierarchy', '1')
@@ -474,8 +557,17 @@ class IatiMultiCsvConverter:
             data['reporting_org_type'] = rep_org_elem.get('type', '')
             rep_org_name = rep_org_elem.find('narrative')
             data['reporting_org_name'] = rep_org_name.text if rep_org_name is not None else ''
+        else:
+            data['reporting_org_ref'] = ''
+            data['reporting_org_type'] = ''
+            data['reporting_org_name'] = ''
 
         # Dates
+        data['planned_start_date'] = ''
+        data['actual_start_date'] = ''
+        data['planned_end_date'] = ''
+        data['actual_end_date'] = ''
+
         for date_elem in activity_elem.findall('activity-date'):
             date_type = date_elem.get('type')
             iso_date = date_elem.get('iso-date', '')
@@ -495,6 +587,9 @@ class IatiMultiCsvConverter:
             data['recipient_country_code'] = country_elem.get('code', '')
             country_name = country_elem.find('narrative')
             data['recipient_country_name'] = country_name.text if country_name is not None else ''
+        else:
+            data['recipient_country_code'] = ''
+            data['recipient_country_name'] = ''
 
         # Recipient region (first one only for main table)
         region_elem = activity_elem.find('recipient-region')
@@ -502,13 +597,25 @@ class IatiMultiCsvConverter:
             data['recipient_region_code'] = region_elem.get('code', '')
             region_name = region_elem.find('narrative')
             data['recipient_region_name'] = region_name.text if region_name is not None else ''
+        else:
+            data['recipient_region_code'] = ''
+            data['recipient_region_name'] = ''
 
-        # Default flow/finance/aid/tied status
-        data['collaboration_type'] = ''
-        data['default_flow_type'] = ''
-        data['default_finance_type'] = ''
-        data['default_aid_type'] = ''
-        data['default_tied_status'] = ''
+        # Default flow/finance/aid/tied status and collaboration type
+        collab_elem = activity_elem.find('collaboration-type')
+        data['collaboration_type'] = collab_elem.get('code') if collab_elem is not None else ''
+
+        flow_elem = activity_elem.find('default-flow-type')
+        data['default_flow_type'] = flow_elem.get('code') if flow_elem is not None else ''
+
+        finance_elem = activity_elem.find('default-finance-type')
+        data['default_finance_type'] = finance_elem.get('code') if finance_elem is not None else ''
+
+        aid_elem = activity_elem.find('default-aid-type')
+        data['default_aid_type'] = aid_elem.get('code') if aid_elem is not None else ''
+
+        tied_elem = activity_elem.find('default-tied-status')
+        data['default_tied_status'] = tied_elem.get('code') if tied_elem is not None else ''
 
         # Fill in empty values for missing columns
         for col in self.csv_files['activities']['columns']:
@@ -733,11 +840,16 @@ class IatiMultiCsvConverter:
 
         return data
 
-    def _extract_result_data(self, result_elem: ET.Element, activity_id: str) -> Dict[str, str]:
+    def _extract_result_data(
+        self,
+        result_elem: ET.Element,
+        activity_id: str,
+        result_index: int = 1
+    ) -> Dict[str, str]:
         """Extract result data."""
         data = {'activity_identifier': activity_id}
 
-        data['result_ref'] = result_elem.get('ref', f"result_{len(result_elem)}")
+        data['result_ref'] = result_elem.get('ref', f"result_{result_index}")
         data['result_type'] = result_elem.get('type', '')
         data['aggregation_status'] = result_elem.get('aggregation-status', '')
 
@@ -749,36 +861,61 @@ class IatiMultiCsvConverter:
 
         return data
 
-    def _extract_indicator_data(self, indicator_elem: ET.Element, activity_id: str, result_ref: str) -> Dict[str, str]:
+    def _extract_indicator_data(
+        self,
+        indicator_elem: ET.Element,
+        activity_id: str,
+        result_ref: str,
+        indicator_index: int = 1
+    ) -> Dict[str, str]:
         """Extract indicator data."""
+        indicator_ref = f'indicator_{activity_id}_{result_ref}_{indicator_index}'
+
         data = {
             'activity_identifier': activity_id,
-            'result_ref': result_ref
+            'result_ref': result_ref,
+            'indicator_ref': indicator_ref
         }
 
-        data['indicator_ref'] = indicator_elem.get('ref', f"indicator_{len(indicator_elem)}")
-        data['indicator_measure'] = indicator_elem.get('measure', '')
-        data['ascending'] = indicator_elem.get('ascending', '')
-        data['aggregation_status'] = indicator_elem.get('aggregation-status', '')
+        # Measure
+        measure = indicator_elem.get('measure')
+        if measure:
+            data['indicator_measure'] = measure
 
-        title_elem = indicator_elem.find('title/narrative')
-        data['title'] = title_elem.text if title_elem is not None else ''
+        # Ascending
+        ascending = indicator_elem.get('ascending')
+        if ascending:
+            data['ascending'] = ascending
 
-        desc_elem = indicator_elem.find('description/narrative')
-        data['description'] = desc_elem.text if desc_elem is not None else ''
+        # Aggregation status
+        aggregation_status = indicator_elem.get('aggregation-status')
+        if aggregation_status:
+            data['aggregation_status'] = aggregation_status
+
+        # Title
+        title_elem = indicator_elem.find('title')
+        if title_elem is not None:
+            narrative = title_elem.find('narrative')
+            if narrative is not None and narrative.text:
+                data['title'] = narrative.text.strip()
+
+        # Description
+        desc_elem = indicator_elem.find('description')
+        if desc_elem is not None:
+            narrative = desc_elem.find('narrative')
+            if narrative is not None and narrative.text:
+                data['description'] = narrative.text.strip()
 
         # Baseline
         baseline_elem = indicator_elem.find('baseline')
         if baseline_elem is not None:
             data['baseline_year'] = baseline_elem.get('year', '')
-            baseline_value = baseline_elem.find('value')
-            data['baseline_value'] = baseline_value.text if baseline_value is not None else ''
-            baseline_comment = baseline_elem.find('comment/narrative')
-            data['baseline_comment'] = baseline_comment.text if baseline_comment is not None else ''
-        else:
-            data['baseline_year'] = ''
-            data['baseline_value'] = ''
-            data['baseline_comment'] = ''
+            data['baseline_iso_date'] = baseline_elem.get('iso-date', '')
+            data['baseline_value'] = baseline_elem.get('value', '')
+
+            comment = baseline_elem.find('comment/narrative')
+            if comment is not None and comment.text:
+                data['baseline_comment'] = comment.text.strip()
 
         return data
 
@@ -856,13 +993,14 @@ class IatiMultiCsvConverter:
                 'documents': [],
                 'results': [],
                 'indicators': [],
+                'indicator_periods': [],
                 'contact_info': []
             }
 
         # Group related data
         for csv_type in [
             'participating_orgs', 'sectors', 'budgets', 'transactions',
-            'locations', 'documents', 'results', 'indicators', 'contact_info'
+            'locations', 'documents', 'results', 'indicators', 'indicator_periods', 'contact_info'
         ]:
             for row in data_collections.get(csv_type, []):
                 activity_id = row.get('activity_identifier')
@@ -875,8 +1013,8 @@ class IatiMultiCsvConverter:
                 activity = self._build_activity_from_data(data)
                 activities.append(activity)
             except Exception as e:
-                print(f"Error building activity {activity_id}: {e}")
-                continue
+                print(f"Error building activity {activity_id}: {e}\n\nSELF {self} {type(self)}\n\t Data: {data}")
+                raise
 
         return activities
 
@@ -890,18 +1028,22 @@ class IatiMultiCsvConverter:
             reporting_org=OrganizationRef(
                 ref=main_data.get('reporting_org_ref', ''),
                 type=main_data.get('reporting_org_type', ''),
-                narratives=[Narrative(text=main_data.get('reporting_org_name', ''))]
+                narratives=[
+                    Narrative(text=main_data.get('reporting_org_name', ''))
+                ] if main_data.get('reporting_org_name') else []
             ),
-            title=[Narrative(text=main_data.get('title', ''))],
+            title=[Narrative(text=main_data.get('title', ''))] if main_data.get('title') else [],
             description=[{
                 "type": "1",
                 "narratives": [Narrative(text=main_data.get('description', ''))]
-            }],
-            activity_status=ActivityStatus(
-                int(main_data['activity_status'])
-            ) if main_data.get('activity_status') else ActivityStatus.IMPLEMENTATION,
+            }] if main_data.get('description') else [],
+            activity_status=self._parse_activity_status(main_data.get('activity_status')),
             default_currency=main_data.get('default_currency', 'USD'),
-            humanitarian=main_data.get('humanitarian', '0') == '1'
+            humanitarian=main_data.get('humanitarian', '0') == '1',
+            hierarchy=main_data.get('hierarchy', '1'),
+            last_updated_datetime=main_data.get('last_updated_datetime'),
+            xml_lang=main_data.get('xml_lang', 'en'),
+            activity_scope=self._parse_activity_scope(main_data.get('activity_scope'))
         )
 
         # Add dates
@@ -909,6 +1051,9 @@ class IatiMultiCsvConverter:
 
         # Add geographic information
         self._add_geography_from_main_data(activity, main_data)
+
+        # Add default types from main data
+        self._add_default_types_from_main_data(activity, main_data)
 
         # Add participating organizations
         for org_data in data['participating_orgs']:
@@ -934,84 +1079,169 @@ class IatiMultiCsvConverter:
         for doc_data in data['documents']:
             activity.document_links.append(self._build_document(doc_data))
 
-        # Add results
-        for result_data in data['results']:
-            activity.results.append(self._build_result(result_data))
-
         # Add contact info
-        if data['contact_info']:
-            activity.contact_info = self._build_contact_info(data['contact_info'][0])
+        for contact_data in data['contact_info']:
+            activity.contact_info = self._build_contact_info(contact_data)
+            break  # Only one contact info per activity
+
+        # Add results with indicators
+        for result_data in data['results']:
+            result_ref = result_data.get('result_ref', '')
+
+            # Get indicators for this result
+            result_indicators = [
+                ind for ind in data['indicators']
+                if ind.get('result_ref') == result_ref
+            ]
+
+            # Get periods for this result's indicators
+            result_periods = [
+                period for period in data['indicator_periods']
+                if period.get('result_ref') == result_ref
+            ]
+
+            # Build result with indicators
+            result = self._build_result_with_indicators(
+                result_data,
+                result_indicators,
+                result_periods
+            )
+
+            activity.results.append(result)
 
         return activity
 
+    def _parse_activity_status(self, status_code: str) -> Optional[ActivityStatus]:
+        """Parse activity status code to enum."""
+        if not status_code:
+            return None
+        try:
+            return ActivityStatus(int(status_code))
+        except (ValueError, TypeError):
+            return None
+
+    def _parse_activity_scope(self, scope_code: str) -> Optional[ActivityScope]:
+        """Parse activity scope code to enum."""
+        if not scope_code:
+            return None
+        try:
+            return ActivityScope(scope_code)
+        except (ValueError, TypeError):
+            return None
+
     def _add_dates_from_main_data(self, activity: Activity, main_data: Dict[str, str]) -> None:
         """Add activity dates from main data."""
-        if main_data.get('planned_start_date'):
-            activity.activity_dates.append(ActivityDate(
-                type=ActivityDateType.PLANNED_START,
-                iso_date=main_data['planned_start_date']
-            ))
+        date_mappings = [
+            ('planned_start_date', ActivityDateType.PLANNED_START),
+            ('actual_start_date', ActivityDateType.ACTUAL_START),
+            ('planned_end_date', ActivityDateType.PLANNED_END),
+            ('actual_end_date', ActivityDateType.ACTUAL_END)
+        ]
 
-        if main_data.get('actual_start_date'):
-            activity.activity_dates.append(ActivityDate(
-                type=ActivityDateType.ACTUAL_START,
-                iso_date=main_data['actual_start_date']
-            ))
-
-        if main_data.get('planned_end_date'):
-            activity.activity_dates.append(ActivityDate(
-                type=ActivityDateType.PLANNED_END,
-                iso_date=main_data['planned_end_date']
-            ))
-
-        if main_data.get('actual_end_date'):
-            activity.activity_dates.append(ActivityDate(
-                type=ActivityDateType.ACTUAL_END,
-                iso_date=main_data['actual_end_date']
-            ))
+        for date_field, date_type in date_mappings:
+            date_value = main_data.get(date_field)
+            if date_value:
+                try:
+                    activity_date = ActivityDate(
+                        type=date_type,
+                        iso_date=date_value
+                    )
+                    activity.activity_dates.append(activity_date)
+                except ValueError:
+                    # Skip invalid dates
+                    continue
 
     def _add_geography_from_main_data(self, activity: Activity, main_data: Dict[str, str]) -> None:
-        """Add geographic information from main data."""
-        if main_data.get('recipient_country_code'):
-            country_data = {"code": main_data['recipient_country_code'], "percentage": 100}
-            if main_data.get('recipient_country_name'):
-                country_data["narratives"] = [Narrative(text=main_data['recipient_country_name'])]
+        """Add recipient countries and regions from main data."""
+        # Add recipient country if present
+        country_code = main_data.get('recipient_country_code')
+        if country_code:
+            country_data = {
+                'code': country_code,
+                'percentage': 100
+            }
+            country_name = main_data.get('recipient_country_name')
+            if country_name:
+                country_data['narratives'] = [Narrative(text=country_name)]
+
             activity.recipient_countries.append(country_data)
 
-        elif main_data.get('recipient_region_code'):
-            region_data = {"code": main_data['recipient_region_code'], "percentage": 100}
-            if main_data.get('recipient_region_name'):
-                region_data["narratives"] = [Narrative(text=main_data['recipient_region_name'])]
+        # Add recipient region if present
+        region_code = main_data.get('recipient_region_code')
+        if region_code:
+            region_data = {
+                'code': region_code,
+                'percentage': 100
+            }
+            region_name = main_data.get('recipient_region_name')
+            if region_name:
+                region_data['narratives'] = [Narrative(text=region_name)]
+
             activity.recipient_regions.append(region_data)
+
+    def _add_default_types_from_main_data(self, activity: Activity, main_data: Dict[str, str]) -> None:
+        """Add default flow/finance/aid/tied status from main data as activity-level attributes."""
+        # Note: These are stored as activity attributes in IATI, not as separate elements
+        # They would be used when creating transactions or other elements if not specified
+
+        # Add collaboration type if present
+        collaboration_type = main_data.get('collaboration_type')
+        if collaboration_type:
+            try:
+                activity.collaboration_type = CollaborationType(collaboration_type)
+            except (ValueError, TypeError):
+                pass  # Skip invalid collaboration type
+
+        # Store default types for use in transactions (if not overridden)
+        # Note: These are not standard Activity model attributes, but we'll store them as custom attributes
+        if hasattr(activity, '__dict__'):
+            activity.__dict__['default_flow_type'] = main_data.get('default_flow_type')
+            activity.__dict__['default_finance_type'] = main_data.get('default_finance_type')
+            activity.__dict__['default_aid_type'] = main_data.get('default_aid_type')
+            activity.__dict__['default_tied_status'] = main_data.get('default_tied_status')
 
     def _build_participating_org(self, org_data: Dict[str, str]) -> ParticipatingOrg:
         """Build ParticipatingOrg from data."""
         return ParticipatingOrg(
-            role=OrganisationRole(org_data.get('role', '1')),
+            role=org_data.get('role', '1'),
             ref=org_data.get('org_ref', ''),
             type=org_data.get('org_type', ''),
-            narratives=[Narrative(text=org_data.get('org_name', ''))]
+            activity_id=org_data.get('activity_id'),
+            crs_channel_code=org_data.get('crs_channel_code'),
+            narratives=[Narrative(text=org_data.get('org_name', ''))] if org_data.get('org_name') else []
         )
 
     def _build_sector(self, sector_data: Dict[str, str]) -> Dict[str, Any]:
         """Build sector from data."""
         sector = {
             "code": sector_data.get('sector_code', ''),
-            "vocabulary": sector_data.get('vocabulary', '1'),
-            "percentage": int(sector_data.get('percentage', 100))
+            "vocabulary": sector_data.get('vocabulary', '1')
         }
+
+        if sector_data.get('vocabulary_uri'):
+            sector["vocabulary_uri"] = sector_data['vocabulary_uri']
+
+        if sector_data.get('percentage'):
+            try:
+                sector["percentage"] = float(sector_data['percentage'])
+            except (ValueError, TypeError):
+                sector["percentage"] = 100.0
+        else:
+            sector["percentage"] = 100.0
+
         if sector_data.get('sector_name'):
             sector["narratives"] = [Narrative(text=sector_data['sector_name'])]
+
         return sector
 
     def _build_budget(self, budget_data: Dict[str, str]) -> Budget:
         """Build Budget from data."""
         return Budget(
-            type=BudgetType(budget_data.get('budget_type', '1')),
-            status=BudgetStatus(budget_data.get('budget_status', '1')),
+            type=budget_data.get('budget_type', '1'),
+            status=budget_data.get('budget_status', '1'),
             period_start=budget_data.get('period_start', ''),
             period_end=budget_data.get('period_end', ''),
-            value=float(budget_data.get('value', 0)),
+            value=float(budget_data.get('value', 0)) if budget_data.get('value') else 0.0,
             currency=budget_data.get('currency', 'USD'),
             value_date=budget_data.get('value_date', '')
         )
@@ -1019,15 +1249,46 @@ class IatiMultiCsvConverter:
     def _build_transaction(self, trans_data: Dict[str, str]) -> Transaction:
         """Build Transaction from data."""
         transaction_args = {
-            'type': TransactionType(trans_data.get('transaction_type', '2')),
+            'type': trans_data.get('transaction_type', '2'),
             'date': trans_data.get('transaction_date', ''),
-            'value': float(trans_data.get('value', 0)),
+            'value': float(trans_data.get('value', 0)) if trans_data.get('value') else 0.0,
             'currency': trans_data.get('currency', 'USD'),
-            'value_date': trans_data.get('value_date', '')
+            'value_date': trans_data.get('value_date', ''),
+            'transaction_ref': trans_data.get('transaction_ref')
         }
 
         if trans_data.get('description'):
             transaction_args['description'] = [Narrative(text=trans_data['description'])]
+
+        # Add provider org
+        if trans_data.get('provider_org_ref') or trans_data.get('provider_org_name'):
+            transaction_args['provider_org'] = OrganizationRef(
+                ref=trans_data.get('provider_org_ref', ''),
+                type=trans_data.get('provider_org_type', ''),
+                narratives=[
+                    Narrative(text=trans_data.get('provider_org_name', ''))
+                ] if trans_data.get('provider_org_name') else []
+            )
+
+        # Add receiver org
+        if trans_data.get('receiver_org_ref') or trans_data.get('receiver_org_name'):
+            transaction_args['receiver_org'] = OrganizationRef(
+                ref=trans_data.get('receiver_org_ref', ''),
+                type=trans_data.get('receiver_org_type', ''),
+                narratives=[
+                    Narrative(text=trans_data.get('receiver_org_name', ''))
+                ] if trans_data.get('receiver_org_name') else []
+            )
+
+        # Add optional fields
+        if trans_data.get('flow_type'):
+            transaction_args['flow_type'] = trans_data['flow_type']
+        if trans_data.get('finance_type'):
+            transaction_args['finance_type'] = trans_data['finance_type']
+        if trans_data.get('tied_status'):
+            transaction_args['tied_status'] = trans_data['tied_status']
+        if trans_data.get('aid_type'):
+            transaction_args['aid_type'] = {"code": trans_data['aid_type']}
 
         return Transaction(**transaction_args)
 
@@ -1064,41 +1325,126 @@ class IatiMultiCsvConverter:
 
         return DocumentLink(**doc_args)
 
-    def _build_result(self, result_data: Dict[str, str]) -> Result:
-        """Build Result from data."""
-        result_args = {
-            'type': result_data.get('result_type', '1'),
-            'title': [Narrative(text=result_data.get('title', ''))]
-        }
-
-        if result_data.get('description'):
-            result_args['description'] = [Narrative(text=result_data['description'])]
-
-        return Result(**result_args)
-
     def _build_contact_info(self, contact_data: Dict[str, str]) -> ContactInfo:
         """Build ContactInfo from data."""
         contact_args = {}
 
         if contact_data.get('contact_type'):
-            contact_args['type'] = ContactType(contact_data['contact_type'])
-
+            contact_args['type'] = contact_data['contact_type']
         if contact_data.get('organisation'):
             contact_args['organisation'] = [Narrative(text=contact_data['organisation'])]
-
+        if contact_data.get('department'):
+            contact_args['department'] = [Narrative(text=contact_data['department'])]
         if contact_data.get('person_name'):
             contact_args['person_name'] = [Narrative(text=contact_data['person_name'])]
-
+        if contact_data.get('job_title'):
+            contact_args['job_title'] = [Narrative(text=contact_data['job_title'])]
         if contact_data.get('telephone'):
             contact_args['telephone'] = contact_data['telephone']
-
         if contact_data.get('email'):
             contact_args['email'] = contact_data['email']
-
         if contact_data.get('website'):
             contact_args['website'] = contact_data['website']
+        if contact_data.get('mailing_address'):
+            contact_args['mailing_address'] = [Narrative(text=contact_data['mailing_address'])]
 
         return ContactInfo(**contact_args)
+
+    def _build_result_with_indicators(
+        self,
+        result_data: Dict[str, str],
+        indicators_data: List[Dict[str, str]],
+        periods_data: List[Dict[str, str]]
+    ) -> Result:
+        """Build Result with its indicators and periods."""
+        result_args = {
+            'type': result_data.get('result_type', '1')
+        }
+
+        if result_data.get('title'):
+            result_args['title'] = [Narrative(text=result_data['title'])]
+
+        if result_data.get('description'):
+            result_args['description'] = [Narrative(text=result_data['description'])]
+
+        if result_data.get('aggregation_status'):
+            result_args['aggregation_status'] = result_data['aggregation_status'].lower() in ('true', '1', 'yes')
+
+        # BUILD INDICATORS FOR THIS RESULT
+        indicators = []
+        for indicator_data in indicators_data:
+            indicator = self._build_indicator(indicator_data)
+
+            # Add periods to this indicator
+            indicator_ref = indicator_data.get('indicator_ref', '')
+            for period_data in periods_data:
+                if period_data.get('indicator_ref') == indicator_ref:
+                    period = self._build_indicator_period(period_data)
+                    if indicator.period is None:
+                        indicator.period = []
+                    indicator.period.append(period)
+
+            indicators.append(indicator)
+
+        result_args['indicator'] = indicators
+        return Result(**result_args)
+
+    def _build_indicator(self, indicator_data: Dict[str, str]) -> Indicator:
+        """Build Indicator from data."""
+        indicator_args = {
+            'measure': indicator_data.get('indicator_measure', '1')
+        }
+
+        if indicator_data.get('title'):
+            indicator_args['title'] = [Narrative(text=indicator_data['title'])]
+
+        if indicator_data.get('description'):
+            indicator_args['description'] = [Narrative(text=indicator_data['description'])]
+
+        if indicator_data.get('ascending'):
+            indicator_args['ascending'] = indicator_data['ascending'].lower() in ('true', '1', 'yes')
+
+        if indicator_data.get('aggregation_status'):
+            indicator_args['aggregation_status'] = indicator_data['aggregation_status'].lower() in ('true', '1', 'yes')
+
+        # Add baseline if present
+        if indicator_data.get('baseline_year'):
+            try:
+                baseline = IndicatorBaseline(
+                    year=int(indicator_data['baseline_year']),
+                    iso_date=indicator_data.get('baseline_iso_date'),
+                    value=indicator_data.get('baseline_value')
+                )
+                if indicator_data.get('baseline_comment'):
+                    baseline.comment = [Narrative(text=indicator_data['baseline_comment'])]
+                indicator_args['baseline'] = [baseline]
+            except (ValueError, TypeError):
+                pass  # Skip invalid baseline data
+
+        return Indicator(**indicator_args)
+
+    def _build_indicator_period(self, period_data: Dict[str, str]) -> IndicatorPeriod:
+        """Build IndicatorPeriod from data."""
+        period_args = {
+            'period_start': period_data.get('period_start', ''),
+            'period_end': period_data.get('period_end', '')
+        }
+
+        # Add target if present
+        if period_data.get('target_value'):
+            target = IndicatorPeriodTarget(value=period_data['target_value'])
+            if period_data.get('target_comment'):
+                target.comment = [Narrative(text=period_data['target_comment'])]
+            period_args['target'] = [target]
+
+        # Add actual if present
+        if period_data.get('actual_value'):
+            actual = IndicatorPeriodActual(value=period_data['actual_value'])
+            if period_data.get('actual_comment'):
+                actual.comment = [Narrative(text=period_data['actual_comment'])]
+            period_args['actual'] = [actual]
+
+        return IndicatorPeriod(**period_args)
 
     def _get_example_data(self, csv_type: str) -> List[Dict[str, str]]:
         """Get example data for CSV templates."""
@@ -1111,7 +1457,11 @@ class IatiMultiCsvConverter:
                     'upgrading of 150km of rural roads in southeastern Costa Rica.'
                 ),
                 'activity_status': '2',
+                'activity_scope': '4',  # National
                 'default_currency': 'USD',
+                'humanitarian': '0',
+                'hierarchy': '1',
+                'xml_lang': 'en',
                 'reporting_org_ref': 'XM-DAC-46002',
                 'reporting_org_name': 'Central American Bank for Economic Integration',
                 'reporting_org_type': '40',
@@ -1119,7 +1469,12 @@ class IatiMultiCsvConverter:
                 'actual_start_date': '2023-02-01',
                 'planned_end_date': '2025-12-31',
                 'recipient_country_code': 'CR',
-                'recipient_country_name': 'Costa Rica'
+                'recipient_country_name': 'Costa Rica',
+                'collaboration_type': '1',  # Bilateral
+                'default_flow_type': '10',  # ODA
+                'default_finance_type': '110',  # Standard grant
+                'default_aid_type': 'C01',  # Project-type interventions
+                'default_tied_status': '5'  # Untied
             }]
         elif csv_type == 'participating_orgs':
             return [
@@ -1128,45 +1483,39 @@ class IatiMultiCsvConverter:
                     'org_ref': 'XM-DAC-46002',
                     'org_name': 'Central American Bank for Economic Integration',
                     'org_type': '40',
-                    'role': '1'
+                    'role': '1'  # Funding
                 },
                 {
                     'activity_identifier': 'XM-DAC-46002-CR-2025',
                     'org_ref': 'CR-MOPT',
                     'org_name': 'Ministry of Public Works and Transportation, Costa Rica',
                     'org_type': '10',
-                    'role': '4'
+                    'role': '4'  # Implementing
                 }
             ]
-        elif csv_type == 'sectors':
+        elif csv_type == 'contact_info':
             return [{
                 'activity_identifier': 'XM-DAC-46002-CR-2025',
-                'sector_code': '21020',
-                'sector_name': 'Road transport',
-                'vocabulary': '1',
-                'percentage': '100'
+                'contact_type': '1',  # General
+                'organisation': 'Central American Bank for Economic Integration',
+                'department': 'Infrastructure Projects Division',
+                'person_name': 'Ana García',
+                'job_title': 'Project Manager',
+                'telephone': '+506-2123-4567',
+                'email': 'ana.garcia@bcie.org',
+                'website': 'https://www.bcie.org',
+                'mailing_address': 'Tegucigalpa M.D.C., Honduras'
             }]
-        elif csv_type == 'budgets':
+        elif csv_type == 'results':
             return [{
                 'activity_identifier': 'XM-DAC-46002-CR-2025',
-                'budget_type': '1',
-                'budget_status': '2',
-                'period_start': '2023-01-15',
-                'period_end': '2023-12-31',
-                'value': '25000000',
-                'currency': 'USD',
-                'value_date': '2023-01-15'
+                'result_ref': 'result_1',
+                'result_type': '1',  # Output
+                'aggregation_status': 'true',
+                'title': 'Improved rural road infrastructure',
+                'description': 'Rural roads rehabilitated and upgraded to improve connectivity'
             }]
-        elif csv_type == 'transactions':
-            return [{
-                'activity_identifier': 'XM-DAC-46002-CR-2025',
-                'transaction_type': '2',
-                'transaction_date': '2023-02-05',
-                'value': '5000000',
-                'currency': 'USD',
-                'value_date': '2023-02-05',
-                'description': 'Initial disbursement for preliminary studies and design'
-            }]
+        # ...existing code for other examples...
 
         return []
 
@@ -1235,3 +1584,13 @@ different aspect of IATI activities:
 Example: `XM-DAC-46002-CR-2025`
 
 """)
+
+
+"""
+Real life sample usage:
+
+python scripts/csv_tools.py xml-to-csv-folder data-samples/xml/CAF-ActivityFile-2025-10-10.xml data-samples/csv_folders/CAF
+and roll back to test
+python scripts/csv_tools.py csv-folder-to-xml data-samples/csv_folders/CAF data-samples/xml/CAF-ActivityFile-2025-10-10-back.xml
+
+"""

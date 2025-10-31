@@ -161,7 +161,7 @@ def csv_folder_to_xml(csv_folder: str, xml_path: str, validate: bool = True):
     return success
 
 
-def main():
+def main():  # noqa: C901
     """Main CLI interface."""
     parser = argparse.ArgumentParser(
         description="IATI CSV/XML Conversion Tools",
@@ -288,89 +288,6 @@ Examples:
     except Exception as e:
         print(f"❌ Error: {e}")
         sys.exit(1)
-
-
-if __name__ == '__main__':
-    main()
-
-
-def main():
-    parser = argparse.ArgumentParser(
-        description="IATI CSV/XML Converter - Convert between IATI XML and CSV formats",
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="""
-Examples:
-  # Generate a basic CSV template
-  python csv_tools.py template basic_template.csv --format basic
-
-  # Generate a full CSV template with examples
-  python csv_tools.py template full_template.csv --format full --examples
-
-  # Convert XML to CSV
-  python csv_tools.py xml-to-csv input.xml output.csv
-
-  # Convert CSV to XML
-  python csv_tools.py csv-to-xml input.csv output.xml
-
-  # Convert CSV to XML without validation
-  python csv_tools.py csv-to-xml input.csv output.xml --no-validate
-        """
-    )
-
-    subparsers = parser.add_subparsers(dest='command', help='Available commands')
-
-    # Template generation command
-    template_parser = subparsers.add_parser('template', help='Generate CSV template')
-    template_parser.add_argument('output', help='Output CSV template file')
-    template_parser.add_argument(
-        '--format', choices=['basic', 'full'], default='basic',
-        help='Template format (basic=essential fields, full=all fields)'
-    )
-    template_parser.add_argument(
-        '--examples', action='store_true',
-        help='Include example rows in template'
-    )
-
-    # XML to CSV command
-    xml_csv_parser = subparsers.add_parser('xml-to-csv', help='Convert XML to CSV')
-    xml_csv_parser.add_argument('xml_input', help='Input IATI XML file')
-    xml_csv_parser.add_argument('csv_output', help='Output CSV file')
-
-    # CSV to XML command
-    csv_xml_parser = subparsers.add_parser('csv-to-xml', help='Convert CSV to XML')
-    csv_xml_parser.add_argument('csv_input', help='Input CSV file')
-    csv_xml_parser.add_argument('xml_output', help='Output IATI XML file')
-    csv_xml_parser.add_argument('--no-validate', action='store_true',
-                                help='Skip XML validation')
-
-    args = parser.parse_args()
-
-    if not args.command:
-        parser.print_help()
-        return
-
-    try:
-        if args.command == 'template':
-            generate_template(args.output, args.format, args.examples)
-
-        elif args.command == 'xml-to-csv':
-            if not Path(args.xml_input).exists():
-                print(f"❌ Error: Input file does not exist: {args.xml_input}")
-                return
-            xml_to_csv(args.xml_input, args.csv_output)
-
-        elif args.command == 'csv-to-xml':
-            if not Path(args.csv_input).exists():
-                print(f"❌ Error: Input file does not exist: {args.csv_input}")
-                return
-            csv_to_xml(args.csv_input, args.xml_output, not args.no_validate)
-
-    except KeyboardInterrupt:
-        print("\n❌ Operation cancelled by user")
-    except Exception as e:
-        print(f"❌ Unexpected error: {e}")
-        import traceback
-        traceback.print_exc()
 
 
 if __name__ == '__main__':
