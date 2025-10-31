@@ -33,7 +33,6 @@ from .validators import (
     crs_channel_code_validator
 )
 from .xml_generator import IatiXmlGenerator
-from .csv_converter import IatiCsvConverter
 from .multi_csv_converter import IatiMultiCsvConverter
 from .iati_schema_validator import IatiValidator
 from .organisation_xml_generator import (
@@ -84,7 +83,6 @@ __all__ = [
     'IatiXmlGenerator',
 
     # CSV Converters
-    'IatiCsvConverter',
     'IatiMultiCsvConverter',
 
     # Validator
