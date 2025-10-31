@@ -9,38 +9,11 @@ It supports both single CSV file and multi-CSV folder approaches.
 import argparse
 import sys
 from pathlib import Path
-from okfn_iati import IatiCsvConverter, IatiMultiCsvConverter
+from okfn_iati import IatiMultiCsvConverter
 
 
 # Add the src directory to the path so we can import okfn_iati
 sys.path.insert(0, str(Path(__file__).parent.parent / 'src'))
-
-
-def generate_template(output_path: str, format_type: str = 'basic', include_examples: bool = True):
-    """Generate a single CSV template for IATI data entry."""
-    converter = IatiCsvConverter()
-
-    print(f"Generating {format_type} CSV template: {output_path}")
-    converter.generate_csv_template(
-        output_path=output_path,
-        format_type=format_type,
-        include_examples=include_examples
-    )
-    print(f"Template saved to: {output_path}")
-
-    # Print column information
-    if format_type == 'basic':
-        columns = converter._get_basic_columns()
-        print(f"\nBasic template includes {len(columns)} essential columns:")
-    else:
-        columns = converter.CSV_COLUMNS
-        print(f"\nFull template includes {len(columns)} columns:")
-
-    for i, col in enumerate(columns[:10], 1):
-        print(f"  {i}. {col}")
-
-    if len(columns) > 10:
-        print(f"  ... and {len(columns) - 10} more columns")
 
 
 def generate_multi_templates(output_folder: str, include_examples: bool = True):
@@ -58,32 +31,6 @@ def generate_multi_templates(output_folder: str, include_examples: bool = True):
     print(f"\nGenerated {len(converter.csv_files)} CSV template files:")
     for csv_type, csv_config in converter.csv_files.items():
         print(f"  📄 {csv_config['filename']}: {len(csv_config['columns'])} columns")
-
-
-def xml_to_csv(xml_path: str, csv_path: str):
-    """Convert IATI XML file to single CSV format."""
-    converter = IatiCsvConverter()
-
-    print("Converting XML to single CSV:")
-    print(f"  Input:  {xml_path}")
-    print(f"  Output: {csv_path}")
-
-    try:
-        converter.xml_to_csv(xml_path, csv_path)
-        print("✅ Conversion completed successfully!")
-
-        # Count rows
-        import csv
-        with open(csv_path, 'r', encoding='utf-8') as f:
-            reader = csv.reader(f)
-            row_count = sum(1 for row in reader) - 1  # Subtract header
-        print(f"📊 Extracted {row_count} activities")
-
-    except Exception as e:
-        print(f"❌ Error during conversion: {e}")
-        return False
-
-    return True
 
 
 def xml_to_csv_folder(xml_path: str, csv_folder: str):
@@ -117,26 +64,6 @@ def xml_to_csv_folder(xml_path: str, csv_folder: str):
         for filename, count in file_counts.items():
             if count > 0:
                 print(f"   📄 {filename}: {count} records")
-
-    return success
-
-
-def csv_to_xml(csv_path: str, xml_path: str, validate: bool = True):
-    """Convert single CSV file to IATI XML format."""
-    converter = IatiCsvConverter()
-
-    print("Converting single CSV to XML:")
-    print(f"  Input:  {csv_path}")
-    print(f"  Output: {xml_path}")
-
-    success = converter.csv_to_xml(csv_path, xml_path, validate_output=validate)
-
-    if success:
-        print("✅ Conversion completed successfully!")
-        if validate:
-            print("✅ XML validation passed")
-    else:
-        print("❌ Conversion failed or validation errors found")
 
     return success
 
@@ -241,35 +168,14 @@ Examples:
 
     try:
         # Execute commands
-        if args.command == 'template':
-            generate_template(
-                args.output,
-                args.format,
-                not args.no_examples
-            )
-
-        elif args.command == 'multi-template':
+        if args.command == 'multi-template':
             generate_multi_templates(
                 args.output_folder,
                 not args.no_examples
             )
 
-        elif args.command == 'xml-to-csv':
-            success = xml_to_csv(args.xml_file, args.csv_file)
-            if not success:
-                sys.exit(1)
-
         elif args.command == 'xml-to-csv-folder':
             success = xml_to_csv_folder(args.xml_file, args.csv_folder)
-            if not success:
-                sys.exit(1)
-
-        elif args.command == 'csv-to-xml':
-            success = csv_to_xml(
-                args.csv_file,
-                args.xml_file,
-                not args.no_validate
-            )
             if not success:
                 sys.exit(1)
 

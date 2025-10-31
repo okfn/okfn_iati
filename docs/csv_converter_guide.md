@@ -2,7 +2,6 @@
 
 This library provides two approaches for working with IATI data in CSV format:
 
-1. **Single CSV Converter** (`IatiCsvConverter`) - All data in one file with JSON fields for complex structures
 2. **Multi-CSV Converter** (`IatiMultiCsvConverter`) - Data spread across multiple related CSV files
 
 ## Multi-CSV Converter (Recommended)
@@ -80,24 +79,8 @@ All CSV files are related through the `activity_identifier` field, which serves 
 - **Familiar**: Standard relational database approach
 - **Flexible**: Add/remove files based on your needs
 
-## Single CSV Converter
+## Multiple CSV Converter
 
-The single CSV approach puts all data in one file, using JSON for complex nested structures.
-
-```python
-from okfn_iati import IatiCsvConverter
-
-converter = IatiCsvConverter()
-
-# Generate template
-converter.generate_csv_template('template.csv', format_type='basic')
-
-# Convert XML to CSV
-converter.xml_to_csv('data.xml', 'output.csv')
-
-# Convert CSV to XML
-converter.csv_to_xml('input.csv', 'output.xml')
-```
 
 ## Installation Requirements
 
