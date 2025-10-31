@@ -1083,30 +1083,29 @@ class IatiMultiCsvConverter:
             break  # Only one contact info per activity
 
         # Add results with indicators
-        result_map = {}
         for result_data in data['results']:
-            result = self._build_result(result_data)
             result_ref = result_data.get('result_ref', '')
-            result_map[result_ref] = result
+
+            # Get indicators for this result
+            result_indicators = [
+                ind for ind in data['indicators'] 
+                if ind.get('result_ref') == result_ref
+            ]
+
+            # Get periods for this result's indicators
+            result_periods = [
+                period for period in data['indicator_periods']
+                if period.get('result_ref') == result_ref
+            ]
+
+            # Build result with indicators
+            result = self._build_result_with_indicators(
+                result_data,
+                result_indicators,
+                result_periods
+            )
+
             activity.results.append(result)
-
-        # Add indicators to their respective results
-        for indicator_data in data['indicators']:
-            result_ref = indicator_data.get('result_ref', '')
-            if result_ref in result_map:
-                indicator = self._build_indicator(indicator_data)
-
-                # Add periods to the indicator
-                indicator_ref = indicator_data.get('indicator_ref', '')
-                for period_data in data['indicator_periods']:
-                    if (period_data.get('result_ref') == result_ref and
-                        period_data.get('indicator_ref') == indicator_ref):
-                        period = self._build_indicator_period(period_data)
-                        if indicator.period is None:
-                            indicator.period = []
-                        indicator.period.append(period)
-
-                result_map[result_ref].indicator.append(indicator)
 
         return activity
 
@@ -1345,8 +1344,13 @@ class IatiMultiCsvConverter:
 
         return ContactInfo(**contact_args)
 
-    def _build_result(self, result_data: Dict[str, str]) -> Result:
-        """Build Result from data."""
+    def _build_result_with_indicators(
+        self,
+        result_data: Dict[str, str],
+        indicators_data: List[Dict[str, str]],
+        periods_data: List[Dict[str, str]]
+    ) -> Result:
+        """Build Result with its indicators and periods."""
         result_args = {
             'type': result_data.get('result_type', '1')
         }
@@ -1360,6 +1364,23 @@ class IatiMultiCsvConverter:
         if result_data.get('aggregation_status'):
             result_args['aggregation_status'] = result_data['aggregation_status'].lower() in ('true', '1', 'yes')
 
+        # BUILD INDICATORS FOR THIS RESULT
+        indicators = []
+        for indicator_data in indicators_data:
+            indicator = self._build_indicator(indicator_data)
+
+            # Add periods to this indicator
+            indicator_ref = indicator_data.get('indicator_ref', '')
+            for period_data in periods_data:
+                if period_data.get('indicator_ref') == indicator_ref:
+                    period = self._build_indicator_period(period_data)
+                    if indicator.period is None:
+                        indicator.period = []
+                    indicator.period.append(period)
+
+            indicators.append(indicator)
+
+        result_args['indicator'] = indicators
         return Result(**result_args)
 
     def _build_indicator(self, indicator_data: Dict[str, str]) -> Indicator:
