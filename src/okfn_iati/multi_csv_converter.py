@@ -136,7 +136,8 @@ class IatiMultiCsvConverter:
                     'finance_type',
                     'aid_type',
                     'tied_status',
-                    'humanitarian'
+                    'humanitarian',
+                    'recipient_region'
                 ]
             },
             'locations': {
@@ -734,6 +735,7 @@ class IatiMultiCsvConverter:
         data['finance_type'] = ''
         data['aid_type'] = ''
         data['tied_status'] = ''
+        data['recipient_region'] = ''
 
         # Extract additional transaction elements
         disbursement_elem = trans_elem.find('disbursement-channel')
@@ -755,6 +757,10 @@ class IatiMultiCsvConverter:
         tied_status_elem = trans_elem.find('tied-status')
         if tied_status_elem is not None:
             data['tied_status'] = tied_status_elem.get('code') if tied_status_elem.get('code') != '0' else ''
+
+        recipient_region_elem = trans_elem.find('recipient-region')
+        if recipient_region_elem is not None:
+            data['recipient_region'] = recipient_region_elem.get('code', '')
 
         return data
 
@@ -1331,6 +1337,8 @@ class IatiMultiCsvConverter:
             transaction_args['tied_status'] = trans_data['tied_status']
         if trans_data.get('aid_type'):
             transaction_args['aid_type'] = {"code": trans_data['aid_type']}
+        if trans_data.get('recipient_region'):
+            transaction_args['recipient_region'] = trans_data['recipient_region']
 
         return Transaction(**transaction_args)
 
