@@ -10,7 +10,7 @@ from okfn_iati.enums import (
     LocationReach, LocationType, OrganisationRole, OrganisationType,
     RelatedActivityType,
     ResultType, SectorCategory, TiedStatus, TransactionType, LocationID,
-    DisbursementChannel
+    DisbursementChannel, RecipientRegion
 )
 from okfn_iati.validators import crs_channel_code_validator
 
@@ -415,6 +415,7 @@ class Transaction:
     # https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/disbursement-channel/
     # codes https://iatistandard.org/en/iati-standard/203/codelists/disbursementchannel/
     disbursement_channel: Optional[Union[DisbursementChannel, str]] = None
+    recipient_region: Optional[Union[RecipientRegion, str]] = None
 
     def __post_init__(self):  # noqa: C901
         # Convert strings to enums if needed
@@ -459,6 +460,19 @@ class Transaction:
                 pass
         elif hasattr(self.disbursement_channel, 'value') and self.disbursement_channel.value not in channel_values:
             raise ValueError(f"Invalid disbursement channel: {self.disbursement_channel}. Valid values are: {channel_values}")
+
+        # Validate recipient region
+        if isinstance(self.recipient_region, str) and self.recipient_region is not None and self.recipient_region:
+            try:
+                self.recipient_region = next(e for e in RecipientRegion if e.value == self.recipient_region)
+            except (StopIteration, ValueError):
+                # Keep as string if not found in enum - allows for codes not in our enum
+                pass
+        elif hasattr(self.recipient_region, 'value'):
+            region_values = [e.value for e in RecipientRegion]
+            if self.recipient_region.value not in region_values:
+                # Allow it but keep as enum instance
+                pass
 
         # Validate ISO date format
         try:

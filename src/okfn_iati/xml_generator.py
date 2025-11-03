@@ -249,6 +249,10 @@ class IatiXmlGenerator:
             disbursement_el = ET.SubElement(trans_el, "disbursement-channel")
             self._set_attribute(disbursement_el, "code", self._get_enum_value(transaction.disbursement_channel))
 
+        if transaction.recipient_region:
+            region_el = ET.SubElement(trans_el, "recipient-region")
+            self._set_attribute(region_el, "code", self._get_enum_value(transaction.recipient_region))
+
     def _add_result(self, activity_el: ET.Element, result: Result) -> None:
         result_el = ET.SubElement(activity_el, "result")
         self._set_attribute(result_el, "type", self._get_enum_value(result.type))
