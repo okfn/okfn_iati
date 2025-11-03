@@ -44,6 +44,7 @@ class OrganizationRef:
         ref: Organization identifier reference code
         type: Organization type code (see OrganisationType enum)
         narratives: List of narrative elements with organization names
+        receiver_org_activity_id: Optional activity identifier from the referenced organization.
 
     References:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/reporting-org/
@@ -53,6 +54,7 @@ class OrganizationRef:
     ref: str
     type: Optional[str] = None  # See OrganisationType enum for valid values
     narratives: List[Narrative] = field(default_factory=list)
+    receiver_org_activity_id: Optional[str] = None
 
     def __post_init__(self):
         # Validate type is a valid OrganisationType if it's provided and numeric
@@ -416,6 +418,7 @@ class Transaction:
     # codes https://iatistandard.org/en/iati-standard/203/codelists/disbursementchannel/
     disbursement_channel: Optional[Union[DisbursementChannel, str]] = None
     recipient_region: Optional[Union[RecipientRegion, str]] = None
+    sectors: List[Dict[str, Any]] = field(default_factory=list)
 
     def __post_init__(self):  # noqa: C901
         # Convert strings to enums if needed

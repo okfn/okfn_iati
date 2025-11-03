@@ -228,10 +228,36 @@ class IatiXmlGenerator:
         if transaction.provider_org:
             provider_el = ET.SubElement(trans_el, "provider-org")
             self._add_organization_ref(provider_el, transaction.provider_org)
+            if transaction.provider_org.receiver_org_activity_id:
+                self._set_attribute(provider_el, "provider-activity-id", transaction.provider_org.receiver_org_activity_id)
 
         if transaction.receiver_org:
             receiver_el = ET.SubElement(trans_el, "receiver-org")
             self._add_organization_ref(receiver_el, transaction.receiver_org)
+            if transaction.receiver_org.receiver_org_activity_id:
+                self._set_attribute(receiver_el, "receiver-activity-id", transaction.receiver_org.receiver_org_activity_id)
+
+        if transaction.disbursement_channel:
+            disbursement_el = ET.SubElement(trans_el, "disbursement-channel")
+            self._set_attribute(disbursement_el, "code", self._get_enum_value(transaction.disbursement_channel))
+
+        # Add transaction sectors
+        for sector in transaction.sectors:
+            sector_el = ET.SubElement(trans_el, "sector")
+            self._set_attribute(sector_el, "code", sector.get("code"))
+
+            if sector.get("vocabulary"):
+                self._set_attribute(sector_el, "vocabulary", sector["vocabulary"])
+
+            if sector.get("vocabulary_uri"):
+                self._set_attribute(sector_el, "vocabulary-uri", sector["vocabulary_uri"])
+
+            if sector.get("narratives"):
+                self._create_narrative_elements(sector_el, sector["narratives"])
+
+        if transaction.recipient_region:
+            region_el = ET.SubElement(trans_el, "recipient-region")
+            self._set_attribute(region_el, "code", self._get_enum_value(transaction.recipient_region))
 
         if transaction.flow_type:
             flow_el = ET.SubElement(trans_el, "flow-type")
@@ -244,14 +270,6 @@ class IatiXmlGenerator:
         if transaction.tied_status:
             tied_el = ET.SubElement(trans_el, "tied-status")
             self._set_attribute(tied_el, "code", self._get_enum_value(transaction.tied_status))
-
-        if transaction.disbursement_channel:
-            disbursement_el = ET.SubElement(trans_el, "disbursement-channel")
-            self._set_attribute(disbursement_el, "code", self._get_enum_value(transaction.disbursement_channel))
-
-        if transaction.recipient_region:
-            region_el = ET.SubElement(trans_el, "recipient-region")
-            self._set_attribute(region_el, "code", self._get_enum_value(transaction.recipient_region))
 
     def _add_result(self, activity_el: ET.Element, result: Result) -> None:
         result_el = ET.SubElement(activity_el, "result")
