@@ -9,7 +9,8 @@ from okfn_iati.enums import (
     IndicatorMeasure,
     LocationReach, LocationType, OrganisationRole, OrganisationType,
     RelatedActivityType,
-    ResultType, SectorCategory, TiedStatus, TransactionType, LocationID
+    ResultType, SectorCategory, TiedStatus, TransactionType, LocationID,
+    DisbursementChannel
 )
 from okfn_iati.validators import crs_channel_code_validator
 
@@ -411,6 +412,9 @@ class Transaction:
     tied_status: Optional[Union[TiedStatus, str]] = None
     currency: Optional[str] = None  # ISO 4217
     value_date: Optional[str] = None  # ISO 8601 format
+    # https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/disbursement-channel/
+    # codes https://iatistandard.org/en/iati-standard/203/codelists/disbursementchannel/
+    disbursement_channel: Optional[Union[DisbursementChannel, str]] = None
 
     def __post_init__(self):  # noqa: C901
         # Convert strings to enums if needed
@@ -445,6 +449,16 @@ class Transaction:
                 pass
         elif hasattr(self.tied_status, 'value') and self.tied_status.value not in [e.value for e in TiedStatus]:
             raise ValueError(f"Invalid tied status: {self.tied_status}. Valid values are: {[e.value for e in TiedStatus]}")
+
+        # Validate disbursement channel
+        channel_values = [e.value for e in DisbursementChannel]
+        if isinstance(self.disbursement_channel, str) and self.disbursement_channel is not None:
+            try:
+                self.disbursement_channel = next(e for e in DisbursementChannel if e.value == self.disbursement_channel)
+            except (StopIteration, ValueError):
+                pass
+        elif hasattr(self.disbursement_channel, 'value') and self.disbursement_channel.value not in channel_values:
+            raise ValueError(f"Invalid disbursement channel: {self.disbursement_channel}. Valid values are: {channel_values}")
 
         # Validate ISO date format
         try:
