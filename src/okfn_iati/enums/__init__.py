@@ -713,6 +713,17 @@ class TiedStatus(Enum):
     UNTIED = "5"
 
 
+class DisbursementChannel(Enum):
+    """
+    Disbursement channel - how funds are delivered.
+    Reference: https://iatistandard.org/en/iati-standard/203/codelists/disbursementchannel/
+    """
+    CENTRAL_MINISTRY_OF_FINANCE = "1"
+    DIRECTLY_TO_IMPLEMENTING_INSTITUTION = "2"
+    IN_KIND_THROUGH_THIRD_PARTY = "3"
+    IN_KIND_MANAGED_BY_DONOR = "4"
+
+
 class TransactionType(Enum):
     """
     Transaction type - commitment, disbursement, etc.

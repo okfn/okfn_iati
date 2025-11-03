@@ -736,13 +736,17 @@ class IatiMultiCsvConverter:
         data['tied_status'] = ''
 
         # Extract additional transaction elements
+        disbursement_elem = trans_elem.find('disbursement-channel')
+        if disbursement_elem is not None:
+            data['disbursement_channel'] = disbursement_elem.get('code', '')
+
         flow_type_elem = trans_elem.find('flow-type')
         if flow_type_elem is not None:
             data['flow_type'] = flow_type_elem.get('code', '')
 
         finance_type_elem = trans_elem.find('finance-type')
         if finance_type_elem is not None:
-            data['finance_type'] = finance_type_elem.get('code', '')
+            data['finance_type'] = finance_type_elem.get('code') if finance_type_elem.get('code') != '0' else ''
 
         aid_type_elem = trans_elem.find('aid-type')
         if aid_type_elem is not None:
@@ -1317,6 +1321,8 @@ class IatiMultiCsvConverter:
             )
 
         # Add optional fields
+        if trans_data.get('disbursement_channel'):
+            transaction_args['disbursement_channel'] = trans_data['disbursement_channel']
         if trans_data.get('flow_type'):
             transaction_args['flow_type'] = trans_data['flow_type']
         if trans_data.get('finance_type'):
@@ -1629,4 +1635,27 @@ python scripts/csv_tools.py xml-to-csv-folder data-samples/xml/CAF-ActivityFile-
 and roll back to test
 python scripts/csv_tools.py csv-folder-to-xml data-samples/csv_folders/CAF data-samples/xml/CAF-ActivityFile-2025-10-10-back.xml
 
+python scripts/csv_tools.py xml-to-csv-folder data-samples/xml/iadb-Brazil.xml data-samples/csv_folders/IADBBrasil
+python scripts/csv_tools.py csv-folder-to-xml data-samples/csv_folders/IADBBrasil data-samples/xml/iadb-Brazil-back.xml 
+ -> Error with activity dates (some activities do not include dates)
+    Warning: Generated XML has validation errors:
+    {'schema_errors': 
+    [
+    "<string>:2241:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'contact-info': This element is not expected. Expected is ( activity-date ).",
+    "<string>:15466:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'contact-info': This element is not expected. Expected is ( activity-date )."
+    ...
+    ]
+
+python scripts/csv_tools.py xml-to-csv-folder data-samples/xml/usaid-798.xml data-samples/csv_folders/usaid-798
+python scripts/csv_tools.py csv-folder-to-xml data-samples/csv_folders/usaid-798 data-samples/xml/usaid-798-back.xml
+ -> Error Warning: Generated XML has validation errors:
+ {
+ 'schema_errors':[],
+ 'ruleset_errors': [
+   'Each activity must have either a sector element or all transactions must have sector elements',
+   'Each activity must have either a sector element or all transactions must have sector elements',
+   'Each activity must have either a sector element or all transactions must have sector elements',
+   'Each activity must have either a sector element or all transactions must have sector elements',
+   'Each activity must have either a sector element or all transactions must have sector elements'
+]
 """
