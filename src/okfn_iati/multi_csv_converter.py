@@ -1368,7 +1368,8 @@ class IatiMultiCsvConverter:
                 type=trans_data.get('provider_org_type', ''),
                 narratives=[
                     Narrative(text=trans_data.get('provider_org_name', ''))
-                ] if trans_data.get('provider_org_name') else []
+                ] if trans_data.get('provider_org_name') else [],
+                receiver_org_activity_id=trans_data.get('receiver_org_activity_id', ''),
             )
 
         # Add receiver org
@@ -1378,7 +1379,8 @@ class IatiMultiCsvConverter:
                 type=trans_data.get('receiver_org_type', ''),
                 narratives=[
                     Narrative(text=trans_data.get('receiver_org_name', ''))
-                ] if trans_data.get('receiver_org_name') else []
+                ] if trans_data.get('receiver_org_name') else [],
+                receiver_org_activity_id=trans_data.get('receiver_org_activity_id', ''),
             )
 
         # Add optional fields
