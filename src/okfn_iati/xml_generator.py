@@ -32,11 +32,32 @@ class IatiXmlGenerator:
             element.set(name, str(value))
 
     def _create_narrative_elements(self, parent_element: ET.Element, narratives: List[Narrative]) -> None:
+        """
+        Create <narrative> elements under the given parent.
+        Accepts either Narrative dataclass instances or dicts with keys 'text' and optional 'lang'.
+        """
+        if not narratives:
+            return
+
         for narrative in narratives:
             narrative_el = ET.SubElement(parent_element, "narrative")
-            narrative_el.text = narrative.text
-            if narrative.lang:
-                narrative_el.set("xml:lang", narrative.lang)
+
+            # Handle Narrative dataclass
+            if hasattr(narrative, "text"):
+                narrative_el.text = narrative.text
+                if getattr(narrative, "lang", None):
+                    narrative_el.set("{http://www.w3.org/XML/1998/namespace}lang", narrative.lang)
+
+            # Handle dict
+            elif isinstance(narrative, dict):
+                narrative_el.text = narrative.get("text", "")
+                lang = narrative.get("lang")
+                if lang:
+                    narrative_el.set("{http://www.w3.org/XML/1998/namespace}lang", lang)
+
+            # Fallback
+            else:
+                narrative_el.text = str(narrative)
 
     def _add_organization_ref(self, parent_element: ET.Element, org: OrganizationRef) -> ET.Element:
         if org.ref:
@@ -409,15 +430,34 @@ class IatiXmlGenerator:
         self._create_narrative_elements(title_el, activity.title)
 
         # 4. Add descriptions
-        for desc in activity.description:
+        if activity.description:
+            for desc in activity.description:
+                desc_el = ET.SubElement(activity_el, "description")
+                if "type" in desc:
+                    self._set_attribute(desc_el, "type", desc["type"])
+                self._create_narrative_elements(desc_el, desc["narratives"])
+        else:
+            # fallback mínimo si no hay descripción
             desc_el = ET.SubElement(activity_el, "description")
-            if "type" in desc:
-                self._set_attribute(desc_el, "type", desc["type"])
-            self._create_narrative_elements(desc_el, desc["narratives"])
+            self._create_narrative_elements(desc_el, [{"text": "No description provided"}])
 
         # 5. Add participating orgs
-        for org in activity.participating_orgs:
-            self._add_participating_org(activity_el, org)
+        if activity.participating_orgs:
+            for org in activity.participating_orgs:
+                self._add_participating_org(activity_el, org)
+        else:
+            # fallback: usar reporting-org como participating-org implementador
+            org_el = ET.SubElement(activity_el, "participating-org")
+            if activity.reporting_org:
+                if hasattr(activity.reporting_org, "ref"):
+                    self._set_attribute(org_el, "ref", getattr(activity.reporting_org, "ref"))
+                if hasattr(activity.reporting_org, "type"):
+                    self._set_attribute(org_el, "type", str(activity.reporting_org.type))
+                # Rol por defecto implementador
+                self._set_attribute(org_el, "role", "4")
+                # Narratives
+                if hasattr(activity.reporting_org, "narratives") and activity.reporting_org.narratives:
+                    self._create_narrative_elements(org_el, activity.reporting_org.narratives)
 
         # 6. Add activity status
         if activity.activity_status:
