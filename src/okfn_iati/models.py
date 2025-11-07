@@ -10,7 +10,7 @@ from okfn_iati.enums import (
     LocationReach, LocationType, OrganisationRole, OrganisationType,
     RelatedActivityType,
     ResultType, SectorCategory, TiedStatus, TransactionType, LocationID,
-    DisbursementChannel, RecipientRegion
+    DisbursementChannel, RecipientRegion, CollaborationType
 )
 from okfn_iati.validators import crs_channel_code_validator
 
@@ -418,6 +418,7 @@ class Transaction:
     disbursement_channel: Optional[Union[DisbursementChannel, str]] = None
     recipient_region: Optional[Union[RecipientRegion, str]] = None
     sectors: List[Dict[str, Any]] = field(default_factory=list)
+    humanitarian: Optional[bool] = None  # Change from bool to Optional[bool]
 
     def __post_init__(self):  # noqa: C901
         # Convert strings to enums if needed
@@ -703,6 +704,16 @@ class Activity:
     xml_lang: Optional[str] = "en"  # ISO 639-1 language code
     humanitarian: Optional[bool] = None  # True if humanitarian activity, False otherwise
     activity_scope: Optional[Union[ActivityScope, str]] = None
+    collaboration_type: Optional[Union[CollaborationType, str]] = None  # Add collaboration_type field
+
+    conditions_attached: Optional[str] = None  # "0" or "1" or None (missing)
+    conditions: List[Dict[str, str]] = field(default_factory=list)
+
+    # Add default type fields (activity-level defaults)
+    default_flow_type: Optional[str] = None
+    default_finance_type: Optional[str] = None
+    default_aid_type: Optional[str] = None
+    default_tied_status: Optional[str] = None
 
     def __post_init__(self):  # noqa: C901
         # Validate related activities
@@ -728,6 +739,13 @@ class Activity:
         if isinstance(self.activity_scope, str) and self.activity_scope is not None:
             try:
                 self.activity_scope = next(e for e in ActivityScope if e.value == self.activity_scope)
+            except (StopIteration, ValueError):
+                pass
+
+        # Convert collaboration_type to enum if it's a string
+        if isinstance(self.collaboration_type, str) and self.collaboration_type is not None:
+            try:
+                self.collaboration_type = next(e for e in CollaborationType if e.value == self.collaboration_type)
             except (StopIteration, ValueError):
                 pass
 
