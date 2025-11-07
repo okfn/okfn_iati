@@ -1588,8 +1588,13 @@ class IatiMultiCsvConverter:
             contact_args['organisation'] = [Narrative(text=contact_data['organisation'])]
         if contact_data.get('department'):
             contact_args['department'] = [Narrative(text=contact_data['department'])]
-        if contact_data.get('person_name'):
-            contact_args['person_name'] = [Narrative(text=contact_data['person_name'])]
+
+        # FIX: Always include person_name if it exists in CSV, even if empty
+        # This preserves the XML structure
+        if 'person_name' in contact_data:
+            # Include even if empty string
+            contact_args['person_name'] = [Narrative(text=contact_data.get('person_name', ''))]
+
         if contact_data.get('job_title'):
             contact_args['job_title'] = [Narrative(text=contact_data['job_title'])]
         if contact_data.get('telephone'):
