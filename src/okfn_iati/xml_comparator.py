@@ -349,6 +349,10 @@ class IatiXmlComparator:
             children1_list = children1_by_tag.get(tag, [])
             children2_list = children2_by_tag.get(tag, [])
 
+            # If the tag exist but it's empty (like <website/>), we should not count it
+            children1_list = [c for c in children1_list if c.text or list(c)]
+            children2_list = [c for c in children2_list if c.text or list(c)]
+
             if len(children1_list) != len(children2_list):
                 self.differences.append(XmlDifference(
                     diff_type=DifferenceType.ELEMENT_COUNT,
