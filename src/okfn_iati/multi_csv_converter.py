@@ -1145,6 +1145,9 @@ class IatiMultiCsvConverter:
         else:  # '1' or any other truthy value
             humanitarian = True
 
+        # Get the activity's default language
+        default_lang = main_data.get('xml_lang', 'en')
+
         # Create basic activity
         activity = Activity(
             iati_identifier=main_data['activity_identifier'],
@@ -1152,19 +1155,19 @@ class IatiMultiCsvConverter:
                 ref=main_data.get('reporting_org_ref', ''),
                 type=main_data.get('reporting_org_type', ''),
                 narratives=[
-                    Narrative(text=main_data.get('reporting_org_name', ''))
+                    Narrative(text=main_data.get('reporting_org_name', ''), lang=default_lang)
                 ] if main_data.get('reporting_org_name') else []
             ),
-            title=[Narrative(text=main_data.get('title', ''))] if main_data.get('title') else [],
+            title=[Narrative(text=main_data.get('title', ''), lang=default_lang)] if main_data.get('title') else [],
             description=[{
-                "narratives": [Narrative(text=main_data.get('description', ''))]
+                "narratives": [Narrative(text=main_data.get('description', ''), lang=default_lang)]
             }] if main_data.get('description') else [],
             activity_status=self._parse_activity_status(main_data.get('activity_status')),
             default_currency=main_data.get('default_currency', 'USD'),
             humanitarian=humanitarian,
             hierarchy=main_data.get('hierarchy', '1'),
             last_updated_datetime=main_data.get('last_updated_datetime'),
-            xml_lang=main_data.get('xml_lang', 'en'),
+            xml_lang=default_lang,
             activity_scope=self._parse_activity_scope(main_data.get('activity_scope')),
             conditions_attached=main_data.get('conditions_attached') or None,
             conditions=data.get('conditions', []),
