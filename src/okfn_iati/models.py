@@ -705,6 +705,9 @@ class Activity:
     humanitarian: Optional[bool] = None  # True if humanitarian activity, False otherwise
     activity_scope: Optional[Union[ActivityScope, str]] = None
 
+    conditions_attached: Optional[str] = None  # "0" or "1" or None (missing)
+    conditions: List[Dict[str, str]] = field(default_factory=list)  # Individual condition elements
+
     def __post_init__(self):  # noqa: C901
         # Validate related activities
         for related in self.related_activities:
