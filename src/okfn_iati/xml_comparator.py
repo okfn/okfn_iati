@@ -258,9 +258,9 @@ class IatiXmlComparator:
         if text1 != text2:
             # Check if it's just a numeric formatting difference (e.g., "36425.00" vs "36425.0")
             is_numeric_formatting_diff = self._is_numeric_formatting_difference(text1, text2)
-            
+
             is_relevant = elem1.tag not in self.WHITESPACE_FLEXIBLE_ELEMENTS or text1.strip() != text2.strip()
-            
+
             # Numeric formatting differences are non-relevant
             if is_numeric_formatting_diff:
                 is_relevant = False
@@ -289,13 +289,13 @@ class IatiXmlComparator:
     def _is_custom_namespace_element(self, elem: ET.Element) -> bool:
         """Check if element is from a custom namespace."""
         tag = elem.tag
-        
+
         # Check if tag contains a namespace
         if '{' in tag:
             # Extract namespace
             namespace = tag.split('}')[0] + '}'
             return namespace in self.CUSTOM_NAMESPACES
-        
+
         return False
 
     def _compare_children(
@@ -311,7 +311,7 @@ class IatiXmlComparator:
         # Separate standard and custom namespace children
         standard_children1 = [c for c in children1 if not self._is_custom_namespace_element(c)]
         standard_children2 = [c for c in children2 if not self._is_custom_namespace_element(c)]
-        
+
         custom_children1 = [c for c in children1 if self._is_custom_namespace_element(c)]
         custom_children2 = [c for c in children2 if self._is_custom_namespace_element(c)]
 
