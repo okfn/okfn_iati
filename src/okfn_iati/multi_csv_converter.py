@@ -1397,8 +1397,8 @@ class IatiMultiCsvConverter:
         if trans_data.get('recipient_region'):
             transaction_args['recipient_region'] = trans_data['recipient_region']
 
+        sectors = []
         if trans_sectors:
-            sectors = []
             for sector_data in trans_sectors:
                 sector = {
                     "code": sector_data.get('sector_code', ''),
@@ -1409,7 +1409,7 @@ class IatiMultiCsvConverter:
                 if sector_data.get('sector_name'):
                     sector['narratives'] = [Narrative(text=sector_data['sector_name'])]
                 sectors.append(sector)
-            transaction_args['sectors'] = sectors
+        transaction_args['sectors'] = sectors
 
         return Transaction(**transaction_args)
 
@@ -1716,14 +1716,6 @@ python scripts/csv_tools.py csv-folder-to-xml data-samples/csv_folders/CAF data-
 
 python scripts/csv_tools.py xml-to-csv-folder data-samples/xml/iadb-Brazil.xml data-samples/csv_folders/IADBBrasil
 python scripts/csv_tools.py csv-folder-to-xml data-samples/csv_folders/IADBBrasil data-samples/xml/iadb-Brazil-back.xml
- -> Error with activity dates (some activities do not include dates)
-    Warning: Generated XML has validation errors:
-    {'schema_errors':
-    [
-    "<string>:2241:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'contact-info': This element is not expected. Expected is ( activity-date ).",
-    "<string>:15466:0:ERROR:SCHEMASV:SCHEMAV_ELEMENT_CONTENT: Element 'contact-info': This element is not expected. Expected is ( activity-date )."
-    ...
-    ]
 
 python scripts/csv_tools.py xml-to-csv-folder data-samples/xml/usaid-798.xml data-samples/csv_folders/usaid-798
 python scripts/csv_tools.py csv-folder-to-xml data-samples/csv_folders/usaid-798 data-samples/xml/usaid-798-back.xml
