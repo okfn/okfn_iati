@@ -156,6 +156,7 @@ class IatiMultiCsvConverter:
                 'columns': [
                     'activity_identifier',  # Foreign key to activities
                     'transaction_ref',  # Foreign key to transactions
+                    'transaction_type',  # NEW: transaction type code to uniquely identify transaction
                     'sector_code',
                     'sector_name',
                     'vocabulary',
@@ -459,20 +460,38 @@ class IatiMultiCsvConverter:
             budget_data = self._extract_budget_data(budget_elem, activity_id)
             data_collections['budgets'].append(budget_data)
 
-        # Extract transactions
+        # Extract transactions with deduplication
+        seen_transaction_sectors = set()  # Track (activity_id, transaction_ref, transaction_type, sector_code, vocabulary)
+
         for trans_elem in activity_elem.findall('transaction'):
             trans_data = self._extract_transaction_data(trans_elem, activity_id)
             data_collections['transactions'].append(trans_data)
 
-            # Extract transaction sectors
+            # Extract transaction sectors with deduplication
             transaction_ref = trans_data.get('transaction_ref', '')
+            transaction_type = trans_data.get('transaction_type', '')  # NEW: Get transaction type
+
             for sector_elem in trans_elem.findall('sector'):
                 sector_data = self._extract_transaction_sector_data(
                     sector_elem,
                     activity_id,
-                    transaction_ref
+                    transaction_ref,
+                    transaction_type  # NEW: Pass transaction type
                 )
-                data_collections['transaction_sectors'].append(sector_data)
+
+                # Create unique key for this transaction sector
+                sector_key = (
+                    activity_id,
+                    transaction_ref,
+                    transaction_type,  # NEW: Include type in unique key
+                    sector_data.get('sector_code', ''),
+                    sector_data.get('vocabulary', '1')
+                )
+
+                # Only add if we haven't seen this exact combination before
+                if sector_key not in seen_transaction_sectors:
+                    seen_transaction_sectors.add(sector_key)
+                    data_collections['transaction_sectors'].append(sector_data)
 
         # Extract locations
         for location_elem in activity_elem.findall('location'):
@@ -588,12 +607,14 @@ class IatiMultiCsvConverter:
         self,
         sector_elem: ET.Element,
         activity_id: str,
-        transaction_ref: str
+        transaction_ref: str,
+        transaction_type: str  # NEW: Add transaction_type parameter
     ) -> Dict[str, str]:
         """Extract transaction sector data."""
         data = {
             'activity_identifier': activity_id,
-            'transaction_ref': transaction_ref
+            'transaction_ref': transaction_ref,
+            'transaction_type': transaction_type  # NEW: Include transaction type
         }
 
         data['sector_code'] = sector_elem.get('code', '')
@@ -1233,10 +1254,22 @@ class IatiMultiCsvConverter:
         # Add transactions
         for trans_data in data['transactions']:
             trans_ref = trans_data.get('transaction_ref')
-            transaction_sectors_data = [
-                row for row in data.get('transaction_sectors', [])
-                if row.get('transaction_ref') == trans_ref and row.get('activity_identifier') == activity.iati_identifier
-            ]
+            trans_type = trans_data.get('transaction_type')  # NEW: Get transaction type
+
+            # Get unique transaction sectors for THIS specific transaction (ref + type)
+            seen_sectors = set()
+            transaction_sectors_data = []
+            for row in data.get('transaction_sectors', []):
+                if (
+                    row.get('transaction_ref') == trans_ref and
+                    row.get('transaction_type') == trans_type and
+                    row.get('activity_identifier') == activity.iati_identifier
+                ):
+                    sector_key = (row.get('sector_code', ''), row.get('vocabulary', '1'))
+                    if sector_key not in seen_sectors:
+                        seen_sectors.add(sector_key)
+                        transaction_sectors_data.append(row)
+
             activity.transactions.append(self._build_transaction(trans_data, transaction_sectors_data))
 
         # Add locations
