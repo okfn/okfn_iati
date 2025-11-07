@@ -713,6 +713,50 @@ class TiedStatus(Enum):
     UNTIED = "5"
 
 
+class DisbursementChannel(Enum):
+    """
+    Disbursement channel - how funds are delivered.
+    Reference: https://iatistandard.org/en/iati-standard/203/codelists/disbursementchannel/
+    """
+    CENTRAL_MINISTRY_OF_FINANCE = "1"
+    DIRECTLY_TO_IMPLEMENTING_INSTITUTION = "2"
+    IN_KIND_THROUGH_THIRD_PARTY = "3"
+    IN_KIND_MANAGED_BY_DONOR = "4"
+
+
+class RecipientRegion(Enum):
+    """
+    DAC regions and other regional classifications.
+    Reference: https://iatistandard.org/en/iati-standard/203/codelists/region/
+    """
+    # DAC Regions
+    EX_YUGOSLAVIA_UNSPECIFIED = "88"
+    EUROPE_REGIONAL = "89"
+    NORTH_OF_SAHARA_REGIONAL = "189"
+    SOUTH_OF_SAHARA_REGIONAL = "289"
+    AFRICA_REGIONAL = "298"
+    CARIBBEAN_AND_CENTRAL_AMERICA_REGIONAL = "389"
+    SOUTH_AMERICA_REGIONAL = "489"
+    AMERICA_REGIONAL = "498"
+    MIDDLE_EAST_REGIONAL = "589"
+    CENTRAL_ASIA_REGIONAL = "619"
+    SOUTH_ASIA_REGIONAL = "679"
+    SOUTH_AND_CENTRAL_ASIA_REGIONAL = "689"
+    FAR_EAST_ASIA_REGIONAL = "789"
+    ASIA_REGIONAL = "798"
+    OCEANIA_REGIONAL = "889"
+    DEVELOPING_COUNTRIES_UNSPECIFIED = "998"
+    EASTERN_AFRICA_REGIONAL = "1027"
+    MIDDLE_AFRICA_REGIONAL = "1028"
+    SOUTHERN_AFRICA_REGIONAL = "1029"
+    WESTERN_AFRICA_REGIONAL = "1030"
+    CARIBBEAN_REGIONAL = "1031"
+    CENTRAL_AMERICA_REGIONAL = "1032"
+    MELANESIA_REGIONAL = "1033"
+    MICRONESIA_REGIONAL = "1034"
+    POLYNESIA_REGIONAL = "1035"
+
+
 class TransactionType(Enum):
     """
     Transaction type - commitment, disbursement, etc.

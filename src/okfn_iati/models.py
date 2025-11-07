@@ -9,7 +9,8 @@ from okfn_iati.enums import (
     IndicatorMeasure,
     LocationReach, LocationType, OrganisationRole, OrganisationType,
     RelatedActivityType,
-    ResultType, SectorCategory, TiedStatus, TransactionType, LocationID
+    ResultType, SectorCategory, TiedStatus, TransactionType, LocationID,
+    DisbursementChannel, RecipientRegion
 )
 from okfn_iati.validators import crs_channel_code_validator
 
@@ -43,6 +44,7 @@ class OrganizationRef:
         ref: Organization identifier reference code
         type: Organization type code (see OrganisationType enum)
         narratives: List of narrative elements with organization names
+        receiver_org_activity_id: Optional activity identifier from the referenced organization.
 
     References:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/reporting-org/
@@ -52,6 +54,7 @@ class OrganizationRef:
     ref: str
     type: Optional[str] = None  # See OrganisationType enum for valid values
     narratives: List[Narrative] = field(default_factory=list)
+    receiver_org_activity_id: Optional[str] = None
 
     def __post_init__(self):
         # Validate type is a valid OrganisationType if it's provided and numeric
@@ -382,7 +385,6 @@ class Transaction:
         provider_org: Optional organization providing the funds
         receiver_org: Optional organization receiving the funds
         transaction_ref: Optional transaction reference
-        sector: Optional dictionary with sector information
         recipient_country: Optional dictionary with recipient country information
         recipient_region: Optional dictionary with recipient region information
         flow_type: Optional flow type code (see FlowType enum)
@@ -391,6 +393,8 @@ class Transaction:
         tied_status: Optional tied status code (see TiedStatus enum)
         currency: Optional currency code (ISO 4217)
         value_date: Optional ISO 8601 date for currency exchange rate
+        disebursement_channel: Optional disbursement channel code (see DisbursementChannel enum)
+        sectors: List of dictionaries with sector information
 
     References:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/
@@ -402,15 +406,18 @@ class Transaction:
     provider_org: Optional[OrganizationRef] = None
     receiver_org: Optional[OrganizationRef] = None
     transaction_ref: Optional[str] = None
-    sector: Optional[Dict[str, Any]] = None  # See SectorCategory enum
     recipient_country: Optional[Dict[str, Any]] = None
-    recipient_region: Optional[Dict[str, Any]] = None
     flow_type: Optional[Union[FlowType, str]] = None
     finance_type: Optional[Union[FinanceType, str]] = None
     aid_type: Optional[Dict[str, str]] = None
     tied_status: Optional[Union[TiedStatus, str]] = None
     currency: Optional[str] = None  # ISO 4217
     value_date: Optional[str] = None  # ISO 8601 format
+    # https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/disbursement-channel/
+    # codes https://iatistandard.org/en/iati-standard/203/codelists/disbursementchannel/
+    disbursement_channel: Optional[Union[DisbursementChannel, str]] = None
+    recipient_region: Optional[Union[RecipientRegion, str]] = None
+    sectors: List[Dict[str, Any]] = field(default_factory=list)
 
     def __post_init__(self):  # noqa: C901
         # Convert strings to enums if needed
@@ -445,6 +452,29 @@ class Transaction:
                 pass
         elif hasattr(self.tied_status, 'value') and self.tied_status.value not in [e.value for e in TiedStatus]:
             raise ValueError(f"Invalid tied status: {self.tied_status}. Valid values are: {[e.value for e in TiedStatus]}")
+
+        # Validate disbursement channel
+        channel_values = [e.value for e in DisbursementChannel]
+        if isinstance(self.disbursement_channel, str) and self.disbursement_channel is not None:
+            try:
+                self.disbursement_channel = next(e for e in DisbursementChannel if e.value == self.disbursement_channel)
+            except (StopIteration, ValueError):
+                pass
+        elif hasattr(self.disbursement_channel, 'value') and self.disbursement_channel.value not in channel_values:
+            raise ValueError(f"Invalid disbursement channel: {self.disbursement_channel}. Valid values are: {channel_values}")
+
+        # Validate recipient region
+        if isinstance(self.recipient_region, str) and self.recipient_region is not None and self.recipient_region:
+            try:
+                self.recipient_region = next(e for e in RecipientRegion if e.value == self.recipient_region)
+            except (StopIteration, ValueError):
+                # Keep as string if not found in enum - allows for codes not in our enum
+                pass
+        elif hasattr(self.recipient_region, 'value'):
+            region_values = [e.value for e in RecipientRegion]
+            if self.recipient_region.value not in region_values:
+                # Allow it but keep as enum instance
+                pass
 
         # Validate ISO date format
         try:

@@ -131,12 +131,25 @@ class IatiMultiCsvConverter:
                     'receiver_org_ref',
                     'receiver_org_name',
                     'receiver_org_type',
+                    'receiver_org_activity_id',
                     'disbursement_channel',
                     'flow_type',
                     'finance_type',
                     'aid_type',
                     'tied_status',
-                    'humanitarian'
+                    'humanitarian',
+                    'recipient_region'
+                ]
+            },
+            'transaction_sectors': {
+                'filename': 'transaction_sectors.csv',
+                'columns': [
+                    'activity_identifier',  # Foreign key to activities
+                    'transaction_ref',  # Foreign key to transactions
+                    'sector_code',
+                    'sector_name',
+                    'vocabulary',
+                    'vocabulary_uri'
                 ]
             },
             'locations': {
@@ -433,6 +446,16 @@ class IatiMultiCsvConverter:
             trans_data = self._extract_transaction_data(trans_elem, activity_id)
             data_collections['transactions'].append(trans_data)
 
+            # Extract transaction sectors
+            transaction_ref = trans_data.get('transaction_ref', '')
+            for sector_elem in trans_elem.findall('sector'):
+                sector_data = self._extract_transaction_sector_data(
+                    sector_elem,
+                    activity_id,
+                    transaction_ref
+                )
+                data_collections['transaction_sectors'].append(sector_data)
+
         # Extract locations
         for location_elem in activity_elem.findall('location'):
             location_data = self._extract_location_data(location_elem, activity_id)
@@ -533,6 +556,27 @@ class IatiMultiCsvConverter:
         else:
             data['actual_value'] = ''
             data['actual_comment'] = ''
+
+        return data
+
+    def _extract_transaction_sector_data(
+        self,
+        sector_elem: ET.Element,
+        activity_id: str,
+        transaction_ref: str
+    ) -> Dict[str, str]:
+        """Extract transaction sector data."""
+        data = {
+            'activity_identifier': activity_id,
+            'transaction_ref': transaction_ref
+        }
+
+        data['sector_code'] = sector_elem.get('code', '')
+        data['vocabulary'] = sector_elem.get('vocabulary', '1')
+        data['vocabulary_uri'] = sector_elem.get('vocabulary-uri', '')
+
+        sector_name = sector_elem.find('narrative')
+        data['sector_name'] = sector_name.text if sector_name is not None else ''
 
         return data
 
@@ -679,7 +723,7 @@ class IatiMultiCsvConverter:
         data = {'activity_identifier': activity_id}
 
         data['transaction_ref'] = trans_elem.get('ref', '')
-        data['humanitarian'] = trans_elem.get('humanitarian', '0')
+        data['humanitarian'] = trans_elem.get('humanitarian', '')
 
         # Transaction type
         type_elem = trans_elem.find('transaction-type')
@@ -721,12 +765,14 @@ class IatiMultiCsvConverter:
         if receiver_elem is not None:
             data['receiver_org_ref'] = receiver_elem.get('ref', '')
             data['receiver_org_type'] = receiver_elem.get('type', '')
+            data['receiver_org_activity_id'] = receiver_elem.get('receiver-activity-id', '')
             receiver_name = receiver_elem.find('narrative')
             data['receiver_org_name'] = receiver_name.text if receiver_name is not None else ''
         else:
             data['receiver_org_ref'] = ''
             data['receiver_org_type'] = ''
             data['receiver_org_name'] = ''
+            data['receiver_org_activity_id'] = ''
 
         # Additional fields
         data['disbursement_channel'] = ''
@@ -734,15 +780,20 @@ class IatiMultiCsvConverter:
         data['finance_type'] = ''
         data['aid_type'] = ''
         data['tied_status'] = ''
+        data['recipient_region'] = ''
 
         # Extract additional transaction elements
+        disbursement_elem = trans_elem.find('disbursement-channel')
+        if disbursement_elem is not None:
+            data['disbursement_channel'] = disbursement_elem.get('code', '')
+
         flow_type_elem = trans_elem.find('flow-type')
         if flow_type_elem is not None:
             data['flow_type'] = flow_type_elem.get('code', '')
 
         finance_type_elem = trans_elem.find('finance-type')
         if finance_type_elem is not None:
-            data['finance_type'] = finance_type_elem.get('code', '')
+            data['finance_type'] = finance_type_elem.get('code') if finance_type_elem.get('code') != '0' else ''
 
         aid_type_elem = trans_elem.find('aid-type')
         if aid_type_elem is not None:
@@ -751,6 +802,10 @@ class IatiMultiCsvConverter:
         tied_status_elem = trans_elem.find('tied-status')
         if tied_status_elem is not None:
             data['tied_status'] = tied_status_elem.get('code') if tied_status_elem.get('code') != '0' else ''
+
+        recipient_region_elem = trans_elem.find('recipient-region')
+        if recipient_region_elem is not None:
+            data['recipient_region'] = recipient_region_elem.get('code', '')
 
         return data
 
@@ -1004,6 +1059,7 @@ class IatiMultiCsvConverter:
                 'sectors': [],
                 'budgets': [],
                 'transactions': [],
+                'transaction_sectors': [],
                 'locations': [],
                 'documents': [],
                 'results': [],
@@ -1016,7 +1072,7 @@ class IatiMultiCsvConverter:
         # Group related data
         for csv_type in [
             'participating_orgs', 'sectors', 'budgets', 'transactions',
-            'locations', 'documents', 'results', 'indicators', 'indicator_periods',
+            'transaction_sectors', 'locations', 'documents', 'results', 'indicators', 'indicator_periods',
             'activity_date', 'contact_info'
         ]:
             for row in data_collections.get(csv_type, []):
@@ -1086,7 +1142,12 @@ class IatiMultiCsvConverter:
 
         # Add transactions
         for trans_data in data['transactions']:
-            activity.transactions.append(self._build_transaction(trans_data))
+            trans_ref = trans_data.get('transaction_ref')
+            transaction_sectors_data = [
+                row for row in data.get('transaction_sectors', [])
+                if row.get('transaction_ref') == trans_ref and row.get('activity_identifier') == activity.iati_identifier
+            ]
+            activity.transactions.append(self._build_transaction(trans_data, transaction_sectors_data))
 
         # Add locations
         for location_data in data['locations']:
@@ -1282,7 +1343,11 @@ class IatiMultiCsvConverter:
             value_date=budget_data.get('value_date', '')
         )
 
-    def _build_transaction(self, trans_data: Dict[str, str]) -> Transaction:
+    def _build_transaction(
+        self,
+        trans_data: Dict[str, str],
+        trans_sectors: Optional[List[Dict[str, str]]] = None
+    ) -> Transaction:
         """Build Transaction from data."""
         transaction_args = {
             'type': trans_data.get('transaction_type', '2'),
@@ -1303,7 +1368,8 @@ class IatiMultiCsvConverter:
                 type=trans_data.get('provider_org_type', ''),
                 narratives=[
                     Narrative(text=trans_data.get('provider_org_name', ''))
-                ] if trans_data.get('provider_org_name') else []
+                ] if trans_data.get('provider_org_name') else [],
+                receiver_org_activity_id=trans_data.get('receiver_org_activity_id', ''),
             )
 
         # Add receiver org
@@ -1313,10 +1379,13 @@ class IatiMultiCsvConverter:
                 type=trans_data.get('receiver_org_type', ''),
                 narratives=[
                     Narrative(text=trans_data.get('receiver_org_name', ''))
-                ] if trans_data.get('receiver_org_name') else []
+                ] if trans_data.get('receiver_org_name') else [],
+                receiver_org_activity_id=trans_data.get('receiver_org_activity_id', ''),
             )
 
         # Add optional fields
+        if trans_data.get('disbursement_channel'):
+            transaction_args['disbursement_channel'] = trans_data['disbursement_channel']
         if trans_data.get('flow_type'):
             transaction_args['flow_type'] = trans_data['flow_type']
         if trans_data.get('finance_type'):
@@ -1325,6 +1394,22 @@ class IatiMultiCsvConverter:
             transaction_args['tied_status'] = trans_data['tied_status']
         if trans_data.get('aid_type'):
             transaction_args['aid_type'] = {"code": trans_data['aid_type']}
+        if trans_data.get('recipient_region'):
+            transaction_args['recipient_region'] = trans_data['recipient_region']
+
+        sectors = []
+        if trans_sectors:
+            for sector_data in trans_sectors:
+                sector = {
+                    "code": sector_data.get('sector_code', ''),
+                    "vocabulary": sector_data.get('vocabulary', '1'),
+                }
+                if sector_data.get('vocabulary_uri'):
+                    sector['vocabulary_uri'] = sector_data['vocabulary_uri']
+                if sector_data.get('sector_name'):
+                    sector['narratives'] = [Narrative(text=sector_data['sector_name'])]
+                sectors.append(sector)
+        transaction_args['sectors'] = sectors
 
         return Transaction(**transaction_args)
 
@@ -1629,4 +1714,19 @@ python scripts/csv_tools.py xml-to-csv-folder data-samples/xml/CAF-ActivityFile-
 and roll back to test
 python scripts/csv_tools.py csv-folder-to-xml data-samples/csv_folders/CAF data-samples/xml/CAF-ActivityFile-2025-10-10-back.xml
 
+python scripts/csv_tools.py xml-to-csv-folder data-samples/xml/iadb-Brazil.xml data-samples/csv_folders/IADBBrasil
+python scripts/csv_tools.py csv-folder-to-xml data-samples/csv_folders/IADBBrasil data-samples/xml/iadb-Brazil-back.xml
+
+python scripts/csv_tools.py xml-to-csv-folder data-samples/xml/usaid-798.xml data-samples/csv_folders/usaid-798
+python scripts/csv_tools.py csv-folder-to-xml data-samples/csv_folders/usaid-798 data-samples/xml/usaid-798-back.xml
+ -> Error Warning: Generated XML has validation errors:
+ {
+ 'schema_errors':[],
+ 'ruleset_errors': [
+   'Each activity must have either a sector element or all transactions must have sector elements',
+   'Each activity must have either a sector element or all transactions must have sector elements',
+   'Each activity must have either a sector element or all transactions must have sector elements',
+   'Each activity must have either a sector element or all transactions must have sector elements',
+   'Each activity must have either a sector element or all transactions must have sector elements'
+]
 """
