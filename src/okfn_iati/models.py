@@ -385,7 +385,6 @@ class Transaction:
         provider_org: Optional organization providing the funds
         receiver_org: Optional organization receiving the funds
         transaction_ref: Optional transaction reference
-        sector: Optional dictionary with sector information
         recipient_country: Optional dictionary with recipient country information
         recipient_region: Optional dictionary with recipient region information
         flow_type: Optional flow type code (see FlowType enum)
@@ -394,6 +393,8 @@ class Transaction:
         tied_status: Optional tied status code (see TiedStatus enum)
         currency: Optional currency code (ISO 4217)
         value_date: Optional ISO 8601 date for currency exchange rate
+        disebursement_channel: Optional disbursement channel code (see DisbursementChannel enum)
+        sectors: List of dictionaries with sector information
 
     References:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/
@@ -405,9 +406,7 @@ class Transaction:
     provider_org: Optional[OrganizationRef] = None
     receiver_org: Optional[OrganizationRef] = None
     transaction_ref: Optional[str] = None
-    sector: Optional[Dict[str, Any]] = None  # See SectorCategory enum
     recipient_country: Optional[Dict[str, Any]] = None
-    recipient_region: Optional[Dict[str, Any]] = None
     flow_type: Optional[Union[FlowType, str]] = None
     finance_type: Optional[Union[FinanceType, str]] = None
     aid_type: Optional[Dict[str, str]] = None
