@@ -200,7 +200,7 @@ class IatiXmlGenerator:
         if budget.value_date:
             self._set_attribute(value_el, "value-date", budget.value_date)
 
-    def _add_transaction(self, activity_el: ET.Element, transaction: Transaction) -> None:
+    def _add_transaction(self, activity_el: ET.Element, transaction: Transaction) -> None:  # noqa: C901
         trans_el = ET.SubElement(activity_el, "transaction")
 
         if transaction.transaction_ref:
