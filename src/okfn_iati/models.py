@@ -706,7 +706,13 @@ class Activity:
     activity_scope: Optional[Union[ActivityScope, str]] = None
 
     conditions_attached: Optional[str] = None  # "0" or "1" or None (missing)
-    conditions: List[Dict[str, str]] = field(default_factory=list)  # Individual condition elements
+    conditions: List[Dict[str, str]] = field(default_factory=list)
+
+    # Add default type fields (activity-level defaults)
+    default_flow_type: Optional[str] = None
+    default_finance_type: Optional[str] = None
+    default_aid_type: Optional[str] = None
+    default_tied_status: Optional[str] = None
 
     def __post_init__(self):  # noqa: C901
         # Validate related activities

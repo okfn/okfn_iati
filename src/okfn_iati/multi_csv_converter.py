@@ -1169,7 +1169,12 @@ class IatiMultiCsvConverter:
             activity_scope=self._parse_activity_scope(main_data.get('activity_scope')),
             # Add conditions as proper fields
             conditions_attached=main_data.get('conditions_attached') or None,
-            conditions=data.get('conditions', [])
+            conditions=data.get('conditions', []),
+            # Add default types as proper fields
+            default_flow_type=main_data.get('default_flow_type') or None,
+            default_finance_type=main_data.get('default_finance_type') or None,
+            default_aid_type=main_data.get('default_aid_type') or None,
+            default_tied_status=main_data.get('default_tied_status') or None
         )
 
         # Add dates
@@ -1340,10 +1345,7 @@ class IatiMultiCsvConverter:
             activity.recipient_regions.append(region_data)
 
     def _add_default_types_from_main_data(self, activity: Activity, main_data: Dict[str, str]) -> None:
-        """Add default flow/finance/aid/tied status from main data as activity-level attributes."""
-        # Note: These are stored as activity attributes in IATI, not as separate elements
-        # They would be used when creating transactions or other elements if not specified
-
+        """Add collaboration type from main data."""
         # Add collaboration type if present
         collaboration_type = main_data.get('collaboration_type')
         if collaboration_type:
@@ -1351,14 +1353,6 @@ class IatiMultiCsvConverter:
                 activity.collaboration_type = CollaborationType(collaboration_type)
             except (ValueError, TypeError):
                 pass  # Skip invalid collaboration type
-
-        # Store default types for use in transactions (if not overridden)
-        # Note: These are not standard Activity model attributes, but we'll store them as custom attributes
-        if hasattr(activity, '__dict__'):
-            activity.__dict__['default_flow_type'] = main_data.get('default_flow_type')
-            activity.__dict__['default_finance_type'] = main_data.get('default_finance_type')
-            activity.__dict__['default_aid_type'] = main_data.get('default_aid_type')
-            activity.__dict__['default_tied_status'] = main_data.get('default_tied_status')
 
     def _build_participating_org(self, org_data: Dict[str, str]) -> ParticipatingOrg:
         """Build ParticipatingOrg from data."""
