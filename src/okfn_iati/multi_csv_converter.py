@@ -58,7 +58,9 @@ class IatiMultiCsvConverter:
                 'columns': [
                     'activity_identifier',  # Primary key
                     'title',
+                    'title_lang',  # NEW: lang attribute for title narrative
                     'description',
+                    'description_lang',  # NEW: lang attribute for description narrative
                     'activity_status',
                     'activity_scope',
                     'default_currency',
@@ -68,6 +70,7 @@ class IatiMultiCsvConverter:
                     'xml_lang',
                     'reporting_org_ref',
                     'reporting_org_name',
+                    'reporting_org_name_lang',  # NEW: lang attribute for reporting org narrative
                     'reporting_org_type',
                     'planned_start_date',
                     'actual_start_date',
@@ -614,15 +617,19 @@ class IatiMultiCsvConverter:
         data['last_updated_datetime'] = activity_elem.get('last-updated-datetime', '')
         data['xml_lang'] = activity_elem.get('{http://www.w3.org/XML/1998/namespace}lang', 'en')
 
-        # Title
+        # Title - extract lang attribute from narrative
         title_elem = activity_elem.find('title/narrative')
         data['title'] = title_elem.text if title_elem is not None else ''
+        data['title_lang'] = title_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if title_elem is not None else ''
 
-        # Description
+        # Description - extract lang attribute from narrative
         desc_elem = activity_elem.find('description[@type="1"]/narrative')
         if desc_elem is None:
             desc_elem = activity_elem.find('description/narrative')
         data['description'] = desc_elem.text if desc_elem is not None else ''
+        data['description_lang'] = (
+            desc_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if desc_elem is not None else ''
+        )
 
         # Activity status
         status_elem = activity_elem.find('activity-status')
@@ -632,17 +639,21 @@ class IatiMultiCsvConverter:
         scope_elem = activity_elem.find('activity-scope')
         data['activity_scope'] = scope_elem.get('code') if scope_elem is not None else ''
 
-        # Reporting organization
+        # Reporting organization - extract lang from narrative
         rep_org_elem = activity_elem.find('reporting-org')
         if rep_org_elem is not None:
             data['reporting_org_ref'] = rep_org_elem.get('ref', '')
             data['reporting_org_type'] = rep_org_elem.get('type', '')
             rep_org_name = rep_org_elem.find('narrative')
             data['reporting_org_name'] = rep_org_name.text if rep_org_name is not None else ''
+            data['reporting_org_name_lang'] = (
+                rep_org_name.get('{http://www.w3.org/XML/1998/namespace}lang', '') if rep_org_name is not None else ''
+            )
         else:
             data['reporting_org_ref'] = ''
             data['reporting_org_type'] = ''
             data['reporting_org_name'] = ''
+            data['reporting_org_name_lang'] = ''
 
         # Recipient country (first one only for main table)
         country_elem = activity_elem.find('recipient-country')
@@ -1132,7 +1143,7 @@ class IatiMultiCsvConverter:
 
         return activities
 
-    def _build_activity_from_data(self, data: Dict[str, Any]) -> Activity:
+    def _build_activity_from_data(self, data: Dict[str, Any]) -> Activity:  # noqa: C901
         """Build an Activity object from grouped data."""
         main_data = data['main']
 
@@ -1148,6 +1159,14 @@ class IatiMultiCsvConverter:
         # Get the activity's default language
         default_lang = main_data.get('xml_lang', 'en')
 
+        # Helper function to create narrative with conditional lang
+        def create_narrative(text: str, lang_value: str) -> Narrative:
+            """Create Narrative with lang only if it was in the original XML."""
+            if lang_value:  # If we have a lang value from CSV (even if empty string was stored)
+                return Narrative(text=text, lang=lang_value)
+            else:  # No lang in original XML
+                return Narrative(text=text)
+
         # Create basic activity
         activity = Activity(
             iati_identifier=main_data['activity_identifier'],
@@ -1155,12 +1174,25 @@ class IatiMultiCsvConverter:
                 ref=main_data.get('reporting_org_ref', ''),
                 type=main_data.get('reporting_org_type', ''),
                 narratives=[
-                    Narrative(text=main_data.get('reporting_org_name', ''), lang=default_lang)
+                    create_narrative(
+                        main_data.get('reporting_org_name', ''),
+                        main_data.get('reporting_org_name_lang', '')
+                    )
                 ] if main_data.get('reporting_org_name') else []
             ),
-            title=[Narrative(text=main_data.get('title', ''), lang=default_lang)] if main_data.get('title') else [],
+            title=[
+                create_narrative(
+                    main_data.get('title', ''),
+                    main_data.get('title_lang', '')
+                )
+            ] if main_data.get('title') else [],
             description=[{
-                "narratives": [Narrative(text=main_data.get('description', ''), lang=default_lang)]
+                "narratives": [
+                    create_narrative(
+                        main_data.get('description', ''),
+                        main_data.get('description_lang', '')
+                    )
+                ]
             }] if main_data.get('description') else [],
             activity_status=self._parse_activity_status(main_data.get('activity_status')),
             default_currency=main_data.get('default_currency', 'USD'),
