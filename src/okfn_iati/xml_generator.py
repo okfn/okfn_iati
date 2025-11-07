@@ -571,6 +571,21 @@ class IatiXmlGenerator:
         for result in activity.results:
             self._add_result(activity_el, result)
 
+        # 18. Add conditions (if present)
+        if activity.conditions_attached is not None:
+            conditions_el = ET.SubElement(activity_el, "conditions")
+            self._set_attribute(conditions_el, "attached", activity.conditions_attached)
+
+            # Add individual condition elements
+            for condition_data in activity.conditions:
+                condition_el = ET.SubElement(conditions_el, "condition")
+                if condition_data.get('condition_type'):
+                    self._set_attribute(condition_el, "type", condition_data['condition_type'])
+
+                if condition_data.get('condition_text'):
+                    narrative_el = ET.SubElement(condition_el, "narrative")
+                    narrative_el.text = condition_data['condition_text']
+
         return activity_el
 
     def generate_iati_activities_xml(self, iati_activities: IatiActivities) -> str:

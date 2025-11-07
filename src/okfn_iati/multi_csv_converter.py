@@ -81,7 +81,8 @@ class IatiMultiCsvConverter:
                     'default_flow_type',
                     'default_finance_type',
                     'default_aid_type',
-                    'default_tied_status'
+                    'default_tied_status',
+                    'conditions_attached'
                 ]
             },
             'participating_orgs': {
@@ -259,6 +260,14 @@ class IatiMultiCsvConverter:
                     'website',
                     'mailing_address'
                 ]
+            },
+            'conditions': {
+                'filename': 'conditions.csv',
+                'columns': [
+                    'activity_identifier',  # Foreign key to activities
+                    'condition_type',
+                    'condition_text'
+                ]
             }
         }
 
@@ -420,7 +429,7 @@ class IatiMultiCsvConverter:
 
         print(f"✅ Generated CSV templates in: {output_folder}")
 
-    def _extract_activity_to_collections(
+    def _extract_activity_to_collections(  # noqa: C901
         self,
         activity_elem: ET.Element,
         data_collections: Dict[str, List[Dict]]
@@ -516,6 +525,13 @@ class IatiMultiCsvConverter:
         if contact_elem is not None:
             contact_data = self._extract_contact_data(contact_elem, activity_id)
             data_collections['contact_info'].append(contact_data)
+
+        # Extract conditions
+        conditions_elem = activity_elem.find('conditions')
+        if conditions_elem is not None:
+            for condition_elem in conditions_elem.findall('condition'):
+                condition_data = self._extract_condition_data(condition_elem, activity_id)
+                data_collections['conditions'].append(condition_data)
 
     def _get_activity_identifier(self, activity_elem: ET.Element) -> str:
         """Get activity identifier from XML element."""
@@ -664,11 +680,27 @@ class IatiMultiCsvConverter:
         tied_elem = activity_elem.find('default-tied-status')
         data['default_tied_status'] = tied_elem.get('code') if tied_elem is not None else ''
 
+        # Conditions attached
+        conditions_elem = activity_elem.find('conditions')
+        data['conditions_attached'] = conditions_elem.get('attached', '') if conditions_elem is not None else ''
+
         # Fill in empty values for missing columns
         for col in self.csv_files['activities']['columns']:
             if col not in data:
                 data[col] = ''
 
+        return data
+
+    def _extract_condition_data(self, condition_elem: ET.Element, activity_id: str) -> Dict[str, str]:
+        """Extract individual condition data."""
+        data = {
+            'activity_identifier': activity_id,
+            'condition_type': condition_elem.get('type', ''),
+            'condition_text': (
+                condition_elem.find('narrative').text
+                if condition_elem.find('narrative') is not None else ''
+            )
+        }
         return data
 
     def _extract_participating_org_data(self, org_elem: ET.Element, activity_id: str) -> Dict[str, str]:
@@ -1074,14 +1106,15 @@ class IatiMultiCsvConverter:
                 'indicators': [],
                 'indicator_periods': [],
                 'activity_date': [],
-                'contact_info': []
+                'contact_info': [],
+                'conditions': []
             }
 
         # Group related data
         for csv_type in [
             'participating_orgs', 'sectors', 'budgets', 'transactions',
             'transaction_sectors', 'locations', 'documents', 'results', 'indicators', 'indicator_periods',
-            'activity_date', 'contact_info'
+            'activity_date', 'contact_info', 'conditions'  # Add conditions
         ]:
             for row in data_collections.get(csv_type, []):
                 activity_id = row.get('activity_identifier')
@@ -1129,11 +1162,14 @@ class IatiMultiCsvConverter:
             }] if main_data.get('description') else [],
             activity_status=self._parse_activity_status(main_data.get('activity_status')),
             default_currency=main_data.get('default_currency', 'USD'),
-            humanitarian=humanitarian,  # Use parsed value
+            humanitarian=humanitarian,
             hierarchy=main_data.get('hierarchy', '1'),
             last_updated_datetime=main_data.get('last_updated_datetime'),
             xml_lang=main_data.get('xml_lang', 'en'),
-            activity_scope=self._parse_activity_scope(main_data.get('activity_scope'))
+            activity_scope=self._parse_activity_scope(main_data.get('activity_scope')),
+            # Add conditions as proper fields
+            conditions_attached=main_data.get('conditions_attached') or None,
+            conditions=data.get('conditions', [])
         )
 
         # Add dates
@@ -1207,6 +1243,16 @@ class IatiMultiCsvConverter:
             )
 
             activity.results.append(result)
+
+        # Add conditions_attached attribute
+        conditions_attached = main_data.get('conditions_attached', '')
+        if conditions_attached != '':
+            # Store as custom attribute on activity
+            activity.__dict__['conditions_attached'] = conditions_attached
+
+        # Store individual conditions
+        if data.get('conditions'):
+            activity.__dict__['conditions'] = data['conditions']
 
         return activity
 
