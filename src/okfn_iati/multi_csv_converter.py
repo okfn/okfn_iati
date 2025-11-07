@@ -1157,7 +1157,6 @@ class IatiMultiCsvConverter:
             ),
             title=[Narrative(text=main_data.get('title', ''))] if main_data.get('title') else [],
             description=[{
-                "type": "1",
                 "narratives": [Narrative(text=main_data.get('description', ''))]
             }] if main_data.get('description') else [],
             activity_status=self._parse_activity_status(main_data.get('activity_status')),
@@ -1167,10 +1166,8 @@ class IatiMultiCsvConverter:
             last_updated_datetime=main_data.get('last_updated_datetime'),
             xml_lang=main_data.get('xml_lang', 'en'),
             activity_scope=self._parse_activity_scope(main_data.get('activity_scope')),
-            # Add conditions as proper fields
             conditions_attached=main_data.get('conditions_attached') or None,
             conditions=data.get('conditions', []),
-            # Add default types as proper fields
             default_flow_type=main_data.get('default_flow_type') or None,
             default_finance_type=main_data.get('default_finance_type') or None,
             default_aid_type=main_data.get('default_aid_type') or None,
