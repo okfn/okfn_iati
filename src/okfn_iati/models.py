@@ -418,6 +418,7 @@ class Transaction:
     disbursement_channel: Optional[Union[DisbursementChannel, str]] = None
     recipient_region: Optional[Union[RecipientRegion, str]] = None
     sectors: List[Dict[str, Any]] = field(default_factory=list)
+    humanitarian: Optional[bool] = None  # Change from bool to Optional[bool]
 
     def __post_init__(self):  # noqa: C901
         # Convert strings to enums if needed

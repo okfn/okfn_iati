@@ -4,6 +4,12 @@ IATI Multi-CSV Converter - Convert between IATI XML and multiple related CSV fil
 This module provides a more structured approach to CSV conversion by splitting
 IATI data into multiple related CSV files that preserve the hierarchical structure
 while remaining user-friendly for editing in Excel or other tools.
+
+LIMITATIONS:
+- Custom namespace elements (e.g., USAID's usg:treasury-account) are NOT preserved
+  during XML -> CSV -> XML conversion. These are organization-specific extensions
+  that don't fit into the standard CSV structure.
+- If you need to preserve custom elements, use XML-to-XML transformations instead.
 """
 
 import csv
@@ -586,7 +592,8 @@ class IatiMultiCsvConverter:
 
         # Basic attributes
         data['default_currency'] = activity_elem.get('default-currency', '')
-        data['humanitarian'] = activity_elem.get('humanitarian', '0')
+        # Preserve exact humanitarian value: "" (missing), "0" (explicit false), "1" (explicit true)
+        data['humanitarian'] = activity_elem.get('humanitarian', '')
         data['hierarchy'] = activity_elem.get('hierarchy', '1')
         data['last_updated_datetime'] = activity_elem.get('last-updated-datetime', '')
         data['xml_lang'] = activity_elem.get('{http://www.w3.org/XML/1998/namespace}lang', 'en')
@@ -723,6 +730,7 @@ class IatiMultiCsvConverter:
         data = {'activity_identifier': activity_id}
 
         data['transaction_ref'] = trans_elem.get('ref', '')
+        # Preserve exact humanitarian value: "" (missing), "0" (explicit false), "1" (explicit true)
         data['humanitarian'] = trans_elem.get('humanitarian', '')
 
         # Transaction type
@@ -1095,6 +1103,15 @@ class IatiMultiCsvConverter:
         """Build an Activity object from grouped data."""
         main_data = data['main']
 
+        # Parse humanitarian: "" -> None, "0" -> False, "1" -> True
+        humanitarian_value = main_data.get('humanitarian', '')
+        if humanitarian_value == '':
+            humanitarian = None
+        elif humanitarian_value == '0':
+            humanitarian = False
+        else:  # '1' or any other truthy value
+            humanitarian = True
+
         # Create basic activity
         activity = Activity(
             iati_identifier=main_data['activity_identifier'],
@@ -1112,7 +1129,7 @@ class IatiMultiCsvConverter:
             }] if main_data.get('description') else [],
             activity_status=self._parse_activity_status(main_data.get('activity_status')),
             default_currency=main_data.get('default_currency', 'USD'),
-            humanitarian=main_data.get('humanitarian', '0') == '1',
+            humanitarian=humanitarian,  # Use parsed value
             hierarchy=main_data.get('hierarchy', '1'),
             last_updated_datetime=main_data.get('last_updated_datetime'),
             xml_lang=main_data.get('xml_lang', 'en'),
@@ -1343,19 +1360,29 @@ class IatiMultiCsvConverter:
             value_date=budget_data.get('value_date', '')
         )
 
-    def _build_transaction(
+    def _build_transaction(  # noqa C901
         self,
         trans_data: Dict[str, str],
         trans_sectors: Optional[List[Dict[str, str]]] = None
     ) -> Transaction:
         """Build Transaction from data."""
+        # Parse humanitarian: "" -> None, "0" -> False, "1" -> True
+        humanitarian_value = trans_data.get('humanitarian', '')
+        if humanitarian_value == '':
+            humanitarian = None
+        elif humanitarian_value == '0':
+            humanitarian = False
+        else:  # '1' or any other truthy value
+            humanitarian = True
+
         transaction_args = {
             'type': trans_data.get('transaction_type', '2'),
             'date': trans_data.get('transaction_date', ''),
             'value': float(trans_data.get('value', 0)) if trans_data.get('value') else 0.0,
             'currency': trans_data.get('currency', 'USD'),
             'value_date': trans_data.get('value_date', ''),
-            'transaction_ref': trans_data.get('transaction_ref')
+            'transaction_ref': trans_data.get('transaction_ref'),
+            'humanitarian': humanitarian  # Add parsed value
         }
 
         if trans_data.get('description'):
@@ -1705,28 +1732,3 @@ different aspect of IATI activities:
 Example: `XM-DAC-46002-CR-2025`
 
 """)
-
-
-"""
-Real life sample usage:
-
-python scripts/csv_tools.py xml-to-csv-folder data-samples/xml/CAF-ActivityFile-2025-10-10.xml data-samples/csv_folders/CAF
-and roll back to test
-python scripts/csv_tools.py csv-folder-to-xml data-samples/csv_folders/CAF data-samples/xml/CAF-ActivityFile-2025-10-10-back.xml
-
-python scripts/csv_tools.py xml-to-csv-folder data-samples/xml/iadb-Brazil.xml data-samples/csv_folders/IADBBrasil
-python scripts/csv_tools.py csv-folder-to-xml data-samples/csv_folders/IADBBrasil data-samples/xml/iadb-Brazil-back.xml
-
-python scripts/csv_tools.py xml-to-csv-folder data-samples/xml/usaid-798.xml data-samples/csv_folders/usaid-798
-python scripts/csv_tools.py csv-folder-to-xml data-samples/csv_folders/usaid-798 data-samples/xml/usaid-798-back.xml
- -> Error Warning: Generated XML has validation errors:
- {
- 'schema_errors':[],
- 'ruleset_errors': [
-   'Each activity must have either a sector element or all transactions must have sector elements',
-   'Each activity must have either a sector element or all transactions must have sector elements',
-   'Each activity must have either a sector element or all transactions must have sector elements',
-   'Each activity must have either a sector element or all transactions must have sector elements',
-   'Each activity must have either a sector element or all transactions must have sector elements'
-]
-"""

@@ -213,7 +213,8 @@ class IatiXmlGenerator:
         self._set_attribute(end_el, "iso-date", budget.period_end)
 
         value_el = ET.SubElement(budget_el, "value")
-        value_el.text = str(budget.value)
+        # Format value with 2 decimal places
+        value_el.text = f"{budget.value:.2f}"
 
         if budget.currency:
             self._set_attribute(value_el, "currency", budget.currency)
@@ -227,6 +228,10 @@ class IatiXmlGenerator:
         if transaction.transaction_ref:
             self._set_attribute(trans_el, "ref", transaction.transaction_ref)
 
+        # Handle humanitarian attribute - preserve exact original value
+        if transaction.humanitarian is not None:
+            self._set_attribute(trans_el, "humanitarian", "1" if transaction.humanitarian else "0")
+
         type_el = ET.SubElement(trans_el, "transaction-type")
         self._set_attribute(type_el, "code", self._get_enum_value(transaction.type))
 
@@ -234,7 +239,8 @@ class IatiXmlGenerator:
         self._set_attribute(date_el, "iso-date", transaction.date)
 
         value_el = ET.SubElement(trans_el, "value")
-        value_el.text = str(transaction.value)
+        # Format value with 2 decimal places
+        value_el.text = f"{transaction.value:.2f}"
 
         if transaction.currency:
             self._set_attribute(value_el, "currency", transaction.currency)
@@ -439,6 +445,7 @@ class IatiXmlGenerator:
         if activity.xml_lang:
             self._set_attribute(activity_el, "xml:lang", activity.xml_lang)
 
+        # Handle humanitarian attribute - preserve exact original value
         if activity.humanitarian is not None:
             self._set_attribute(activity_el, "humanitarian", "1" if activity.humanitarian else "0")
 
