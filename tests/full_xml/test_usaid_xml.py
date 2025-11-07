@@ -1,6 +1,7 @@
 import os
 import xml.etree.ElementTree as ET
 import unittest
+import tempfile
 from pathlib import Path
 from lxml import etree
 
@@ -21,6 +22,8 @@ from okfn_iati import (
     # Validator
     # IatiValidator,
 )
+from okfn_iati.multi_csv_converter import IatiMultiCsvConverter
+from okfn_iati.xml_comparator import IatiXmlComparator
 
 
 class TestUSAIDXML(unittest.TestCase):
@@ -33,6 +36,17 @@ class TestUSAIDXML(unittest.TestCase):
         )
         self.usaid_xml_path = os.path.join(self.data_dir, 'usaid-798.xml')
         self.output_path = os.path.join(os.path.dirname(__file__), 'test_usaid_generated.xml')
+
+        self.converter = IatiMultiCsvConverter()
+        self.comparator = IatiXmlComparator(
+            ignore_element_order=True,
+            ignore_whitespace=True,
+            ignore_empty_attributes=True
+        )
+
+        # Paths to test files
+        self.original_xml = Path(__file__).parent.parent.parent / "data-samples" / "xml" / "usaid-798.xml"
+        self.converted_xml = Path(__file__).parent.parent.parent / "data-samples" / "xml" / "usaid-798-back.xml"
 
     # def tearDown(self):
     #     """Clean up after tests by removing output files."""
@@ -533,6 +547,75 @@ class TestUSAIDXML(unittest.TestCase):
             self.assertIsNotNone(title, "Document link should have a title")
 
         print(f"XML validation successful: Found {valid_activity_count} valid IATI activities")
+
+    def test_xml_roundtrip_conversion(self):
+        """Test that XML -> CSV -> XML roundtrip preserves data."""
+        with tempfile.TemporaryDirectory() as tmpdir:
+            csv_folder = Path(tmpdir) / "csv"
+            output_xml = Path(tmpdir) / "output.xml"
+
+            # Convert XML to CSV
+            success = self.converter.xml_to_csv_folder(
+                self.original_xml,
+                csv_folder,
+                overwrite=True
+            )
+            self.assertTrue(success, "XML to CSV conversion failed")
+
+            # Convert CSV back to XML
+            success = self.converter.csv_folder_to_xml(
+                csv_folder,
+                output_xml,
+                validate_output=False
+            )
+            self.assertTrue(success, "CSV to XML conversion failed")
+
+            # Compare original and converted XML
+            are_equivalent, differences = self.comparator.compare_files(
+                str(self.original_xml),
+                str(output_xml)
+            )
+
+            # Print differences if any
+            if not are_equivalent:
+                print("\n" + "="*80)
+                print("XML COMPARISON DIFFERENCES:")
+                print("="*80)
+                print(self.comparator.format_differences(differences, show_non_relevant=False))
+                print("="*80)
+
+            # Assert files are equivalent
+            self.assertTrue(
+                are_equivalent,
+                "Roundtrip conversion produced differences. See output above."
+            )
+
+    def test_compare_existing_converted_file(self):
+        """Test comparison of existing original and converted XML files."""
+        if not self.converted_xml.exists():
+            self.skipTest(f"Converted XML file not found: {self.converted_xml}")
+
+        are_equivalent, differences = self.comparator.compare_files(
+            str(self.original_xml),
+            str(self.converted_xml)
+        )
+
+        # Print differences
+        print("\n" + "="*80)
+        print(f"Comparing: {self.original_xml.name} vs {self.converted_xml.name}")
+        print("="*80)
+        print(self.comparator.format_differences(differences, show_non_relevant=False))
+        print("="*80)
+
+        # Count relevant vs non-relevant differences
+        relevant_count = len([d for d in differences if d.is_relevant])
+        non_relevant_count = len([d for d in differences if not d.is_relevant])
+
+        print(f"\nSummary: {relevant_count} relevant, {non_relevant_count} non-relevant differences")
+
+        # This test is informational - it shows differences but doesn't fail
+        # You can make it strict by uncommenting the next line:
+        # self.assertTrue(are_equivalent, "Files have relevant differences")
 
 
 if __name__ == "__main__":

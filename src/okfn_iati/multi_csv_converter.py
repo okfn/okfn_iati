@@ -4,6 +4,12 @@ IATI Multi-CSV Converter - Convert between IATI XML and multiple related CSV fil
 This module provides a more structured approach to CSV conversion by splitting
 IATI data into multiple related CSV files that preserve the hierarchical structure
 while remaining user-friendly for editing in Excel or other tools.
+
+LIMITATIONS:
+- Custom namespace elements (e.g., USAID's usg:treasury-account) are NOT preserved
+  during XML -> CSV -> XML conversion. These are organization-specific extensions
+  that don't fit into the standard CSV structure.
+- If you need to preserve custom elements, use XML-to-XML transformations instead.
 """
 
 import csv
@@ -52,7 +58,9 @@ class IatiMultiCsvConverter:
                 'columns': [
                     'activity_identifier',  # Primary key
                     'title',
+                    'title_lang',  # NEW: lang attribute for title narrative
                     'description',
+                    'description_lang',  # NEW: lang attribute for description narrative
                     'activity_status',
                     'activity_scope',
                     'default_currency',
@@ -62,6 +70,7 @@ class IatiMultiCsvConverter:
                     'xml_lang',
                     'reporting_org_ref',
                     'reporting_org_name',
+                    'reporting_org_name_lang',  # NEW: lang attribute for reporting org narrative
                     'reporting_org_type',
                     'planned_start_date',
                     'actual_start_date',
@@ -75,7 +84,8 @@ class IatiMultiCsvConverter:
                     'default_flow_type',
                     'default_finance_type',
                     'default_aid_type',
-                    'default_tied_status'
+                    'default_tied_status',
+                    'conditions_attached'
                 ]
             },
             'participating_orgs': {
@@ -146,6 +156,7 @@ class IatiMultiCsvConverter:
                 'columns': [
                     'activity_identifier',  # Foreign key to activities
                     'transaction_ref',  # Foreign key to transactions
+                    'transaction_type',  # NEW: transaction type code to uniquely identify transaction
                     'sector_code',
                     'sector_name',
                     'vocabulary',
@@ -252,6 +263,14 @@ class IatiMultiCsvConverter:
                     'email',
                     'website',
                     'mailing_address'
+                ]
+            },
+            'conditions': {
+                'filename': 'conditions.csv',
+                'columns': [
+                    'activity_identifier',  # Foreign key to activities
+                    'condition_type',
+                    'condition_text'
                 ]
             }
         }
@@ -414,7 +433,7 @@ class IatiMultiCsvConverter:
 
         print(f"✅ Generated CSV templates in: {output_folder}")
 
-    def _extract_activity_to_collections(
+    def _extract_activity_to_collections(  # noqa: C901
         self,
         activity_elem: ET.Element,
         data_collections: Dict[str, List[Dict]]
@@ -441,20 +460,38 @@ class IatiMultiCsvConverter:
             budget_data = self._extract_budget_data(budget_elem, activity_id)
             data_collections['budgets'].append(budget_data)
 
-        # Extract transactions
+        # Extract transactions with deduplication
+        seen_transaction_sectors = set()  # Track (activity_id, transaction_ref, transaction_type, sector_code, vocabulary)
+
         for trans_elem in activity_elem.findall('transaction'):
             trans_data = self._extract_transaction_data(trans_elem, activity_id)
             data_collections['transactions'].append(trans_data)
 
-            # Extract transaction sectors
+            # Extract transaction sectors with deduplication
             transaction_ref = trans_data.get('transaction_ref', '')
+            transaction_type = trans_data.get('transaction_type', '')  # NEW: Get transaction type
+
             for sector_elem in trans_elem.findall('sector'):
                 sector_data = self._extract_transaction_sector_data(
                     sector_elem,
                     activity_id,
-                    transaction_ref
+                    transaction_ref,
+                    transaction_type  # NEW: Pass transaction type
                 )
-                data_collections['transaction_sectors'].append(sector_data)
+
+                # Create unique key for this transaction sector
+                sector_key = (
+                    activity_id,
+                    transaction_ref,
+                    transaction_type,  # NEW: Include type in unique key
+                    sector_data.get('sector_code', ''),
+                    sector_data.get('vocabulary', '1')
+                )
+
+                # Only add if we haven't seen this exact combination before
+                if sector_key not in seen_transaction_sectors:
+                    seen_transaction_sectors.add(sector_key)
+                    data_collections['transaction_sectors'].append(sector_data)
 
         # Extract locations
         for location_elem in activity_elem.findall('location'):
@@ -511,6 +548,13 @@ class IatiMultiCsvConverter:
             contact_data = self._extract_contact_data(contact_elem, activity_id)
             data_collections['contact_info'].append(contact_data)
 
+        # Extract conditions
+        conditions_elem = activity_elem.find('conditions')
+        if conditions_elem is not None:
+            for condition_elem in conditions_elem.findall('condition'):
+                condition_data = self._extract_condition_data(condition_elem, activity_id)
+                data_collections['conditions'].append(condition_data)
+
     def _get_activity_identifier(self, activity_elem: ET.Element) -> str:
         """Get activity identifier from XML element."""
         id_elem = activity_elem.find('iati-identifier')
@@ -563,12 +607,14 @@ class IatiMultiCsvConverter:
         self,
         sector_elem: ET.Element,
         activity_id: str,
-        transaction_ref: str
+        transaction_ref: str,
+        transaction_type: str  # NEW: Add transaction_type parameter
     ) -> Dict[str, str]:
         """Extract transaction sector data."""
         data = {
             'activity_identifier': activity_id,
-            'transaction_ref': transaction_ref
+            'transaction_ref': transaction_ref,
+            'transaction_type': transaction_type  # NEW: Include transaction type
         }
 
         data['sector_code'] = sector_elem.get('code', '')
@@ -586,20 +632,25 @@ class IatiMultiCsvConverter:
 
         # Basic attributes
         data['default_currency'] = activity_elem.get('default-currency', '')
-        data['humanitarian'] = activity_elem.get('humanitarian', '0')
+        # Preserve exact humanitarian value: "" (missing), "0" (explicit false), "1" (explicit true)
+        data['humanitarian'] = activity_elem.get('humanitarian', '')
         data['hierarchy'] = activity_elem.get('hierarchy', '1')
         data['last_updated_datetime'] = activity_elem.get('last-updated-datetime', '')
         data['xml_lang'] = activity_elem.get('{http://www.w3.org/XML/1998/namespace}lang', 'en')
 
-        # Title
+        # Title - extract lang attribute from narrative
         title_elem = activity_elem.find('title/narrative')
         data['title'] = title_elem.text if title_elem is not None else ''
+        data['title_lang'] = title_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if title_elem is not None else ''
 
-        # Description
+        # Description - extract lang attribute from narrative
         desc_elem = activity_elem.find('description[@type="1"]/narrative')
         if desc_elem is None:
             desc_elem = activity_elem.find('description/narrative')
         data['description'] = desc_elem.text if desc_elem is not None else ''
+        data['description_lang'] = (
+            desc_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if desc_elem is not None else ''
+        )
 
         # Activity status
         status_elem = activity_elem.find('activity-status')
@@ -609,17 +660,21 @@ class IatiMultiCsvConverter:
         scope_elem = activity_elem.find('activity-scope')
         data['activity_scope'] = scope_elem.get('code') if scope_elem is not None else ''
 
-        # Reporting organization
+        # Reporting organization - extract lang from narrative
         rep_org_elem = activity_elem.find('reporting-org')
         if rep_org_elem is not None:
             data['reporting_org_ref'] = rep_org_elem.get('ref', '')
             data['reporting_org_type'] = rep_org_elem.get('type', '')
             rep_org_name = rep_org_elem.find('narrative')
             data['reporting_org_name'] = rep_org_name.text if rep_org_name is not None else ''
+            data['reporting_org_name_lang'] = (
+                rep_org_name.get('{http://www.w3.org/XML/1998/namespace}lang', '') if rep_org_name is not None else ''
+            )
         else:
             data['reporting_org_ref'] = ''
             data['reporting_org_type'] = ''
             data['reporting_org_name'] = ''
+            data['reporting_org_name_lang'] = ''
 
         # Recipient country (first one only for main table)
         country_elem = activity_elem.find('recipient-country')
@@ -657,11 +712,27 @@ class IatiMultiCsvConverter:
         tied_elem = activity_elem.find('default-tied-status')
         data['default_tied_status'] = tied_elem.get('code') if tied_elem is not None else ''
 
+        # Conditions attached
+        conditions_elem = activity_elem.find('conditions')
+        data['conditions_attached'] = conditions_elem.get('attached', '') if conditions_elem is not None else ''
+
         # Fill in empty values for missing columns
         for col in self.csv_files['activities']['columns']:
             if col not in data:
                 data[col] = ''
 
+        return data
+
+    def _extract_condition_data(self, condition_elem: ET.Element, activity_id: str) -> Dict[str, str]:
+        """Extract individual condition data."""
+        data = {
+            'activity_identifier': activity_id,
+            'condition_type': condition_elem.get('type', ''),
+            'condition_text': (
+                condition_elem.find('narrative').text
+                if condition_elem.find('narrative') is not None else ''
+            )
+        }
         return data
 
     def _extract_participating_org_data(self, org_elem: ET.Element, activity_id: str) -> Dict[str, str]:
@@ -723,6 +794,7 @@ class IatiMultiCsvConverter:
         data = {'activity_identifier': activity_id}
 
         data['transaction_ref'] = trans_elem.get('ref', '')
+        # Preserve exact humanitarian value: "" (missing), "0" (explicit false), "1" (explicit true)
         data['humanitarian'] = trans_elem.get('humanitarian', '')
 
         # Transaction type
@@ -1066,14 +1138,15 @@ class IatiMultiCsvConverter:
                 'indicators': [],
                 'indicator_periods': [],
                 'activity_date': [],
-                'contact_info': []
+                'contact_info': [],
+                'conditions': []
             }
 
         # Group related data
         for csv_type in [
             'participating_orgs', 'sectors', 'budgets', 'transactions',
             'transaction_sectors', 'locations', 'documents', 'results', 'indicators', 'indicator_periods',
-            'activity_date', 'contact_info'
+            'activity_date', 'contact_info', 'conditions'  # Add conditions
         ]:
             for row in data_collections.get(csv_type, []):
                 activity_id = row.get('activity_identifier')
@@ -1091,9 +1164,29 @@ class IatiMultiCsvConverter:
 
         return activities
 
-    def _build_activity_from_data(self, data: Dict[str, Any]) -> Activity:
+    def _build_activity_from_data(self, data: Dict[str, Any]) -> Activity:  # noqa: C901
         """Build an Activity object from grouped data."""
         main_data = data['main']
+
+        # Parse humanitarian: "" -> None, "0" -> False, "1" -> True
+        humanitarian_value = main_data.get('humanitarian', '')
+        if humanitarian_value == '':
+            humanitarian = None
+        elif humanitarian_value == '0':
+            humanitarian = False
+        else:  # '1' or any other truthy value
+            humanitarian = True
+
+        # Get the activity's default language
+        default_lang = main_data.get('xml_lang', 'en')
+
+        # Helper function to create narrative with conditional lang
+        def create_narrative(text: str, lang_value: str) -> Narrative:
+            """Create Narrative with lang only if it was in the original XML."""
+            if lang_value:  # If we have a lang value from CSV (even if empty string was stored)
+                return Narrative(text=text, lang=lang_value)
+            else:  # No lang in original XML
+                return Narrative(text=text)
 
         # Create basic activity
         activity = Activity(
@@ -1102,21 +1195,39 @@ class IatiMultiCsvConverter:
                 ref=main_data.get('reporting_org_ref', ''),
                 type=main_data.get('reporting_org_type', ''),
                 narratives=[
-                    Narrative(text=main_data.get('reporting_org_name', ''))
+                    create_narrative(
+                        main_data.get('reporting_org_name', ''),
+                        main_data.get('reporting_org_name_lang', '')
+                    )
                 ] if main_data.get('reporting_org_name') else []
             ),
-            title=[Narrative(text=main_data.get('title', ''))] if main_data.get('title') else [],
+            title=[
+                create_narrative(
+                    main_data.get('title', ''),
+                    main_data.get('title_lang', '')
+                )
+            ] if main_data.get('title') else [],
             description=[{
-                "type": "1",
-                "narratives": [Narrative(text=main_data.get('description', ''))]
+                "narratives": [
+                    create_narrative(
+                        main_data.get('description', ''),
+                        main_data.get('description_lang', '')
+                    )
+                ]
             }] if main_data.get('description') else [],
             activity_status=self._parse_activity_status(main_data.get('activity_status')),
             default_currency=main_data.get('default_currency', 'USD'),
-            humanitarian=main_data.get('humanitarian', '0') == '1',
+            humanitarian=humanitarian,
             hierarchy=main_data.get('hierarchy', '1'),
             last_updated_datetime=main_data.get('last_updated_datetime'),
-            xml_lang=main_data.get('xml_lang', 'en'),
-            activity_scope=self._parse_activity_scope(main_data.get('activity_scope'))
+            xml_lang=default_lang,
+            activity_scope=self._parse_activity_scope(main_data.get('activity_scope')),
+            conditions_attached=main_data.get('conditions_attached') or None,
+            conditions=data.get('conditions', []),
+            default_flow_type=main_data.get('default_flow_type') or None,
+            default_finance_type=main_data.get('default_finance_type') or None,
+            default_aid_type=main_data.get('default_aid_type') or None,
+            default_tied_status=main_data.get('default_tied_status') or None
         )
 
         # Add dates
@@ -1143,10 +1254,22 @@ class IatiMultiCsvConverter:
         # Add transactions
         for trans_data in data['transactions']:
             trans_ref = trans_data.get('transaction_ref')
-            transaction_sectors_data = [
-                row for row in data.get('transaction_sectors', [])
-                if row.get('transaction_ref') == trans_ref and row.get('activity_identifier') == activity.iati_identifier
-            ]
+            trans_type = trans_data.get('transaction_type')  # NEW: Get transaction type
+
+            # Get unique transaction sectors for THIS specific transaction (ref + type)
+            seen_sectors = set()
+            transaction_sectors_data = []
+            for row in data.get('transaction_sectors', []):
+                if (
+                    row.get('transaction_ref') == trans_ref and
+                    row.get('transaction_type') == trans_type and
+                    row.get('activity_identifier') == activity.iati_identifier
+                ):
+                    sector_key = (row.get('sector_code', ''), row.get('vocabulary', '1'))
+                    if sector_key not in seen_sectors:
+                        seen_sectors.add(sector_key)
+                        transaction_sectors_data.append(row)
+
             activity.transactions.append(self._build_transaction(trans_data, transaction_sectors_data))
 
         # Add locations
@@ -1190,6 +1313,16 @@ class IatiMultiCsvConverter:
             )
 
             activity.results.append(result)
+
+        # Add conditions_attached attribute
+        conditions_attached = main_data.get('conditions_attached', '')
+        if conditions_attached != '':
+            # Store as custom attribute on activity
+            activity.__dict__['conditions_attached'] = conditions_attached
+
+        # Store individual conditions
+        if data.get('conditions'):
+            activity.__dict__['conditions'] = data['conditions']
 
         return activity
 
@@ -1277,10 +1410,7 @@ class IatiMultiCsvConverter:
             activity.recipient_regions.append(region_data)
 
     def _add_default_types_from_main_data(self, activity: Activity, main_data: Dict[str, str]) -> None:
-        """Add default flow/finance/aid/tied status from main data as activity-level attributes."""
-        # Note: These are stored as activity attributes in IATI, not as separate elements
-        # They would be used when creating transactions or other elements if not specified
-
+        """Add collaboration type from main data."""
         # Add collaboration type if present
         collaboration_type = main_data.get('collaboration_type')
         if collaboration_type:
@@ -1288,14 +1418,6 @@ class IatiMultiCsvConverter:
                 activity.collaboration_type = CollaborationType(collaboration_type)
             except (ValueError, TypeError):
                 pass  # Skip invalid collaboration type
-
-        # Store default types for use in transactions (if not overridden)
-        # Note: These are not standard Activity model attributes, but we'll store them as custom attributes
-        if hasattr(activity, '__dict__'):
-            activity.__dict__['default_flow_type'] = main_data.get('default_flow_type')
-            activity.__dict__['default_finance_type'] = main_data.get('default_finance_type')
-            activity.__dict__['default_aid_type'] = main_data.get('default_aid_type')
-            activity.__dict__['default_tied_status'] = main_data.get('default_tied_status')
 
     def _build_participating_org(self, org_data: Dict[str, str]) -> ParticipatingOrg:
         """Build ParticipatingOrg from data."""
@@ -1343,19 +1465,29 @@ class IatiMultiCsvConverter:
             value_date=budget_data.get('value_date', '')
         )
 
-    def _build_transaction(
+    def _build_transaction(  # noqa C901
         self,
         trans_data: Dict[str, str],
         trans_sectors: Optional[List[Dict[str, str]]] = None
     ) -> Transaction:
         """Build Transaction from data."""
+        # Parse humanitarian: "" -> None, "0" -> False, "1" -> True
+        humanitarian_value = trans_data.get('humanitarian', '')
+        if humanitarian_value == '':
+            humanitarian = None
+        elif humanitarian_value == '0':
+            humanitarian = False
+        else:  # '1' or any other truthy value
+            humanitarian = True
+
         transaction_args = {
             'type': trans_data.get('transaction_type', '2'),
             'date': trans_data.get('transaction_date', ''),
             'value': float(trans_data.get('value', 0)) if trans_data.get('value') else 0.0,
             'currency': trans_data.get('currency', 'USD'),
             'value_date': trans_data.get('value_date', ''),
-            'transaction_ref': trans_data.get('transaction_ref')
+            'transaction_ref': trans_data.get('transaction_ref'),
+            'humanitarian': humanitarian  # Add parsed value
         }
 
         if trans_data.get('description'):
@@ -1456,8 +1588,13 @@ class IatiMultiCsvConverter:
             contact_args['organisation'] = [Narrative(text=contact_data['organisation'])]
         if contact_data.get('department'):
             contact_args['department'] = [Narrative(text=contact_data['department'])]
-        if contact_data.get('person_name'):
-            contact_args['person_name'] = [Narrative(text=contact_data['person_name'])]
+
+        # FIX: Always include person_name if it exists in CSV, even if empty
+        # This preserves the XML structure
+        if 'person_name' in contact_data:
+            # Include even if empty string
+            contact_args['person_name'] = [Narrative(text=contact_data.get('person_name', ''))]
+
         if contact_data.get('job_title'):
             contact_args['job_title'] = [Narrative(text=contact_data['job_title'])]
         if contact_data.get('telephone'):
@@ -1705,28 +1842,3 @@ different aspect of IATI activities:
 Example: `XM-DAC-46002-CR-2025`
 
 """)
-
-
-"""
-Real life sample usage:
-
-python scripts/csv_tools.py xml-to-csv-folder data-samples/xml/CAF-ActivityFile-2025-10-10.xml data-samples/csv_folders/CAF
-and roll back to test
-python scripts/csv_tools.py csv-folder-to-xml data-samples/csv_folders/CAF data-samples/xml/CAF-ActivityFile-2025-10-10-back.xml
-
-python scripts/csv_tools.py xml-to-csv-folder data-samples/xml/iadb-Brazil.xml data-samples/csv_folders/IADBBrasil
-python scripts/csv_tools.py csv-folder-to-xml data-samples/csv_folders/IADBBrasil data-samples/xml/iadb-Brazil-back.xml
-
-python scripts/csv_tools.py xml-to-csv-folder data-samples/xml/usaid-798.xml data-samples/csv_folders/usaid-798
-python scripts/csv_tools.py csv-folder-to-xml data-samples/csv_folders/usaid-798 data-samples/xml/usaid-798-back.xml
- -> Error Warning: Generated XML has validation errors:
- {
- 'schema_errors':[],
- 'ruleset_errors': [
-   'Each activity must have either a sector element or all transactions must have sector elements',
-   'Each activity must have either a sector element or all transactions must have sector elements',
-   'Each activity must have either a sector element or all transactions must have sector elements',
-   'Each activity must have either a sector element or all transactions must have sector elements',
-   'Each activity must have either a sector element or all transactions must have sector elements'
-]
-"""

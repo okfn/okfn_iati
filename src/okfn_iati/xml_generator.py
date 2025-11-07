@@ -213,7 +213,8 @@ class IatiXmlGenerator:
         self._set_attribute(end_el, "iso-date", budget.period_end)
 
         value_el = ET.SubElement(budget_el, "value")
-        value_el.text = str(budget.value)
+        # Format value with 2 decimal places
+        value_el.text = f"{budget.value:.2f}"
 
         if budget.currency:
             self._set_attribute(value_el, "currency", budget.currency)
@@ -227,6 +228,10 @@ class IatiXmlGenerator:
         if transaction.transaction_ref:
             self._set_attribute(trans_el, "ref", transaction.transaction_ref)
 
+        # Handle humanitarian attribute - preserve exact original value
+        if transaction.humanitarian is not None:
+            self._set_attribute(trans_el, "humanitarian", "1" if transaction.humanitarian else "0")
+
         type_el = ET.SubElement(trans_el, "transaction-type")
         self._set_attribute(type_el, "code", self._get_enum_value(transaction.type))
 
@@ -234,7 +239,8 @@ class IatiXmlGenerator:
         self._set_attribute(date_el, "iso-date", transaction.date)
 
         value_el = ET.SubElement(trans_el, "value")
-        value_el.text = str(transaction.value)
+        # Format value with 2 decimal places
+        value_el.text = f"{transaction.value:.2f}"
 
         if transaction.currency:
             self._set_attribute(value_el, "currency", transaction.currency)
@@ -439,6 +445,7 @@ class IatiXmlGenerator:
         if activity.xml_lang:
             self._set_attribute(activity_el, "xml:lang", activity.xml_lang)
 
+        # Handle humanitarian attribute - preserve exact original value
         if activity.humanitarian is not None:
             self._set_attribute(activity_el, "humanitarian", "1" if activity.humanitarian else "0")
 
@@ -497,6 +504,36 @@ class IatiXmlGenerator:
         # 8. Add contact info
         if activity.contact_info:
             self._add_contact_info(activity_el, activity.contact_info)
+
+        # 8a. Add activity-scope
+        if activity.activity_scope:
+            scope_el = ET.SubElement(activity_el, "activity-scope")
+            self._set_attribute(scope_el, "code", self._get_enum_value(activity.activity_scope))
+
+        # 8b. Add collaboration-type
+        if activity.collaboration_type:
+            collab_el = ET.SubElement(activity_el, "collaboration-type")
+            self._set_attribute(collab_el, "code", self._get_enum_value(activity.collaboration_type))
+
+        # 8c. Add default-flow-type (from proper field)
+        if activity.default_flow_type:
+            flow_el = ET.SubElement(activity_el, "default-flow-type")
+            self._set_attribute(flow_el, "code", activity.default_flow_type)
+
+        # 8d. Add default-finance-type (from proper field)
+        if activity.default_finance_type:
+            finance_el = ET.SubElement(activity_el, "default-finance-type")
+            self._set_attribute(finance_el, "code", activity.default_finance_type)
+
+        # 8e. Add default-aid-type (from proper field)
+        if activity.default_aid_type:
+            aid_el = ET.SubElement(activity_el, "default-aid-type")
+            self._set_attribute(aid_el, "code", activity.default_aid_type)
+
+        # 8f. Add default-tied-status (from proper field)
+        if activity.default_tied_status:
+            tied_el = ET.SubElement(activity_el, "default-tied-status")
+            self._set_attribute(tied_el, "code", activity.default_tied_status)
 
         # 9. Add recipient countries
         for country in activity.recipient_countries:
@@ -563,6 +600,21 @@ class IatiXmlGenerator:
         # 17. Add results
         for result in activity.results:
             self._add_result(activity_el, result)
+
+        # 18. Add conditions (if present)
+        if activity.conditions_attached is not None:
+            conditions_el = ET.SubElement(activity_el, "conditions")
+            self._set_attribute(conditions_el, "attached", activity.conditions_attached)
+
+            # Add individual condition elements
+            for condition_data in activity.conditions:
+                condition_el = ET.SubElement(conditions_el, "condition")
+                if condition_data.get('condition_type'):
+                    self._set_attribute(condition_el, "type", condition_data['condition_type'])
+
+                if condition_data.get('condition_text'):
+                    narrative_el = ET.SubElement(condition_el, "narrative")
+                    narrative_el.text = condition_data['condition_text']
 
         return activity_el
 

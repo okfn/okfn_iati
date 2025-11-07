@@ -12,8 +12,8 @@ MIN_XML = """<?xml version="1.0" encoding="UTF-8"?>
     <reporting-org ref="XM-DAC-46002" type="40"><narrative>CABEI</narrative></reporting-org>
     <title><narrative>Minimal Activity</narrative></title>
     <activity-status code="2"/>
-    <activity-date type="start-planned" iso-date="2023-01-15"/>
-    <activity-date type="end-planned" iso-date="2025-12-31"/>
+    <activity-date type="1" iso-date="2023-01-15"/>
+    <activity-date type="3" iso-date="2025-12-31"/>
     <recipient-country code="CR"><narrative>Costa Rica</narrative></recipient-country>
     <sector vocabulary="1" code="21020" percentage="100"><narrative>Road transport</narrative></sector>
   </iati-activity>
