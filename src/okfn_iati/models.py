@@ -10,7 +10,7 @@ from okfn_iati.enums import (
     LocationReach, LocationType, OrganisationRole, OrganisationType,
     RelatedActivityType,
     ResultType, SectorCategory, TiedStatus, TransactionType, LocationID,
-    DisbursementChannel, RecipientRegion
+    DisbursementChannel, RecipientRegion, CollaborationType
 )
 from okfn_iati.validators import crs_channel_code_validator
 
@@ -704,6 +704,7 @@ class Activity:
     xml_lang: Optional[str] = "en"  # ISO 639-1 language code
     humanitarian: Optional[bool] = None  # True if humanitarian activity, False otherwise
     activity_scope: Optional[Union[ActivityScope, str]] = None
+    collaboration_type: Optional[Union[CollaborationType, str]] = None  # Add collaboration_type field
 
     conditions_attached: Optional[str] = None  # "0" or "1" or None (missing)
     conditions: List[Dict[str, str]] = field(default_factory=list)
@@ -738,6 +739,13 @@ class Activity:
         if isinstance(self.activity_scope, str) and self.activity_scope is not None:
             try:
                 self.activity_scope = next(e for e in ActivityScope if e.value == self.activity_scope)
+            except (StopIteration, ValueError):
+                pass
+
+        # Convert collaboration_type to enum if it's a string
+        if isinstance(self.collaboration_type, str) and self.collaboration_type is not None:
+            try:
+                self.collaboration_type = next(e for e in CollaborationType if e.value == self.collaboration_type)
             except (StopIteration, ValueError):
                 pass
 
