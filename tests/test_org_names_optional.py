@@ -51,7 +51,7 @@ class TestOrganisationNamesOptional(unittest.TestCase):
         self.assertIsNone(narratives[0].get("{http://www.w3.org/XML/1998/namespace}lang"))
 
     def test_xml_to_csv_with_single_name_does_not_create_names_csv(self):
-        """XML con un solo <narrative>: NO se debe generar names.csv."""
+        """XML with a single <narrative>: names.csv should NOT be generated."""
         in_xml = self.tmp / "one_name.xml"
         in_xml.write_text(
             """<?xml version="1.0" encoding="UTF-8"?>
@@ -73,7 +73,7 @@ class TestOrganisationNamesOptional(unittest.TestCase):
         self.assertFalse((out_folder / "names.csv").exists(), "names.csv no debería existir con un solo nombre")
 
     def test_xml_to_csv_with_multiple_names_creates_names_csv(self):
-        """XML con múltiples <narrative>: DEBE crearse names.csv con filas por idioma."""
+        """XML with multiple <narrative>: MUST create names.csv with rows per language."""
         in_xml = self.tmp / "multi_name.xml"
         in_xml.write_text(
             """<?xml version="1.0" encoding="UTF-8"?>
@@ -114,7 +114,7 @@ class TestOrganisationNamesOptional(unittest.TestCase):
         )
 
     def test_csv_to_xml_missing_main_name_raises_value_error(self):
-        """Si falta 'Name' en organisations.csv, debe lanzar ValueError."""
+        """If 'Name' is missing in organisations.csv, should raise ValueError."""
         folder = self.tmp / "csv_in_bad"
         folder.mkdir()
         org_csv = folder / "organisations.csv"
@@ -131,7 +131,3 @@ class TestOrganisationNamesOptional(unittest.TestCase):
         conv = IatiOrganisationCSVConverter()
         with self.assertRaises(ValueError):
             conv.convert_folder_to_xml(folder, out_xml)
-
-
-if __name__ == "__main__":
-    unittest.main(verbosity=2)
