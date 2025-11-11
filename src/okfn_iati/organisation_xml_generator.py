@@ -583,13 +583,26 @@ class IatiOrganisationCSVConverter:
         if not org_identifier or not name:
             raise ValueError("Missing required 'organisation identifier' or 'name' in the file")
 
+        # Extract xml_lang (accepts both 'xml_lang' and 'xml:lang')
+        xml_lang = (
+            row.get("xml_lang")
+            or row.get("xml:lang")
+            or row.get("Xml Lang")
+            or "en"
+        )
+
+        # Extract default currency if available
+        default_currency = row.get("default_currency") or row.get("currency") or "USD"
+
         # Create organisation record
         record = OrganisationRecord(
             org_identifier=org_identifier,
             name=name,
             reporting_org_ref=_get_field(row, self.FIELD_MAPPINGS["reporting_org_ref"]),
             reporting_org_type=_get_field(row, self.FIELD_MAPPINGS["reporting_org_type"]),
-            reporting_org_name=_get_field(row, self.FIELD_MAPPINGS["reporting_org_name"])
+            reporting_org_name=_get_field(row, self.FIELD_MAPPINGS["reporting_org_name"]),
+            xml_lang=xml_lang,
+            default_currency=default_currency
         )
 
         # Extract budget if present
@@ -1034,7 +1047,14 @@ class IatiOrganisationMultiCsvConverter:
             # Write CSV files
             self._write_organisations_csv(organisations_data, output_path / "organisations.csv")
 
-            if names_data:
+            # Only create names.csv if there are multiple names per organisation
+            multi_name_count = 0
+            for org_id in {n["organisation_identifier"] for n in names_data}:
+                names_for_org = [n for n in names_data if n["organisation_identifier"] == org_id]
+                if len(names_for_org) > 1:
+                    multi_name_count += 1
+
+            if multi_name_count > 0:
                 self._write_names_csv(names_data, output_path / "names.csv")
 
             if budgets_data:
