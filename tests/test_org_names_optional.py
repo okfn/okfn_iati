@@ -134,14 +134,14 @@ class TestOrganisationNamesOptional(unittest.TestCase):
 
     def test_csv_to_xml_missing_xml_lang_logs_warning_and_defaults_to_en(self):
         """
-        Si falta 'xml_lang' y no hay names.csv: NO debe fallar.
-        Debe loguear WARNING y asumir xml:lang='en' en el XML resultante.
+        If 'xml_lang' is missing and there is no names.csv: should NOT fail.
+        Should log WARNING and assume xml:lang='en' in the resulting XML.
         """
         folder = self.tmp / "csv_in_missing_lang"
         folder.mkdir()
         org_csv = folder / "organisations.csv"
 
-        # organisations.csv sin xml_lang ni names.csv
+        # organisations.csv without xml_lang and no names.csv
         with org_csv.open("w", newline="", encoding="utf-8") as f:
             w = csv.writer(f)
             w.writerow([
@@ -155,26 +155,26 @@ class TestOrganisationNamesOptional(unittest.TestCase):
         out_xml = self.tmp / "out_missing_lang.xml"
         conv = IatiOrganisationCSVConverter()
 
-        # Capturamos WARNING y verificamos fallback
+        # Capture WARNING and verify fallback
         with self.assertLogs('okfn_iati.organisation_xml_generator', level='WARNING') as log:
             result = conv.convert_folder_to_xml(folder, out_xml)
 
-        # Se generó el archivo
+        # File was generated
         self.assertEqual(str(out_xml), result)
-        self.assertTrue(out_xml.exists(), "Debe generarse el XML aun sin xml_lang")
+        self.assertTrue(out_xml.exists(), "XML should be generated even without xml_lang")
 
-        # Se logueó el WARNING por xml_lang faltante
+        # WARNING was logged for missing xml_lang
         self.assertTrue(
             any("Missing 'xml_lang'" in msg for msg in log.output),
-            f"No se encontró WARNING esperado en logs: {log.output}"
+            f"Expected WARNING not found in logs: {log.output}"
         )
 
-        # El XML debe llevar xml:lang='en' por defecto
+        # XML should have xml:lang='en' by default
         root = ET.parse(out_xml).getroot()
         org = root.find("iati-organisation")
-        self.assertIsNotNone(org, "Debe existir <iati-organisation>")
+        self.assertIsNotNone(org, "<iati-organisation> should exist")
         self.assertEqual(
             org.get("{http://www.w3.org/XML/1998/namespace}lang"),
             "en",
-            "Debe aplicarse fallback xml:lang='en' cuando falta en CSV"
+            "Should apply fallback xml:lang='en' when missing in CSV"
         )
