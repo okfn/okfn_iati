@@ -131,3 +131,50 @@ class TestOrganisationNamesOptional(unittest.TestCase):
         conv = IatiOrganisationCSVConverter()
         with self.assertRaises(ValueError):
             conv.convert_folder_to_xml(folder, out_xml)
+
+    def test_csv_to_xml_missing_xml_lang_logs_warning_and_defaults_to_en(self):
+        """
+        Si falta 'xml_lang' y no hay names.csv: NO debe fallar.
+        Debe loguear WARNING y asumir xml:lang='en' en el XML resultante.
+        """
+        folder = self.tmp / "csv_in_missing_lang"
+        folder.mkdir()
+        org_csv = folder / "organisations.csv"
+
+        # organisations.csv sin xml_lang ni names.csv
+        with org_csv.open("w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f)
+            w.writerow([
+                "Organisation Identifier", "Name", "Reporting Org Ref",
+                "Reporting Org Type", "Reporting Org Name", "Default Currency"
+            ])
+            w.writerow([
+                "ORG-123", "Mi Organización", "ORG-123", "40", "Mi Organización", "USD"
+            ])
+
+        out_xml = self.tmp / "out_missing_lang.xml"
+        conv = IatiOrganisationCSVConverter()
+
+        # Capturamos WARNING y verificamos fallback
+        with self.assertLogs('okfn_iati.organisation_xml_generator', level='WARNING') as log:
+            result = conv.convert_folder_to_xml(folder, out_xml)
+
+        # Se generó el archivo
+        self.assertEqual(str(out_xml), result)
+        self.assertTrue(out_xml.exists(), "Debe generarse el XML aun sin xml_lang")
+
+        # Se logueó el WARNING por xml_lang faltante
+        self.assertTrue(
+            any("Missing 'xml_lang'" in msg for msg in log.output),
+            f"No se encontró WARNING esperado en logs: {log.output}"
+        )
+
+        # El XML debe llevar xml:lang='en' por defecto
+        root = ET.parse(out_xml).getroot()
+        org = root.find("iati-organisation")
+        self.assertIsNotNone(org, "Debe existir <iati-organisation>")
+        self.assertEqual(
+            org.get("{http://www.w3.org/XML/1998/namespace}lang"),
+            "en",
+            "Debe aplicarse fallback xml:lang='en' cuando falta en CSV"
+        )

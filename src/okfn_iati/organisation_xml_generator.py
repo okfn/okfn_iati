@@ -588,8 +588,14 @@ class IatiOrganisationCSVConverter:
             row.get("xml_lang")
             or row.get("xml:lang")
             or row.get("Xml Lang")
-            or "en"
         )
+
+        # If completely missing, use default language ("en")
+        if not xml_lang or not xml_lang.strip():
+            logger.warning(
+                f"Missing 'xml_lang' in {file_path.name}, using default 'en'"
+            )
+            xml_lang = "en"
 
         # Extract default currency if available
         default_currency = row.get("default_currency") or row.get("currency") or "USD"
