@@ -583,8 +583,8 @@ class IatiOrganisationCSVConverter:
         if not org_identifier or not name:
             raise ValueError("Missing required 'organisation identifier' or 'name' in the file")
 
-        # Extract xml_lang (accepts both 'xml_lang' and 'xml:lang')
-        xml_lang = row.get("xml:lang")
+        # Extract xml_lang
+        xml_lang = row.get("xml_lang")
 
         # If completely missing, use default language ("en")
         if xml_lang is None or not xml_lang.strip():
