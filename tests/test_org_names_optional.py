@@ -24,7 +24,7 @@ class TestOrganisationNamesOptional(unittest.TestCase):
             w = csv.writer(f)
             w.writerow([
                 "Organisation Identifier", "Name", "Reporting Org Ref",
-                "Reporting Org Type", "Reporting Org Name", "Default Currency", "xml_lang"
+                "Reporting Org Type", "Reporting Org Name", "Default Currency", "xml:lang"
             ])
             w.writerow([
                 "ORG-123", "Mi Organización", "ORG-123", "40", "Mi Organización", "USD", "es"
