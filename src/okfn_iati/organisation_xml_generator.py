@@ -587,7 +587,7 @@ class IatiOrganisationCSVConverter:
         xml_lang = row.get("xml:lang")
 
         # If completely missing, use default language ("en")
-        if not xml_lang or not xml_lang.strip():
+        if not xml_lang.strip():
             logger.warning(
                 f"Missing 'xml_lang' in {file_path.name}, using default 'en'"
             )
