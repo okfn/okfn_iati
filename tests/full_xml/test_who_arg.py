@@ -121,6 +121,16 @@ class TestWHOArgXML(unittest.TestCase):
                 non_relevant_count = len([d for d in differences if not d.is_relevant])
                 print(f"\nSummary: {relevant_count} relevant, {non_relevant_count} non-relevant differences")
 
+                # Save both files outise this temp dir for the user to analyze them
+                saved_dir = Path.cwd() / "xml_comparison_output_who"
+                saved_dir.mkdir(exist_ok=True)
+                saved_original = saved_dir / "original_who_arg.xml"
+                saved_converted = saved_dir / "converted_who_arg.xml"
+                saved_original.write_text(self.who_xml_path.read_text(encoding='utf-8'), encoding='utf-8')
+                saved_converted.write_text(output_xml.read_text(encoding='utf-8'), encoding='utf-8')
+                print(f"Saved original XML to: {saved_original}")
+                print(f"Saved converted XML to: {saved_converted}")
+
             # Assert files are equivalent
             self.assertTrue(
                 are_equivalent,
