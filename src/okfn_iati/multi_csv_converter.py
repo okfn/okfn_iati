@@ -189,11 +189,13 @@ class IatiMultiCsvConverter:
             'documents': {
                 'filename': 'documents.csv',
                 'columns': [
-                    'activity_identifier',  # Foreign key to activities
+                    'activity_identifier',
                     'url',
                     'format',
                     'title',
+                    'title_lang',          # NEW: lang for title narrative
                     'description',
+                    'description_lang',    # NEW: lang for description narrative
                     'category_code',
                     'language_code',
                     'document_date'
@@ -254,7 +256,7 @@ class IatiMultiCsvConverter:
             'contact_info': {
                 'filename': 'contact_info.csv',
                 'columns': [
-                    'activity_identifier',  # Foreign key to activities
+                    'activity_identifier',
                     'contact_type',
                     'organisation',
                     'department',
@@ -263,7 +265,8 @@ class IatiMultiCsvConverter:
                     'telephone',
                     'email',
                     'website',
-                    'mailing_address'
+                    'mailing_address',
+                    'mailing_address_lang'  # NEW: lang attribute for mailing address narrative
                 ]
             },
             'conditions': {
@@ -1006,9 +1009,15 @@ class IatiMultiCsvConverter:
 
         title_elem = doc_elem.find('title/narrative')
         data['title'] = title_elem.text if title_elem is not None else ''
+        data['title_lang'] = (
+            title_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if title_elem is not None else ''
+        )
 
         desc_elem = doc_elem.find('description/narrative')
         data['description'] = desc_elem.text if desc_elem is not None else ''
+        data['description_lang'] = (
+            desc_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if desc_elem is not None else ''
+        )
 
         category_elem = doc_elem.find('category')
         data['category_code'] = category_elem.get('code') if category_elem is not None else ''
@@ -1126,6 +1135,9 @@ class IatiMultiCsvConverter:
 
         addr_elem = contact_elem.find('mailing-address/narrative')
         data['mailing_address'] = addr_elem.text if addr_elem is not None else ''
+        data['mailing_address_lang'] = (
+            addr_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if addr_elem is not None else ''
+        )
 
         return data
 
@@ -1639,8 +1651,11 @@ class IatiMultiCsvConverter:
             'format': doc_data.get('format', 'application/pdf')
         }
 
-        if doc_data.get('title'):
-            doc_args['title'] = [Narrative(text=doc_data['title'])]
+        if doc_data.get('title') or doc_data.get('title_lang'):
+            doc_args['title'] = [Narrative(
+                text=doc_data.get('title', ''),
+                lang=doc_data.get('title_lang') or None
+            )]
 
         if doc_data.get('category_code'):
             doc_args['categories'] = [DocumentCategory(doc_data['category_code'])]
@@ -1672,8 +1687,11 @@ class IatiMultiCsvConverter:
             contact_args['email'] = contact_data['email']
         if contact_data.get('website'):
             contact_args['website'] = contact_data['website']
-        if contact_data.get('mailing_address'):
-            contact_args['mailing_address'] = [Narrative(text=contact_data['mailing_address'])]
+        if contact_data.get('mailing_address') or contact_data.get('mailing_address_lang'):
+            contact_args['mailing_address'] = [Narrative(
+                text=contact_data.get('mailing_address', ''),
+                lang=contact_data.get('mailing_address_lang') or None
+            )]
 
         return ContactInfo(**contact_args)
 
@@ -1868,7 +1886,7 @@ class IatiMultiCsvConverter:
         elif csv_type == 'contact_info':
             return [{
                 'activity_identifier': 'XM-DAC-46002-CR-2025',
-                'contact_type': '1',  # General
+                'contact_type': '1',
                 'organisation': 'Central American Bank for Economic Integration',
                 'department': 'Infrastructure Projects Division',
                 'person_name': 'Ana García',
@@ -1876,7 +1894,8 @@ class IatiMultiCsvConverter:
                 'telephone': '+506-2123-4567',
                 'email': 'ana.garcia@bcie.org',
                 'website': 'https://www.bcie.org',
-                'mailing_address': 'Tegucigalpa M.D.C., Honduras'
+                'mailing_address': 'Tegucigalpa M.D.C., Honduras',
+                'mailing_address_lang': 'es'
             }]
         elif csv_type == 'results':
             return [{
@@ -1906,6 +1925,19 @@ class IatiMultiCsvConverter:
                     'narrative_sequence': '1'
                 }
             ]
+        elif csv_type == 'documents':
+            return [{
+                'activity_identifier': 'XM-DAC-46002-CR-2025',
+                'url': 'https://example.org/documents/project-summary.pdf',
+                'format': 'application/pdf',
+                'title': 'Project summary',
+                'title_lang': 'en',
+                'description': 'Detailed design and financing summary',
+                'description_lang': 'en',
+                'category_code': 'A01',
+                'language_code': 'en',
+                'document_date': '2024-03-15'
+            }]
         # ...existing code for other examples...
 
         return []
