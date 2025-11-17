@@ -94,6 +94,7 @@ class IatiMultiCsvConverter:
                     'activity_identifier',  # Foreign key to activities
                     'org_ref',
                     'org_name',
+                    'org_name_lang',
                     'org_type',
                     'role',
                     'activity_id',
@@ -798,6 +799,9 @@ class IatiMultiCsvConverter:
 
         org_name = org_elem.find('narrative')
         data['org_name'] = org_name.text if org_name is not None else ''
+        data['org_name_lang'] = (
+            org_name.get('{http://www.w3.org/XML/1998/namespace}lang', '') if org_name is not None else ''
+        )
 
         return data
 
@@ -1479,13 +1483,20 @@ class IatiMultiCsvConverter:
 
     def _build_participating_org(self, org_data: Dict[str, str]) -> ParticipatingOrg:
         """Build ParticipatingOrg from data."""
+        narratives = []
+        if org_data.get('org_name') or org_data.get('org_name_lang'):
+            narratives.append(Narrative(
+                text=org_data.get('org_name', ''),
+                lang=org_data.get('org_name_lang') or None
+            ))
+
         return ParticipatingOrg(
             role=org_data.get('role', '1'),
             ref=org_data.get('org_ref', ''),
             type=org_data.get('org_type', ''),
             activity_id=org_data.get('activity_id'),
             crs_channel_code=org_data.get('crs_channel_code'),
-            narratives=[Narrative(text=org_data.get('org_name', ''))] if org_data.get('org_name') else []
+            narratives=narratives
         )
 
     def _build_sector(self, sector_data: Dict[str, str]) -> Dict[str, Any]:
@@ -1841,6 +1852,7 @@ class IatiMultiCsvConverter:
                     'activity_identifier': 'XM-DAC-46002-CR-2025',
                     'org_ref': 'XM-DAC-46002',
                     'org_name': 'Central American Bank for Economic Integration',
+                    'org_name_lang': 'en',
                     'org_type': '40',
                     'role': '1'  # Funding
                 },
@@ -1848,6 +1860,7 @@ class IatiMultiCsvConverter:
                     'activity_identifier': 'XM-DAC-46002-CR-2025',
                     'org_ref': 'CR-MOPT',
                     'org_name': 'Ministry of Public Works and Transportation, Costa Rica',
+                    'org_name_lang': 'es',
                     'org_type': '10',
                     'role': '4'  # Implementing
                 }
