@@ -272,6 +272,17 @@ class IatiMultiCsvConverter:
                     'condition_type',
                     'condition_text'
                 ]
+            },
+            'descriptions': {
+                'filename': 'descriptions.csv',
+                'columns': [
+                    'activity_identifier',
+                    'description_type',
+                    'description_sequence',
+                    'narrative',
+                    'narrative_lang',
+                    'narrative_sequence'
+                ]
             }
         }
 
@@ -445,6 +456,21 @@ class IatiMultiCsvConverter:
         activity_data = self._extract_main_activity_data(activity_elem, activity_id)
         data_collections['activities'].append(activity_data)
 
+        # Extract descriptions
+        description_index = 0
+        for desc_elem in activity_elem.findall('description'):
+            description_index += 1
+            narratives = desc_elem.findall('narrative') or [None]
+            for narrative_index, narrative_elem in enumerate(narratives, start=1):
+                description_row = self._extract_description_data(
+                    desc_elem,
+                    activity_id,
+                    description_index,
+                    narrative_elem,
+                    narrative_index
+                )
+                data_collections['descriptions'].append(description_row)
+
         # Extract participating organizations
         for org_elem in activity_elem.findall('participating-org'):
             org_data = self._extract_participating_org_data(org_elem, activity_id)
@@ -559,6 +585,31 @@ class IatiMultiCsvConverter:
         """Get activity identifier from XML element."""
         id_elem = activity_elem.find('iati-identifier')
         return id_elem.text if id_elem is not None else ''
+
+    def _extract_description_data(
+        self,
+        desc_elem: ET.Element,
+        activity_id: str,
+        description_index: int,
+        narrative_elem: Optional[ET.Element],
+        narrative_index: int
+    ) -> Dict[str, str]:
+        """Extract a single description narrative row."""
+        data = {
+            'activity_identifier': activity_id,
+            'description_type': desc_elem.get('type', ''),
+            'description_sequence': str(description_index),
+            'narrative_sequence': str(narrative_index)
+        }
+
+        if narrative_elem is not None:
+            data['narrative'] = narrative_elem.text or ''
+            data['narrative_lang'] = narrative_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '')
+        else:
+            data['narrative'] = ''
+            data['narrative_lang'] = ''
+
+        return data
 
     def _extract_indicator_period_data(
         self,
@@ -1139,14 +1190,15 @@ class IatiMultiCsvConverter:
                 'indicator_periods': [],
                 'activity_date': [],
                 'contact_info': [],
-                'conditions': []
+                'conditions': [],
+                'descriptions': []
             }
 
         # Group related data
         for csv_type in [
             'participating_orgs', 'sectors', 'budgets', 'transactions',
             'transaction_sectors', 'locations', 'documents', 'results', 'indicators', 'indicator_periods',
-            'activity_date', 'contact_info', 'conditions'  # Add conditions
+            'activity_date', 'contact_info', 'conditions', 'descriptions'
         ]:
             for row in data_collections.get(csv_type, []):
                 activity_id = row.get('activity_identifier')
@@ -1207,14 +1259,7 @@ class IatiMultiCsvConverter:
                     main_data.get('title_lang', '')
                 )
             ] if main_data.get('title') else [],
-            description=[{
-                "narratives": [
-                    create_narrative(
-                        main_data.get('description', ''),
-                        main_data.get('description_lang', '')
-                    )
-                ]
-            }] if main_data.get('description') else [],
+            description=[],
             activity_status=self._parse_activity_status(main_data.get('activity_status')),
             default_currency=main_data.get('default_currency', 'USD'),
             humanitarian=humanitarian,
@@ -1229,6 +1274,19 @@ class IatiMultiCsvConverter:
             default_aid_type=main_data.get('default_aid_type') or None,
             default_tied_status=main_data.get('default_tied_status') or None
         )
+
+        descriptions = self._build_descriptions_from_rows(data['descriptions'])
+        if descriptions:
+            activity.description = descriptions
+        elif main_data.get('description'):
+            activity.description = [{
+                "narratives": [
+                    create_narrative(
+                        main_data.get('description', ''),
+                        main_data.get('description_lang', '')
+                    )
+                ]
+            }]
 
         # Add dates
         self._add_dates_from_main_data(activity, main_data)
@@ -1704,6 +1762,49 @@ class IatiMultiCsvConverter:
 
         return IndicatorPeriod(**period_args)
 
+    def _build_descriptions_from_rows(
+        self, rows: List[Dict[str, str]]
+    ) -> List[Dict[str, List[Narrative]]]:
+        """Reconstruct description structures from CSV rows."""
+        if not rows:
+            return []
+
+        grouped: Dict[str, Dict[str, Any]] = {}
+        for row in sorted(
+            rows,
+            key=lambda r: (
+                self._safe_int(r.get('description_sequence')),
+                self._safe_int(r.get('narrative_sequence'))
+            )
+        ):
+            seq = row.get('description_sequence') or str(len(grouped) + 1)
+            entry = grouped.setdefault(seq, {
+                'type': row.get('description_type', ''),
+                'narratives': []
+            })
+            text = row.get('narrative', '') or ''
+            lang = row.get('narrative_lang') or None
+            entry['narratives'].append(Narrative(text=text, lang=lang))
+
+        descriptions: List[Dict[str, List[Narrative]]] = []
+        for seq in sorted(grouped.keys(), key=self._safe_int):
+            entry = grouped[seq]
+            desc_dict: Dict[str, Any] = {
+                "narratives": entry['narratives'] or [Narrative(text='')]
+            }
+            if entry['type']:
+                desc_dict["type"] = entry['type']
+            descriptions.append(desc_dict)
+
+        return descriptions
+
+    def _safe_int(self, value: Optional[str], default: int = 0) -> int:
+        """Safely convert string values to integers for ordering."""
+        try:
+            return int(value)  # type: ignore[arg-type]
+        except (TypeError, ValueError):
+            return default
+
     def _get_example_data(self, csv_type: str) -> List[Dict[str, str]]:
         """Get example data for CSV templates."""
         if csv_type == 'activities':
@@ -1773,6 +1874,25 @@ class IatiMultiCsvConverter:
                 'title': 'Improved rural road infrastructure',
                 'description': 'Rural roads rehabilitated and upgraded to improve connectivity'
             }]
+        elif csv_type == 'descriptions':
+            return [
+                {
+                    'activity_identifier': 'XM-DAC-46002-CR-2025',
+                    'description_type': '1',
+                    'description_sequence': '1',
+                    'narrative': 'Primary activity description',
+                    'narrative_lang': 'en',
+                    'narrative_sequence': '1'
+                },
+                {
+                    'activity_identifier': 'XM-DAC-46002-CR-2025',
+                    'description_type': '2',
+                    'description_sequence': '2',
+                    'narrative': 'Secondary summary for beneficiaries',
+                    'narrative_lang': 'en',
+                    'narrative_sequence': '1'
+                }
+            ]
         # ...existing code for other examples...
 
         return []
