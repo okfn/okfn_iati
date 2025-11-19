@@ -259,14 +259,20 @@ class IatiMultiCsvConverter:
                     'activity_identifier',
                     'contact_type',
                     'organisation',
+                    'organisation_lang',
                     'department',
+                    'department_lang',
                     'person_name',
+                    'person_name_lang',
+                    'person_name_present',
                     'job_title',
+                    'job_title_lang',
                     'telephone',
                     'email',
+                    'email_present',
                     'website',
                     'mailing_address',
-                    'mailing_address_lang'  # NEW: lang attribute for mailing address narrative
+                    'mailing_address_lang'
                 ]
             },
             'conditions': {
@@ -1114,21 +1120,35 @@ class IatiMultiCsvConverter:
 
         org_elem = contact_elem.find('organisation/narrative')
         data['organisation'] = org_elem.text if org_elem is not None else ''
+        data['organisation_lang'] = (
+            org_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if org_elem is not None else ''
+        )
 
         dept_elem = contact_elem.find('department/narrative')
         data['department'] = dept_elem.text if dept_elem is not None else ''
+        data['department_lang'] = (
+            dept_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if dept_elem is not None else ''
+        )
 
         person_elem = contact_elem.find('person-name/narrative')
         data['person_name'] = person_elem.text if person_elem is not None else ''
+        data['person_name_lang'] = (
+            person_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if person_elem is not None else ''
+        )
+        data['person_name_present'] = '1' if person_elem is not None else '0'
 
         job_elem = contact_elem.find('job-title/narrative')
         data['job_title'] = job_elem.text if job_elem is not None else ''
+        data['job_title_lang'] = (
+            job_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if job_elem is not None else ''
+        )
 
         tel_elem = contact_elem.find('telephone')
         data['telephone'] = tel_elem.text if tel_elem is not None else ''
 
         email_elem = contact_elem.find('email')
         data['email'] = email_elem.text if email_elem is not None else ''
+        data['email_present'] = '1' if email_elem is not None else '0'
 
         website_elem = contact_elem.find('website')
         data['website'] = website_elem.text if website_elem is not None else ''
@@ -1668,25 +1688,42 @@ class IatiMultiCsvConverter:
 
         if contact_data.get('contact_type'):
             contact_args['type'] = contact_data['contact_type']
-        if contact_data.get('organisation'):
-            contact_args['organisation'] = [Narrative(text=contact_data['organisation'])]
-        if contact_data.get('department'):
-            contact_args['department'] = [Narrative(text=contact_data['department'])]
 
-        # FIX: Always include person_name if it exists in CSV, even if empty
-        # This preserves the XML structure
-        if 'person_name' in contact_data:
-            # Include even if empty string
-            contact_args['person_name'] = [Narrative(text=contact_data.get('person_name', ''))]
+        if contact_data.get('organisation') or contact_data.get('organisation_lang'):
+            contact_args['organisation'] = [Narrative(
+                text=contact_data.get('organisation', ''),
+                lang=contact_data.get('organisation_lang') or None
+            )]
 
-        if contact_data.get('job_title'):
-            contact_args['job_title'] = [Narrative(text=contact_data['job_title'])]
+        if contact_data.get('department') or contact_data.get('department_lang'):
+            contact_args['department'] = [Narrative(
+                text=contact_data.get('department', ''),
+                lang=contact_data.get('department_lang') or None
+            )]
+
+        person_present = contact_data.get('person_name_present') == '1'
+        if person_present or contact_data.get('person_name') or contact_data.get('person_name_lang'):
+            contact_args['person_name'] = [Narrative(
+                text=contact_data.get('person_name', ''),
+                lang=contact_data.get('person_name_lang') or None
+            )]
+
+        if contact_data.get('job_title') or contact_data.get('job_title_lang'):
+            contact_args['job_title'] = [Narrative(
+                text=contact_data.get('job_title', ''),
+                lang=contact_data.get('job_title_lang') or None
+            )]
+
         if contact_data.get('telephone'):
             contact_args['telephone'] = contact_data['telephone']
-        if contact_data.get('email'):
-            contact_args['email'] = contact_data['email']
+
+        email_present = contact_data.get('email_present') == '1'
+        if email_present or contact_data.get('email'):
+            contact_args['email'] = contact_data.get('email', '')
+
         if contact_data.get('website'):
             contact_args['website'] = contact_data['website']
+
         if contact_data.get('mailing_address') or contact_data.get('mailing_address_lang'):
             contact_args['mailing_address'] = [Narrative(
                 text=contact_data.get('mailing_address', ''),
@@ -1888,11 +1925,17 @@ class IatiMultiCsvConverter:
                 'activity_identifier': 'XM-DAC-46002-CR-2025',
                 'contact_type': '1',
                 'organisation': 'Central American Bank for Economic Integration',
+                'organisation_lang': 'en',
                 'department': 'Infrastructure Projects Division',
+                'department_lang': 'en',
                 'person_name': 'Ana García',
+                'person_name_lang': 'es',
+                'person_name_present': '1',
                 'job_title': 'Project Manager',
+                'job_title_lang': 'en',
                 'telephone': '+506-2123-4567',
                 'email': 'ana.garcia@bcie.org',
+                'email_present': '1',
                 'website': 'https://www.bcie.org',
                 'mailing_address': 'Tegucigalpa M.D.C., Honduras',
                 'mailing_address_lang': 'es'
