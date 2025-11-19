@@ -237,6 +237,7 @@ class Location:
     References:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/
     """
+    ref: Optional[str] = None
     location_reach: Optional[Union[LocationReach, str]] = None
     location_id: Optional[LocationIdentifier] = None  # Updated to use LocationIdentifier
     name: Optional[List[Narrative]] = None
