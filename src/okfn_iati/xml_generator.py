@@ -133,6 +133,9 @@ class IatiXmlGenerator:
     def _add_location(self, activity_el: ET.Element, location: Location) -> None:  # noqa: C901
         loc_el = ET.SubElement(activity_el, "location")
 
+        if location.ref:
+            self._set_attribute(loc_el, "ref", location.ref)
+
         if location.location_reach:
             reach_el = ET.SubElement(loc_el, "location-reach")
             self._set_attribute(reach_el, "code", self._get_enum_value(location.location_reach))

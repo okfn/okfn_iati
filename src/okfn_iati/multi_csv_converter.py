@@ -167,14 +167,17 @@ class IatiMultiCsvConverter:
             'locations': {
                 'filename': 'locations.csv',
                 'columns': [
-                    'activity_identifier',  # Foreign key to activities
+                    'activity_identifier',
                     'location_ref',
                     'location_reach',
                     'location_id_vocabulary',
                     'location_id_code',
                     'name',
+                    'name_lang',
                     'description',
+                    'description_lang',
                     'activity_description',
+                    'activity_description_lang',
                     'latitude',
                     'longitude',
                     'exactness',
@@ -948,6 +951,7 @@ class IatiMultiCsvConverter:
     def _extract_location_data(self, location_elem: ET.Element, activity_id: str) -> Dict[str, str]:
         """Extract location data."""
         data = {'activity_identifier': activity_id}
+        xml_lang = '{http://www.w3.org/XML/1998/namespace}lang'
 
         data['location_ref'] = location_elem.get('ref', '')
         data['location_reach'] = location_elem.get('reach', '')
@@ -964,12 +968,15 @@ class IatiMultiCsvConverter:
         # Names and descriptions
         name_elem = location_elem.find('name/narrative')
         data['name'] = name_elem.text if name_elem is not None else ''
+        data['name_lang'] = name_elem.get(xml_lang, '') if name_elem is not None else ''
 
         desc_elem = location_elem.find('description/narrative')
         data['description'] = desc_elem.text if desc_elem is not None else ''
+        data['description_lang'] = desc_elem.get(xml_lang, '') if desc_elem is not None else ''
 
         activity_desc_elem = location_elem.find('activity-description/narrative')
         data['activity_description'] = activity_desc_elem.text if activity_desc_elem is not None else ''
+        data['activity_description_lang'] = activity_desc_elem.get(xml_lang, '') if activity_desc_elem is not None else ''
 
         # Coordinates
         point_elem = location_elem.find('point/pos')
@@ -1648,13 +1655,28 @@ class IatiMultiCsvConverter:
 
     def _build_location(self, location_data: Dict[str, str]) -> Location:
         """Build Location from data."""
-        location_args = {}
+        location_args: Dict[str, Any] = {}
 
-        if location_data.get('name'):
-            location_args['name'] = [Narrative(text=location_data['name'])]
+        if location_data.get('location_ref'):
+            location_args['ref'] = location_data['location_ref']
 
-        if location_data.get('description'):
-            location_args['description'] = [Narrative(text=location_data['description'])]
+        if location_data.get('name') or location_data.get('name_lang'):
+            location_args['name'] = [Narrative(
+                text=location_data.get('name', ''),
+                lang=location_data.get('name_lang') or None
+            )]
+
+        if location_data.get('description') or location_data.get('description_lang'):
+            location_args['description'] = [Narrative(
+                text=location_data.get('description', ''),
+                lang=location_data.get('description_lang') or None
+            )]
+
+        if location_data.get('activity_description') or location_data.get('activity_description_lang'):
+            location_args['activity_description'] = [Narrative(
+                text=location_data.get('activity_description', ''),
+                lang=location_data.get('activity_description_lang') or None
+            )]
 
         if location_data.get('latitude') and location_data.get('longitude'):
             location_args['point'] = {
