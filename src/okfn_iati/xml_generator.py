@@ -64,8 +64,8 @@ class IatiXmlGenerator:
             self._set_attribute(parent_element, "ref", org.ref)
         if org.type:
             self._set_attribute(parent_element, "type", org.type)
-        if org.secondary_reporter:
-            self._set_attribute(parent_element, "secondary-reporter", "1")
+        if org.secondary_reporter is not None:
+            self._set_attribute(parent_element, "secondary-reporter", "1" if org.secondary_reporter else "0")
 
         if org.narratives:
             self._create_narrative_elements(parent_element, org.narratives)
@@ -642,6 +642,10 @@ class IatiXmlGenerator:
         root = ET.Element("iati-activities")
         self._set_attribute(root, "version", iati_activities.version)
         self._set_attribute(root, "generated-datetime", iati_activities.generated_datetime)
+
+        # Add linked-data-default if present
+        if iati_activities.linked_data_default:
+            self._set_attribute(root, "linked-data-default", iati_activities.linked_data_default)
 
         # Add XML namespace references to match IATI standard
         self._set_attribute(root, "xmlns:xsd", "http://www.w3.org/2001/XMLSchema")
