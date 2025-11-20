@@ -824,7 +824,6 @@ class IatiMultiCsvConverter:
                 country_name.get(xml_lang_attr, '') if country_name is not None else ''
             )
             data['recipient_country_percentage'] = country_elem.get('percentage', '')
-            
         else:
             data['recipient_country_code'] = ''
             data['recipient_country_name'] = ''
