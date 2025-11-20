@@ -141,9 +141,11 @@ class IatiMultiCsvConverter:
                     'description_lang',
                     'provider_org_ref',
                     'provider_org_name',
+                    'provider_org_lang',
                     'provider_org_type',
                     'receiver_org_ref',
                     'receiver_org_name',
+                    'receiver_org_lang',
                     'receiver_org_type',
                     'receiver_org_activity_id',
                     'disbursement_channel',
@@ -916,7 +918,7 @@ class IatiMultiCsvConverter:
         return data
 
     def _extract_transaction_data(self, trans_elem: ET.Element, activity_id: str) -> Dict[str, str]:
-        """Extract transaction data."""
+        xml_lang = '{http://www.w3.org/XML/1998/namespace}lang'
         data = {'activity_identifier': activity_id}
 
         data['transaction_ref'] = trans_elem.get('ref', '')
@@ -956,10 +958,12 @@ class IatiMultiCsvConverter:
             data['provider_org_type'] = provider_elem.get('type', '')
             provider_name = provider_elem.find('narrative')
             data['provider_org_name'] = provider_name.text if provider_name is not None else ''
+            data['provider_org_lang'] = provider_name.get(xml_lang, '') if provider_name is not None else ''
         else:
             data['provider_org_ref'] = ''
             data['provider_org_type'] = ''
             data['provider_org_name'] = ''
+            data['provider_org_lang'] = ''
 
         # Receiver org
         receiver_elem = trans_elem.find('receiver-org')
@@ -969,11 +973,13 @@ class IatiMultiCsvConverter:
             data['receiver_org_activity_id'] = receiver_elem.get('receiver-activity-id', '')
             receiver_name = receiver_elem.find('narrative')
             data['receiver_org_name'] = receiver_name.text if receiver_name is not None else ''
+            data['receiver_org_lang'] = receiver_name.get(xml_lang, '') if receiver_name is not None else ''
         else:
             data['receiver_org_ref'] = ''
             data['receiver_org_type'] = ''
             data['receiver_org_name'] = ''
             data['receiver_org_activity_id'] = ''
+            data['receiver_org_lang'] = ''
 
         # Additional fields
         data['disbursement_channel'] = ''
@@ -1712,24 +1718,30 @@ class IatiMultiCsvConverter:
             )]
 
         # Add provider org
-        if trans_data.get('provider_org_ref') or trans_data.get('provider_org_name'):
+        if trans_data.get('provider_org_ref') or trans_data.get('provider_org_name') or trans_data.get('provider_org_lang'):
             transaction_args['provider_org'] = OrganizationRef(
                 ref=trans_data.get('provider_org_ref', ''),
                 type=trans_data.get('provider_org_type', ''),
                 narratives=[
-                    Narrative(text=trans_data.get('provider_org_name', ''))
-                ] if trans_data.get('provider_org_name') else [],
+                    Narrative(
+                        text=trans_data.get('provider_org_name', ''),
+                        lang=trans_data.get('provider_org_lang') or None
+                    )
+                ] if (trans_data.get('provider_org_name') or trans_data.get('provider_org_lang')) else [],
                 receiver_org_activity_id=trans_data.get('receiver_org_activity_id', ''),
             )
 
         # Add receiver org
-        if trans_data.get('receiver_org_ref') or trans_data.get('receiver_org_name'):
+        if trans_data.get('receiver_org_ref') or trans_data.get('receiver_org_name') or trans_data.get('receiver_org_lang'):
             transaction_args['receiver_org'] = OrganizationRef(
                 ref=trans_data.get('receiver_org_ref', ''),
                 type=trans_data.get('receiver_org_type', ''),
                 narratives=[
-                    Narrative(text=trans_data.get('receiver_org_name', ''))
-                ] if trans_data.get('receiver_org_name') else [],
+                    Narrative(
+                        text=trans_data.get('receiver_org_name', ''),
+                        lang=trans_data.get('receiver_org_lang') or None
+                    )
+                ] if (trans_data.get('receiver_org_name') or trans_data.get('receiver_org_lang')) else [],
                 receiver_org_activity_id=trans_data.get('receiver_org_activity_id', ''),
             )
 
