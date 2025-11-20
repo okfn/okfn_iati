@@ -697,6 +697,7 @@ class Activity:
     transactions: List[Transaction] = field(default_factory=list)
     related_activities: List[Dict[str, str]] = field(default_factory=list)
     results: List[Result] = field(default_factory=list)
+    country_budget_items: List[Dict[str, Any]] = field(default_factory=list)
 
     # IATI Activity attributes
     default_currency: Optional[str] = None  # ISO 4217 Currency code
