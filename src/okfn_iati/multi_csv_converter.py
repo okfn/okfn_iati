@@ -888,7 +888,7 @@ class IatiMultiCsvConverter:
         data['sector_code'] = sector_elem.get('code', '')
         data['vocabulary'] = sector_elem.get('vocabulary', '1')
         data['vocabulary_uri'] = sector_elem.get('vocabulary-uri', '')
-        data['percentage'] = sector_elem.get('percentage', '100')
+        data['percentage'] = sector_elem.get('percentage', '')
 
         sector_name = sector_elem.find('narrative')
         data['sector_name'] = sector_name.text if sector_name is not None else ''
@@ -1603,8 +1603,11 @@ class IatiMultiCsvConverter:
         """Add recipient countries and regions from main data."""
         # Add recipient country if present
         country_code = main_data.get('recipient_country_code')
+        percentage = main_data.get('recipient_country_percentage')
         if country_code:
-            country_data = {'code': country_code, 'percentage': 100}
+            country_data = {'code': country_code}
+            if percentage:
+                country_data['percentage'] = percentage
             country_name = main_data.get('recipient_country_name')
             country_lang = main_data.get('recipient_country_lang') or None
             if country_name or country_lang:
@@ -1616,8 +1619,11 @@ class IatiMultiCsvConverter:
 
         # Add recipient region if present
         region_code = main_data.get('recipient_region_code')
+        percentage = main_data.get('recipient_region_percentage')
         if region_code:
-            region_data = {'code': region_code, 'percentage': 100}
+            region_data = {'code': region_code}
+            if percentage:
+                region_data['percentage'] = percentage
             region_name = main_data.get('recipient_region_name')
             region_lang = main_data.get('recipient_region_lang') or None
             if region_name or region_lang:
@@ -1669,9 +1675,7 @@ class IatiMultiCsvConverter:
             try:
                 sector["percentage"] = float(sector_data['percentage'])
             except (ValueError, TypeError):
-                sector["percentage"] = 100.0
-        else:
-            sector["percentage"] = 100.0
+                pass
 
         if sector_data.get('sector_name'):
             sector["narratives"] = [Narrative(text=sector_data['sector_name'])]
