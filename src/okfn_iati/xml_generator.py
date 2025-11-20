@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 from datetime import datetime
-from typing import List, Union, Optional, Any
+from typing import List, Union, Optional, Any, Dict
 from enum import Enum
 
 from .models import (
@@ -567,6 +567,9 @@ class IatiXmlGenerator:
         for location in activity.locations:
             self._add_location(activity_el, location)
 
+        for cbi in activity.country_budget_items:
+            self._add_country_budget_items(activity_el, cbi)
+
         # 12. Add sectors (REQUIRED by IATI rules)
         for sector in activity.sectors:
             sector_el = ET.SubElement(activity_el, "sector")
@@ -651,3 +654,19 @@ class IatiXmlGenerator:
         xml_string = self.generate_iati_activities_xml(iati_activities)
         with open(file_path, 'w', encoding='utf-8') as f:
             f.write(xml_string)
+
+    def _add_country_budget_items(self, activity_el: ET.Element, cbi: Dict[str, Any]) -> None:
+        cbi_el = ET.SubElement(activity_el, "country-budget-items")
+        if cbi.get("vocabulary"):
+            self._set_attribute(cbi_el, "vocabulary", cbi["vocabulary"])
+
+        for item in cbi.get("budget_items", []):
+            item_el = ET.SubElement(cbi_el, "budget-item")
+            if item.get("code"):
+                self._set_attribute(item_el, "code", item["code"])
+            if item.get("percentage"):
+                self._set_attribute(item_el, "percentage", item["percentage"])
+
+            if item.get("description"):
+                desc_el = ET.SubElement(item_el, "description")
+                self._create_narrative_elements(desc_el, item["description"])

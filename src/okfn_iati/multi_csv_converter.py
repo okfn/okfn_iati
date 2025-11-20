@@ -296,6 +296,17 @@ class IatiMultiCsvConverter:
                     'narrative_lang',
                     'narrative_sequence'
                 ]
+            },
+            'country_budget_items': {
+                'filename': 'country_budget_items.csv',
+                'columns': [
+                    'activity_identifier',
+                    'vocabulary',
+                    'budget_item_code',
+                    'budget_item_percentage',
+                    'description',
+                    'description_lang'
+                ]
             }
         }
 
@@ -594,6 +605,12 @@ class IatiMultiCsvConverter:
                 condition_data = self._extract_condition_data(condition_elem, activity_id)
                 data_collections['conditions'].append(condition_data)
 
+        # Extract country budget items
+        for cbi_elem in activity_elem.findall('country-budget-items'):
+            data_collections['country_budget_items'].extend(
+                self._extract_country_budget_items(cbi_elem, activity_id)
+            )
+
     def _get_activity_identifier(self, activity_elem: ET.Element) -> str:
         """Get activity identifier from XML element."""
         id_elem = activity_elem.find('iati-identifier')
@@ -689,6 +706,36 @@ class IatiMultiCsvConverter:
         data['sector_name'] = sector_name.text if sector_name is not None else ''
 
         return data
+
+    def _extract_country_budget_items(
+        self,
+        cbi_elem: ET.Element,
+        activity_id: str
+    ) -> List[Dict[str, str]]:
+        """Extract country budget items."""
+        items = []
+        vocabulary = cbi_elem.get('vocabulary', '')
+
+        for item_elem in cbi_elem.findall('budget-item'):
+            data = {
+                'activity_identifier': activity_id,
+                'vocabulary': vocabulary,
+                'budget_item_code': item_elem.get('code', ''),
+                'budget_item_percentage': item_elem.get('percentage', '')
+            }
+
+            # Description
+            desc_elem = item_elem.find('description/narrative')
+            if desc_elem is not None:
+                data['description'] = desc_elem.text or ''
+                data['description_lang'] = desc_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '')
+            else:
+                data['description'] = ''
+                data['description_lang'] = ''
+
+            items.append(data)
+
+        return items
 
     def _extract_main_activity_data(self, activity_elem: ET.Element, activity_id: str) -> Dict[str, str]:
         """Extract main activity information."""
@@ -1234,14 +1281,15 @@ class IatiMultiCsvConverter:
                 'activity_date': [],
                 'contact_info': [],
                 'conditions': [],
-                'descriptions': []
+                'descriptions': [],
+                'country_budget_items': []
             }
 
         # Group related data
         for csv_type in [
             'participating_orgs', 'sectors', 'budgets', 'transactions',
             'transaction_sectors', 'locations', 'documents', 'results', 'indicators', 'indicator_periods',
-            'activity_date', 'contact_info', 'conditions', 'descriptions'
+            'activity_date', 'contact_info', 'conditions', 'descriptions', 'country_budget_items'
         ]:
             for row in data_collections.get(csv_type, []):
                 activity_id = row.get('activity_identifier')
@@ -1425,7 +1473,51 @@ class IatiMultiCsvConverter:
         if data.get('conditions'):
             activity.__dict__['conditions'] = data['conditions']
 
+        # Add country budget items
+        activity.country_budget_items = self._build_country_budget_items(data['country_budget_items'])
+
         return activity
+
+    def _build_country_budget_items(self, rows: List[Dict[str, str]]) -> List[Dict[str, Any]]:
+        """Build country budget items from CSV rows."""
+        if not rows:
+            return []
+
+        # Group by vocabulary
+        # Although schema allows max 1 country-budget-items element,
+        # we group by vocabulary to be safe and support potential multiple elements
+        # or just to correctly structure the single element.
+        grouped_items = {}
+        for row in rows:
+            vocab = row.get('vocabulary', '')
+            if vocab not in grouped_items:
+                grouped_items[vocab] = []
+            grouped_items[vocab].append(row)
+
+        result = []
+        for vocab, items in grouped_items.items():
+            cbi_data = {
+                'vocabulary': vocab,
+                'budget_items': []
+            }
+
+            for item in items:
+                budget_item = {
+                    'code': item.get('budget_item_code', ''),
+                    'percentage': item.get('budget_item_percentage', '')
+                }
+
+                if item.get('description'):
+                    budget_item['description'] = [{
+                        'text': item['description'],
+                        'lang': item.get('description_lang', '')
+                    }]
+
+                cbi_data['budget_items'].append(budget_item)
+
+            result.append(cbi_data)
+
+        return result
 
     def _build_activity_date(self, date_data: Dict[str, str]) -> ActivityDate:
         """Build ActivityDate from data."""
@@ -2002,6 +2094,15 @@ class IatiMultiCsvConverter:
                 'category_code': 'A01',
                 'language_code': 'en',
                 'document_date': '2024-03-15'
+            }]
+        elif csv_type == 'country_budget_items':
+            return [{
+                'activity_identifier': 'XM-DAC-46002-CR-2025',
+                'vocabulary': '1',
+                'budget_item_code': 'CR-2025-01',
+                'budget_item_percentage': '50',
+                'description': 'Road rehabilitation',
+                'description_lang': 'en'
             }]
         # ...existing code for other examples...
 
