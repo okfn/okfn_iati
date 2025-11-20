@@ -78,9 +78,11 @@ class IatiMultiCsvConverter:
                     'planned_end_date',
                     'actual_end_date',
                     'recipient_country_code',
+                    'recipient_country_percentage',
                     'recipient_country_name',
                     'recipient_country_lang',
                     'recipient_region_code',
+                    'recipient_region_percentage',
                     'recipient_region_name',
                     'recipient_region_lang',
                     'collaboration_type',
@@ -821,10 +823,13 @@ class IatiMultiCsvConverter:
             data['recipient_country_lang'] = (
                 country_name.get(xml_lang_attr, '') if country_name is not None else ''
             )
+            data['recipient_country_percentage'] = country_elem.get('percentage', '')
+            
         else:
             data['recipient_country_code'] = ''
             data['recipient_country_name'] = ''
             data['recipient_country_lang'] = ''
+            data['recipient_country_percentage'] = ''
 
         # Recipient region (first one only for main table)
         region_elem = activity_elem.find('recipient-region')
@@ -835,10 +840,12 @@ class IatiMultiCsvConverter:
             data['recipient_region_lang'] = (
                 region_name.get(xml_lang_attr, '') if region_name is not None else ''
             )
+            data['recipient_region_percentage'] = region_elem.get('percentage', '')
         else:
             data['recipient_region_code'] = ''
             data['recipient_region_name'] = ''
             data['recipient_region_lang'] = ''
+            data['recipient_region_percentage'] = ''
 
         # Default flow/finance/aid/tied status and collaboration type
         collab_elem = activity_elem.find('collaboration-type')
@@ -1692,10 +1699,7 @@ class IatiMultiCsvConverter:
             sector["vocabulary_uri"] = sector_data['vocabulary_uri']
 
         if sector_data.get('percentage'):
-            try:
-                sector["percentage"] = float(sector_data['percentage'])
-            except (ValueError, TypeError):
-                pass
+            sector["percentage"] = sector_data['percentage']
 
         if sector_data.get('sector_name'):
             sector["narratives"] = [Narrative(text=sector_data['sector_name'])]
