@@ -216,8 +216,11 @@ class IatiXmlGenerator:
         self._set_attribute(end_el, "iso-date", budget.period_end)
 
         value_el = ET.SubElement(budget_el, "value")
-        # Format value with 2 decimal places
-        value_el.text = f"{budget.value:.2f}"
+        raw_value = getattr(budget, "raw_value", None)
+        if raw_value not in (None, ""):
+            value_el.text = raw_value
+        else:
+            value_el.text = f"{budget.value:.2f}"
 
         if budget.currency:
             self._set_attribute(value_el, "currency", budget.currency)
@@ -241,8 +244,11 @@ class IatiXmlGenerator:
         self._set_attribute(date_el, "iso-date", transaction.date)
 
         value_el = ET.SubElement(trans_el, "value")
-        # Format value with 2 decimal places
-        value_el.text = f"{transaction.value:.2f}"
+        raw_value = getattr(transaction, "raw_value", None)
+        if raw_value not in (None, ""):
+            value_el.text = raw_value
+        else:
+            value_el.text = f"{transaction.value:.2f}"
 
         if transaction.currency:
             self._set_attribute(value_el, "currency", transaction.currency)
