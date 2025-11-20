@@ -138,6 +138,7 @@ class IatiMultiCsvConverter:
                     'currency',
                     'value_date',
                     'description',
+                    'description_lang',
                     'provider_org_ref',
                     'provider_org_name',
                     'provider_org_type',
@@ -944,6 +945,9 @@ class IatiMultiCsvConverter:
         # Description
         desc_elem = trans_elem.find('description/narrative')
         data['description'] = desc_elem.text if desc_elem is not None else ''
+        data['description_lang'] = (
+            desc_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if desc_elem is not None else ''
+        )
 
         # Provider org
         provider_elem = trans_elem.find('provider-org')
@@ -1701,8 +1705,11 @@ class IatiMultiCsvConverter:
             'humanitarian': humanitarian  # Add parsed value
         }
 
-        if trans_data.get('description'):
-            transaction_args['description'] = [Narrative(text=trans_data['description'])]
+        if trans_data.get('description') or trans_data.get('description_lang'):
+            transaction_args['description'] = [Narrative(
+                text=trans_data.get('description', ''),
+                lang=trans_data.get('description_lang') or None
+            )]
 
         # Add provider org
         if trans_data.get('provider_org_ref') or trans_data.get('provider_org_name'):
