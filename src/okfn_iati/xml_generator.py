@@ -231,9 +231,8 @@ class IatiXmlGenerator:
         if transaction.transaction_ref:
             self._set_attribute(trans_el, "ref", transaction.transaction_ref)
 
-        # Handle humanitarian attribute - preserve exact original value
         if transaction.humanitarian is not None:
-            self._set_attribute(trans_el, "humanitarian", "1" if transaction.humanitarian else "0")
+            self._set_attribute(trans_el, "humanitarian", "true" if transaction.humanitarian else "false")
 
         type_el = ET.SubElement(trans_el, "transaction-type")
         self._set_attribute(type_el, "code", self._get_enum_value(transaction.type))
@@ -450,7 +449,7 @@ class IatiXmlGenerator:
 
         # Handle humanitarian attribute - preserve exact original value
         if activity.humanitarian is not None:
-            self._set_attribute(activity_el, "humanitarian", "1" if activity.humanitarian else "0")
+            self._set_attribute(activity_el, "humanitarian", "true" if activity.humanitarian else "false")
 
         # IMPORTANT: Follow IATI Schema element order
         # 1. Add identifier
