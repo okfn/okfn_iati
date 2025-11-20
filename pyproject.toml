@@ -39,6 +39,7 @@ dev = [
     "build>=0.8.0",  # For building package
     "twine>=4.0.0",  # For uploading to PyPI
     "flake8>=6.0.0",  # Code linting
+    "pre-commit>=3.5.0",  # Pre-commit hooks
 ]
 
 [tool.setuptools]
