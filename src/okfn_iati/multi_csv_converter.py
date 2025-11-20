@@ -1676,14 +1676,21 @@ class IatiMultiCsvConverter:
 
     def _build_budget(self, budget_data: Dict[str, str]) -> Budget:
         """Build Budget from data."""
+        value_text = budget_data.get('value', '') or ''
+        try:
+            numeric_value = float(value_text) if value_text else 0.0
+        except ValueError:
+            numeric_value = 0.0
+
         return Budget(
             type=budget_data.get('budget_type', '1'),
             status=budget_data.get('budget_status', '1'),
             period_start=budget_data.get('period_start', ''),
             period_end=budget_data.get('period_end', ''),
-            value=float(budget_data.get('value', 0)) if budget_data.get('value') else 0.0,
+            value=numeric_value,
             currency=budget_data.get('currency', 'USD'),
-            value_date=budget_data.get('value_date', '')
+            value_date=budget_data.get('value_date', ''),
+            raw_value=value_text
         )
 
     def _build_transaction(  # noqa C901
@@ -1701,14 +1708,21 @@ class IatiMultiCsvConverter:
         else:  # '1' or any other truthy value
             humanitarian = True
 
+        value_text = trans_data.get('value', '') or ''
+        try:
+            value_numeric = float(value_text) if value_text else 0.0
+        except ValueError:
+            value_numeric = 0.0
+
         transaction_args = {
             'type': trans_data.get('transaction_type', '2'),
             'date': trans_data.get('transaction_date', ''),
-            'value': float(trans_data.get('value', 0)) if trans_data.get('value') else 0.0,
+            'value': value_numeric,
             'currency': trans_data.get('currency', 'USD'),
             'value_date': trans_data.get('value_date', ''),
             'transaction_ref': trans_data.get('transaction_ref'),
-            'humanitarian': humanitarian  # Add parsed value
+            'humanitarian': humanitarian,
+            'raw_value': value_text,
         }
 
         if trans_data.get('description') or trans_data.get('description_lang'):

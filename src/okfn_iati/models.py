@@ -336,6 +336,7 @@ class Budget:
     value: float
     currency: Optional[str] = None  # ISO 4217
     value_date: Optional[str] = None  # ISO 8601 format
+    raw_value: Optional[str] = None
 
     def __post_init__(self):  # noqa: C901
         # Convert strings to enums if needed
@@ -420,6 +421,7 @@ class Transaction:
     recipient_region: Optional[Union[RecipientRegion, str]] = None
     sectors: List[Dict[str, Any]] = field(default_factory=list)
     humanitarian: Optional[bool] = None  # Change from bool to Optional[bool]
+    raw_value: Optional[str] = None
 
     def __post_init__(self):  # noqa: C901
         # Convert strings to enums if needed
