@@ -78,8 +78,10 @@ class IatiMultiCsvConverter:
                     'actual_end_date',
                     'recipient_country_code',
                     'recipient_country_name',
+                    'recipient_country_lang',
                     'recipient_region_code',
                     'recipient_region_name',
+                    'recipient_region_lang',
                     'collaboration_type',
                     'default_flow_type',
                     'default_finance_type',
@@ -740,6 +742,7 @@ class IatiMultiCsvConverter:
     def _extract_main_activity_data(self, activity_elem: ET.Element, activity_id: str) -> Dict[str, str]:
         """Extract main activity information."""
         data = {'activity_identifier': activity_id}
+        xml_lang_attr = '{http://www.w3.org/XML/1998/namespace}lang'
 
         # Basic attributes
         data['default_currency'] = activity_elem.get('default-currency', '')
@@ -793,9 +796,13 @@ class IatiMultiCsvConverter:
             data['recipient_country_code'] = country_elem.get('code', '')
             country_name = country_elem.find('narrative')
             data['recipient_country_name'] = country_name.text if country_name is not None else ''
+            data['recipient_country_lang'] = (
+                country_name.get(xml_lang_attr, '') if country_name is not None else ''
+            )
         else:
             data['recipient_country_code'] = ''
             data['recipient_country_name'] = ''
+            data['recipient_country_lang'] = ''
 
         # Recipient region (first one only for main table)
         region_elem = activity_elem.find('recipient-region')
@@ -803,9 +810,13 @@ class IatiMultiCsvConverter:
             data['recipient_region_code'] = region_elem.get('code', '')
             region_name = region_elem.find('narrative')
             data['recipient_region_name'] = region_name.text if region_name is not None else ''
+            data['recipient_region_lang'] = (
+                region_name.get(xml_lang_attr, '') if region_name is not None else ''
+            )
         else:
             data['recipient_region_code'] = ''
             data['recipient_region_name'] = ''
+            data['recipient_region_lang'] = ''
 
         # Default flow/finance/aid/tied status and collaboration type
         collab_elem = activity_elem.find('collaboration-type')
@@ -1579,27 +1590,27 @@ class IatiMultiCsvConverter:
         # Add recipient country if present
         country_code = main_data.get('recipient_country_code')
         if country_code:
-            country_data = {
-                'code': country_code,
-                'percentage': 100
-            }
+            country_data = {'code': country_code, 'percentage': 100}
             country_name = main_data.get('recipient_country_name')
-            if country_name:
-                country_data['narratives'] = [Narrative(text=country_name)]
-
+            country_lang = main_data.get('recipient_country_lang') or None
+            if country_name or country_lang:
+                country_data['narratives'] = [Narrative(
+                    text=country_name or '',
+                    lang=country_lang
+                )]
             activity.recipient_countries.append(country_data)
 
         # Add recipient region if present
         region_code = main_data.get('recipient_region_code')
         if region_code:
-            region_data = {
-                'code': region_code,
-                'percentage': 100
-            }
+            region_data = {'code': region_code, 'percentage': 100}
             region_name = main_data.get('recipient_region_name')
-            if region_name:
-                region_data['narratives'] = [Narrative(text=region_name)]
-
+            region_lang = main_data.get('recipient_region_lang') or None
+            if region_name or region_lang:
+                region_data['narratives'] = [Narrative(
+                    text=region_name or '',
+                    lang=region_lang
+                )]
             activity.recipient_regions.append(region_data)
 
     def _add_default_types_from_main_data(self, activity: Activity, main_data: Dict[str, str]) -> None:
@@ -2009,6 +2020,10 @@ class IatiMultiCsvConverter:
                 'planned_end_date': '2025-12-31',
                 'recipient_country_code': 'CR',
                 'recipient_country_name': 'Costa Rica',
+                'recipient_country_lang': 'es',
+                'recipient_region_code': '',
+                'recipient_region_name': '',
+                'recipient_region_lang': '',
                 'collaboration_type': '1',  # Bilateral
                 'default_flow_type': '10',  # ODA
                 'default_finance_type': '110',  # Standard grant
