@@ -589,6 +589,9 @@ class IatiXmlGenerator:
             if "vocabulary" in sector:
                 self._set_attribute(sector_el, "vocabulary", sector["vocabulary"])
 
+            if "vocabulary_uri" in sector:
+                self._set_attribute(sector_el, "vocabulary-uri", sector["vocabulary_uri"])
+
             if "percentage" in sector:
                 self._set_attribute(sector_el, "percentage", str(sector["percentage"]))
 
