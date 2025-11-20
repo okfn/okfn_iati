@@ -55,6 +55,7 @@ class OrganizationRef:
     type: Optional[str] = None  # See OrganisationType enum for valid values
     narratives: List[Narrative] = field(default_factory=list)
     receiver_org_activity_id: Optional[str] = None
+    secondary_reporter: Optional[bool] = None
 
     def __post_init__(self):
         # Validate type is a valid OrganisationType if it's provided and numeric
@@ -237,6 +238,7 @@ class Location:
     References:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/location/
     """
+    ref: Optional[str] = None
     location_reach: Optional[Union[LocationReach, str]] = None
     location_id: Optional[LocationIdentifier] = None  # Updated to use LocationIdentifier
     name: Optional[List[Narrative]] = None
@@ -292,6 +294,7 @@ class DocumentLink:
     title: List[Narrative] = field(default_factory=list)
     categories: List[Union[DocumentCategory, str]] = field(default_factory=list)
     languages: List[str] = field(default_factory=list)
+    description: Optional[List[Narrative]] = field(default_factory=list)
     document_date: Optional[str] = None
 
     def __post_init__(self):
@@ -335,6 +338,7 @@ class Budget:
     value: float
     currency: Optional[str] = None  # ISO 4217
     value_date: Optional[str] = None  # ISO 8601 format
+    raw_value: Optional[str] = None
 
     def __post_init__(self):  # noqa: C901
         # Convert strings to enums if needed
@@ -419,6 +423,7 @@ class Transaction:
     recipient_region: Optional[Union[RecipientRegion, str]] = None
     sectors: List[Dict[str, Any]] = field(default_factory=list)
     humanitarian: Optional[bool] = None  # Change from bool to Optional[bool]
+    raw_value: Optional[str] = None
 
     def __post_init__(self):  # noqa: C901
         # Convert strings to enums if needed
@@ -696,6 +701,7 @@ class Activity:
     transactions: List[Transaction] = field(default_factory=list)
     related_activities: List[Dict[str, str]] = field(default_factory=list)
     results: List[Result] = field(default_factory=list)
+    country_budget_items: List[Dict[str, Any]] = field(default_factory=list)
 
     # IATI Activity attributes
     default_currency: Optional[str] = None  # ISO 4217 Currency code
@@ -768,6 +774,7 @@ class IatiActivities:
     """
     version: str = "2.03"  # IATI standard version
     generated_datetime: str = field(default_factory=lambda: datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"))
+    linked_data_default: Optional[str] = None  # Optional linked data URI
     activities: List[Activity] = field(default_factory=list)
 
     def __post_init__(self):
