@@ -584,6 +584,16 @@ class TestUSAIDXML(unittest.TestCase):
                 print(self.comparator.format_differences(differences, show_non_relevant=False))
                 print("="*80)
 
+                # Save both files outise this temp dir for the user to analyze them
+                saved_dir = Path.cwd() / "xml_comparison_output"
+                saved_dir.mkdir(exist_ok=True)
+                saved_original = saved_dir / "original_usaid.xml"
+                saved_converted = saved_dir / "converted_usaid.xml"
+                saved_original.write_text(self.who_xml_path.read_text(encoding='utf-8'), encoding='utf-8')
+                saved_converted.write_text(output_xml.read_text(encoding='utf-8'), encoding='utf-8')
+                print(f"Saved original XML to: {saved_original}")
+                print(f"Saved converted XML to: {saved_converted}")
+
             # Assert files are equivalent
             self.assertTrue(
                 are_equivalent,

@@ -122,7 +122,7 @@ class TestWHOArgXML(unittest.TestCase):
                 print(f"\nSummary: {relevant_count} relevant, {non_relevant_count} non-relevant differences")
 
                 # Save both files outise this temp dir for the user to analyze them
-                saved_dir = Path.cwd() / "xml_comparison_output_who"
+                saved_dir = Path.cwd() / "xml_comparison_output"
                 saved_dir.mkdir(exist_ok=True)
                 saved_original = saved_dir / "original_who_arg.xml"
                 saved_converted = saved_dir / "converted_who_arg.xml"
