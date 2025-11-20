@@ -64,6 +64,8 @@ class IatiXmlGenerator:
             self._set_attribute(parent_element, "ref", org.ref)
         if org.type:
             self._set_attribute(parent_element, "type", org.type)
+        if org.secondary_reporter:
+            self._set_attribute(parent_element, "secondary-reporter", "1")
 
         if org.narratives:
             self._create_narrative_elements(parent_element, org.narratives)
@@ -191,6 +193,10 @@ class IatiXmlGenerator:
 
         title_el = ET.SubElement(doc_el, "title")
         self._create_narrative_elements(title_el, doc.title)
+
+        if doc.description:
+            desc_el = ET.SubElement(doc_el, "description")
+            self._create_narrative_elements(desc_el, doc.description)
 
         for category in doc.categories:
             cat_el = ET.SubElement(doc_el, "category")
