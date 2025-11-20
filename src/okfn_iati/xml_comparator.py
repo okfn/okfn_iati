@@ -206,10 +206,34 @@ class IatiXmlComparator:
         attrs1 = {k: v for k, v in elem1.attrib.items() if not self._should_ignore_attribute(k)}
         attrs2 = {k: v for k, v in elem2.attrib.items() if not self._should_ignore_attribute(k)}
 
-        # Check for missing attributes
         for attr in attrs1:
             val1 = self._normalize_attribute_value(attrs1[attr])
             val2 = self._normalize_attribute_value(attrs2.get(attr))
+
+            # --- HUMANITARIAN BOOLEAN DIFF LOGIC ---
+            if attr == "humanitarian":
+                # Normalize to boolean for comparison
+                def _boolish(v):
+                    v = v.strip().lower()
+                    if v in ("true", "1"):
+                        return True
+                    if v in ("false", "0"):
+                        return False
+                    return None
+                b1 = _boolish(val1)
+                b2 = _boolish(val2)
+                if b1 == b2:
+                    # Mark as non-relevant if only lexical diff
+                    if val1 != val2:
+                        self.differences.append(XmlDifference(
+                            diff_type=DifferenceType.ATTRIBUTE_VALUE,
+                            path=f"{path}/@{attr}",
+                            expected=val1,
+                            actual=val2,
+                            is_relevant=False,
+                            message="Humanitarian attribute lexical difference (true/1 or false/0, not relevant)"
+                        ))
+                    continue  # Do not report as relevant diff
 
             if attr not in attrs2:
                 if val1:  # Only report if the value is not empty
