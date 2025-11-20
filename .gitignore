@@ -1,6 +1,7 @@
 .vscode/
 # test files
 tests/full_xml/*.xml
+xml_comparison_output/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

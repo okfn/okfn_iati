@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 from datetime import datetime
-from typing import List, Union, Optional, Any
+from typing import List, Union, Optional, Any, Dict
 from enum import Enum
 
 from .models import (
@@ -64,6 +64,8 @@ class IatiXmlGenerator:
             self._set_attribute(parent_element, "ref", org.ref)
         if org.type:
             self._set_attribute(parent_element, "type", org.type)
+        if org.secondary_reporter is not None:
+            self._set_attribute(parent_element, "secondary-reporter", "1" if org.secondary_reporter else "0")
 
         if org.narratives:
             self._create_narrative_elements(parent_element, org.narratives)
@@ -133,6 +135,9 @@ class IatiXmlGenerator:
     def _add_location(self, activity_el: ET.Element, location: Location) -> None:  # noqa: C901
         loc_el = ET.SubElement(activity_el, "location")
 
+        if location.ref:
+            self._set_attribute(loc_el, "ref", location.ref)
+
         if location.location_reach:
             reach_el = ET.SubElement(loc_el, "location-reach")
             self._set_attribute(reach_el, "code", self._get_enum_value(location.location_reach))
@@ -189,6 +194,10 @@ class IatiXmlGenerator:
         title_el = ET.SubElement(doc_el, "title")
         self._create_narrative_elements(title_el, doc.title)
 
+        if doc.description:
+            desc_el = ET.SubElement(doc_el, "description")
+            self._create_narrative_elements(desc_el, doc.description)
+
         for category in doc.categories:
             cat_el = ET.SubElement(doc_el, "category")
             self._set_attribute(cat_el, "code", self._get_enum_value(category))
@@ -213,8 +222,11 @@ class IatiXmlGenerator:
         self._set_attribute(end_el, "iso-date", budget.period_end)
 
         value_el = ET.SubElement(budget_el, "value")
-        # Format value with 2 decimal places
-        value_el.text = f"{budget.value:.2f}"
+        raw_value = getattr(budget, "raw_value", None)
+        if raw_value not in (None, ""):
+            value_el.text = raw_value
+        else:
+            value_el.text = f"{budget.value:.2f}"
 
         if budget.currency:
             self._set_attribute(value_el, "currency", budget.currency)
@@ -228,9 +240,8 @@ class IatiXmlGenerator:
         if transaction.transaction_ref:
             self._set_attribute(trans_el, "ref", transaction.transaction_ref)
 
-        # Handle humanitarian attribute - preserve exact original value
         if transaction.humanitarian is not None:
-            self._set_attribute(trans_el, "humanitarian", "1" if transaction.humanitarian else "0")
+            self._set_attribute(trans_el, "humanitarian", "true" if transaction.humanitarian else "false")
 
         type_el = ET.SubElement(trans_el, "transaction-type")
         self._set_attribute(type_el, "code", self._get_enum_value(transaction.type))
@@ -239,8 +250,11 @@ class IatiXmlGenerator:
         self._set_attribute(date_el, "iso-date", transaction.date)
 
         value_el = ET.SubElement(trans_el, "value")
-        # Format value with 2 decimal places
-        value_el.text = f"{transaction.value:.2f}"
+        raw_value = getattr(transaction, "raw_value", None)
+        if raw_value not in (None, ""):
+            value_el.text = raw_value
+        else:
+            value_el.text = f"{transaction.value:.2f}"
 
         if transaction.currency:
             self._set_attribute(value_el, "currency", transaction.currency)
@@ -447,7 +461,7 @@ class IatiXmlGenerator:
 
         # Handle humanitarian attribute - preserve exact original value
         if activity.humanitarian is not None:
-            self._set_attribute(activity_el, "humanitarian", "1" if activity.humanitarian else "0")
+            self._set_attribute(activity_el, "humanitarian", "true" if activity.humanitarian else "false")
 
         # IMPORTANT: Follow IATI Schema element order
         # 1. Add identifier
@@ -564,6 +578,9 @@ class IatiXmlGenerator:
         for location in activity.locations:
             self._add_location(activity_el, location)
 
+        for cbi in activity.country_budget_items:
+            self._add_country_budget_items(activity_el, cbi)
+
         # 12. Add sectors (REQUIRED by IATI rules)
         for sector in activity.sectors:
             sector_el = ET.SubElement(activity_el, "sector")
@@ -571,6 +588,9 @@ class IatiXmlGenerator:
 
             if "vocabulary" in sector:
                 self._set_attribute(sector_el, "vocabulary", sector["vocabulary"])
+
+            if "vocabulary_uri" in sector:
+                self._set_attribute(sector_el, "vocabulary-uri", sector["vocabulary_uri"])
 
             if "percentage" in sector:
                 self._set_attribute(sector_el, "percentage", str(sector["percentage"]))
@@ -623,6 +643,10 @@ class IatiXmlGenerator:
         self._set_attribute(root, "version", iati_activities.version)
         self._set_attribute(root, "generated-datetime", iati_activities.generated_datetime)
 
+        # Add linked-data-default if present
+        if iati_activities.linked_data_default:
+            self._set_attribute(root, "linked-data-default", iati_activities.linked_data_default)
+
         # Add XML namespace references to match IATI standard
         self._set_attribute(root, "xmlns:xsd", "http://www.w3.org/2001/XMLSchema")
         self._set_attribute(root, "xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance")
@@ -648,3 +672,19 @@ class IatiXmlGenerator:
         xml_string = self.generate_iati_activities_xml(iati_activities)
         with open(file_path, 'w', encoding='utf-8') as f:
             f.write(xml_string)
+
+    def _add_country_budget_items(self, activity_el: ET.Element, cbi: Dict[str, Any]) -> None:
+        cbi_el = ET.SubElement(activity_el, "country-budget-items")
+        if cbi.get("vocabulary"):
+            self._set_attribute(cbi_el, "vocabulary", cbi["vocabulary"])
+
+        for item in cbi.get("budget_items", []):
+            item_el = ET.SubElement(cbi_el, "budget-item")
+            if item.get("code"):
+                self._set_attribute(item_el, "code", item["code"])
+            if item.get("percentage"):
+                self._set_attribute(item_el, "percentage", item["percentage"])
+
+            if item.get("description"):
+                desc_el = ET.SubElement(item_el, "description")
+                self._create_narrative_elements(desc_el, item["description"])
