@@ -774,6 +774,7 @@ class IatiActivities:
     """
     version: str = "2.03"  # IATI standard version
     generated_datetime: str = field(default_factory=lambda: datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"))
+    linked_data_default: Optional[str] = None  # Optional linked data URI
     activities: List[Activity] = field(default_factory=list)
 
     def __post_init__(self):

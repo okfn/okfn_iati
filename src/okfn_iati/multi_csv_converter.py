@@ -360,8 +360,13 @@ class IatiMultiCsvConverter:
                 csv_path = csv_folder / csv_config['filename']
                 self._write_csv_file(csv_path, csv_config['columns'], data_collections[csv_type])
 
-            # Create a summary file
-            self._create_summary_file(csv_folder, data_collections)
+            # Extract root-level attributes
+            root_attributes = {
+                'linked_data_default': root.get('linked-data-default', '')
+            }
+
+            # Create a summary file with root attributes
+            self._create_summary_file(csv_folder, data_collections, root_attributes)
 
             print(f"✅ Successfully converted XML to CSV files in: {csv_folder}")
             return True
@@ -406,10 +411,21 @@ class IatiMultiCsvConverter:
             # Convert to activities
             activities = self._build_activities_from_collections(data_collections)
 
+            # Read root attributes from summary file if it exists
+            linked_data_default = None
+            summary_path = csv_folder / 'summary.txt'
+            if summary_path.exists():
+                with open(summary_path, 'r', encoding='utf-8') as f:
+                    for line in f:
+                        if line.strip().startswith('linked_data_default:'):
+                            linked_data_default = line.split(':', 1)[1].strip()
+                            break
+
             # Create IATI activities container
             iati_activities = IatiActivities(
                 version="2.03",
                 generated_datetime=datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"),
+                linked_data_default=linked_data_default,
                 activities=activities
             )
 
@@ -1367,7 +1383,11 @@ class IatiMultiCsvConverter:
                         main_data.get('reporting_org_name_lang', '')
                     )
                 ] if main_data.get('reporting_org_name') else [],
-                secondary_reporter=main_data.get('reporting_org_secondary_reporter') == '1'
+                secondary_reporter=(
+                    True if main_data.get('reporting_org_secondary_reporter') == '1'
+                    else False if main_data.get('reporting_org_secondary_reporter') == '0'
+                    else None
+                )
             ),
             title=[
                 create_narrative(
@@ -2170,14 +2190,24 @@ class IatiMultiCsvConverter:
 
         return []
 
-    def _create_summary_file(self, csv_folder: Path, data_collections: Dict[str, List[Dict]]) -> None:
-        """Create a summary file with statistics."""
+    def _create_summary_file(
+        self, csv_folder: Path, data_collections: Dict[str, List[Dict]], root_attributes: Dict[str, str] = None
+    ) -> None:
+        """Create a summary file with statistics and root attributes."""
         summary_path = csv_folder / 'summary.txt'
 
         with open(summary_path, 'w', encoding='utf-8') as f:
             f.write("IATI CSV Conversion Summary\n")
             f.write("=" * 30 + "\n\n")
             f.write(f"Conversion completed: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
+
+            # Write root-level attributes if provided
+            if root_attributes:
+                f.write("Root Attributes:\n")
+                for key, value in root_attributes.items():
+                    if value:  # Only write non-empty values
+                        f.write(f"  {key}: {value}\n")
+                f.write("\n")
 
             f.write("Files created:\n")
             for csv_type, csv_config in self.csv_files.items():
