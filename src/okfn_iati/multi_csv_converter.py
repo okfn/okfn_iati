@@ -751,7 +751,7 @@ class IatiMultiCsvConverter:
         data['default_currency'] = activity_elem.get('default-currency', '')
         # Preserve exact humanitarian value: "" (missing), "0" (explicit false), "1" (explicit true)
         data['humanitarian'] = activity_elem.get('humanitarian', '')
-        data['hierarchy'] = activity_elem.get('hierarchy', '1')
+        data['hierarchy'] = activity_elem.get('hierarchy', '')
         data['last_updated_datetime'] = activity_elem.get('last-updated-datetime', '')
         data['xml_lang'] = activity_elem.get('{http://www.w3.org/XML/1998/namespace}lang', 'en')
 
@@ -1375,7 +1375,7 @@ class IatiMultiCsvConverter:
             activity_status=self._parse_activity_status(main_data.get('activity_status')),
             default_currency=main_data.get('default_currency', 'USD'),
             humanitarian=humanitarian,
-            hierarchy=main_data.get('hierarchy', '1'),
+            hierarchy=main_data.get('hierarchy') or None,
             last_updated_datetime=main_data.get('last_updated_datetime'),
             xml_lang=default_lang,
             activity_scope=self._parse_activity_scope(main_data.get('activity_scope')),
