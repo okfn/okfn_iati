@@ -72,6 +72,7 @@ class IatiMultiCsvConverter:
                     'reporting_org_name',
                     'reporting_org_name_lang',  # NEW: lang attribute for reporting org narrative
                     'reporting_org_type',
+                    'reporting_org_secondary_reporter',
                     'planned_start_date',
                     'actual_start_date',
                     'planned_end_date',
@@ -787,11 +788,13 @@ class IatiMultiCsvConverter:
             data['reporting_org_name_lang'] = (
                 rep_org_name.get('{http://www.w3.org/XML/1998/namespace}lang', '') if rep_org_name is not None else ''
             )
+            data['reporting_org_secondary_reporter'] = rep_org_elem.get('secondary-reporter', '')
         else:
             data['reporting_org_ref'] = ''
             data['reporting_org_type'] = ''
             data['reporting_org_name'] = ''
             data['reporting_org_name_lang'] = ''
+            data['reporting_org_secondary_reporter'] = ''
 
         # Recipient country (first one only for main table)
         country_elem = activity_elem.find('recipient-country')
@@ -1357,13 +1360,14 @@ class IatiMultiCsvConverter:
             iati_identifier=main_data['activity_identifier'],
             reporting_org=OrganizationRef(
                 ref=main_data.get('reporting_org_ref', ''),
-                type=main_data.get('reporting_org_type', ''),
+                type=main_data.get('reporting_org_type') or None,
                 narratives=[
                     create_narrative(
                         main_data.get('reporting_org_name', ''),
                         main_data.get('reporting_org_name_lang', '')
                     )
-                ] if main_data.get('reporting_org_name') else []
+                ] if main_data.get('reporting_org_name') else [],
+                secondary_reporter=main_data.get('reporting_org_secondary_reporter') == '1'
             ),
             title=[
                 create_narrative(
@@ -1837,6 +1841,12 @@ class IatiMultiCsvConverter:
 
         if doc_data.get('category_code'):
             doc_args['categories'] = [DocumentCategory(doc_data['category_code'])]
+
+        if doc_data.get('description') or doc_data.get('description_lang'):
+            doc_args['description'] = [Narrative(
+                text=doc_data.get('description', ''),
+                lang=doc_data.get('description_lang') or None
+            )]
 
         return DocumentLink(**doc_args)
 

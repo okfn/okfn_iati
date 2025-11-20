@@ -55,6 +55,7 @@ class OrganizationRef:
     type: Optional[str] = None  # See OrganisationType enum for valid values
     narratives: List[Narrative] = field(default_factory=list)
     receiver_org_activity_id: Optional[str] = None
+    secondary_reporter: Optional[bool] = None
 
     def __post_init__(self):
         # Validate type is a valid OrganisationType if it's provided and numeric
@@ -293,6 +294,7 @@ class DocumentLink:
     title: List[Narrative] = field(default_factory=list)
     categories: List[Union[DocumentCategory, str]] = field(default_factory=list)
     languages: List[str] = field(default_factory=list)
+    description: Optional[List[Narrative]] = field(default_factory=list)
     document_date: Optional[str] = None
 
     def __post_init__(self):
