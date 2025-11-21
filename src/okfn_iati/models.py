@@ -759,7 +759,13 @@ class Activity:
         if self.last_updated_datetime:
             try:
                 # Check if it's a valid ISO datetime
-                datetime.fromisoformat(self.last_updated_datetime.replace('Z', '+00:00'))
+                # Handle Python < 3.11 limitation with >6 digits in microseconds
+                dt_to_validate = self.last_updated_datetime.replace('Z', '+00:00')
+                if '.' in dt_to_validate:
+                    # Truncate microseconds to 6 digits for validation
+                    import re
+                    dt_to_validate = re.sub(r'(\.\d{6})\d+', r'\1', dt_to_validate)
+                datetime.fromisoformat(dt_to_validate)
             except ValueError:
                 raise ValueError(f"Invalid datetime format: {self.last_updated_datetime}")
 
