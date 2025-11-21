@@ -6,6 +6,7 @@ relevant and non-relevant differences.
 """
 
 import xml.etree.ElementTree as ET
+import html
 from typing import List, Tuple, Optional
 from dataclasses import dataclass
 from enum import Enum
@@ -136,6 +137,11 @@ class IatiXmlComparator:
         """Normalize text content for comparison."""
         if text is None:
             return ""
+
+        # Unescape HTML entities to handle double-escaped content
+        # e.g. "&#xE1;" vs "á" should be treated as equal
+        text = html.unescape(text)
+
         if self.ignore_whitespace:
             return " ".join(text.split())
         return text

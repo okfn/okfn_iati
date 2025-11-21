@@ -15,6 +15,7 @@ LIMITATIONS:
 import csv
 import shutil
 import xml.etree.ElementTree as ET
+import html
 from typing import List, Dict, Any, Union, Optional
 from pathlib import Path
 from datetime import datetime
@@ -204,12 +205,12 @@ class IatiMultiCsvConverter:
                     'url',
                     'format',
                     'title',
-                    'title_lang',          # NEW: lang for title narrative
+                    'title_lang',
                     'description',
-                    'description_lang',    # NEW: lang for description narrative
+                    'description_lang',
                     'category_code',
                     'language_code',
-                    'document_date'
+                    'document_date',
                 ]
             },
             'results': {
@@ -492,6 +493,12 @@ class IatiMultiCsvConverter:
 
         print(f"✅ Generated CSV templates in: {output_folder}")
 
+    def _get_text_content(self, element: Optional[ET.Element]) -> str:
+        """Get text content from element, unescaping HTML entities."""
+        if element is None or not element.text:
+            return ''
+        return html.unescape(element.text)
+
     def _extract_activity_to_collections(  # noqa: C901
         self,
         activity_elem: ET.Element,
@@ -638,7 +645,7 @@ class IatiMultiCsvConverter:
     def _get_activity_identifier(self, activity_elem: ET.Element) -> str:
         """Get activity identifier from XML element."""
         id_elem = activity_elem.find('iati-identifier')
-        return id_elem.text if id_elem is not None else ''
+        return self._get_text_content(id_elem)
 
     def _extract_description_data(
         self,
@@ -657,7 +664,7 @@ class IatiMultiCsvConverter:
         }
 
         if narrative_elem is not None:
-            data['narrative'] = narrative_elem.text or ''
+            data['narrative'] = self._get_text_content(narrative_elem)
             data['narrative_lang'] = narrative_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '')
         else:
             data['narrative'] = ''
@@ -691,7 +698,7 @@ class IatiMultiCsvConverter:
         if target_elem is not None:
             data['target_value'] = target_elem.get('value', '')
             target_comment = target_elem.find('comment/narrative')
-            data['target_comment'] = target_comment.text if target_comment is not None else ''
+            data['target_comment'] = self._get_text_content(target_comment)
         else:
             data['target_value'] = ''
             data['target_comment'] = ''
@@ -701,7 +708,7 @@ class IatiMultiCsvConverter:
         if actual_elem is not None:
             data['actual_value'] = actual_elem.get('value', '')
             actual_comment = actual_elem.find('comment/narrative')
-            data['actual_comment'] = actual_comment.text if actual_comment is not None else ''
+            data['actual_comment'] = self._get_text_content(actual_comment)
         else:
             data['actual_value'] = ''
             data['actual_comment'] = ''
@@ -727,7 +734,7 @@ class IatiMultiCsvConverter:
         data['vocabulary_uri'] = sector_elem.get('vocabulary-uri', '')
 
         sector_name = sector_elem.find('narrative')
-        data['sector_name'] = sector_name.text if sector_name is not None else ''
+        data['sector_name'] = self._get_text_content(sector_name)
 
         return data
 
@@ -751,7 +758,7 @@ class IatiMultiCsvConverter:
             # Description
             desc_elem = item_elem.find('description/narrative')
             if desc_elem is not None:
-                data['description'] = desc_elem.text or ''
+                data['description'] = self._get_text_content(desc_elem)
                 data['description_lang'] = desc_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '')
             else:
                 data['description'] = ''
@@ -776,14 +783,14 @@ class IatiMultiCsvConverter:
 
         # Title - extract lang attribute from narrative
         title_elem = activity_elem.find('title/narrative')
-        data['title'] = title_elem.text if title_elem is not None else ''
+        data['title'] = self._get_text_content(title_elem)
         data['title_lang'] = title_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if title_elem is not None else ''
 
         # Description - extract lang attribute from narrative
         desc_elem = activity_elem.find('description[@type="1"]/narrative')
         if desc_elem is None:
             desc_elem = activity_elem.find('description/narrative')
-        data['description'] = desc_elem.text if desc_elem is not None else ''
+        data['description'] = self._get_text_content(desc_elem)
         data['description_lang'] = (
             desc_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if desc_elem is not None else ''
         )
@@ -802,7 +809,7 @@ class IatiMultiCsvConverter:
             data['reporting_org_ref'] = rep_org_elem.get('ref', '')
             data['reporting_org_type'] = rep_org_elem.get('type', '')
             rep_org_name = rep_org_elem.find('narrative')
-            data['reporting_org_name'] = rep_org_name.text if rep_org_name is not None else ''
+            data['reporting_org_name'] = self._get_text_content(rep_org_name)
             data['reporting_org_name_lang'] = (
                 rep_org_name.get('{http://www.w3.org/XML/1998/namespace}lang', '') if rep_org_name is not None else ''
             )
@@ -819,7 +826,7 @@ class IatiMultiCsvConverter:
         if country_elem is not None:
             data['recipient_country_code'] = country_elem.get('code', '')
             country_name = country_elem.find('narrative')
-            data['recipient_country_name'] = country_name.text if country_name is not None else ''
+            data['recipient_country_name'] = self._get_text_content(country_name)
             data['recipient_country_lang'] = (
                 country_name.get(xml_lang_attr, '') if country_name is not None else ''
             )
@@ -835,7 +842,7 @@ class IatiMultiCsvConverter:
         if region_elem is not None:
             data['recipient_region_code'] = region_elem.get('code', '')
             region_name = region_elem.find('narrative')
-            data['recipient_region_name'] = region_name.text if region_name is not None else ''
+            data['recipient_region_name'] = self._get_text_content(region_name)
             data['recipient_region_lang'] = (
                 region_name.get(xml_lang_attr, '') if region_name is not None else ''
             )
@@ -878,10 +885,7 @@ class IatiMultiCsvConverter:
         data = {
             'activity_identifier': activity_id,
             'condition_type': condition_elem.get('type', ''),
-            'condition_text': (
-                condition_elem.find('narrative').text
-                if condition_elem.find('narrative') is not None else ''
-            )
+            'condition_text': self._get_text_content(condition_elem.find('narrative'))
         }
         return data
 
@@ -896,7 +900,7 @@ class IatiMultiCsvConverter:
         data['crs_channel_code'] = org_elem.get('crs-channel-code', '')
 
         org_name = org_elem.find('narrative')
-        data['org_name'] = org_name.text if org_name is not None else ''
+        data['org_name'] = self._get_text_content(org_name)
         data['org_name_lang'] = (
             org_name.get('{http://www.w3.org/XML/1998/namespace}lang', '') if org_name is not None else ''
         )
@@ -913,7 +917,7 @@ class IatiMultiCsvConverter:
         data['percentage'] = sector_elem.get('percentage', '')
 
         sector_name = sector_elem.find('narrative')
-        data['sector_name'] = sector_name.text if sector_name is not None else ''
+        data['sector_name'] = self._get_text_content(sector_name)
 
         return data
 
@@ -932,7 +936,7 @@ class IatiMultiCsvConverter:
 
         value_elem = budget_elem.find('value')
         if value_elem is not None:
-            data['value'] = value_elem.text or ''
+            data['value'] = self._get_text_content(value_elem)
             data['currency'] = value_elem.get('currency', '')
             data['value_date'] = value_elem.get('value-date', '')
         else:
@@ -961,7 +965,7 @@ class IatiMultiCsvConverter:
         # Value
         value_elem = trans_elem.find('value')
         if value_elem is not None:
-            data['value'] = value_elem.text or ''
+            data['value'] = self._get_text_content(value_elem)
             data['currency'] = value_elem.get('currency', '')
             data['value_date'] = value_elem.get('value-date', '')
         else:
@@ -971,7 +975,7 @@ class IatiMultiCsvConverter:
 
         # Description
         desc_elem = trans_elem.find('description/narrative')
-        data['description'] = desc_elem.text if desc_elem is not None else ''
+        data['description'] = self._get_text_content(desc_elem)
         data['description_lang'] = (
             desc_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if desc_elem is not None else ''
         )
@@ -982,7 +986,7 @@ class IatiMultiCsvConverter:
             data['provider_org_ref'] = provider_elem.get('ref', '')
             data['provider_org_type'] = provider_elem.get('type', '')
             provider_name = provider_elem.find('narrative')
-            data['provider_org_name'] = provider_name.text if provider_name is not None else ''
+            data['provider_org_name'] = self._get_text_content(provider_name)
             data['provider_org_lang'] = provider_name.get(xml_lang, '') if provider_name is not None else ''
         else:
             data['provider_org_ref'] = ''
@@ -997,7 +1001,7 @@ class IatiMultiCsvConverter:
             data['receiver_org_type'] = receiver_elem.get('type', '')
             data['receiver_org_activity_id'] = receiver_elem.get('receiver-activity-id', '')
             receiver_name = receiver_elem.find('narrative')
-            data['receiver_org_name'] = receiver_name.text if receiver_name is not None else ''
+            data['receiver_org_name'] = self._get_text_content(receiver_name)
             data['receiver_org_lang'] = receiver_name.get(xml_lang, '') if receiver_name is not None else ''
         else:
             data['receiver_org_ref'] = ''
@@ -1060,21 +1064,21 @@ class IatiMultiCsvConverter:
 
         # Names and descriptions
         name_elem = location_elem.find('name/narrative')
-        data['name'] = name_elem.text if name_elem is not None else ''
+        data['name'] = self._get_text_content(name_elem)
         data['name_lang'] = name_elem.get(xml_lang, '') if name_elem is not None else ''
 
         desc_elem = location_elem.find('description/narrative')
-        data['description'] = desc_elem.text if desc_elem is not None else ''
+        data['description'] = self._get_text_content(desc_elem)
         data['description_lang'] = desc_elem.get(xml_lang, '') if desc_elem is not None else ''
 
         activity_desc_elem = location_elem.find('activity-description/narrative')
-        data['activity_description'] = activity_desc_elem.text if activity_desc_elem is not None else ''
+        data['activity_description'] = self._get_text_content(activity_desc_elem)
         data['activity_description_lang'] = activity_desc_elem.get(xml_lang, '') if activity_desc_elem is not None else ''
 
         # Coordinates
         point_elem = location_elem.find('point/pos')
         if point_elem is not None and point_elem.text:
-            coords = point_elem.text.split()
+            coords = self._get_text_content(point_elem).split()
             if len(coords) >= 2:
                 data['latitude'] = coords[0]
                 data['longitude'] = coords[1]
@@ -1114,13 +1118,13 @@ class IatiMultiCsvConverter:
         data['document_date'] = doc_elem.get('document-date', '')
 
         title_elem = doc_elem.find('title/narrative')
-        data['title'] = title_elem.text if title_elem is not None else ''
+        data['title'] = self._get_text_content(title_elem)
         data['title_lang'] = (
             title_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if title_elem is not None else ''
         )
 
         desc_elem = doc_elem.find('description/narrative')
-        data['description'] = desc_elem.text if desc_elem is not None else ''
+        data['description'] = self._get_text_content(desc_elem)
         data['description_lang'] = (
             desc_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if desc_elem is not None else ''
         )
@@ -1147,10 +1151,10 @@ class IatiMultiCsvConverter:
         data['aggregation_status'] = result_elem.get('aggregation-status', '')
 
         title_elem = result_elem.find('title/narrative')
-        data['title'] = title_elem.text if title_elem is not None else ''
+        data['title'] = self._get_text_content(title_elem)
 
         desc_elem = result_elem.find('description/narrative')
-        data['description'] = desc_elem.text if desc_elem is not None else ''
+        data['description'] = self._get_text_content(desc_elem)
 
         return data
 
@@ -1189,15 +1193,15 @@ class IatiMultiCsvConverter:
         title_elem = indicator_elem.find('title')
         if title_elem is not None:
             narrative = title_elem.find('narrative')
-            if narrative is not None and narrative.text:
-                data['title'] = narrative.text.strip()
+            if narrative is not None:
+                data['title'] = self._get_text_content(narrative).strip()
 
         # Description
         desc_elem = indicator_elem.find('description')
         if desc_elem is not None:
             narrative = desc_elem.find('narrative')
-            if narrative is not None and narrative.text:
-                data['description'] = narrative.text.strip()
+            if narrative is not None:
+                data['description'] = self._get_text_content(narrative).strip()
 
         # Baseline
         baseline_elem = indicator_elem.find('baseline')
@@ -1207,8 +1211,8 @@ class IatiMultiCsvConverter:
             data['baseline_value'] = baseline_elem.get('value', '')
 
             comment = baseline_elem.find('comment/narrative')
-            if comment is not None and comment.text:
-                data['baseline_comment'] = comment.text.strip()
+            if comment is not None:
+                data['baseline_comment'] = self._get_text_content(comment).strip()
 
         return data
 
@@ -1219,42 +1223,42 @@ class IatiMultiCsvConverter:
         data['contact_type'] = contact_elem.get('type', '')
 
         org_elem = contact_elem.find('organisation/narrative')
-        data['organisation'] = org_elem.text if org_elem is not None else ''
+        data['organisation'] = self._get_text_content(org_elem)
         data['organisation_lang'] = (
             org_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if org_elem is not None else ''
         )
 
         dept_elem = contact_elem.find('department/narrative')
-        data['department'] = dept_elem.text if dept_elem is not None else ''
+        data['department'] = self._get_text_content(dept_elem)
         data['department_lang'] = (
             dept_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if dept_elem is not None else ''
         )
 
         person_elem = contact_elem.find('person-name/narrative')
-        data['person_name'] = person_elem.text if person_elem is not None else ''
+        data['person_name'] = self._get_text_content(person_elem)
         data['person_name_lang'] = (
             person_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if person_elem is not None else ''
         )
         data['person_name_present'] = '1' if person_elem is not None else '0'
 
         job_elem = contact_elem.find('job-title/narrative')
-        data['job_title'] = job_elem.text if job_elem is not None else ''
+        data['job_title'] = self._get_text_content(job_elem)
         data['job_title_lang'] = (
             job_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if job_elem is not None else ''
         )
 
         tel_elem = contact_elem.find('telephone')
-        data['telephone'] = tel_elem.text if tel_elem is not None else ''
+        data['telephone'] = self._get_text_content(tel_elem)
 
         email_elem = contact_elem.find('email')
-        data['email'] = email_elem.text if email_elem is not None else ''
+        data['email'] = self._get_text_content(email_elem)
         data['email_present'] = '1' if email_elem is not None else '0'
 
         website_elem = contact_elem.find('website')
-        data['website'] = website_elem.text if website_elem is not None else ''
+        data['website'] = self._get_text_content(website_elem)
 
         addr_elem = contact_elem.find('mailing-address/narrative')
-        data['mailing_address'] = addr_elem.text if addr_elem is not None else ''
+        data['mailing_address'] = self._get_text_content(addr_elem)
         data['mailing_address_lang'] = (
             addr_elem.get('{http://www.w3.org/XML/1998/namespace}lang', '') if addr_elem is not None else ''
         )
@@ -1272,7 +1276,7 @@ class IatiMultiCsvConverter:
         # Get narrative if exists (it's optional)
         narrative = date_elem.find('narrative')
         if narrative is not None:
-            data['narrative'] = narrative.text or ''
+            data['narrative'] = self._get_text_content(narrative)
             data['narrative_lang'] = narrative.get('{http://www.w3.org/XML/1998/namespace}lang', '')
         else:
             data['narrative'] = ''
