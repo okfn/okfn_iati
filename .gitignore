@@ -2,6 +2,7 @@
 # test files
 tests/full_xml/*.xml
 xml_comparison_output/
+data-samples/temp
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
