@@ -692,7 +692,9 @@ class Activity:
     activity_status: Optional[ActivityStatus] = None
     activity_dates: List[ActivityDate] = field(default_factory=list)
     contact_info: Optional[ContactInfo] = None
+    # TODO add a new CSV file for multiple countries/regions
     recipient_countries: List[Dict[str, Union[str, int, List[Narrative]]]] = field(default_factory=list)
+    # Region codes can be found here: https://iatistandard.org/en/iati-standard/203/codelists/region/
     recipient_regions: List[Dict[str, Union[str, int, List[Narrative]]]] = field(default_factory=list)
     locations: List[Location] = field(default_factory=list)
     sectors: List[Dict[str, Any]] = field(default_factory=list)
@@ -716,6 +718,7 @@ class Activity:
     conditions: List[Dict[str, str]] = field(default_factory=list)
 
     # Add default type fields (activity-level defaults)
+    # default_flow_type: https://iatistandard.org/en/iati-standard/203/codelists/flowtype/
     default_flow_type: Optional[str] = None
     default_finance_type: Optional[str] = None
     default_aid_type: Optional[str] = None
