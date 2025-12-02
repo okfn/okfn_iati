@@ -1,7 +1,10 @@
 IATI CSV Conversion Summary
 ==============================
 
-Conversion completed: 2025-10-31 11:18:13
+Conversion completed: 2025-12-02 13:51:18
+
+Root Attributes:
+  linked_data_default: https://www.caf.com/es/proyectos/
 
 Files created:
   activities.csv: 478 records
@@ -9,11 +12,16 @@ Files created:
   sectors.csv: 478 records
   budgets.csv: 0 records
   transactions.csv: 945 records
+  transaction_sectors.csv: 0 records
   locations.csv: 0 records
   documents.csv: 478 records
   results.csv: 493 records
   indicators.csv: 493 records
   indicator_periods.csv: 493 records
+  activity_date.csv: 478 records
   contact_info.csv: 478 records
+  conditions.csv: 0 records
+  descriptions.csv: 956 records
+  country_budget_items.csv: 0 records
 
 Total activities: 478
