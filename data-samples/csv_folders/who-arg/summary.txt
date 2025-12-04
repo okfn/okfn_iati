@@ -1,7 +1,9 @@
 IATI CSV Conversion Summary
 ==============================
 
-Conversion completed: 2025-11-07 16:12:14
+Conversion completed: 2025-12-04 12:17:58
+
+Root Attributes:
 
 Files created:
   activities.csv: 157 records
@@ -18,5 +20,7 @@ Files created:
   activity_date.csv: 586 records
   contact_info.csv: 157 records
   conditions.csv: 0 records
+  descriptions.csv: 314 records
+  country_budget_items.csv: 157 records
 
 Total activities: 157
