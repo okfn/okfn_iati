@@ -2,18 +2,19 @@
 # See https://pre-commit.com/hooks.html for more hooks
 repos:
   - repo: https://github.com/pycqa/flake8
-    rev: 7.1.1  # Use the latest stable version
+    rev: 7.1.1
     hooks:
       - id: flake8
         args: ['--config=.flake8']
         additional_dependencies: []
 
-  # Optional: Add other useful pre-commit hooks
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.6.0
     hooks:
       - id: trailing-whitespace
+        exclude: '\.csv$'  # Exclude CSV files from trailing whitespace check
       - id: end-of-file-fixer
+        exclude: '\.csv$'  # Exclude CSV files from end-of-file-fixer too
       - id: check-yaml
       - id: check-added-large-files
         args: ['--maxkb=5000']
