@@ -697,6 +697,8 @@ class Activity:
     # Region codes can be found here: https://iatistandard.org/en/iati-standard/203/codelists/region/
     recipient_regions: List[Dict[str, Union[str, int, List[Narrative]]]] = field(default_factory=list)
     locations: List[Location] = field(default_factory=list)
+    # Sector codes https://iatistandard.org/en/iati-standard/203/codelists/sector/
+    # Sector vocabularies can be found here: https://iatistandard.org/en/iati-standard/203/codelists/sectorvocabulary/
     sectors: List[Dict[str, Any]] = field(default_factory=list)
     document_links: List[DocumentLink] = field(default_factory=list)
     budgets: List[Budget] = field(default_factory=list)
