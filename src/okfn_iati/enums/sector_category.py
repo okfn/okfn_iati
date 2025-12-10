@@ -54,6 +54,11 @@ class EnumFromCSV:
 
 
 class SectorCategoryData(EnumFromCSV):
+    """
+    See full sectors lists at https://iatistandard.org/en/iati-standard/203/codelists/sector/
+    Also, 3 digit version: https://iatistandard.org/en/iati-standard/203/codelists/sectorcategory/
+    This codes are a Replicated codelist from OECD Codes
+    """
     def __init__(self):
         super().__init__(csv_filename='sector-category-codes.csv', code_field='Code', name_field='Name')
 

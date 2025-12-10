@@ -117,9 +117,17 @@ For each sector the activity addresses:
 
 | Field | Description | Format | Required | Example |
 |-------|-------------|--------|----------|---------|
-| Sector Code | Code representing the sector | [OECD DAC 5-digit purpose code](https://iatistandard.org/en/iati-standard/203/codelists/sector/) | Yes | 11110 (Education Policy) |
-| Sector Name | Name of the sector | Text | Yes | "Education Policy & Administrative Management" |
+| Sector Code | Code representing the sector | Code from the selected vocabulary | Yes | 11110 (Education Policy) |
+| Sector Name | Name of the sector (required for custom vocabularies 98/99) | Text | Conditional | "Education Policy & Administrative Management" |
+| Vocabulary | Vocabulary used for sector classification | [IATI Sector Vocabulary code](https://iatistandard.org/en/iati-standard/203/codelists/sectorvocabulary/) (1=DAC 5-digit, 2=DAC 3-digit, 98/99=Custom) | No (default: 1) | 1 |
+| Vocabulary URI | URI where the vocabulary is defined (strongly recommended for custom vocabularies) | URL | Conditional | "https://example.org/sectors" |
 | Percentage | Percentage of activity focused on this sector | Number (0-100) | If multiple sectors | 60 |
+
+**Notes on Sector Vocabularies:**
+- **Vocabulary 1** (default): Uses [OECD DAC 5-digit purpose codes](https://iatistandard.org/en/iati-standard/203/codelists/sector/)
+- **Vocabulary 2**: Uses OECD DAC 3-digit sector codes
+- **Vocabulary 98/99**: Organization's own sector classifications - requires a narrative (Sector Name) and a Vocabulary URI
+- When using multiple vocabularies, percentages within each vocabulary should add up to 100%
 
 ### 6. Financial Information
 
@@ -199,7 +207,7 @@ For each policy marker that applies to the activity:
 3. **Percentages**: When multiple countries, regions or sectors are listed, percentages should add up to 100%.
 4. **Currency**: Use standard 3-letter ISO currency codes (USD, EUR, GBP, etc.).
 5. **Country Codes**: Use standard ISO 2-letter country codes (HN, SV, GT, NI, CR, PA, etc.).
-6. **Sector Codes**: Use the OECD DAC 5-digit purpose codes.
+6. **Sector Codes**: Use OECD DAC 5-digit purpose codes (vocabulary=1, default), or specify a different vocabulary. For custom vocabularies (98/99), include a Sector Name and Vocabulary URI.
 7. **Codelist Values**: All fields with specific codelists must use the exact code values from the linked IATI standard codelists.
 
 ## Additional Information Needed
