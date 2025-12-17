@@ -90,6 +90,7 @@ class IatiMultiCsvConverter:
                     'default_flow_type',
                     'default_finance_type',
                     'default_aid_type',
+                    'default_aid_type_vocabulary',
                     'default_tied_status',
                     'conditions_attached'
                 ]
@@ -865,6 +866,7 @@ class IatiMultiCsvConverter:
 
         aid_elem = activity_elem.find('default-aid-type')
         data['default_aid_type'] = aid_elem.get('code') if aid_elem is not None else ''
+        data['default_aid_type_vocabulary'] = aid_elem.get('vocabulary') if aid_elem is not None else ''
 
         tied_elem = activity_elem.find('default-tied-status')
         data['default_tied_status'] = tied_elem.get('code') if tied_elem is not None else ''
@@ -1418,6 +1420,7 @@ class IatiMultiCsvConverter:
             default_flow_type=main_data.get('default_flow_type') or None,
             default_finance_type=main_data.get('default_finance_type') or None,
             default_aid_type=main_data.get('default_aid_type') or None,
+            default_aid_type_vocabulary=main_data.get('default_aid_type_vocabulary') or None,
             default_tied_status=main_data.get('default_tied_status') or None
         )
 
