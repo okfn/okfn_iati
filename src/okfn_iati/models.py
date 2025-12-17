@@ -724,6 +724,7 @@ class Activity:
     default_flow_type: Optional[str] = None
     default_finance_type: Optional[str] = None
     default_aid_type: Optional[str] = None
+    default_aid_type_vocabulary: Optional[str] = None
     default_tied_status: Optional[str] = None
 
     def __post_init__(self):  # noqa: C901
@@ -773,6 +774,11 @@ class Activity:
                 datetime.fromisoformat(dt_to_validate)
             except ValueError:
                 raise ValueError(f"Invalid datetime format: {self.last_updated_datetime}")
+
+        # Validate default_aid_type_vocabulary if provided
+        if self.default_aid_type_vocabulary is not None:
+            if not str(self.default_aid_type_vocabulary).isdigit():
+                raise ValueError("default_aid_type_vocabulary must be numeric")
 
 
 @dataclass
