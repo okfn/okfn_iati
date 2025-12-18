@@ -402,6 +402,7 @@ class Transaction:
 
     References:
         https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/
+        https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/aid-type/
     """
     type: Union[TransactionType, str]
     date: str  # ISO 8601 format
@@ -413,7 +414,10 @@ class Transaction:
     recipient_country: Optional[Dict[str, Any]] = None
     flow_type: Optional[Union[FlowType, str]] = None
     finance_type: Optional[Union[FinanceType, str]] = None
+    # aid_type dict usually contains: {"code": "...", "vocabulary": "..."}
     aid_type: Optional[Dict[str, str]] = None
+    # Convenience field for CSV mapping (aid-type@vocabulary). Keep in sync with aid_type["vocabulary"].
+    aid_type_vocabulary: Optional[str] = None
     tied_status: Optional[Union[TiedStatus, str]] = None
     currency: Optional[str] = None  # ISO 4217
     value_date: Optional[str] = None  # ISO 8601 format
@@ -450,6 +454,18 @@ class Transaction:
                 pass
         elif hasattr(self.finance_type, 'value') and self.finance_type.value not in [e.value for e in FinanceType]:
             raise ValueError(f"Invalid finance type: {self.finance_type}. Valid values are: {[e.value for e in FinanceType]}")
+
+        # Validate aid_type_vocabulary if provided
+        if self.aid_type_vocabulary is not None and self.aid_type_vocabulary != "":
+            if not str(self.aid_type_vocabulary).isdigit():
+                raise ValueError("aid_type_vocabulary must be numeric")
+
+        # Keep aid_type <-> aid_type_vocabulary consistent
+        if self.aid_type:
+            if self.aid_type_vocabulary and not self.aid_type.get("vocabulary"):
+                self.aid_type["vocabulary"] = str(self.aid_type_vocabulary)
+            elif self.aid_type.get("vocabulary") and not self.aid_type_vocabulary:
+                self.aid_type_vocabulary = str(self.aid_type.get("vocabulary"))
 
         if isinstance(self.tied_status, str) and self.tied_status is not None:
             try:
