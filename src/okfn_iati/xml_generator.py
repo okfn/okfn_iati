@@ -308,6 +308,16 @@ class IatiXmlGenerator:
             finance_el = ET.SubElement(trans_el, "finance-type")
             self._set_attribute(finance_el, "code", self._get_enum_value(transaction.finance_type))
 
+        if transaction.aid_type:
+            aid_el = ET.SubElement(trans_el, "aid-type")
+            code = transaction.aid_type.get("code")
+            if code:
+                self._set_attribute(aid_el, "code", code)
+            vocabulary = (
+                transaction.aid_type.get("vocabulary") or transaction.aid_type_vocabulary or "1"
+            )
+            self._set_attribute(aid_el, "vocabulary", vocabulary)
+
         if transaction.tied_status:
             tied_el = ET.SubElement(trans_el, "tied-status")
             self._set_attribute(tied_el, "code", self._get_enum_value(transaction.tied_status))
