@@ -26,6 +26,7 @@ class AidType(Enum):
     """
     Aid Type - Broad categories of aid based on OECD DAC classifications.
     Reference: https://iatistandard.org/en/iati-standard/203/codelists/aidtype/
+    This is only if AidTypeVocabulary is 1: (OECD DAC) is used.
     """
     # General Budget Support
     BUDGET_SUPPORT_GENERAL = "A01"
@@ -77,6 +78,16 @@ class AidType(Enum):
     IN_KIND_TRANSFERS = "H06"
     # In-kind Vouchers
     # IN_KIND_VOUCHERS = "H07"
+
+
+class AidTypeVocabulary(Enum):
+    """
+    From https://iatistandard.org/en/iati-standard/203/codelists/aidtypevocabulary/
+    """
+    OECD_DAC = "1"
+    EARMARKING_CATEGORY = "2"
+    EARMARKING_MODALITY = "3"
+    CASH_AND_VOUCHER_MODALITIES = "4"
 
 
 class BudgetIdentifier(Enum):
