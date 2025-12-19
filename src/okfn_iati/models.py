@@ -10,7 +10,8 @@ from okfn_iati.enums import (
     LocationReach, LocationType, OrganisationRole, OrganisationType,
     RelatedActivityType,
     ResultType, SectorCategory, TiedStatus, TransactionType, LocationID,
-    DisbursementChannel, RecipientRegion, CollaborationType
+    DisbursementChannel, RecipientRegion, CollaborationType,
+    AidType, AidTypeVocabulary
 )
 from okfn_iati.validators import crs_channel_code_validator
 
@@ -413,7 +414,12 @@ class Transaction:
     recipient_country: Optional[Dict[str, Any]] = None
     flow_type: Optional[Union[FlowType, str]] = None
     finance_type: Optional[Union[FinanceType, str]] = None
+    # aid_type dict usually contains: {"code": "...", "vocabulary": "..."}
+    # https://iatistandard.org/en/iati-standard/203/activity-standard/iati-activities/iati-activity/transaction/aid-type/
     aid_type: Optional[Dict[str, str]] = None
+    # Convenience field for CSV mapping (aid-type@vocabulary). Keep in sync with aid_type["vocabulary"].
+    # https://iatistandard.org/en/iati-standard/203/codelists/aidtypevocabulary/
+    aid_type_vocabulary: Optional[str] = None
     tied_status: Optional[Union[TiedStatus, str]] = None
     currency: Optional[str] = None  # ISO 4217
     value_date: Optional[str] = None  # ISO 8601 format
@@ -450,6 +456,30 @@ class Transaction:
                 pass
         elif hasattr(self.finance_type, 'value') and self.finance_type.value not in [e.value for e in FinanceType]:
             raise ValueError(f"Invalid finance type: {self.finance_type}. Valid values are: {[e.value for e in FinanceType]}")
+
+        # Validate aid_type_vocabulary if provided
+        if self.aid_type_vocabulary is not None and self.aid_type_vocabulary != "":
+            if self.aid_type_vocabulary not in [e.value for e in AidTypeVocabulary]:
+                error = (
+                    f"Invalid aid type vocabulary: {self.aid_type_vocabulary}. "
+                    f"Valid values are: {[e.value for e in AidTypeVocabulary]}"
+                )
+                raise ValueError(error)
+
+        # Keep aid_type <-> aid_type_vocabulary consistent
+        if self.aid_type:
+            if self.aid_type_vocabulary and not self.aid_type.get("vocabulary"):
+                self.aid_type["vocabulary"] = str(self.aid_type_vocabulary)
+            elif self.aid_type.get("vocabulary") and not self.aid_type_vocabulary:
+                self.aid_type_vocabulary = str(self.aid_type.get("vocabulary"))
+
+        # If AidTypeVovcabulary is "1", then we must valid AidType against OECD DAC codes
+        if self.aid_type and self.aid_type.get("vocabulary") == AidTypeVocabulary.OECD_DAC.value:
+            aid_type_code = self.aid_type.get("code")
+            if aid_type_code:
+                valid_aid_types = [e.value for e in AidType]
+                if aid_type_code not in valid_aid_types:
+                    raise ValueError(f"Invalid aid type code: {aid_type_code}. Valid values are: {valid_aid_types}")
 
         if isinstance(self.tied_status, str) and self.tied_status is not None:
             try:
@@ -724,6 +754,7 @@ class Activity:
     default_flow_type: Optional[str] = None
     default_finance_type: Optional[str] = None
     default_aid_type: Optional[str] = None
+    default_aid_type_vocabulary: Optional[str] = None
     default_tied_status: Optional[str] = None
 
     def __post_init__(self):  # noqa: C901
@@ -773,6 +804,21 @@ class Activity:
                 datetime.fromisoformat(dt_to_validate)
             except ValueError:
                 raise ValueError(f"Invalid datetime format: {self.last_updated_datetime}")
+
+        # Validate default_aid_type_vocabulary if provided
+        if self.default_aid_type_vocabulary is not None:
+            # Check is in AidTypeVocabulary
+            if self.default_aid_type_vocabulary not in [e.value for e in AidTypeVocabulary]:
+                raise ValueError(
+                    f"Invalid default_aid_type_vocabulary: {self.default_aid_type_vocabulary}. "
+                    f"Valid values are: {[e.value for e in AidTypeVocabulary]}"
+                )
+
+        if self.default_aid_type_vocabulary == AidTypeVocabulary.OECD_DAC.value:
+            if self.default_aid_type:
+                valid_aid_types = [e.value for e in AidType]
+                if self.default_aid_type not in valid_aid_types:
+                    raise ValueError(f"Invalid default_aid_type: {self.default_aid_type}. Valid values are: {valid_aid_types}")
 
 
 @dataclass
