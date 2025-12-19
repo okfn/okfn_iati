@@ -101,6 +101,8 @@ class IatiValidator:
             activities = root.findall('./iati-activity', root.nsmap)
             for activity in activities:
                 has_sector = len(activity.findall('./sector', root.nsmap)) > 0
+                if not has_sector:
+                    errors.append(f"Activity {activity.findtext('./iati-identifier')} is missing sector element")
                 trans_sectors = 0
                 transactions = activity.findall('./transaction', root.nsmap)
 
