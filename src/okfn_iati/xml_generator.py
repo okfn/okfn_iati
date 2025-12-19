@@ -536,35 +536,6 @@ class IatiXmlGenerator:
             scope_el = ET.SubElement(activity_el, "activity-scope")
             self._set_attribute(scope_el, "code", self._get_enum_value(activity.activity_scope))
 
-        # 8b. Add collaboration-type
-        if activity.collaboration_type:
-            collab_el = ET.SubElement(activity_el, "collaboration-type")
-            self._set_attribute(collab_el, "code", self._get_enum_value(activity.collaboration_type))
-
-        # 8c. Add default-flow-type (from proper field)
-        if activity.default_flow_type:
-            flow_el = ET.SubElement(activity_el, "default-flow-type")
-            self._set_attribute(flow_el, "code", activity.default_flow_type)
-
-        # 8d. Add default-finance-type (from proper field)
-        if activity.default_finance_type:
-            finance_el = ET.SubElement(activity_el, "default-finance-type")
-            self._set_attribute(finance_el, "code", activity.default_finance_type)
-
-        # 8e. Add default-aid-type (from proper field)
-        if activity.default_aid_type:
-            aid_el = ET.SubElement(activity_el, "default-aid-type")
-            self._set_attribute(aid_el, "code", activity.default_aid_type)
-
-            # IATI requires vocabulary, default = 1 (OECD DAC)
-            vocab = activity.default_aid_type_vocabulary or "1"
-            self._set_attribute(aid_el, "vocabulary", vocab)
-
-        # 8f. Add default-tied-status (from proper field)
-        if activity.default_tied_status:
-            tied_el = ET.SubElement(activity_el, "default-tied-status")
-            self._set_attribute(tied_el, "code", activity.default_tied_status)
-
         # 9. Add recipient countries
         for country in activity.recipient_countries:
             country_el = ET.SubElement(activity_el, "recipient-country")
