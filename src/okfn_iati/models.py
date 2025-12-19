@@ -807,8 +807,18 @@ class Activity:
 
         # Validate default_aid_type_vocabulary if provided
         if self.default_aid_type_vocabulary is not None:
-            if not str(self.default_aid_type_vocabulary).isdigit():
-                raise ValueError("default_aid_type_vocabulary must be numeric")
+            # Check is in AidTypeVocabulary
+            if self.default_aid_type_vocabulary not in [e.value for e in AidTypeVocabulary]:
+                raise ValueError(
+                    f"Invalid default_aid_type_vocabulary: {self.default_aid_type_vocabulary}. "
+                    f"Valid values are: {[e.value for e in AidTypeVocabulary]}"
+                )
+
+        if self.default_aid_type_vocabulary == AidTypeVocabulary.OECD_DAC.value:
+            if self.default_aid_type:
+                valid_aid_types = [e.value for e in AidType]
+                if self.default_aid_type not in valid_aid_types:
+                    raise ValueError(f"Invalid default_aid_type: {self.default_aid_type}. Valid values are: {valid_aid_types}")
 
 
 @dataclass
