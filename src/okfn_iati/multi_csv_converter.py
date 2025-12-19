@@ -90,6 +90,7 @@ class IatiMultiCsvConverter:
                     'default_flow_type',
                     'default_finance_type',
                     'default_aid_type',
+                    'default_aid_type_vocabulary',
                     'default_tied_status',
                     'conditions_attached'
                 ]
@@ -156,6 +157,7 @@ class IatiMultiCsvConverter:
                     'flow_type',
                     'finance_type',
                     'aid_type',
+                    'aid_type_vocabulary',
                     'tied_status',
                     'humanitarian',
                     'recipient_region'
@@ -865,6 +867,7 @@ class IatiMultiCsvConverter:
 
         aid_elem = activity_elem.find('default-aid-type')
         data['default_aid_type'] = aid_elem.get('code') if aid_elem is not None else ''
+        data['default_aid_type_vocabulary'] = aid_elem.get('vocabulary') if aid_elem is not None else ''
 
         tied_elem = activity_elem.find('default-tied-status')
         data['default_tied_status'] = tied_elem.get('code') if tied_elem is not None else ''
@@ -1015,6 +1018,7 @@ class IatiMultiCsvConverter:
         data['flow_type'] = ''
         data['finance_type'] = ''
         data['aid_type'] = ''
+        data['aid_type_vocabulary'] = ''
         data['tied_status'] = ''
         data['recipient_region'] = ''
 
@@ -1034,6 +1038,8 @@ class IatiMultiCsvConverter:
         aid_type_elem = trans_elem.find('aid-type')
         if aid_type_elem is not None:
             data['aid_type'] = aid_type_elem.get('code') if aid_type_elem.get('code') != '0' else ''
+            # If element exists but vocabulary missing, keep empty (or set "1" if querés simetría total)
+            data['aid_type_vocabulary'] = aid_type_elem.get('vocabulary', '')
 
         tied_status_elem = trans_elem.find('tied-status')
         if tied_status_elem is not None:
@@ -1418,6 +1424,7 @@ class IatiMultiCsvConverter:
             default_flow_type=main_data.get('default_flow_type') or None,
             default_finance_type=main_data.get('default_finance_type') or None,
             default_aid_type=main_data.get('default_aid_type') or None,
+            default_aid_type_vocabulary=main_data.get('default_aid_type_vocabulary') or None,
             default_tied_status=main_data.get('default_tied_status') or None
         )
 
@@ -1804,7 +1811,9 @@ class IatiMultiCsvConverter:
         if trans_data.get('tied_status'):
             transaction_args['tied_status'] = trans_data['tied_status']
         if trans_data.get('aid_type'):
-            transaction_args['aid_type'] = {"code": trans_data['aid_type']}
+            vocab = trans_data.get('aid_type_vocabulary') or "1"
+            transaction_args['aid_type'] = {"code": trans_data['aid_type'], "vocabulary": vocab}
+            transaction_args['aid_type_vocabulary'] = vocab
         if trans_data.get('recipient_region'):
             transaction_args['recipient_region'] = trans_data['recipient_region']
 
