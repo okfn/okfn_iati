@@ -1,4 +1,4 @@
-﻿activity_identifier,result_ref,indicator_ref,period_start,period_end,target_value,target_comment,actual_value,actual_comment
+activity_identifier,result_ref,indicator_ref,period_start,period_end,target_value,target_comment,actual_value,actual_comment
 XM-DAC-46007-500338,result_3,result_3_1,2024-06-30,2025-06-01,300,Los valores meta son estimadas cuando se aprobó la operación/actividad por lo que pueden diferir de los resultados finales obtenidos,0,El valor actual es el valor medido en el periodo actual
 XM-DAC-46007-500646,result_2,result_2_26,2024-06-30,2025-06-01,8,Los valores meta son estimadas cuando se aprobó la operación/actividad por lo que pueden diferir de los resultados finales obtenidos,0,El valor actual es el valor medido en el periodo actual
 XM-DAC-46007-500901,result_2,result_2_8,2024-06-30,2025-06-01,252,Los valores meta son estimadas cuando se aprobó la operación/actividad por lo que pueden diferir de los resultados finales obtenidos,0,El valor actual es el valor medido en el periodo actual

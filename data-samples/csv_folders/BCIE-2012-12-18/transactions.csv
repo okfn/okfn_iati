@@ -1,4 +1,4 @@
-﻿activity_identifier,transaction_ref,transaction_type,transaction_date,value,currency,value_date,description,description_lang,provider_org_ref,provider_org_name,provider_org_lang,provider_org_type,receiver_org_ref,receiver_org_name,receiver_org_lang,receiver_org_type,receiver_org_activity_id,disbursement_channel,flow_type,finance_type,aid_type,aid_type_vocabulary,tied_status,humanitarian
+activity_identifier,transaction_ref,transaction_type,transaction_date,value,currency,value_date,description,description_lang,provider_org_ref,provider_org_name,provider_org_lang,provider_org_type,receiver_org_ref,receiver_org_name,receiver_org_lang,receiver_org_type,receiver_org_activity_id,disbursement_channel,flow_type,finance_type,aid_type,aid_type_vocabulary,tied_status,humanitarian
 XM-DAC-46007-301839,25/17,3,2017-02-03,707833.11,USD,2017-02-03,Desembolso,es,XM-DAC-46007,Banco Centroamericano de Integración Económica,es,40,,República de Guatemala,es,10,,,,,,,,
 XM-DAC-46007-500213,,2,2016-10-26,140520000,USD,2016-10-26,Aprobación,es,XM-DAC-46007,,,,,,,,,,,,,,,
 XM-DAC-46007-500022,,2,2015-08-25,154562390.29,USD,2015-08-25,Aprobación,es,XM-DAC-46007,,,,,,,,,,,,,,,
