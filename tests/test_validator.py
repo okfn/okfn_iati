@@ -139,15 +139,21 @@ class TestValidator(unittest.TestCase):
         AssertionError: False is not true :
         Errors: {
           'schema_errors': [],
-          'ruleset_errors': ['Each activity must have either a sector element or all transactions must have sector elements']
+        'ruleset_errors': [
+            'Activity XM-DAC-12345-PROJECT001 is missing sector element',
+            'Each activity must have either a sector element or all transactions must have sector elements'
+        ]
         }
         """
         self.assertFalse(is_valid, f'Errors: {errors}')
         self.assertEqual(len(errors['schema_errors']), 0)
-        self.assertEqual(len(errors['ruleset_errors']), 1)
+        self.assertEqual(len(errors['ruleset_errors']), 2, f'2 errors expected. Errors: {errors}')
         expected_error = "Each activity must have either a sector element or all transactions must have sector elements"
-        error1 = errors['ruleset_errors'][0]
+        error1 = errors['ruleset_errors'][1]
         self.assertTrue(expected_error in error1, f'Expected error not found. Errors: {errors}')
+        expected_error = "is missing sector element"
+        error0 = errors['ruleset_errors'][0]
+        self.assertTrue(expected_error in error0, f'Expected error not found. Errors: {errors}')
 
 
 if __name__ == '__main__':
