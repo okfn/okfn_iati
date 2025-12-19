@@ -506,6 +506,8 @@ class IatiXmlGenerator:
                 if hasattr(activity.reporting_org, "narratives") and activity.reporting_org.narratives:
                     self._create_narrative_elements(org_el, activity.reporting_org.narratives)
 
+        # XX other-identifier
+
         # 6. Add activity status
         if activity.activity_status:
             status_el = ET.SubElement(activity_el, "activity-status")
@@ -523,31 +525,6 @@ class IatiXmlGenerator:
         if activity.activity_scope:
             scope_el = ET.SubElement(activity_el, "activity-scope")
             self._set_attribute(scope_el, "code", self._get_enum_value(activity.activity_scope))
-
-        # 8b. Add collaboration-type
-        if activity.collaboration_type:
-            collab_el = ET.SubElement(activity_el, "collaboration-type")
-            self._set_attribute(collab_el, "code", self._get_enum_value(activity.collaboration_type))
-
-        # 8c. Add default-flow-type (from proper field)
-        if activity.default_flow_type:
-            flow_el = ET.SubElement(activity_el, "default-flow-type")
-            self._set_attribute(flow_el, "code", activity.default_flow_type)
-
-        # 8d. Add default-finance-type (from proper field)
-        if activity.default_finance_type:
-            finance_el = ET.SubElement(activity_el, "default-finance-type")
-            self._set_attribute(finance_el, "code", activity.default_finance_type)
-
-        # 8e. Add default-aid-type (from proper field)
-        if activity.default_aid_type:
-            aid_el = ET.SubElement(activity_el, "default-aid-type")
-            self._set_attribute(aid_el, "code", activity.default_aid_type)
-
-        # 8f. Add default-tied-status (from proper field)
-        if activity.default_tied_status:
-            tied_el = ET.SubElement(activity_el, "default-tied-status")
-            self._set_attribute(tied_el, "code", activity.default_tied_status)
 
         # 9. Add recipient countries
         for country in activity.recipient_countries:
@@ -574,14 +551,12 @@ class IatiXmlGenerator:
             if "narratives" in region:
                 self._create_narrative_elements(region_el, region["narratives"])
 
-        # 11. Add locations
+        # Add locations
         for location in activity.locations:
             self._add_location(activity_el, location)
 
-        for cbi in activity.country_budget_items:
-            self._add_country_budget_items(activity_el, cbi)
+        # Add sectors (REQUIRED by IATI rules)
 
-        # 12. Add sectors (REQUIRED by IATI rules)
         for sector in activity.sectors:
             sector_el = ET.SubElement(activity_el, "sector")
             self._set_attribute(sector_el, "code", sector["code"])
@@ -598,30 +573,66 @@ class IatiXmlGenerator:
             if "narratives" in sector:
                 self._create_narrative_elements(sector_el, sector["narratives"])
 
-        # 13. Add budgets
+        # XX tag
+
+        for cbi in activity.country_budget_items:
+            self._add_country_budget_items(activity_el, cbi)
+
+        # XX humanitarian-scope
+
+        # XX policy-marker
+
+        # Add collaboration-type
+        if activity.collaboration_type:
+            collab_el = ET.SubElement(activity_el, "collaboration-type")
+            self._set_attribute(collab_el, "code", self._get_enum_value(activity.collaboration_type))
+
+        # Add default-flow-type (from proper field)
+        if activity.default_flow_type:
+            flow_el = ET.SubElement(activity_el, "default-flow-type")
+            self._set_attribute(flow_el, "code", activity.default_flow_type)
+
+        # 8d. Add default-finance-type (from proper field)
+        if activity.default_finance_type:
+            finance_el = ET.SubElement(activity_el, "default-finance-type")
+            self._set_attribute(finance_el, "code", activity.default_finance_type)
+
+        # 8e. Add default-aid-type (from proper field)
+        if activity.default_aid_type:
+            aid_el = ET.SubElement(activity_el, "default-aid-type")
+            self._set_attribute(aid_el, "code", activity.default_aid_type)
+
+        # 8f. Add default-tied-status (from proper field)
+        if activity.default_tied_status:
+            tied_el = ET.SubElement(activity_el, "default-tied-status")
+            self._set_attribute(tied_el, "code", activity.default_tied_status)
+
+        # Add budgets
         for budget in activity.budgets:
             self._add_budget(activity_el, budget)
 
-        # 14. Add transactions (Must come before document-link per IATI schema)
+        # XX planned-disbursement
+
+        # XX capital-spend
+
+        # Add transactions (Must come before document-link per IATI schema)
         for transaction in activity.transactions:
             self._add_transaction(activity_el, transaction)
 
-        # 15. Add document links
+        # Add document links
         for doc in activity.document_links:
             self._add_document_link(activity_el, doc)
 
-        # 16. Add related activities
+        # Add related activities
         for related in activity.related_activities:
             related_el = ET.SubElement(activity_el, "related-activity")
             self._set_attribute(related_el, "ref", related["ref"])
             if "type" in related:
                 self._set_attribute(related_el, "type", self._get_enum_value(related.get("type")))
 
-        # 17. Add results
-        for result in activity.results:
-            self._add_result(activity_el, result)
+        # XX legacy-data
 
-        # 18. Add conditions (if present)
+        # Add conditions (if present)
         if activity.conditions_attached is not None:
             conditions_el = ET.SubElement(activity_el, "conditions")
             self._set_attribute(conditions_el, "attached", activity.conditions_attached)
@@ -635,6 +646,14 @@ class IatiXmlGenerator:
                 if condition_data.get('condition_text'):
                     narrative_el = ET.SubElement(condition_el, "narrative")
                     narrative_el.text = condition_data['condition_text']
+
+        # Add results
+        for result in activity.results:
+            self._add_result(activity_el, result)
+
+        # XX crs-add
+
+        # XX fss
 
         return activity_el
 
