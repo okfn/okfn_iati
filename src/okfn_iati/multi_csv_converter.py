@@ -52,6 +52,9 @@ class IatiMultiCsvConverter:
     def __init__(self):
         self.xml_generator = IatiXmlGenerator()
 
+        # Storage latest errors and warnings in case an action failed
+        self.latest_errors: List[str] = []
+        self.latest_warnings: List[str] = []
         # Define CSV file structure
         self.csv_files = {
             'activities': {
@@ -338,6 +341,8 @@ class IatiMultiCsvConverter:
         Returns:
             True if conversion was successful
         """
+        self.latest_errors = []
+        self.latest_warnings = []
         csv_folder = Path(csv_folder)
 
         # Create or clean output folder
@@ -377,6 +382,7 @@ class IatiMultiCsvConverter:
             return True
 
         except Exception as e:
+            self.latest_errors.append(str(e))
             print(f"❌ Error converting XML to CSV: {e}")
             return False
 
@@ -397,10 +403,15 @@ class IatiMultiCsvConverter:
         Returns:
             True if conversion was successful
         """
+        self.latest_errors = []
+        self.latest_warnings = []
+
         csv_folder = Path(csv_folder)
 
         if not csv_folder.exists():
-            print(f"❌ Error: CSV folder does not exist: {csv_folder}")
+            error_msg = f"❌ Error: CSV folder does not exist: {csv_folder}"
+            print(error_msg)
+            self.latest_errors.append(error_msg)
             return False
 
         try:
@@ -445,6 +456,13 @@ class IatiMultiCsvConverter:
                 is_valid, errors = validator.validate(xml_string)
 
                 if not is_valid:
+                    # errors is a dict like {'schema_errors': schema_errors, 'ruleset_errors': ruleset_errors}
+                    # Each is a list of error strings
+                    schema_errors = errors.get('schema_errors', [])
+                    ruleset_errors = errors.get('ruleset_errors', [])
+                    # Tag them and create a single list
+                    all_errors = [f"Schema: {err}" for err in schema_errors] + [f"Ruleset: {err}" for err in ruleset_errors]
+                    self.latest_errors = all_errors
                     print(f"⚠️  Warning: Generated XML has validation errors: {errors}")
                     return False
 
