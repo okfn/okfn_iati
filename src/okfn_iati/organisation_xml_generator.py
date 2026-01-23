@@ -988,6 +988,9 @@ class IatiOrganisationMultiCsvConverter:
 
     def __init__(self):
         """Initialize the multi-CSV converter."""
+        # Storage latest errors and warnings in case an action failed
+        self.latest_errors: List[str] = []
+        self.latest_warnings: List[str] = []
         self.xml_generator = IatiOrganisationXMLGenerator()
 
     def xml_to_csv_folder(
@@ -1005,11 +1008,15 @@ class IatiOrganisationMultiCsvConverter:
         Returns:
             bool: True if conversion successful
         """
+        self.latest_errors = []
+        self.latest_warnings = []
         try:
             # Parse XML
             xml_path = Path(xml_input)
             if not xml_path.exists():
-                raise ValueError(f"XML file not found: {xml_input}")
+                error_msg = f"XML file not found: {xml_input}"
+                self.latest_errors.append(error_msg)
+                raise ValueError(error_msg)
 
             tree = ET.parse(xml_path)
             root = tree.getroot()
@@ -1072,7 +1079,9 @@ class IatiOrganisationMultiCsvConverter:
             return True
 
         except Exception as e:
-            logger.error(f"Failed to convert XML to CSV folder: {str(e)}")
+            error_msg = f"Error during XML to CSV conversion: {str(e)}"
+            self.latest_errors.append(error_msg)
+            logger.error(error_msg)
             return False
 
     def csv_folder_to_xml(  # noqa: C901
@@ -1090,10 +1099,14 @@ class IatiOrganisationMultiCsvConverter:
         Returns:
             bool: True if conversion successful
         """
+        self.latest_errors = []
+        self.latest_warnings = []
         try:
             folder_path = Path(input_folder)
             if not folder_path.exists():
-                raise ValueError(f"Input folder not found: {input_folder}")
+                error_msg = f"Input folder not found: {input_folder}"
+                self.latest_errors.append(error_msg)
+                raise ValueError(error_msg)
 
             # Read CSV files
             organisations = self._read_organisations_csv(folder_path / "organisations.csv")
@@ -1159,7 +1172,9 @@ class IatiOrganisationMultiCsvConverter:
             return True
 
         except Exception as e:
-            logger.error(f"Failed to convert CSV folder to XML: {str(e)}")
+            error_msg = f"Failed to convert CSV folder to XML: {str(e)}"
+            self.latest_errors.append(error_msg)
+            logger.error(error_msg)
             return False
 
     def generate_csv_templates(
