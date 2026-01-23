@@ -1,6 +1,6 @@
 [![Python Tests](https://github.com/okfn/okfn_iati/workflows/Python%20IATI%20Tests/badge.svg)](https://github.com/okfn/okfn_iati/actions)
 
-**Note**: This library is under development and in Beta status.   
+**Note**: This library is under development and in Beta status.
 
 # OKFN IATI XML Handler
 
@@ -82,7 +82,7 @@ reporting_org_id = "XM-DAC-12345"
 
 # Create an IATI Activity
 activity = Activity(
-    # The activity identifier should begin with the reporting org identifier 
+    # The activity identifier should begin with the reporting org identifier
     # followed by a hyphen and a unique string: {org-id}-{activity-unique-id}
     iati_identifier=f"{reporting_org_id}-PROJECT001",
     reporting_org=OrganizationRef(
@@ -92,7 +92,7 @@ activity = Activity(
     ),
     title=[Narrative(text="Example Project")],
     description=[{
-        "type": "1", 
+        "type": "1",
         "narratives": [
             Narrative(text="This is an example project description")
         ]
@@ -183,17 +183,26 @@ from okfn_iati import IatiMultiCsvConverter
 converter = IatiMultiCsvConverter()
 
 # Extract XML to CSV files for editing
-converter.xml_to_csv_folder(
+ret = converter.xml_to_csv_folder(
     xml_input="existing_data.xml",
     csv_folder="./editable_data"
 )
 
+if not ret:
+    print("Errors during XML to CSV conversion:")
+    for error in converter.latest_errors:
+        print(f"  {error}")
+
 # Edit the CSV files as needed, then convert back
-converter.csv_folder_to_xml(
+ret = converter.csv_folder_to_xml(
     csv_folder="./editable_data",
     xml_output="updated_data.xml",
     validate_output=True
 )
+if not ret:
+    print("Errors during CSV to XML conversion:")
+    for error in converter.latest_errors:
+        print(f"  {error}")
 ```
 ## Validation with IATI Validator
 
@@ -215,7 +224,7 @@ validator = IatiValidator()
 with open("example_activity.xml", "r") as f:
     xml_string = f.read()
     is_valid, errors = validator.validate(xml_string)
-    
+
     if is_valid:
         print("XML is valid!")
     else:
@@ -244,13 +253,18 @@ org_converter.generate_csv_templates(
 )
 
 # Convert organisation CSV to XML
-org_converter.csv_folder_to_xml(
+ret = org_converter.csv_folder_to_xml(
     csv_folder="./org_data",
     xml_output="organisation.xml"
 )
+
+if not ret:
+    print("Errors during organisation CSV to XML conversion:")
+    for error in org_converter.latest_errors:
+        print(f"  {error}")
 ```
 
 ## Start your IATI project
 
-You can start by creating a CSV file and this library will process it to generate valid IATI XML files.  
-Read the docs [here](https://github.com/okfn/okfn_iati/blob/main/docs/data_requirements.md).  
+You can start by creating a CSV file and this library will process it to generate valid IATI XML files.
+Read the docs [here](https://github.com/okfn/okfn_iati/blob/main/docs/data_requirements.md).
