@@ -15,13 +15,25 @@ class TestXmlGenerator(unittest.TestCase):
                 type="10",
                 narratives=[Narrative(text="Example Organization")]
             ),
+            reporting_org_role="1",
+            title=[Narrative(text="Example Project")],
+            activity_status=ActivityStatus.IMPLEMENTATION
+        )
+        activity_no_org_role = Activity(
+            # Do not use reporting_org_role to test defaulting
+            iati_identifier="XM-EXAMPLE-2-12346",
+            reporting_org=OrganizationRef(
+                ref="XM-EXAMPLE-2",
+                type="21",
+                narratives=[Narrative(text="Example Organization 2")]
+            ),
             title=[Narrative(text="Example Project")],
             activity_status=ActivityStatus.IMPLEMENTATION
         )
 
         # Create container
         iati_activities = IatiActivities(
-            activities=[activity]
+            activities=[activity, activity_no_org_role]
         )
 
         # Generate XML
@@ -33,6 +45,11 @@ class TestXmlGenerator(unittest.TestCase):
         self.assertIn("<iati-identifier>XM-EXAMPLE-12345</iati-identifier>", xml_string)
         self.assertIn("<narrative>Example Project</narrative>", xml_string)
         self.assertIn('<activity-status code="2"', xml_string)
+        # participating-org ref="XM-DAC-46007" type="40" role="4">
+        self.assertIn('<participating-org ref="XM-EXAMPLE" type="10" role="1">', xml_string)
+        self.assertIn("<iati-identifier>XM-EXAMPLE-2-12346</iati-identifier>", xml_string)
+        # Default role for second activity
+        self.assertIn('<participating-org ref="XM-EXAMPLE-2" type="21" role="4">', xml_string)
 
     def test_generate_save_xml(self):
         # Create a simple activity
@@ -44,7 +61,7 @@ class TestXmlGenerator(unittest.TestCase):
                 narratives=[Narrative(text="Example Organization")]
             ),
             title=[Narrative(text="Example Project")],
-            activity_status=ActivityStatus.IMPLEMENTATION
+            activity_status=ActivityStatus.IMPLEMENTATION,
         )
 
         # Create container
