@@ -716,6 +716,8 @@ class Activity:
     """
     iati_identifier: str
     reporting_org: OrganizationRef
+    # The role of the reporting organization in the activity (see OrganisationRole enum)
+    reporting_org_role: Optional[Union[OrganisationRole, str]] = None
     title: List[Narrative] = field(default_factory=list)
     description: List[Dict[str, List[Narrative]]] = field(default_factory=list)
     participating_orgs: List[ParticipatingOrg] = field(default_factory=list)
