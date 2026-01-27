@@ -24,7 +24,7 @@ class TestXmlGenerator(unittest.TestCase):
             iati_identifier="XM-EXAMPLE-2-12346",
             reporting_org=OrganizationRef(
                 ref="XM-EXAMPLE-2",
-                type="20",
+                type="21",
                 narratives=[Narrative(text="Example Organization 2")]
             ),
             title=[Narrative(text="Example Project")],
@@ -49,7 +49,7 @@ class TestXmlGenerator(unittest.TestCase):
         self.assertIn('<participating-org ref="XM-EXAMPLE" type="10" role="1">', xml_string)
         self.assertIn("<iati-identifier>XM-EXAMPLE-2-12346</iati-identifier>", xml_string)
         # Default role for second activity
-        self.assertIn('<participating-org ref="XM-EXAMPLE-2" type="20" role="4">', xml_string)
+        self.assertIn('<participating-org ref="XM-EXAMPLE-2" type="21" role="4">', xml_string)
 
     def test_generate_save_xml(self):
         # Create a simple activity
