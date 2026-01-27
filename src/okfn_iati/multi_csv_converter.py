@@ -76,6 +76,7 @@ class IatiMultiCsvConverter:
                     'reporting_org_name',
                     'reporting_org_name_lang',  # NEW: lang attribute for reporting org narrative
                     'reporting_org_type',
+                    'reporting_org_role',
                     'reporting_org_secondary_reporter',
                     'planned_start_date',
                     'actual_start_date',
@@ -834,12 +835,14 @@ class IatiMultiCsvConverter:
                 rep_org_name.get('{http://www.w3.org/XML/1998/namespace}lang', '') if rep_org_name is not None else ''
             )
             data['reporting_org_secondary_reporter'] = rep_org_elem.get('secondary-reporter', '')
+            data['reporting_org_role'] = rep_org_elem.get('role', '')
         else:
             data['reporting_org_ref'] = ''
             data['reporting_org_type'] = ''
             data['reporting_org_name'] = ''
             data['reporting_org_name_lang'] = ''
             data['reporting_org_secondary_reporter'] = ''
+            data['reporting_org_role'] = ''
 
         # Recipient country (first one only for main table)
         country_elem = activity_elem.find('recipient-country')
@@ -1408,6 +1411,8 @@ class IatiMultiCsvConverter:
         # Create basic activity
         activity = Activity(
             iati_identifier=main_data['activity_identifier'],
+            # Default is the reporting org is the one implementing the activity (role code "4": IMPLEMENTING)
+            reporting_org_role=main_data.get('reporting_org_role') or "4",
             reporting_org=OrganizationRef(
                 ref=main_data.get('reporting_org_ref', ''),
                 type=main_data.get('reporting_org_type') or None,
@@ -2116,6 +2121,7 @@ class IatiMultiCsvConverter:
                 'reporting_org_ref': 'XM-DAC-46002',
                 'reporting_org_name': 'Central American Bank for Economic Integration',
                 'reporting_org_type': '40',
+                'reporting_org_role': '1',
                 'planned_start_date': '2023-01-15',
                 'actual_start_date': '2023-02-01',
                 'planned_end_date': '2025-12-31',

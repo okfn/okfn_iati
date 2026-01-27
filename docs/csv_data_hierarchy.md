@@ -86,6 +86,7 @@ The converter generates the following CSV files:
 | `reporting_org_name` | `<reporting-org><narrative>` | Reporting org name |
 | `reporting_org_name_lang` | `<reporting-org><narrative>` @xml:lang | Reporting org name language |
 | `reporting_org_type` | `<reporting-org>` @type | Reporting org type code |
+| `reporting_org_role` | `<reporting-org>` @role | Reporting org role code, default 4: Implementing |
 | `reporting_org_secondary_reporter` | `<reporting-org>` @secondary-reporter | Secondary reporter flag |
 | `planned_start_date` | `<activity-date>` type="1" | Planned start date |
 | `actual_start_date` | `<activity-date>` type="2" | Actual start date |

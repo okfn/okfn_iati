@@ -511,7 +511,7 @@ class IatiXmlGenerator:
                 if hasattr(activity.reporting_org, "type"):
                     self._set_attribute(org_el, "type", str(activity.reporting_org.type))
                 # Rol por defecto implementador
-                self._set_attribute(org_el, "role", "4")
+                self._set_attribute(org_el, "role", str(activity.reporting_org.role))
                 # Narratives
                 if hasattr(activity.reporting_org, "narratives") and activity.reporting_org.narratives:
                     self._create_narrative_elements(org_el, activity.reporting_org.narratives)
