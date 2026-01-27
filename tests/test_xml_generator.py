@@ -21,7 +21,7 @@ class TestXmlGenerator(unittest.TestCase):
         )
         activity_no_org_role = Activity(
             # Do not use reporting_org_role to test defaulting
-            iati_identifier="XM-EXAMPLE-12346",
+            iati_identifier="XM-EXAMPLE-2-12346",
             reporting_org=OrganizationRef(
                 ref="XM-EXAMPLE-2",
                 type="20",
@@ -47,6 +47,7 @@ class TestXmlGenerator(unittest.TestCase):
         self.assertIn('<activity-status code="2"', xml_string)
         # participating-org ref="XM-DAC-46007" type="40" role="4">
         self.assertIn('<participating-org ref="XM-EXAMPLE" type="10" role="1">', xml_string)
+        self.assertIn("<iati-identifier>XM-EXAMPLE-2-12346</iati-identifier>", xml_string)
         # Default role for second activity
         self.assertIn('<participating-org ref="XM-EXAMPLE-2" type="20" role="4">', xml_string)
 
