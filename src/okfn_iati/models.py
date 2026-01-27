@@ -716,6 +716,8 @@ class Activity:
     """
     iati_identifier: str
     reporting_org: OrganizationRef
+    # The role of the reporting organization in the activity (see OrganisationRole enum)
+    reporting_org_role: Optional[Union[OrganisationRole, str]] = None
     title: List[Narrative] = field(default_factory=list)
     description: List[Dict[str, List[Narrative]]] = field(default_factory=list)
     participating_orgs: List[ParticipatingOrg] = field(default_factory=list)
@@ -819,6 +821,9 @@ class Activity:
                 valid_aid_types = [e.value for e in AidType]
                 if self.default_aid_type not in valid_aid_types:
                     raise ValueError(f"Invalid default_aid_type: {self.default_aid_type}. Valid values are: {valid_aid_types}")
+
+        if not self.reporting_org_role:
+            self.reporting_org_role = OrganisationRole.IMPLEMENTING.value
 
 
 @dataclass

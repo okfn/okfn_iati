@@ -125,6 +125,7 @@ class TestIatiMultiRoundtrip(unittest.TestCase):
             "reporting_org_ref",
             "reporting_org_name",
             "reporting_org_type",
+            "reporting_org_role",
             "planned_start_date",
             "planned_end_date",
             "recipient_country_code",
