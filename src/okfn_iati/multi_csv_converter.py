@@ -325,6 +325,16 @@ class IatiMultiCsvConverter:
             }
         }
 
+    @classmethod
+    def required_csv_files(cls) -> list[str]:
+        """
+        Lista de archivos CSV esperados por este converter (fuente de verdad).
+        Extrae los nombres de archivo del diccionario csv_files.
+        """
+        # Necesitamos instanciar temporalmente para acceder a csv_files
+        instance = cls()
+        return [config['filename'] for config in instance.csv_files.values()]
+
     def xml_to_csv_folder(
         self,
         xml_input: Union[str, Path],
