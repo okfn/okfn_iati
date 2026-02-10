@@ -1037,6 +1037,7 @@ class IatiOrganisationMultiCsvConverter:
         """
         Lista de archivos CSV esperados por este converter (fuente de verdad).
         Extrae los nombres de archivo del diccionario csv_files.
+        Utilizamos esta función para validar desde iati-generator todos los archivos necesarios para la conversión.
         """
         # Necesitamos instanciar temporalmente para acceder a csv_files
         instance = cls()
