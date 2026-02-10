@@ -993,6 +993,55 @@ class IatiOrganisationMultiCsvConverter:
         self.latest_warnings: List[str] = []
         self.xml_generator = IatiOrganisationXMLGenerator()
 
+        # Define CSV file structure (fuente de verdad)
+        self.csv_files = {
+            'organisations': {
+                'filename': 'organisations.csv',
+                'columns': [
+                    'organisation_identifier', 'name', 'reporting_org_ref',
+                    'reporting_org_type', 'reporting_org_name', 'reporting_org_lang',
+                    'default_currency', 'xml_lang'
+                ]
+            },
+            'names': {
+                'filename': 'names.csv',
+                'columns': ['organisation_identifier', 'language', 'name']
+            },
+            'budgets': {
+                'filename': 'budgets.csv',
+                'columns': [
+                    'organisation_identifier', 'budget_kind', 'budget_status',
+                    'period_start', 'period_end', 'value', 'currency', 'value_date',
+                    'recipient_org_ref', 'recipient_org_type', 'recipient_org_name',
+                    'recipient_country_code', 'recipient_region_code', 'recipient_region_vocabulary'
+                ]
+            },
+            'expenditures': {
+                'filename': 'expenditures.csv',
+                'columns': [
+                    'organisation_identifier', 'period_start', 'period_end',
+                    'value', 'currency', 'value_date'
+                ]
+            },
+            'documents': {
+                'filename': 'documents.csv',
+                'columns': [
+                    'organisation_identifier', 'url', 'format', 'title',
+                    'category_code', 'language', 'document_date'
+                ]
+            }
+        }
+
+    @classmethod
+    def required_csv_files(cls) -> list[str]:
+        """
+        Lista de archivos CSV esperados por este converter (fuente de verdad).
+        Extrae los nombres de archivo del diccionario csv_files.
+        """
+        # Necesitamos instanciar temporalmente para acceder a csv_files
+        instance = cls()
+        return [config['filename'] for config in instance.csv_files.values()]
+
     def xml_to_csv_folder(
         self,
         xml_input: Union[str, Path],
