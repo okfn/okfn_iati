@@ -49,16 +49,10 @@ class IatiMultiCsvConverter:
     - contact_info.csv: Contact information
     """
 
-    def __init__(self):
-        self.xml_generator = IatiXmlGenerator()
-
-        # Storage latest errors and warnings in case an action failed
-        self.latest_errors: List[str] = []
-        self.latest_warnings: List[str] = []
-        # Define CSV file structure
-        self.csv_files = {
+    csv_files = {
             'activities': {
                 'filename': 'activities.csv',
+                'required': True,
                 'columns': [
                     'activity_identifier',  # Primary key
                     'title',
@@ -101,6 +95,7 @@ class IatiMultiCsvConverter:
             },
             'participating_orgs': {
                 'filename': 'participating_orgs.csv',
+                'required': False,
                 'columns': [
                     'activity_identifier',  # Foreign key to activities
                     'org_ref',
@@ -114,6 +109,7 @@ class IatiMultiCsvConverter:
             },
             'sectors': {
                 'filename': 'sectors.csv',
+                'required': False,
                 'columns': [
                     'activity_identifier',  # Foreign key to activities
                     'sector_code',
@@ -125,6 +121,7 @@ class IatiMultiCsvConverter:
             },
             'budgets': {
                 'filename': 'budgets.csv',
+                'required': False,
                 'columns': [
                     'activity_identifier',  # Foreign key to activities
                     'budget_type',
@@ -138,6 +135,7 @@ class IatiMultiCsvConverter:
             },
             'transactions': {
                 'filename': 'transactions.csv',
+                'required': False,
                 'columns': [
                     'activity_identifier',  # Foreign key to activities
                     'transaction_ref',
@@ -169,6 +167,7 @@ class IatiMultiCsvConverter:
             },
             'transaction_sectors': {
                 'filename': 'transaction_sectors.csv',
+                'required': False,
                 'columns': [
                     'activity_identifier',  # Foreign key to activities
                     'transaction_ref',  # Foreign key to transactions
@@ -181,6 +180,7 @@ class IatiMultiCsvConverter:
             },
             'locations': {
                 'filename': 'locations.csv',
+                'required': False,
                 'columns': [
                     'activity_identifier',
                     'location_ref',
@@ -206,6 +206,7 @@ class IatiMultiCsvConverter:
             },
             'documents': {
                 'filename': 'documents.csv',
+                'required': False,
                 'columns': [
                     'activity_identifier',
                     'url',
@@ -221,6 +222,7 @@ class IatiMultiCsvConverter:
             },
             'results': {
                 'filename': 'results.csv',
+                'required': False,
                 'columns': [
                     'activity_identifier',  # Foreign key to activities
                     'result_ref',
@@ -232,6 +234,7 @@ class IatiMultiCsvConverter:
             },
             'indicators': {
                 'filename': 'indicators.csv',
+                'required': False,
                 'columns': [
                     'activity_identifier',  # Foreign key to activities
                     'result_ref',  # Foreign key to results
@@ -249,6 +252,7 @@ class IatiMultiCsvConverter:
             },
             'indicator_periods': {
                 'filename': 'indicator_periods.csv',
+                'required': False,
                 'columns': [
                     'activity_identifier',  # Foreign key to activities
                     'result_ref',  # Foreign key to results
@@ -263,6 +267,7 @@ class IatiMultiCsvConverter:
             },
             'activity_date': {
                 'filename': 'activity_date.csv',
+                'required': False,
                 'columns': [
                     'activity_identifier',  # Foreign key to activities
                     'type',
@@ -273,6 +278,7 @@ class IatiMultiCsvConverter:
             },
             'contact_info': {
                 'filename': 'contact_info.csv',
+                'required': False,
                 'columns': [
                     'activity_identifier',
                     'contact_type',
@@ -295,6 +301,7 @@ class IatiMultiCsvConverter:
             },
             'conditions': {
                 'filename': 'conditions.csv',
+                'required': False,
                 'columns': [
                     'activity_identifier',  # Foreign key to activities
                     'condition_type',
@@ -303,6 +310,7 @@ class IatiMultiCsvConverter:
             },
             'descriptions': {
                 'filename': 'descriptions.csv',
+                'required': False,
                 'columns': [
                     'activity_identifier',
                     'description_type',
@@ -314,6 +322,7 @@ class IatiMultiCsvConverter:
             },
             'country_budget_items': {
                 'filename': 'country_budget_items.csv',
+                'required': False,
                 'columns': [
                     'activity_identifier',
                     'vocabulary',
@@ -325,17 +334,21 @@ class IatiMultiCsvConverter:
             }
         }
 
+    def __init__(self):
+        self.xml_generator = IatiXmlGenerator()
+        # Storage latest errors and warnings in case an action failed
+        self.latest_errors: List[str] = []
+        self.latest_warnings: List[str] = []
+        # Define CSV file structure
+        self.csv_files = self.__class__.csv_files
+
     @classmethod
     def required_csv_files(cls) -> list[str]:
-        """
-        Lista de archivos CSV esperados por este converter (fuente de verdad).
-        Extrae los nombres de archivo del diccionario csv_files.
-        la utilizamos apra aceder a la lista de archivos esperados desde iati-generator,
-        sin necesidad de instanciar el converter completo.
-        """
-        # Necesitamos instanciar temporalmente para acceder a csv_files
-        instance = cls()
-        return [config['filename'] for config in instance.csv_files.values()]
+        return [cfg["filename"] for cfg in cls.csv_files.values() if cfg.get("required")]
+
+    @classmethod
+    def expected_csv_files(cls) -> list[str]:
+        return [cfg["filename"] for cfg in cls.csv_files.values()]
 
     def xml_to_csv_folder(
         self,
