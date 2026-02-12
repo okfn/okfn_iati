@@ -38,6 +38,7 @@ class TestCsvFolderValidator(unittest.TestCase):
                     'title': 'Test',
                     'activity_status': '2',
                     'reporting_org_ref': 'ORG',
+                    'planned_start_date': '2024-01-01',
                 })
             result = CsvFolderValidator().validate_folder(tmpdir)
             self.assertTrue(result.is_valid, [str(e) for e in result.errors])

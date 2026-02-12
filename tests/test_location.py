@@ -1,7 +1,8 @@
 import unittest
 from okfn_iati import (
     Location, LocationIdentifier, LocationID, Narrative,
-    IatiXmlGenerator, Activity, OrganizationRef, IatiActivities
+    IatiXmlGenerator, Activity, OrganizationRef, IatiActivities,
+    ActivityDate, ActivityDateType,
 )
 
 
@@ -32,7 +33,10 @@ class TestLocation(unittest.TestCase):
         activity = Activity(
             iati_identifier="TEST-123",
             reporting_org=OrganizationRef(ref="TEST", type="10"),
-            locations=[location]
+            locations=[location],
+            activity_dates=[
+                ActivityDate(type=ActivityDateType.PLANNED_START, iso_date="2024-01-01")
+            ],
         )
 
         # Generate XML

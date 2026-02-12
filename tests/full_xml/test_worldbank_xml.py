@@ -6,6 +6,7 @@ from lxml import etree
 from okfn_iati import (
     Activity, Narrative, OrganizationRef, IatiActivities,
     ActivityStatus, Result, IatiXmlGenerator,  # IatiValidator
+    ActivityDate, ActivityDateType,
 )
 
 
@@ -97,7 +98,10 @@ class TestWorldBankXmlGeneration(unittest.TestCase):
             hierarchy="1",
             last_updated_datetime="2025-04-13T23:57:23",
             xml_lang="en",
-            results=self._create_worldbank_results()
+            results=self._create_worldbank_results(),
+            activity_dates=[
+                ActivityDate(type=ActivityDateType.PLANNED_START, iso_date="2014-03-26")
+            ],
         )
 
         # Create the additional simplified activities shown in the sample
@@ -112,7 +116,10 @@ class TestWorldBankXmlGeneration(unittest.TestCase):
             default_currency="USD",
             hierarchy="1",
             last_updated_datetime="2025-04-13T23:57:24",
-            xml_lang="en"
+            xml_lang="en",
+            activity_dates=[
+                ActivityDate(type=ActivityDateType.PLANNED_START, iso_date="2014-03-26")
+            ],
         )
 
         activity3 = Activity(
@@ -126,7 +133,10 @@ class TestWorldBankXmlGeneration(unittest.TestCase):
             default_currency="USD",
             hierarchy="1",
             last_updated_datetime="2025-04-13T23:57:24",
-            xml_lang="en"
+            xml_lang="en",
+            activity_dates=[
+                ActivityDate(type=ActivityDateType.PLANNED_START, iso_date="2014-03-26")
+            ],
         )
 
         activity4 = Activity(
@@ -141,7 +151,10 @@ class TestWorldBankXmlGeneration(unittest.TestCase):
             hierarchy="1",
             last_updated_datetime="2025-04-13T23:57:24",
             xml_lang="en",
-            results=self._create_plastic_economy_results()
+            results=self._create_plastic_economy_results(),
+            activity_dates=[
+                ActivityDate(type=ActivityDateType.PLANNED_START, iso_date="2014-03-26")
+            ],
         )
 
         # Add activities to activities container

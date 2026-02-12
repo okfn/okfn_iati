@@ -150,6 +150,77 @@ class TestCrossFileValidator(unittest.TestCase):
         ]
         self.assertEqual(len(orphan_errors), 2)
 
+    def test_missing_activity_dates_error(self):
+        """Activity with no dates from any source triggers an error."""
+        file_data = {
+            'activities': [
+                {
+                    'activity_identifier': 'ORG-001',
+                    'planned_start_date': '',
+                    'actual_start_date': '',
+                    'planned_end_date': '',
+                    'actual_end_date': '',
+                },
+            ],
+        }
+        result = CrossFileValidator().validate(file_data)
+        date_errors = [
+            i for i in result.issues
+            if i.code == ErrorCode.REQUIRED_FIELD
+            and 'activity-date' in i.message
+        ]
+        self.assertEqual(len(date_errors), 1)
+        self.assertIn('ORG-001', date_errors[0].message)
+
+    def test_inline_dates_satisfy_requirement(self):
+        """Activity with an inline date column should not trigger error."""
+        file_data = {
+            'activities': [
+                {
+                    'activity_identifier': 'ORG-001',
+                    'planned_start_date': '2024-01-01',
+                    'actual_start_date': '',
+                    'planned_end_date': '',
+                    'actual_end_date': '',
+                },
+            ],
+        }
+        result = CrossFileValidator().validate(file_data)
+        date_errors = [
+            i for i in result.issues
+            if i.code == ErrorCode.REQUIRED_FIELD
+            and 'activity-date' in i.message
+        ]
+        self.assertEqual(len(date_errors), 0)
+
+    def test_activity_date_csv_satisfies_requirement(self):
+        """Activity with a row in activity_date.csv should not trigger error."""
+        file_data = {
+            'activities': [
+                {
+                    'activity_identifier': 'ORG-001',
+                    'planned_start_date': '',
+                    'actual_start_date': '',
+                    'planned_end_date': '',
+                    'actual_end_date': '',
+                },
+            ],
+            'activity_date': [
+                {
+                    'activity_identifier': 'ORG-001',
+                    'iso_date': '2024-01-01',
+                    'type': '1',
+                },
+            ],
+        }
+        result = CrossFileValidator().validate(file_data)
+        date_errors = [
+            i for i in result.issues
+            if i.code == ErrorCode.REQUIRED_FIELD
+            and 'activity-date' in i.message
+        ]
+        self.assertEqual(len(date_errors), 0)
+
 
 if __name__ == '__main__':
     unittest.main()
