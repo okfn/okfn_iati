@@ -57,6 +57,10 @@ class CrossFileValidator:
                 file_data['indicators'], file_data['indicator_periods'], result
             )
 
+        # activity-date is required by IATI schema
+        if 'activities' in file_data:
+            self._check_activities_have_dates(file_data, result)
+
         return result
 
     @staticmethod
@@ -188,3 +192,59 @@ class CrossFileValidator:
                     column_name='indicator_ref',
                     value=ref,
                 ))
+
+    @staticmethod
+    def _check_activities_have_dates(
+        file_data: Dict[str, List[Dict[str, str]]],
+        result: CsvValidationResult
+    ) -> None:
+        """Check that every activity has at least one activity-date.
+
+        Dates can come from inline columns in activities.csv
+        (planned_start_date, actual_start_date, planned_end_date,
+        actual_end_date) or from rows in activity_date.csv.
+        activity-date is required by the IATI 2.03 schema.
+        """
+        inline_date_cols = [
+            'planned_start_date', 'actual_start_date',
+            'planned_end_date', 'actual_end_date',
+        ]
+
+        # Collect activity IDs that have at least one date in activity_date.csv
+        ids_with_date_rows: Set[str] = set()
+        for row in file_data.get('activity_date', []):
+            aid = row.get('activity_identifier', '').strip()
+            date_val = row.get('iso_date', '').strip()
+            if aid and date_val:
+                ids_with_date_rows.add(aid)
+
+        for row_idx, row in enumerate(
+            file_data.get('activities', []), start=2
+        ):
+            aid = row.get('activity_identifier', '').strip()
+            if not aid:
+                continue
+
+            # Check inline date columns
+            has_inline = any(
+                row.get(col, '').strip() for col in inline_date_cols
+            )
+            if has_inline:
+                continue
+
+            # Check activity_date.csv rows
+            if aid in ids_with_date_rows:
+                continue
+
+            result.issues.append(ValidationIssue(
+                level=ValidationLevel.ERROR,
+                code=ErrorCode.REQUIRED_FIELD,
+                message=(
+                    f"Activity '{aid}' has no activity-date. "
+                    f"At least one date is required by the IATI schema."
+                ),
+                file_name='activities.csv',
+                row_number=row_idx,
+                column_name='planned_start_date',
+                value='',
+            ))
