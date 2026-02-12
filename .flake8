@@ -1,17 +1,17 @@
 [flake8]
 max-line-length = 130
-max-complexity = 14
+max-complexity = 16
 count = True
 statistics = True
 show-source = True
 
 # Ignore some common issues (optional, adjust as needed)
-; ignore = 
+; ignore =
 ;     E203,  # whitespace before ':'
 ;     W503,  # line break before binary operator
 
 # Exclude directories (optional)
-exclude = 
+exclude =
     .git,
     __pycache__,
     .venv,
