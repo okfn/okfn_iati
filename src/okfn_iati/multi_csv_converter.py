@@ -414,7 +414,8 @@ class IatiMultiCsvConverter:
         self,
         csv_folder: Union[str, Path],
         xml_output: Union[str, Path],
-        validate_output: bool = True
+        validate_output: bool = True,
+        validate_csv: bool = False
     ) -> bool:
         """
         Convert multiple CSV files in a folder to IATI XML.
@@ -423,6 +424,9 @@ class IatiMultiCsvConverter:
             csv_folder: Path to folder containing CSV files
             xml_output: Path to output XML file
             validate_output: If True, validate the generated XML
+            validate_csv: If True, run CSV-level validation before conversion.
+                When validation finds errors, conversion is aborted and
+                the error details are stored in self.latest_errors.
 
         Returns:
             True if conversion was successful
@@ -437,6 +441,18 @@ class IatiMultiCsvConverter:
             print(error_msg)
             self.latest_errors.append(error_msg)
             return False
+
+        if validate_csv:
+            from .csv_validators import CsvFolderValidator
+            csv_result = CsvFolderValidator().validate_folder(csv_folder)
+            if not csv_result.is_valid:
+                for issue in csv_result.errors:
+                    self.latest_errors.append(str(issue))
+                for issue in csv_result.warnings:
+                    self.latest_warnings.append(str(issue))
+                return False
+            for issue in csv_result.warnings:
+                self.latest_warnings.append(str(issue))
 
         try:
             # Read all CSV files

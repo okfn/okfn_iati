@@ -17,6 +17,7 @@ class IatiXmlGenerator:
             None: "http://www.iati.org/ns/iati",
             "xsi": "http://www.w3.org/2001/XMLSchema-instance"
         }
+        self.warnings: List[str] = []
 
     def _get_enum_value(self, value: Union[Enum, str, None]) -> Optional[str]:
         """Helper to extract string value from enum or return string directly"""
@@ -682,6 +683,12 @@ class IatiXmlGenerator:
         self._set_attribute(root, "xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance")
 
         for activity in iati_activities.activities:
+            if not activity.activity_dates:
+                self.warnings.append(
+                    f"Activity '{activity.iati_identifier}' skipped: "
+                    f"no activity-date elements (required by IATI schema)."
+                )
+                continue
             activity_el = self.generate_activity_xml(activity)
             root.append(activity_el)
 

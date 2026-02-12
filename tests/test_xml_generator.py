@@ -17,7 +17,10 @@ class TestXmlGenerator(unittest.TestCase):
             ),
             reporting_org_role="1",
             title=[Narrative(text="Example Project")],
-            activity_status=ActivityStatus.IMPLEMENTATION
+            activity_status=ActivityStatus.IMPLEMENTATION,
+            activity_dates=[
+                ActivityDate(type=ActivityDateType.PLANNED_START, iso_date="2024-01-01")
+            ],
         )
         activity_no_org_role = Activity(
             # Do not use reporting_org_role to test defaulting
@@ -28,7 +31,10 @@ class TestXmlGenerator(unittest.TestCase):
                 narratives=[Narrative(text="Example Organization 2")]
             ),
             title=[Narrative(text="Example Project")],
-            activity_status=ActivityStatus.IMPLEMENTATION
+            activity_status=ActivityStatus.IMPLEMENTATION,
+            activity_dates=[
+                ActivityDate(type=ActivityDateType.PLANNED_START, iso_date="2024-01-01")
+            ],
         )
 
         # Create container
@@ -62,6 +68,9 @@ class TestXmlGenerator(unittest.TestCase):
             ),
             title=[Narrative(text="Example Project")],
             activity_status=ActivityStatus.IMPLEMENTATION,
+            activity_dates=[
+                ActivityDate(type=ActivityDateType.PLANNED_START, iso_date="2024-01-01")
+            ],
         )
 
         # Create container
@@ -122,6 +131,49 @@ class TestXmlGenerator(unittest.TestCase):
         # Validate date types in XML
         self.assertIn('activity-date type="1"', xml_string)
         self.assertIn('activity-date type="2"', xml_string)
+
+    def test_activity_without_dates_is_skipped(self):
+        """Activities with no activity_dates are skipped with a warning."""
+        activity_with_dates = Activity(
+            iati_identifier="XM-EXAMPLE-001",
+            reporting_org=OrganizationRef(
+                ref="XM-EXAMPLE",
+                type="10",
+                narratives=[Narrative(text="Example Org")]
+            ),
+            title=[Narrative(text="With dates")],
+            activity_dates=[
+                ActivityDate(
+                    type=ActivityDateType.PLANNED_START,
+                    iso_date="2024-01-01",
+                )
+            ],
+        )
+        activity_no_dates = Activity(
+            iati_identifier="XM-EXAMPLE-002",
+            reporting_org=OrganizationRef(
+                ref="XM-EXAMPLE",
+                type="10",
+                narratives=[Narrative(text="Example Org")]
+            ),
+            title=[Narrative(text="No dates")],
+            activity_dates=[],
+        )
+
+        iati_activities = IatiActivities(
+            activities=[activity_with_dates, activity_no_dates]
+        )
+
+        generator = IatiXmlGenerator()
+        xml_string = generator.generate_iati_activities_xml(iati_activities)
+
+        # Activity with dates is included
+        self.assertIn("XM-EXAMPLE-001", xml_string)
+        # Activity without dates is excluded
+        self.assertNotIn("XM-EXAMPLE-002", xml_string)
+        # Warning is recorded
+        self.assertEqual(len(generator.warnings), 1)
+        self.assertIn("XM-EXAMPLE-002", generator.warnings[0])
 
 
 if __name__ == '__main__':
