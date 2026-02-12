@@ -985,6 +985,48 @@ class IatiOrganisationMultiCsvConverter:
     This class converts between IATI organisation XML and multiple CSV files,
     similar to the activity multi-CSV converter but for organisation data.
     """
+    csv_files = {
+            'organisations': {
+                'filename': 'organisations.csv',
+                "required": True,
+                'columns': [
+                    'organisation_identifier', 'name', 'reporting_org_ref',
+                    'reporting_org_type', 'reporting_org_name', 'reporting_org_lang',
+                    'default_currency', 'xml_lang'
+                ]
+            },
+            'names': {
+                'filename': 'names.csv',
+                "required": False,
+                'columns': ['organisation_identifier', 'language', 'name']
+            },
+            'budgets': {
+                'filename': 'budgets.csv',
+                "required": False,
+                'columns': [
+                    'organisation_identifier', 'budget_kind', 'budget_status',
+                    'period_start', 'period_end', 'value', 'currency', 'value_date',
+                    'recipient_org_ref', 'recipient_org_type', 'recipient_org_name',
+                    'recipient_country_code', 'recipient_region_code', 'recipient_region_vocabulary'
+                ]
+            },
+            'expenditures': {
+                'filename': 'expenditures.csv',
+                "required": False,
+                'columns': [
+                    'organisation_identifier', 'period_start', 'period_end',
+                    'value', 'currency', 'value_date'
+                ]
+            },
+            'documents': {
+                'filename': 'documents.csv',
+                "required": False,
+                'columns': [
+                    'organisation_identifier', 'url', 'format', 'title',
+                    'category_code', 'language', 'document_date'
+                ]
+            }
+        }
 
     def __init__(self):
         """Initialize the multi-CSV converter."""
@@ -992,6 +1034,18 @@ class IatiOrganisationMultiCsvConverter:
         self.latest_errors: List[str] = []
         self.latest_warnings: List[str] = []
         self.xml_generator = IatiOrganisationXMLGenerator()
+
+    @classmethod
+    def required_csv_files(cls) -> list[str]:
+        return [
+            cfg["filename"]
+            for cfg in cls.csv_files.values()
+            if cfg.get("required")
+        ]
+
+    @classmethod
+    def expected_csv_files(cls) -> list[str]:
+        return [cfg["filename"] for cfg in cls.csv_files.values()]
 
     def xml_to_csv_folder(
         self,
