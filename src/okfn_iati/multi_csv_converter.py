@@ -339,8 +339,6 @@ class IatiMultiCsvConverter:
         # Storage latest errors and warnings in case an action failed
         self.latest_errors: List[str] = []
         self.latest_warnings: List[str] = []
-        # Define CSV file structure
-        self.csv_files = self.__class__.csv_files
 
     @classmethod
     def required_csv_files(cls) -> list[str]:

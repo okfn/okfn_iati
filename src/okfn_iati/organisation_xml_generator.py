@@ -1034,7 +1034,6 @@ class IatiOrganisationMultiCsvConverter:
         self.latest_errors: List[str] = []
         self.latest_warnings: List[str] = []
         self.xml_generator = IatiOrganisationXMLGenerator()
-        self.csv_files = self.__class__.csv_files
 
     @classmethod
     def required_csv_files(cls) -> list[str]:
