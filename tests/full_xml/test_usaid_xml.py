@@ -22,7 +22,7 @@ from okfn_iati import (
     # Validator
     # IatiValidator,
 )
-from okfn_iati.multi_csv_converter import IatiMultiCsvConverter
+from okfn_iati.activities import IatiMultiCsvConverter
 from okfn_iati.xml_comparator import IatiXmlComparator
 
 

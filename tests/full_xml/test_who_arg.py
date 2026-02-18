@@ -2,7 +2,7 @@ import unittest
 import tempfile
 from pathlib import Path
 
-from okfn_iati.multi_csv_converter import IatiMultiCsvConverter
+from okfn_iati.activities import IatiMultiCsvConverter
 from okfn_iati.xml_comparator import IatiXmlComparator
 
 

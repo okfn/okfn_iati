@@ -18,7 +18,7 @@ from okfn_iati.csv_validators.descriptions_validator import DescriptionsCsvValid
 from okfn_iati.csv_validators.country_budget_items_validator import CountryBudgetItemsCsvValidator
 from okfn_iati.csv_validators.transaction_sectors_validator import TransactionSectorsCsvValidator
 from okfn_iati.csv_validators.models import ErrorCode
-from okfn_iati.multi_csv_converter import IatiMultiCsvConverter
+from okfn_iati.activities import IatiMultiCsvConverter
 
 
 def _write_csv(rows, csv_key):
