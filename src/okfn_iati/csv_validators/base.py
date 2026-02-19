@@ -56,12 +56,12 @@ class BaseCsvValidator(ABC):
 
     @property
     def file_name(self) -> str:
-        from okfn_iati.multi_csv_converter import IatiMultiCsvConverter
+        from okfn_iati.activities import IatiMultiCsvConverter
         return IatiMultiCsvConverter.csv_files[self.csv_key]['filename']
 
     @property
     def expected_columns(self) -> List[str]:
-        from okfn_iati.multi_csv_converter import IatiMultiCsvConverter
+        from okfn_iati.activities import IatiMultiCsvConverter
         return IatiMultiCsvConverter.csv_files[self.csv_key]['columns']
 
     def validate(self, csv_path: Union[str, Path]) -> CsvValidationResult:

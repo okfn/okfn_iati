@@ -77,7 +77,7 @@ class CrossFileValidator:
 
     @staticmethod
     def _get_filename(csv_key: str) -> str:
-        from okfn_iati.multi_csv_converter import IatiMultiCsvConverter
+        from okfn_iati.activities import IatiMultiCsvConverter
         cfg = IatiMultiCsvConverter.csv_files.get(csv_key, {})
         return cfg.get('filename', f'{csv_key}.csv')
 

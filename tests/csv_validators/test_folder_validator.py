@@ -27,7 +27,7 @@ class TestCsvFolderValidator(unittest.TestCase):
     def test_minimal_valid_folder(self):
         """A folder with just activities.csv should validate (with warnings)."""
         with tempfile.TemporaryDirectory() as tmpdir:
-            from okfn_iati.multi_csv_converter import IatiMultiCsvConverter
+            from okfn_iati.activities import IatiMultiCsvConverter
             cols = IatiMultiCsvConverter.csv_files['activities']['columns']
             path = Path(tmpdir) / 'activities.csv'
             with open(path, 'w', newline='') as f:
@@ -112,7 +112,7 @@ class TestCsvFolderValidator(unittest.TestCase):
         """Files with org-prefix names (e.g. ORG-transactions.csv) must be
         validated and loaded for cross-file checks."""
         with tempfile.TemporaryDirectory() as tmpdir:
-            from okfn_iati.multi_csv_converter import IatiMultiCsvConverter
+            from okfn_iati.activities import IatiMultiCsvConverter
 
             # Write activities.csv (exact name)
             act_cols = IatiMultiCsvConverter.csv_files['activities']['columns']
@@ -154,7 +154,7 @@ class TestCsvFolderValidator(unittest.TestCase):
     def test_cross_file_orphan_detected(self):
         """Test that cross-file FK errors are detected in folder validation."""
         with tempfile.TemporaryDirectory() as tmpdir:
-            from okfn_iati.multi_csv_converter import IatiMultiCsvConverter
+            from okfn_iati.activities import IatiMultiCsvConverter
 
             # Write activities.csv
             act_cols = IatiMultiCsvConverter.csv_files['activities']['columns']

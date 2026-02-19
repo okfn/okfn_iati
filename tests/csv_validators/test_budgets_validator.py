@@ -13,7 +13,7 @@ class TestBudgetsCsvValidator(unittest.TestCase):
 
     def _write_csv(self, rows, columns=None):
         if columns is None:
-            from okfn_iati.multi_csv_converter import IatiMultiCsvConverter
+            from okfn_iati.activities import IatiMultiCsvConverter
             columns = IatiMultiCsvConverter.csv_files['budgets']['columns']
         f = tempfile.NamedTemporaryFile(
             mode='w', suffix='.csv', delete=False, newline=''
