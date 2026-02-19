@@ -61,7 +61,7 @@ def extract_organisation_names(org_elem: ET.Element, org_identifier: str) -> Lis
     return names
 
 
-def extract_organisation_budgets(org_elem: ET.Element, org_identifier: str) -> List[Dict[str, str]]:
+def extract_organisation_budgets(org_elem: ET.Element, org_identifier: str) -> List[Dict[str, str]]:  # noqa: C901
     """Extract budget information."""
     budgets = []
 
