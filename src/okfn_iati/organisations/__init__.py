@@ -14,6 +14,7 @@ Main classes:
 
 from .base import (
     IatiOrganisationXMLGenerator,
+    IatiOrganisationCSVConverter,
     IatiOrganisationMultiCsvConverter,
     OrganisationRecord,
     OrganisationBudget,
@@ -23,6 +24,7 @@ from .base import (
 
 __all__ = [
     "IatiOrganisationXMLGenerator",
+    "IatiOrganisationCSVConverter",
     "IatiOrganisationMultiCsvConverter",
     "OrganisationRecord",
     "OrganisationBudget",

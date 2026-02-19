@@ -32,7 +32,8 @@ from .process_csv.builders import (
     build_organisation_document
 )
 
-logger = logging.getLogger(__name__)
+# Use the legacy module name for backward compatibility with existing tests
+logger = logging.getLogger("okfn_iati.organisation_xml_generator")
 
 
 def _set_attribute(element: ET.Element, name: str, value: Any) -> None:
@@ -317,6 +318,500 @@ class IatiOrganisationXMLGenerator:
         """Save the XML to a file."""
         with open(file_path, "w", encoding="utf-8") as f:
             f.write(self.to_string(root))
+
+
+class IatiOrganisationCSVConverter:
+    """
+    Converter for IATI organisation data between CSV/Excel and XML formats.
+
+    This class provides methods to:
+    1. Read organisation data from CSV/Excel files
+    2. Generate IATI-compliant organisation XML files
+    3. Process multiple organisation files in batch
+    """
+
+    # Define field name mappings for CSV columns
+    FIELD_MAPPINGS = {
+        "org_identifier": ["organisation identifier", "organization identifier",
+                           "organisation-identifier", "org identifier",
+                           "org_id", "organisation id", "organization id"],
+        "name": ["name", "organisation name", "organization name", "nombre"],
+        "reporting_org_ref": ["reporting org ref", "reporting-org ref", "reporting_org_ref", "reporting org identifier"],
+        "reporting_org_type": ["reporting org type", "reporting-org type", "reporting_org_type", "reporting type"],
+        "reporting_org_name": ["reporting org name", "reporting-org name", "reporting_org_name", "reporting name"],
+
+        # Budget fields
+        "budget_kind": ["budget kind", "budget_type", "budget type", "tipo presupuesto"],
+        "budget_status": ["budget status", "status", "estado"],
+        "budget_start": ["period start", "budget period start", "period-start", "inicio"],
+        "budget_end": ["period end", "budget period end", "period-end", "fin"],
+        "budget_value": ["budget value", "value", "monto", "valor"],
+        "budget_currency": ["currency", "moneda"],
+        "budget_value_date": ["value date", "value-date", "fecha valor"],
+
+        # Recipient fields
+        "recipient_org_ref": ["recipient org ref", "recipient-org ref", "recipient_org_ref"],
+        "recipient_org_type": ["recipient org type", "recipient-org type", "recipient_org_type"],
+        "recipient_org_name": ["recipient org name", "recipient-org name", "recipient_org_name"],
+        "recipient_country_code": [
+            "recipient country code", "recipient-country code",
+            "recipient_country_code", "pais codigo"
+        ],
+        "recipient_region_code": [
+            "recipient region code", "recipient-region code",
+            "recipient_region_code", "region codigo"
+        ],
+        "recipient_region_vocabulary": [
+            "recipient region vocabulary", "recipient-region vocabulary",
+            "recipient_region_vocabulary", "region vocab"
+        ],
+
+        # Expenditure fields
+        "expenditure_start": [
+            "expenditure start", "expenditure period start",
+            "expenditure-start", "gasto inicio"
+        ],
+        "expenditure_end": [
+            "expenditure end", "expenditure period end",
+            "expenditure-end", "gasto fin"
+        ],
+        "expenditure_value": ["expenditure value", "expenditure", "gasto valor"],
+        "expenditure_currency": ["expenditure currency", "gasto moneda"],
+        "expenditure_value_date": ["expenditure date", "gasto fecha"],
+
+        # Document fields
+        "document_url": [
+            "document url", "document-link url", "url documento",
+            "doc url", "url"
+        ],
+        "document_format": ["document format", "format", "mime", "formato"],
+        "document_title": ["document title", "title", "titulo"],
+        "document_category": ["document category", "category", "categoria"],
+        "document_language": ["document language", "language", "idioma"],
+        "document_date": ["document date", "date", "fecha documento"]
+    }
+
+    def __init__(self):
+        """Initialize the converter."""
+        self.xml_generator = IatiOrganisationXMLGenerator()
+
+    def read_from_file(self, file_path: Union[str, Path]) -> OrganisationRecord:
+        """
+        Read organisation data from a CSV or Excel file.
+
+        Args:
+            file_path: Path to CSV or Excel file
+
+        Returns:
+            OrganisationRecord: Organisation data from the first row of the file
+
+        Raises:
+            ValueError: If required fields are missing or file format is unsupported
+        """
+        # Determine file type and read the first row
+        file_path = Path(file_path)
+        row = self._read_first_row(file_path)
+
+        # Extract organisation data
+        org_identifier = _get_field(row, self.FIELD_MAPPINGS["org_identifier"])
+        name = _get_field(row, self.FIELD_MAPPINGS["name"])
+
+        if not org_identifier or not name:
+            raise ValueError("Missing required 'organisation identifier' or 'name' in the file")
+
+        # Extract xml_lang
+        xml_lang = row.get("xml_lang")
+
+        # If completely missing, use default language ("en")
+        if xml_lang is None or not xml_lang.strip():
+            logger.warning(
+                f"Missing 'xml_lang' in {file_path.name}, using default 'en'"
+            )
+            xml_lang = "en"
+
+        # Extract default currency if available
+        default_currency = row.get("default_currency") or row.get("currency") or "USD"
+
+        # Create organisation record
+        record = OrganisationRecord(
+            org_identifier=org_identifier,
+            name=name,
+            reporting_org_ref=_get_field(row, self.FIELD_MAPPINGS["reporting_org_ref"]),
+            reporting_org_type=_get_field(row, self.FIELD_MAPPINGS["reporting_org_type"]),
+            reporting_org_name=_get_field(row, self.FIELD_MAPPINGS["reporting_org_name"]),
+            xml_lang=xml_lang,
+            default_currency=default_currency
+        )
+
+        # Extract budget if present
+        budget_kind = _get_field(row, self.FIELD_MAPPINGS["budget_kind"])
+        budget_value = _get_field(row, self.FIELD_MAPPINGS["budget_value"])
+
+        if budget_kind and budget_value:
+            # Determine actual budget kind if needed
+            if budget_kind.lower() in ["total", "total-budget", "total budget"]:
+                budget_kind = "total-budget"
+            elif any(_get_field(row, self.FIELD_MAPPINGS[f]) for f in [
+                "recipient_org_ref", "recipient_org_name"
+            ]):
+                budget_kind = "recipient-org-budget"
+            elif _get_field(row, self.FIELD_MAPPINGS["recipient_country_code"]):
+                budget_kind = "recipient-country-budget"
+            elif _get_field(row, self.FIELD_MAPPINGS["recipient_region_code"]):
+                budget_kind = "recipient-region-budget"
+
+            # Create budget
+            budget = OrganisationBudget(
+                kind=budget_kind,
+                status=_get_field(row, self.FIELD_MAPPINGS["budget_status"], "2"),  # Default to committed
+                period_start=_get_field(row, self.FIELD_MAPPINGS["budget_start"]),
+                period_end=_get_field(row, self.FIELD_MAPPINGS["budget_end"]),
+                value=budget_value,
+                currency=_get_field(row, self.FIELD_MAPPINGS["budget_currency"], "USD"),
+                value_date=_get_field(row, self.FIELD_MAPPINGS["budget_value_date"]),
+                recipient_org_ref=_get_field(row, self.FIELD_MAPPINGS["recipient_org_ref"]),
+                recipient_org_type=_get_field(row, self.FIELD_MAPPINGS["recipient_org_type"]),
+                recipient_org_name=_get_field(row, self.FIELD_MAPPINGS["recipient_org_name"]),
+                recipient_country_code=_get_field(row, self.FIELD_MAPPINGS["recipient_country_code"]),
+                recipient_region_code=_get_field(row, self.FIELD_MAPPINGS["recipient_region_code"]),
+                recipient_region_vocabulary=_get_field(row, self.FIELD_MAPPINGS["recipient_region_vocabulary"])
+            )
+            record.budgets.append(budget)
+
+        # Extract expenditure if present
+        expenditure_value = _get_field(row, self.FIELD_MAPPINGS["expenditure_value"])
+        if expenditure_value:
+            expenditure = OrganisationExpenditure(
+                period_start=_get_field(row, self.FIELD_MAPPINGS["expenditure_start"]),
+                period_end=_get_field(row, self.FIELD_MAPPINGS["expenditure_end"]),
+                value=expenditure_value,
+                currency=_get_field(row, self.FIELD_MAPPINGS["expenditure_currency"], "USD"),
+                value_date=_get_field(row, self.FIELD_MAPPINGS["expenditure_value_date"])
+            )
+            record.expenditures.append(expenditure)
+
+        # Extract document if present
+        document_url = _get_field(row, self.FIELD_MAPPINGS["document_url"])
+        if document_url:
+            document = OrganisationDocument(
+                url=document_url,
+                format=_get_field(row, self.FIELD_MAPPINGS["document_format"], "text/html"),
+                title=_get_field(row, self.FIELD_MAPPINGS["document_title"], "Supporting document"),
+                category_code=_get_field(row, self.FIELD_MAPPINGS["document_category"], "A01"),  # Default to Annual Report
+                language=_get_field(row, self.FIELD_MAPPINGS["document_language"], "en"),
+                document_date=_get_field(row, self.FIELD_MAPPINGS["document_date"])
+            )
+            record.documents.append(document)
+
+        return record
+
+    def _read_first_row(self, file_path: Path) -> Dict[str, Any]:
+        """
+        Read the first data row from a CSV or Excel file.
+
+        Args:
+            file_path: Path to file
+
+        Returns:
+            Dict: First row as a dictionary
+
+        Raises:
+            ValueError: If file format is unsupported or file is empty
+        """
+        # Handle Excel files if pandas is available
+        if PANDAS_AVAILABLE and file_path.suffix.lower() in [".xlsx", ".xls"]:
+            df = pd.read_excel(file_path)
+            if df.empty:
+                raise ValueError(f"File {file_path} is empty")
+
+            # Convert first row to dictionary
+            row = df.iloc[0].to_dict()
+            # Normalize row keys and values
+            return {
+                str(k).strip(): ("" if pd.isna(v) else str(v).strip())
+                for k, v in row.items()
+            }
+
+        # Handle CSV files
+        elif file_path.suffix.lower() == ".csv":
+            with open(file_path, "r", encoding="utf-8") as f:
+                reader = csv.DictReader(f)
+                try:
+                    # Get first row
+                    row = next(reader)
+                    # Normalize row
+                    return {
+                        str(k).strip(): ("" if v is None else str(v).strip())
+                        for k, v in row.items()
+                    }
+                except StopIteration:
+                    raise ValueError(f"File {file_path} has no data rows")
+
+        else:
+            raise ValueError(
+                f"Unsupported file format: {file_path.suffix}. "
+                "Use CSV or Excel (.xlsx/.xls) files."
+            )
+
+    def convert_to_xml(self,
+                       input_file: Union[str, Path],
+                       output_file: Union[str, Path]) -> str:
+        """
+        Convert organisation data from CSV/Excel to IATI XML.
+
+        Args:
+            input_file: Path to input CSV or Excel file
+            output_file: Path to output XML file
+
+        Returns:
+            str: Path to generated XML file
+
+        Raises:
+            ValueError: If conversion fails
+        """
+        try:
+            # Read organisation data
+            record = self.read_from_file(input_file)
+
+            # Generate XML
+            root = self.xml_generator.build_root_element()
+            self.xml_generator.add_organisation(root, record)
+
+            # Save XML to file
+            output_path = Path(output_file)
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            self.xml_generator.save_to_file(root, output_path)
+
+            logger.info(f"Successfully generated IATI organisation XML: {output_path}")
+            return str(output_path)
+
+        except Exception as e:
+            logger.error(f"Failed to convert {input_file} to IATI XML: {str(e)}")
+            raise ValueError(f"Conversion failed: {str(e)}")
+
+    def read_multiple_from_folder(self, folder_path: Union[str, Path]) -> List[OrganisationRecord]:
+        """
+        Read organisation data from multiple CSV/Excel files in a folder.
+
+        Args:
+            folder_path: Path to folder containing CSV or Excel files
+
+        Returns:
+            List[OrganisationRecord]: List of organisation records from all files
+
+        Raises:
+            ValueError: If folder doesn't exist or contains no valid files
+        """
+        folder_path = Path(folder_path)
+
+        if not folder_path.exists():
+            raise ValueError(f"Folder does not exist: {folder_path}")
+
+        if not folder_path.is_dir():
+            raise ValueError(f"Path is not a directory: {folder_path}")
+
+        # Find all CSV and Excel files
+        file_patterns = ["*.csv", "*.xlsx", "*.xls"]
+        files = []
+        for pattern in file_patterns:
+            files.extend(folder_path.glob(pattern))
+
+        if not files:
+            raise ValueError(f"No CSV or Excel files found in folder: {folder_path}")
+
+        organisations = []
+        processed_files = []
+        failed_files = []
+
+        for file_path in sorted(files):
+            try:
+                logger.info(f"Processing organisation file: {file_path.name}")
+                record = self.read_from_file(file_path)
+                organisations.append(record)
+                processed_files.append(file_path.name)
+            except Exception as e:
+                logger.warning(f"Failed to process {file_path.name}: {str(e)}")
+                failed_files.append((file_path.name, str(e)))
+                continue
+
+        if not organisations:
+            raise ValueError(
+                f"No valid organisation data found in folder {folder_path}. "
+                f"Failed files: {failed_files}"
+            )
+
+        logger.info(
+            f"Successfully processed {len(processed_files)} organisation files. "
+            f"Failed: {len(failed_files)}"
+        )
+
+        if failed_files:
+            logger.warning(f"Failed to process files: {failed_files}")
+
+        return organisations
+
+    def convert_folder_to_xml(
+            self,
+            input_folder: Union[str, Path],
+            output_file: Union[str, Path]
+    ) -> str:
+        """
+        Convert multiple organisation CSV/Excel files to a single IATI XML file.
+
+        Args:
+            input_folder: Path to folder containing CSV or Excel files
+            output_file: Path to output XML file
+
+        Returns:
+            str: Path to generated XML file
+
+        Raises:
+            ValueError: If conversion fails
+        """
+        try:
+            # Read all organisation records from folder
+            records = self.read_multiple_from_folder(input_folder)
+
+            # Generate XML with all organisations
+            root = self.xml_generator.build_root_element()
+
+            for record in records:
+                self.xml_generator.add_organisation(root, record)
+
+            # Save XML to file
+            output_path = Path(output_file)
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+            self.xml_generator.save_to_file(root, output_path)
+
+            logger.info(
+                f"Successfully generated IATI organisation XML with {len(records)} organisations: {output_path}"
+            )
+            return str(output_path)
+
+        except Exception as e:
+            logger.error(f"Failed to convert folder {input_folder} to IATI XML: {str(e)}")
+            raise ValueError(f"Folder conversion failed: {str(e)}")
+
+    def validate_organisation_identifiers(self, records: List[OrganisationRecord]) -> List[str]:
+        """
+        Check for duplicate organisation identifiers in a list of records.
+
+        Args:
+            records: List of organisation records to validate
+
+        Returns:
+            List of duplicate organisation identifiers found
+        """
+        seen_identifiers = set()
+        duplicates = set()
+
+        for record in records:
+            identifier = record.org_identifier
+            if identifier in seen_identifiers:
+                duplicates.add(identifier)
+            else:
+                seen_identifiers.add(identifier)
+
+        return list(duplicates)
+
+    def generate_template(self, output_file: Union[str, Path], with_examples: bool = True) -> None:
+        """
+        Generate a CSV template for IATI organisation data.
+
+        Args:
+            output_file: Path to output CSV template file
+            with_examples: Whether to include example data
+
+        Raises:
+            ValueError: If file creation fails
+        """
+        # Define template columns
+        columns = [
+            # Basic organisation info
+            "Organisation Identifier",
+            "Name",
+            "Reporting Org Ref",
+            "Reporting Org Type",
+            "Reporting Org Name",
+
+            # Budget info
+            "Budget Kind",
+            "Budget Status",
+            "Budget Period Start",
+            "Budget Period End",
+            "Budget Value",
+            "Currency",
+            "Value Date",
+
+            # Recipient info
+            "Recipient Org Ref",
+            "Recipient Org Type",
+            "Recipient Org Name",
+            "Recipient Country Code",
+            "Recipient Region Code",
+            "Recipient Region Vocabulary",
+
+            # Document info
+            "Document URL",
+            "Document Format",
+            "Document Title",
+            "Document Category",
+            "Document Language",
+            "Document Date",
+
+            # Expenditure info
+            "Expenditure Period Start",
+            "Expenditure Period End",
+            "Expenditure Value",
+            "Expenditure Currency"
+        ]
+
+        try:
+            output_path = Path(output_file)
+            output_path.parent.mkdir(parents=True, exist_ok=True)
+
+            with open(output_path, "w", newline="", encoding="utf-8") as f:
+                writer = csv.writer(f)
+                writer.writerow(columns)
+
+                # Add example row if requested
+                if with_examples:
+                    writer.writerow([
+                        "XM-DAC-46002",  # Organisation Identifier
+                        "Sample Organisation",  # Name
+                        "XM-DAC-46002",  # Reporting Org Ref
+                        "40",  # Reporting Org Type
+                        "Sample Organisation",  # Reporting Org Name
+                        "total-budget",  # Budget Kind
+                        "2",  # Budget Status
+                        "2025-01-01",  # Budget Period Start
+                        "2025-12-31",  # Budget Period End
+                        "1000000",  # Budget Value
+                        "USD",  # Currency
+                        "2025-01-01",  # Value Date
+                        "",  # Recipient Org Ref
+                        "",  # Recipient Org Type
+                        "",  # Recipient Org Name
+                        "",  # Recipient Country Code
+                        "",  # Recipient Region Code
+                        "",  # Recipient Region Vocabulary
+                        "https://example.org/annual-report",  # Document URL
+                        "text/html",  # Document Format
+                        "Annual Report",  # Document Title
+                        "A01",  # Document Category
+                        "en",  # Document Language
+                        "2025-01-01",  # Document Date
+                        "2025-01-01",  # Expenditure Period Start
+                        "2025-12-31",  # Expenditure Period End
+                        "950000",  # Expenditure Value
+                        "USD"  # Expenditure Currency
+                    ])
+
+            logger.info(f"Generated IATI organisation template: {output_path}")
+
+        except Exception as e:
+            logger.error(f"Failed to create template {output_file}: {str(e)}")
+            raise ValueError(f"Template creation failed: {str(e)}")
 
 
 class IatiOrganisationMultiCsvConverter:
@@ -684,3 +1179,104 @@ class IatiOrganisationMultiCsvConverter:
             record.documents.append(document)
 
         return record
+    def generate_csv_templates(
+        self,
+        output_folder: Union[str, Path],
+        include_examples: bool = True
+    ) -> None:
+        """
+        Generate CSV template files for organisation data.
+
+        Args:
+            output_folder: Path to output folder
+            include_examples: Whether to include example data
+        """
+        output_path = Path(output_folder)
+        output_path.mkdir(parents=True, exist_ok=True)
+
+        # Generate organisations.csv template
+        org_columns = [
+            "organisation_identifier", "name", "reporting_org_ref",
+            "reporting_org_type", "reporting_org_name", "reporting_org_lang",
+            "default_currency", "xml_lang"
+        ]
+
+        with open(output_path / "organisations.csv", "w", newline="", encoding="utf-8") as f:
+            writer = csv.writer(f)
+            writer.writerow(org_columns)
+
+            if include_examples:
+                writer.writerow([
+                    "XM-DAC-46002", "Sample Organisation", "XM-DAC-46002",
+                    "40", "Sample Organisation", "en", "USD", "en"
+                ])
+
+        # Generate names.csv template
+        name_columns = [
+            'organisation_identifier', 'language', 'name'
+        ]
+
+        with open(output_path / "names.csv", 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow(name_columns)
+
+            if include_examples:
+                writer.writerow([
+                    'XM-DAC-46002', '', 'Central American Bank for Economic Integration'
+                ])
+                writer.writerow([
+                    'XM-DAC-46002', 'es', 'Banco Centroamericano de Integración Económica'
+                ])
+
+        # Generate budgets.csv template
+        budget_columns = [
+            'organisation_identifier', 'budget_kind', 'budget_status',
+            'period_start', 'period_end', 'value', 'currency', 'value_date',
+            'recipient_org_ref', 'recipient_org_type', 'recipient_org_name',
+            'recipient_country_code', 'recipient_region_code', 'recipient_region_vocabulary'
+        ]
+
+        with open(output_path / "budgets.csv", 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow(budget_columns)
+
+            if include_examples:
+                writer.writerow([
+                    'XM-DAC-46002', 'total-budget', '2',
+                    '2025-01-01', '2025-12-31', '1000000', 'USD', '2025-01-01',
+                    '', '', '', '', '', ''
+                ])
+
+        # Generate expenditures.csv template
+        expenditure_columns = [
+            'organisation_identifier', 'period_start', 'period_end',
+            'value', 'currency', 'value_date'
+        ]
+
+        with open(output_path / "expenditures.csv", 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow(expenditure_columns)
+
+            if include_examples:
+                writer.writerow([
+                    'XM-DAC-46002', '2024-01-01', '2024-12-31',
+                    '950000', 'USD', '2024-01-01'
+                ])
+
+        # Generate documents.csv template
+        document_columns = [
+            'organisation_identifier', 'url', 'format', 'title',
+            'category_code', 'language', 'document_date'
+        ]
+
+        with open(output_path / "documents.csv", 'w', newline='', encoding='utf-8') as f:
+            writer = csv.writer(f)
+            writer.writerow(document_columns)
+
+            if include_examples:
+                writer.writerow([
+                    'XM-DAC-46002', 'https://example.org/annual-report.pdf',
+                    'application/pdf', 'Annual Report 2024', 'A01', 'en', '2025-01-01'
+                ])
+
+        logger.info(f"Generated organisation CSV templates in: {output_path}")
