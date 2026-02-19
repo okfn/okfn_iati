@@ -50,11 +50,13 @@ def extract_organisation_names(org_elem: ET.Element, org_identifier: str) -> Lis
     if name_elem is not None:
         narratives = name_elem.findall('narrative')
         for narr in narratives:
-            names.append({
-                'organisation_identifier': org_identifier,
-                'language': narr.get('{http://www.w3.org/XML/1998/namespace}lang', ''),
-                'name': narr.text if narr.text else ''
-            })
+            if narr.text:
+                name_data = {
+                    'organisation_identifier': org_identifier,
+                    'language': narr.get('{http://www.w3.org/XML/1998/namespace}lang', ''),
+                    'name': narr.text
+                }
+                names.append(name_data)
 
     return names
 
@@ -92,7 +94,7 @@ def extract_organisation_budgets(org_elem: ET.Element, org_identifier: str) -> L
 
         value_elem = budget_elem.find('value')
         if value_elem is not None:
-            budget_data['value'] = value_elem.text if value_elem.text else ''
+            budget_data['value'] = value_elem.text or ''
             budget_data['currency'] = value_elem.get('currency', '')
             budget_data['value_date'] = value_elem.get('value-date', '')
 
@@ -121,8 +123,10 @@ def extract_organisation_budgets(org_elem: ET.Element, org_identifier: str) -> L
         if recip_org is not None:
             budget_data['recipient_org_ref'] = recip_org.get('ref', '')
             budget_data['recipient_org_type'] = recip_org.get('type', '')
-            recip_org_name = recip_org.find('narrative')
-            budget_data['recipient_org_name'] = recip_org_name.text if recip_org_name is not None else ''
+
+            recip_name = recip_org.find('narrative')
+            if recip_name is not None:
+                budget_data['recipient_org_name'] = recip_name.text
 
         period_start = budget_elem.find('period-start')
         if period_start is not None:
@@ -134,13 +138,13 @@ def extract_organisation_budgets(org_elem: ET.Element, org_identifier: str) -> L
 
         value_elem = budget_elem.find('value')
         if value_elem is not None:
-            budget_data['value'] = value_elem.text if value_elem.text else ''
+            budget_data['value'] = value_elem.text or ''
             budget_data['currency'] = value_elem.get('currency', '')
             budget_data['value_date'] = value_elem.get('value-date', '')
 
         budgets.append(budget_data)
 
-    # Recipient country budgets
+    # Add recipient-country-budget and recipient-region-budget similarly
     for budget_elem in org_elem.findall('recipient-country-budget'):
         budget_data = {
             'organisation_identifier': org_identifier,
@@ -213,7 +217,7 @@ def extract_organisation_budgets(org_elem: ET.Element, org_identifier: str) -> L
 
         value_elem = budget_elem.find('value')
         if value_elem is not None:
-            budget_data['value'] = value_elem.text if value_elem.text else ''
+            budget_data['value'] = value_elem.text or ''
             budget_data['currency'] = value_elem.get('currency', '')
             budget_data['value_date'] = value_elem.get('value-date', '')
 
@@ -246,7 +250,7 @@ def extract_organisation_expenditures(org_elem: ET.Element, org_identifier: str)
 
         value_elem = exp_elem.find('value')
         if value_elem is not None:
-            exp_data['value'] = value_elem.text if value_elem.text else ''
+            exp_data['value'] = value_elem.text or ''
             exp_data['currency'] = value_elem.get('currency', '')
             exp_data['value_date'] = value_elem.get('value-date', '')
 
@@ -272,19 +276,19 @@ def extract_organisation_documents(org_elem: ET.Element, org_identifier: str) ->
 
         title_elem = doc_elem.find('title/narrative')
         if title_elem is not None:
-            doc_data['title'] = title_elem.text if title_elem.text else ''
+            doc_data['title'] = title_elem.text
 
-        category = doc_elem.find('category')
-        if category is not None:
-            doc_data['category_code'] = category.get('code', '')
+        category_elem = doc_elem.find('category')
+        if category_elem is not None:
+            doc_data['category_code'] = category_elem.get('code', '')
 
-        language = doc_elem.find('language')
-        if language is not None:
-            doc_data['language'] = language.get('code', '')
+        lang_elem = doc_elem.find('language')
+        if lang_elem is not None:
+            doc_data['language'] = lang_elem.get('code', '')
 
-        doc_date = doc_elem.find('document-date')
-        if doc_date is not None:
-            doc_data['document_date'] = doc_date.get('iso-date', '')
+        date_elem = doc_elem.find('document-date')
+        if date_elem is not None:
+            doc_data['document_date'] = date_elem.get('iso-date', '')
 
         documents.append(doc_data)
 

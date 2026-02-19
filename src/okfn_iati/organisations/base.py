@@ -1179,6 +1179,7 @@ class IatiOrganisationMultiCsvConverter:
             record.documents.append(document)
 
         return record
+
     def generate_csv_templates(
         self,
         output_folder: Union[str, Path],
