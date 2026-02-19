@@ -177,7 +177,7 @@ def extract_organisation_budgets(org_elem: ET.Element, org_identifier: str) -> L
 
         value_elem = budget_elem.find('value')
         if value_elem is not None:
-            budget_data['value'] = value_elem.text if value_elem.text else ''
+            budget_data['value'] = value_elem.text or ''
             budget_data['currency'] = value_elem.get('currency', '')
             budget_data['value_date'] = value_elem.get('value-date', '')
 
