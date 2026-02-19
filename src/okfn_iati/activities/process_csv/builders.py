@@ -186,7 +186,7 @@ def build_budget(budget_data: Dict[str, str]) -> Budget:
     )
 
 
-def build_transaction(  # noqa: C901
+def build_transaction( # noqa C901
     trans_data: Dict[str, str],
     trans_sectors: Optional[List[Dict[str, str]]] = None
 ) -> Transaction:
