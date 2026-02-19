@@ -17,6 +17,7 @@ New imports are recommended:
 # Re-export main classes from new location for backward compatibility
 from .organisations import (
     IatiOrganisationXMLGenerator,
+    IatiOrganisationCSVConverter,
     IatiOrganisationMultiCsvConverter,
     OrganisationRecord,
     OrganisationBudget,
@@ -26,6 +27,7 @@ from .organisations import (
 
 __all__ = [
     "IatiOrganisationXMLGenerator",
+    "IatiOrganisationCSVConverter",
     "IatiOrganisationMultiCsvConverter",
     "OrganisationRecord",
     "OrganisationBudget",
