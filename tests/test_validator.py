@@ -135,7 +135,7 @@ class TestValidator(unittest.TestCase):
         invalid_xml = self.generator.generate_iati_activities_xml(IatiActivities(activities=[invalid_activity]))
 
         is_valid, errors = self.validator.validate(invalid_xml)
-        
+
         self.assertFalse(is_valid, f'Errors: {errors}')
         self.assertEqual(len(errors['schema_errors']), 0)
         self.assertEqual(len(errors['ruleset_errors']), 1, f'1 error expected. Errors: {errors}')

@@ -102,18 +102,18 @@ class IatiValidator:
             for activity in activities:
                 has_sector = len(activity.findall('./sector', root.nsmap)) > 0
                 transactions = activity.findall('./transaction', root.nsmap)
-                
+
                 # Count transactions with sectors
                 trans_with_sectors = 0
                 for transaction in transactions:
                     if transaction.findall('./sector', root.nsmap):
                         trans_with_sectors += 1
-                
+
                 # Activity must have either:
                 # 1. Activity-level sectors, OR
                 # 2. All transactions must have sector elements
                 has_all_transaction_sectors = len(transactions) > 0 and trans_with_sectors == len(transactions)
-                
+
                 if not has_sector and not has_all_transaction_sectors:
                     activity_id = activity.findtext('./iati-identifier')
                     if trans_with_sectors == 0:
