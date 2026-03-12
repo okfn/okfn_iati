@@ -73,7 +73,7 @@ class CsvFolderValidator:
         Returns:
             Aggregated validation result.
         """
-        from okfn_iati.multi_csv_converter import IatiMultiCsvConverter
+        from okfn_iati.activities import IatiMultiCsvConverter
 
         folder = Path(folder_path)
         result = CsvValidationResult()
