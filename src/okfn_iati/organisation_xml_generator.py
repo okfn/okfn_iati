@@ -1,8 +1,15 @@
 """
-Legacy compatibility module for organisation XML/CSV tools.
+IATI Organisation XML Generator - Creates IATI-compliant organisation XML files.
 
-This module keeps legacy imports and command-line usage working after the
-organisation code was moved into ``okfn_iati.organisations``.
+This module generates IATI organisation XML files according to the IATI standard v2.03.
+Organisation files contain information about the publishing organization and its budgets,
+expenditure, and documents - distinct from activity files which describe projects.
+
+References:
+- https://iatistandard.org/en/guidance/standard-overview/organisation-infromation/
+- https://iatistandard.org/en/iati-standard/203/organisation-standard/
+- https://iatistandard.org/en/iati-standard/203/organisation-standard/iati-organisations/
+
 """
 
 from __future__ import annotations
