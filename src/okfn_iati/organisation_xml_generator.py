@@ -15,7 +15,7 @@ New imports are recommended:
 """
 
 # Re-export main classes from new location for backward compatibility
-from .organisations import (
+from okfn_iati.organisations import (
     IatiOrganisationXMLGenerator,
     IatiOrganisationCSVConverter,
     IatiOrganisationMultiCsvConverter,
