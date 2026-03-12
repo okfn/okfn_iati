@@ -53,10 +53,8 @@ __all__ = [
 logger = logging.getLogger(__name__)
 
 
-def main() -> int:
-    """Command line interface for converting organisation files."""
-    logging.basicConfig(level=logging.INFO, format="%(message)s")
-
+def _build_parser() -> argparse.ArgumentParser:
+    """Build and return the CLI argument parser."""
     parser = argparse.ArgumentParser(
         description="Convert between IATI organisation data formats"
     )
@@ -112,6 +110,77 @@ def main() -> int:
         help="Process all CSV/Excel files in input folder",
     )
 
+    return parser
+
+
+def _handle_convert(args: argparse.Namespace, converter: IatiOrganisationCSVConverter) -> int:
+    if args.folder:
+        output = converter.convert_folder_to_xml(args.input, args.output)
+    else:
+        output = converter.convert_to_xml(args.input, args.output)
+    logger.info("Successfully converted to: %s", output)
+    return 0
+
+
+def _handle_template(args: argparse.Namespace, converter: IatiOrganisationCSVConverter) -> int:
+    converter.generate_template(args.output, not args.no_examples)
+    logger.info("Generated template: %s", args.output)
+    return 0
+
+
+def _handle_multi_template(args: argparse.Namespace, multi_converter: IatiOrganisationMultiCsvConverter) -> int:
+    multi_converter.generate_csv_templates(args.output_folder, not args.no_examples)
+    logger.info("Generated multi-CSV templates in: %s", args.output_folder)
+    return 0
+
+
+def _handle_xml_to_csv(args: argparse.Namespace, multi_converter: IatiOrganisationMultiCsvConverter) -> int:
+    success = multi_converter.xml_to_csv_folder(args.input, args.output_folder)
+    if success:
+        logger.info("Successfully converted XML to CSV folder: %s", args.output_folder)
+        return 0
+
+    logger.error("Failed to convert XML to CSV folder")
+    for error in multi_converter.latest_errors:
+        logger.error("  - %s", error)
+    return 2
+
+
+def _handle_csv_to_xml(args: argparse.Namespace, multi_converter: IatiOrganisationMultiCsvConverter) -> int:
+    success = multi_converter.csv_folder_to_xml(args.input_folder, args.output)
+    if success:
+        logger.info("Successfully converted CSV folder to XML: %s", args.output)
+        return 0
+
+    logger.error("Failed to convert CSV folder to XML")
+    for error in multi_converter.latest_errors:
+        logger.error("  - %s", error)
+    return 2
+
+
+def _handle_validate(args: argparse.Namespace, converter: IatiOrganisationCSVConverter) -> int:
+    if args.folder:
+        records = converter.read_multiple_from_folder(args.input)
+    else:
+        records = [converter.read_from_file(args.input)]
+
+    duplicates = converter.validate_organisation_identifiers(records)
+    if duplicates:
+        logger.error("Duplicate organisation identifiers found:")
+        for duplicate in duplicates:
+            logger.error("  - %s", duplicate)
+        return 2
+
+    logger.info("Validation successful. Records checked: %d", len(records))
+    return 0
+
+
+def main() -> int:
+    """Command line interface for converting organisation files."""
+    logging.basicConfig(level=logging.INFO, format="%(message)s")
+
+    parser = _build_parser()
+
     args = parser.parse_args()
     if not args.command:
         parser.print_help()
@@ -120,67 +189,25 @@ def main() -> int:
     converter = IatiOrganisationCSVConverter()
     multi_converter = IatiOrganisationMultiCsvConverter()
 
+    handlers = {
+        "convert": lambda parsed_args: _handle_convert(parsed_args, converter),
+        "template": lambda parsed_args: _handle_template(parsed_args, converter),
+        "multi-template": lambda parsed_args: _handle_multi_template(parsed_args, multi_converter),
+        "xml-to-csv-folder": lambda parsed_args: _handle_xml_to_csv(parsed_args, multi_converter),
+        "csv-folder-to-xml": lambda parsed_args: _handle_csv_to_xml(parsed_args, multi_converter),
+        "validate": lambda parsed_args: _handle_validate(parsed_args, converter),
+    }
+
     try:
-        if args.command == "convert":
-            if args.folder:
-                output = converter.convert_folder_to_xml(args.input, args.output)
-            else:
-                output = converter.convert_to_xml(args.input, args.output)
-            logger.info("Successfully converted to: %s", output)
-            return 0
-
-        if args.command == "template":
-            converter.generate_template(args.output, not args.no_examples)
-            logger.info("Generated template: %s", args.output)
-            return 0
-
-        if args.command == "multi-template":
-            multi_converter.generate_csv_templates(args.output_folder, not args.no_examples)
-            logger.info("Generated multi-CSV templates in: %s", args.output_folder)
-            return 0
-
-        if args.command == "xml-to-csv-folder":
-            success = multi_converter.xml_to_csv_folder(args.input, args.output_folder)
-            if success:
-                logger.info("Successfully converted XML to CSV folder: %s", args.output_folder)
-                return 0
-            logger.error("Failed to convert XML to CSV folder")
-            for error in multi_converter.latest_errors:
-                logger.error("  - %s", error)
-            return 2
-
-        if args.command == "csv-folder-to-xml":
-            success = multi_converter.csv_folder_to_xml(args.input_folder, args.output)
-            if success:
-                logger.info("Successfully converted CSV folder to XML: %s", args.output)
-                return 0
-            logger.error("Failed to convert CSV folder to XML")
-            for error in multi_converter.latest_errors:
-                logger.error("  - %s", error)
-            return 2
-
-        if args.command == "validate":
-            if args.folder:
-                records = converter.read_multiple_from_folder(args.input)
-            else:
-                records = [converter.read_from_file(args.input)]
-
-            duplicates = converter.validate_organisation_identifiers(records)
-            if duplicates:
-                logger.error("Duplicate organisation identifiers found:")
-                for duplicate in duplicates:
-                    logger.error("  - %s", duplicate)
-                return 2
-
-            logger.info("Validation successful. Records checked: %d", len(records))
-            return 0
+        handler = handlers.get(args.command)
+        if handler is None:
+            parser.print_help()
+            return 1
+        return handler(args)
 
     except Exception as exc:
         logger.error("Error: %s", exc)
         return 2
-
-    parser.print_help()
-    return 1
 
 
 if __name__ == "__main__":
