@@ -3,7 +3,7 @@ IATI CSV to XML builders module.
 
 This module contains all functions for building IATI model objects from CSV row data.
 """
-
+import logging
 from typing import List, Dict, Any, Optional
 
 from okfn_iati.models import (
@@ -13,6 +13,8 @@ from okfn_iati.models import (
     IndicatorPeriodTarget, IndicatorPeriodActual
 )
 from okfn_iati.enums import ActivityStatus, ActivityDateType, DocumentCategory, ActivityScope, CollaborationType
+
+log = logging.getLogger(__name__)
 
 
 def safe_int(value: Optional[str], default: int = 0) -> int:
@@ -125,6 +127,8 @@ def add_default_types_from_main_data(activity: Activity, main_data: Dict[str, st
         try:
             activity.collaboration_type = CollaborationType(collaboration_type)
         except (ValueError, TypeError):
+            log.error(f"Invalid collaboration type: {collaboration_type}")
+            # TODO: Decide whether to raise an error or skip invalid collaboration types
             pass  # Skip invalid collaboration type
 
 
@@ -173,6 +177,15 @@ def build_budget(budget_data: Dict[str, str]) -> Budget:
         numeric_value = float(value_text) if value_text else 0.0
     except ValueError:
         numeric_value = 0.0
+        log.warning(f"Invalid budget value: {value_text}. Defaulting to 0.0.")
+
+    # Check for missing or suspicious fields
+    if not budget_data.get('period_start') or not budget_data.get('period_end'):
+        log.warning("Budget missing period_start or period_end.")
+
+    # If value is negative, raise an error (assuming this is relevant)
+    if numeric_value < 0:
+        raise ValueError(f"Budget value cannot be negative: {numeric_value}")
 
     return Budget(
         type=budget_data.get('budget_type', '1'),
@@ -204,7 +217,11 @@ def build_transaction(  # noqa: C901
     try:
         value_numeric = float(value_text) if value_text else 0.0
     except ValueError:
+        log.warning(f"Invalid transaction value: {value_text}. Defaulting to 0.0.")
         value_numeric = 0.0
+        # TODO: Decide whether to raise an error or skip invalid transaction values
+        # If you want to raise an error instead, uncomment the next line:
+        # raise ValueError(f"Invalid transaction value: {value_text}")
 
     transaction_args = {
         'type': trans_data.get('transaction_type', '2'),
