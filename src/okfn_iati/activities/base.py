@@ -15,7 +15,7 @@ from okfn_iati.models import Activity, Narrative, OrganizationRef, IatiActivitie
 from okfn_iati.xml_generator import IatiXmlGenerator
 
 # Import extractors
-from .process_xml.extractors import (
+from okfn_iati.activities.process_xml.extractors import (
     get_activity_identifier, extract_description_data,
     extract_indicator_period_data, extract_transaction_sector_data,
     extract_country_budget_items, extract_main_activity_data,
@@ -26,7 +26,7 @@ from .process_xml.extractors import (
 )
 
 # Import builders
-from .process_csv.builders import (
+from okfn_iati.activities.process_csv.builders import (
     build_participating_org, build_sector, build_budget, build_transaction,
     build_location, build_document, build_contact_info,
     build_result_with_indicators, build_country_budget_items,
