@@ -2,7 +2,7 @@ import os
 import unittest
 import tempfile
 from pathlib import Path
-from okfn_iati.multi_csv_converter import IatiMultiCsvConverter
+from okfn_iati.activities import IatiMultiCsvConverter
 from okfn_iati.xml_comparator import IatiXmlComparator
 
 
@@ -15,7 +15,7 @@ class TestCafXML(unittest.TestCase):
             'data-samples', 'xml'
         )
         self.caf_xml_path = os.path.join(self.data_dir, 'CAF-ActivityFile-2025-10-10.xml')
-        
+
         self.converter = IatiMultiCsvConverter()
         self.comparator = IatiXmlComparator(
             ignore_element_order=True,
@@ -70,11 +70,11 @@ class TestCafXML(unittest.TestCase):
                 saved_dir.mkdir(exist_ok=True)
                 saved_original = saved_dir / "original_caf.xml"
                 saved_converted = saved_dir / "converted_caf.xml"
-                
+
                 # Read and write bytes to avoid encoding issues
                 saved_original.write_bytes(self.original_xml.read_bytes())
                 saved_converted.write_bytes(output_xml.read_bytes())
-                
+
                 print(f"Saved original XML to: {saved_original}")
                 print(f"Saved converted XML to: {saved_converted}")
 
@@ -83,6 +83,7 @@ class TestCafXML(unittest.TestCase):
                 are_equivalent,
                 "Roundtrip conversion produced differences. See output above."
             )
+
 
 if __name__ == "__main__":
     unittest.main()

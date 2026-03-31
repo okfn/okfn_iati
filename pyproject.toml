@@ -25,6 +25,7 @@ keywords = ["iati", "xml", "development", "aid", "transparency"]
 
 dependencies = [
     "lxml>=4.9.0",
+    "pandas>=1.0.0",
 ]
 
 [project.urls]
