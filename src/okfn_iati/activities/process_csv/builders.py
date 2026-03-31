@@ -6,13 +6,13 @@ This module contains all functions for building IATI model objects from CSV row 
 
 from typing import List, Dict, Any, Optional
 
-from ...models import (
+from okfn_iati.models import (
     Activity, Narrative, OrganizationRef, ParticipatingOrg, ActivityDate,
     Location, DocumentLink, Budget, Transaction, Result,
     ContactInfo, Indicator, IndicatorBaseline, IndicatorPeriod,
     IndicatorPeriodTarget, IndicatorPeriodActual
 )
-from ...enums import ActivityStatus, ActivityDateType, DocumentCategory, ActivityScope, CollaborationType
+from okfn_iati.enums import ActivityStatus, ActivityDateType, DocumentCategory, ActivityScope, CollaborationType
 
 
 def safe_int(value: Optional[str], default: int = 0) -> int:
