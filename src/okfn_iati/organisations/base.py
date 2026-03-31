@@ -15,14 +15,14 @@ import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
 
-from .process_xml.extractors import (
+from okfn_iati.organisations.process_xml.extractors import (
     extract_organisation_basic_info,
     extract_organisation_names,
     extract_organisation_budgets,
     extract_organisation_expenditures,
     extract_organisation_documents
 )
-from .process_csv.builders import (
+from okfn_iati.organisations.process_csv.builders import (
     build_organisation_budget,
     build_organisation_expenditure,
     build_organisation_document
