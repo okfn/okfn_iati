@@ -6,6 +6,7 @@ Main converter class for organisations with multi-CSV support.
 
 import csv
 import logging
+import pandas as pd
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Optional, List, Dict, Any, Union
@@ -13,11 +14,6 @@ from datetime import datetime, timezone
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 
-try:
-    import pandas as pd
-    PANDAS_AVAILABLE = True
-except ImportError:
-    PANDAS_AVAILABLE = False
 
 from .process_xml.extractors import (
     extract_organisation_basic_info,
@@ -65,7 +61,7 @@ def _get_field(row: Dict[str, Any], field_names: List[str], default: str = "") -
             if value is None:
                 return default
 
-            if PANDAS_AVAILABLE and pd.isna(value):
+            if pd.isna(value):
                 return default
 
             value_str = str(value).strip()
@@ -519,7 +515,7 @@ class IatiOrganisationCSVConverter:
             ValueError: If file format is unsupported or file is empty
         """
         # Handle Excel files if pandas is available
-        if PANDAS_AVAILABLE and file_path.suffix.lower() in [".xlsx", ".xls"]:
+        if file_path.suffix.lower() in [".xlsx", ".xls"]:
             df = pd.read_excel(file_path)
             if df.empty:
                 raise ValueError(f"File {file_path} is empty")
