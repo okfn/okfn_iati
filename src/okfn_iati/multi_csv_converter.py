@@ -2203,16 +2203,16 @@ class IatiMultiCsvConverter:
                 'organisation_lang': 'en',
                 'department': 'Infrastructure Projects Division',
                 'department_lang': 'en',
-                'person_name': 'Ana García',
+                'person_name': 'Victoria Perez',
                 'person_name_lang': 'es',
                 'person_name_present': '1',
                 'job_title': 'Project Manager',
                 'job_title_lang': 'en',
-                'telephone': '+306-1123-1567',
-                'email': 'luisa@bche.org',
+                'telephone': '+506-2111-1111',
+                'email': 'victoria.perez@testorg.org',
                 'email_present': '1',
-                'website': 'https://www.bche.org',
-                'mailing_address': 'Tegucigalpa M.D.C., Honduras',
+                'website': 'https://www.testorg.org',
+                'mailing_address': 'Tegucigalpa, Honduras',
                 'mailing_address_lang': 'es'
             }]
         elif csv_type == 'results':
