@@ -101,19 +101,17 @@ class IatiValidator:
             activities = root.findall('./iati-activity', root.nsmap)
             for activity in activities:
                 has_sector = len(activity.findall('./sector', root.nsmap)) > 0
-                if not has_sector:
-                    errors.append(f"Activity {activity.findtext('./iati-identifier')} is missing sector element")
-                trans_sectors = 0
                 transactions = activity.findall('./transaction', root.nsmap)
 
+                trans_sectors = 0
                 for transaction in transactions:
                     if transaction.findall('./sector', root.nsmap):
                         trans_sectors += 1
 
-                if not has_sector and (trans_sectors == 0 or trans_sectors != len(transactions)):
-                    errors.append(
-                        "Each activity must have either a sector element or all transactions must have sector elements"
-                    )
+                all_transactions_have_sector = len(transactions) > 0 and trans_sectors == len(transactions)
+
+                if not has_sector and not all_transactions_have_sector:
+                    errors.append(f"Activity {activity.findtext('./iati-identifier')} is missing sector element")
 
             # Check for recipient country or region
             for activity in activities:
