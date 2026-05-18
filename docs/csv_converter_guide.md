@@ -1,8 +1,8 @@
 # IATI CSV Converter Documentation
 
-This library provides two approaches for working with IATI data in CSV format:
+This library provides a Multi-CSV Converter for working with IATI data in spreadsheet format:
 
-2. **Multi-CSV Converter** (`IatiMultiCsvConverter`) - Data spread across multiple related CSV files
+- **Multi-CSV Converter** (`IatiMultiCsvConverter`) - Data spread across multiple related CSV files, one per element type (activities, transactions, sectors, etc.)
 
 ## Multi-CSV Converter (Recommended)
 
@@ -78,9 +78,6 @@ All CSV files are related through the `activity_identifier` field, which serves 
 - **Scalable**: Large datasets can be processed file by file
 - **Familiar**: Standard relational database approach
 - **Flexible**: Add/remove files based on your needs
-
-## Multiple CSV Converter
-
 
 ## Installation Requirements
 

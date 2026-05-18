@@ -15,10 +15,8 @@ The test file `test_csv_to_xml.py` shows you an example on how to load from CSV 
 
 The file `tests/test_activities_generated.xml` is the generated XML file from the `sample_activities.csv` file.  
 
-### Pending improvements
+### Notes
 
-If we need to include more than one `sector` in the CSV file, we need to add a new column for each sector.  
-We now only one `sector` and assign 100% to it.  
+Multiple sectors per activity are supported via the multi-CSV approach using `sectors.csv`, where each sector is a separate row linked by `activity_identifier`.
 
-The `budget` period can't be more that one year. In those case we will probably need to split the budget in parts in our code.  
-Pending to investigate.  
+Budget periods spanning more than one year should be split into annual periods, one row per year in `budgets.csv`.
