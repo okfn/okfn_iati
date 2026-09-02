@@ -586,6 +586,26 @@ class GeographicalPrecision(Enum):
     UNSPECIFIED = "9"
 
 
+class GeographicExactness(Enum):
+    """
+    Geographic exactness of a location (IATI 2.03 <location><exactness code="..."/>).
+    Reference: https://iatistandard.org/en/iati-standard/203/codelists/geographicexactness/
+    """
+    EXACT = "1"
+    APPROXIMATE = "2"
+
+
+class GeographicLocationClass(Enum):
+    """
+    Geographic location class (IATI 2.03 <location><location-class code="..."/>).
+    Reference: https://iatistandard.org/en/iati-standard/203/codelists/geographiclocationclass/
+    """
+    ADMINISTRATIVE_REGION = "1"
+    POPULATED_PLACE = "2"
+    STRUCTURE = "3"
+    OTHER_TOPOGRAPHICAL_FEATURE = "4"
+
+
 class IndicatorMeasure(Enum):
     """
     Indicator measure - unit, percentage, etc.

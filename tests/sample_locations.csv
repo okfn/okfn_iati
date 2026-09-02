@@ -1,0 +1,13 @@
+activity_identifier,location_ref,location_reach,location_id_vocabulary,location_id_code,name,name_lang,description,description_lang,activity_description,activity_description_lang,latitude,longitude,exactness,location_class,feature_designation,administrative_vocabulary,administrative_level,administrative_code,administrative_country
+XM-DAC-46008-cfa012402,LOC-PAIS-HN,1,A4,HN,Honduras,es,Pais completo,es,,,,,1,1,PCLI,,,,
+XM-DAC-46008-cfa012402,LOC-PAIS-NI,1,A4,NI,Nicaragua,es,Pais completo,es,,,,,1,1,PCLI,,,,
+XM-DAC-46008-cfa012402,LOC-DEP-FM,1,G1,3608992,Francisco Morazan,es,Departamento,es,,,,,1,1,ADM1,A4,0,HN,
+XM-DAC-46008-cfa012402,LOC-DEP-MN,2,G1,3617762,Departamento de Managua,es,Departamento,es,,,,,1,1,ADM1,A4,0,NI,
+XM-DAC-46008-cfa012402,LOC-PT-HOSP,1,,,Hospital Escuela,es,,,Ampliacion de la sala de emergencias,es,14.0891,-87.1650,1,3,HSP,G1,1,3608992,
+XM-DAC-46008-cfa012402,LOC-PT-ESC,1,,,Escuela Rural El Crucero,es,,,Construccion de aulas,es,11.9906,-86.3093,1,3,SCH,G1,1,3617762,
+XM-DAC-46008-cfa012402,LOC-CIU-SS,1,,,San Salvador,es,Area metropolitana,es,,,13.6929,-89.2182,2,2,PPLC,A4,0,SV,
+XM-DAC-46008-cfa012402,LOC-CIU-GUA,1,,,Ciudad de Guatemala,es,Area metropolitana,es,,,14.6349,-90.5069,2,2,PPLC,A4,0,GT,
+XM-DAC-46008-cfa012402,LOC-REG-CS,2,,,Corredor Seco,es,Zona semiarida de Centroamerica,es,,,,,2,4,RGN,,,,
+XM-DAC-46008-cfa012402,LOC-REG-MOSQ,2,,,La Mosquitia,es,Region oriental de Honduras,es,,,,,2,4,RGN,,,,
+XM-DAC-46008-cfa012402,LOC-OSM-PC,1,G2,relation/1234567,Puerto Cortes,es,,,,,,,2,2,PPL,,,,
+XM-DAC-46008-cfa012402,LOC-GN-CTO,1,G1,3620269,Corinto,es,,,,,,,2,2,PPL,,,,

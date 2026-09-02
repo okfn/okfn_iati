@@ -19,6 +19,7 @@ from .enums import (
 
     # Location-related enums
     LocationReach, LocationType, LocationID, GeographicalPrecision,
+    GeographicExactness, GeographicLocationClass,
 
     # Result and policy-related enums
     ResultType, IndicatorMeasure, PolicyMarker, PolicySignificance,
@@ -70,6 +71,7 @@ __all__ = [
 
     # Location-related enums
     'LocationReach', 'LocationType', 'LocationID', 'GeographicalPrecision',
+    'GeographicExactness', 'GeographicLocationClass',
 
     # Result and policy-related enums
     'ResultType', 'IndicatorMeasure', 'PolicyMarker', 'PolicySignificance',
