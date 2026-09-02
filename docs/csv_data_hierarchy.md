@@ -226,7 +226,7 @@ The converter generates the following CSV files:
 |------------|------------|-------------|
 | `activity_identifier` | Parent `<iati-identifier>` | FOREIGN KEY |
 | `location_ref` | `<location>` @ref | Location reference |
-| `location_reach` | `<location>` @reach | Location reach code |
+| `location_reach` | `<location><location-reach>` @code | Location reach code (1 activity, 2 beneficiaries) |
 | `location_id_vocabulary` | `<location><location-id>` @vocabulary | Location ID vocabulary |
 | `location_id_code` | `<location><location-id>` @code | Location ID code |
 | `name` | `<location><name><narrative>` | Location name |
@@ -235,17 +235,31 @@ The converter generates the following CSV files:
 | `description_lang` | `<location><description><narrative>` @xml:lang | Description language |
 | `activity_description` | `<location><activity-description><narrative>` | Activity at location |
 | `activity_description_lang` | `<location><activity-description><narrative>` @xml:lang | Activity description language |
-| `latitude` | `<location><point><pos>` | Latitude (first coordinate) |
-| `longitude` | `<location><point><pos>` | Longitude (second coordinate) |
-| `exactness` | `<location>` @exactness | Location exactness code |
-| `location_class` | `<location>` @class | Location class code |
-| `feature_designation` | `<location>` @feature-designation | Feature designation code |
-| `administrative_vocabulary` | `<location><administrative>` @vocabulary | Admin vocabulary |
+| `latitude` | `<location><point><pos>` | Latitude (first coordinate, WGS84 / EPSG:4326) |
+| `longitude` | `<location><point><pos>` | Longitude (second coordinate, WGS84 / EPSG:4326) |
+| `exactness` | `<location><exactness>` @code | GeographicExactness code (1 exact, 2 approximate) |
+| `location_class` | `<location><location-class>` @code | GeographicLocationClass code (1-4) |
+| `feature_designation` | `<location><feature-designation>` @code | LocationType code (e.g. PPL, ADM1) |
+| `administrative_vocabulary` | `<location><administrative>` @vocabulary | GeographicVocabulary code (A1-A4, G1, G2) |
 | `administrative_level` | `<location><administrative>` @level | Admin level |
 | `administrative_code` | `<location><administrative>` @code | Admin code |
-| `administrative_country` | `<location><administrative>` @country | Admin country |
+| `administrative_country` | (none) | Deprecated: not an IATI 2.03 attribute, ignored on CSV -> XML. Use `location_id_vocabulary=A4` for ISO countries |
 
 **Relationship**: `activities.activity_identifier = locations.activity_identifier`
+
+**Ways to express a location** (all round-trip XML -> CSV -> XML; they can be combined in one row):
+
+| Kind | Columns used | Example |
+|------|--------------|---------|
+| Whole country (ISO 3166-1 alpha-2) | `location_id_vocabulary=A4`, `location_id_code` | `A4` / `HN` |
+| Administrative area the location *is* | `location_id_vocabulary` (A1/A2/A3/G1), `location_id_code` | `G1` / `3608932` |
+| Administrative area the location *falls within* | `administrative_vocabulary`, `administrative_code`, `administrative_level` | `A3` / `HND.8_1` / `1` |
+| Exact point | `latitude`, `longitude`, `exactness=1` | `14.0723` / `-87.1921` |
+| Approximate point | `latitude`, `longitude`, `exactness=2` | `12.13` / `-86.25` |
+| Named place only | `name`, `name_lang`, `description` | `Tegucigalpa` |
+| Gazetteer id (Geonames / OpenStreetMap) | `location_id_vocabulary` = G1 or G2, `location_id_code` | `G2` / `relation/1234567` |
+
+Note: a `<location>` may hold several `<location-id>` / `<administrative>` elements in XML; the CSV keeps only the first of each.
 
 ---
 

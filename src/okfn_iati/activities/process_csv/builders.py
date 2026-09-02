@@ -8,7 +8,7 @@ from typing import List, Dict, Any, Optional
 
 from okfn_iati.models import (
     Activity, Narrative, OrganizationRef, ParticipatingOrg, ActivityDate,
-    Location, DocumentLink, Budget, Transaction, Result,
+    Location, LocationIdentifier, DocumentLink, Budget, Transaction, Result,
     ContactInfo, Indicator, IndicatorBaseline, IndicatorPeriod,
     IndicatorPeriodTarget, IndicatorPeriodActual
 )
@@ -301,12 +301,43 @@ def build_transaction(  # noqa: C901
     return Transaction(**transaction_args)
 
 
-def build_location(location_data: Dict[str, str]) -> Location:
-    """Build Location from data."""
+def build_location(location_data: Dict[str, str]) -> Location:  # noqa: C901
+    """Build Location from a locations.csv row.
+
+    Every column of locations.csv is mapped back to its IATI 2.03 element so
+    that XML -> CSV -> XML round-trips are lossless:
+
+    - location_ref -> <location ref="">
+    - location_reach -> <location-reach code="">
+    - location_id_vocabulary + location_id_code -> <location-id vocabulary="" code="">
+    - name / description / activity_description (+ _lang) -> narratives
+    - latitude + longitude -> <point srsName="..."><pos>lat lng</pos></point>
+    - exactness -> <exactness code="">
+    - location_class -> <location-class code="">
+    - feature_designation -> <feature-designation code="">
+    - administrative_vocabulary + administrative_code (+ administrative_level)
+      -> <administrative vocabulary="" code="" level="">
+
+    ``administrative_country`` is accepted for backwards compatibility but not
+    written to the XML: IATI 2.03 has no ``country`` attribute on
+    ``<administrative>`` (use a location-id with vocabulary A4 instead).
+    """
     location_args: Dict[str, Any] = {}
 
-    if location_data.get('location_ref'):
-        location_args['ref'] = location_data['location_ref']
+    def _get(key: str) -> str:
+        return (location_data.get(key) or '').strip()
+
+    if _get('location_ref'):
+        location_args['ref'] = _get('location_ref')
+
+    if _get('location_reach'):
+        location_args['location_reach'] = _get('location_reach')
+
+    if _get('location_id_code'):
+        location_args['location_id'] = LocationIdentifier(
+            vocabulary=_get('location_id_vocabulary'),
+            code=_get('location_id_code'),
+        )
 
     if location_data.get('name') or location_data.get('name_lang'):
         location_args['name'] = [Narrative(
@@ -326,11 +357,29 @@ def build_location(location_data: Dict[str, str]) -> Location:
             lang=location_data.get('activity_description_lang') or None
         )]
 
-    if location_data.get('latitude') and location_data.get('longitude'):
+    if _get('administrative_code') or _get('administrative_vocabulary'):
+        admin: Dict[str, str] = {
+            'vocabulary': _get('administrative_vocabulary'),
+            'code': _get('administrative_code'),
+        }
+        if _get('administrative_level'):
+            admin['level'] = _get('administrative_level')
+        location_args['administrative'] = [admin]
+
+    if _get('latitude') and _get('longitude'):
         location_args['point'] = {
             'srsName': 'http://www.opengis.net/def/crs/EPSG/0/4326',
-            'pos': f"{location_data['latitude']} {location_data['longitude']}"
+            'pos': f"{_get('latitude')} {_get('longitude')}"
         }
+
+    if _get('exactness'):
+        location_args['exactness'] = _get('exactness')
+
+    if _get('location_class'):
+        location_args['location_class'] = _get('location_class')
+
+    if _get('feature_designation'):
+        location_args['feature_designation'] = _get('feature_designation')
 
     return Location(**location_args)
 

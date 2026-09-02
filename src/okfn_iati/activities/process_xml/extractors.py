@@ -433,15 +433,33 @@ def extract_transaction_data(trans_elem: ET.Element, activity_id: str) -> Dict[s
     return data
 
 
+def _child_code(parent: ET.Element, tag: str, legacy_attr: str) -> str:
+    """Return ``<tag code="..."/>`` child code (IATI 2.03 form).
+
+    Falls back to a same-named attribute on the parent for tolerance with
+    non-standard files that encode these as attributes.
+    """
+    child = parent.find(tag)
+    if child is not None:
+        return child.get('code', '')
+    return parent.get(legacy_attr, '')
+
+
 def extract_location_data(location_elem: ET.Element, activity_id: str) -> Dict[str, str]:
-    """Extract location data."""
+    """Extract location data.
+
+    Mirrors ``build_location`` in process_csv/builders.py: every column written
+    here is read back when converting CSV -> XML. In IATI 2.03 reach, exactness,
+    class and feature designation are child elements with a ``code`` attribute
+    (``<location-reach code="1"/>``), not attributes of ``<location>``.
+    """
     data = {'activity_identifier': activity_id}
     xml_lang = '{http://www.w3.org/XML/1998/namespace}lang'
 
     data['location_ref'] = location_elem.get('ref', '')
-    data['location_reach'] = location_elem.get('reach', '')
+    data['location_reach'] = _child_code(location_elem, 'location-reach', 'reach')
 
-    # Location ID
+    # Location ID (the CSV keeps one location-id per row; the first one wins)
     loc_id_elem = location_elem.find('location-id')
     if loc_id_elem is not None:
         data['location_id_vocabulary'] = loc_id_elem.get('vocabulary', '')
@@ -477,12 +495,13 @@ def extract_location_data(location_elem: ET.Element, activity_id: str) -> Dict[s
         data['latitude'] = ''
         data['longitude'] = ''
 
-    # Additional location attributes
-    data['exactness'] = location_elem.get('exactness', '')
-    data['location_class'] = location_elem.get('class', '')
-    data['feature_designation'] = location_elem.get('feature-designation', '')
+    # Additional location attributes (child elements with @code in IATI 2.03)
+    data['exactness'] = _child_code(location_elem, 'exactness', 'exactness')
+    data['location_class'] = _child_code(location_elem, 'location-class', 'class')
+    data['feature_designation'] = _child_code(location_elem, 'feature-designation', 'feature-designation')
 
-    # Administrative
+    # Administrative (one per row; the first one wins). ``country`` is not an
+    # IATI 2.03 attribute; kept only for backwards compatibility of the column.
     admin_elem = location_elem.find('administrative')
     if admin_elem is not None:
         data['administrative_vocabulary'] = admin_elem.get('vocabulary', '')
